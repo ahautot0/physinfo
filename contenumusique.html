@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Présentation | Musique hors des sentiers battus, en particulier, contemporaine</title>
+  <meta name="description" content="Vous cherchez des musiques rares ou contemporaines, vous êtes à la bonne adresse!" />
+  <link rel="shortcut icon" href="logo.ico" />
+  <link href="style.css" rel="stylesheet" type="text/css" /> 
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <script src="js/jquery-1.10.2.js"></script>
+  <script src="js/menus.js"></script>
+  <script src="js/design.js"></script>
+  <script src="js/gestionAudioVideo.js"></script>
+  <script> 
+    // Inclusion Header et Footer
+    $(function(){
+
+      $(function(){
+        $.ajax({
+           url: "template/header.php",
+           type: "POST",
+           data: ({ROOT: './'}),
+           success: function(data) {
+             $("#header").html(data);
+             $("#contenumusique").addClass("active"); /*a changer en fonction de la page*/
+             update_design_when_header_loaded();
+          }
+        });
+      });
+
+      $("#miniMenus").load("template/miniMenus.php", { ROOT: './' }, mini_menus_after_loading);
+      $("#footer").load("template/footer.php", { ROOT: './' }, update_design_footer);  
+    });
+  </script> 
+</head>
+
+<body id="site">
+
+  <div>
+    <!-- Inclusion header -->
+    <div id="header"></div>
+
+        <div id="miniMenus"></div>
+
+    <div id="corps">
+
+      <div id="contenuPrincipal">
+        <h2>Présentation de la section musique</h2>
+        <h3>Musiques hors des sentiers battus, négligées et/ou contemporaines</h3>
+
+        <nav class="filAriane">
+          <ul>
+            <li class="breadcrumbItem"><span>Vous êtes ici : </span> Musique</li>
+            <li class="breadcrumbItem  breadcrumIitem--current">Présentation</li> <!-- a changer en fonction de la page -->
+          </ul>
+        </nav>
+        
+        <div>
+          <p>Sans renier le moins du monde la Sainte Trilogie, Bach - Beethoven - Mozart, prise dans l'ordre ou le désordre, et pour laquelle une documentation abondante existe, ce site veut avant tout se consacrer :</p>
+          <ul class="miniListCorps">
+            <li><strong>aux laissés pour compte de l'Histoire de la Musique</strong>, qui sont tombés dans un injuste oubli et qu'une critique paresseuse tarde à réhabiliter.</li>
+            <li><strong>aux compositeurs d'aujourd'hui</strong>, qui luttent vaillamment contre l'image négative et toujours colportée d'une musique contemporaine qui ne serait que cacophonie ou écorchure de tympans.</li>
+          </ul>
+
+          <p>Vous trouverez sur ce site une <strong>documentation en progression constante</strong>, relative à ces musiques peu jouées d'hier et d'aujourd'hui.  Vous trouverez aussi une introduction relative à l'état de la  <strong>musique contemporaine</strong> à la rubrique "Musique 2001". (PDF disponible)</p>
+        </div>
+      </div>
+
+      <!-- Inclusion footer -->
+      <div id="footer"></div>
+
+    </div>
+    
+    
+  </div>
+
+</body>
+
+</html>

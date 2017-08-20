@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Billets d'humeur</title>
+  <meta name="description" content="Vous cherchez à comprendre le point de vue constructiviste en sciences ou vous cherchez des musiques rares ou contemporaines, vous êtes à la bonne adresse!" />
+  <link rel="shortcut icon" href="logo.ico" />
+  <link href="style.css" rel="stylesheet" type="text/css" /> 
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+  <script src="js/jquery-1.10.2.js"></script>
+  <script src="js/design.js"></script>
+  <script> 
+    // Inclusion Header et Footer + class "active" (pour lien menu)
+    $(function(){
+      $(function(){
+        $.ajax({
+           url: "template/header.html",
+           dataType: "html",
+           success: function(data) {
+             $("#header").html(data);
+             $("#billetdhumeur").addClass("active"); /*a changer en fonction de la page*/
+          }
+        });
+      });
+      $("#footer").load("template/footer.html", update_design); 
+    });
+  </script> 
+</head>
+
+<body>
+
+    <div id="site">
+        <!-- Inclusion header -->
+        <div id="header"></div>
+
+        <div id="corps">
+
+            <div id="contenuPrincipal">
+                <h2>Conjecture de Collatz</h2>
+                <h3>Textes d'opinions humoristiques souvent satiriques</h3>
+
+                <nav class="filAriane">
+                    <ul>
+                        <li class="breadcrumbItem"><span>Vous êtes ici : </span> Musique</li>
+                        <li class="breadcrumbItem  breadcrumIitem--current">
+                          <a href="chroniques.html">Chroniques</a>
+                        </li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Billets d'Humeur</li>
+                    </ul>
+                </nav>  
+  
+  
+  
+ 
+  
+  
+   
+    
+   
+  
+  
+ 
+ 
+ 
+ <p> La conjecture de Collatz affirme que le petit programme suivant se termine toujours :</p>
+ 
+ <div>Sélectionner un entier positif, aussi grand que l'on veut :</div>
+ <div>Si ce nombre est pair, le diviser par 2, sinon le multiplier par 3 et ajouter 1,</div>
+ <div>Recommencer la manoeuvre avec le nouveau nombre obtenu,</div>
+ <div>Arrêter le calcul dès qu'on retombe sur l'entier, 1.</div>
+  
+<p> Par exemple, le programme s'arrête si on part de l'entier, 17. Vérification :</p>
+
+<p>17-52-26-13-40-20-10-5-16-8-4-2-1</p>
+
+<p>Aussi invraisemblable que cela puisse paraître, on ne possède toujours pas de démonstration (ou de réfutation) de cette proposition d'arithmétique élémentaire et ce n'est pas faute d'avoir cherché ! </p>
+
+<p>Un procédé d'investigation possible consiste à travailler à l'envers : partir de 1 et remonter l'arborescence des entiers qui ont pu produire les entiers précédents.  Par exemple, 1 ne peut provenir que de 2, 2 ne peut provenir que de 4, 4 ne peut provenir que de 8 et 8 ne peut provenir que de 16.  Après cela se complique : 16 peut provenir de 32 mais il peut aussi provenir de 5 (car 3x5+1=16).  Continuez ainsi, vous verrez qu'avec un peu de persévérance, tous les entiers disons inférieurs à 100 finissent par apparaître. Ce que la conjecture de Collatz affirme, c'est précisément que tous les entiers sans exception finiront par apparaître. Le bandeau révèle la position de 1705 dans l'arbre.</p>
+
+<p>(D'après un projet de Jesse Nochella dans le cadre du <a href="http://demonstrations.wolfram.com/CollatzPaths/">"Wolfram Demonstrations Project"</a>)</p>
+
+<p>Si vous voulez en apprendre davantage sur ce genre de questions, reportez-vous aux séminaires sur la Tétralogique, disponibles sur ce site. </p>
+
+  
+ 
+              </div>
+
+
+            <a id="ancreRetourHautPage" href="#site">&uarr;</a>
+
+            <!-- Inclusion footer -->
+            <div id="footer"></div>
+
+        </div>
+    
+    
+    </div>
+
+    <script src="js/chroniques.js"></script>
+
+</body>
+</html>

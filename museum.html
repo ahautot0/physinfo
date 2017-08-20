@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Billets d'humeur</title>
+  <meta name="description" content="Vous cherchez à comprendre le point de vue constructiviste en sciences ou vous cherchez des musiques rares ou contemporaines, vous êtes à la bonne adresse!" />
+  <link rel="shortcut icon" href="logo.ico" />
+  <link href="style.css" rel="stylesheet" type="text/css" /> 
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <script src="js/jquery-1.10.2.js"></script>
+  <script src="js/menus.js"></script>
+  <script src="js/design.js"></script>
+  <script src="js/gestionAudioVideo.js"></script>
+  <script> 
+    // Inclusion Header et Footer + class "active" (pour lien menu)
+    $(function(){
+      $(function(){
+        $.ajax({
+           url: "template/header.php",
+           type: "POST",
+           data: ({ROOT: './'}),
+           success: function(data) {
+             $("#header").html(data);
+             $("#billetdhumeur").addClass("active"); /*a changer en fonction de la page*/
+             update_design_when_header_loaded();
+          }
+        });
+      });
+      $("#miniMenus").load("template/miniMenus.php", { ROOT: './' }, mini_menus_after_loading);
+      $("#footer").load("template/footer.php", { ROOT: './' }, update_design_footer);  
+    });
+  </script> 
+</head>
+
+<body id="site">
+
+    <div>
+        <!-- Inclusion header -->
+        <div id="header"></div>
+
+        <div id="miniMenus"></div>
+
+        <div id="corps">
+
+            <div id="contenuPrincipal">
+                <h2>Billets d'humeur</h2>
+                <h3>Textes d'opinions humoristiques souvent satiriques</h3>
+
+                <nav class="filAriane">
+                    <ul>
+                        <li class="breadcrumbItem"><span>Vous êtes ici : </span> Musique</li>
+                        <li class="breadcrumbItem  breadcrumIitem--current">
+                          <a href="chroniques.html">Chroniques</a>
+                        </li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Billets d'Humeur</li>
+                    </ul>
+                </nav>  
+  <h2>Un petit musée virtuel.</h2>
+  
+  <div id="photocentre"><img src="im2001/veyck.jpg" alt="" /><div class="legende">Jan van Eyck : <div>L'homme au chapeau bleu (1430)</div></div></div>
+ 
+ <div id="photocentre"><img src="im2001/vdweyden.jpg" alt="" /><div class="legende">Rogier van der Weyden : <div>Portrait de femme (1455)</div></div></div>
+ 
+ 
+ 
+ <div id="photocentre"><img src="im2001/bosch.gif" alt="" /><div class="legende">Jérôme Bosch : <div>Portement de croix (1508)</div></div></div>
+ 
+ <div id="photocentre"><img src="im2001/breughel.jpg" alt="" /><div class="legende">Breughel l'Ancien : <div>Tour de Babel (1563)</div></div></div>
+ 
+ 
+ 
+ 
+ <div id="photocentre"><img src="im2001/poussin.jpg" alt="" /><div class="legende">Nicolas Poussin : <div>L'enlèvement des Sabines (1637)</div></div></div>
+ 
+ <div id="photocentre"><img src="im2001/watteau.jpg" alt="" /><div class="legende">Antoine Watteau : <div>Pierrot (1719)</div></div></div>
+ 
+ 
+ 
+ 
+ <div id="photocentre"><img src="im2001/canaletto.jpg" alt="" /><div class="legende">Canaletto : <div>Piazza San Marco (1730)</div></div></div>
+ 
+ <div id="photocentre"><img src="im2001/david.jpg" alt="" /><div class="legende">Jacques-Louis David : <div>Les sabines (1799)</div></div></div>
+ 
+ 
+ 
+ <div id="photocentre"><img src="im2001/ingres.jpg" alt="" /><div class="legende">Ingres : <div>Œdipe et le sphinx (1808)</div></div></div>
+ 
+ <div id="photocentre"><img src="im2001/delacroix.jpg" alt="" /><div class="legende">Jacques-Louis David : <div>Femmes d’Alger (1834)</div></div></div>
+ 
+ 
+ 
+  <div id="photocentre"><img src="im2001/vgogh.jpg" alt="" /><div class="legende">Vincent Van Gogh : <div>Terrasse
+    du café le soir (1888)</div></div></div>
+ 
+ <div id="photocentre"><img src="im2001/klimt.jpg" alt="" /><div class="legende">Gustav Klimt : <div>Le baiser (1907)</div></div></div>
+ 
+ 
+ 
+  <div id="photocentre"><img src="im2001/mondrian.jpg" alt="" /><div class="legende">Piet Mondrian : <div>Pier and ocean
+    (1915)</div></div></div>
+ 
+ <div id="photocentre"><img src="im2001/kandinsky.jpg" alt="" /><div class="legende">Wassily Kandinsky : <div>Composition VIII (1923)</div></div></div>
+ 
+ 
+ 
+ <div id="photocentre"><img src="im2001/miro.jpg" alt="" /><div class="legende">Joan Miro : <div>Le Port (1945)</div></div></div>
+ 
+ <div id="photocentre"><img src="im2001/dali.jpg" alt="" /><div class="legende">Salvador Dali : <div>Nature
+    morte vivante (1956)</div></div></div>
+ 
+ 
+    
+<div id="photocentre"><img src="im2001/bacon.jpg" alt="" /><div class="legende">Francis Bacon : <div>Autoportrait (1971)</div></div></div>
+ 
+ <div id="photocentre"><img src="im2001/freud.jpg" alt="" /><div class="legende">Lucian Freud : <div>Autoportrait (1985)</div></div></div>
+
+
+<div id="photocentre"><img src="im2001/fabre.jpg" alt="" /><div class="legende">Jan Fabre : <div>Leda ou l'Ange de la mort (2005)</div></div></div>
+ 
+  
+  
+  
+              </div>
+
+
+            <a id="ancreRetourHautPage" href="#site">&uarr;</a>
+
+            <!-- Inclusion footer -->
+            <div id="footer"></div>
+
+        </div>
+    
+    
+    </div>
+
+    <script src="js/chroniques.js"></script>
+
+</body>
+</html>

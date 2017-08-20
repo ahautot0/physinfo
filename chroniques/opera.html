@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Billets d'humeur</title>
+  <meta name="description" content="Vous cherchez à comprendre le point de vue constructiviste en sciences ou vous cherchez des musiques rares ou contemporaines, vous êtes à la bonne adresse!" />
+  <link rel="shortcut icon" href="../logo.ico" />
+  <link href="../style.css" rel="stylesheet" type="text/css" /> 
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <script src="../js/jquery-1.10.2.js"></script>
+  <script src="../js/menus.js"></script>
+  <script src="../js/design.js"></script>
+  <script src="../js/gestionAudioVideo.js"></script>
+  <script> 
+    // Inclusion Header et Footer
+    $(function(){
+      $(function(){
+        $.ajax({
+           url: "../template/header.php",
+           type: "POST",
+           data: ({ROOT: '../'}),
+           success: function(data) {
+             $("#header").html(data);
+             update_design_when_header_loaded();
+          }
+        });
+      });
+      $("#miniMenus").load("../template/miniMenus.php", { ROOT: '../' }, mini_menus_after_loading);
+      $("#footer").load("../template/footer.php", { ROOT: '../' }, update_design_footer);  
+    });
+  </script> 
+</head>
+
+<body id="site">
+
+    <div>
+        <!-- Inclusion header -->
+        <div id="header"></div>
+
+        <div id="miniMenus"></div>
+
+        <div id="corps">
+
+            <div id="contenuPrincipal">
+                <h2>Billets d'humeur</h2>
+                <h3>Textes d'opinions humoristiques souvent satiriques</h3>
+
+                <nav class="filAriane">
+                    <ul>
+                        <li class="breadcrumbItem"><span>Vous êtes ici : </span> Musique</li>
+                        <li class="breadcrumbItem">
+                          <a href="../chroniques.html">Chroniques</a>
+                        </li>
+                        <li class="breadcrumbItem">
+                          <a href="../portraitscompositeurs.html">Compositeurs contemporains</a>
+                        </li>
+                        <li class="breadcrumbItem breadcrumIitem--current">John Adams</li>
+                    </ul>
+                </nav>  
+  <h2>L'opéra de nos jours. Conduire une action en musique.</h2>
+  
+  <p>Ce billet se concentre sur un aspect très particulier de l'opéra : la conduite de l'action. Particulier mais important, au moins en ce qui concenre le temps qu'elle consume. Car si pour le quidam qui  se rend peu ou pas à l'opéra le genre se résume à quelques grands airs fredonnables, le retse du temps se passe à faire avncer l'intrigue.</p>
+  <p></p>
+  <p>Quelques opéras contemporains.  Nouvelle cuisine et vieilles marmites
+    http://operacritiques.free.fr/css/index.php?2012/07/23/2023-une-brassee-de-bons-operas-contemporains-classes-par-courants
+    
+    Messiaen, Schostakovitch, Ligeti, Pizzetti, 
+    Maria di Venosa (Francesco d'Avalos)
+    (Louis Andriessen)
+    Kajia Saarihao (L'amour de loin (1999))
+    Philip Glass
+    John Adams
+    Wolfgang Rihm
+    Penderecki Ubu Rex
+    Benjamin In the little hill
+    Unsuk Chin (Alice in Wonderland)
+    John Corigliano The Gosths of Versailles
+    Sallinen The palace
+    
+    Manfred Trojahn (geb. 1949) Oreste
+    Tobias Picker Thérèse Raquin et surtout Emmeline
+  </p>
+  
+  
+  <p>L'opéra est bel et bien né en Italie de parents italiens. C'est l'art qui ambitionne d'être total mais qui l'est razrement</p>
+  <p>L'opéra repose sur un ensembles de conventions théâtrales et musicales. Ce lui qui refuse d'y adhérer n'est pas fait pour l'opéra et l'opéra n'est pas fait pour lui. </p>
+  <p>Le chant théâtral, comme  la musique instrumentale, exige idéalement la présence dans la salle. Ce n'est pas toujours possible ne serait-ce que parce qu'une oeuvre est rarement montée au-delà d'une douzaine de représentations au terme desquelles les protagonistes sont obligés de s'éclipser pour se produire ailleurs. </p>
+  <p>Berlioz estimait (vers 1850) que les salles italiennes mais aussi parisiennes étaient beaucoup trop grandes, privilégiant la recette à l'exercice de l'art vocal. Il professait qu'au-delà d'une distance critique par rapport à la scène, l'auditeur peut bien continuer d'entendre, il ne vibre plus. Le chanteur est alors condamné à s'époumonner plus que de raison au lieu de privilégier la nuance.</p>
+  <p></p>
+  <p>L'opéra, on aime ou on déteste, il n'y a pas de milieu.</p>
+  <p>Il fut un temps où les modèles de l'opéra moderne se résumaient à Wozzek, Die Soldaten et Lear d'Aribert Reimann (1936- ).</p>
+  <p> Ce genre a priori improbable que l'on a dit mort à toutes les époques n'a jamais cessé de bien se porter : art total mais théâtre des voix et des sentiments bien davantage que des intrigues le plus souvent simplistes pour ne pas dire ineptes, c'est le lieu de rencontre entre des chanteurs qui  donnent à voix nue ce qu'ils portent en eux et un public qui les reçoit comme une autre forme d'énergie, non solaire.</p>
+  
+  <p>Art total, il devrait l'être mais ne l'est de fait pas souvent. Ses ingrédients : un livret qui met en scène les passions humaines éternelles au travers d'une histoire plus ou moins anecdotique. Une musique qui souligne les contours Une mise en scène où les acteurs bougent dans des costumes, des décors, des éclairages dont le luxe est proportionnel aux moyens mis en oeuvre. Et puis il y a la voix</p>
+  <p>Tout opéra doit répondre à la question fondamentale de la progression de l'action. Ce ne sont pas les grands airs qui y contribuent car ils ne font qu'exprimer et développer l'émotion du moment, la colère, la vengeance, la jalousie, l'amour, le dépit et tant d'autres. Au cours de l'histoire, quantité de solutions ont été essayées qu'il vaut la peine de rappeler brièvement.</p>
+  
+  <p>Le premier baroque, de Monteverdi à Cavalli, a mêlé le verbe à la musique et la musique au verbe sans chercher à ce qu'une composante écrase l'autre. Cela a été rendu possible par le soin avec lequel le discours a été ponctué par un continuo élargi et toute édition moderne de ce type d'oeuvre doit en tenir compte. </p>
+  <p>le problème majeur qui se pose à la musique de Gluck c'est qu'elle n'a pas encore reçu les attentions nécessaires auxquelles ont eu droit des musiciens parfois bien moins doués. On peut cepndant espérer qu'une génération d'interprètes classiqueux va poser le problème et le résoudre;</p>
+  
+  <p>Georg Friedrich Haas: <a href="https://www.youtube.com/watch?v=3cDfgKk-aZ8">Bluthaus</a> (2011)</p>
+    
+              </div>
+
+
+            <a id="ancreRetourHautPage" href="#site">&uarr;</a>
+
+            <!-- Inclusion footer -->
+            <div id="footer"></div>
+
+        </div>
+    
+    
+    </div>
+
+    <script src="../js/chroniques.js"></script>
+
+</body>
+</html>

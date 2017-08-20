@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Billets d'humeur</title>
+  <meta name="description" content="Vous cherchez à comprendre le point de vue constructiviste en sciences ou vous cherchez des musiques rares ou contemporaines, vous êtes à la bonne adresse!" />
+  <link rel="shortcut icon" href="logo.ico" />
+  <link href="style.css" rel="stylesheet" type="text/css" /> 
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <script src="js/jquery-1.10.2.js"></script>
+  <script src="js/menus.js"></script>
+  <script src="js/design.js"></script>
+  <script src="js/gestionAudioVideo.js"></script>
+  <script> 
+    // Inclusion Header et Footer + class "active" (pour lien menu)
+    $(function(){
+      $(function(){
+        $.ajax({
+           url: "template/header.php",
+           type: "POST",
+           data: ({ROOT: './'}),
+           success: function(data) {
+             $("#header").html(data);
+             $("#billetdhumeur").addClass("active"); /*a changer en fonction de la page*/
+             update_design_when_header_loaded();
+          }
+        });
+      });
+      $("#miniMenus").load("template/miniMenus.php", { ROOT: './' }, mini_menus_after_loading);
+      $("#footer").load("template/footer.php", { ROOT: './' }, update_design_footer);  
+    });
+  </script> 
+</head>
+
+<body id="site">
+
+    <div>
+        <!-- Inclusion header -->
+        <div id="header"></div>
+
+        <div id="miniMenus"></div>
+
+        <div id="corps">
+
+            <div id="contenuPrincipal">
+                <h2>Billets d'humeur</h2>
+                <h3>Textes d'opinions humoristiques souvent satiriques</h3>
+
+                <nav class="filAriane">
+                    <ul>
+                        <li class="breadcrumbItem"><span>Vous êtes ici : </span> Musique</li>
+                        <li class="breadcrumbItem  breadcrumIitem--current">
+                          <a href="chroniques.html">Chroniques</a>
+                        </li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Billets d'Humeur</li>
+                    </ul>
+                </nav>  
+  
+  <h2>Complexité.</h2>
+  
+  <p>Aucun domaine des mathématiques n'est davantage sujet aux interprétations douteuses qui finissent par déboucher sur des paradoxes.
+</p>
+  
+  
+  <!-- TemplateEndEditable -->
+  <div id="bas"></div>
+ 
+  </div>
+
+</body>
+</html>

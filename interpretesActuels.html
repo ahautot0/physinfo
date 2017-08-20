@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Interprètes actuels</title>
+  <meta name="description" content="Portraits illustrés de quelques interprètes actuels que j'apprécie particulièrement" />
+  <link rel="shortcut icon" href="logo.ico" />
+  <link href="style.css" rel="stylesheet" type="text/css" /> 
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <script src="js/jquery-1.10.2.js"></script>
+  <script src="js/menus.js"></script>
+  <script src="js/design.js"></script>
+  <script src="js/gestionAudioVideo.js"></script>
+  <script> 
+    // Inclusion Header et Footer + class "active" (pour lien menu)
+    $(function(){
+      $(function(){
+        $.ajax({
+           url: "template/header.php",
+           type: "POST",
+           data: ({ROOT: './'}),
+           success: function(data) {
+             $("#header").html(data);
+             $("#interpretesActuels").addClass("active"); /*a changer en fonction de la page*/
+             update_design_when_header_loaded();
+          }
+        });
+      });
+      $("#miniMenus").load("template/miniMenus.php", { ROOT: './' }, mini_menus_after_loading);
+      $("#footer").load("template/footer.php", { ROOT: './' }, update_design_footer);  
+    });
+  </script> 
+</head>
+
+<body id="site">
+
+    <div>
+        <!-- Inclusion header -->
+        <div id="header"></div>
+
+        <div id="miniMenus"></div>
+
+        <div id="corps">
+
+            <div id="contenuPrincipal">
+                <h2>Interprètes actuels</h2>
+                <h3>Indispensables parce que non échangeables</h3>
+
+                <nav class="filAriane">
+                    <ul>
+                        <li class="breadcrumbItem"><span>Vous êtes ici : </span> Musique</li>
+                        <li class="breadcrumbItem  breadcrumIitem--current">
+                          <a href="chroniques.html">Chroniques</a>
+                        </li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Interprètes actuels</li> <!-- a changer en fonction de la page -->
+                    </ul>
+                </nav>
+
+                <div>
+                    <div id="triOptions" class="choixOptions">
+                        <label for="sortByTri"><span>Trier de</span></label>
+                        <select id="sortByTri" rel="nofollow">
+                            <option value="">la + ancienne à la + récente</option>
+                            <option value="">la + récente à la + ancienne</option>  
+                        </select>
+                    </div>
+                </div>            
+
+                <div>
+                    <ol id="listChroniquesInterpretesActuels" class="gdeListCorps listNumber">
+                        <li class="THinterpretesActuels"><a href="chroniques/inmemoriam.html">In memoriam Richard Hickox &amp; Vernon Handley</a><small> (04/01/2009, rév. 18/07/2014) </small></li>
+                        <li class="THinterpretesActuels"><a href="chroniques/arpeggiata.html">Arpeggiata</a><small> (07/06/2010, rév. 01/08/2014) </small></li>
+                        <li class="THinterpretesActuels"><a href="chroniques/hamelin.html">Un pianiste indispensable : Marc-André Hamelin</a><small> (10/01/2011, rév. 05/08/2014) </small></li>
+                        <li class="THinterpretesActuels"><a href="chroniques/postmoderne.html">Ralph van Raat, un pianiste postmoderne</a><small> (03/02/2011, rév. 05/08/2014) </small></li>
+                        <li class="THinterpretesActuels"><a href="chroniques/ducros.html">Nouvelle  vague en musique française : Jérôme Ducros</a><small> (22/06/2011, rév. 08/08/2014)</small></li>
+                        <li class="THinterpretesActuels"><a href="chroniques/armida.html">Place aux jeunes : le Quatuor Armida</a><small> (01/08/2015) </small></li>
+                        <li class="THinterpretesActuels"><a href="chroniques/poemeharmonique.html">Le Poème Harmonique</a><small> (15/05/2016)</small></li>
+                    </ol>
+                </div>
+            </div>
+
+
+            <a id="ancreRetourHautPage" href="#site">&uarr;</a>
+
+            <!-- Inclusion footer -->
+            <div id="footer"></div>
+
+        </div>
+    
+    
+    </div>
+
+    <script src="js/chroniques.js"></script>
+</body>
+
+</html>

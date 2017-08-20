@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Feynmania | Hommage à Feynmann</title>
+  <meta name="description" content="Un hommage à Richard Feynman au travers d'une adaptation de son légendaire Lumière et Matière" />
+  <link rel="shortcut icon" href="logo.ico" />
+  <link href="style.css" rel="stylesheet" type="text/css" /> 
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <script src="js/jquery-1.10.2.js"></script>
+  <script src="js/menus.js"></script>
+  <script src="js/design.js"></script>
+  <script src="js/gestionAudioVideo.js"></script>
+  <script> 
+    // Inclusion Header et Footer + class "active" (pour lien menu)
+    $(function(){
+      $(function(){
+        $.ajax({
+           url: "template/header.php",
+           type: "POST",
+           data: ({ROOT: './'}),
+           success: function(data) {
+             $("#header").html(data);
+             $("#feynmania").addClass("active"); /*a changer en fonction de la page*/
+             update_design_when_header_loaded();
+          }
+        });
+      });
+      $("#miniMenus").load("template/miniMenus.php", { ROOT: './' }, mini_menus_after_loading);
+      $("#footer").load("template/footer.php", { ROOT: './' }, update_design_footer);  
+    });
+  </script> 
+</head>
+
+<body id="site">
+
+    <div>
+        <!-- Inclusion header -->
+        <div id="header"></div>
+
+        <div id="miniMenus"></div>
+
+        <div id="corps">
+
+            <div id="contenuPrincipal">
+                <h2>Feynmania</h2>
+                <h3>Hommage à un (très) grand physicien</h3>
+
+                <nav class="filAriane">
+                    <ul>
+                        <li class="breadcrumbItem"><span>Vous êtes ici : </span> Physique</li>
+                        <li class="breadcrumbItem  breadcrumIitem--current">
+                          <a href="feynmania.html">Feynmania</a>
+                        </li>
+                      
+                    </ul>
+                </nav>
+
+                <div class="blocImgFirstAndText">
+                  <div class="conteneurImageSeule">
+                      <div>
+                          <figure>
+                              <img src="Feynmania/feynman.jpg" alt="Richard Feynman"/>
+                              <figcaption>Richard Feynman</figcaption>
+                          </figure>
+                      </div>
+                  </div>
+  
+                  <p>Si, de l'avis sans doute unanime, Albert Einstein est le plus grand physicien du 20<sup>ème</sup> siècle, <a href="http://www.feynmanonline.com/">Richard Feynman</a> apparaît comme le plus irremplaçable.</p> 
+                  <p>La nuance vaut une explication. Sans minimiser le moins du monde le génie d'Einstein, il est juste de dire que la théorie de la relativité aurait vu le jour même s'il n'avait pas existé. Poincaré, par exemple, était près du but et sans lui d'autres encore auraient suivi.</p> 
+                  <p>Les travaux de Feynman, essentiellement relatifs à l'électrodynamique quantique, ne sont ni plus ni moins essentiels que la relativité, ma remarque situe le débat ailleurs précisément parce que Feynman n'est échangeable contre aucun autre physicien.</p> 
+                  <p>Les qualités pédagogiques de ses exposés ne sont plus à louer mais surtout, sa capacité à surprendre était illimitée : il avait toujours un point de vue inattendu sur les phénomènes qu'il étudiait. Enfin, son <a href="http://nobelprize.org/nobel_prizes/physics/laureates/1965/feynman-lecture.html">discours Nobel</a> est un modèle d'honnêteté intellectuelle et de lucidité quant à ce que devrait être une théorie physique et qu'elle est parfois loin d'être !</p> 
+                  <p>Voici une adaptation personnelle de ses remarquables exposés destinés au grand public (hum !) :</p> 
+                  <p><a href="Feynmania/lumierematiere.pdf">Lumière et matière.pdf</a></p> 
+                  <p>Les 4 conférences originales de Feynman sont disponibles en vidéo à l'adresse suivante : <a href="http://www.vega.org.uk/video/subseries/8">http://www.vega.org.uk/video/subseries/8</a></p>
+                </div>
+            </div>
+
+
+            <a id="ancreRetourHautPage" href="#site">&uarr;</a>
+
+            <!-- Inclusion footer -->
+            <div id="footer"></div>
+
+        </div>
+    
+    </div>
+
+</body>
+</html>

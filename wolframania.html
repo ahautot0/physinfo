@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Wolframania | Mathematica etc</title>
+  <meta name="description" content="Stephen Wolfram est le père de Mathematica mais aussi d'un ouvrage 'A New kind of Science' qui propose une relecture digitale de quelques grands thèmes physico-matématiques" />
+  <link rel="shortcut icon" href="logo.ico" />
+  <link href="style.css" rel="stylesheet" type="text/css" /> 
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <script src="js/jquery-1.10.2.js"></script>
+  <script src="js/menus.js"></script>
+  <script src="js/design.js"></script>
+  <script src="js/gestionAudioVideo.js"></script>
+  <script> 
+    // Inclusion Header et Footer + class "active" (pour lien menu)
+    $(function(){
+      $(function(){
+        $.ajax({
+           url: "template/header.php",
+           type: "POST",
+           data: ({ROOT: './'}),
+           success: function(data) {
+             $("#header").html(data);
+             $("#wolframania").addClass("active"); /*a changer en fonction de la page*/
+             update_design_when_header_loaded();
+          }
+        });
+      });
+      $("#miniMenus").load("template/miniMenus.php", { ROOT: './' }, mini_menus_after_loading);
+      $("#footer").load("template/footer.php", { ROOT: './' }, update_design_footer);  
+    });
+  </script> 
+</head>
+
+<body id="site">
+
+    <div>
+        <!-- Inclusion header -->
+        <div id="header"></div>
+
+        <div id="miniMenus"></div>
+
+        <div id="corps">
+
+            <div id="contenuPrincipal">
+                <h2>Wolframania</h2>
+                <h3>De Mathematica à NKS (A New Kind of Science)</h3>
+
+                <nav class="filAriane">
+                    <ul>
+                        <li class="breadcrumbItem"><span>Vous êtes ici : </span> Physique</li>
+                        <li class="breadcrumbItem  breadcrumIitem--current">
+                          <a href="wolframania.html">Wolframania</a>
+                        </li>
+                       
+                    </ul>
+                </nav>  
+
+                <div class="blocImgFirstAndText">
+                  <div class="conteneurImageSeule">
+                      <div>
+                          <figure>
+                              <img src="images/wolfram.jpg" alt="Stephen Wolfram"/>
+                              <figcaption>Stephen Wolfram</figcaption>
+                          </figure>
+                      </div>
+                  </div>
+
+                  <p>Physicien, Stephen Wolfram est surtout connu comme concepteur du logiciel de calcul formel, Mathematica. Il est également à la base du projet A New Kind of Science (NKS) dont la philosophie est exposée dans l'ouvrage fondateur du même nom (accessible gratuitement en lecture électronique <a href="http://www.wolframscience.com/nksonline/toc.html">ici</a>). Le Wolfram Demonstration Project regroupe des applications interactives consultables sur le site de Wolfram ou  sur n'importe quel site qui les relaie. La consultation en ligne requiert une licence Mathematica ou, à défaut, le téléchargement préalable et entièrement gratuit du logiciel CDF (télécharger <a href="http://www.wolfram.com/cdf-player/">ici</a>).</p>
+
+                  <div id="comportementAutomatesCellulaires">
+                    <h4>Comportements des automates cellulaires élémentaires</h4>
+                  
+                    <script type="text/javascript" src="http://demonstrations.wolfram.com/javascript/embed.js" ></script>
+                    <script type="text/javascript" id="DEMO_CellularAutomatonExplorer">var demoObj = new DEMOEMBED(); demoObj.run("CellularAutomatonExplorer", "", "687", "645");</script>
+                    <div><a class="demonstrationHyperlink" href="http://demonstrations.wolfram.com/CellularAutomatonExplorer/" target="_blank">Cellular Automaton Explorer</a> from the <a class="demonstrationHyperlink" href="http://demonstrations.wolfram.com/" target="_blank">Wolfram Demonstrations Project</a> by Stephen Wolfram</div>
+                  </div>
+
+                  <div id="fonctionnementMachineTuring">
+                    <h4>Fonctionnement de la machine de Turing universelle (3,2) de Wolfram</h4>
+                  
+                    <script type="text/javascript" src="http://demonstrations.wolfram.com/javascript/embed.js" ></script>
+                    <script type="text/javascript" id="DEMO_TheWolfram23TuringMachineWithRandomConditions">var demoObj = new DEMOEMBED(); demoObj.run("TheWolfram23TuringMachineWithRandomConditions", "", "629", "405");</script>
+                    <div><a class="demonstrationHyperlink" href="http://demonstrations.wolfram.com/TheWolfram23TuringMachineWithRandomConditions/" target="_blank">The Wolfram 2,3 Turing Machine with Random Conditions</a> from the <a class="demonstrationHyperlink" href="http://demonstrations.wolfram.com/" target="_blank">Wolfram Demonstrations Project</a> by Jesse Nochella</div>
+                  </div>
+
+                  <div id="liste1936MachinesTuring">
+                    <h4>Liste des 1936 premières machines binaires élégantes de Turing</h4>
+                  
+                    <script type='text/javascript' src='http://demonstrations.wolfram.com/javascript/embed.js' ></script>
+                    <script type='text/javascript'>var demoObj = new DEMOEMBED(); demoObj.run('TheFirst1936ElegantBinaryTuringMachines', '', '541', '445');</script>
+                    <div id='DEMO_TheFirst1936ElegantBinaryTuringMachines'><a class='demonstrationHyperlink' href='http://demonstrations.wolfram.com/TheFirst1936ElegantBinaryTuringMachines/' target='_blank'>The First 1936 Elegant Binary Turing Machines</a> from the <a class='demonstrationHyperlink' href='http://demonstrations.wolfram.com/' target='_blank'>Wolfram Demonstrations Project</a> by André Hautot</div>
+                  </div>
+                </div>
+            </div>
+
+
+            <a id="ancreRetourHautPage" href="#site">&uarr;</a>
+
+            <!-- Inclusion footer -->
+            <div id="footer"></div>
+
+        </div>  
+    
+    </div>
+
+</body>
+</html>

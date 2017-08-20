@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Billets d'humeur</title>
+  <meta name="description" content="Vous cherchez à comprendre le point de vue constructiviste en sciences ou vous cherchez des musiques rares ou contemporaines, vous êtes à la bonne adresse!" />
+  <link rel="shortcut icon" href="logo.ico" />
+  <link href="style.css" rel="stylesheet" type="text/css" /> 
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <script src="js/jquery-1.10.2.js"></script>
+  <script src="js/menus.js"></script>
+  <script src="js/design.js"></script>
+  <script src="js/gestionAudioVideo.js"></script>
+  <script> 
+    // Inclusion Header et Footer + class "active" (pour lien menu)
+    $(function(){
+      $(function(){
+        $.ajax({
+           url: "template/header.php",
+           type: "POST",
+           data: ({ROOT: './'}),
+           success: function(data) {
+             $("#header").html(data);
+             $("#billetdhumeur").addClass("active"); /*a changer en fonction de la page*/
+             update_design_when_header_loaded();
+          }
+        });
+      });
+      $("#miniMenus").load("template/miniMenus.php", { ROOT: './' }, mini_menus_after_loading);
+      $("#footer").load("template/footer.php", { ROOT: './' }, update_design_footer);  
+    });
+  </script> 
+</head>
+
+<body id="site">
+
+    <div>
+        <!-- Inclusion header -->
+        <div id="header"></div>
+
+        <div id="miniMenus"></div>
+
+        <div id="corps">
+
+            <div id="contenuPrincipal">
+                <h2>Billets d'humeur</h2>
+                <h3>Textes d'opinions humoristiques souvent satiriques</h3>
+
+                <nav class="filAriane">
+                    <ul>
+                        <li class="breadcrumbItem"><span>Vous êtes ici : </span> Musique</li>
+                        <li class="breadcrumbItem  breadcrumIitem--current">
+                          <a href="chroniques.html">Chroniques</a>
+                        </li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Billets d'Humeur</li>
+                    </ul>
+                </nav>  
+  
+  <h2>Hasard et probabilités.</h2>
+  
+  <p>Le calcul des probabilités a connu une histoire tumultueuse, mathématiciens et physiciens  revendiquant simultanément ce domaine comme appartenant de fait à leur science. Le problème était moins sensible  à l'époque des Bernouilli, Fermat, Laplace, ..., car on ne faisait guère de différence entre être physicien ou mathématicien. Lorsque une sorte de divorce s'installa, au 19ème siècle, les mathématiciens se désintéresèrent du sujet au motif que les traités de probabilités ne pouvaient apparemment se passer d'évoquer les lancers de dés, de mouvements compliqués de roulettes de casino, etc, tous dispositifs incontestablement physiques dont le comportement n'était admis aléatoire que parce qu'ils sont chaotiques. Dans les années 1900, le cours de probabilité fait d'ailleurs souvent partie du cours de physique !</p>
+  <p>Les choses ont changé au 20ème siècle sou l'impulsion de Kolmogorov qui a formalisé la notion de probabilité en l'affranchissant de son attirail physique encombrant. D'un strict point de vue opérationnel ,la question centrale est ceklle de savoir si vou acceptez de jouer à un jeu de hasard équitable lorsque ce hasard est piloté par un système physique donné. Autrement dit, à quel système êtes-vous prêt à faire confiance ?</p>
+  <p>Les physiciens distinguent habituellement le hasard du pseudo-hasard. Selon eux, le hasard vrai n'intervient que dans le monde quantique. Lorsqu'une pluie de photons tombe au compte-goutes sur une lame semi-transparente, inclinée à 45°, les deux détecteurs situés en aval enregistrent l'arrivée des photons aléatoirement. Autrement dit, si l'on code par 0 et par 1 les détections au niveau de D0 et de D1, la suite binaire construite est aléatoire : aucun programme substanciellement plus court que &quot;Print 00010101111010...&quot; ne peut imprimer la suite observée.</p>
+  <p>les mathématiciens sont longtemps demeurés méfiants vis-à-vis du calcul des probabilités et ils eurent leurs raisons : aucun domaine des sciences n'est davantage sujet aux interprétations douteuses  débouchant sur des paradoxes perturbants.
+  les raisons sont multiples : </p>
+  <p>- le calcul des probabilités n'échappe pas à la tautologie initiale. On présuppose trop souvent - faute de mieux ? - et  à tort l'équiprobabilité des épreuves et cela donne le paradoxe de Bertrand.</p>
+  <p>- on y introduit des hypothèses impossible à tenir dans un cadre axiomatique inexistant. Ce cadre existe aujourd'hui.</p>
+  <p>- on invoque abusivement une notion de probabilité là où elle n'a aucune raison d'être(Quelle est la probabilité que les martiens sopient verts ?). On confond encore trop souvent probabilité (au sens fréquenciste du terme) et vraisemblabilité (au sens de la théorie de Bayes). Actuellement même en mécanique quantique, une école a pris naissance prête à adopter le point de vue (subjectiviste !) de Bayes considéré comme  plus sain. </p>
+  
+  
+  <p>La notion de jeu équitable propose un critère subjectif décision du caractère aléatoire d'une suite binaire. Envoyer des photons au compte-goutes sur une lame semi-transparente constitue le meilleur moyen connu de générer une suite binaire aléatoire garantissant un jeu équitable à mises égales.  Cependant les jeux de casino utilisent des génératurs classiques fondé sur la notion de chaos dynamique. A première vue on ne devrait accorder aucune confiance à un procédé de ce type au motif que </p>
+  
+  <!-- TemplateEndEditable -->
+  <div id="bas"></div>
+ 
+  </div>
+
+</body>
+</html>

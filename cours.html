@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Cours | Accélération de la Convergence en Analyse Numérique</title>
+  <meta name="description" content="Leçons sur l'accélération de la convergence numérique" />
+  <link rel="shortcut icon" href="logo.ico" />
+  <link href="style.css" rel="stylesheet" type="text/css" /> 
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <script src="js/jquery-1.10.2.js"></script>
+  <script src="js/menus.js"></script>
+  <script src="js/design.js"></script>
+  <script src="js/gestionAudioVideo.js"></script>
+  <script> 
+    // Inclusion Header et Footer + class "active" (pour lien menu)
+    $(function(){
+      $(function(){
+        $.ajax({
+           url: "template/header.php",
+           type: "POST",
+           data: ({ROOT: './'}),
+           success: function(data) {
+             $("#header").html(data);
+             $("#cours").addClass("active"); /*a changer en fonction de la page*/
+             update_design_when_header_loaded();
+          }
+        });
+      });
+      $("#miniMenus").load("template/miniMenus.php", { ROOT: './' }, mini_menus_after_loading);
+      $("#footer").load("template/footer.php", { ROOT: './' }, update_design_footer);  
+    });
+  </script> 
+</head>
+
+<body id="site">
+
+    <div>
+        <!-- Inclusion header -->
+        <div id="header"></div>
+
+        <div id="miniMenus"></div>
+
+        <div id="corps">
+
+            <div id="contenuPrincipal">
+                <h2>Cours</h2>
+                <h3>Accélération de la Convergence en Analyse Numérique</h3>
+
+                <nav class="filAriane">
+                    <ul>
+                        <li class="breadcrumbItem"><span>Vous êtes ici : </span> Physique</li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Cours</li>
+                    </ul>
+                </nav>
+  
+                <div>
+                  <span class="spanRemplaceP">(Notes du Cours enseigné aux Etudiants de Terminale en Science Physique à l'Université de Liège)</span>
+
+                  <ul class="listCenterWithDots">
+                    <li><a href="Acc_Conv/Titre.pdf">Titre</a></li>
+                    <li><a href="Acc_Conv/Acc_Conv_Part1.pdf">Théorie des Récurrences</a></li>
+                    <li><a href="Acc_Conv/Acc_Conv_Part2.pdf">Leçons sur les Fractions Continues</a></li>
+                    <li><a href="Acc_Conv/Acc_Conv_Part3.pdf">Leçons sur les Approximants de Padé</a></li>
+                    <li><a href="Acc_Conv/Acc_Conv_Part4.pdf">Les algorithmes d'Accélération de la Convergence des Suites</a></li>
+                    <li><a href="Acc_Conv/Acc_Conv_Part5.pdf">Applications diverses </a></li>
+                  </ul>
+
+                  <span class="spanRemplaceP"><a href="Acc_Conv/Acc_Conv_complet.rar">Cours complet</a></span>
+                </div>
+            </div>
+
+
+            <!-- <a id="ancreRetourHautPage" href="#site">&uarr;</a> -->
+
+            <!-- Inclusion footer -->
+            <div id="footer"></div>
+
+        </div>
+    
+    
+    </div>
+
+</body>
+</html>

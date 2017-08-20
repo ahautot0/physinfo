@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Billets d'humeur</title>
+  <meta name="description" content="Vous cherchez à comprendre le point de vue constructiviste en sciences ou vous cherchez des musiques rares ou contemporaines, vous êtes à la bonne adresse!" />
+  <link rel="shortcut icon" href="logo.ico" />
+  <link href="style.css" rel="stylesheet" type="text/css" /> 
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <script src="js/jquery-1.10.2.js"></script>
+  <script src="js/menus.js"></script>
+  <script src="js/design.js"></script>
+  <script src="js/gestionAudioVideo.js"></script>
+  <script> 
+    // Inclusion Header et Footer + class "active" (pour lien menu)
+    $(function(){
+      $(function(){
+        $.ajax({
+           url: "template/header.php",
+           type: "POST",
+           data: ({ROOT: './'}),
+           success: function(data) {
+             $("#header").html(data);
+             $("#billetdhumeur").addClass("active"); /*a changer en fonction de la page*/
+             update_design_when_header_loaded();
+          }
+        });
+      });
+      $("#miniMenus").load("template/miniMenus.php", { ROOT: './' }, mini_menus_after_loading);
+      $("#footer").load("template/footer.php", { ROOT: './' }, update_design_footer);  
+    });
+  </script> 
+</head>
+
+<body id="site">
+
+    <div>
+        <!-- Inclusion header -->
+        <div id="header"></div>
+
+        <div id="miniMenus"></div>
+
+        <div id="corps">
+
+            <div id="contenuPrincipal">
+                <h2>Billets d'humeur</h2>
+                <h3>Textes d'opinions humoristiques souvent satiriques</h3>
+
+                <nav class="filAriane">
+                    <ul>
+                        <li class="breadcrumbItem"><span>Vous êtes ici : </span> Musique</li>
+                        <li class="breadcrumbItem  breadcrumIitem--current">
+                          <a href="chroniques.html">Chroniques</a>
+                        </li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Billets d'Humeur</li>
+                    </ul>
+                </nav>  
+  
+  <h2>Références.</h2>
+  
+  <div><img src="images/ahautot.jpg"/></div> <p>Vous visitez le site de André Hautot, Dr. en Physique de l'Université de Liège (Belgique). </p> <p>Contact : ahautot@physinfo.org.</p>
+  
+  
+   
+    
+   
+  <p>Quelques explications sur le bandeau de présentation du site qui vous a peut-être intrigué.  Il se compose d'un mandala d'inspiration astronomique, d'un arbre en rapport avec la conjecture de Collatz et du début de la Grande Fugue de Beethoven.</p>
+  
+ 
+  
+  
+      
+  <div><img src="images/mandala.jpg"/></div> <p>Un mandala est, strictement parlant, un motif graphique indou compliqué dont la signification caballistique échappe aux communs des occidentaux. Par extension, on nomme encore ainsi les trajectoires dessinées par des planètes, pendant des millénaires, dans le plan de l'écliptique.  Elles sont représentées, à gauche du bandeau, telles que vues de la terre, en dominantes rouge et bleue (Mars et Mercure, respectivement).  </p>
+  <p>(D'après un projet de Jeff Bryant dans le cadre du <a href="http://demonstrations.wolfram.com/SolarSystemMandalas/">"Wolfram Demonstrations Project"</a>)</p>
+  
+ 
+ 
+ 
+ <p> La conjecture de Collatz affirme que le petit programme suivant se termine toujours :</p>
+ 
+ <div>Sélectionner un entier positif, aussi grand que l'on veut :</div>
+ <div>Si ce nombre est pair, le diviser par 2, sinon le multiplier par 3 et ajouter 1,</div>
+ <div>Recommencer la manoeuvre avec le nouveau nombre obtenu,</div>
+ <div>Arrêter le calcul dès qu'on retombe sur l'entier, 1.</div>
+  
+<p> Par exemple, le programme s'arrête si on part de l'entier, 17. Vérification :</p>
+
+<p>17-52-26-13-40-20-10-5-16-8-4-2-1</p>
+
+<p>Aussi invraisemblable que cela puisse paraître, on ne possède toujours pas de démonstration (ou de réfutation) de cette proposition d'arithmétique élémentaire et ce n'est pas faute d'avoir cherché ! </p>
+
+<p>Un procédé d'investigation possible consiste à travailler à l'envers : partir de 1 et remonter l'arborescence des entiers qui ont pu produire les entiers précédents.  Par exemple, 1 ne peut provenir que de 2, 2 ne peut provenir que de 4, 4 ne peut provenir que de 8 et 8 ne peut provenir que de 16.  Après cela se complique : 16 peut provenir de 32 mais il peut aussi provenir de 5 (car 3x5+1=16).  Continuez ainsi, vous verrez qu'avec un peu de persévérance, tous les entiers disons inférieurs à 100 finissent par apparaître. Ce que la conjecture de Collatz affirme, c'est précisément que tous les entiers sans exception finiront par apparaître. Le bandeau révèle la position de 1705 dans l'arbre.</p>
+
+<p>(D'après un projet de Jesse Nochella dans le cadre du <a href="http://demonstrations.wolfram.com/CollatzPaths/">"Wolfram Demonstrations Project"</a>)</p>
+
+<p>Si vous voulez en apprendre davantage sur ce genre de questions, reportez-vous aux séminaires sur la Tétralogique, disponibles sur ce site. </p>
+
+  
+<p> D'une éternelle modernité, la "Grande Fugue" pour quatuors à cordes de Beethoven est un des sommets de la musique occidentale, conciliant les exigences de l'harmonie, du contrepoint et du développement.  On n'a jamais fait mieux et on doute que cela soit possible.</p>
+
+ 
+   
+  <p>Sites de références  en sciences exactes :
+
+<p><a href="http://www.wolframscience.com/">http://www.wolframscience.com/</a>
+Le site de Stephen Wolfram, de NKS (A New Kind of Science) & de Mathematica. </p>
+
+<p><a href="http://mathworld.wolfram.com/">http://mathworld.wolfram.com/</a>
+Une encyclopédie mathématique en ligne.</p>
+<p><a href="http://www.mathpages.com/">http://www.mathpages.com/</a>
+  Un site étonnant tenu par Kevin Brown concernant des problèmes de mathématiques et de physique, tous vus par l'autre bout de la lorgnette.</p>
+<p><a href="http://www.cs.auckland.ac.nz/~chaitin/">http://www.cs.auckland.ac.nz/~chaitin/</a>
+  Le site personnel de Greg Chaitin, un mathématicien pas comme les autres.</p>
+<p><a href="http://motionmountain.dse.nl/">http://motionmountain.dse.nl/</a>
+   A free physics textbook par Christoph Schiller.</p>
+<p><a href="http://www2.lifl.fr/~delahaye/">http://www2.lifl.fr/~delahaye/ </a>Le site personnel de Jean Paul Delahaye, bien connu des lecteurs de "Pour la Science".
+  
+  
+
+ 
+ 
+  
+<p>Sites musicaux :</p>
+
+<p><a href="http://jmomusique.skynetblogs.be/">http://jmomusique.skynetblogs.be/</a>  Le blog de Jean-Marc Onkelinx, musicologue liégeois.</p>
+<p><a href="http://frederic-rossille.net/keyw_fr.html">http://frederic-rossille.net/keyw_fr.html</a>  Le site de Frédéric Rossille, chercheur et musicien français. </p>
+
+  
+<p>Sites commerciaux :</p>
+
+<p><a href="http://www.naxos.com/">http://www.naxos.com/</a>
+Pour 15 euros OU 15 $ par an, vous accédez, en écoute intégrale, au catalogue complet, non seulement du label Naxos mais aussi de BIS, Da Capo, Capriccio, Marco Polo, Ondine et d'autres de moindre importance.</p>
+
+<p><a href="http://www.jpc.de/jpcng/classic/browse">http://www.jpc.de/jpcng/classic/browse</a>
+Un site allemand de vente par correspondance, vraiment pas cher, sérieux et riche en références.  </p>
+              </div>
+
+
+            <a id="ancreRetourHautPage" href="#site">&uarr;</a>
+
+            <!-- Inclusion footer -->
+            <div id="footer"></div>
+
+        </div>
+    
+    
+    </div>
+
+    <script src="js/chroniques.js"></script>
+
+</body>
+</html>

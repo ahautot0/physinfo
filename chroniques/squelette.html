@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Tour du monde | Allemagne</title>
+  <meta name="description" content="Vous cherchez à comprendre le point de vue constructiviste en sciences ou vous cherchez des musiques rares ou contemporaines, vous êtes à la bonne adresse!" />
+  <link rel="shortcut icon" href="../logo.ico" />
+  <link href="../style.css" rel="stylesheet" type="text/css" /> 
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+  <script src="../js/jquery-1.10.2.js"></script>
+  <script src="../js/design.js"></script>
+  <script> 
+    // Inclusion Header et Footer
+    $(function(){
+      $(function(){
+        $.ajax({
+           url: "../template/header.html",
+           dataType: "html",
+           success: function(data) {
+             $("#header").html(data);
+             $("#tourdumonde").addClass("active"); /*a changer en fonction de la page*/
+          }
+        });
+      });
+      $("#footer").load("../template/footer.html", update_design); 
+    });
+  </script> 
+</head>
+
+<body>
+
+    <div id="site">
+        <!-- Inclusion header -->
+        <div id="header"></div>
+
+        <nav class="menuLateralAncres">
+            <ul>
+                <li>
+                    <a id="ancreMoyenAge" href="#moyenAge" class="linavMenu active">
+                    <span>Le Moyen-Age</span>
+                    </a>
+            </li>
+                <li>
+                    <a id="ancreRenaissance" href="#renaissance" class="linavMenu">
+                    <span>La Renaissance</span>
+                    </a>
+            </li>
+                <li>
+                    <a id="ancreEnvolBaroque" href="#envolBaroque" class="linavMenu">
+                    <span>L'envol baroque</span>
+                    </a>
+            </li>
+                <li>
+                    <a id="ancrePreClassique" href="#preClassique" class="linavMenu">
+                    <span>L'époque (pré)classique</span>
+                    </a>
+            </li>
+                <li>
+                    <a id="ancreRomantismeMusicalAllemand" href="#romantismeMusicalAllemand" class="linavMenu">
+                    <span>Le Romantisme musical allemand</span>
+                    </a>
+            </li>
+                <li>
+                    <a id="ancreModernismeMusicalAllemand" href="#modernismeMusicalAllemand" class="linavMenu">
+                    <span>Le modernisme musical allemand ou l'histoire d'un déclin programmé</span>
+                    </a>
+            </li>
+                <li>
+                    <a id="ancreQuelquesExpatries" href="#quelquesExpatries" class="linavMenu">
+                    <span>Quelques expatriés</span>
+                    </a>
+            </li>
+                <li>
+                    <a id="ancreVieMusicaleAllemande" href="#vieMusicaleAllemande" class="linavMenu">
+                    <span>Vie musicale allemande</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>        
+        
+        <div id="corps">
+
+            <div id="contenuPrincipal">
+                <h2>Tour du monde</h2>
+                <h3>Allemagne</h3>
+
+                <nav class="filAriane">
+                    <ul>
+                        <li class="breadcrumbItem"><span>Vous êtes ici : </span> Musique</li>
+                        <li class="breadcrumbItem">
+                          <a href="../chroniques.html">Chroniques</a>
+                        </li>
+                        <li class="breadcrumbItem">
+                          <a href="../tourdumondedemusiqueactuelle.html">Tour du monde</a>
+                         </li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Allemagne</li>
+                    </ul>
+                </nav>  
+
+                <div class="sommaire">
+                    <div class="sommaireTitle">
+                        <h6>Sommaire</h6>
+                        <a role="button" tabindex="0" class="sommaireLink">[ afficher ]</a>
+                    </div>
+
+                    <ul class="linksSummary">
+                        <li><a href="#moyenAge">Le Moyen-Age</a></li>
+                        <li><a href="#renaissance">La Renaissance</a></li>
+                        <li><a href="#envolBaroque">L'envol baroque</a></li>
+                        <li><a href="#preClassique">L'époque (pré)classique</a></li>
+                        <li><a href="#romantismeMusicalAllemand">Le Romantisme musical allemand</a></li>
+                        <li><a href="#modernismeMusicalAllemand">Le modernisme musical allemand ou l'histoire d'un déclin programmé</a></li>
+                        <li><a href="#quelquesExpatries">Quelques expatriés</a></li>
+                        <li><a href="#vieMusicaleAllemande">Vie musicale allemande</a></li>
+                    </ul>
+                </div>
+
+                <div class="blocImgFirstAndText">
+
+                  <div class="conteneurImageSeule">
+                      <div>
+                          <figure>
+                              <img src="../images/allemagne/allemagne.jpg" alt="Allemagne"/>
+                              <figcaption>Allemagne</figcaption>
+                          </figure>
+                      </div>
+                  </div>
+    
+            
+                  
+                  <div id="moyenAge">
+                    <h4>Le Moyen-Age</h4>
+                  </div>
+
+                  <div id="renaissance">
+                    <h4>La Renaissance</h4></div>
+                 
+
+                  <div id="envolBaroque">
+                    <h4>L'envol baroqueL'époque (pré)classique</h4></div>
+
+                  <div id="preClassique"></div>
+
+                  
+                  <div id="romantismeMusicalAllemand">
+                    <h4>Le Romantisme musical allemand</h4></div>
+
+                  
+
+                  <div id="modernismeMusicalAllemand">
+                    <h4>Le modernisme musical allemand ou l'histoire d'un déclin programmé</h4>
+                    
+                    <h5 class="espaceTextConsequent">1. Avant 1945</h5>
+
+                    <h5 class="espaceTextConsequent">2. Après 1945, entre tradition et expérimentation, ...</h5>
+
+                   <h5 class="espaceTextConsequent">3. ... jusqu'à ce jour, entre nouvelle simplicité et nouvellle complexité.</h5>
+                   </div>
+
+
+
+                  <div id="quelquesExpatries">
+                    <h4>Quelques expatriés</h4></div>
+
+      
+                  <div id="vieMusicaleAllemande">
+                    <h4>Vie musicale allemande</h4></div>
+                   
+
+                   
+				        </div>
+            </div>
+
+
+            <a id="ancreRetourHautPage" href="#site">&uarr;</a>
+
+            <!-- Inclusion footer -->
+            <div id="footer"></div>
+
+        </div>
+		
+    
+</div>
+
+    <!-- Effet smooth ancres -->
+    <script src="../js/onclick.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,291 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Tour du monde | Un voyage en musiques</title>
+  <meta name="description" content="Histoire de la musique déclinée par pays d'origine" />
+  <link rel="shortcut icon" href="logo.ico" />
+  <link href="style.css" rel="stylesheet" type="text/css" /> 
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <script src="js/jquery-1.10.2.js"></script>
+  <script src="js/menus.js"></script>
+  <script src="js/design.js"></script>
+  <script src="js/gestionAudioVideo.js"></script>
+  <script> 
+    // Inclusion Header et Footer + class "active" (pour lien menu)
+    $(function(){
+      $(function(){
+        $.ajax({
+           url: "template/header.php",
+           type: "POST",
+           data: ({ROOT: './'}),
+           success: function(data) {
+             $("#header").html(data);
+             $("#tourdumonde").addClass("active"); /*a changer en fonction de la page*/
+             update_design_when_header_loaded();
+          }
+        });
+      });
+      $("#miniMenus").load("template/miniMenus.php", { ROOT: './' }, mini_menus_after_loading);
+      $("#footer").load("template/footer.php", { ROOT: './' }, update_design_footer);  
+    });
+  </script> 
+</head>
+
+<body id="site">
+
+    <div>
+        <!-- Inclusion header -->
+        <div id="header"></div>
+
+        <div id="miniMenus"></div>
+
+        <div id="corps">
+
+            <div id="contenuPrincipal">
+                <h2>Tour du monde de la musique</h2>
+                <h3>Un voyage en musiques</h3>
+
+                <nav class="filAriane">
+                    <ul>
+                        <li class="breadcrumbItem"><span>Vous êtes ici : </span> Musique</li>
+                        <li class="breadcrumbItem  breadcrumIitem--current">
+                          <a href="chroniques.html">Chroniques</a>
+                        </li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Tour du monde</li>
+                    </ul>
+                </nav>
+
+                <div>
+                    <div id="triOptions" class="choixOptions">
+                        <label for="sortByTri"><span>Trier de</span></label>
+                        <select id="sortByTri" rel="nofollow">
+                            <option value="">la + ancienne à la + récente</option>
+                            <option value="">la + récente à la + ancienne</option>  
+                        </select>
+                    </div>
+
+                    <div id="filtreOptionsOrdreAlpha" class="choixOptions">
+                        <label for="sortByFiltreOrdreAlpha"><span>Filtrer par ordre alphabétique</span></label>
+                        <select id="sortByFiltreOrdreAlpha" rel="nofollow">
+                            <option value="defaut">défaut</option>
+                            <option value="croissant">croissant</option>
+                            <option value="decroissant">décroissant</option>
+                        </select>
+                    </div>
+
+                    <div id="affichageGalerieOuListe" class="choixOptions">
+                      <label><span>Affichage en</span></label>
+                        <figure>
+                          <a href="#" id="iconeGalerie" onClick="changeClassProduits(this.id); return false;">
+                            <img src="images/affichageEnGalerie.png" title="galerie d'images" alt="galerie d'images">
+                          </a>
+                        </figure>
+                        <figure>
+                          <a href="#" id="iconeListe" onClick="changeClassProduits(this.id); return false;">
+                            <img src="images/affichageEnListe.png" title="liste" alt="liste">
+                          </a>
+                        </figure>
+                    </div>
+                </div>            
+
+                <div>
+                    <ol id="listChroniquesTourMonde" class="gdeListCorps listNumber">
+                        <li class="THtourMonde">
+                          <a href="chroniques/estonie.html">
+                            <img src="images/estonie/estonie1.jpg" alt="estonie">
+                            Estonie
+                          </a>
+                          <small> (01/04/2008, rév. 04/07/2014) </small>
+                        </li>
+                        <li class="THtourMonde">
+                          <a href="chroniques/finlande.html">
+                            <img src="images/finlande/finlande1.jpg" alt="finlande">
+                            Finlande
+                          </a>
+                          <small> (27/04/2008, rév. 07/07/2014) </small>
+                        </li>
+                        <li class="THtourMonde">
+                          <a href="chroniques/danemark.html">
+                            <img src="images/danemark/danemark5.jpg" alt="danemark">
+                            Danemark
+                          </a>
+                          <small> (05/08/2008, rév. 10/07/2014) </small>
+                        </li>
+                        <li class="THtourMonde">
+                          <a href="chroniques/suede.html">
+                            <img src="images/suede/suede.jpg" alt="suede">
+                            Suède
+                          </a>
+                          <small> (24/08/08, rév. 11/07/2014) </small>
+                        </li>
+                        <li class="THtourMonde">
+                          <a href="chroniques/norvege.html">
+                            <img src="images/norvege/norvege.jpg" alt="norvege">
+                            Norvège
+                          </a>
+                          <small> (29/08/08, rév. 13/07/2014) </small>
+                        </li>
+                        <li class="THtourMonde">
+                          <a href="chroniques/pologne.html">
+                            <img src="images/pologne/pologne1.jpg" alt="pologne">
+                            Pologne
+                          </a>
+                          <small> (11/12/2008, rév. 17/07/2014) </small>
+                        </li>
+                        <li class="THtourMonde">
+                          <a href="chroniques/lituanie.html">
+                            <img src="images/lituanie/lituanie.jpg" alt="lituanie">
+                            Lituanie
+                          </a>
+                          <small> (11/05/2009, rév. 21/07/2014) </small>
+                        </li>
+                        <li class="THtourMonde">
+                          <a href="chroniques/russie.html">
+                            <img src="images/russie/russie1.jpg" alt="russie">
+                            URSS
+                          </a>
+                          <small> (03/06/2009, rév. 27/07/2014) </small>
+                        </li>
+                        <li class="THtourMonde">
+                          <a href="chroniques/lettonie.html">
+                            <img src="images/lettonie/lettonie.jpg" alt="lettonie">
+                            Lettonie
+                          </a>
+                          <small> (22/06/2009, rév. 27/07/2014) </small>
+                        </li>
+                        <li class="THtourMonde">
+                          <a href="chroniques/hongrie.html">
+                            <img src="images/hongrie/hongrie1.jpg" alt="hongrie">
+                            Hongrie
+                          </a>
+                          <small> (20/01/2010, rév. 30/07/2014)</small>
+                        </li>
+                        <li class="THtourMonde">
+                          <a href="chroniques/roumanie.html">
+                            <img src="images/roumanie/roumanie1.jpg" alt="roumanie">
+                            Roumanie
+                          </a>
+                          <small> (04/03/2010, rév. 30/07/2014)</small>
+                        </li>
+                        <li class="THtourMonde">
+                          <a href="chroniques/tchequie.html">
+                            <img src="images/tchequie/tchequie.jpg" alt="tchequie">
+                            Tchéquie
+                          </a>
+                          <small> (03/08/2010, rév. 03/08/2014)</small>
+                        </li>
+                        <li class="THtourMonde">
+                          <a href="chroniques/slovaquie.html">
+                            <img src="images/slovaquie/slovaquie.jpg" alt="slovaquie">
+                            Slovaquie
+                          </a>
+                          <small> (21/11/2010, rév. 04/08/2014) </small>
+                        </li>
+                        <li class="THtourMonde">
+                          <a href="chroniques/france.html">
+                            <img src="images/france/france1.jpg" alt="france">
+                            France
+                          </a>
+                          <small> (08/08/2011, rév. 08/08/2014) </small>
+                        </li>
+                        <li class="THtourMonde">
+                          <a href="chroniques/paysbas.html">
+                            <img src="images/paysbas/paysbas.jpg" alt="paysbas">
+                            Pays-Bas
+                          </a>
+                          <small> (24/10/2011, rév. 11/08/2014) </small>
+                        </li>
+                        <li class="THtourMonde">
+                          <a href="chroniques/belgique.html">
+                            <img src="images/belgique/belgique.jpg" alt="belgique">
+                            Belgique
+                          </a>
+                          <small> (23/11/2011, rév. 11/08/2014) </small>
+                        </li>
+                        <li class="THtourMonde">
+                          <a href="chroniques/suisse.html">
+                            <img src="images/suisse/suisse.jpg" alt="suisse">
+                            Suisse
+                          </a>
+                          <small> (13/04/2012, rév. 14/08/2014) </small>
+                        </li>
+                        <li class="THtourMonde">
+                          <a href="chroniques/allemagne.html">
+                            <img src="images/allemagne/allemagne.jpg" alt="allemagne">
+                            Allemagne
+                          </a>
+                          <small> (04/01/2013, rév. 17/08/2014) </small>
+                        </li>
+                        <li class="THtourMonde">
+                          <a href="chroniques/italie.html">
+                            <img src="images/italie/italie.jpg" alt="italie">
+                            Italie
+                          </a>
+                          <small> (08/11/2013, rév. 19/08/2014) </small>
+                        </li>
+                        <li class="THtourMonde">
+                          <a href="chroniques/autriche.html">
+                            <img src="images/autriche/autriche.jpg" alt="autriche">
+                            Autriche
+                          </a>
+                          <small> (24/03/2014, rév. 20/08/2014) </small>
+                        </li>
+                        <li class="THtourMonde">
+                          <a href="chroniques/portugal.html">
+                            <img src="images/portugal/portugal.jpg" alt="portugal">
+                            Portugal
+                          </a>
+                          <small> (25/06/2014, rév. 20/08/2014) </small>
+                        </li>
+                        <li class="THtourMonde">
+                          <a href="chroniques/grece.html">
+                            <img src="images/grece/grece.jpg" alt="grece">
+                            Grèce
+                          </a>
+                          <small> (08/07/2015) </small>
+                        </li>
+                        <li class="THtourMonde">
+                          <a href="chroniques/angleterre.html">
+                            <img src="images/england/england.jpg" alt="angleterre">
+                            Grande-Bretagne
+                          </a>
+                          <small> (30/09/2015)</small>
+                        </li>
+                        <li class="THtourMonde">
+                          <a href="chroniques/japon.html">
+                            <img src="images/japon/japon.png" alt="japon">
+                            Japon
+                          </a>
+                          <small> (20/03/2016)</small>
+                        </li>
+                        <li class="THtourMonde">
+                          <a href="chroniques/espagne.html">
+                            <img src="images/espagne/espagne.jpg" alt="espagne">
+                            Espagne
+                          </a>
+                          <small> (17/04/2016)</small>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+
+            <a id="ancreRetourHautPage" href="#site">&uarr;</a>
+
+            <!-- Inclusion footer -->
+            <div id="footer"></div>
+
+        </div>
+    
+    
+    </div>
+
+    <script src="js/chroniques.js"></script>
+    <script src="js/affichageGalerieOuListe.js"></script>
+
+</body>
+
+</html>

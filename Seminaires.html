@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Séminaires | Exposés</title>
+  <meta name="description" content="Vous cherchez à comprendre le point de vue constructiviste en sciences, voici quelques exposés originaux !" />
+  <link rel="shortcut icon" href="logo.ico" />
+  <link href="style.css" rel="stylesheet" type="text/css" /> 
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <script src="js/jquery-1.10.2.js"></script>
+  <script src="js/menus.js"></script>
+  <script src="js/design.js"></script>
+  <script src="js/gestionAudioVideo.js"></script>
+  <script> 
+    // Inclusion Header et Footer + class "active" (pour lien menu)
+    $(function(){
+      $(function(){
+        $.ajax({
+           url: "template/header.php",
+           type: "POST",
+           data: ({ROOT: './'}),
+           success: function(data) {
+             $("#header").html(data);
+             $("#seminaires").addClass("active"); /*a changer en fonction de la page*/
+             update_design_when_header_loaded();
+          }
+        });
+      });
+      $("#miniMenus").load("template/miniMenus.php", { ROOT: './' }, mini_menus_after_loading);
+      $("#footer").load("template/footer.php", { ROOT: './' }, update_design_footer);  
+    });
+  </script> 
+</head>
+
+<body id="site">
+
+    <div>
+        <!-- Inclusion header -->
+        <div id="header"></div>
+
+        <div id="miniMenus"></div>
+
+        <nav id="menuLateralAncres">
+            <ul>
+                <li>
+                    <a id="ancreTetralogique" href="#tetralogique" class="linavMenu">
+                    <span>La "Tétralogique" ou Les fondements du Constructivisme</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreComplementTetralogique" href="#complementTetralogique" class="linavMenu">
+                    <span>Complément à la Tétralogique, essai de Dynamique récursive</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreTheorieClassiqueInfo" href="#theorieClassiqueInfo" class="linavMenu">
+                    <span>La Théorie Classique de l'Information</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreTheorieQuantiqueInfo" href="#theorieQuantiqueInfo" class="linavMenu">
+                    <span>La Théorie Quantique de l'Information</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreMachinerieChaoDeterministe" href="#machinerieChaoDeterministe" class="linavMenu">
+                    <span>La machinerie analytique du Chaos déterministe</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="corps">
+
+            <div id="contenuPrincipal">
+                <h2>Séminaires</h2>
+                <h3>Exposés mis à disposition</h3>
+
+                <nav class="filAriane">
+                    <ul>
+                        <li class="breadcrumbItem"><span>Vous êtes ici : </span> Physique</li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Séminaires</li>
+                    </ul>
+                </nav>
+
+                <div class="sommaire">
+                  <div class="sommaireTitle">
+                      <h6>Sommaire</h6>
+                      <a role="button" tabindex="0" class="sommaireLink">[ afficher ]</a>
+                  </div>
+
+                  <ul class="linksSummary">
+                      <li><a href="#tetralogique">La "Tétralogique" ou Les fondements du Constructivisme</a></li>
+                      <li><a href="#complementTetralogique">Complément à la Tétralogique, essai de Dynamique récursive</a></li>
+                      <li><a href="#theorieClassiqueInfo">La Théorie Classique de l'Information</a></li>
+                      <li><a href="#theorieQuantiqueInfo">La Théorie Quantique de l'Information</a></li>
+                      <li><a href="#machinerieChaoDeterministe">La machinerie analytique du Chaos déterministe</a></li>
+                  </ul>
+                </div>
+
+                <div id="tetralogique">
+                  <h4>La "Tétralogique" ou Les fondements du Constructivisme</h4>
+
+                  <ul class="listCenterWithDots">
+                    <li><a href="Tetralogique/Prologue.pdf">Prologue</a></li>
+                    <li><a href="Tetralogique/Hilbert.pdf">Le Sixième Problème de Hilbert</a></li>
+                    <li><a href="Tetralogique/Turing.pdf">L'Universalité au sens de Turing</a></li>
+                    <li><a href="Tetralogique/Godel.pdf">L'Universalité au sens de Gödel</a></li>
+                  </ul>
+
+                  <span class="spanRemplaceP"><a href="Tetralogique/Tetralogique.rar">L'Intégrale</a></span>
+                </div>
+
+                <div id="complementTetralogique">
+                  <h4>Complément à la Tétralogique, essai de Dynamique récursive</h4>
+
+                  <ul class="listCenterWithDots">
+                    <li><a href="Tetralogique/Dynamique_recursive.pdf">Dynamique récursive : Niveaux syntaxiques et sémantiques</a></li>
+                  </ul>
+                </div>
+
+                <div id="theorieClassiqueInfo">
+                  <h4>La Théorie Classique de l'Information</h4>
+
+                  <ul class="listCenterWithDots">
+                    <li><a href="Info_Classique/Kolmogorov.pdf">Le Point de Vue de Kolmogorov</a></li>
+                    <li><a href="Info_Classique/Shannon.pdf">Le Point de Vue de Shannon</a></li>
+                    <li><a href="Info_Classique/Thermo_calcul.pdf">La Thermodynamique du Calcul </a></li>
+                  </ul>
+
+                  <span class="spanRemplaceP">
+                    <a href="Info_Classique/Info_Class_Complet.rar">L'Intégrale</a>
+                  </span><br/><br/>
+                  <span class="spanRemplaceP">Namur (30/11/2010) : 
+                    <a href="Info_Classique/DiaporamaTheorieInfo.rar">Diaporama</a> &amp; 
+                    <a href="http://lacademie.tv/conferences/la-theorie-classique-de-l-information-en-rapport-avec-les-sciences-exactes">Enregistrement sonore</a>
+                  </span><br/><br/>
+                  <span class="spanRemplaceP">Diaporamas ULG-Montefiore : 
+                    <a href="Info_Classique/IEEE2017Part1.ppt">21/02/2017 </a> &amp; 
+                    <a href="Info_Classique/IEEE2017Part2.ppt">22/02/2017 </a>
+                  </span>
+                </div>
+
+                <div id="theorieQuantiqueInfo">
+                  <h4>La Théorie Quantique de l'Information</h4>
+
+                  <ul class="listCenterWithDots">
+                    <li><a href="Info_Quantique/Phys_Quant.pdf">Les Lois qui régissent le Monde Quantique</a></li>
+                    <li><a href="Info_Quantique/AnnexesMQ.pdf">Annexes au précédent </a></li>
+                    <li><a href="Info_Quantique/Info_Quant.pdf">La Théorie Quantique de l'Information</a></li>
+                    <li><a href="Info_Quantique/Ordi_Quant.pdf">L'Ordinateur Quantique</a></li>
+                    <li><a href="Info_Quantique/Algo_Quant.pdf">Algorithmes Quantiques</a></li>
+                    <li><a href="Info_Quantique/epr.pdf">Le Paradoxe EPR </a></li>
+                  </ul>
+
+                  <span class="spanRemplaceP">
+                    <a href="Info_Quantique/Th_qu_Info_complet.rar">L'Intégrale</a>
+                  </span><br/><br/>
+                  <span class="spanRemplaceP">
+                    <a href="Info_Quantique/Equationsdonde.nb">Equations d'ondes : Notebook Mathematica</a>
+                  </span><br/><br/>
+                  <span class="spanRemplaceP">
+                    <a href="Info_Quantique/QuantumInformation.nb">Information quantique : Notebook Mathematica </a>
+                  </span><br/><br/>
+                  <span class="spanRemplaceP">Namur (16/11/2011) : 
+                    <a href="http://lacademie.tv/conferences/l-ordinateur-quantique-theorie-et-applications">Enregistrement sonore</a>
+                  </span><br/><br/>
+                  <span class="spanRemplaceP">Diaporamas ULG-Montefiore : 
+                    <a href="Info_Quantique/Ordiquant1.ppsx">11/02/2014 </a> &amp; 
+                    <a href="Info_Quantique/Ordiquant2.ppsx">12/02/2014 </a>
+                  </span>
+                </div>
+
+                <div id="machinerieChaoDeterministe">
+                  <h4>La machinerie analytique du Chaos déterministe</h4>
+
+                  <ul class="listCenterWithDots">
+                    <li><a href="Chaos/PathologiesEDO.pdf">Pathologies des équations différentielles ordinaires</a></li>
+                    <li><a href="Chaos/Lie.pdf">Introduction à l'étude des Symétries des Equations Différentielles Ordinaires</a></li>
+                  </ul>
+
+                  <span class="spanRemplaceP"><a href="Chaos/NotebookLie.nb">(Notebook Mathematica) </a></span>
+                </div>
+            </div>
+
+
+            <a id="ancreRetourHautPage" href="#site">&uarr;</a>
+
+            <!-- Inclusion footer -->
+            <div id="footer"></div>
+
+        </div>
+    
+    </div>
+
+    <!-- Effet smooth ancres -->
+    <script src="js/onclick.js">
+    </script><script src="js/anchors.js"></script>
+
+    <!-- TODO -->
+    <!-- ATTENTION => Le TITLE DOIT CORRESPONDRE AU h2 et h3 du contenuPrincipal -->
+
+</body>
+</html>

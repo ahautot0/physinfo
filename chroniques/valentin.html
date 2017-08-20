@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Billets d'humeur | Dites-le avec des notes</title>
+  <meta name="description" content="Musique médiévale : trois interprétations de l'ensemble Gothic Voices, d'où émerge l'émouvante voix de Margaret Philpot" />
+  <link rel="shortcut icon" href="../logo.ico" />
+  <link href="../style.css" rel="stylesheet" type="text/css" /> 
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <script src="../js/jquery-1.10.2.js"></script>
+  <script src="../js/menus.js"></script>
+  <script src="../js/design.js"></script>
+  <script src="../js/gestionAudioVideo.js"></script>
+  <script> 
+    // Inclusion Header et Footer
+    $(function(){
+      $(function(){
+        $.ajax({
+           url: "../template/header.php",
+           type: "POST",
+           data: ({ROOT: '../'}),
+           success: function(data) {
+             $("#header").html(data);
+             $("#billetdhumeur").addClass("active"); /*a changer en fonction de la page*/
+             update_design_when_header_loaded();
+          }
+        });
+      });
+      $("#miniMenus").load("../template/miniMenus.php", { ROOT: '../' }, mini_menus_after_loading);
+      $("#footer").load("../template/footer.php", { ROOT: '../' }, update_design_footer);  
+    });
+  </script> 
+</head>
+
+<body id="site">
+
+    <div>
+        <!-- Inclusion header -->
+        <div id="header"></div>
+
+        <div id="miniMenus"></div>
+
+        <div id="corps">
+
+            <div id="contenuPrincipal">
+                <h2>Billets d'humeur</h2>
+                <h3>Dites-le avec des notes</h3>
+
+                <nav class="filAriane">
+                    <ul>
+                        <li class="breadcrumbItem"><span>Vous êtes ici : </span> Musique</li>
+                        <li class="breadcrumbItem">
+                          <a href="../chroniques.html">Chroniques</a>
+                        </li>
+                        <li class="breadcrumbItem">
+                          <a href="../billetdhumeur.html">Billets d'humeur</a>
+                        </li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Dites-le avec des notes</li>
+                    </ul>
+                </nav>  
+
+                <div>
+                  <i>Je demande ma bienvenue :<br/>
+                  Il y a long temps que ne vous vi,<br/>
+                  Dites, sui je plus vostre ami<br/>
+                  Avés bien vostre foy tenue ?<br/>
+                  La meilleur desoubs la nue<br/>
+                  Estes se l'avés fait ensi.<br/>
+                  Je demande ma bienvenue :<br/>
+                  Il y a long temps que ne vous vi.<br/>
+                  Je vous ai moult long temps perdue<br/>
+                  Dont j'ay esté en grant soussi<br/>
+                  Mais de tous mes maulx sui gari <br/>
+                  Puis qu'en bon point je vous ay veue.<br/>
+                  Je demande … </i><br/><br/>
+                  Jean Haucourt (1390-1410)<sub><sub><sub><br/>
+                  <audio controls preload="none">
+                    <source src="../son.mp3/valentin/haucourt.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/valentin/haucourt.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible
+                  </audio></sub></sub></sub>
+                </div><br/>
+
+                <div>
+                  <i>J'atendray tant qu'il vous playra<br/>
+                  A vous declarer ma pensée,<br/>
+                  Ma tres chiere dame honourée;<br/>
+                  Je ne say s'il m'en desplayra.<br/>
+                  Mais toutes fois, pour complaire a<br/>
+                  Vostre personne desirée,<br/>
+                  J'atendray tant qu'il vous playra<br/>
+                  A vous declarer mapensée.<br/>
+                  Car j'ay espour, quant avendra<br/>
+                  Qu'a ce vous serés acordée,<br/>
+                  Que ma doulour sera cesée;<br/>
+                  Je le vous ay dit long temps a.<br/>
+                  J'atendray tant qu'il vous playra<br/>
+                  A vous déclarer ma pensée,<br/>
+                  Ma tres chiere dame honourée;<br/>
+                  Je ne say s'il m'en desplayra.</i><br/><br/>
+                  Guillaume Dufay (1400-1474)<sub><sub><sub><br/>
+                  <audio controls preload="none">
+                    <source src="../son.mp3/valentin/dufay.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/valentin/dufay.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible
+                  </audio></sub></sub></sub>
+                </div><br/>
+
+                <div>
+                  <i>Le souvenir de vous me tue<br/>
+                  Mon seul bien, quant je vous voy<br/>
+                  Car je vous jure sur ma foy,<br/>
+                  Sans vous ma liesse est perdue.<br/>
+                  Quant vous estes hors de ma vue,<br/>
+                  Je me plains et dis a par moy :<br/>
+                  Le souvenir de vous me tue …<br/>
+                  Seule demeure despourveue<br/>
+                  D'ame nul confort ne recoy<br/>
+                  Et si seuffre sans faire effroy<br/>
+                  Jusqu'à vostre revenue.<br/>
+                  Le souvenir de vous me tue …</i><br/><br/>
+                  Robert Morton (1430-1479)<sub><sub><sub><br/>
+                  <audio controls preload="none">
+                    <source src="../son.mp3/valentin/Morton.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/valentin/Morton.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible
+                  </audio></sub></sub></sub>
+                </div><br/>
+
+                <p>Trois interprétations de l'ensemble Gothic Voices, d'où émerge l'émouvante voix de Margaret Philpot. 
+                (Publications du label <a href="http://www.hyperion-records.co.uk/">Hyperion</a> CDA66194, 66286, 66144). </p>
+            </div>
+
+
+            <a id="ancreRetourHautPage" href="#site">&uarr;</a>
+
+            <!-- Inclusion footer -->
+            <div id="footer"></div>
+
+        </div>
+    
+    </div>
+
+</body>
+</html>
