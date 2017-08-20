@@ -1,7 +1,7 @@
 //================ GESTION AFFICHAGE CHRONIQUES =================
 // ============== AFFICHAGE TOUR DU MONDE ET COMPOSITEURS CONTEMPORAINS ==============
-// Initialise la liste avec la class vueListe et mets des propriétés css a tous les li de la listChroniquesTourMonde
-    $('#listChroniquesTourMonde').addClass('vueListe');
+// Initialise la liste avec la class vueGalerie et mets des propriétés css a tous les li de la listChroniquesTourMonde
+    $('#listChroniquesTourMonde').addClass('vueGalerie');
     for (var i = 0; i < $("#listChroniquesTourMonde li").length; i = i+1) {
         $("#listChroniquesTourMonde li").eq(i).css("margin-right", "0%");
         $("#listChroniquesTourMonde li").eq(i).first().first().css("height", "inherit");
