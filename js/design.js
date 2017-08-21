@@ -43,8 +43,6 @@ function update_design_images(){
         var nbImages = $(this).find('img').length;
                 
         if (widthElementCourant/widthCorps > 0.7 && (nbImages == 1)) {
-            $(this).find('img').css("margin-left", "0px");
-            $(this).find('img').css("margin-right", "0px");
             $(this).find('img').css("max-width", widthCorps + "px");
             $(this).children().first().css("display", "block");
             
@@ -54,8 +52,6 @@ function update_design_images(){
             $(this).children().first().css("margin-right", (widthContenuPrincipal-widthDivImg)/2 + "px");
         }
         else {
-            $(this).find('img').css("margin-left", "0px");
-            $(this).find('img').css("margin-right", "30px");
             $(this).find('img').css("max-width", widthCorps + 30 + "px");
             $(this).children().first().css("display", "inline-block");
             
