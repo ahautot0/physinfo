@@ -39,17 +39,23 @@ function update_design_images(){
         }
             
         var widthElementCourant = $(this).width();
-        var widthParentElement = $(this).parent().width();
+        
+        // Si l'image à un parent ul alors on récupère son width (car il faut tenir compte du padding)
+        // Sinon le width du corps est bon.
+        var widthUlOuCorps = widthCorps;
+        if ($(this).parents('ul').length) {
+            widthUlOuCorps = $(this).parents('ul').width();
+        }
+        
         var nbImages = $(this).find('img').length;
                 
         if (widthElementCourant/widthCorps > 0.7 && (nbImages == 1)) {
             $(this).find('img').css("max-width", widthCorps + "px");
             $(this).children().first().css("display", "block");
             
-            //var widthDivImg = $(this).children().first().width();
             var widthDivImg = $(this).find('img').width();
-            $(this).children().first().css("margin-left", (widthParentElement-widthDivImg)/2 + "px");
-            $(this).children().first().css("margin-right", (widthParentElement-widthDivImg)/2 + "px");
+            $(this).children().first().css("margin-left", (widthUlOuCorps-widthDivImg)/2 + "px");
+            $(this).children().first().css("margin-right", (widthUlOuCorps-widthDivImg)/2 + "px");
         }
         else {
             $(this).find('img').css("max-width", widthCorps + 30 + "px");
