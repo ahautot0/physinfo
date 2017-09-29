@@ -26,7 +26,6 @@ function update_design_footer(){
 
 function update_design_images(){
     var widthCorps = $("#corps").width();
-    var widthContenuPrincipal = $("#contenuPrincipal").width();
     $('.conteneurImageSeule').each(function(){
         
         // Dabbord remettre les margin originale pour que la div parente aie la bonne taille.
@@ -40,6 +39,7 @@ function update_design_images(){
         }
             
         var widthElementCourant = $(this).width();
+        var widthParentElement = $(this).parent().width();
         var nbImages = $(this).find('img').length;
                 
         if (widthElementCourant/widthCorps > 0.7 && (nbImages == 1)) {
@@ -48,8 +48,8 @@ function update_design_images(){
             
             //var widthDivImg = $(this).children().first().width();
             var widthDivImg = $(this).find('img').width();
-            $(this).children().first().css("margin-left", (widthContenuPrincipal-widthDivImg)/2 + "px");
-            $(this).children().first().css("margin-right", (widthContenuPrincipal-widthDivImg)/2 + "px");
+            $(this).children().first().css("margin-left", (widthParentElement-widthDivImg)/2 + "px");
+            $(this).children().first().css("margin-right", (widthParentElement-widthDivImg)/2 + "px");
         }
         else {
             $(this).find('img').css("max-width", widthCorps + 30 + "px");
