@@ -1323,6 +1323,11 @@
 			    font-size: 16px;
 			    font-weight: bold;
 			}
+
+			#filtreOptions, #filtreOptionsOrdreAlpha, #affichageGalerieOuListe, #filtreOptionsOrdreAlphaNameAndFirstName {
+			    display: block;
+			    padding-left: 0px;
+			}
 		}
 
 		@media only screen and (max-width: 1200px){
