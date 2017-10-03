@@ -140,7 +140,7 @@
 			width:18%;
 		}   
 
-		iframe{
+		iframe, video{
 			border: none;
 			max-width: 100%;
 		}     
