@@ -102,7 +102,13 @@
 			text-align: center;
 			font-size: 14px;
 			font-weight: bold;
+            display: table-caption; 
+            caption-side: bottom ;
 		}
+        
+        figure {
+            display: table;
+        }
 		
 		.textecentre{
 			margin : 0 auto;

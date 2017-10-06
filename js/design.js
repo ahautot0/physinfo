@@ -25,6 +25,7 @@ function update_design_footer(){
 }
 
 function update_design_images(){
+    design_corps_responsive();
     var widthCorps = $("#corps").width();
     $('.conteneurImageSeule').each(function(){
         

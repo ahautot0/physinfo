@@ -302,4 +302,5 @@ function mini_menus_after_loading() {
     set_onclick_events();
     design_corps_responsive();
     design_menus_responsive();
+    update_design_when_header_loaded();
 }
