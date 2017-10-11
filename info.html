@@ -47,32 +47,32 @@
                     <a id="ancreChronique1" href="#chronique1" class="linavMenu">
                     <span>Le problème des 12, 39, 120, ..., boules</span>
                     </a>
-                </li>
+            </li>
                 <li>
                     <a id="ancreChronique2" href="#chronique2" class="linavMenu">
                     <span>Quelques exemples de programmes en langage Fractran</span>
                     </a>
-                </li>
+            </li>
                 <li>
                     <a id="ancreChronique3" href="#chronique3" class="linavMenu">
                     <span>Une variante aisée du tour de Cheney</span>
                     </a>
-                </li>
+            </li>
                 <li>
                     <a id="ancreChronique4" href="#chronique4" class="linavMenu">
                     <span>Devinez l'entier !</span>
                     </a>
-                </li>
+            </li>
                 <li>
                     <a id="ancreChronique5" href="#chronique5" class="linavMenu">
                     <span>Fonctions de Walsh et compression avec perte</span>
                     </a>
-                </li>
+            </li>
                 <li>
                     <a id="ancreChronique6" href="#chronique6" class="linavMenu">
                     <span>Statistique de la production des machines de Turing binaires simples (MTS)</span>
                     </a>
-                </li>
+            </li>
                 <li>
                     <a id="ancreChronique7" href="#chronique7" class="linavMenu">
                     <span>Compression sémantique des suites binaires courtes par MTS</span>
@@ -169,7 +169,7 @@
                     <tr>
                       <th>2:</th>
                       <td>G<span class="coloType1Chiffres">G</span>D&nbsp;E<span class="coloType1Chiffres">G</span>G&nbsp;E<span class="coloType1Chiffres">G</span>D&nbsp;E<span class="coloType1Chiffres">G</span>E</td>
-                      <td>G<span class="coloType1Chiffres">D</span>G&nbsp;G<span class="coloType1Chiffres">D</span>D&nbsp;G<span class="coloType1Chiffres">D</span>E&nbsp;D<span class="coloType1Chiffres">D</span>C</td>
+                      <td>G<span class="coloType1Chiffres">D</span>G&nbsp;G<span class="coloType1Chiffres">D</span>D&nbsp;G<span class="coloType1Chiffres">D</span>E&nbsp;D<span class="coloType1Chiffres">D</span>E</td>
                     </tr>
                     <tr>
                       <th>3:</th>
@@ -178,7 +178,7 @@
                     </tr>
                   </table>
 
-                  <p>où la i<sup>ième</sup> pesée place les boules codées par G en i<sup>ième</sup> position à gauche et celles codées par D en i<sup>ième</sup> position à droite. Chaque pesée fournit un résultat que l'on note, G, si le fléau penche à gauche, D, s'il penche à droite et, E, s'il reste en équilibre. Les trois lettres, prises dans cet ordre, forment un mot qui identifie la boule anormale (Il est alors facile de voir si elle est plus lourde ou plus légère). Si le mot trouvé est EEE, toutes les boules sont identiques. GGG et DDD n'apparaissent jamais.</p>
+                  <p>où la i<sup>ième</sup> pesée place les boules codées par G en i<sup>ième</sup> position à gauche et celles codées par D en i<sup>ième</sup> position à droite. Chaque pesée fournit un résultat que l'on note, G, si le fléau penche à gauche, D, s'il penche à droite et, E, s'il reste en équilibre. Les trois lettres, prises dans cet ordre, forment un mot. S'il fait partie de la liste des 12 mots retenus, il désigne la boule anormale et elle est plus lourde. S'il n'en fait pas partie, il suffit de transposer les lettres D et G pour désigner la boule anormale et elle est plus légère. Si le mot trouvé est EEE, toutes les boules sont identiques. GGG et DDD n'apparaissent jamais.</p>
 
                   <p>La méthode de Conway se généralise immédiatement à un nombre plus grand de pesées (et de boules !). La pesée la plus porteuse d'information place x = N/3 boules dans chaque plateau (à condition que N soit divisible par 3 !), amenant &#8467;g3 = 1.585 bits. On serait alors tenté de raisonner ainsi : k pesées indépendantes apportent  k &#8467;g3 (bits) or il faut combler &#8467;g(2N+1) bits d'information manquante d'où k pesées devraient venir à bout du problème à N=(3<sup>k</sup>-1)/2 boules. C'est un peu vite dit car ce N-là n'est pas multiple de 3 d'où l'information apportée par chaque mesure est inférieure au maximum escompté, 1.585 bits. En fait, (3<sup>k</sup>-2)/2 n'est pas davantage multiple de 3, par contre N = (3<sup>k</sup>-3)/2 l'est. C'est la solution optimale cherchée et la construction de Conway continue de s'appliquer.</p>
 
