@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Faits divers | Musique, Peinture et Gastronomie</title>
+<meta name="description" content="La notation musicale usuelle est tellement compliquée qu'elle décourage nombre d'apprentis musiciens. La portée chromatique offre une alternative intéressante." />
+<link rel="shortcut icon" href="../logo.ico" />
+<link href="../style.css" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<script src="../js/jquery-1.10.2.js"></script>
+<script src="../js/menus.js"></script>
+<script src="../js/design.js"></script>
+<script src="../js/gestionAudioVideo.js"></script>
+<script> 
+    // Inclusion Header et Footer
+    $(function(){
+        $(function(){
+            $.ajax({
+                url: "../template/header.php",
+                type: "POST",
+                data: ({ROOT: '../'}),
+                success: function(data) {
+                    $("#header").html(data);
+                    $("#faitsDivers").addClass("active"); /*a changer en fonction de la page*/
+                    update_design_when_header_loaded();
+                }
+            });
+        });
+        $("#miniMenus").load("../template/miniMenus.php", { ROOT: '../' }, mini_menus_after_loading);
+        $("#footer").load("../template/footer.php", { ROOT: '../' }, update_design_footer);  
+    });
+</script>
+</head>
+<body id="site">
+<div>
+  <!-- Inclusion header -->
+  <div id="header"></div>
+  <div id="miniMenus"></div>
+  <nav id="menuLateralAncres">
+    <ul>
+      <li> <a id="ancrediatonique" href="#diatonique" class="linavMenu active"> <span>La portée diatonique</span> </a> </li>
+      <li> <a id="ancreorthographe" href="#orthographe" class="linavMenu"> <span>Ah l'orthographe !</span> </a> </li>
+     
+      <li> <a id="ancrerousseau" href="#rousseau" class="linavMenu"> <span>La notation de Rousseau</span> </a> </li>
+      <li> <a id="ancrebase12" href="#base12" class="linavMenu"> <span>Une notation duodécimale</span> </a> </li>
+      
+      <li> <a id="ancrechromatique" href="#chromatique" class="linavMenu"> <span>La portée chromatique</span> </a> </li>
+      <li> <a id="ancreschonberg" href="#schonberg" class="linavMenu"> <span>Schönberg : Le Style et l'Idée</span> </a> </li>
+      <li> <a id="ancregodjevatz" href="#godjevatz" class="linavMenu"> <span>La notation de Godjevatz</span> </a> </li>
+      
+      <li> <a id="ancresemantique" href="#semantique" class="linavMenu"> <span>Objections sémantiques</span> </a> </li>
+     
+      <li> <a id="ancreconclusion" href="#conclusion" class="linavMenu"> <span>Epilogue ?</span> </a> </li>
+    </ul>
+  </nav>
+  <div id="corps">
+    <div id="contenuPrincipal">
+      <h2>Faits divers</h2>
+      <h3>La notation musicale</h3>
+      <nav class="filAriane">
+        <ul>
+          <li class="breadcrumbItem"><span>Vous êtes ici : </span> Musique</li>
+          <li class="breadcrumbItem"> <a href="../chroniques.html">Chroniques</a> </li>
+          <li class="breadcrumbItem"> <a href="../faitsDivers.html">Faits divers</a> </li>
+          <li class="breadcrumbItem breadcrumIitem--current">La notation musicale</li>
+        </ul>
+      </nav>
+      <div class="sommaire">
+        <div class="sommaireTitle">
+          <h6>Sommaire</h6>
+          <a role="button" tabindex="0" class="sommaireLink">[ afficher ]</a> </div>
+        <ul class="linksSummary">
+          <li> <a href="#diatonique">La portée diatonique </a> </li>
+          <li> <a href="#orthographe">Ah l'orthographe !</a> </li>
+         
+          <li> <a href="#rousseau">La notation de Rousseau</a> </li>
+          <li> <a href="#base12">Une notation duodécimale </a> </li>
+  
+       
+          <li> <a href="#chromatique">La portée chromatique </a> </li>
+          <li> <a href="#schonberg">Schönberg : Le Style et l'Idée </a> </li>
+          <li> <a href="#godjevatz">La notation de Godjevatz </a> </li>
+          
+          <li> <a href="#semantique">Objections sémantiques </a> </li>
+          
+          <li> <a href="#conclusion">Epilogue ?</a> </li>
+        </ul>
+      </div>
+     
+      
+       <p>Cette chronique pourrait aussi bien s'intituler &quot;L'ouïe, la vue et le (bon) goût&quot;. Elle montre que tout sépare la Musique de la Peinture et que tout la rapproche des arts de la table, tant du point de vue du goüt que de celui de la diététique.</p>
+     
+      
+     
+      
+      
+      <div id="diatonique">
+        <h4>La portée diatonique</h4>
+   
+   <p>Tout sépare l'art du peintre de celui du musicien et pourtant l'ingrédient de base est le même : une onde physique périodique. La comparaison s'arrête cependant là car l'onde sonore diffère à tous égards de l'onde lumineuse. Le tableau suivant réparti sur deux colonnes passe en revue les paramètres principaux de ces ondes en les contrastant.</p>
+   
+   <table>
+                      <tr>
+                           <th>La lumière</th>
+                           <th>Le son</th>
+                       </tr>
+                      
+                       <tr>
+                           <th>L'onde lumineuse est de nature électromagnétique, elle se propage dans le vide mais aussi dans tout milieu transparent.</th>
+                           <th>L'onde sonore est matérielle, elle a besoin d'un support élastique pour sa propager, usuellement l'air ambiant.</th>
+                       </tr>
+                       
+                       <tr>
+                           <th>L'onde lumineuse la plus simple vibre sinusoïdalement à une fréquence unique, f, qui définit sa couleur.</th>
+                           <th>L'onde sonore la plus simple vibre sinusoïdalement à une fréquence unique, f, qui définit sa hauteur.</th>
+                       </tr>
+                       
+                        <tr>
+                           <th>La plage des fréquences visibles se situe dans l'intervalle [4300, 7500] THz, soit un ambitus de 1.875, inférieur à 2 donc ne couvrant pas une octave.</th>
+                           <th>La plage des fréquences audibles se situe dans l'intervalle [16, 16000] THz, soit un ambitus de 1000, supérieur à 2, couvrant 10 octaves.</th>
+                       </tr>
+                       
+                        <tr>
+                           <th>L'oeil (humain) n'est donc pas sensible au phénomène d'octave et nul ne sait, par exemple, à quoi ressemble la couleur d'une onde vibrant deux fois plus qu'une onde jaune. En particulier une onde qui résulterait de la superposition de deux ondes de fréquences f et 2f serait perçue comme si la fréquence double était absente.</th>
+                           <th>L'oreille (humaine) est sensible au phénomène d'octave :  En particulier une onde qui résulterait de la superposition de deux ondes de fréquences f et 2f serait perçue comme si la fréquence double était absente.</th>
+                       </tr>
+   </table>
+
+   
+   <p>lumière est de nature électromagnétique et à ce titre elle se propage dans le vide comme dans la matière transparente. Le son lui a impérativement besoin d'un support matériel pour se propager, usuellement l'air qui achemine la vibration vers nos tympans. Le paramètre principal de l'onde purement sinusoïdale est sa fréquence qui détermine la couleur en optique et la hauteur en acoustique. A partir de là tout sépare l'optique et l'acoustique physiologiques.
+L'œil n'est sensible qu'à une plage tenue des fréquences lumineuses, typiquement entre  4300 et 7500 THz, soit un ambitus de 1.875, inférieur à 2, ce point aura son importance.
+En comparaison l'oreille est sensible à une plage fréquentielle beaucoup plus grande, typiquement entre 16 et 20000 Hz, d'ambitus 1250, largement supérieur à 2.
+
+Le peintre gère une palette continue de couleur : il a pour ce faire à sa disposition tous les dégradés possibles un coup de brosse lui suffit. L'œuvre qu'il produit est immédiatement accessible au spectateur. 
+Les choses diffèrent essentiellement en musique : l'œuvre doit être notée puis interprétée d'où il est impossible de traiter continûment le spectre sonore, celui-ci doit être discrétisé. La question de savoir comment opérer au mieux cette pixellisation a occupé les mathématiciens du 18ème siècle (Euler, d'Alembert) mais aussi quelques musiciens férus de théorie (Rameau, Bach)
+Un essai au carrefour des arts (Peinture et musique) et des sciences (Physique, mathématiques et Théorie de l'information).
+L'ensemble des fréquences étant infini (et même non dénombrable) il convient de se restreindre ce qui est rendu possible par le fait que ni l'œil ni l'oreille ne possèdent un pouvoir de résolution infini. Il en résulte qu'une pixellisation de l'image et du son est possible qui discrétise l'objet visuel ou sonore. La pixellisation de l'image est connue de tous et elle se comprend d'autant plus facilement qu'elle se satisfait d'un cadre souvent rectangulaire également partitionné dans les deux directions spatiales x et y. 
+La pixellisation de la gammes sonore est éventuellement plus délicate. Une solution confortable mais imparfaite a tôt été mise en place à l'époque de Bach qui consiste à partitionner la plage des fréquences audibles en n'en retenant qu'un échantillonnage disposé en progression géométrique de raison 21/12. La raison pour laquelle la progression est géométrique et non arithmétique ou n'importe quoi d'autre est liée à la physiologie de l'oreille qui perçoit les sons de façon logarithmique, c'est le phénomène d'octave.
+
+L'art musical présente cette particularité d'exiger le concours de trois partenaires égaux : le compositeur, l'interprète et l'auditeur.
+
+
+Le peintre agit très différemment lui qui ne dispose que d'une octave même pas complète allant du rouge au violet en passant par toutes les couleurs de l'arc-en-ciel. Il explore en conséquence l'infinité des nuances intermédiaires dans le cadre d'un continuum. Rien en théorie n'empêcherait le musicien gourmand d'en faire autant en explorant les quarts voire les seizièmes de tons. Ce genre d'expérience (courante dans le monde arabe) a effectivement ponctuellement été tenté en musique savante occidentale (Aloïs Haba) mais elle ne s'est nulle part imposée comme indispensable.
+
+Il existe une autre différence entre ces deux arts, qui tient au rôle joué par le facteur temps. Le temps ne joue aucun rôle en peinture : la toile achevée l'est une fois pour toutes aux réfections ultérieures près. Il en va tout autrement en musique. 
+</p>  
+     
+      </div>
+      
+
+      
+      <div id="orthographe">
+        <h4>Ah l'orthographe !</h4>
+       
+        <p></p> 
+ 
+      </div>
+      
+      
+      
+      <div id="rousseau">
+        <h4>La notation de Rousseau</h4>
+        
+         <p></p> 
+         
+      </div>
+      
+      
+      
+      <div id="base12">
+        <h4>Une notation duodécimale</h4>
+        
+         <p></p> 
+        
+      </div>
+      
+      
+      
+      <div id="chromatique">
+        <h4>La portée chromatique</h4>
+
+ <p></p> 
+
+        
+      </div>
+      
+      
+      
+      <div id="schonberg">
+        <h4>Arnold Schönberg : le style et l'idée</h4>
+        
+        <p></p> 
+        
+      </div>
+      
+      
+      
+      <div id="godjevatz">
+        <h4>La notation de Godjevatz</h4>
+        
+         <p></p> 
+        
+      </div>
+      
+      
+      
+      <div id="semantique">
+        <h4>Objections sémantiques</h4>
+        
+         <p></p> 
+        
+</div>
+      
+      
+     
+      <div id="conclusion">
+        <h4>Epilogue ?</h4>
+        
+         <p></p> 
+        
+</div>
+
+
+       
+</div>
+
+    
+    <a id="ancreRetourHautPage" href="#site">&uarr;</a>
+    <!-- Inclusion footer -->
+    <div id="footer"></div>
+  </div>
+</div>
+<!-- Effet smooth ancres -->
+<script src="../js/onclick.js"></script>
+</body>
+</html>

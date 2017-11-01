@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Genres musicaux | La mélodie avec orchestre</title>
+  <meta name="description" content="La mélodie avec orchestre est beaucoup plus rare que la mélodie avec piano, elle n'en est que plus précieuse d'autant qu'elle est rarement bâclée" />
+  <link rel="shortcut icon" href="../logo.ico" />
+  <link href="../style.css" rel="stylesheet" type="text/css" /> 
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <script src="../js/jquery-1.10.2.js"></script>
+  <script src="../js/menus.js"></script>
+  <script src="../js/design.js"></script>
+  <script src="../js/gestionAudioVideo.js"></script>
+  <script> 
+    // Inclusion Header et Footer
+    $(function(){
+      $(function(){
+        $.ajax({
+           url: "../template/header.php",
+           type: "POST",
+           data: ({ROOT: '../'}),
+           success: function(data) {
+             $("#header").html(data);
+             $("#grandscycles").addClass("active"); /*a changer en fonction de la page*/
+             update_design_when_header_loaded();
+          }
+        });
+      });
+      $("#miniMenus").load("../template/miniMenus.php", { ROOT: '../' }, mini_menus_after_loading);
+      $("#footer").load("../template/footer.php", { ROOT: '../' }, update_design_footer);  
+    });
+  </script> 
+</head>
+
+<body id="site">
+
+    <div>
+        <!-- Inclusion header -->
+        <div id="header"></div>
+
+        <div id="miniMenus"></div>
+
+        <nav id="menuLateralAncres">
+            <ul>
+                <li>
+                    <a id="ancreEvolutionFormule" href="#evolutionFormule" class="linavMenu">
+                    <span>Evolution de la formule du concert à 5</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreQuintetteClavier" href="#quintetteClavier" class="linavMenu">
+                    <span>Le quintette à clavier</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreIncontournables" href="#incontournables" class="linavMenu">
+                    <span>Les incontournables</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreQuintettesFrançais" href="#quintettesFrançais" class="linavMenu">
+                    <span>Quintettes français</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreQuintettesRusses" href="#quintettesRusses" class="linavMenu">
+                    <span>Quintettes russes</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreQuintettesAustroAllemands" href="#quintettesAustroAllemands" class="linavMenu">
+                    <span>Quintettes austro-allemands</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreQuintettesOutreManche" href="#quintettesOutreManche" class="linavMenu">
+                    <span>Quintettes d'Outre-Manche</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreQuintettesIciAilleurs" href="#quintettesIciAilleurs" class="linavMenu">
+                    <span>Quintettes d'ici et d'ailleurs</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreBrocante" href="#brocante" class="linavMenu">
+                    <span>Brocante</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="corps">
+
+            <div id="contenuPrincipal">
+                <h2>Genres musicaux</h2>
+                <h3>La mélodie avec orchestre</h3>
+
+                <nav class="filAriane">
+                    <ul>
+                        <li class="breadcrumbItem"><span>Vous êtes ici : </span> Musique</li>
+                        <li class="breadcrumbItem">
+                          <a href="../chroniques.html">Chroniques</a>
+                        </li>
+                        <li class="breadcrumbItem">
+                          <a href="../grandscycles.html">Genres musicaux</a>
+                        </li>
+                        <li class="breadcrumbItem breadcrumIitem--current">La mélodie avec orchestre</li>
+                    </ul>
+                </nav> 
+
+                <div class="sommaire">
+                    <div class="sommaireTitle">
+                        <h6>Sommaire</h6>
+                        <a role="button" tabindex="0" class="sommaireLink">[ afficher ]</a>
+                    </div>
+
+                    <ul class="linksSummary">
+                        <li><a href="#evolutionFormule">Evolution de la formule du concert à 5</a></li>
+                        <li><a href="#quintetteClavier">Le quintette à clavier</a></li>
+                        <li><a href="#incontournables">Les incontournables</a></li>
+                        <li><a href="#quintettesFrançais">Quintettes français</a></li>
+                        <li><a href="#quintettesRusses">Quintettes russes</a></li>
+                        <li><a href="#quintettesAustroAllemands">Quintettes austro-allemands</a></li>
+                        <li><a href="#quintettesOutreManche">Quintettes d'Outre-Manche</a></li>
+                        <li><a href="#quintettesIciAilleurs">Quintettes d'ici et d'ailleurs</a></li>
+                        <li><a href="#brocante">Brocante</a></li>
+                    </ul>
+                </div>  
+  
+                
+                   
+                  <p>Orchesterlieder, en allemand, orchestral songs, en anglais, et mélodie avec orchestre, en français, telles sont les appellations d'un genre bien moins pratiqué que celui de la mélodie avec accompagnement de piano. Dans tous les cas le soin que les partitions méritaient nous a valu un ensemble d'oeuvres très inspirées  dans chacun des pays d'origine.</p>
+                  
+                  <p>  : Mélodies avec orchestre.
+
+C'est à dessein que je mentionne l'appellation allemande d'un genre musical qui a essentiellement fait fortune Outre-Rhin.  Cependant je ne jurerais pas qu'il y soit né et le fait est que le premier cycle important est français, dû à la plume d'Hector Berlioz (Nuits d'été, un chef-d'oeuvre absolu).
+
+Le genre est né à d'une demande implicite des salles de concert qui cherchaient à renouveler le stock des airs de concert (ou d'opéra), toujours les mêmes à tourner en boucle entre l'ouverture et la pièce de résistance symphonique.  Pour les compositeurs, c'était aussi l'occasion d'habiller autrement le lied classique avec simple accompagnement de piano.
+
+Note. Le type de programmation a bien changé depuis que le concert public existe, à peine plus que 200 ans.   Les académies, comme on les appelait du temps de Beethoven, s'apparentaient à des marathons où on n'hésitait pas à mélanger les genres voire à amputer des oeuvres de mouvements entiers (Le concert du 22 décembre 1808, au théâtre An der Wien, est resté dans les mémoires : d'une durée de 4 heures (!), il proposa rien moins que l'enchaînement de la Symphonie n°6, l'Air de Concert "Ah Perfido", le Gloria de la Messe en ut majeur, le Concerto pour piano nº 4, la Symphonie n°5, les Sanctus et Benedictus de la Messe en ut majeur, la Fantaisie pour piano solo, opus 77 et La Fantaisie chorale, opus 80 ! ).  A partir de Mendelssohn, une tradition s'est imposée, moins éprouvante pour le public mais davantage stéréotypée, coulée dans le moule uniforme du schéma, Ouverture - Soliste & orchestre - Symphonie.  La pièce médiane était souvent un concerto mais précisément il se pouvait que le soliste soit un chanteur.  Aujourd'hui, la durée des concerts a tendance à diminuer et il n'est pas rare qu'une oeuvre importante, au moins par sa longueur, ne soit précédée que par une oeuvre courte, peu encline à rivaliser avec elle.  Il arrive même que certaines oeuvres soient seules à l'affiche tant il est difficile de les préfacer (Missa Solemnis de Beethoven, Ein deutsches Requiem de Johannes Brahms, Symphonie n°8 de Gustav Mahler, Gurre Lieder d'Arnold Schönberg, Turangalila Symphonie d'Olivier Messiaen, ...).
+
+La mélodie française.
+
+Hector Berlioz n'a pas écrit que les seules Nuits d'été.
+
+Ernest Chausson, Henri Duparc (1848–1933), Jean Cras
+
+Le lied austro-allemand.
+
+50 années (1875-1925) condensent à elles seules l'essentiel de la production du lied orchestral : tous les musiciens de langue allemande, petits et grands s'y sont mis avec un taux de réussite exemplaire.  Le genre a connu ses plus grandes heures de gloire sous le règne de Gustav Mahler qui s'en est fait une spécialité.  Il en a composé tout au long de sa vie et si les cycles Kindertotelieder (1904), Lieder eines fahrenden Gesellen (1886), Das Knaben Wunderhorn (1901) et Das Lied von der Erde n'ont jamais quitté le box office, il ne faudrait cependant pas négliger quelques cycles moins souvent joués : Rückert Lieder (1904), Das klagende Lied (1880) une des rares oeuvres de jeunesse de Mahler à avoir échappé à la perte.
+
+Alma Mahler-Werfel (1879-1964).
+
+En Allemagne les Wesendonck Lieder (1858) de Richard Wagner, l'une de ses rares infidélités au monde de l'opéra, ont montré le chemin.  La génération suivante fut dominée par le talent vocal de deux génies incontournables :
+
+
+Un enregistrement indispensable, paru chez Harmonia Mundi, a particulièrement retenu mon attention, consacré aux 24 mélodies pour orchestre de Hugo Wolf (1860-1903).  Elles sont certes minoritaires à côté des 270 oeuvres similaires avec accompagnement de piano mais elles resplendissent de mille feux !  Ce sera pour vous l'occasion de (re)découvrir un musicien beaucoup trop négligé que l'histoire a considéré comme le seul rival (mélodique) possible de Franz Schubert (rien que cela !) et que la folie a emporté bien trop tôt.
+
+Vous trouverez sur ce CD, 13 Mörike-Lieder (Gebet, Der Feuerreiter), 4 mélodies du Spannisches Liederbuch et 7 Goethe-Lieder (Mignon : Kennst du das Land, Prometheus, Der Rattenfänger, Anakreons Grab, Harfenspieler III).
+
+ 
+
+
+Un autre enregistrement - historique et mythique - est toujours bien là pour nous rappeler que Richard Strauss fut le Maître insurpassé de la mélodie pour voix de femme.  D'aucuns trouveront la direction un peu effacée de Georges Szell mais elle a néanmoins le mérite de ne faire aucune ombre à la voix lumineuse d'Elisabeth Schwarzkopf.  Cela dit, je conviens que depuis 1956, beaucoup d'autres versions ont vu le jour.   Comparez dans l'ordre des tempi de plus en plus allants, Renée Fleming, Elisabeth Schwartzkopf et Gundula Janowitz dans Abendrot, le point culminant des Quatre derniers Lieder du Maître, qui planent, sans concurrence, au firmament du genre.
+
+(Traum durch die Dämmerung, Op. 29, No. 1, Gesang der Apollopriesterin, Op. 33, No. 2).
+
+Max Reger (Der Hirten Lied am Krippelein, Op. 76)
+
+Hans Pfitzner n'a écrit que 5 mélodies pour orchestre mais il a tardivement orchestré 25 lied initialement accompagnés au piano.  Un CD remarquable, paru chez CPO reprend l'essentile de cette production.
+
+Alexandre von Zemlinsky
+
+les trois viennois : Alban Berg (Fünf Orchesterlieder, op. 4, Sieben Frühe Lieder, Altenberg Lieder)
+
+Franz Schreker (Fünf Gesänge)
+
+Günter Neubert (1936–) ???, Joseph Marx (1882–1964), Egon Wellesz (1885–1974)
+
+Wolfgang Erich Korngold
+
+La mélodie russo-polonaise.
+
+Karol Szymanowski (1882–1937), Vladislav Zelenski (1837–1921)
+
+Le song anglo-saxon.
+
+Benjamin Britten (1913–1976)
+
+Holst, Elgar, Delius,
+
+v. Quilter, Butterworth, Elgar, Finzi, Ireland, Vaughan Williams
+
+La mélodie nordique.
+
+Edvard Grieg (1843–1907), Jean Sibelius (1865-1957), Einojuhani Rautavaara (1928- ),Fartein Valen (1887–1952)
+
+Hillborg: Lontana in sonno +Boldemann: 4 Epitaphs op. 10 +Gefors: Lydias sanger
+
+Folksongs de Luciano Berio</p>
+
+                  <div id="evolutionFormule">
+                    <h4>Evolution de la formule du concert à 5</h4>
+
+       
+                  </div>
+
+                 
+                 
+                  <div id="quintetteClavier">
+                    <h4>Le quintette à clavier</h4>
+
+                    
+                  </div>
+                  
+                  
+
+                  <div id="incontournables">
+                    <h4>Les incontournables</h4>
+
+                    
+                  </div>
+
+                 
+                 
+                 <div id="quintettesFrançais">
+                    <h4>Quintettes français</h4>
+
+                    
+              </div>
+                  
+                  
+
+                  <div id="quintettesRusses">
+                    <h4>Quintettes russes</h4>
+
+                   
+                  </div>
+                  
+                  
+
+                  <div id="quintettesAustroAllemands">
+                    <h4>Quintettes austro-allemands</h4>
+
+                    
+                  </div>
+                  
+                  
+
+                  <div id="quintettesOutreManche">
+                    <h4>Quintettes d'Outre-Manche</h4>
+
+                   
+                  </div>
+                  
+                  
+
+                  <div id="quintettesIciAilleurs">
+                    <h4>Quintettes d'ici et d'ailleurs</h4>
+
+                   
+                  </div>
+                  
+                  
+
+                  <div id="brocante">
+                    <h4>Brocante</h4>
+
+
+                  </div>
+                  
+                  
+                  
+               
+          </div>
+
+
+            <a id="ancreRetourHautPage" href="#site">&uarr;</a>
+
+            <!-- Inclusion footer -->
+            <div id="footer"></div>
+
+        </div>
+    
+    </div>
+
+    <!-- Effet smooth ancres -->
+    <script src="../js/onclick.js"></script>
+    
+
+   
+
+</body>
+</html>
