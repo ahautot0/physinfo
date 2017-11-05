@@ -169,7 +169,7 @@
                        <tr>
                            <th>
 En théorie, le codage de chaque pixel, en noir et blanc strict,  n'exigerait qu'un bit mais il faut encore tenir compte du codage des couleurs. Théoriquement  l'oeil peut espérer distinguer 200 nuances de couleurs par type de cônes (Red, Green, Blue) ce que garantit un codage sur 8 bits (2<sup>8</sup> = 256 > 200) par  pixel pour un total de 8000 000  nuances, une valeur sans doute inutilement grande puisque la majorité des gens ne perçoivent pas plus de 300 000 couleurs différentes mais baste, qui peut le plus peut le moins.  Un système digital est donc théoriquement capable de  coder une image en (full) couleurs de dimensions L (cm) x &#8467; (cm), destinée à être vue à une distance D (cm), sur un nombre important mais fini d'octets, de l'ordre de  10<sup>8</sup>L  &#8467;/(3 D<sup>2</sup>).</th>
-                           <th> Il faut encore coder les hauteurs de sons. Théoriquement l'oreille aguerrie peut distinguer deux sons différant d'à peine quelques cents. Il est possible de se faire une idée de ce que représente un clavier de piano qui partagerait l'octave en 100 parties égales (un cent) : Hidekazu Wakabayashi a réaccordé les 88 touches de son piano moderne en suivant cet accordage (moins qu'une octave mais cela permet quand même de jouer quelques mélodies simples). Le tempérament égal actuel est nettement plus grossier qui ne va pas au-delà du demi-ton (100 cents). Cette pixellisation    suffit à nos oreilles occidentales qui peinent déjà à s'accomoder  des <a href="https://soundcloud.com/hidekazu-wakabayashi/you-are-so-microtonal-video-is-on-youtube">quarts de tons</a> (50 cents). les traditions orientales sont nettement moins frileuses à cet égard qui n'hésitent pas à explorer les intervalles courts.</th>
+                           <th> Il faut encore coder les hauteurs de sons. Théoriquement l'oreille aguerrie peut distinguer deux sons différant de quelques cents, la valeur exacte dépendant de l'individu et de la fréquence moyenne. Il est possible de se faire une idée de ce que représente un clavier de piano qui partagerait l'octave en 100 parties égales (un cent) : Hidekazu Wakabayashi a réaccordé les 88 touches de son piano moderne en suivant cet accordage (moins qu'une octave mais cela permet quand même de jouer quelques mélodies simples). Le tempérament égal actuel est nettement plus grossier qui ne va pas au-delà du demi-ton (100 cents). Cette pixellisation    suffit à nos oreilles occidentales qui peinent déjà à s'accomoder  des <a href="https://soundcloud.com/hidekazu-wakabayashi/you-are-so-microtonal-video-is-on-youtube">quarts de tons</a> (50 cents). les traditions orientales sont nettement moins frileuses à cet égard qui n'hésitent pas à explorer les intervalles courts.</th>
                        </tr>
                        
                        </table>
@@ -180,6 +180,11 @@ En théorie, le codage de chaque pixel, en noir et blanc strict,  n'exigerait qu
                       <tr>
                            <th>La lumière</th>
                            <th>Le son</th>
+          			</tr>
+                    
+                     <tr>
+                           <th>Le tableau constitue l'oeuvre achevée, immédiatement consommable. Il n'est pas éternel : il peut disparaître parce qu'on l'a volé, une conséquence funeste de sa valeur marchande, où parcequ'il a été détruit suite à l'un de ces aléas de l'histoire. Ici se pose la question de le remplacer par une copie. Cela s'est déjà produit par le passé proche (L'Adoration du Caravage, volé à Palerme) ou lointain (L'Agneau mystique refait à l'identique par ) les couleurs peuvent s'altérer et cette fois ce sont les restaurateurs qui entrent en scène du moihs pour les oeuvres don on juge qu'elles en valent la peine. La copie peut bien être indiscernable de l'original, sa valeur marchande est bien moindre : l'oeuvre d'art suppose une prise de risque une mise en danger, elle doit plaire à son auteur pas forcément à son public auquel elle n'est nullement destinée en priorité.</th>
+                           <th>La partition constitue l'oeuvre achevée mais elle a besoin d'interpètes diligents recréant l'oeuvre à chaque fois différemment. Sauf les cas extrêmes où elle s'est trouvée enterrée quelque part parmi les rayons d'une bibliothèque poussiéreuse par des conservateurs peu au fait de leur valeur elles ont été suffisamment recopiées pour demeurer éternellement à l'abri des intempéries, des vols et des spécluations de toutes sortes.</th>
           			</tr>
                       
                        <tr>
@@ -192,55 +197,104 @@ En théorie, le codage de chaque pixel, en noir et blanc strict,  n'exigerait qu
 
 <p>Le peintre gère indirectement pour ne pas dire inconsciemment une palette continue de couleurs : pour accéder à tous les dégradés possibles, un coup de brosse lui suffit. Une fois achevée, la toile est accessible au public et aucun intermédiaire n'est requis.</p>
 
-<p>Les choses diffèrent essentiellement en musique : l'œuvre doit être notée puis interprétée d'où il est impossible de traiter continûment le spectre sonore, celui-ci doit être discrétisé. La question de savoir comment opérer au mieux cette pixellisation a occupé les mathématiciens du 18ème siècle (Euler, d'Alembert) mais aussi quelques musiciens férus de théorie (Rameau, Bach)
-  Un essai au carrefour des arts (Peinture et musique) et des sciences (Physique, mathématiques et Théorie de l'information).
-  L'ensemble des fréquences étant infini (et même non dénombrable) il convient de se restreindre ce qui est rendu possible par le fait que ni l'œil ni l'oreille ne possèdent un pouvoir de résolution infini. Il en résulte qu'une pixellisation de l'image et du son est possible qui discrétise l'objet visuel ou sonore. La pixellisation de l'image est connue de tous et elle se comprend d'autant plus facilement qu'elle se satisfait d'un cadre souvent rectangulaire également partitionné dans les deux directions spatiales x et y. 
-  La pixellisation de la gammes sonore est éventuellement plus délicate. Une solution confortable mais imparfaite a tôt été mise en place à l'époque de Bach qui consiste à partitionner la plage des fréquences audibles en n'en retenant qu'un échantillonnage disposé en progression géométrique de raison 21/12. La raison pour laquelle la progression est géométrique et non arithmétique ou n'importe quoi d'autre est liée à la physiologie de l'oreille qui perçoit les sons de façon logarithmique, c'est le phénomène d'octave.
-  
-  L'art musical présente cette particularité d'exiger le concours de trois partenaires égaux : le compositeur, l'interprète et l'auditeur.
-  
-  
-  Le peintre agit très différemment lui qui ne dispose que d'une octave même pas complète allant du rouge au violet en passant par toutes les couleurs de l'arc-en-ciel. Il explore en conséquence l'infinité des nuances intermédiaires dans le cadre d'un continuum. Rien en théorie n'empêcherait le musicien gourmand d'en faire autant en explorant les quarts voire les seizièmes de tons. Ce genre d'expérience (courante dans le monde arabe) a effectivement ponctuellement été tenté en musique savante occidentale (Aloïs Haba) mais elle ne s'est nulle part imposée comme indispensable.
-  
-  Il existe une autre différence entre ces deux arts, qui tient au rôle joué par le facteur temps. Le temps ne joue aucun rôle en peinture : la toile achevée l'est une fois pour toutes aux réfections ultérieures près. Il en va tout autrement en musique. 
-</p>
-<p>Même en  s'en tenant à une seule octave, par exemple celle couvrant les fréquences  allant de 440 à 880 Hz, il est évidemment inimaginable de donner des noms  différents à l'infinité des sons possibles. C'est d'ailleurs inutile car  l'oreille est généralement incapable de distinguer deux sons qui sont dans un  intervalle de fréquences trop proche de 1 (Préciser un seuil est d'ailleurs  impossible car il varie selon les individus). Ecoutons ce que donnerait un  rapport-seuil fixé conventionnellement à la valeur 1.01 : voici deux sons à 400  Hz et 404 Hz en séquence pendant 4 secondes (soit 2 s par son) (ensequence) puis les deux mêmes sons joués  simultanément pendant 2 s (battement).  Imaginons que l'on fixe ce seuil à un rapport  1.01, cela aurait pour conséquence que pour couvrir l'octave, il faudrait pas  moins de 70 notes distinctes. Multipliant ce nombre par le nombre d'octaves  (10.4) cela donnerait un clavier de piano à plus de 750 touches, ce qui est  impensable ! </p>  
-     
+<p>Les choses diffèrent essentiellement en musique : l'œuvre doit être notée puis interprétée d'où il est impossible de traiter continûment le spectre sonore, celui-ci doit être discrétisé. La question de savoir comment opérer au mieux cette pixellisation a occupé les mathématiciens du 18ème siècle (Euler, d'Alembert) mais aussi quelques musiciens férus de théorie (Rameau, Bach). Quelques aspects esentiels de cette histoire ont été récapitulés dans une chronique récente cojsacrée à l'arithmétique musicale. 
+  </p>
+<p>L'ensemble des fréquences étant infini (et même non dénombrable) il convient de se restreindre en accord avec le pouvoir de résolution fini de l'oreille. L'idée la plus simple consiste à partitionner équitablement l'intervalle complet des fréquences audibles, disons [16.35 (do<sub>0</sub>), 15804.3 (si<sub>9</sub>)] Hz pour faire simple sachant qu'un piano de concert se satisfait d'un intervalle restreint à [27.5 (la<sub>0</sub>), 4186 (do<sub>8</sub>)] Hz. Une solution valable dans les deux cas consiste à adopter le tempérament égal, qui  passe d'une note à la suivante en multipliant sa fréquence par 2<sup>1/12</sup>. La pixellisation correspondant à ce choix vaut 100 cents et elle peut paraître grossière. Tout semble se passer comme si on acceptait délibérément de se satisfaire d'une image telle celle-ci.</p>
+<p>Même en  s'en tenant à une seule octave, par exemple celle couvrant les fréquences  allant de 440 à 880 Hz, il est évidemment inimaginable de donner des noms  différents à l'infinité des sons possibles. C'est d'ailleurs inutile car  l'oreille est généralement incapable de distinguer deux sons qui sont dans un  intervalle de fréquences trop proche de 1 (Préciser un seuil est d'ailleurs  impossible car il varie selon les individus). Ecoutons ce que donnerait un  rapport-seuil fixé conventionnellement à la valeur 1.01 : voici deux sons à 400  Hz et 404 Hz en séquence pendant 4 secondes (soit 2 s par son) (ensequence) puis les deux mêmes sons joués  simultanément pendant 2 s (battement).  Imaginons que l'on fixe ce seuil à un rapport  1.01, cela aurait pour conséquence que pour couvrir l'octave, il faudrait pas  moins de 70 notes distinctes. Multipliant ce nombre par le nombre d'octaves  (10.4) cela donnerait un clavier de piano à plus de 750 touches, ce qui est  impensable ! </p>
       </div>
       
 
       
       <div id="orthographe">
-        <h4>Ah l'orthographe !</h4>
+        <h4>Quelle musique, pour qui et pourquoi ? Abrégé de diététique musicale.</h4>
        
-        <p></p> 
+        <p>La musique fascine tous les publics et rares sont ceux qui s'y montrent indifférents. Tout le monde ne vibre cependant pas aux mêmes musiques. la cuisine orientale diffère de cella pratiquée en Occident et l'une comme l'autre trouve ses amateurs sous toutes les longitudes. Un critère d'excellence demeure cependant qui vaut pour tout le monde : une bonne cuisine exige des ingrédients frais et exempts de tout trafic(otage). Ce n'est pas seulement la qualité gustative qui est en question mais tout autant sinon davantage leur origine biologique.</p> 
+        
+        <p>Qu'est-ce qu'une bonne musique : c'est une musique qui nous parle quand nous avons besoin qu'on nous parle et que les mots ont épuisé leurs effets parce que la peine, la douleur mais aussi la joie ou l'allégresse sont trop fortes.
+Une bonne musique n'a pas besoin d'être savante, tant mieux pour notre intellect si elle l'est,  mais il y a un point qu'elle doit respecter autant que possible, elle doit être propre, loin du bruit qui envahit nos existences qui ne protestent même plus tant elles s'y sont résolues.
+
+L'exception occidentale.
+
+De tous temps les sociétés humaines ont pratiqué la musique. Elles l'ont fait à l'occasion de rites initiatiques, religieux ou plus simplement festifs. La voix a naturellement précédé l'instrument et celui-ci a connu des niveaux de perfectionnement très inégaux. L'instrument isolé s'est trouvé accordé selon des règles éminemment variées jusqu'à ce que la coexistence de plusieurs instruments réclame un peu d'ordre dans les accords. La théorie musicale, pas forcément explicitée, a subi des degrés de développement tout aussi inégaux. 
+ 
+L'Occident s'est distingué, disons à partir de l'an 1000, par l'éclosion d'une musique savante, qui a été et reste largement une exception singulière. La musique savante est à la musique populaire ce que le calcul savant est au calcul élémentaire (Les anglais distinguent "calculation" de "computation", ce que ne font pas les français qui confondent les deux disciplines en "calcul"), à cette différence près qu'elle demeure accessible à tous ceux qui se donnent la peine de l'entendre. Tous ne le font pas cependant loin de là et nos salles de concert ne sont fréquentées que par un pourcentage infime de la population, à peine 0.1%. Les absents invoquent un langage artistique élitiste auquel ils ne sont pas préparés mais ils sont sans excuse car la musique en question n'est savante que pour ceux qui l'écrivent et la jouent, certainement pas pour ceux à qui on ne demande que d'écouter et de vibrer.
+
+Curieusement les orientaux, chinois, japonais et coréens font plus volontiers cet effort qui répugnent tant à nos concitoyens. Ils ont compris que s'il est un temps pour se divertir au contact des traditions populaires, il en est un autre pour se cultiver au contact de l'art de générations de musiciens qui ont tant étudié pour ordonner l'univers des sons.
+
+On oppose souvent musiques savante et populaire. A tort sans doute, puisque l'une se nourrit régulièrement de l'autre. D'aucuns ignorent le problème en affirmant qu'il n'y a pas une grande et une petite musique, seulement une bonne et une mauvaise, mais reconnaissons que cette formule ne fait guère que déplacer le débat : qu'est-ce qui différencie une bonne musique d'une autre qui ne l'est pas ?
+
+
+La musique, un langage comme les autres ?
+
+Pourquoi la musique ?  Parce que c'est la langue d'un monde parallèle au  nôtre où la bêtise et la violence n'ont pas droit de cité. Chacun peut y trouver sa place sans restriction de culture ou d'intelligence car la seule qui soit requise est celle du cœur que chacun possède. Il est vrai que si la musique est pratiquée universellement elle l'est dans divers idiomes dont on pourrait craindre qu'ils reproduisent à une autre échelle la différence observée entre les langues parlées. 
+
+La musique est le théâtre des sons et sa préservation exige qu'elle soit notée. Au plan syntaxique, la musique est incontestablement un langage, elle en possède tous les attributs : un alphabet, une grammaire et une orthographe. Ce langage présente toutefois une particularité unique : si tout le monde est susceptible de le comprendre, encore faut-il un interprète !, le parler exige des compétences inusuelles. L'alphabet est composé de notes et d'un grand nombre de signes particuliers destinés à en préciser l'usage, mélodique, rythmique, … . Les notes utilisées ont été sélectionnées parmi l'infinité des sons possibles faisant partie du spectre audible. Cela ne s'est pas fait sans mal et l'histoire des gammes musicales est là pour nous le rappeler, qui est faite d'un mélange d'acoustique physique et d'arithmétique. Ces notes et leurs attributs ne peuvent évidemment être choisis au hasard d'où l'émergence de grammaires harmonique et contrapuntique destinées à codifier l'agencement des sons, c'est la mélodie (monodie) (dite horizontale parce que lue de gauche à droite) et verticalement, c'est la superposition des notes en accords ou en voix distinctes (polyphonie). Harmonie vient d'harmonique mais ce n'est pas tout il convient aussi de surprendre l'oreille.
+
+Au plan sémantique, les choses méritent d'être précisées, en particulier en ce qui concerne son degré d'universalité. Il faut être prudent avec l'usage du mot universel. Contrairement aux langages parlés, qui ne sont compréhensibles que de leurs locuteurs, le langage musical est immédiatement accessible à tous. La contrepartie est qu'il n'opère que dans un domaine restreint de la pensée humaine : on peut traduire la théorie de la Relativité générale en japonais, peut-être en bantou, on ne peut pas le faire en musique. Par contre la musique peut exprimer des émotions difficiles à décrire avec des mots (soyons prudents, ne disons pas impossibles, même si une grande majorité d'entre nous seraient en difficulté d'y parvenir).
+
+  Ce n'est pas pour autant que tout le monde sur terre entende (au sens de comprendre)  et partage la musique des traditions étrangères à la sienne. Nos orchestres (nos salles) sont plein(e)s de musiciens (mélomanes) occidentaux, américains ou extrême-orientaux mais on y trouve rarement des représentants des cultures africaines, arabes ou indiennes. La musique est cependant présente dans ces pays, la musique indienne est même réputée savante dans son respect de codes extrêmement sophistiqués (ragas) mais le fait demeure que cette tradition demeure largement singulière en dépit des échanges qu'elle a pu susciter ponctuellement (Philip Glass et Ravi Shankar, par exemple). La Chine, la Corée et le Japon ont aussi leur tradition propre mais pour des raisons difficilement explicables, ces pays ont adopté la musique occidentale au point de lui vouer un culte surprenant : on estime à 20 millions le nombre des pianistes chinois !
+
+Qu'on le veuille ou non, on en revient toujours à cette idée que si l'Afrique est le berceau de l'humanité, donc sans doute de la musique, la musique savante, bien plus tardive, est occidentale. Stravinsky, l'un de ses meilleurs artisans, réfutait qu'elle soit capable d'exprimer quoi que ce soit. Même dans le domaine de l'émotion, il n'est pas certain que chacun la ressente de la même façon. Voilà l'universalité bien contestée sauf que la musique a retourné l'objection à son avantage : c'est de la multiplicité des émotions ressenties qu'elle tire son pouvoir sans cesse renouvelé. La musique n'est pas la mathématique et sa vérité est changeante. Ceux que cette incertitude dérange doivent étudier les sciences, pas la musique. Les sciences, parlons-en, même en musique, elles ont leur mot à dire.
+</p>
  
       </div>
       
       
       
       <div id="rousseau">
-        <h4>La notation de Rousseau</h4>
+        <h4>Le beau son fait la bonne musique</h4>
         
-         <p></p> 
+         <p>
+
+« Il y a deux espèces de musique, la bonne et la mauvaise. Et puis il y a la musique d’Ambroise Thomas », a dit Emmanuel Chabrier (1841-1894) 
+qui cultivait l'humour à la ville comme en musique. Cela ne nous dit toujours rien de ce qui distingue la bonne musique de celle qui l'est moins. Chacun ayant ses critères et la réponse à la question posée en devient éminemment subjective. J'en ai retenu un qui rapproche l'art musical de l'art culinaire une connexion pas si improbable qu'il y paraisse.
+
+Tout bien pesé, je ne connais pas d'art plus proche de la musique que l'art culinaire. Bon nombre de points sont communs parmi lesquels j'en retiendrai deux :
+ La musique est assurément le produit culturel le plus consommé et cela peut aller chez certains jusqu'à la boulimie. La jeune génération accorde malheureusement aussi peu d'attention à la qualité de ce qu'elle écoute que de ce qu'elle ingurgite. Le fast-food a remplacé le plat mijoté et la malbouffe guette à tous les étages.
+La gastronomie ne se conçoit qu'au restaurant trois étoiles.
+Pourtant les apprentis-cuisiniers sont vite récompensés toutes les fois qu'ils cuisinent des produits frais et sains. Les plus grands chefs prétendent même qu'on peut rater une recette difficile mais que si les ingrédients sont de qualité, le résultat ne saurait être mauvais sauf peut-être sabotage caractérisé. Il n'en va pas autrement en musique : les problèmes sont similaires tout comme les solutions.
+
+Voici quelques enregistrements fameux qui ont en tous cas le mérite de mettre le son en évidence :</p>
+
+<ul class="miniListCorps">
+                    <li>Luth : Weiss</li>
+                    <li>Théorbe : Hopkinson Smith</li>
+                    <li>Clavecin : Blandine Verlet, Ursula Duetscheler, Brigitte Tramier</li>
+                    <li>Madrigal : Barbara Strozzi (Capella Mediterranea)</li>
+                    <li>Chanson : Poème harmonique (Claire Lefiliâtre & Le Poème harmonique)</li>
+                    <li>Psaltérion : Ciaccona (Pluhar)</li>
+                    <li>Cantigas de Santa Maria : Esther Lamandier</li>
+                    <li>Rolf Lieslevand</li>
+</ul>
+
+
+
+         <p>D'emblée se révèle une contradiction  : je ne vous propose, par la force des choses, que des musiques enregistrées. L'enregistrement n'est qu'un instrument de travail permettant d'accélérer l'inventaire des musiques existantes ou de délassement pour ceux plus nombreux qui n'y cherchent que la satisfaction de leurs aspirations. Le lieu de prédilection de la musique ne peut être que la salle de concert, le seul endroit où l'acoustique reprend ses droits. </p> 
          
       </div>
       
       
       
       <div id="base12">
-        <h4>Une notation duodécimale</h4>
+        <h4>Musique acoustique et électronique</h4>
         
-         <p></p> 
+         <p>
+L'électrification a joué un rôle tantôt faste tantôt néfaste :
+La radio a joué un rôle essentiel (Aux Etats-Unis on suivait les concerts Toscanini de la NBC comme on suivrait maintenant un reportage sportif)
+Le cinéma s'est sonorisé créant des besoins musicaux spécifiques, satisfaits avec des moyens variables
+L'enregistrement discographique a clairement mis le grand répertoire à la portée d'un large public. Aujourd'hui, à une époque où l'on dit l'enregistrement moribond, on dispose d'une musicothèque d'une ampleur sans précédent.
+Au rayon des bémols, force est de regretter la prolifération des instruments électr(on)iques dont le filtrage par des haut-parleurs est à la musique ce que la conserve est à la gastronomie. L'amplification de la voix est également regrettable lorsqu'elle ne répond à aucun autre dessein que celui de pallier l'insuffisance vocale des interprètes. Le sommet du mauvais goût est définitivement atteint lorsque la musique est constamment polluée par une basse obstinée à mille lieues de celle dont l'époque baroque détenait le secret acoustique. Comment ne pas regretter cette improvisation quand on la compare aux boum-boum.
+</p> 
         
       </div>
       
       
       
       <div id="chromatique">
-        <h4>La portée chromatique</h4>
+        <h4>Musique et modernité</h4>
 
- <p></p> 
+ <p>Ce n'est un secret pour personne le public fréquentant les salles de concert éprouve des difficultés à appréhender la musique de son temps. C'est un phénomène qui ne date pas  d'aujourd'hui mais le fait est qu'il n'a cessé de prendre de l'ampleur, à partir de la seconde moitié du 19ème siècle. Il n'existait pas à l'époque des classiques viennois et c'était même l'inverse qui se passait : on écoutait les œuvres récentes de Haydn, Mozart ou Beethoven et on ignorait largement les musiques antérieures. Les statistiques relatives au Gewandhaus de Leipzig font état de 80% de compositeurs vivants vers 1800, proportion qui tombe à 38% en 1850 et à 24% 20 ans plus tard !
+C'est devant ce constat que des musiciens de la trempe de Schönberg ont commencé à se demander s'il fallait vraiment se préoccuper des goûts du public puisque de toutes manières ils désertaient la musique actuelle. Autant alors composer pour soi ! Et lutter pour que le charme facile de ce qui est familier ne l'emporte pas sur la dure vérité de ce qui est nouveau. Toute époque recherche davantage de confort - la dégénérescence menace et l'invasion barbare intérieure ou extérieure ! -  quand l'artiste refuse d'escamoter les problèmes irrésolus quitte à adopter une attitude ascétique. L'Allemagne prise entre les feux musicaux en provenance de Russie et de France, une fameuse prémonition de désastres à venir; </p> 
 
         
       </div>
