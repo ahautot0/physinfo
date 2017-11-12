@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Cours | Publications</title>
+  <meta name="description" content="Publications de André Hautot dans les domaines de la physique théorique et des mathématiques appliquées" />
+  <link rel="shortcut icon" href="logo.ico" />
+  <link href="style.css" rel="stylesheet" type="text/css" /> 
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <script src="js/jquery-1.10.2.js"></script>
+  <script src="js/menus.js"></script>
+  <script src="js/design.js"></script>
+  <script src="js/gestionAudioVideo.js"></script>
+  <script> 
+    // Inclusion Header et Footer + class "active" (pour lien menu)
+    $(function(){
+      $(function(){
+        $.ajax({
+           url: "template/header.php",
+           type: "POST",
+           data: ({ROOT: './'}),
+           success: function(data) {
+             $("#header").html(data);
+             $("#cours").addClass("active"); /*a changer en fonction de la page*/
+             update_design_when_header_loaded();
+          }
+        });
+      });
+      $("#miniMenus").load("template/miniMenus.php", { ROOT: './' }, mini_menus_after_loading);
+      $("#footer").load("template/footer.php", { ROOT: './' }, update_design_footer);  
+    });
+  </script> 
+</head>
+
+<body id="site">
+
+    <div>
+        <!-- Inclusion header -->
+        <div id="header"></div>
+
+        <div id="miniMenus"></div>
+
+        <div id="corps">
+
+            <div id="contenuPrincipal">
+                <h2>Publications de André Hautot</h2>
+                <h3>Dans les domaines de la Physique théorique et des Mathématiques appliquées</h3>
+
+                <nav class="filAriane">
+                    <ul>
+                        <li class="breadcrumbItem"><span>Vous êtes ici : </span> Physique</li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Publications</li>
+                    </ul>
+                </nav>
+  
+                <div>
+                  
+
+                  <ol class="miniListCorps">
+                  
+                    <li><a href="Publications/BSR71_1.pdf">Sur les solutions polynomiales de l'équation différentielle zP"<sub>n</sub>+(az<sup>2</sup>+bz+c)P'<sub>n</sub>+(d+ez+fz<sup>2</sup>)P<sub>n</sub>=0</a> (Bull. Soc. Royale des Sc. Liège 38 (1969), pp 660-663)</li>
+                    <li><a href="Publications/BSR71_2.pdf">Sur les solutions polynomiales de l'équation différentielle z(z-1)P"<sub>n</sub>+(az<sup>2</sup>+bz+c)P'<sub>n</sub>+(d+ez+fz<sup>2</sup>)P<sub>n</sub>=0</a> (Bull. Soc. Royale des Sc. Liège 38 (1969), pp 654-659)</li>
+                    <li><a href="Publications/BSR71_3.pdf">Sur les solutions polynomiales de l'équation différentielle z(1-z)(&alpha;-z)P"<sub>n</sub>+(az<sup>2</sup>+bz+c)P'<sub>n</sub>+(d+ez+fz<sup>2</sup>)P<sub>n</sub>=0</a> (Bull. Soc. Royale des Sc. Liège 40 (1971), pp 7-12)</li>
+                    <li><a href="Publications/BSR714.pdf">Sur des combinaisons linéaires d'un nombre fini de fonctions transcendantes comme solutions d'équations différentielles du second ordre</a> (Bull. Soc. Royale des Sc. Liège 40 (1971), pp 13-23)</li>
+                    
+                    <li><a href="Publications/physica70.pdf">Sur une méthode quaternionique de séparation des variables</a> (Physica 48 (1970), pp 609-619)</li>
+                    <li><a href="Publications/physica71.pdf">Sur la complétude de l'ensemble des fonctions propres de l'atome d'hydrogène relativiste</a> (Physica 53 (1971), pp 154-156)</li>
+                    
+                    
+                    <li><a href="Publications/physletters71.pdf">A new magnetic field for Dirac's equations</a> (Physics Letters 35A (1971), pp 129-130)</li>
+                    <li><a href="Publications/physletters72.pdf">Schrödinger's equation and special radial electric fields</a> (Physics Letters 38A (1972), pp 305-306)</li>
+                    <li><a href="Publications/physica72.pdf">The exact motion of a charged particle in the magnetic field B=(x<sup>2</sup>+y<sup>2</sup>)<sup>-1/2</sup>[-&gamma;y/(x<sup>2</sup>+y<sup>2</sup>),&gamma;x/(x<sup>2</sup>+y<sup>2</sup>),&alpha;]</a> (Physica 58 (1972), pp 37-44)</li>
+                    <li><a href="Publications/JMPmay1972.pdf">About the solutions of Dirac's equations in the presence of new magnetic fields</a> (J. Math. Physics 13 (1972), pp 710-714)</li>
+                    <li><a href="Publications/JMPoct1973.pdf">Exact motions in noncentral electric fields</a> (J. Math. Physics 14 (1973), pp 1320-1327)</li>
+                    <li><a href="Publications/BSR74.pdf">Sur la solubilité de l'équation de Schrödinger</a> (Bull. Soc. Royale des Sc. Liège 43 (1974), pp 348-395)</li>
+                    <li><a href="Publications/JMPdec1973.pdf">Motion in radial magnetic fields</a> (J. Math. Physics 14 (1973), pp 2011-2017)</li>
+                    <li><a href="Publications/JMPfeb1974.pdf">Some comments on a recent paper of Glasser</a> (J. Math. Physics 14 (1973), pp 268)</li>
+                    <li><a href="Publications/JMPoct1974.pdf">A new method for the evaluation of slowly convergent series</a> (J. Math. Physics 15 (1974), pp 1722-1727)</li>
+                    
+                    <li><a href="Publications/JPhys75.pdf">New applications of Poisson's summation formula</a> (J. Phys. A8 (1975), pp 853-862)</li>
+                    <li>In collaboration with M-T Ploumhans (ULg) : <a href="Publications/BSR79.pdf">Perspectives actuelles d'applications de la théorie des récurrences linéaires d'ordre n</a> (Bull. Soc. Royale des Sc. Liège 48 (1979), pp 5-32)</li>
+                    
+                    <li>In collaboration with Alphonse Magnus (UCL) : <a href="Publications/JCompApplMath.pdf">Calculation of the eigenvalues of Schrödinger equations by an extension of Hill's method</a> (J. of Comp. and Appl. Math. 5 (1979), pp 3-15)</li>
+                    <li><a href="Publications/JCompPhys81.pdf">Interaction &lambda;x<sup>2</sup>/(1+gx<sup>2</sup>) revisited</a> (J. Comp. Phys. 39 (1981), pp 72-93)</li>
+                    <li><a href="Publications/JCompPhys82.pdf">Application of generalized Padé approximants to the special function evaluation problem</a> (J. Comp. Phys. 47 (1982), pp 477-488)</li>
+                    <li><a href="Publications/PhysRevD.33.437.pdf">On the Hill-determinant method</a> (Phys. Rev. D33 (1986), pp 437-443)</li>
+                    <li>In collaboration with Michel Nicolas (ULg) : <a href="Publications/JPhysA83.pdf">On the applicability of the Hill-determinant method</a> (J. Phys. A16 (1983), pp 2953-2959)</li>
+                    <li><a href="Publications/ANM88.pdf">Convergence acceleration of continued fractions of Poincaré's type</a> (Appl. Num. Math. 4 (1988), pp 309-322)</li>
+                    
+                    <li>In collaboration with Antoine Hautot (ULg) : <a href="Publications/PhysEssays92.pdf">The quantization of material elementary particles and application to the neutron and proton</a> (Physics Essays 5 (1992), pp 90-96)</li>
+                    <li>In collaboration with Antoine Hautot (ULg) : <a href="Publications/PhysEssays96.pdf">Particle quantization and its application to nucleons, mesons and baryons</a> (Physics Essays 9 (1996), pp 159-185)</li>
+                    <li><a href="Publications/atti98.pdf">Modèle unitaire de l'interaction en physique : bilan et perspectives</a> (Atti della Fondazione Giorgio Ronchi, Anno LIII (1998), pp 597-608)</li>
+                    <li><a href="Publications/atti99.pdf">Unified interaction through boson exchange : an essay on recursive dynamics</a> (Atti della Fondazione Giorgio Ronchi, Anno LIV (1999), pp 7-50)</li>
+                    <li><a href="Publications/atti2001.pdf">The two-body relativistic interaction in recursive dynamics</a> (Atti della Fondazione Giorgio Ronchi, Anno LVI (2001), pp 363-375)</li>
+                    
+                  </ol>
+
+                 
+                </div>
+            </div>
+
+
+            <!-- <a id="ancreRetourHautPage" href="#site">&uarr;</a> -->
+
+            <!-- Inclusion footer -->
+            <div id="footer"></div>
+
+        </div>
+    
+    
+    </div>
+
+</body>
+</html>

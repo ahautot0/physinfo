@@ -9,6 +9,7 @@
         <li><a id="contenuphysique" href="<?php echo $_POST['ROOT']; ?>contenuphysique.html">Présentation</a></li>
         <li><a id="seminaires" href="<?php echo $_POST['ROOT']; ?>Seminaires.html">Séminaires</a></li>
         <li><a id="cours" href="<?php echo $_POST['ROOT']; ?>cours.html">Cours</a></li>
+        <li><a id="publications" href="<?php echo $_POST['ROOT']; ?>publications.html">Publications</a></li>
         <li><a id="chroniquesEparses" href="<?php echo $_POST['ROOT']; ?>chroniquesEparses.html">Chroniques éparses</a></li>
         <li>
           <ul id="sousNavPhysique">
