@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Faits divers | La Fondation du Palazzetto Bru Zane</title>
+  <meta name="description" content="La fortune accumulée par la famille Bru bénéficie grandement à la restauration du patrimoine musical français du 19ème siècle." />
+  <link rel="shortcut icon" href="../logo.ico" />
+  <link href="../style.css" rel="stylesheet" type="text/css" /> 
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <script src="../js/jquery-1.10.2.js"></script>
+  <script src="../js/menus.js"></script>
+  <script src="../js/design.js"></script>
+  <script src="../js/gestionAudioVideo.js"></script>
+  <script> 
+    // Inclusion Header et Footer
+    $(function(){
+      $(function(){
+        $.ajax({
+           url: "../template/header.php",
+           type: "POST",
+           data: ({ROOT: '../'}),
+           success: function(data) {
+             $("#header").html(data);
+             $("#faitsDivers").addClass("active"); /*a changer en fonction de la page*/
+             update_design_when_header_loaded();
+          }
+        });
+      });
+      $("#miniMenus").load("../template/miniMenus.php", { ROOT: '../' }, mini_menus_after_loading);
+      $("#footer").load("../template/footer.php", { ROOT: '../' }, update_design_footer);  
+    });
+  </script> 
+</head>
+
+<body id="site">
+
+    <div>
+        <!-- Inclusion header -->
+        <div id="header"></div>
+
+        <div id="miniMenus"></div>
+
+        <div id="corps">
+
+            <div id="contenuPrincipal">
+                <h2>Faits divers</h2>
+                <h3>La Fondation du Palazzetto Bru Zane</h3>
+
+                <nav class="filAriane">
+                    <ul>
+                        <li class="breadcrumbItem"><span>Vous êtes ici : </span> Musique</li>
+                        <li class="breadcrumbItem">
+                          <a href="../chroniques.html">Chroniques</a>
+                        </li>
+                        <li class="breadcrumbItem">
+                          <a href="../faitsDivers.html">Faits divers</a>
+                        </li>
+                        <li class="breadcrumbItem breadcrumIitem--current">La Fondation du Palazzetto Bru Zane</li>
+                    </ul>
+                </nav>  
+   
+                <p>Si vous êtes familiers de ces chroniques vous avez déjà entendu parler du Palazzetto Bru Zane. A l'époque le projet était en pleine gestation mais à présent il est suffisamment développé pour que l'on fasse un premier bilan. Il est d'autant plus nécessaire que ce n'est pas tous les jours qu'on peut se réjouir que les artistes français (mais aussi quelques  sympathisants étrangers) consacrent leur temps et leur talent à l'exhumation de tous un pan de la culture musicale nationale.</p>
+                
+
+            <div class="conteneurImageSeule">
+                  <div>
+                    <figure>
+                      <img src="../images/grawemeyer/grawemeyer.jpg" alt="Charles Grawemeyer"/>
+                      <figcaption>Charles Grawemeyer</figcaption>
+                    </figure>
+                  </div>
+                </div>
+
+                
+
+        <ul class="miniListCorps">
+                  <li><span class="misEnGras">1985</span> -	Witold Lutosławski (1913-1994) : <a href="http://www.youtube.com/watch?v=mHpo3KV-8Yo&feature=related">Symphonie n°3</a> (1973-1983).</li>
+                  <li><span class="misEnGras">1986</span> -	György Ligeti (1923-2006) : <a href="http://www.youtube.com/watch?v=6WHdNub6Agk">Études pour piano</a> (1985).</li>
+                  <li><span class="misEnGras">1987</span> -	Harrison Birtwistle (1934- ) : The Mask of Orpheus (1984).</li>
+                  <li><span class="misEnGras">1988</span> -	aucun prix décerné.</li>
+                  <li><span class="misEnGras">1989</span> -	Chinary Ung (1942- ) : <a href="https://www.youtube.com/watch?v=e4S3oLMtTOU">Spiral VI</a>, pour ensemble (1992).</li>
+                  <li><span class="misEnGras">1990</span> -	Joan Tower (1938- ) : Silver Ladders, pour orchestre (1986).</li>
+                  <li><span class="misEnGras">1991</span> -	John Corigliano (1938- ) : <a href="http://www.youtube.com/watch?v=GHqHleU0l90">Symphony n°1</a> (1991).</li>
+                  <li><span class="misEnGras">1992</span> -	Krzysztof Penderecki (1933- ) : <a href="http://www.youtube.com/watch?v=jfo_CdAqNsg">Adagio pour grand orchestre</a> (1989), en fait la Symphonie n°4.</li>
+                  <li><span class="misEnGras">1993</span> -	Karel Husa (1921- ) : Concerto pour violoncelle &amp; orchestre (1988).</li>
+                  <li><span class="misEnGras">1994</span> -	Tōru Takemitsu (1930-1996) : Fantasma/Cantos, pour clarinette &amp; orchestre (1991).</li>
+                  <li><span class="misEnGras">1995</span> -	John Adams (1947- ) : <a href="http://www.youtube.com/watch?v=Tx1ktwTcPz0">Concerto pour violon</a> (1993).</li>
+                  <li><span class="misEnGras">1996</span> -	Ivan Tcherepnin (1943-1998) : Double Concerto pour violon, violoncelle &amp; orchestre (1995).</li>
+                  <li><span class="misEnGras">1997</span> -	Simon Bainbridge (1952- ) : Ad Ora Incerta - Four Orchestral Songs.</li>
+                  <li><span class="misEnGras">1998</span> -	Tan Dun (1957- ) : <a href="http://www.youtube.com/watch?v=0RZ-GaQSX8w&feature=related">Marco Polo</a> (1995).</li>
+                  <li><span class="misEnGras">1999</span> -	aucun prix décerné.</li>
+                  <li><span class="misEnGras">2000</span> -	Thomas Adès (1971- ) : <a href="http://www.youtube.com/watch?v=Dupkwrm-ziY&feature=related">Asyla</a>, Op. 17 (1997) pour orchestre.</li>
+                  <li><span class="misEnGras">2001</span> -	Pierre Boulez (1925- ) : <a href="http://www.youtube.com/watch?v=cr0i9c21H2Q">Sur Incises</a> (1996–1998).</li>
+                  <li><span class="misEnGras">2002</span> -	Aaron Jay Kernis (1960- ) : Colored Field, pour violoncelle &amp; orchestre (1994).</li>
+                  <li><span class="misEnGras">2003</span> -	Kaija Saariaho (1952- ) : <a href="http://www.youtube.com/watch?v=JpkFJZDkqAI&feature=related">L'amour de loin</a> (2000).</li>
+                  <li><span class="misEnGras">2004</span> -	Unsuk Chin (1961- ) : <a href="https://www.youtube.com/watch?v=QXSB8rXR05g">Concerto</a> pour violon (2001), à ne pas manquer.</li>
+                  <li><span class="misEnGras">2005</span> -	George Tsontakis (1951- ) : Concerto n°2, pour violon (2003).</li>
+                  <li><span class="misEnGras">2006</span> -	György Kurtág (1926- ) : ... Concertante ..., Op. 42 (2003) pour violon, alto &amp; orchestre.</li>
+                  <li><span class="misEnGras">2007</span> -	Sebastian Currier (1959- ) : Static (2003)	pour flûte, clarinette, violon, violoncelle &amp; piano.</li>
+                  <li><span class="misEnGras">2008</span> -	Peter Lieberson (1946- ) : <a href="http://www.youtube.com/watch?v=kg56VxIsVQY">Neruda Songs</a> (2005), cycle pour mezzo-soprano &amp; orchestre.</li>
+                  <li><span class="misEnGras">2009</span> -	Brett Dean (1961- ) : The Lost Art of Letter Writing (2006), concerto pour violon.</li>
+                  <li><span class="misEnGras">2010</span> -	York Höller (1941- ) : <a href="https://www.youtube.com/watch?v=2qZQ7RHu0E8">Mythos</a> (1979-1995) pour orchestre.</li>
+                  <li><span class="misEnGras">2011</span> -	Louis Andriessen (1939- ) : <a href="http://www.youtube.com/watch?v=hdWSFcg22uM">La Commedia</a> (2004-2008), opera multimedia.</li>
+                  <li><span class="misEnGras">2012</span> -	Esa-Pekka Salonen (1958- ) : <a href="http://www.youtube.com/watch?v=DOCIgj6FXYQ">Concerto pour violon</a> (2009).</li>
+                </ul>
+
+                
+          </div>
+
+
+            <a id="ancreRetourHautPage" href="#site">&uarr;</a>
+
+            <!-- Inclusion footer -->
+            <div id="footer"></div>
+
+        </div>
+    
+    
+    </div>
+
+</body>
+</html>

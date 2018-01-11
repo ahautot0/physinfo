@@ -1,0 +1,184 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      6316,        175]
+NotebookOptionsPosition[      5853,        154]
+NotebookOutlinePosition[      6196,        169]
+CellTagsIndexPosition[      6153,        166]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"notes21fifths", "=", 
+   RowBox[{"{", 
+    RowBox[{
+    "\"\<fa\[Flat]\>\"", ",", "\"\<do\[Flat]\>\"", ",", "\"\<sol\[Flat]\>\"", 
+     ",", "\"\<r\[EAcute]\[Flat]\>\"", ",", "\"\<la\[Flat]\>\"", ",", 
+     "\"\<mi\[Flat]\>\"", ",", "\"\<si\[Flat]\>\"", ",", "\"\<fa\>\"", ",", 
+     "\"\<do\>\"", ",", "\"\<sol\>\"", ",", "\"\<r\[EAcute]\>\"", ",", 
+     "\"\<la\>\"", ",", "\"\<mi\>\"", ",", "\"\<si\>\"", ",", 
+     "\"\<fa\[Sharp]\>\"", ",", "\"\<do\[Sharp]\>\"", ",", 
+     "\"\<sol\[Sharp]\>\"", ",", "\"\<r\[EAcute]\[Sharp]\>\"", ",", 
+     "\"\<la\[Sharp]\>\"", ",", "\"\<mi\[Sharp]\>\"", ",", 
+     "\"\<si\[Sharp]\>\""}], "}"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.7218483258942356`*^9, 3.721848326783437*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"anim", "=", 
+  RowBox[{"Manipulate", "[", 
+   RowBox[{
+    RowBox[{"Grid", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"Flatten", "[", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"notes21fifths", "[", 
+           RowBox[{"[", 
+            RowBox[{"1", ";;", "i"}], "]"}], "]"}], ",", 
+          RowBox[{"Overscript", "[", 
+           RowBox[{
+            RowBox[{"notes21fifths", "[", 
+             RowBox[{"[", 
+              RowBox[{"i", "+", "1"}], "]"}], "]"}], ",", "M"}], "]"}], ",", 
+          RowBox[{"notes21fifths", "[", 
+           RowBox[{"[", 
+            RowBox[{
+             RowBox[{"i", "+", "2"}], ";;", 
+             RowBox[{"i", "+", "3"}]}], "]"}], "]"}], ",", 
+          RowBox[{"Underscript", "[", 
+           RowBox[{
+            RowBox[{"notes21fifths", "[", 
+             RowBox[{"[", 
+              RowBox[{"i", "+", "4"}], "]"}], "]"}], ",", "m"}], "]"}], ",", 
+          RowBox[{"notes21fifths", "[", 
+           RowBox[{"[", 
+            RowBox[{
+             RowBox[{"i", "+", "5"}], ";;", "21"}], "]"}], "]"}]}], "}"}], 
+        "]"}], "}"}], ",", 
+      RowBox[{"Frame", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{"None", ",", "None", ",", 
+         RowBox[{"Table", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{"1", ",", "k"}], "}"}], "\[Rule]", "True"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"k", ",", "i", ",", 
+             RowBox[{"i", "+", "6"}]}], "}"}]}], "]"}]}], "}"}]}]}], "]"}], 
+    ",", 
+    RowBox[{"{", 
+     RowBox[{"i", ",", "1", ",", "15", ",", "1"}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.7218482836961613`*^9, 3.7218482946629806`*^9}, {
+  3.721848341151062*^9, 3.721848357983492*^9}, {3.7218486053596745`*^9, 
+  3.7218486179363937`*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`i$$ = 6, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`i$$], 1, 15, 1}}, Typeset`size$$ = {
+    581., {14.5, 19.5}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`i$663$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`i$$ = 1}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`i$$, $CellContext`i$663$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Grid[{
+         Flatten[{
+           Part[$CellContext`notes21fifths, 
+            Span[1, $CellContext`i$$]], 
+           Overscript[
+            
+            Part[$CellContext`notes21fifths, $CellContext`i$$ + 
+             1], $CellContext`M], 
+           Part[$CellContext`notes21fifths, 
+            Span[$CellContext`i$$ + 2, $CellContext`i$$ + 3]], 
+           Underscript[
+            
+            Part[$CellContext`notes21fifths, $CellContext`i$$ + 
+             4], $CellContext`m], 
+           Part[$CellContext`notes21fifths, 
+            Span[$CellContext`i$$ + 5, 21]]}]}, Frame -> {None, None, 
+          
+          Table[{1, $CellContext`k} -> 
+           True, {$CellContext`k, $CellContext`i$$, $CellContext`i$$ + 6}]}], 
+      "Specifications" :> {{$CellContext`i$$, 1, 15, 1}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{630., {61., 66.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{3.7218482261944604`*^9, 3.721848305208599*^9, 
+  3.7218483649723043`*^9, 3.721848622559658*^9, 3.7246608461645584`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<alterations.avi\>\"", ",", "anim"}], "]"}]], "Input",
+ CellChangeTimes->{{3.721848301230592*^9, 3.721848302260194*^9}}],
+
+Cell[BoxData["\<\"alterations.avi\"\>"], "Output",
+ CellChangeTimes->{3.7218483968547487`*^9, 3.72184843183875*^9, 
+  3.721848639492627*^9, 3.7218486839501696`*^9}]
+}, Open  ]]
+},
+WindowSize->{1424, 817},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"8.0 for Microsoft Windows (64-bit) (November 7, 2010)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 760, 14, 31, "Input"],
+Cell[CellGroupData[{
+Cell[1342, 38, 1820, 49, 72, "Input"],
+Cell[3165, 89, 2295, 50, 144, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5497, 144, 173, 3, 31, "Input"],
+Cell[5673, 149, 164, 2, 30, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
