@@ -180,15 +180,17 @@ Votre navigateur n'est pas compatible
                   <p>On peut  tracer un axe des complexités (K) croissantes et y situer  les textes (de longueur N) correspondant aux situations extrêmes : </p>
 
                   <ul class="miniListCorps">
-                    <li>Du côté des basses complexités, les textes répétitifs du style &quot;aaaa...<sup>N fois</sup> &quot; sont fortement compressibles par un programme du genre, &quot;Répéter N fois : Print (&quot;a&quot;)&quot;. La longueur de ce programme (égale à K), est  de l'ordre de lg(N) bits car seul l'encodage (binaire) de N est (très modérément) coûteux, dans ce programme, lorsque N grandit.
-                      <div class="conteneurImages">
-                          <div>
-                              <figure>
+                    <li>Du côté des basses complexités, les textes répétitifs du style &quot;aaaa...<sup>N fois</sup> &quot; sont fortement compressibles par un programme du genre, &quot;Répéter N fois : Print (&quot;a&quot;)&quot;. La longueur de ce programme (égale à K), est  de l'ordre de lg(N) bits car seul l'encodage (binaire) de N est (très modérément) coûteux, dans ce programme, lorsque N grandit. <br/><br/>
+                    
+                    <div class="conteneurImageSeule">
+                      <div>
+                          <figure>
                                   <img src="../images/complexite/axe.png" alt="Axe des complexités"/>
                                   <figcaption>Axe des complexités</figcaption>
                               </figure>
-                          </div>
                       </div>
+                  </div>
+                      
                     </li>
                     <li>Du côté des hautes complexités, les textes aléatoires du style &quot;g5?d!!az...&quot; sont incompressibles car aucun programme imprimant ce texte n'est plus court que  &quot;Print(g5?d!!az...)&quot;. La complexité, K, est cette fois de l'ordre de N octets puisque le programme consomme un octet par caractère, une simple imprimante ne ferait pas décidément plus mal.</li>
                   </ul>
