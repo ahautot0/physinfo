@@ -29,6 +29,7 @@
 <div id="menuDroite" class="menu">
   <div class="tablecell">
       <div class="centered">
+
         <h1>Musique</h1>
         <nav id="menuPrincipalMusique">
           <ul id="navMusique">
@@ -51,6 +52,15 @@
             <li><a id="quizz" href="<?php echo $_POST['ROOT']; ?>quizz.html">Who's who ?</a></li>
             <!-- <li><a id="feuilletonsAudio" href="feuilletonsAudio.html">Auditions</a></li> -->
           </ul>
+          
+          
+           <div id="google_translate_element"></div><script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'fr', includedLanguages: 'ar,cs,da,de,el,en,es,et,fi,hr,hu,is,it,iw,ja,ko,lt,lv,nl,no,pl,pt,ro,ru,sk,sl,sr,sv,tr,uk,zh-CN', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+          
+          
         </nav>
       </div>
     </div>
