@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Phys | Polarisation du photon</title>
-  <meta name="description" content="La polarisation du photon individuel est un mode possible d'encodaage du bit quantique (qubit)" />
+  <meta name="description" content="La polarisation du photon individuel est un mode possible d'encodage du bit quantique (qubit). Un cristal biréfringent correctement taillé permet de construire toutes les portes logiques quantiques. " />
   <link rel="shortcut icon" href="../logo.ico" />
   <link href="../style.css" rel="stylesheet" type="text/css" /> 
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
@@ -67,7 +67,7 @@
             <h4>Polarisation de la lumière.  </h4>
             <p>Quiconque a étudié les lois de Malus ou qui a manipulé des films polaroïds sait que ceux-ci filtrent la lumière de la manière suivante : </p>
 
-       <p>- Si l'on envoie une pluie de photons incohérents sur un film polariseur, une moitié seulement de la lumière atteint le détecteur situé en aval.</p>
+       <p>- Si l'on envoie une pluie de photons incohérents sur un film polariseur (idéal), une moitié seulement franchit l'obstacle, l'autre moitié est absorbée. Les photons sortants sont tous polarisés selon la direction passante du film.</p>
        
                   <div class="conteneurImages">
                       <div> <figure>
@@ -78,7 +78,7 @@
 				</div>
 
       
-  <p>- Si l'on dispose un second film polariseur en série derrière le premier et tourné d'un angle &theta; par rapport à lui, autour de l'axe optique, on constate que le détecteur situé en aval n'enregistre plus que la fraction 0.5 cos<sup>2</sup>&theta; de l'intensité initiale. En particulier, si les polariseurs sont croisés à, &theta; = 90°, plus aucune lumière ne parvient au détecteur et s'ils sont alignés (&theta; = 0°), une moitié de l'intensité reste détectée comme s'ils ne faisaient qu'un (le deuxième polariseur n'a eu aucun effet).</p>
+  <p>- Si l'on dispose un second film polariseur en série derrière le premier et tourné d'un angle &theta; par rapport à lui, autour de l'axe optique, on constate qu'il fonctionne comme un détecteur qui absorbe la fraction 0.5 sin<sup>2</sup>&theta; de l'intensité initiale donc qui laisse passer la fraction complémentaire, 0.5 cos<sup>2</sup>&theta; . En particulier, si les polariseurs sont croisés à, &theta; = 90°, tous les photons sont détectés et  aucune lumière n'émerge du dispositif. S'ils sont alignés (&theta; = 0°), aucun photon n'est détecté (le deuxième polariseur n'a eu aucun effet).</p>
   
   
   <div class="conteneurImageSeule">
@@ -90,16 +90,14 @@
                     </div>
                   </div>
                    
-  <p>On interprète classiquement ces résultats en assimilant la lumière à une onde électromagnétique dont l'énergie  est proportionnelle au carré du champ électrique. On admet que tout polariseur  linéaire possède une direction (transversale) passante et la direction  (transversale) orthogonale bloquante (absorbante) de sorte que seule passe  la composante du champ électrique parallèle à la  direction passante. La lumière sort du film polarisé linéairement selon sa direction passante du polariseur. Le hic c'est que cette interprétation est héritée de la théorie ondulatoire or l'expérience de Taylor démontre que la lumière est de nature corpusculaire.</p>
-  <p>Il est nettement plus facile de préparer un faisceau de photons polarisés linéairement, selon x ou y, que de les préparer polarisés circulairement, à gauche ou à droite. Voyons comment on peut s'y prendre dans les deux cas. </p>
-  <p> Il existe plusieurs procédés capables de préparer un flux de photons dans un état de polarisation rectiligne . Les instruments précis sont taillés soit dans des matériaux isotropes ou anisotropes. La première catégorie comprend essentiellement des verres purs d'indices de réfraction parfaitement connus et la deuxième utilise des cristaux biréfringents du type calcite (CaCO3). Un rappel sur  la notion de biréfringence s'impose à ce stade. </p>
-  
-
+  <p>On interprète classiquement ces résultats en assimilant la lumière à une onde électromagnétique dont l'énergie  est proportionnelle au carré du champ électrique. On admet que tout polariseur  linéaire possède une direction (transversale) passante et la direction  (transversale) orthogonale bloquante (absorbante) de sorte que seule passe  la composante du champ électrique parallèle à la  direction passante. La lumière sort donc du film polarisé linéairement selon sa direction passante du polariseur. Le hic c'est que cette interprétation est héritée de la théorie ondulatoire or l'expérience de Taylor démontre que la lumière est de nature corpusculaire.  </p>
+  <p>Le film polariseur (polaroïd) est bon marché et d'un usage commode mais il ne convient pas pour la conception d'instruments d'optique précis.  Il est peu fiable parce qu'il filtre  mal la lumière, absorbant des photons qu'il devrait laisser passer et en laissant passer qu'il devrait absorber. </p>
+  <p> Les instruments précis sont taillés  dans des matériaux isotropes constitués de verres purs d'indices de réfraction parfaitement connus et plus généralement dans des matériaux anisotropes constitués de cristaux biréfringents du type calcite (CaCO3). Un rappel sur  la notion de biréfringence s'impose à ce stade. </p>
   
   <h4>Biréfringence optique.</h4>
   
-  <p>Sans précaution particulière, les photons qui composent la lumière émise par une source ordinaire (soleil, lampe à incandescence, led, ... ) sont dans un état de polarisation  aléatoire (Leur hélicité  est distribuée aléatoirement, S<sub>z</sub> = -1, -1, +1, +1, +1, -1, +1, ...). Si l'on désire travailler un faisceau de photons tous polarisés de la même manière (linéaire ou circulaire, par exemple) il y a lieu de les préparer. On y parvient habituellement en recourant aux propriétés des matériaux biréfringents.</p>
-  <p>Le verre ordinaire  présente une structure atomique régulière qui le rend isotrope : la lumière s'y propage avec la même vitesse, v, dans toutes les directions. Sa valeur est simplement réduite d'un facteur, n = c/v (typiquement de l'ordre de 1.5), appelé indice de réfraction du verre. </p> 
+  <p>Les photons issu d'une source naturelle (soleil, lampe à incandescence, led, ... ) sont dans un état de polarisation  aléatoire (Leur hélicité  est distribuée aléatoirement, S<sub>z</sub> = -1, -1, +1, +1, +1, -1, +1, ...). Si l'on désire travailler sur un faisceau de photons tous polarisés de la même manière (linéaire ou circulaire, par exemple) il y a lieu de les préparer. On y parvient habituellement en recourant aux propriétés des matériaux biréfringents.</p>
+  <p>Le verre ordinaire  présente une structure atomique régulière qui le rend isotrope : la lumière s'y propage avec la même vitesse, v = c/n, dans toutes les directions où c (&sime; 3 10<sup>8</sup> m/s) est la vitesse dans le vide et n (typiquement de l'ordre de 1.5) est l'indice de réfraction du verre. </p> 
 
    
    <div class="conteneurImageSeule">
@@ -111,7 +109,7 @@
                     </div>
                   </div>
                   
-   <p>Dans les matériaux anisotropes,  la vitesse de la lumière varie selon la direction de propagation et l'état de polarisation. Cette variation, régulée par les lois de la cristallographie, n'est simple que pour les cristaux uniaxes, en particulier la calcite (CaCO3). Dans celle-ci, les atomes sont disposés  conformément à la maille  élémentaire représentée ci-contre. Un axe unique (d'où l'appellation &quot;cristal uniaxe&quot;) y joue un rôle essentiel, c'est l'axe optique encore appelé axe lent parce que c'est selon cette direction que la lumière se propage le plus lentement dans le cristal. Par contre, elle est maximum dans n'importe quelle direction orthogonale (et intermédiaire dans tous les autres cas).<br/><br/></p>
+   <p>Dans les matériaux anisotropes,  la vitesse de la lumière varie selon la direction de propagation. Cette variation, régulée par les lois de la cristallographie, n'est simple que pour les cristaux uniaxes, en particulier la calcite (CaCO3). Dans celle-ci, les atomes sont disposés  conformément à la maille  élémentaire représentée ci-contre. Un axe unique (d'où l'appellation &quot;cristal uniaxe&quot;) y joue un rôle essentiel, c'est l'axe optique encore appelé axe lent parce que c'est selon cette direction que la lumière se propage le plus lentement dans le cristal (à la vitesse, c/n<sub>0</sub>). La vitesse est maximum (c/n<sub>e</sub>) dans n'importe quelle direction orthogonale (et intermédiaire dans tous les autres cas).<br/><br/></p>
 
   
   <div class="conteneurImageSeule">
@@ -123,7 +121,7 @@
                     </div>
                   </div>
                   
-  <p>Une lame de calcite  taillée de telle manière que  l'axe optique se trouve dans le plan d'incidence et éclairée par un faisceau de lumière naturelle, le dédouble à la sortie chacun avec une polarisation linéaire différente. Les photons polarisés linéairement selon l'axe transversal Oy (orthogonal au plan d'incidence) suivent la trajectoire rectiligne attendue, tandis que ceux qui sont polarisés selon la direction perpendiculaire, Ox (donc dans le plan d'incidence), suivent une trajectoire anormale. Les deux trajectoires issues de P font, entre elles, un petit angle, r, donné par la relation, tg(r) = [(n<sub>o</sub><sup>2</sup> - n<sub>e</sub><sup>2</sup>) sin&alpha; cos&alpha;]/[ n<sub>o</sub><sup>2</sup> sin<sup>2</sup>&alpha; + n<sub>e</sub><sup>2</sup> cos<sup>2</sup>&alpha; ], où n<sub>o</sub> et n<sub>e</sub> sont les indices de réfraction ordinaire (dans la direction parallèle à l'axe optique) et extraordinaire (dans la direction perpendiculaire). Posée sur une trame préimprimée, cette lame fait donc apparaître deux images de celle-ci.  Ce montage  est utile toutes les fois que l'on désire préparer un faisceau de photons dans un état de polarisation donné, x ou y : il suffit d'occulter le sous-faisceau indésirable. </p>
+  <p>Une lame de calcite,  taillée de telle manière que  l'axe optique se trouve dans le plan d'incidence,  scinde un faisceau de lumière  naturelle incidente en deux sous-faisceaux présentant, à la sortie, des états de polarisation linéaire différents mais orthogonaux. Les photons polarisés linéairement selon l'axe transversal Oy (orthogonal au plan d'incidence) suivent la trajectoire rectiligne attendue, tandis que ceux qui sont polarisés selon la direction perpendiculaire, Ox (donc dans le plan d'incidence), suivent une trajectoire anormale. Les deux trajectoires se séparent au point d'entrée dans le cristal, P, en faisant  un petit angle, r, donné par la relation, tg(r) = [(n<sub>o</sub><sup>2</sup> - n<sub>e</sub><sup>2</sup>) sin&alpha; cos&alpha;]/[ n<sub>o</sub><sup>2</sup> sin<sup>2</sup>&alpha; + n<sub>e</sub><sup>2</sup> cos<sup>2</sup>&alpha; ], où n<sub>o</sub> et n<sub>e</sub> sont les indices de réfraction ordinaire (dans la direction parallèle à l'axe optique) et extraordinaire (dans la direction perpendiculaire). Posée sur une trame pré imprimée, cette lame fait donc apparaître deux images de celle-ci.  Ce montage  peut convenir toutes les fois que l'on désire préparer un faisceau désordonné de photons dans un état de polarisation donné, x ou y : il suffit d'occulter le sous-faisceau indésirable. D'autres montages sont possibles qui sont présentés in fine.</p>
 
 
 <div class="conteneurImageSeule">
@@ -135,42 +133,31 @@
         </div>
               </div>
                   
-  <p>On fabrique une porte de Hadamard en polarisation si, au départ d'un flux de photons tous préparés dans l'état |x&gt;, on transforme ce flux en état de superposition |x&gt; et |y&gt;, le long de l'axe  de propagation. Pour ce faire, on peut utiliser une lame de calcite et s'arranger pour que tg(r) = 0. Cela exige que &alpha; soit égal à 0° ou a 90°. Le cas, &alpha; = 0°, n'est pas intéressant car dans la direction de l'axe optique tout se passe comme si la lumière traversait un verre ordinaire.  Par contre, le cas, &alpha; = 90°, répond à la question. En résumé, la lame biréfringente,  taillée de telle manière que l'axe optique soit parallèle à la face d'entrée (donc perpendiculaire à la direction incidente et en vert sur la figure), équivaut à une porte de Hadamard. </p>
+  <p>Une lame biréfringente correctement taillée permet de fabriquer n'importe quelle porte logique quantique, en particulier une porte de Hadamard (en polarisation). Il convient toutefois de s'arranger pour que tous les photons émergents restent alignés selon l'axe optique, z. Pour cela il faut que r soit nul donc que tg(r) = 0. Cela n'est possible que si  &alpha; est égal à 0° ou a 90°. Le cas, &alpha; = 0°, n'est pas intéressant car il revient à confondre l'axe de propagation, z, avec l'axe lent et, dans ce cas, tout se passe comme si la lumière traversait un verre ordinaire.  Par contre, le cas, &alpha; = 90°, est intéressant : il correspond à une lame biréfringente  taillée de telle manière que l'axe optique soit parallèle à la face d'entrée (donc perpendiculaire à la direction incidente, en vert sur la figure). </p>
   
   
                    
     
-    <p> Cette lame permet de modifier l'état  de polarisation de la lumière incidente à la carte grâce à ses deux degrés de libertés  disponibles : l'angle, &beta;, que fait l'axe optique avec l'axe x et  l'épaisseur, L, de la lame, plus exactement l'angle de déphasage qu'elle induit du fait de la différence des vitesses des photons ordinaire et extraordinaire, &delta; = 2&pi; &Delta;n L/&lambda;, où &Delta;n = n<sub>0</sub>-n<sub>e</sub> (Par exemple, &Delta;n = 1.658 - 1.486 = 0.172, à &lambda; = 590 nm).  </p>
-    <p>Connaissant les valeurs des paramètres, &beta; et &delta;, on peut prédire l'état de polarisation (généralement superposée, c'est le but) sortante de tout photon qui traverse cette lame, à condition de connaître son état de polarisation entrante. Selon les valeurs conférées à &beta; et &delta;, la lame est capable de transformer n'importe quele état entrant en n'importe quel état sortant, il suffit d'appliquer  la relation, |état sortant&gt; = Lame(&beta;, &delta;) |état entrant>, 
+    <p> Cette configuration de lame permet de programmer, à la carte, les portes logiques quantiques utiles, il suffit d'ajuster ses deux degrés de libertés  disponibles : l'angle, &beta;, que fait l'axe optique avec l'axe x et  l'épaisseur, L, de la lame, plus exactement l'angle de déphasage, &delta; = 2&pi; &Delta;n L/&lambda; (où &Delta;n = n<sub>0</sub>-n<sub>e</sub>, par exemple, 1.658 - 1.486 = 0.172 si  &lambda; = 590 nm) qu'elle induit du fait de la différence des vitesses des photons ordinaire et extraordinaire. </p>
+    <p>Selon les valeurs conférées à &beta; et &delta;, la lame est capable de transformer n'importe quel état entrant en n'importe quel état sortant, en accord avec la relation, |état sortant&gt; = Lame(&beta;, &delta;) |état entrant&amp;gt;, 
    où l'opérateur Lame vaut, dans le cas général : </p>
 <p>Lame(&beta;,&delta;) = 
   
   (exp[i&delta;/2] cos<sup>2</sup>&beta; + 
-  exp[-i&delta;/2] sin<sup>2</sup>&beta;) |0><0| + i sin(2&beta;) sin(&delta;/2) |0><1| +
-  i sin(2&beta;) sin(&delta;/2) |1><0| + (exp[-i&delta;/2] cos<sup>2</sup>&beta; + 
-  exp[i&delta;/2] sin<sup>2</sup>&beta;) |1><1|</p>
+  exp[-i&delta;/2] sin<sup>2</sup>&beta;) |0&amp;gt;&amp;lt;0| + i sin(2&beta;) sin(&delta;/2) |0&amp;gt;&amp;lt;1| +
+  i sin(2&beta;) sin(&delta;/2) |1&amp;gt;&amp;lt;0| + (exp[-i&delta;/2] cos<sup>2</sup>&beta; + 
+  exp[i&delta;/2] sin<sup>2</sup>&beta;) |1&amp;gt;&amp;lt;1|</p>
   
   
   
-  <p>En fait, on  se contente, en pratique, de quelques cas particuliers  : </p>
+  <p>En pratique, on  se contente de quelques cas particuliers (Lorsque &delta; = &pi;, on parle de lame demi-onde et  lorsque &delta; = &pi;/2, on parle de lame quart d'onde) : </p>
   
-  <p>Lame(&pi;/4,&pi;) = i ( |0><1| + |1><0| ) inverse le qubit à un déphasage inessentiel près (Porte NOT)</p>
-  <p>Lame(&pi;/8,&pi;) = i ( |0><0| + |0><1| + |1><0| - |1><1| )/&amp;check;2 fournit la porte de Hadamard </p>
-  <p>Lame[0,&phi;] = exp[-i&phi;/2] ( exp[i&phi;]|0><0| + |1><1|) constitue une porte de déphasage de &amp;phi</p>
-  <p>Lame(&pi;/4, &pi;/2) =  ( |0><0| + i |0><1| + i |1><0| + |1><1| )/&amp;check;2 convertit un photon polarisé linéairement en photon polarisé circulairement, par exemple |0> devient (|0>+i|1>)/&amp;check;2. </p>
-  
-  
-  <p>Lorsque &delta; = &pi;, on parle de lame demi-onde et  lorsque &delta; = &pi;/2, on parle de lame quart d'onde. </p>
-  <p>Selon les valeurs conférées à, &beta; et &delta;, la lame est capable de transformer :</p>
-  <p>- un photon |x> (ou |y>) en photon |y> (ou |x>) et, plus généralement, en n'importe quelle polarisation linéaire oblique</p>
-  <p>- un photon |x> (ou |y>) en photon |D> (ou |G>)</p>
-  <p>- un photon |D> (ou |G>) en photon |x> (ou |y>) ou, plus généralement, en n'importe quelle polarisation linéaire oblique.</p>
-
-   
-  
-  
+  <p>Lame(&pi;/4,&pi;) = i ( |0&amp;gt;&amp;lt;1| + |1&amp;gt;&amp;lt;0| ) inverse le qubit à un déphasage inessentiel près (Porte NOT)</p>
+  <p>Lame(&pi;/8,&pi;) = i ( |0&amp;gt;&amp;lt;0| + |0&amp;gt;&amp;lt;1| + |1&amp;gt;&amp;lt;0| - |1&amp;gt;&amp;lt;1| )/&amp;check;2 fournit la porte de Hadamard </p>
+  <p>Lame[0,&phi;] = exp[-i&phi;/2] ( exp[i&phi;]|0&amp;gt;&amp;lt;0| + |1&amp;gt;&amp;lt;1|) constitue une porte de déphasage de &amp;phi</p>
+  <p>Lame(&pi;/4, &pi;/2) =  ( |0&amp;gt;&amp;lt;0| + i |0&amp;gt;&amp;lt;1| + i |1&amp;gt;&amp;lt;0| + |1&amp;gt;&amp;lt;1| )/&amp;check;2 convertit un photon polarisé linéairement en un photon polarisé circulairement, par exemple |0&amp;gt; devient (|0&amp;gt;+i|1&amp;gt;)/&amp;check;2.  </p>
   <p>&nbsp;</p>
-  <p>Complément. Pour préparer un faisceau de photons |x> (ou |y>) à partir d'un faisceau naturel, au moins quatre stratégies peuvent être envisagées, seule la deuxième a été évoquée ci-avant :</p>
+<p>Complément. Pour préparer un faisceau de photons |x&amp;gt; (ou |y&amp;gt;) à partir d'un faisceau naturel, au moins trois stratégies fiables peuvent être envisagées (seule la deuxième a été évoquée ci-avant) :</p>
   
   	<ul class="miniListCorps">
                     <li> <div class="conteneurImageSeule">
@@ -183,7 +170,7 @@
                   </div>
                     
   Une simple lame de verre, d'indice n, orientée sous l'angle d'incidence de Brewster, i = arctg(n), 
-  a pour effet de ne réfléchir directement que des photons polarisés linéairement selon y (perpendiculairement au plan d'incidence). On obtient un faisceau émergent certes diminué en intensite mais pur en polarisation rectiligne. On  écarte  les photons ayant subi des réflexions multiples au moyen d'écrans absorbants. On ne garde donc que les photons ayant subi la réflexion principale.
+  a pour effet de ne réfléchir directement que des photons polarisés linéairement selon y (perpendiculairement au plan d'incidence). Ce sous-faisceau émergent est certes diminué en intensité mais il est pur en polarisation rectiligne. On ne garde  que les photons ayant subi la réflexion principale et on  écarte  les photons ayant subi des réflexions multiples au moyen d'écrans absorbants. .
   </li>
   
                     <li><div class="conteneurImageSeule">
@@ -195,7 +182,7 @@
                     </div>
                   </div>
                    
-Une lame biréfringente uniaxe taillée de telle manière que son axe optique soit orienté selon l'angle &alpha; dans le plan d'incidence sépare les photons x et y selon deux trajectoires dites ordinaire (photons y) et extraordinaire (photons x).  L'angle de séparation, r, est optimal lorsque &alpha; = 0.5 arccos[(n<sub>o</sub><sup>2</sup> - n<sub>e</sub><sup>2</sup>)/(n<sub>o</sub><sup>2</sup> + n<sub>e</sub><sup>2</sup>) ] (de l'ordre de 41,6°, à &lambda; = 590 nm) et il vaut : r<sub>opt</sub> = arctg[ 0.5(n<sub>o</sub><sup>2</sup> - n<sub>e</sub><sup>2</sup>)/(n<sub>o</sub> n<sub>e</sub>) ], de l'ordre de 6.2°, à &lambda; = 590 nm. On peut placer un écran qui absorbe les photons de l'un ou l'autre type non désiré.</li>
+Une lame biréfringente uniaxe taillée de telle manière que son axe lent soit orienté selon l'angle &alpha; dans le plan d'incidence sépare les photons x et y selon deux trajectoires dites ordinaire (photons y) et extraordinaire (photons x).  L'angle de séparation, r, est optimal lorsque &alpha; = 0.5 arccos[(n<sub>o</sub><sup>2</sup> - n<sub>e</sub><sup>2</sup>)/(n<sub>o</sub><sup>2</sup> + n<sub>e</sub><sup>2</sup>) ] (de l'ordre de 41,6°, à &lambda; = 590 nm) et il vaut : r<sub>opt</sub> = arctg[ 0.5(n<sub>o</sub><sup>2</sup> - n<sub>e</sub><sup>2</sup>)/(n<sub>o</sub> n<sub>e</sub>) ], de l'ordre de 6.2°, à &lambda; = 590 nm. On peut utiliser un écran pour absorber les photons du type non désiré.</li>
                     
                      <li><div class="conteneurImageSeule">
                     <div>
@@ -206,9 +193,8 @@ Une lame biréfringente uniaxe taillée de telle manière que son axe optique so
                     </div>
                   </div>
                   
-Il est également possible d'accoler deux prismes rectangles biréfringents, faces hypoténuses l'une contre l'autre et cimentée par une colle d'indice convenable afin que les photons des deux types se   séparent à angle droit et il est même possible de s'arranger pour qu'ils le fassent dans des proportions égales, 50-50 %. Ce dispositif répond au nom de prisme séparateur polarisant. </li>
+Il est également possible d'accoler deux prismes rectangles biréfringents, faces hypoténuses l'une contre l'autre et cimentées par une colle d'indice convenable afin que les photons des deux types se   séparent à angle droit. Il est même possible de s'arranger pour qu'ils le fassent dans des proportions égales, 50-50 %. Ce dispositif répond au nom de prisme séparateur polarisant. </li>
                      
-                      <li>Une méthode  plus banale mais aussi  moins fiable est le film (ou le verre) polaroïd.  Il est peu fiable parce qu'il filtre  mal la lumière, absorbant des photons qu'il devrait laisser passer et en laissant passer qu'il devrait absorber. Cependant ce procédé  commode et peu coûteux suffit dans un enseignement de base. </li>
 	
     </ul>
 
