@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Faits divers | Une analyse historico-musicale de l'opus 54 de Beethoven</title>
+  <meta name="description" content="Le musicologue Georges Kan présente son analyse historico-musicale de la Sonate opus 54 de Beethoven" />
+  <link rel="shortcut icon" href="../logo.ico" />
+  <link href="../style.css" rel="stylesheet" type="text/css" /> 
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <script src="../js/jquery-1.10.2.js"></script>
+  <script src="../js/menus.js"></script>
+  <script src="../js/design.js"></script>
+  <script src="../js/gestionAudioVideo.js"></script>
+  <script> 
+    // Inclusion Header et Footer
+    $(function(){
+      $(function(){
+        $.ajax({
+           url: "../template/header.php",
+           type: "POST",
+           data: ({ROOT: '../'}),
+           success: function(data) {
+             $("#header").html(data);
+             $("#faitsDivers").addClass("active"); /*a changer en fonction de la page*/
+             update_design_when_header_loaded();
+          }
+        });
+      });
+      $("#miniMenus").load("../template/miniMenus.php", { ROOT: '../' }, mini_menus_after_loading);
+      $("#footer").load("../template/footer.php", { ROOT: '../' }, update_design_footer);  
+    });
+  </script> 
+</head>
+
+<body id="site">
+
+    <div>
+        <!-- Inclusion header -->
+       <div id="header"></div>
+
+        <div id="miniMenus"></div>
+
+        <nav id="menuLateralAncres">
+            <ul>
+                <li>
+                    <a id="ancrepresentation" href="#presentation" class="linavMenu active">
+                    <span>Présentation</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancredescription" href="#description" class="linavMenu">
+                    <span>Description</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancremodesdejeu" href="#modesdejeu" class="linavMenu">
+                    <span>Modes de jeu</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancrebruits" href="#bruits" class="linavMenu">
+                    <span>Les bruits de la guerre</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="corps">
+
+            <div id="contenuPrincipal">
+                <h2>Faits divers</h2>
+                <h3>Courrier des lecteurs. Georges Kan communique :<br/>Analyse historico-musicale de la sonate opus 54 de Beethoven</h3>
+                
+
+                 <nav class="filAriane">
+                    <ul>
+                        <li class="breadcrumbItem"><span>Vous êtes ici : </span> Musique</li>
+                        <li class="breadcrumbItem">
+                          <a href="../chroniques.html">Chroniques</a>
+                        </li>
+                        <li class="breadcrumbItem">
+                          <a href="../faitsDivers.html">Faits divers</a>
+                        </li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Georges Kan écrit</li>
+                    </ul>
+                </nav>
+                
+                <div class="sommaire">
+                    <div class="sommaireTitle">
+                        <h6>Sommaire</h6>
+                        <a role="button" tabindex="0" class="sommaireLink">[ afficher ]</a>
+                    </div>
+
+                    <ul class="linksSummary">
+                        <li><a href="#presentation">Présentation</a></li>
+                        <li><a href="#description">Description</a></li>
+                        <li><a href="#modesdejeu">Modes de jeu</a></li>
+                        <li><a href="#bruits">Les bruits de la guerre</a></li>
+                    </ul>
+                </div> 
+  
+                <p><i>NDRL : physinfo ouvre occasionnellement ses colonnes à tout lecteur désireux d'apporter une contribution significative à l'analyse musicale ou un commentaire constructif concernant les thèmes généralement abordés sur ce site. Toute exposé n'engage que son auteur, dans le respect des règles déontologiques en usage. Cette chronique présente le résultat des recherches faites et rédigées par le musicologue Georges Kan à propos de la Sonate n°22, opus 54 de Beethoven.</i></p>
+                
+                <div id="presentation">
+          <h4>Présentation</h4>
+      <p>L’opus 54 de Ludwig van Beethoven serait-il une contribution secrète à la Révolution Française ? C’est ce que tente de démontrer le musicologue Georges Kan dans ce dossier. Selon lui, pour composer cette sonate, Beethoven se serait particulièrement bien renseigné, autant sur la fin de Louis XVI, que sur la réalité du champ de bataille à Valmy. Les nombreux indices et jeux de mots en français, pointent naturellement la personnalité de Jean-Baptiste Bernadotte avec lequel Beethoven a été en contact à l’Ambassade de France, à Vienne, en 1798, avant d’entamer les esquisses de sa Troisième Symphonie, contemporaine de l’opus 54. Par ailleurs, le fait que la sonate ne comporte aucune indication de pédale (senza sord. ou Ped.), tend à renforcer l’idée d’une œuvre antérieure à l’opus 26 et composée avant 1800, sur un piano viennois de type Hammerflügel à genouillères (Walter ou Streicher).</p>
+      <p>La Sonate pour piano n° 22 de Ludwig van Beethoven serait donc la représentation musicale de la <strong>Fuite de Varennes</strong> et de la <strong>Bataille de Valmy</strong>. Sur la couverture de la première édition (A Vienne, au Bureau des arts et d’industrie) on peut lire <strong>LI</strong> me SONATE. La typographie utilisée (un gras renforcé) crée l’illusion d’un « LI » gravé dans le marbre. Il ne peut s’agir de la 51<sup>ème</sup> Sonate car Beethoven, d’une part n’en a composé que 32 en tout et que, d’autre part, s’il numérote effectivement ses œuvres (op. 54 en l’occurrence), il ne comptabilise jamais sa production par genre. « LI » serait une double référence cachée à Louis XVI et à Valmy : le produit de X et V ajouté au I donne LI, et les lettres VY entrelacées créent un V barré (ancêtre du L) et un I.</p> 
+      <p>Concise, la sonate est composée de deux mouvements dont voici les titres, accompagnés de propositions métronomiques :</p>   
+       <p>1.	In Tempo d'un Menuetto (sic) 40 MM la mesure</p> 
+       <p>2.	Allegretto 60 MM la mesure – piu allegro 80 MM la mesure</p>    
+       <p>A noter dans la première partie, mesures 3 et 7 à la main gauche, la citation des 6 croches du Menuet d’Exaudet (fa-la-do-la-si-sol-fa) sous lesquelles venaient se placer les paroles révolutionnaires Imagine, un beau matin dans la Parodie « Sur l’inimitable machine du médecin Guillotin propre à couper les têtes et dite de son nom Guillotine ». Le jeu de mots du titre In Tempo d'un Menuet tô(t), confirme que la Guillotine, objet de cette parodie très populaire pendant la Révolution française, est bien le sujet central de cette Sonate de Beethoven. En voici le premier couplet :</p>
+       
+        <i>Guillotin,<br/>
+                  Médecin,<br/>
+                  Politique,<br/>
+                  Imagine, un beau matin<br/>
+                  Que prendre est inhumain<br/>
+                  Et peu patriotique.<br/>
+                  Et sa main<br/>
+                  Fait soudain<br/>
+                  Une machine<br/>
+                  Humainement qui tuera, ...<br/>
+                 </i>
+
+          </div>
+                
+                
+                 <div id="description">
+                 <h4>Description</h4>
+ <strong>Sonate Op. 54 (1<sup>er</sup> mouvement)</strong><br/>    
+<p>Interrompu par de rudes triolets en octaves, le Menuet se déploie en séquences AAA’A’ plutôt sombres, quoique le deuxième A’ développe une ornementation féminine (gruppettos au lieu de simples trilles) tirant progressivement vers l’aigu. 
+Aux troisièmes et septièmes mesures du A <sub><sub><sub> 
+                  <audio controls preload="none">
+                    <source src="../son.mp3/kan/MONO-004.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/kan/MONO-004.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible
+                  </audio>
+                  </sub></sub></sub> [écouter : MONO-004.mp3], la main gauche donne les 6 croches du Menuet d’Exaudet jouées fausses avec un fa bécarre et un si bémol, une sorte d’imitation braillarde d’une voix du peuple grâce au sf décalé sur la 3e croche.
+Les premières et troisièmes mesures du A’ <sub><sub><sub> 
+                  <audio controls preload="none">
+                    <source src="../son.mp3/kan/MONO-005.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/kan/MONO-005.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible
+                  </audio>
+                  </sub></sub></sub>[écouter : MONO-005.mp3] utilisent quant à elles sur les notes mi et fa un procédé harmonique, le retard, participant du caractère sombre du mouvement ; dans La Fuite de Varennes, le retard du convoi royal est un élément-clé de l’interception du Roi.
+L’ambiance des Sans-culottes est assurée par l’apparition brutale des triolets du B dont les sforzando génèrent un thème d'allure révolutionnaire réutilisé en mode rétrograde dans le Finale de la Neuvième Symphonie, mes. 822-824, sur les paroles was die Mode streng geteilt (traduction : « Ce que, sévèrement, les modes divisaient ») de l'Ode à la Joie. D’ailleurs, la main gauche n’est pas sans rappeler, mes. 26-27 et 40-41, l’hymne lui-même ou sa variation ternaire dans la 9e Symphonie (mes. 656) <sub><sub><sub> 
+                  <audio controls preload="none">
+                    <source src="../son.mp3/kan/MONO-006.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/kan/MONO-006.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible
+                  </audio>
+                  </sub></sub></sub>. [écouter : MONO-006.mp3]
+Le plus stupéfiant dans ce mouvement reste que deux fois, mes. 38 et 54, la chaîne dansante de triolets s’interrompt brutalement sur trois notes reprises dans le grave, après une série d’accents dans l’aigu illustrant une forme de bousculade. Il s’agirait de la première description sonore connue d’une exécution publique, le supplicié marchant env. 20’ de la charrette à la guillotine (40 et 46 triolets respectivement). Le triolet conclusif, fait d’une tierce diminuée descendante suivie d’une seconde mineure ascendante, se répète ensuite comme une obsession avant le retour du A <sub><sub><sub> 
+                  <audio controls preload="none">
+                    <source src="../son.mp3/kan/MONO-010.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/kan/MONO-010.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible
+                  </audio>
+                  </sub></sub></sub>. [écouter : MONO-010.mp3]
+La reprise du Menuet, replaçant l’auditeur dans l’ambiance feutrée du Palais des Tuileries, voit se développer dans le A’ (mes. 88) une variation en contretemps paniqués <sub><sub><sub> 
+                  <audio controls preload="none">
+                    <source src="../son.mp3/kan/MONO-014.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/kan/MONO-014.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible
+                  </audio>
+                  </sub></sub></sub> [écouter : MONO-014.mp3] imitant les soupirs féminins alors que le A reste quasiment inchangé. Se dessine une séquence psychologique entre Louis XVI et Marie-Antoinette. La conclusion du thème B (triolets de la Guillotine) sera détournée cette fois vers une cadence résolue et déterminée qui signe la décision de partir de Paris. A la troisième apparition du Menuet, c’est le prolongement du thème orné du A’ (les soupirs de la Reine) qui amorce mes. 26 le début d’une échappée en croches pointées – doubles caricaturant l’allure bon-enfant du convoi et laissant sous-entendre par ailleurs que la Fuite de Varennes serait finalement une volonté de Marie-Antoinette.
+La cadence (mes. 132) imite l’envol et le chant d’un oiseau (Flucht en allemand = « fuite » mais aussi « vol ») bien vite stoppé par un trille mezzo voce fielleux suivi d’une injonction vers le grave notée Adagio aboutissant sur quatre double-croches hésitantes (les pas penauds du Roi remontant dans sa voiture). La toute dernière variation du Menuet, superposée à un accompagnement martial de triolets, referme le premier mouvement de cette Sonate <sub><sub><sub> 
+                  <audio controls preload="none">
+                    <source src="../son.mp3/kan/MONO-017.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/kan/MONO-017.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible
+                  </audio>
+                  </sub></sub></sub> [écouter : MONO-017.mp3].
+</p>      
+
+<strong>Sonate Op. 54 (2<sup>ème</sup> mouvement)</strong><br/>
+
+<p>J’étais en plein dans la région où jouaient les boulets envoyés par l’ennemi. Le bruit est assez étrange, on le dirait composé du bourdonnement de la toupie, du clapotage de l’eau et du sifflement de l’oiseau.
+Goethe, Campagne de France, trad. Porchat.
+L'Allegretto décrit le champ de bataille de loin (mes. 1-36), de près (mes. 37-44), la charge (mes. 45-64), le grondement de la canonnade [peut-être les explosions des deux chariots de munitions français] (mes. 65-74), le sifflement des boulets de canon (avec l’effet Doppler, soit un chromatisme de 3 notes vers le grave - mes. 33, 36, 64, 126, 129), la clameur (mes. 115) , les cris révolutionnaires (motif plus lent du triolet du 1er mouvement) et l’issue victorieuse (piu Allegro). Les deux dernières croches, comme deux rebonds vers le grave, évoquent peut-être la décapitation de Louis XVI, procédé repris par Hector Berlioz dans sa Symphonie fantastique (toute fin de la Quatrième Partie : Marche au supplice).
+</p>      
+                 
+          
+          
+          
+          </div>
+          
+           <div id="modesdejeu">
+          <h4>Modes de jeu</h4>
+          <p>Jeu à contretemps
+Le perpetuum mobile en double-croches du 2e mouvement est basé sur un thème composé d’une gamme montante brisée en sixtes alternées offrant un motif aigu différent du grave si l’on joue à contretemps.
+</p>
+
+<div class="conteneurImages">
+                      <div> <figure>
+                              <img src="../images/kan/allegretto.jpg" alt="Beethoven, Sonate opus 54, Allegretto, mes. 1-5" />
+                              <figcaption>Allegretto, mes. 1-5</figcaption>
+                                 </figure></div>                
+</div>
+
+<p>Pour retrouver la ligne mélodique, on peut s’aider des relais entre m.g. et m.d., par exemple mes. 3, où le premier la doit être légèrement accentué pour consolider la répétition du suivant, juste après, à la m.d. 
+De cet impératif technique découle que les 2 premières mesures sont jouées à contretemps ainsi que les mes. 5-6, 9-10 et 13-16. Les sf placés trop à droite dans la première édition ne concernent pas la note tenue, mais la précédente, soit le la m.g. mes. 3, et le fa m.d. mes. 5. Ainsi, il est possible de rechercher une « orchestration » du mouvement qui correspondra peu ou prou au jeu des pouces <sub><sub><sub> 
+                  <audio controls preload="none">
+                    <source src="../son.mp3/kan/MONO-019.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/kan/MONO-019.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible
+                  </audio>
+                  </sub></sub></sub>. [écouter : MONO-019.mp3].
+</p>
+
+<p>Dynamiques
+A noter, l’utilisation du cresc. en dynamique locale [lire] : 
+-	Mes. 11, le cresc., s’applique au sol m.g., renforcé avant de conduire au la-sol-fa-mi de la m.d à la mesure suivante. 
+-	Mes. 17, le cresc., s’applique au do m.g. en double-croche, ce qui donne deux gammes descendantes avec un accent sur le début de la première (effet d’artillerie avec le décalage vers le grave, connu depuis sous le nom d’effet Doppler).
+-	Mes. 19, le decresc. explicitement pour le 2e temps de double-croches à la m.g. : dynamique de précaution, decresc. = senza cresc. Ceci confirme que le cresc. mes. 17 est pour la m.g.
+</p>
+
+<p>Ornementation
+Dans l’Allegretto deux trilles seulement, l’un dans la 2e volta de la mes. 20, l’autre aux mes. 160-161, deux roulements de tambour notés cresc. sur l’amorce (une sorte d’accent). Celui de la mes. 20, particulièrement court et dru, amorcé sur la note supérieure dans un contexte p dolce, donne l’illusion d’un roulement de tambour entendu de loin. Celui-là autant que les deux autres interviennent avant la relance de l’ostinato.
+</p>
+          
+          </div>
+          
+           <div id="bruits">
+          <h4>Les bruits de la guerre</h4>
+          <p>L’effet Doppler des boulets de canon :</p>
+       
+       
+       <div class="conteneurImages">
+                      <div> <figure>
+                              <img src="../images/kan/doppler.jpg" alt="Beethoven, Sonate opus 54, Allegretto, mes. 34-37" />
+                              <figcaption>Allegretto, mes. 34-37</figcaption>
+                                 </figure></div>                
+</div>
+   
+          <p>En poursuivant naturellement le jeu à contretemps de la mes. 33 à la m.g., et en mettant en relief les trois si bémol mes 34-35, la conclusion mes. 36 sonne comme un dérapage rapide de trois notes en chromatisme vers le grave <sub><sub><sub> 
+                  <audio controls preload="none">
+                    <source src="../son.mp3/kan/MONO-023.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/kan/MONO-023.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible
+                  </audio>
+                  </sub></sub></sub>. [écouter : MONO-023.mp3].
+Mes. 37, fin du jeu dolce, description puissante du champ de bataille <sub><sub><sub> 
+                  <audio controls preload="none">
+                    <source src="../son.mp3/kan/MONO-025.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/kan/MONO-025.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible
+                  </audio>
+                  </sub></sub></sub> [écouter : MONO-025.mp3].
+</p>
+
+<p>La canonnade :</p>
+
+ <div class="conteneurImages">
+                      <div> <figure>
+                              <img src="../images/kan/canonnade.jpg" alt="Beethoven, Sonate opus 54, Allegretto, mes. 65-67" />
+                              <figcaption>Allegretto, mes. 65-67</figcaption>
+                                 </figure></div>                
+</div>
+
+
+<p>Les ff sont des dynamiques locales pour l’équivalant des 2 premières doubles croches. A noter l’effet d’écho mes 66 et 68, ainsi que les explosions en chaîne mes. 69-73 <sub><sub><sub> 
+                  <audio controls preload="none">
+                    <source src="../son.mp3/kan/MONO-028.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/kan/MONO-028.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible
+                  </audio>
+                  </sub></sub></sub> [écouter : MONO-028.mp3].</p>
+<p>Les plaintes des blessés
+Jouées à contretemps, les mesures 89 à 95 donnent à entendre un ostinato dans l’aigu particulièrement émouvant, le tout sur un puissant cycle de quintes. Le jeu de mots autour des « quintes » (les râles des agonisants) ne peut venir que d’un français ayant vécu le champ de bataille <sub><sub><sub> 
+                  <audio controls preload="none">
+                    <source src="../son.mp3/kan/MONO-030.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/kan/MONO-030.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible
+                  </audio>
+                  </sub></sub></sub> [écouter : MONO-030.mp3].
+</p>
+
+<p>L’église de Valmy
+Mesures 99, 101 et 103, trois accents Mi 2 (sonnent Ré 2 ou Do dièse 2) toutes les 2 secondes ; cinq secondes plus tard, mes. 108, 110 et 111 (cresc. pour la dernière double croche de la mes. 111), trois accents Mi 3 (sonnent Ré 3 ou Do dièse 3 selon diapason).
+Ceci est la signature sonore de l’Angélus. Il ne peut s’agir que d’une église catholique, et donc française. Pour rappel, les témoignages rapportent qu’à l’Angélus du matin commencèrent les combats (après dissipation du brouillard) et que la victoire survint avec le soulèvement héroïque des troupes révolutionnaires à court de munition, le soir à 7 heures <sub><sub><sub> 
+                  <audio controls preload="none">
+                    <source src="../son.mp3/kan/MONO-031.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/kan/MONO-031.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible
+                  </audio>
+                  </sub></sub></sub>. [écouter : MONO-031.mp3].
+</p>
+
+<p>La Sonate pour piano No 22 de Ludwig van Beethoven (Georges Kan, enregistr. de travail)
+1.	In Tempo d'un Menuetto <sub><sub><sub> 
+                  <audio controls preload="none">
+                    <source src="../son.mp3/kan/MONO-018.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/kan/MONO-018.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible
+                  </audio>
+                  </sub></sub></sub> [écouter : MONO-018.mp3]
+2.	Allegretto <sub><sub><sub> 
+                  <audio controls preload="none">
+                    <source src="../son.mp3/kan/MONO-035.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/kan/MONO-035.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible
+                  </audio>
+                  </sub></sub></sub> [écouter : MONO-035.mp3]
+</p>
+
+          
+          </div>
+                
+                
+                
+                
+          </div>
+        
+
+
+            <a id="ancreRetourHautPage" href="#site">&uarr;</a>
+
+            <!-- Inclusion footer -->
+            <div id="footer"></div>
+
+        </div>
+    
+    
+    </div>
+
+    <!-- Effet smooth ancres -->
+    <script src="../js/onclick.js"></script>
+    <script src="../js/anchors.js"></script>
+
+</body>
+</html>
