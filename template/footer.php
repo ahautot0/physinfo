@@ -11,9 +11,9 @@
 <div id="articlesRecents">
 	<h5>ARTICLES RECENTS</h5>
 	<ul>
-    	<li><a href="<?php echo $_POST['ROOT']; ?>chroniques/bruzane.html">La Fondation Bru Zane (04/02/2018)</a></li>
-		<li><a href="<?php echo $_POST['ROOT']; ?>chroniques/rihm.html">Wolfgang Rihm (07/01/2018)</a></li>
-        <li><a href="<?php echo $_POST['ROOT']; ?>chroniques/vanveen.html">Jeroen van Veen, chantre du minimalisme (30/10/2017)</a></li>
+    	<li><a href="<?php echo $_POST['ROOT']; ?>chroniques/opus54.html">L'histoire cryptée des Sonates opus 54 &amp; 57 de Beethoven (par Georges Kan) (15/03/2018)</a></li>
+        <li><a href="<?php echo $_POST['ROOT']; ?>chroniques/bruzane.html">La Fondation Bru Zane (04/02/2018)</a></li>
+		<li><a href="<?php echo $_POST['ROOT']; ?>chroniques/rihm.html">Wolfgang Rihm (07/01/2018)</a></li>    
         
 	</ul>
 </div>
