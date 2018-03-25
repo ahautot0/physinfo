@@ -286,6 +286,12 @@
 		    margin-bottom: 10px;
 		    line-height: 1.6em;
 		}
+        
+        .erreurYoutube{
+            color:red;
+            font-weight: bold;
+            font-size: 20px;
+        }
 
 
 	/*======= TABLEAU =======*/
