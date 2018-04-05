@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Faits divers | Le violon parfait : science ou intuition ?</title>
+  <meta name="description" content="L'architecture du violon, un des instruments essentiels à la musique savante, est-elle le fruit d'avancées technologiques ou d'une succession d'intuitions fécondes de la part de luthiers experts ?" />
+  <link rel="shortcut icon" href="../logo.ico" />
+  <link href="../style.css" rel="stylesheet" type="text/css" /> 
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <script src="../js/jquery-1.10.2.js"></script>
+  <script src="../js/menus.js"></script>
+  <script src="../js/design.js"></script>
+  <script src="../js/gestionAudioVideo.js"></script>
+  <script> 
+    // Inclusion Header et Footer
+    $(function(){
+      $(function(){
+        $.ajax({
+           url: "../template/header.php",
+           type: "POST",
+           data: ({ROOT: '../'}),
+           success: function(data) {
+             $("#header").html(data);
+             $("#faitsDivers").addClass("active"); /*a changer en fonction de la page*/
+             update_design_when_header_loaded();
+          }
+        });
+      });
+      $("#miniMenus").load("../template/miniMenus.php", { ROOT: '../' }, mini_menus_after_loading);
+      $("#footer").load("../template/footer.php", { ROOT: '../' }, update_design_footer);  
+    });
+  </script> 
+</head>
+
+<body id="site">
+
+    <div>
+        <!-- Inclusion header -->
+       <div id="header"></div>
+
+        <div id="miniMenus"></div>
+
+        <nav id="menuLateralAncres">
+            <ul>
+                <li>
+                    <a id="ancrepresentation" href="#presentation" class="linavMenu active">
+                    <span>Présentation</span>
+                    </a>
+        </li>
+                <li>
+                    <a id="ancredescription" href="#description" class="linavMenu">
+                    <span>Description</span>
+                    </a>
+        </li>
+                <li>
+                    <a id="ancremodesdejeu" href="#modesdejeu" class="linavMenu">
+                    <span>Modes de jeu</span>
+                    </a>
+        </li>
+                <li>
+                    <a id="ancrebruits" href="#bruits" class="linavMenu">
+                    <span>Les bruits de la guerre</span>
+                    </a>
+                </li>
+                
+                 <li>
+                    <a id="ancreappassionata" href="#appassionata" class="linavMenu">
+                    <span>Le cas de la Sonate n°23</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="corps">
+
+            <div id="contenuPrincipal">
+                <h2>Faits divers</h2>
+                <h3>Le violon parfait : science ou intuition ?</h3>
+                
+
+                 <nav class="filAriane">
+                    <ul>
+                        <li class="breadcrumbItem"><span>Vous êtes ici : </span> Musique</li>
+                        <li class="breadcrumbItem">
+                          <a href="../chroniques.html">Chroniques</a>
+                        </li>
+                        <li class="breadcrumbItem">
+                          <a href="../faitsDivers.html">Faits divers</a>
+                        </li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Le violon parfait</li>
+                    </ul>
+                </nav>
+                
+                <div class="sommaire">
+                    <div class="sommaireTitle">
+                        <h6>Sommaire</h6>
+                        <a role="button" tabindex="0" class="sommaireLink">[ afficher ]</a>
+                    </div>
+
+                    <ul class="linksSummary">
+                        <li><a href="#presentation">Présentation</a></li>
+                        <li><a href="#description">Description</a></li>
+                        <li><a href="#modesdejeu">Modes de jeu</a></li>
+                        <li><a href="#bruits">Les bruits de la guerre</a></li>
+                        <li><a href="#appassionata">Le cas de la Sonate n°23</a></li>
+                    </ul>
+                </div> 
+  
+     <p>Le violon est (avec le piano) l'intrument-roi de la musique savante occidentale. Il est apparu en Occident, lors des premières invasions musulmanes, sous une forme primitive encore très éloignée de celle que nous connaissons aujourd'hui. Aucun instrument de ces époques lointaines soit pour faire simple antérieures à 1300 ???, ne nous est parvenu pas même en pièces détachées. Tout ce que nous en savons repose sur une iconographie imprécise ne permettant pas d'aller très loin dans la description des évolutions subies par  l'instrument et encore moins de ses performances acoustiques. Ce que nous en dirons, pour vraisemblable qu'il paraisse, demeure donc sujet à débat. Le premier receuil qui nous soit d'une aide véritable date des années 1300, c'est mais il est clair que l'instrument a déjà subi maintes transformations.  </p>  
+     <p>L'autre extrémité de l'échelle du temps se situe à l'époque baroque aux plus beaux jours de l'école de Crémone. L'instrument mérite enfin le nom de violon au sens moderne du terme : il a acquis sa forme quasiment définitive d'où il ne subira plus que des améliorations mineures davantage destinées à en renforcer l'intensité du son que sa beauté. Les dates ne sont pas mentionnées par coquetterie, elles imposent d'emblée un ensemble de considérations auxquelles on ne s'attendrait pas forcément. En 1600, l'acoustique physique, au sens moderne du terme, n'était encore nulle part. Il est donc parfaitement vain de tenter de justifier l'état de perfection de l'instrument par la mise en pratique, par ses constructeurs, de règles inconnues que la physique n'a dégagées que bien plus tard. Il n'y a qu'une seule explication possible : les luthiers de cette époque ont travaillé à l'intuition, guidés par un ensemble d'essais et d'erreurs corrigées jusqu'à ce que le résultat ne puisse plus être amélioré de cette façon. Le plus étonnant est que la science n'ajoutera rien de plus : elle se conentera d'observer l'instrument parfait en l'état sans être en mesure d'expliquer les raisons de la facture idéale trouvée ni de proposer la moindre amélioration.</p>  
+     <p>Le violon en cet état idéal pose pourtant toutes sortes de questions à un observateur naïf auxquelles cette modeste chronique va tenter de répondre en mettant un peu d'ordre.</p>       
+                
+                <div id="presentation">
+          <h4>Présentation</h4>
+      <p>Tout instrument de musique repose sur les principes physiques qui règlent la coopération entre deux organes principaux, un oscillateur et un résonateur :</p>
+      
+      	<ul class="miniListCorps">
+                    <li>L'oscillateur est un milieu matériel élastique : dans le cas qui nous intéresse (famille des cordophones), il s'agit d'une corde  tendue entre deux points fixes. Si l'on perturbe l'état de cette corde, par exemple en la pinçant, elle se déforme mais une fois relâchée elle tente de revenir à sa position  initiale de repos. Elle n'y parvient pas immédiatement. Au contraire, elle se met à osciller de part et d'autre de cette position de repos avec une fréquence qui dépend de plusieurs facteurs physiques : la longueur de la corde, L, sa masse par unité de longueur, &mu;, et   la tension qui y règne, T. Si la corde est parfaitement élastique, la fréquence vaut 
+                      <div class="conteneurImages">
+                      <div> <figure>
+                              <img src="../images/violon/equ1.png" alt="Equation" />
+                                 </figure></div>                
+					  </div>
+                      
+                      Si les frottements n'existaient pas, la corde oscillerait ainsi éternellement. Les figures qui suivent décrivent ce comportement totalement idéal dans le cas d'une corde pincée aux deux tiers de sa longueur (On a exagéré fortement la dent de scie pour plus de lisibilité; en pratique, l'ordonnée de son sommet est bien moindre).   
+                      
+                      <div class="conteneurImages">
+                      <div> <figure>
+                        <img src="../images/violon/violon2.png" alt="Déformation progressive d'une corde pincée" />
+                              <figcaption>Déformation progressive d'une corde pincée pendant une période complète</figcaption>
+          			</figure></div>              
+					</div>
+                    
+                    On peut calculer l'énergie dépensée pour déformer la corde à l'instant initial. Bien sûr, les choses ne se passent pas ainsi dans la réalité. Même dans le vide d'air, des frottement existent au sein de la corde qui n'est jamais parfaitement élastique et aux points d'appuis. Le mouvement de la corde s'amortit alors (très) lentement, l'énergie mise en jeu initialement étant dissipée sous forme de chaleur aux endroits où il y a frottement.
+
+
+					Toutefois ce cas idéal ne nous intéresse pas puisque le vide d'air empêche le son d'exister. Si la corde vibre dans l'air ce contact représente une nouvelle cause de frottement nettement plus intéressante, acoustiquement parlant : au contact de la corde vibrante, l'air se met à vibrer à son tour à la même fréquence que la corde et comme l'air est par nature compressible élastiquement, les chocs intermoléculaires ont tôt fait de transmettre cette vibration de l'air selon une onde qui se propage radialement vers les auditeurs potentiels. On comprend aisément que la mise en branle de cette onde représente une dépense d'énergie qui est prélevée sur le mouvement de la corde qui s'atténue d'autant plus rapidement. Cet amortissement est tout bénéfice car on attend d'une note de musique qu'elle ne dure que le temps qui lui est imparti.</li>
+                    
+                    <li>2. <em>Allegretto</em> (60 MM la mesure) - <em>piu allegro</em> (80 MM la mesure)</li>
+		</ul>
+      
+      <p>Le violon appartient à la famile des cordophones.</p>
+      
+      <div class="conteneurImages">
+                      <div> <figure>
+                        <img src="../images/violon/violon1.png" alt="Vue éclatée d'un violon moderne" />
+                              <figcaption>Vue éclatée d'un violon moderne (<a href="http://physique.unice.fr/sem6/2008-2009/PagesWeb/Violon/violon.html">Univ. Nice Sophia Antipolis</a>))</figcaption>
+          </figure></div>              
+		</div>
+
+      <p>La Sonate pour piano n°22 de Ludwig van Beethoven serait donc la représentation musicale de la <strong>Fuite de Varennes (1791)</strong> et de la <strong>Bataille de Valmy (1792)</strong>. Sur la couverture de la première édition (<em>A Vienne, au Bureau des arts et d’industrie</em>) on peut lire l'inscription, <em><strong>LI</strong> <sup>me</sup> SONATE</em>. La typographie utilisée (un gras renforcé) crée l’illusion d’un &quot;LI&quot; gravé dans le marbre. Il ne peut s’agir de la 51<sup>ème</sup> Sonate car Beethoven, d’une part n’en a composé que 32 en tout et que, d’autre part, s’il numérote effectivement ses œuvres (op. 54 en l’occurrence), il ne comptabilise jamais sa production par genre. &quot;LI&quot; serait une double référence cachée à Louis XVI et à Valmy : le produit de X et V ajouté au I donne LI, et les lettres VY entrelacées créent un V barré (ancêtre du L) et un I. Cette conjecture soulève une question subsidiaire, relative à la  Sonate n°23 (Appassionata), opus 57,  parue chez le même éditeur; afin de ne pas alourdir l'exposé, son examen est différé en fin de chronique.<br/><br/></p> 
+      <p>Concise, la Sonate n°22 est composée de deux mouvements dont voici les titres, accompagnés de propositions métronomiques (MM = Maelzel's metronome oscillations) :</p>
+      
+      <ul class="miniListCorps">
+                    <li>1. <em>In Tempo d'un Menuetto</em> (sic) (40 MM la mesure)</li>
+                    <li>2. <em>Allegretto</em> (60 MM la mesure) - <em>piu allegro</em> (80 MM la mesure)</li>
+</ul>
+   
+         
+       <p>A noter dans la première partie, mesures 3 et 7 à la main gauche, la citation des 6 croches du <em>Menuet d’Exaudet</em> (fa-la-do-la-si-sol-fa) sous lesquelles venaient se placer les paroles révolutionnaires <em>Imagine, un beau matin</em> dans la Parodie &quot;Sur l’inimitable machine du médecin Guillotin propre à couper les têtes et dite de son nom Guillotine&quot;. Le jeu de mots du titre <em>In Tempo d'un Menuet tô(t)</em>, confirme que la Guillotine, objet de cette parodie très populaire pendant la Révolution française, est bien le sujet central de cette Sonate de Beethoven. En voici le premier couplet :</p>
+       
+        <i>Guillotin,<br/>
+                  Médecin,<br/>
+                  Politique,<br/>
+                  Imagine, un beau matin<br/>
+                  Que prendre est inhumain<br/>
+                  Et peu patriotique.<br/>
+                  Et sa main<br/>
+                  Fait soudain<br/>
+                  Une machine<br/>
+                  Humainement qui tuera, ...<br/>
+                 </i>
+
+          </div>
+                
+                
+                 <div id="description">
+                 <h4>Description</h4>
+ <strong>Sonate Op. 54 (1<sup>er</sup> mouvement)</strong><br/>    
+<p></p><p>Interrompu par de rudes triolets en octaves, le <em>Menuet</em> se déploie en séquences AAA’A’ plutôt sombres, quoique le deuxième A’ développe une ornementation féminine (gruppettos au lieu de simples trilles) tirant progressivement vers l’aigu.</p>
+<p>Aux troisièmes et septièmes mesures du A
+<sub><sub><sub> 
+                  <audio controls preload="none">
+                    <source src="../son.mp3/kan/MONO-004.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/kan/MONO-004.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible</audio>
+                  </sub></sub></sub>, la main gauche donne les 6 croches du <em>Menuet d’Exaudet</em> jouées fausses avec un fa bécarre et un si bémol, une sorte d’imitation braillarde d’une voix du peuple grâce au <em>sf</em> décalé sur la 3e croche.</p>
+
+<p>Les premières et troisièmes mesures du A’ <sub><sub><sub> 
+          <audio controls preload="none">
+            <source src="../son.mp3/kan/MONO-005.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/kan/MONO-005.ogg" type="audio/ogg"/>
+            Votre navigateur n'est pas compatible</audio>
+</sub></sub></sub>utilisent quant à elles sur les notes <em>mi</em> et <em>fa</em> un procédé harmonique, le retard, participant du caractère sombre du mouvement; dans <em>La Fuite de Varennes</em>, le retard du convoi royal est un élément-clé de l’interception du Roi.</p>
+
+<p>L’ambiance des Sans-culottes est assurée par l’apparition brutale des triolets du B dont les <em>sforzando</em> génèrent un thème d'allure révolutionnaire réutilisé en mode rétrograde dans le <em>Finale</em> de la Neuvième Symphonie, mes. 822-824, sur les paroles <em>was die Mode streng geteilt</em> (traduction : &quot;Ce que, sévèrement, les modes divisaient&quot;) de l'<em>Ode à la Joie</em>. D’ailleurs, la main gauche n’est pas sans rappeler, mes. 26-27 et 40-41, l’hymne lui-même ou sa variation ternaire dans la 9<sup>ème</sup> Symphonie (mes. 656) <sub><sub><sub> 
+                  <audio controls preload="none">
+                    <source src="../son.mp3/kan/MONO-006.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/kan/MONO-006.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible
+                  </audio>
+                  </sub></sub></sub>.</p> 
+<p>Le plus stupéfiant dans ce mouvement reste que deux fois, mes. 38 et 54, la chaîne dansante de triolets s’interrompt brutalement sur trois notes reprises dans le grave, après une série d’accents dans l’aigu illustrant une forme de bousculade. Il s’agirait de la première description sonore connue d’une exécution publique, le supplicié marchant env. 20 minutes de la charrette à la guillotine (40 et 46 triolets respectivement). Le triolet conclusif, fait d’une tierce diminuée descendante suivie d’une seconde mineure ascendante, se répète ensuite comme une obsession avant le retour du A <sub><sub><sub> 
+          <audio controls preload="none">
+                    <source src="../son.mp3/kan/MONO-010.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/kan/MONO-010.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible
+                  </audio>
+                  </sub></sub></sub>.</p>
+                   
+<p>La reprise du Menuet, replaçant l’auditeur dans l’ambiance feutrée du Palais des Tuileries, voit se développer dans le A’ (mes. 88) une variation en contretemps paniqués <sub><sub><sub> 
+                  <audio controls preload="none">
+                    <source src="../son.mp3/kan/MONO-014.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/kan/MONO-014.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible
+                  </audio>
+                  </sub></sub></sub>,  imitant les soupirs féminins alors que le A reste quasiment inchangé. Se dessine une séquence psychologique entre Louis XVI et Marie-Antoinette. La conclusion du thème B (triolets de la Guillotine) sera détournée cette fois vers une cadence résolue et déterminée qui signe la décision de partir de Paris. A la troisième apparition du Menuet, c’est le prolongement du thème orné du A’ (les soupirs de la Reine) qui amorce mes. 26 le début d’une échappée en croches pointées - doubles caricaturant l’allure bon-enfant du convoi et laissant sous-entendre par ailleurs que la <em>Fuite de Varennes</em> serait finalement une volonté de Marie-Antoinette.</p>
+                  
+<p>La cadence (mes. 132) imite l’envol et le chant d’un oiseau (<em>Flucht</em> en allemand = &quot;fuite&quot; mais aussi &quot;vol&quot;) bien vite stoppé par un trille <em>mezzo voce</em> fielleux suivi d’une injonction vers le grave notée <em>Adagio</em> aboutissant sur quatre double-croches hésitantes (les pas penauds du Roi remontant dans sa voiture). La toute dernière variation du <em>Menuet</em>, superposée à un accompagnement martial de triolets, referme le premier mouvement de cette Sonate <sub><sub><sub> 
+                  <audio controls preload="none">
+                    <source src="../son.mp3/kan/MONO-017.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/kan/MONO-017.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible
+                  </audio>
+                  </sub></sub></sub>.
+</p>      
+
+<strong>Sonate Op. 54 (2<sup>ème</sup> mouvement)</strong><br/>
+
+<p><em>&quot;J’étais en plein dans la région où jouaient les boulets envoyés par l’ennemi. Le bruit est assez étrange, on le dirait composé du bourdonnement de la toupie, du clapotage de l’eau et du sifflement de l’oiseau.&quot;</em><br/>
+Goethe, <em>Campagne de France</em>, trad. Porchat.</p>
+
+<p>L'<em>Allegretto</em> décrit le champ de bataille de loin (mes. 1-36), de près (mes. 37-44), la charge (mes. 45-64), le grondement de la canonnade [peut-être les explosions des deux chariots de munitions français] (mes. 65-74), le sifflement des boulets de canon (avec l’effet Doppler, soit un chromatisme de 3 notes vers le grave - mes. 33, 36, 64, 126, 129), la clameur (mes. 115), les cris révolutionnaires (motif plus lent du triolet du 1er mouvement) et l’issue victorieuse (<em>piu Allegro</em>). Les deux dernières croches, comme deux rebonds vers le grave, évoquent peut-être la décapitation de Louis XVI, procédé repris par Hector Berlioz dans sa <em>Symphonie fantastique</em> (toute fin de la <em>Quatrième Partie : Marche au supplice</em>).
+</p>      
+                 
+          
+          
+          
+          </div>
+          
+           <div id="modesdejeu">
+          <h4>Modes de jeu</h4>
+          <p></p><p><span class ="souligner">Jeu à contretemps</span></p>
+<p>Le <em>perpetuum mobile</em> en double-croches du 2<sup>ème</sup> mouvement est basé sur un thème composé d’une gamme montante brisée en sixtes alternées offrant un motif aigu différent du grave si l’on joue à contretemps.
+</p>
+
+<div class="conteneurImages">
+                      <div> <figure>
+                              <img src="../images/kan/allegretto.jpg" alt="Beethoven, Sonate opus 54, Allegretto, mes. 1-5" />
+                              <figcaption>Allegretto, mes. 1-5</figcaption>
+                                 </figure></div>                
+</div>
+
+<p>Pour retrouver la ligne mélodique, on peut s’aider des relais entre m.g. et m.d., par exemple mes. 3, où le premier <em>la</em> doit être légèrement accentué pour consolider la répétition du suivant, juste après, à la m.d.</p>
+
+<p>De cet impératif technique découle que les 2 premières mesures sont jouées à contretemps ainsi que les mes. 5-6, 9-10 et 13-16. Les <em>sf</em> placés trop à droite dans la première édition ne concernent pas la note tenue, mais la précédente, soit le <em>la</em> m.g. mes. 3, et le <em>fa</em> m.d. mes. 5. Ainsi, il est possible de rechercher une &quot;orchestration&quot; du mouvement qui correspondra peu ou prou au jeu des pouces <sub><sub><sub> 
+                  <audio controls preload="none">
+                    <source src="../son.mp3/kan/MONO-019.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/kan/MONO-019.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible
+                  </audio>
+                  </sub></sub></sub>.
+</p>
+
+<p><span class ="souligner">Dynamiques</span></p>
+<p>A noter, l’utilisation du <em>cresc.</em> en <span class ="souligner">dynamique locale</span> [lire] :</p>
+
+ <ul class="miniListCorps">
+                    <li>Mes. 11, le <em>cresc.</em>, s’applique au <em>sol</em> m.g., renforcé avant de conduire au <em>la-sol-fa-mi</em> de la m.d à la mesure suivante.</li>
+                    <li>Mes. 17, le <em>cresc.</em>, s’applique au <em>do</em> m.g. en double-croche, ce qui donne deux gammes descendantes avec un accent sur le début de la première (effet d’artillerie avec le décalage vers le grave, connu depuis sous le nom d’effet Doppler).</li>
+                    <li>Mes. 19, le <em>decresc.</em> explicitement pour le 2<sup>ème</sup> temps de double-croches à la m.g. : dynamique de précaution, <em>decresc. = senza cresc.</em> Ceci confirme que le <em>cresc.</em> mes. 17 est pour la m.g.</li>
+</ul>
+
+
+
+<p><span class ="souligner">Ornementation</span></p>
+<p>Dans l’<em>Allegretto</em> deux trilles seulement, l’un dans la 2<sup>ème</sup> volta de la mes. 20, l’autre aux mes. 160-161, deux roulements de tambour notés <em>cresc.</em> sur l’amorce (une sorte d’accent). Celui de la mes. 20, particulièrement court et dru, amorcé sur la note supérieure dans un contexte <em>p dolce</em>, donne l’illusion d’un roulement de tambour entendu de loin. Celui-là autant que les deux autres interviennent avant la relance de l’ostinato.
+</p>
+          
+          </div>
+          
+           <div id="bruits">
+          <h4>Les bruits de la guerre</h4>
+          <p><span class ="souligner">L'effet Doppler des boulets de canon</span></p>
+       
+       
+       <div class="conteneurImages">
+                      <div> <figure>
+                              <img src="../images/kan/doppler.jpg" alt="Beethoven, Sonate opus 54, Allegretto, mes. 34-37" />
+                              <figcaption>Allegretto, mes. 34-37</figcaption>
+                                 </figure></div>                
+</div>
+   
+          <p>En poursuivant naturellement le jeu à contretemps de la mes. 33 à la m.g., et en mettant en relief les trois <em>si bémol</em> mes 34-35, la conclusion mes. 36 sonne comme un dérapage rapide de trois notes en chromatisme vers le grave <sub><sub><sub> 
+                  <audio controls preload="none">
+                    <source src="../son.mp3/kan/MONO-023.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/kan/MONO-023.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible
+                  </audio>
+             </sub></sub></sub>.</p>
+<p>Mes. 37, fin du jeu dolce, description puissante du champ de bataille <sub><sub><sub> 
+                  <audio controls preload="none">
+                    <source src="../son.mp3/kan/MONO-025.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/kan/MONO-025.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible
+                  </audio>
+                  </sub></sub></sub>.
+</p>
+
+<p><span class ="souligner">La canonnade</span></p>
+
+ <div class="conteneurImages">
+                      <div> <figure>
+                              <img src="../images/kan/canonnade.jpg" alt="Beethoven, Sonate opus 54, Allegretto, mes. 65-67" />
+                              <figcaption>Allegretto, mes. 65-67</figcaption>
+                                 </figure></div>                
+</div>
+
+
+<p>Les <em>ff</em> sont des dynamiques locales pour l’équivalent des 2 premières doubles croches. A noter l’effet d’écho mes 66 et 68, ainsi que les explosions en chaîne mes. 69-73 <sub><sub><sub> 
+                  <audio controls preload="none">
+                    <source src="../son.mp3/kan/MONO-028.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/kan/MONO-028.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible
+                  </audio>
+             </sub></sub></sub>.</p>
+                  
+<p><span class ="souligner">Les plaintes des blessés</span></p>
+<p>Jouées à contretemps, les mesures 89 à 95 donnent à entendre un ostinato dans l’aigu particulièrement émouvant, le tout sur un puissant cycle de quintes. Le jeu de mots autour des &quot;quintes&quot; (les râles des agonisants) ne peut venir que d’un français ayant vécu le champ de bataille <sub><sub><sub> 
+                  <audio controls preload="none">
+                    <source src="../son.mp3/kan/MONO-030.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/kan/MONO-030.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible
+                  </audio>
+                  </sub></sub></sub>.
+</p>
+
+<p><span class ="souligner">L'église de Valmy</span></p>
+<p>Mesures 99, 101 et 103, trois accents Mi 2 (sonnent Ré 2 ou Do dièse 2) toutes les 2 secondes; cinq secondes plus tard, mes. 108, 110 et 111 (<em>cresc.</em> pour la dernière double croche de la mes. 111), trois accents Mi 3 (sonnent Ré 3 ou Do dièse 3 selon diapason).</p>
+
+<p>Ceci est la signature sonore de l’Angélus. Il ne peut s’agir que d’une église catholique donc française. Pour rappel, les témoignages rapportent qu’à l’Angélus du matin commencèrent les combats (après dissipation du brouillard) et que la victoire survint avec le soulèvement héroïque des troupes révolutionnaires à court de munition, le soir à 7 heures
+<sub><sub><sub> 
+                  <audio controls preload="none">
+                    <source src="../son.mp3/kan/MONO-031.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/kan/MONO-031.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible
+                  </audio>
+                  </sub></sub></sub>.
+                  
+                  <br/>
+</p>
+
+
+
+<p>Voici, en guise d'illustrations, quelques interprétations de la  Sonate pour piano n°22 de Ludwig van Beethoven :</p>
+<ul class="miniListCorps">
+                    <li><a href="https://m.youtube.com/watch?v=XHRx2G0PXXE">Jeonghwan Kim</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=eSM_UrEPb5g">Maurizio Pollini</a></li>
+                   <li><a href="https://www.youtube.com/watch?v=Bv3A5scYD30">Richard Goode</a></li>
+                   <li><a href="https://www.youtube.com/watch?v=bbB6aqHGuKM">Louis Lortie</a></li>
+                   
+</ul>
+ 
+          </div>
+  
+  <div id="appassionata">
+          <h4>Le cas de la Sonate n°23</h4>
+          
+        <div class="conteneurImageSeule">
+                      <div>
+                          <figure>
+                              <img src="../images/kan/opus57.png" alt="Sonate n°22, opus 54" />
+                              <figcaption>Sonate n°23, opus 57</figcaption>
+                          </figure>
+                      </div>
+                  </div>
+                  
+                  
+        <p>L'histoire ne s'arrête pas là : &quot;Napoléon à la bataille de Rivoli&quot; serait, d’après Georges Kan, le sujet de la Sonate n°23, opus 57, du même Beethoven. </p>
+          <p>Un premier problème est le suivant : la couverture de l'édition originale de cette oeuvre (chez le même éditeur) fait état d'une inscription énigmatique en tous points analogue à celle qui figure sur la couverture de la sonate n°22. La seule différence significative est le remplacement de la mention <em><strong>LI</strong> me SONATE</em> par <em><strong>LIV</strong> me SONATE</em>.  Aucune autre oeuvre de Beethoven publiée  au Bureau des arts et d’industrie ne comporte de mention similaire. </p>
+          <p>La première idée qui vient à l'esprit a été développée par Barry Cooper, dans &quot;The Creation of Beethoven’s 35 Piano Sonatas&quot; (Cooper incorpore au corpus habituel des 32 sonates, les 3 sonates d'extrême jeunesse, dites &quot;A l'Electeur&quot;). Il y cite Hans-Werner Küthen selon qui les inscriptions &quot;LI me&quot; et &quot;LIV me&quot; renvoient aux  51<sup>ème</sup> et 54<sup>ème</sup> sonates réellement publiées par le Bureau des arts et d’industrie <em>tous auteurs confondus</em>. Pour que cette interprétation tienne la route, il faudrait admettre que cet éditeur n'ait publié aucune sonate entre avril 1806 et février 1807 (dates de parution des opus 54 et 57). Déjà cela pose  question et d'autre part, serait-il vraisemblable que Beethoven subisse par deux fois l’annonce d’une information qui ne relève en rien de son propre catalogue, lui qui maîtrisait les publications dans leur moindre détail ? </p>
+          <p>Une autre interprétation est envisageable : Beethoven aurait  manipulé son éditeur en lui demandant de publier au moment opportun ses  opus 54 et 57 sous les intitulés de LI et LIV sans  révéler ses intentions subversives. En d'autres termes, Beethoven aurait cherché à retarder ces deux publications pour pouvoir les placer comme &quot;LI me&quot; et &quot;LIV me&quot; dans le catalogue de son éditeur et brouiller ainsi la lecture des titres respectifs, à savoir &quot;La Révolution&quot; pour l’opus 54 (LI faisant référence autant à la fin de Louis XVI qu’à Valmy), et &quot;Napoléon à Rivoli&quot; pour l’opus 57 (LIV décomposé en LI et [An] V).            </p>
+          <p>La <a href="https://www.youtube.com/watch?v=URL1HEBciWc">Sonate n°23</a>, surnommée &quot;Appassionata&quot;, est composée de trois mouvements :</p>
+          
+          <ul class="miniListCorps">
+                    <li>Le premier, Allegro assai, dépeint la colère de Napoléon Bonaparte : bloqué à Mantoue, il risque maintenant la défaite face aux Autrichiens du Général Alvinzy. Le thème tantôt martial, tantôt impérial, ponctué de 4 croches dans le grave (reprises dans la Symphonie n° 5), est interrompu par des accords colériques.</li>
+                    <li>Le deuxième mouvement, Andante con moto, décrit l’attente. Le thème varié change progressivement d’éclairage : nocturne dans la 1<sup>ère</sup> variation, aux aurores à la 2<sup>ème</sup>, puis plein soleil dans la suivante avant une conclusion résignée.</li>
+                   <li>Le troisième mouvement, Allegro ma non troppo,  annonce l’arrivée des renforts. Allégresse, vaillance et détermination ponctuent ce mouvement qui se clôt sur une tarentelle endiablée.</li>
+</ul>
+
+            
+            
+    
+             
+          </div>   
+          
+          
+          </div>
+        
+
+
+            <a id="ancreRetourHautPage" href="#site">&uarr;</a>
+
+            <!-- Inclusion footer -->
+            <div id="footer"></div>
+
+        </div>
+    
+    
+    </div>
+
+    <!-- Effet smooth ancres -->
+    <script src="../js/onclick.js"></script>
+    <script src="../js/anchors.js"></script>
+
+</body>
+</html>
