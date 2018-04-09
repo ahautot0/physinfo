@@ -47,22 +47,22 @@
                     <a id="ancrepresentation" href="#presentation" class="linavMenu active">
                     <span>Présentation</span>
                     </a>
-        </li>
+    </li>
                 <li>
                     <a id="ancredescription" href="#description" class="linavMenu">
                     <span>Description</span>
                     </a>
-        </li>
+    </li>
                 <li>
                     <a id="ancremodesdejeu" href="#modesdejeu" class="linavMenu">
                     <span>Modes de jeu</span>
                     </a>
-        </li>
+    </li>
                 <li>
                     <a id="ancrebruits" href="#bruits" class="linavMenu">
                     <span>Les bruits de la guerre</span>
                     </a>
-                </li>
+          </li>
                 
                  <li>
                     <a id="ancreappassionata" href="#appassionata" class="linavMenu">
@@ -113,52 +113,100 @@
                 
                 <div id="presentation">
           <h4>Présentation</h4>
-      <p>Tout instrument de musique repose sur les principes physiques qui règlent la coopération entre deux organes principaux, un oscillateur et un résonateur :</p>
+          
+          <div class="conteneurImageSeule">
+                      <div>
+                          <figure>
+                              <img src="../images/violon/marimba.png" alt="Marimba" />
+                              <figcaption>Marimba</figcaption>
+                          </figure>
+                      </div>
+                  </div>
+                  
+      <p>Tout instrument de musique repose sur  une coopération entre deux organes principaux, un système d'oscillateurs et de résonateurs. C'est particulièrement apparent dans le cas du marimba représenté ci-contre : chaque lame correspond à une note et elle possède son résonateur adapté à sa fréquence sonore, d'autant plus grand que la fréquence est basse. Dans certains instruments tel le violon qui va nous intéresser particulièrement il n'y a qu'un résonateur commun à toutes les notes susceptibles d'être émises, c'est la caisse de résonance. On comprend immédiatement que cette unicité pose des problèmes techniques difficiles du fait que la caisse doit être adaptée à toutes les notes, des plus graves aux plus aiguës. </p>
       
-      	<ul class="miniListCorps">
-                    <li>L'oscillateur est un milieu matériel élastique : dans le cas qui nous intéresse (famille des cordophones), il s'agit d'une corde  tendue entre deux points fixes. Si l'on perturbe l'état de cette corde, par exemple en la pinçant, elle se déforme mais une fois relâchée elle tente de revenir à sa position  initiale de repos. Elle n'y parvient pas immédiatement. Au contraire, elle se met à osciller de part et d'autre de cette position de repos avec une fréquence qui dépend de plusieurs facteurs physiques : la longueur de la corde, L, sa masse par unité de longueur, &mu;, et   la tension qui y règne, T. Si la corde est parfaitement élastique, la fréquence vaut 
-                      <div class="conteneurImages">
+      	
+                    <p>L'oscillateur est un milieu matériel élastique : dans le cas qui nous intéresse (famille des cordophones), il s'agit d'une corde  tendue entre deux points fixes. Si l'on perturbe l'état de cette corde, par exemple en la pinçant, elle se déforme mais une fois relâchée elle tente de revenir à sa position  initiale de repos. Elle n'y parvient pas immédiatement. Au contraire, elle se met à osciller de part et d'autre de cette position de repos avec une fréquence qui dépend de plusieurs facteurs physiques : la longueur de la corde, L, sa masse par unité de longueur, &mu;, et   la tension qui y règne, T. Si la corde est parfaitement élastique, la fréquence vaut 
+                  <div class="conteneurImages">
                       <div> <figure>
                               <img src="../images/violon/equ1.png" alt="Equation" />
                                  </figure></div>                
 					  </div>
                       
-                      Si les frottements n'existaient pas, la corde oscillerait ainsi éternellement. Les figures qui suivent décrivent ce comportement totalement idéal dans le cas d'une corde pincée aux deux tiers de sa longueur (On a exagéré fortement la dent de scie pour plus de lisibilité; en pratique, l'ordonnée de son sommet est bien moindre).   
+                      <p>Si les frottements n'existaient pas, la corde oscillerait ainsi éternellement. </p>
+                      <p>L'étude mathématique de la vibration d'une corde (de longueur L, de masse linéique &mu;,  soumise à une tension T),  fixée à ses extrémités, est un sujet d'étude classique, basée sur la résolution de l'équation des ondes, &part;<sub>tt</sub>y(x,t) = (T/&mu;)<sup></sup> &part;<sub>xx</sub>y(x,t). La solution générale s'exprime comme une série de Fourier (où les coefficients A<sub>n</sub> et B<sub>n</sub> dépendant de la déformation initiale imposée à la corde) :</p>
+                      
+                      <div class="conteneurImages">
+                      <div> <figure>
+                              <img src="../images/violon/equ2.png" alt="Equation" />
+                                 </figure></div>                
+					  </div>
+                      
+                      
+                <div class="conteneurImageSeule">
+                      <div>
+                          <figure>
+                            <img src="../images/violon/triangle.png" alt="Corde pincée" />
+                              <figcaption>Corde pincée</figcaption>
+                          </figure>
+                      </div>
+                  </div>       
+                      
+                      <p>Dans le cas particulier où la corde est pincée à une distance &ell; de son extrémité, lui imposant un déplacement y(&ell;, 0) = h, cette solution devient :</p>
+                      
+                  <div class="conteneurImages">
+                      <div> <figure>
+                              <img src="../images/violon/equ3.png" alt="Equation" />
+                                 </figure></div>                
+				  </div>  
+                      
+                      <p>Si les calculs complets vous rebutent vous pouvez peut-être  à tout le moins vérifier que cette solution répond à la question posée :</p>
+                      
+                      <ul class="miniListCorps">
+                    
+                      <li>L'équation des ondes est vérifiée à condition de poser que la vitesse de propagation de l'onde le long de la corde vérifie la relation c<sup>2</sup> = T/&mu;</li>
+                    <li>Les conditions initiales vérifient qu'à l'instant t=0, la corde est bien déformée comme demandé y(x,0)=hx/a si 0&lt;x&lt;&ell; et y(x,0)=h(L-x)/(L-&ell;) si &ell; &lt;x&lt;L.</li>
+                    <li> et aux limites y(0,t)=y(L,t)=0 le sont tout autant signifiant que la corde est fixe aux extrémités.</li>
+		 </ul>  
+         
+                      <p>Les figures suivantes illustrent  ce comportement totalement idéal  d'une corde pincée aux deux tiers de sa longueur qui ne subirait aucun amortissement (On a exagéré fortement la dent de scie pour plus de lisibilité; en pratique, l'ordonnée de son sommet est bien moindre). Les figures se lisent dans l'ordre normal et l'état de la corde  est représenté tous les vingtièmes de période de telle manière qu'au terme d'un cycle complet, elle reprend sa position de départ et le processus peut se poursuivre.</p>  
                       
                       <div class="conteneurImages">
                       <div> <figure>
                         <img src="../images/violon/violon2.png" alt="Déformation progressive d'une corde pincée" />
                               <figcaption>Déformation progressive d'une corde pincée pendant une période complète</figcaption>
           			</figure></div>              
-					</div>
+				  </div>
                     
-                    On peut calculer l'énergie dépensée pour déformer la corde à l'instant initial. Bien sûr, les choses ne se passent pas ainsi dans la réalité. Même dans le vide d'air, des frottement existent au sein de la corde qui n'est jamais parfaitement élastique et aux points d'appuis. Le mouvement de la corde s'amortit alors (très) lentement, l'énergie mise en jeu initialement étant dissipée sous forme de chaleur aux endroits où il y a frottement.
+                    
+    <p><i>Note. Cette analyse de Fourier met en évidence un point capital : c'est parce que la déformation initiale est non sinusoïdale que les harmoniques prennent leur importance. Si la corde était perturbée initialement en dessinant une arche de sinusoïde, elle conserverait cette forme éternellement sans faire apparaître le moindre son harmonique</i></p>                
+                    <p>On peut calculer l'énergie dépensée pour déformer la corde à l'instant initial. Bien sûr, les choses ne se passent pas ainsi dans la réalité. Même dans le vide d'air, des frottement existent au sein de la corde qui n'est jamais parfaitement élastique et aux points d'appuis. Le mouvement de la corde s'amortit alors (très) lentement, l'énergie mise en jeu initialement étant dissipée sous forme de chaleur aux endroits où il y a frottement.
 
 
-					Toutefois ce cas idéal ne nous intéresse pas puisque le vide d'air empêche le son d'exister. Si la corde vibre dans l'air ce contact représente une nouvelle cause de frottement nettement plus intéressante, acoustiquement parlant : au contact de la corde vibrante, l'air se met à vibrer à son tour à la même fréquence que la corde et comme l'air est par nature compressible élastiquement, les chocs intermoléculaires ont tôt fait de transmettre cette vibration de l'air selon une onde qui se propage radialement vers les auditeurs potentiels. On comprend aisément que la mise en branle de cette onde représente une dépense d'énergie qui est prélevée sur le mouvement de la corde qui s'atténue d'autant plus rapidement. Cet amortissement est tout bénéfice car on attend d'une note de musique qu'elle ne dure que le temps qui lui est imparti.</li>
+					Toutefois ce cas idéal ne nous intéresse pas puisque le vide d'air empêche le son d'exister. Si la corde vibre dans l'air ce contact représente une nouvelle cause de frottement nettement plus intéressante, acoustiquement parlant : au contact de la corde vibrante, l'air se met à vibrer à son tour à la même fréquence que la corde et comme l'air est par nature compressible élastiquement, les chocs intermoléculaires ont tôt fait de transmettre cette vibration de l'air selon une onde qui se propage radialement vers les auditeurs potentiels. On comprend aisément que la mise en branle de cette onde représente une dépense d'énergie qui est prélevée sur le mouvement de la corde qui s'atténue d'autant plus rapidement. Cet amortissement est tout bénéfice car on attend d'une note de musique qu'elle ne dure que le temps qui lui est imparti.</p>
                     
-                    <li>2. <em>Allegretto</em> (60 MM la mesure) - <em>piu allegro</em> (80 MM la mesure)</li>
-		</ul>
+                    
+		
       
       <p>Le violon appartient à la famile des cordophones.</p>
       
       <div class="conteneurImages">
                       <div> <figure>
                         <img src="../images/violon/violon1.png" alt="Vue éclatée d'un violon moderne" />
-                              <figcaption>Vue éclatée d'un violon moderne (<a href="http://physique.unice.fr/sem6/2008-2009/PagesWeb/Violon/violon.html">Univ. Nice Sophia Antipolis</a>))</figcaption>
+                              <figcaption>Vue éclatée d'un violon moderne (<a href="http://physique.unice.fr/sem6/2008-2009/PagesWeb/Violon/violon.html">Univ. Nice Sophia Antipolis</a>)</figcaption>
           </figure></div>              
 		</div>
 
-      <p>La Sonate pour piano n°22 de Ludwig van Beethoven serait donc la représentation musicale de la <strong>Fuite de Varennes (1791)</strong> et de la <strong>Bataille de Valmy (1792)</strong>. Sur la couverture de la première édition (<em>A Vienne, au Bureau des arts et d’industrie</em>) on peut lire l'inscription, <em><strong>LI</strong> <sup>me</sup> SONATE</em>. La typographie utilisée (un gras renforcé) crée l’illusion d’un &quot;LI&quot; gravé dans le marbre. Il ne peut s’agir de la 51<sup>ème</sup> Sonate car Beethoven, d’une part n’en a composé que 32 en tout et que, d’autre part, s’il numérote effectivement ses œuvres (op. 54 en l’occurrence), il ne comptabilise jamais sa production par genre. &quot;LI&quot; serait une double référence cachée à Louis XVI et à Valmy : le produit de X et V ajouté au I donne LI, et les lettres VY entrelacées créent un V barré (ancêtre du L) et un I. Cette conjecture soulève une question subsidiaire, relative à la  Sonate n°23 (Appassionata), opus 57,  parue chez le même éditeur; afin de ne pas alourdir l'exposé, son examen est différé en fin de chronique.<br/><br/></p> 
-      <p>Concise, la Sonate n°22 est composée de deux mouvements dont voici les titres, accompagnés de propositions métronomiques (MM = Maelzel's metronome oscillations) :</p>
+      <p>La figure ci-dessus représente une vue éclatée d'un violon moderne et précise le vocabulaire. Elle permet de préciser le rôle essentiel de quelques organes particuliers :</p> 
       
-      <ul class="miniListCorps">
-                    <li>1. <em>In Tempo d'un Menuetto</em> (sic) (40 MM la mesure)</li>
-                    <li>2. <em>Allegretto</em> (60 MM la mesure) - <em>piu allegro</em> (80 MM la mesure)</li>
-</ul>
-   
-         
-       <p>A noter dans la première partie, mesures 3 et 7 à la main gauche, la citation des 6 croches du <em>Menuet d’Exaudet</em> (fa-la-do-la-si-sol-fa) sous lesquelles venaient se placer les paroles révolutionnaires <em>Imagine, un beau matin</em> dans la Parodie &quot;Sur l’inimitable machine du médecin Guillotin propre à couper les têtes et dite de son nom Guillotine&quot;. Le jeu de mots du titre <em>In Tempo d'un Menuet tô(t)</em>, confirme que la Guillotine, objet de cette parodie très populaire pendant la Révolution française, est bien le sujet central de cette Sonate de Beethoven. En voici le premier couplet :</p>
+      
+     	 <ul class="miniListCorps">
+                    
+                      <li>Le chevalet est important car c'est lui qui assure la transmission de la vibration des cordes vers la table d'harmonie. Il exerce une pression non négligeable sur la table d'harmonie qui lui vient de la composante orthogonale (à la table d'harmonie) de la tension résultante des 4 cordes. </li>
+                    <li>L'âme est une pièce en bois cylindrique qui relie les deux faces principales de la caisse de résonance, la table d'harmonie et le fond. C'est elle qui assure la transmission de la vibration de la première vers la seconde. Accessoirement elle renforce la soliditié de la caisse qui sans elle menacerait d'imploser sous l'effet de pression du chevalet.</li>
+                    <li>La barre d'harmonie est une tige en bois collée sur la face intérieure de la table d'harmonie, dans le sens longitudinal, qui favorise la transmission de la vibration vers l'air prisonnier de la caisse.</li>
+		 </ul>
+<p>A noter dans la première partie, mesures 3 et 7 à la main gauche, la citation des 6 croches du <em>Menuet d’Exaudet</em> (fa-la-do-la-si-sol-fa) sous lesquelles venaient se placer les paroles révolutionnaires <em>Imagine, un beau matin</em> dans la Parodie &quot;Sur l’inimitable machine du médecin Guillotin propre à couper les têtes et dite de son nom Guillotine&quot;. Le jeu de mots du titre <em>In Tempo d'un Menuet tô(t)</em>, confirme que la Guillotine, objet de cette parodie très populaire pendant la Révolution française, est bien le sujet central de cette Sonate de Beethoven. En voici le premier couplet :</p>
        
         <i>Guillotin,<br/>
                   Médecin,<br/>
