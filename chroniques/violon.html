@@ -112,10 +112,25 @@
      <p>Le violon en cet état idéal pose pourtant toutes sortes de questions à un observateur naïf auxquelles cette modeste chronique va tenter de répondre en mettant un peu d'ordre.</p>       
                 
                 <div id="presentation">
-          <h4>Présentation</h4>
+          <h4>Classification des instruments</h4>
           
-          <div class="conteneurImageSeule">
-                      <div>
+    <p>Tout instrument de musique naît de la rencontre entre un système oscillant et un système résonant. La classification raisonnée &quot;Hornbostel-Sachs&quot; (1914) range les  instruments en cinq catégories en fonction de la nature du support physique qui vibre. Une oscillation exploitable a  besoin d'un mileu élastique pour naître et s'entretenir, sous l'effet d'une sollicitation de l'interprète. Ce peut être :</p>
+    
+     <ul class="miniListCorps">
+                    
+          <li>Une plaque de métal (Famille 1 des idiophones : vibraphone, glockenspiel, etc) ou de bois (xylophone, etc),</li>
+                    <li> Une membrane tendue (Famille 2 des membranophones : tambour, timbales, etc),</li>
+                    <li>Un ensemble de cordes fortement tendues (Famille 3 des cordophones : violon, piano, clavecin, etc),</li>
+                    <li>Une colonne d'air dans un tuyau (Famille 4 des aérophones : flûte, clarinette, trompette, etc),</li>
+                    <li>Voire un circuit électrique oscillant (Famille 5 des électrophones : Thérémine, Ondes Martenot, etc).</li>
+		 </ul>  
+    
+    
+         <p>Il ne suffit pas qu'une partie de l'instrument entre en vibration, il faut encore que cette vibration soit  transmise à l'air ambiant qui est lui-même un système élastique. La vibration peut s'y propager de proche en proche de la source vers l'observateur, à la vitesse approximative de 340 m/s. Le but poursuivi est de transférer l'énergie que l'interprète a dépensé pour mettre le système en vibration vers le volume d'air ambiant qui est à son contact. Ce phénomène de transduction doit être efficace pour deux raisons : la première est que l'onde doit rassembler un maximum d'énergie dans la direction de l'auditoire et la seconde est que ce système ne doit vibrer que le temps que l'on veut réserver à la note émise. C'est à cela que sert le résonateur. Il n'amplifie pas le son au sens strict du terme mais le répartit spatialement dans le minimum de temps.</p>
+         <p>On distingue habituellement : </p>  
+          
+<div class="conteneurImageSeule">
+<div>
                           <figure>
                               <img src="../images/violon/marimba.png" alt="Marimba" />
                               <figcaption>Marimba</figcaption>
@@ -123,11 +138,25 @@
                       </div>
                   </div>
                   
-      <p>Tout instrument de musique repose sur  une coopération entre deux organes principaux, un système d'oscillateurs et de résonateurs. C'est particulièrement apparent dans le cas du marimba représenté ci-contre : chaque lame correspond à une note et elle possède son résonateur adapté à sa fréquence sonore, d'autant plus grand que la fréquence est basse. Dans certains instruments tel le violon qui va nous intéresser particulièrement il n'y a qu'un résonateur commun à toutes les notes susceptibles d'être émises, c'est la caisse de résonance. On comprend immédiatement que cette unicité pose des problèmes techniques difficiles du fait que la caisse doit être adaptée à toutes les notes, des plus graves aux plus aiguës. </p>
+      
+     <p> - Les instruments à sons fixes (piano, clavecin, marimba, etc) où le système oscillant est composé d'autant d'oscillateurs individuels qu'il y a de notes à produire. Le système résonant peut consister en un résonateur unique (caisse de résonance), c'est le cas du piano, ou en autant de résonateurs  calibrés et couplés individuellement aux oscillateurs, cas du marimba. Dans ce cas, le résonateur est d'autant plus grand que la note à accorder est grave (que la fréquence  est basse). </p>
+     
+     <div class="conteneurImageSeule">
+                      <div>
+                          <figure>
+                              <img src="../images/violon/violon.png" alt="Violon" />
+                              <figcaption>Violon</figcaption>
+                          </figure>
+          </div>
+                  </div>
+                  
+                  
+      <p>- Les instruments à sons variables (violon, trombone à coulisse, thérémine, etc) où le nombre des oscillateurs est bien moindre que celui des notes à émettre, c'est alors la technique de l'instrumentiste qui compense ce manque par la position des doigts, l'allongement de la coulisse, etc. Dans ce cas, un résonateur unique est  généralement commun à toutes les notes. </p>
+      <p> Dans certains instruments tel le violon qui va nous intéresser particulièrement il n'y a qu'un résonateur commun à toutes les notes susceptibles d'être émises, c'est la caisse de résonance. On comprend immédiatement que cette unicité pose des problèmes techniques difficiles du fait que la caisse doit être adaptée à toutes les notes, des plus graves aux plus aiguës. </p>
       
       	
                     <p>L'oscillateur est un milieu matériel élastique : dans le cas qui nous intéresse (famille des cordophones), il s'agit d'une corde  tendue entre deux points fixes. Si l'on perturbe l'état de cette corde, par exemple en la pinçant, elle se déforme mais une fois relâchée elle tente de revenir à sa position  initiale de repos. Elle n'y parvient pas immédiatement. Au contraire, elle se met à osciller de part et d'autre de cette position de repos avec une fréquence qui dépend de plusieurs facteurs physiques : la longueur de la corde, L, sa masse par unité de longueur, &mu;, et   la tension qui y règne, T. Si la corde est parfaitement élastique, la fréquence vaut 
-                  <div class="conteneurImages">
+<div class="conteneurImages">
                       <div> <figure>
                               <img src="../images/violon/equ1.png" alt="Equation" />
                                  </figure></div>                
@@ -165,7 +194,7 @@
                       <ul class="miniListCorps">
                     
                       <li>L'équation des ondes est vérifiée à condition de poser que la vitesse de propagation de l'onde le long de la corde vérifie la relation c<sup>2</sup> = T/&mu;</li>
-                    <li>Les conditions initiales vérifient qu'à l'instant t=0, la corde est bien déformée comme demandé y(x,0)=hx/a si 0&lt;x&lt;&ell; et y(x,0)=h(L-x)/(L-&ell;) si &ell; &lt;x&lt;L.</li>
+                    <li>Les conditions initiales vérifient qu'à l'instant t=0, la corde est bien déformée comme demandé y(x,0)=hx/a si 0&leq;x&leq;&ell; et y(x,0)=h(L-x)/(L-&ell;) si &ell;&leq;x&leq;L et qu'elle est immobile, &part;<sub>t</sub>y(x,t)&vert;<sub>t=0</sub> = 0.</li>
                     <li> et aux limites y(0,t)=y(L,t)=0 le sont tout autant signifiant que la corde est fixe aux extrémités.</li>
 		 </ul>  
          
@@ -179,8 +208,30 @@
 				  </div>
                     
                     
-    <p><i>Note. Cette analyse de Fourier met en évidence un point capital : c'est parce que la déformation initiale est non sinusoïdale que les harmoniques prennent leur importance. Si la corde était perturbée initialement en dessinant une arche de sinusoïde, elle conserverait cette forme éternellement sans faire apparaître le moindre son harmonique</i></p>                
-                    <p>On peut calculer l'énergie dépensée pour déformer la corde à l'instant initial. Bien sûr, les choses ne se passent pas ainsi dans la réalité. Même dans le vide d'air, des frottement existent au sein de la corde qui n'est jamais parfaitement élastique et aux points d'appuis. Le mouvement de la corde s'amortit alors (très) lentement, l'énergie mise en jeu initialement étant dissipée sous forme de chaleur aux endroits où il y a frottement.
+    <p>Cette analyse de Fourier met en évidence deux points capitaux :</p>
+    
+    <ul class="miniListCorps">
+                    
+                      <li><div class="conteneurImageSeule">
+                      <div>
+                          <figure>
+                              <img src="../images/violon/sinusoide.png" alt="Vibration stationnaire" />
+                              <figcaption>Vibration stationnaire</figcaption>
+                          </figure>
+          </div>
+                  </div>
+                 C'est parce que la déformation initiale est non sinusoïdale que les harmoniques prennent leur importance. Si la corde était perturbée initialement en dessinant une arche complète de sinusoïde, entre les extrémités fixes, elle conserverait cette forme éternellement sans faire apparaître le moindre son harmonique, on aurait en effet dans ce cas la figure ci-contre.</li>
+                   
+                    <li>Revenant au cas plus réaliste de la déformation en dent de scie, on constate que la position de cette dent (la valeur de &ell;) influe sur le spectre des harmoniques au travers du facteur, sin(n&pi;&ell;/L). On constate que ce ne serait pas une bonne idée d'exciter la corde en son milieu, &ell;=L/2, cela aurait pour conséquence d'éteindre les harmoniques de rangs pairs, ce qui cojstituerait un appauvrissement du timbre. En fait l'exciter au tiers de sa longueur fait à peine moins bien puisque cette fois ce sont les harmoniques de rangs multiples de 3 qui sont éteints. l'idéal est donc d'exciter la corde en une abscisse irrationnelle. Bien sûr aucun violoniste ne se préoccupe de calculs aussi savants, il sait par expérience où la corde peut être attaquée.</li>
+		 </ul>  
+    
+    
+    
+     1) </p>
+    
+   
+                                  
+                  <p>On peut calculer l'énergie dépensée pour déformer la corde à l'instant initial. Bien sûr, les choses ne se passent pas ainsi dans la réalité. Même dans le vide d'air, des frottement existent au sein de la corde qui n'est jamais parfaitement élastique et aux points d'appuis. Le mouvement de la corde s'amortit alors (très) lentement, l'énergie mise en jeu initialement étant dissipée sous forme de chaleur aux endroits où il y a frottement.
 
 
 					Toutefois ce cas idéal ne nous intéresse pas puisque le vide d'air empêche le son d'exister. Si la corde vibre dans l'air ce contact représente une nouvelle cause de frottement nettement plus intéressante, acoustiquement parlant : au contact de la corde vibrante, l'air se met à vibrer à son tour à la même fréquence que la corde et comme l'air est par nature compressible élastiquement, les chocs intermoléculaires ont tôt fait de transmettre cette vibration de l'air selon une onde qui se propage radialement vers les auditeurs potentiels. On comprend aisément que la mise en branle de cette onde représente une dépense d'énergie qui est prélevée sur le mouvement de la corde qui s'atténue d'autant plus rapidement. Cet amortissement est tout bénéfice car on attend d'une note de musique qu'elle ne dure que le temps qui lui est imparti.</p>
