@@ -79,7 +79,7 @@
 
 <div id="contenuPrincipal">
                 <h2>Faits divers</h2>
-                <h3>Le violon parfait : science ou intuition ?</h3>
+                <h3>Diététique de l'audition : l'éloge du son</h3>
                 
 
                  <nav class="filAriane">
@@ -91,7 +91,7 @@
                         <li class="breadcrumbItem">
                           <a href="../faitsDivers.html">Faits divers</a>
                         </li>
-                        <li class="breadcrumbItem breadcrumIitem--current">Le violon parfait</li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Diététique de l'audition ou l'éloge du son</li>
                     </ul>
                 </nav>
                 
@@ -111,31 +111,68 @@
                     </ul>
                 </div> 
   
-      <p>Tout instrument de musique naît de la rencontre d'un système oscillant et d'un système résonant. La classification raisonnée &quot;Hornbostel-Sachs&quot; (1914), qui  ne  se restreint pas aux instruments de l'orchestre symphonique, les range parmi cinq catégories, en fonction de la nature du support physique  qui vibre.  Ce peut être :</p>
+      <p>Tout corps matériel vibrant au contact de l'air ambiant communique son état de vibration à la couche des molécules proches. Celles-ci entrent en collision, à leur tour, avec les molécule de la couche suivante qui se mettent également à vibrer : ainsi de suite, une onde longitudinale de pression prend naissance, qui se déplace à la vitesse de 340 m/s. Cette mise en mouvement progressif réclame de l'énergie qui est fournie par la source. Deux cas sont possibles selon que la source est entretenue ou qu'elle ne l'est pas. Dans le premier cas, la puissance de l'onde sonore égale la puissance consommée pour entretenir la source et dans le deuxième cas, la source s'affaiblit jusqu'à s'éteindre. Dans tous les cas la puissance de l'onde vaut : P = c &rho; (p(x,t)-p<sub>0</sub>)???</p>
+      <p>A noter que les molécules d'air ne se déplacent pas globalement, lors du passage de l'onde, elles ne font qu'osciller autour de leur position d'équilibre initial. Lorsque l'onde atteint les tympans d'un auditeur éventuel, ceux-ci se mettent également à vibrer, sollicitant le mécanisme physiologique de l'audition, pour autant que la fréquence de l'onde soit audible, comprise entre 20Hz et 20000Hz.</p>
+      <p>Ces généralités ne font aucune différence entre un son et un bruit. Les sons sont d'une façon ou d'une autre caractérisés par une fréquence définie qui correspond à son tour à une note parfaitement identifiée par l'oreille. C'est la condition nécessaire pour la constitution d'un langage musical exploitable. Cela ne signifie pas que des bruits bien choisi ne puissent pas intervenir occasionnellement mais il n'en demeure pas moins que les sons constituent la matière première de la Musique. L'attribution d'une fréquence parfaitement définie à un son émis par un instrument de musique n'est pas aussi évidente qu'il y paraît. <br/><br/></p>
+      
+     <p><span class ="souligner">Vibrations harmoniques d'une corde idéale (Violon, luth, etc)</span></p>
+      
+      <p>La théorie est particulièrement simple lorsque la vibration du corps de l'intrument est  périodique. Tel serait le cas d'une corde parfaitement élastique  tendue entre deux extrémités fixes.  L'étude mathématique de ce cas idéal  est un sujet d'étude classique. Elle repose sur la résolution de l'équation des ondes, &part;<sub>tt</sub>y(x,t) = (T/&mu;)<sup></sup> &part;<sub>xx</sub>y(x,t), flanquée de deux conditions aux limites, y(0,t) = y(L,t) = 0, &forall; t,  exprimant que la corde ne vibre pas à ses extrémités fixes. La solution générale s'exprime comme une série de Fourier :</p>
+                      
+                      <div class="conteneurImages">
+    <div> <figure>
+                              <img src="../images/son/equ2.png" alt="Equation" />
+                                 </figure></div>                
+					  </div>
+                      
+               
+                      <p>où les fréquences, f<sub>n</sub> des modes autorisés sont multiples de la fréquence de base, f<sub>1</sub>, soit : f<sub>n</sub> = n f<sub>1</sub> = n  &check;(T/&mu;)/ (2L). Dans cette série, les coefficients a<sub>n</sub> et &phi;<sub>n</sub> se calculent en fonction de la déformation initiale imposée à la corde mais les détails ne nous concernent (Vous trouverez ici le résutat des calculs dans le cas où l'on pince la corde  &quot;en dent de scie&quot; à une distance &ell; d'une extrémité, imposant un déplacement y(&ell;, 0) = h).</p>
     
-     <ol class="miniListCorps listNumber">
-                    
-					<li>Une plaque de métal  (vibraphone, glockenspiel, etc) ou de bois (xylophone, marimba, etc) ou plus généralement n'importe quel objet massif (triangle, cloche,  etc) dont la vibration se transmet  à l'air ambiant sans  nécessairement passer par l'intermédiaire d'un espace résonant  (Famille  des idiophones),</li>
-                    <li> Une membrane tendue, refermant éventuellement  un espace résonant  : tambour, timbales, etc (Famille  des membranophones),</li>
-                    <li>Un ensemble de cordes  tendues le plus souvent par dessus une caisse de résonance : violon, piano, clavecin, etc (Famille  des cordophones),</li>
-                    <li>Une colonne d'air, prisonnière d'un conduit :  orgue, flûte, clarinette, trompette, etc (Famille  des aérophones),</li>
-                    <li>Un circuit électrique oscillant alimentant des haut-parleurs  : Synthétiseur, Guitare électrique, Thérémine, Ondes Martenot, etc (Famille  des électrophones).</li>
-		 </ol>  
-    
+    <div class="conteneurImages">
+                      <div> <figure>
+                              <img src="../images/son/harmonique.png" alt="Sons harmoniques" />
+                              <figcaption>Sons harmoniques</figcaption>
+                                 </figure></div>                
+	  </div>                  
+                      
+  <p>Le point important est que cette onde superpose une infinité de composantes dont les fréquences, f<sub>n</sub> sont toutes multiples de la fréquence fondamentale, f<sub>1</sub>. La composante dominante est associée à la valeur n=1 : c'est elle qui fixe la fréquence (f<sub>1</sub> telle qu'elle est perçue par l'oreille. Les composantes suivantes, dites harmoniques de rangs, n = 2, 3, ..., n'altèrent pas cette fréquence car  une composante qui vibre n fois par seconde vibre fatalement une fois par seconde. En revanche, elles  définissent le timbre (du son de l'instrument). <br/>
+    <br/> </p>
+  
+  <p><span class ="souligner">Vibrations inharmoniques d'une lame idéale (Xylophone, marimba, etc)</span></p>  
  
-  <p>Il ne suffit pas qu'un organe de l'instrument  vibre, il faut encore que cette vibration se transmette à l'air ambiant  sous la forme d'une onde sonore progressive. On décompose le processus en plusieurs temps  :</p>
+  <p>A l'opposé de la corde élastique, on trouve la lame (ou la tige) rigide, de longueur, L, mesurée selon l'axe, x. Qu'elle soit en bois dur ou en métal, de forme parallélépipédique aplatie (lame) ou ronde (tige), la théorie qui décrit sa vibration repose sur une équation de propagation des ondes un peu plus compliquée (E est le module d'Young, S la (surface de) section, &mu; la masse linéique et g un facteur de forme valant e/&check;12 dans le cas d'une lame d'épaisseur, e, et r/2 dans la cas d'une tige cylindrique de rayon, r :  &part;<sub>tt</sub>y(x,t) + (E S g<sup>2</sup>/&mu;)<sup></sup> &part;<sub>xxxx</sub>y(x,t) = 0. On voit qu'elle demeure du deuxième ordre selon le temps mais qu'elle passe à l'ordre 4 pour ce qui concerne la dimension spatiale, x. La résolution de cette équation passe par la prise en compte de  4  conditions aux limites, deux par extrémité, qui s'expriment différemment selon le mode de fixation de la lame :.</p>
+  
+  <ul class="miniListCorps">
+                      <li>A une extrémité libre, on doit avoir, &part;<sub>xx</sub>y(x,t) = 0 (pas de couple) et &part;<sub>xxx</sub>y(x,t) = 0 (pas de cisaillement),</li>
+                    <li>A une extrémité encastrée, on doit avoir, y(x,t) = 0 (aucun déplacement) et &part;<sub>x</sub>y(x,t) = 0 (aucune pente) et</li>
+                    <li>A une extrémité  simplement posée sur un support, on doit avoir, y(x,t) = 0 (aucun déplacement) et &part;<sub>xx</sub>y(x,t) = 0 (pas de couple).</li>
+		 </ul>
          
-       <ul class="miniListCorps">
-                    
-          			<li>Le geste initial appartient à l'interprète qui actionne l'oscillateur de façon appropriée (En insufflant de l'air, en frappant une corde, en la pinçant ou encore en exerçant une friction sur elle, etc). Si cet oscillateur était parfaitemnt élastique et affranchi de tout frottement, il  continuerait de vibrer sans amortissement jusqu'à la fin des temps et on entendrait aucun son puisque l'énergie mise en jeu resterait prisonnière de l'oscillateur. Ce n'est (heureusement !) pas réaliste car les frottements sont toujours présents, en particulier au contact de l'air, et cela nous arrange  puisque ce que l'on veut, c'est entendre un son. </li>
-                    <li> On rend l'instrument  effectif en précipitant l'amortissement de la vibration initiale : un dispositif mécanique intervient généralement, à ce stade, qui   communique la vibration primitive à un volume d'air  emprisonné dans un espace dit de résonance (caisse, tuyau, etc). La fonction de cet espace résonant est d'accélérer le transfert d'énergie    de l'oscillateur (qui s'amortit) vers  l'air prisonnier (qui entre en vibration). </li>
-                    <li>L'air confiné   transmet la vibration acquise à l'air ambiant avec lequel il  communique par un système d'ouvertures (les ouïes). L'air étant  de nature élastique, la vibration des  couches   directement en contact avec les ouïes se transmet  de proche en proche aux couches successives : une onde sonore prend naissance qui rayonne dans toutes les directions de l'espace environnant, à la vitesse approximative de c = 340 m/s, jusqu'à atteindre  un auditeur éventuel. On comprend que l'intensité de l'onde sonore dépend de l'efficacité avec laquelle l'énergie de l'oscillateur a été cédée à l'espace résonant puis communiquée aux premières couches d'air ambiant.  L'amplification du son dû à l'espace résonant correspond donc à une optimisation de la transduction mécanico-acoustique et évidemment pas d'une quelconque infraction au principe sacro-saint de conservation de l'énergie : ce que le son gagne en intensité, il le perd  en durée. Lorsque l'oscillateur a réintégré son état de repos initial, il est prêt pour une nouvelle excitation donc une nouvelle note sans qu'il y ait de chevauchement parasite.<br/><br/></li>
-      </ul>    
-        
+         <p>Les figures ci-dessous, empruntées à l'ouvrage encyclopédique, The Physics of musical Instruments, de N. H. Fletcher &amp; T. D. Rossing) détaillent trois cas  importants, chaque colonne correspondant à un cas de figure différent : </p>  
+  
+  <ul class="miniListCorps">
+        <li>(a) la lame est suspendue (par exemple à un fil) d'où ses extrémités sont libres de vibrer (carillon, ...),</li>
+                    <li>(b) la lame est encastrée à une extrémité et libre à l'autre extrémité (guimbarde, sanza africain, ...) et</li>
+                    <li>(c) la lame est simplement posée sur deux supports (xylophone, ...).</li>
+	  </ul>  
+  
+    
+
+  <div class="conteneurImages">
+    <div> <figure>
+                              <img src="../images/son/lames.png" alt="Vibrations possibles d'une lame" />
+                              <figcaption>Vibrations possibles d'une lame : (a) suspendue, (b) encastrée à une extrémité, (c) simplement posée</figcaption>
+                                 </figure></div>                
+				  </div> 
+  
+    <p>Les nombres qui figurent en regard de chaque mode donnent la fréquence d'oscillation dans l'unité, (&pi; g/L<sup>2</sup>) &check;(ES/&mu;). Il est intéressant de comparer les modes fondamentaux dans les trois cas : tous paramètres physiques égaux, c'est la lame encastrée qui sonne le plus grave et la lame libre qui sonne le plus aigu. Par ailleurs, seule la lame posée aux deux extrémités respecte le schéma harmonique (n = 1, 4, 9, ...) (ce n'est pas un hasard si c'est la formule le plus exploitable, xylophone, marimba, etc) d'où un timbre  particulier dû à la disparition des harmoniques non carrés parfaits. Les autres cas sont frappés d'inharmonicité qui tendent à égarer l'oreille en fréquences perçues.</p>
+    
+    <p>Une  complication supplémentaire intervient à ce stade : elle provient du fait qu'une lame peut vibrer de plusieurs façons. Reconsidérons la corde tendue : en la pinçant, on l'allonge d'où une onde longitudinale (dans la direction de la corde) prend naissance qui se superpose à l'onde transversale. De plus, si au lieu de pincer la corde transversalement, on la frotte avec un archet, celui-ci va l'entraîner à s'enrouler légèrement sur elle-même et cela donne naissance à une onde de torsion qui participe également à la génération du son. Tous ces modes de vibration sont heureusement accessoires par rapport au mode principal fondamental (qui fixe seul la fréquence de la note) car leur intensité est faible mais elle est suffisante pour participer au timbre de l'instrument.</p>
+    <p>Une corde de piano du registre aigu pose un problème de ce genre : elle doit être épaisse et s'apparente à une plaque rigide. Sa vibration est nettement anharmonique.</p>
      
 
 <div id="diapason">
-             <h4>Le cas d'école du diapason</h4>
+        <h4>Le cas d'école du diapason</h4>
  
  <div class="conteneurImageSeule">
 <div>
