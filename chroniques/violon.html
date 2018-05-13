@@ -241,18 +241,18 @@
         <h4>Théorie de la corde vibrante idéale</h4>
         
         <p>Une corde d'instrument (cordophone) est caractérisée par un ensemble immuable de paramètres physiques  :  masse volumique (&rho;), longueur (L), section (S), masse par unité de longueur (&mu; = &rho; S) et tension interne (T). Ce sont les notations que nous adoptons une fois pour toutes.</p>
-        <p> Si l'on perturbe l'état d'une corde tendue, par exemple en la pinçant, elle se déforme. Une fois relâchée, elle tente de revenir à sa position  initiale mais elle n'y parvient pas immédiatement. Au contraire, elle se met à osciller de part et d'autre de cette position de repos avec une fréquence qui dépend des valeurs de ses paramètres physiques. Si la corde est parfaitement élastique, ce que nous supposerons, cette fréquence vaut :        </p>
+        <p> Si l'on perturbe l'état d'une corde tendue entre ses extrémités fixes, par exemple en la pinçant, elle se déforme. Une fois relâchée, elle tente de revenir à sa position  initiale mais elle n'y parvient pas immédiatement. Au contraire, elle se met à osciller de part et d'autre de cette position de repos avec une fréquence qui dépend des valeurs de ses paramètres physiques. Si la corde est parfaitement élastique, ce que nous supposerons, cette fréquence vaut :        </p>
         <div class="conteneurImages">
 <div> <figure>
                               <img src="../images/violon/equ1.png" alt="Equation" />
           </figure></div>                
 	    </div>
                       
-                      <p>En l'absence de  frottement, la corde oscillerait  éternellement. L'étude mathématique de ce cas idéal  est un sujet d'étude classique. Elle repose sur la résolution de l'équation de propagation des ondes, &part;<sub>tt</sub>y(x,t) = (T/&mu;)<sup></sup> &part;<sub>xx</sub>y(x,t), dont la solution générale s'exprime comme une série de Fourier :</p>
+                      <p>En l'absence de  frottement, la corde oscillerait  éternellement. L'étude mathématique de ce cas idéal  est un sujet d'étude classique. Elle repose sur la résolution de l'équation de propagation des ondes, &part;<sub>tt</sub>u(x,t) = c<sup>2</sup> <sup></sup> &part;<sub>xx</sub>u(x,t), où l'on a posé, c<sup>2</sup> = T/&mu;, dont la solution générale  s'exprime comme une série de Fourier :</p>
                       
                       <div class="conteneurImages">
                       <div> <figure>
-                              <img src="../images/violon/equ2.png" alt="Equation" />
+                              <img src="../images/violon/equ7.png" alt="Equation" />
                                  </figure></div>                
 					  </div>
                       
@@ -266,7 +266,16 @@
                       </div>
         </div>       
                       
-                      <p>Dans cette série, les coefficients A<sub>n</sub> et B<sub>n</sub> se calculent en fonction de la déformation initiale imposée à la corde. Dans le cas particulier où la corde est pincée &quot;en dent de scie&quot; à une distance, &ell;, de son extrémité (imposant un déplacement y(&ell;, 0) = h), cette solution s'écrit simplement :</p>
+                      <p>Dans cette série, les coefficients &alpha;<sub>n</sub> et &beta;<sub>n</sub> se déduisent des conditions aux limites imposées à la corde. La corde étant fixée à ses extrémités on doit avoir u(0,t) = u(L,t) = 0 pour tout t. Cela annule les coefficients &beta;<sub>n</sub> et impose f<sub>n</sub> = n (c/2L). Cela réduit la solution à la forme simplifiée :</p>
+                      
+                      <div class="conteneurImages">
+                      <div> <figure>
+                              <img src="../images/violon/equ2.png" alt="Equation" />
+                                 </figure></div>                
+					  </div>
+                      
+                      
+<p>Dans cette série, les coefficients A<sub>n</sub> et B<sub>n</sub> se calculent en fonction de la déformation initiale imposée à la corde. Dans le cas particulier où la corde est pincée &quot;en dent de scie&quot; à une distance, &ell;, de son extrémité (imposant un déplacement y(&ell;, 0) = h), cette solution s'écrit simplement :</p>
                       
                   <div class="conteneurImages">
                       <div> <figure>
@@ -297,7 +306,7 @@
     
     <ul class="miniListCorps">
     
-    <li>L'oscillation se présente comme la superposition d'une infinité d'oscillations individuelles sinusoïdales de périodes, n&tau; = n 2L/c (n= 1, 2, 3, etc). Le premier terme est dit fondamental et les suivants sont dits harmoniques (En pratique, l'usage autorise de parler d'harmoniques de rang n, y compris pour le fondamental qui occupe alors le rang 1). Même si vous avez ignoré les calculs, vous devez comprendre que  la déformation initiale a déterminé les valeurs numériques des coefficients de la solution de Fourier donc l'amplitude des sons harmoniques responsables de la richesse du timbre de l'instrument.</li>
+    <li>L'oscillation se présente comme la superposition d'une infinité d'oscillations individuelles sinusoïdales de fréquences, f<sub>n</sub> = n (c/2L) (n= 1, 2, 3, etc). Le premier terme est dit fondamental et les suivants sont dits harmoniques (En pratique, l'usage autorise de parler d'harmoniques de rang n, y compris pour le fondamental qui occupe alors le rang 1). Même si vous avez ignoré les calculs, vous devez comprendre que  la déformation initiale a déterminé les valeurs numériques des coefficients de la solution de Fourier donc l'amplitude des sons harmoniques responsables de la richesse du timbre de l'instrument.</li>
     
     <li>Le développement de Fourier trouvé décrit le mouvement périodique de la corde mais pas du tout  l'onde sonore associée. La raison essentielle est que la caisse de résonance de l'instrument modifie inexorablement le spectre des harmoniques donc le timbre de l'instrument. Rappelons qu'il existe une caisse de résonance particulière adaptée à toute composante sinusoïdale de fréquence, f. Or la caisse du violon est unique et il est impossible qu'elle convienne idéalement à toutes les composantes générées par la corde. La conséquence inévitable  est que la caisse  altère l'intensité des harmoniques de façon variable et d'ailleurs largement imprédictible. Il faut s'en faire une raison, il n'est pas possible de tirer parti des lois de l'acoustique physique pour espérer prédire le comportement d'une caisse donnée donc de déterminer le profil d'une caisse qui serait meilleure que toutes les autres. Cela a été tenté maintes fois mais n'a jamais réussi. Certes on a construit des violons différents et acceptables en tentant les calculs mais le résultat n'a jamais égalé le produit fini de l'intuition crémonaise. Dépité par l'impuissance de leur science, les savants ont invoqué le rôle présumé important de contingences peu formalisables telle que la qualité du bois utlisé en particulier ses conditions de séchage et de vieillissement. Personne à ce jour n'a jamais été en mesure de confirmer ou d'invalider ces supputations à vrai dire invérifiables, d'où le mystère entourant les meilleurs instruments baroques demeure entier.</li>
                     
@@ -388,12 +397,22 @@
           
            <div id="corde">
         <h4>Théorie de la lame vibrante</h4>
-        <p>A l'opposé de la corde élastique, on trouve la lame (ou la tige) rigide, de longueur, L, mesurée selon l'axe, x. Qu'elle soit en bois dur ou en métal, de forme parallélépipédique aplatie (lame) ou ronde (tige), la théorie qui décrit sa vibration repose sur une équation de propagation des ondes un peu plus compliquée (E est le module d'Young, S la (surface de) section, &mu; la masse linéique et g un facteur de forme valant e/&check;12 dans le cas d'une lame d'épaisseur, e, et r/2 dans la cas d'une tige cylindrique de rayon, r :  &part;<sub>tt</sub>y(x,t) + (E S g<sup>2</sup>/&mu;)<sup></sup> &part;<sub>xxxx</sub>y(x,t) = 0. On voit qu'elle demeure du deuxième ordre selon le temps mais qu'elle passe à l'ordre 4 pour ce qui concerne la dimension spatiale, x. La résolution de cette équation passe par la prise en compte de  4  conditions aux limites, deux par extrémité, qui s'expriment différemment selon le mode de fixation de la lame :.</p>
+        <p>A l'opposé de la corde élastique, on trouve la lame (ou la tige) rigide, de longueur, L, mesurée selon l'axe, x. Qu'elle soit en bois dur ou en métal, de forme parallélépipédique aplatie (lame) ou ronde (tige), la théorie qui décrit sa vibration repose sur une équation de propagation des ondes un peu plus compliquée (E est le module d'Young, S la (surface de) section, &mu; la masse linéique et g un facteur de forme valant e/&check;12 dans le cas d'une lame d'épaisseur, e, et r/2 dans la cas d'une tige cylindrique de rayon, r :  &part;<sub>tt</sub>u(x,t) + c<sup>2</sup>g<sup>2</sup> &part;<sub>xxxx</sub>u(x,t) = 0, où l'on a posé c<sup>2</sup> = ES/&mu; et g est un facteur de forme. On voit qu'elle demeure du deuxième ordre selon le temps mais qu'elle passe à l'ordre 4 pour ce qui concerne la dimension spatiale, x. La résolution de cette équation passe par la prise en compte de  4  conditions aux limites, deux par extrémité, qui s'expriment différemment selon le mode de fixation de la lame :.</p>
+        
+        <div class="conteneurImages">
+                      <div> <figure>
+                              <img src="../images/violon/equ8bis.png" alt="Equation" />
+                                 </figure></div>                
+					  </div>
+          
+          
+     <p>Dans cette série, les coefficients &alpha;<sub>n</sub>, &beta;<sub>n</sub>, &gamma;<sub>n</sub> et &delta;<sub>n</sub> se déduisent des conditions aux limites imposées à la corde. La corde étant fixée à ses extrémités on doit avoir u(0,t) = u(L,t) = 0 pour tout t. Cela annule les coefficients &beta;<sub>n</sub> et impose f<sub>n</sub> = n (c/2L). Cela réduit la solution à la forme simplifiée :</p>     
+                      
   
   <ul class="miniListCorps">
-                      <li>A une extrémité libre, on doit avoir, &part;<sub>xx</sub>y(x,t) = 0 (pas de couple) et &part;<sub>xxx</sub>y(x,t) = 0 (pas de cisaillement),</li>
-                    <li>A une extrémité encastrée, on doit avoir, y(x,t) = 0 (aucun déplacement) et &part;<sub>x</sub>y(x,t) = 0 (aucune pente) et</li>
-                    <li>A une extrémité  simplement posée sur un support, on doit avoir, y(x,t) = 0 (aucun déplacement) et &part;<sub>xx</sub>y(x,t) = 0 (pas de couple).</li>
+                      <li>A une extrémité libre, on doit avoir, &part;<sub>xx</sub>u(x,t) = 0 (pas de couple) et &part;<sub>xxx</sub>u(x,t) = 0 (pas de cisaillement),</li>
+                    <li>A une extrémité encastrée, on doit avoir, u(x,t) = 0 (aucun déplacement) et &part;<sub>x</sub>u(x,t) = 0 (aucune pente) et</li>
+                    <li>A une extrémité  simplement posée sur un support, on doit avoir, u(x,t) = 0 (aucun déplacement) et &part;<sub>xx</sub>u(x,t) = 0 (pas de couple).</li>
 		 </ul>
          
          <p>Les figures ci-dessous, empruntées à l'ouvrage encyclopédique, The Physics of musical Instruments, de N. H. Fletcher &amp; T. D. Rossing) détaillent trois cas  importants, chaque colonne correspondant à un cas de figure différent : </p>  
