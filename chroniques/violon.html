@@ -410,29 +410,29 @@
                       
   
   <ul class="miniListCorps">
-                      <li>A une extrémité libre, on doit avoir, &part;<sub>xx</sub>u(x,t) = 0 (pas de couple) et &part;<sub>xxx</sub>u(x,t) = 0 (pas de cisaillement),</li>
-                    <li>A une extrémité encastrée, on doit avoir, u(x,t) = 0 (aucun déplacement) et &part;<sub>x</sub>u(x,t) = 0 (aucune pente) et</li>
-                    <li>A une extrémité  simplement posée sur un support, on doit avoir, u(x,t) = 0 (aucun déplacement) et &part;<sub>xx</sub>u(x,t) = 0 (pas de couple).</li>
+                      <li>A une extrémité libre, on doit avoir, &part;<sub>xx</sub>u(x,t) = 0 (courbure nulle) et &part;<sub>xxx</sub>u(x,t) = 0 (torsion nulle),</li>
+                    <li>A une extrémité encastrée, on doit avoir, u(x,t) = 0 (déplacement nul) et &part;<sub>x</sub>u(x,t) = 0 (pente nulle) et</li>
+                    <li>A une extrémité  simplement posée sur un support, on doit avoir, u(x,t) = 0 (déplacement nul) et &part;<sub>xx</sub>u(x,t) = 0 (courbure nulle).</li>
 		 </ul>
          
-         <p>Les figures ci-dessous, empruntées à l'ouvrage encyclopédique, The Physics of musical Instruments, de N. H. Fletcher &amp; T. D. Rossing) détaillent trois cas  importants, chaque colonne correspondant à un cas de figure différent : </p>  
+         <p>Les figures ci-dessous, empruntées à l'ouvrage encyclopédique, The Physics of musical Instruments, de N. H. Fletcher &amp; T. D. Rossing) présentent l'oscillation fondamentale et ses trois premiers  partiels dans trois cas   remarquables : </p>  
   
   <ul class="miniListCorps">
-        <li>(a) la lame est suspendue (par exemple à un fil) d'où ses extrémités sont libres de vibrer (carillon, ...),</li>
-                    <li>(b) la lame est encastrée à une extrémité et libre à l'autre extrémité (guimbarde, sanza africain, ...) et</li>
-                    <li>(c) la lame est simplement posée sur deux supports (xylophone, ...).</li>
+        <li>(a) la lame est suspendue (par exemple à un fil) d'où ses extrémités sont libres de vibrer (carillon, ...), u''(0,t) = u'''(0,t) = u''(L,t) = u'''(L,t) = 0, ce qui donne tous calculs faits : f<sub>n</sub> = &half;(z<sub>n</sub>/&pi;)<sup>2</sup> (&pi; c g/L<sup>2</sup>) avec z<sub>n</sub> racines de -1 + cos(z)ch(z) = 0.</li>
+                    <li>(b) la lame est encastrée à une extrémité et libre à l'autre extrémité (guimbarde, sanza africain, ...) , u(0,t) = u'(0,t) = u''(L,t) = u'''(L,t) = 0, ce qui donne tous calculs faits : f<sub>n</sub>= (z<sub>n</sub>/&pi;)<sup>2 </sup>(&pi; c g/2L<sup>2</sup>) avec z<sub>n</sub> racines de 1 + cos(z)ch(z) = 0.</li>
+                    <li>(c) la lame est simplement posée sur deux supports (xylophone, ...),  u(0,t) = u''(0,t) = u(L,t) = u''(L,t) = 0, ce qui donne tous calculs faits : f<sub>n </sub>= (z<sub>n</sub>/&pi;)<sup>2</sup> (&pi; c g/2L<sup>2</sup>) avec z<sub>n</sub> (= n &pi;) racines de sin(z) = 0 donc après simplifications, f<sub>n</sub>= n<sup>2 </sup>(&pi; c g/2L<sup>2</sup>).</li>
 	  </ul>  
   
     
 
   <div class="conteneurImages">
     <div> <figure>
-                              <img src="../images/son/lames.png" alt="Vibrations possibles d'une lame" />
+                              <img src="../images/violon/lames.png" alt="Vibrations possibles d'une lame" />
                               <figcaption>Vibrations possibles d'une lame : (a) suspendue, (b) encastrée à une extrémité, (c) simplement posée</figcaption>
                                  </figure></div>                
 				  </div> 
   
-    <p>Les nombres qui figurent en regard de chaque mode donnent la fréquence d'oscillation dans l'unité, (&pi; g/L<sup>2</sup>) &check;(ES/&mu;). Il est intéressant de comparer les modes fondamentaux dans les trois cas : tous paramètres physiques égaux, c'est la lame encastrée qui sonne le plus grave et la lame libre qui sonne le plus aigu. Par ailleurs, seule la lame posée aux deux extrémités respecte le schéma harmonique (n = 1, 4, 9, ...) (ce n'est pas un hasard si c'est la formule le plus exploitable, xylophone, marimba, etc) d'où un timbre  particulier dû à la disparition des harmoniques non carrés parfaits. Les autres cas sont frappés d'inharmonicité qui tendent à égarer l'oreille en fréquences perçues.</p>
+    <p>Les nombres qui figurent en regard de chaque mode donnent la fréquence d'oscillation dans l'unité, (&pi; c g/2L<sup>2</sup>). Il est intéressant de comparer les modes fondamentaux dans les trois cas : tous paramètres physiques égaux, c'est la lame encastrée qui sonne le plus grave et la lame libre qui sonne le plus aigu. Par ailleurs, seule la lame posée aux deux extrémités respecte le schéma harmonique (n = 1, 4, 9, ...) (ce n'est pas un hasard si c'est la formule le plus exploitable, xylophone, marimba, etc) d'où un timbre  particulier dû à la disparition des harmoniques non carrés parfaits. Les autres cas sont frappés d'inharmonicité qui tendent à égarer l'oreille en fréquences perçues.</p>
     
     <p>Une  complication supplémentaire intervient à ce stade : elle provient du fait qu'une lame peut vibrer de plusieurs façons. Reconsidérons la corde tendue : en la pinçant, on l'allonge d'où une onde longitudinale (dans la direction de la corde) prend naissance qui se superpose à l'onde transversale. De plus, si au lieu de pincer la corde transversalement, on la frotte avec un archet, celui-ci va l'entraîner à s'enrouler légèrement sur elle-même et cela donne naissance à une onde de torsion qui participe également à la génération du son. Tous ces modes de vibration sont heureusement accessoires par rapport au mode principal fondamental (qui fixe seul la fréquence de la note) car leur intensité est faible mais elle est suffisante pour participer au timbre de l'instrument. En pratique on accorde un xylophone de façon standard en évidant partiellement certaines lames pour ajuster la fréquence perçue au tempérament voulu. Le lecteur pourrait penser que ces complications  ne concernent que des instruments idiophones plutôt exotiques mais ce serait à tort car l'inharmonicité apparaît également dans la théorie d'instruments aussi fondamentaux que le piano moderne (Hammerklavier).</p>
         
