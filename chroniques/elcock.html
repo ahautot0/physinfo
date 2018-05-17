@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Compositeurs négligés | Coup de coeur pour une musique d'Ella Adaïewsky</title>
+  <meta name="description" content="Un CD bienvenu propose enfin un peu de musique d'Ella Adaïewsky" />
+  <link rel="shortcut icon" href="../logo.ico" />
+  <link href="../style.css" rel="stylesheet" type="text/css" /> 
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <script src="../js/jquery-1.10.2.js"></script>
+  <script src="../js/menus.js"></script>
+  <script src="../js/design.js"></script>
+  <script src="../js/gestionAudioVideo.js"></script>
+  <script> 
+    // Inclusion Header et Footer
+    $(function(){
+      $(function(){
+        $.ajax({
+           url: "../template/header.php",
+           type: "POST",
+           data: ({ROOT: '../'}),
+           success: function(data) {
+             $("#header").html(data);
+             $("#tiresdeloubli").addClass("active"); /*a changer en fonction de la page*/
+             update_design_when_header_loaded();
+          }
+        });
+      });
+      $("#miniMenus").load("../template/miniMenus.php", { ROOT: '../' }, mini_menus_after_loading);
+      $("#footer").load("../template/footer.php", { ROOT: '../' }, update_design_footer);  
+    });
+  </script> 
+</head>
+
+<body id="site">
+
+    <div>
+        <!-- Inclusion header -->
+        <div id="header"></div>
+
+        <div id="miniMenus"></div>
+
+        <div id="corps">
+
+            <div id="contenuPrincipal">
+                <h2>Compositeurs négligés</h2>
+                <h3>Toccata Classics révèle Steve Elcock</h3>
+
+                <nav class="filAriane">
+                    <ul>
+                        <li class="breadcrumbItem"><span>Vous êtes ici : </span> Musique</li>
+                        <li class="breadcrumbItem">
+                          <a href="../chroniques.html">Chroniques</a>
+                        </li>
+                        <li class="breadcrumbItem">
+                          <a href="../tiresdeloubli.html">Compositeurs négligés</a>
+                         </li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Toccata Classics révèle Steve Elcock</li>
+                    </ul>
+                </nav>  
+  
+  
+  <p>Cette chronique désire attirer votre attention sur la conjonction de deux phénomènes rares dans le domaine de l'édition musicale : </p>
+  
+  				  <ul class="miniListCorps">
+                    <li>Le label anglais Toccata Classics ne ressemble décidément à aucun autre. On dit que l'édition musicale se porte mal (ce qui est faux) et que les enregistrements coûtent chers (ce qui est vrai) mais jamais dans une vie de mélomane compulsif on a disposé d'offres aussi larges d'oeuvres inédites qu'il s'agisse de Naxos, de Brillant, de CPO ou de Toccata Classics. La devise de ce dernier est éloquente : &quot;Forgotten Music by great Composers, great Music by forgotten Composers&quot;, on ne peut mieux dire encore lui fallait-il  prouver ce qu'il avance. Je vous invite à consulter le site de ce label car il ne vous décevra pas. </li>
+                    <li>Toute les découvertes faites par Toccata Classics ne sont inévitablement pas d'importances égales et sans guide, vous risquez de passer beaucoup de temps à  chercher  la musique qui vous surprendra agréablement. Voici un point de départ incontournable qui révèle un musicine tellement hors du commun que le label envisage une intégrale du moins symphonique. Un seul volume est paru à ce jour et toutes les critiques sont élogieuses; ce site ne pouvait ignorer un tel phénomène. J'attends la suite avec impatience  et l'occasion de transférer cette chronique dans la section des compositeurs contemporains. </li>
+                    
+                  </ul>
+                
+                  <div class="conteneurImageSeule">
+                      <div>
+                          <figure>
+                              <img src="../images/elcock/volume1.png" alt="Elcock  : Volume 1" />
+                              <figcaption>Elcock  : Volume 1</figcaption>
+                          </figure>
+                    </div>
+              </div>
+                
+                  
+                  
+                  <p>Il est des CD qu'on préférerait n'avoir jamais entendus, tel est <a href="http://www.naxos.com/catalogue/item.asp?item_code=CDS633">celui-ci</a>, paru chez Dynamic, tant il génère autant de frustration que de bonheur. Il propose essentiellement 24 Préludes, pour soprano &amp; piano, écrits par Ella Adaïewsky (1846-1926).  Mes oreilles se sont dressées  dès l'écoute de la première plage (Prélude n°1 
+                  <sub><sub><sub>
+                  <audio controls preload="none">
+                    <source src="../son.mp3/ella/prelude1.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/ella/prelude1.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible 
+                  </audio>
+                  </sub></sub></sub>),   une  phrase mélodique sinueuse de  50 secondes aux inflexions délicatement  nostalgiques. La suite n'étant pas moins convaincante,  j'en ai extrait 3 autres plages (Préludes n°3 
+                  <sub><sub><sub>
+                  <audio controls preload="none">
+                    <source src="../son.mp3/ella/prelude3.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/ella/prelude3.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible
+                  </audio>, 
+                  </sub></sub></sub> n°9 <sub><sub><sub>
+                  <audio controls preload="none">
+                    <source src="../son.mp3/ella/prelude9.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/ella/prelude9.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible 
+                  </audio>
+                  </sub></sub></sub> &amp; n°11 <sub><sub><sub>
+                  <audio controls preload="none">
+                    <source src="../son.mp3/ella/prelude11.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/ella/prelude11.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible 
+                  </audio>
+                  </sub></sub></sub>), du grand art.</p>
+                  
+          </div>
+
+
+
+
+            <a id="ancreRetourHautPage" href="#site">&uarr;</a>
+
+            <!-- Inclusion footer -->
+            <div id="footer"></div>
+
+        </div>
+    
+    
+    </div>
+
+</body>
+</html>
