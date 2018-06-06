@@ -44,7 +44,7 @@
         <nav id="menuLateralAncres">
             <ul>         
             <li>
-                    <a id="ancreson" href="#son" class="linavMenu">
+                    <a id="ancreson" href="#son" class="linavMenu active">
                     <span>Le son comme onde de pression</span>
                     </a>
 </li>
@@ -55,7 +55,7 @@
                     </a>
 </li>
                 <li>
-                    <a id="ancrediapason" href="#diapason" class="linavMenu active">
+                    <a id="ancrediapason" href="#diapason" class="linavMenu">
                     <span>Le cas d'école du diapason</span>
                     </a>
 </li>
@@ -71,7 +71,7 @@
                     <a id="ancreviolon" href="#violon" class="linavMenu">
                     <span>Le violon et la corde idéale</span>
                     </a>
-        </li>
+    </li>
                 <li>
                     <a id="ancrelame" href="#lame" class="linavMenu">
                     <span>Vibrations de la lame épaisse</span>
@@ -84,7 +84,7 @@
                     </a>
 </li>
                 <li>
-                    <a id="ancreraide" href="#raide" class="linavMenu active">
+                    <a id="ancreraide" href="#raide" class="linavMenu">
                     <span>Vibrations de la corde raide</span>
                     </a>
 </li>
@@ -521,9 +521,9 @@
          <p>Les figures ci-dessous, à nouveau empruntées à l'ouvrage de  Fletcher &amp;  Rossing mais annotées différemment,   présentent les quatre premiers  partiels dans trois cas   remarquables : </p>  
   
   <ul class="miniListCorps">
-        <li>(a) la lame est suspendue (par exemple à un fil) d'où ses extrémités sont libres de vibrer (carillon, ...), u''(0,t) = u'''(0,t) = u''(L,t) = u'''(L,t) = 0, ce qui donne tous calculs faits : f<sub>n</sub> = &half;(z<sub>n</sub>/&pi;)<sup>2</sup> (&pi; c g/L<sup>2</sup>) avec z<sub>n</sub> racines de -1 + cos(z)ch(z) = 0.</li>
+        <li>(a) la lame est suspendue (par exemple à un fil) et ses extrémités sont libres de vibrer (carillon, xylophone, ...), u''(0,t) = u'''(0,t) = u''(L,t) = u'''(L,t) = 0, ce qui donne tous calculs faits : f<sub>n</sub> = (z<sub>n</sub>/&pi;)<sup>2</sup> (&pi; c g/2L<sup>2</sup>) avec z<sub>n</sub> racines de -1 + cos(z)ch(z) = 0.</li>
                     <li>(b) la lame est encastrée à une extrémité et libre à l'autre extrémité (guimbarde, sanza africain, ...) , u(0,t) = u'(0,t) = u''(L,t) = u'''(L,t) = 0, ce qui donne tous calculs faits : f<sub>n</sub>= (z<sub>n</sub>/&pi;)<sup>2 </sup>(&pi; c g/2L<sup>2</sup>) avec z<sub>n</sub> racines de 1 + cos(z)ch(z) = 0.</li>
-                    <li>(c) la lame est simplement posée sur deux supports (xylophone, ...),  u(0,t) = u''(0,t) = u(L,t) = u''(L,t) = 0, ce qui donne tous calculs faits : f<sub>n </sub>= (z<sub>n</sub>/&pi;)<sup>2</sup> (&pi; c g/2L<sup>2</sup>) avec z<sub>n</sub> (= n &pi;) racines de sin(z) = 0 donc après simplifications, f<sub>n</sub>= n<sup>2 </sup>(&pi; c g/2L<sup>2</sup>).</li>
+                    <li>(c) la lame est  posée sur deux supports,  u(0,t) = u''(0,t) = u(L,t) = u''(L,t) = 0, ce qui donne tous calculs faits : f<sub>n </sub>= (z<sub>n</sub>/&pi;)<sup>2</sup> (&pi; c g/2L<sup>2</sup>) avec z<sub>n</sub> (= n &pi;) racines de sin(z) = 0 donc après simplifications, f<sub>n</sub>= n<sup>2 </sup>(&pi; c g/2L<sup>2</sup>).</li>
 	  </ul>  
   
     
@@ -531,13 +531,22 @@
   <div class="conteneurImages">
     <div> <figure>
                               <img src="../images/violon/lames.png" alt="Vibrations possibles d'une lame" />
-                              <figcaption>Vibrations possibles d'une lame : (a) suspendue, (b) encastrée à une extrémité, (c) simplement posée</figcaption>
+                              <figcaption>Vibrations possibles d'une lame : (a) suspendue, (b) encastrée à une extrémité, (c) posée aux extrémités</figcaption>
                                  </figure></div>                
 		     </div> 
   
-    <p>Les nombres qui figurent en regard de chaque mode donnent la fréquence d'oscillation dans l'unité, (&pi; c g/2L<sup>2</sup>). Si l'on compare les modes fondamentaux dans les trois cas, on constate que, tous paramètres physiques égaux, c'est la lame encastrée qui sonne le plus grave et la lame libre qui sonne le plus aigu. Par ailleurs, seule la lame posée aux deux extrémités respecte rigoureusement un schéma harmonique où ne figurent cependant que les harmoniques carrés parfaits (n = 1, 4, 9, ...). Cette particularité contribue au timbre très particulier du xylophone ou du marimba. A noter que la lame libre à ses extrémités respecte un schéma inharmonique assez proche du fait que les fréquences des partiels suivent une loi du type &frac14;{3.0106<sup>2</sup>, 5<sup>2</sup>, 7<sup>2</sup>, 9<sup>2</sup>, etc}, ce qui rend la formule utilisable dans le carillon tubulaire.</p>
-    <p>On sollicite les plaques en les frappant à l'aide d'un ou plusieurs maillets simultanément. l'endroit où l'on frappe a de l'importance dans le choix des partiels que l'on veut mettre en évidence : on a intérêt à frapper la barre à l'emplacement d'un ventre de vibration.</p>
-    <p>Les lames ne sont pas planes, les faces inférieures sont diversement creusées selon un profil vaguement parabolique pour faciliter l'accordage sans allonger démesurément les lames graves et réduire les nuisances dues à  l'inharmonicité.</p>
+    <p>Les nombres qui figurent en regard de chaque mode donnent la fréquence d'oscillation dans l'unité, (&pi; c g/2L<sup>2</sup>). Si l'on compare les modes fondamentaux dans les trois cas, on constate que, tous paramètres physiques égaux, c'est la lame encastrée qui sonne le plus grave et la lame libre qui sonne le plus aigu. Par ailleurs, seule la lame posée aux deux extrémités respecte  un schéma harmonique où manquent cependant  les harmoniques qui ne sont pas carrés parfaits (n = 2, 3, 5, ...). La lame suspendue respecte un schéma inharmonique apparenté du fait que les fréquences des partiels successifs sont proportionnelles à &frac14;{3.0106<sup>2</sup>, 5<sup>2</sup>, 7<sup>2</sup>, 9<sup>2</sup>, etc}.</p>
+    <p>Les instruments tubulaires (carillon, etc) ou lamellaires   (glockenspiel, xylophone, marimba, etc) reposent sur le modèle de la lame à extrémités libres (de vibrer, cf (a) sur la figure précédente). Soit les tubes sont suspendus à des fils non contraignants soit les lames sont posées et discrètement nouées par des fils sur deux supports  situés  à un noeud de vibration principale (bien visible sur la figure). Le modèle (b) intervient chez les instruments à vents munis d'une anche (non étudiés ici) et le modèle (c) n'est pas vraiment utilisé en musique.</p>
+    <p>On sollicite les plaques en les frappant à l'aide d'un ou plusieurs maillets simultanément. l'endroit où l'on frappe a de l'importance dans le choix des partiels que l'on veut mettre en évidence : il ne servirait à rien de   frapper une lame  à l'emplacement d'un noeud de vibration. </p>
+    <p>Si l'on s'en tient à des lames parallélélpipédiques, de dimensions, L&times;&ell;&times;e, les modes transversaux de la lame libre valent (la suite des z<sub>n</sub> vaut : 4.73, 7.85, 11., 14.14, etc) (Ces valeurs sont légèrement surévaluées car elles ne tiennet pas compte des modes de torsion les valeurs mesurées ont tendance à s'écraser à mesure que n augmente):</p>
+    
+    <div class="conteneurImages">
+                      <div> <figure>
+                              <img src="../images/violon/equ13.png" alt="Equation" />
+                                 </figure></div>                
+		     </div>
+                      
+    <p>Pour un bois de rose du Brésil, &rho; vaut de l'ordre de 740 kg/m<sup>3</sup> et E vaut entre 2.8 10<sup>9</sup> et 1.6 10<sup>10</sup> selon le mode de taille du bois par rapport à la fibre (resp. &perp; et &par;). On constate que les deux paramètres influant la fréquence sont la longueur et l'épaisseur de la lame et qu'elles agissent en sens inverse. Par contre, la largeur, &ell;, n'intervient  pas à ce stade et cela pourrait surprendre ceux qui savent bien qu'un clavier de marimba est progressif dans le grave. et   Les lames ne sont pas planes, les faces inférieures sont diversement creusées selon un profil vaguement parabolique pour faciliter l'accordage sans allonger démesurément les lames graves et réduire les nuisances dues à  l'inharmonicité.</p>
     
     <p>Une  complication supplémentaire gêne l'exploitation des lamellophones, due au fait qu'une lame peut vibrer de plusieurs autres façons, en particulier en mode torsionnel.  En pratique, on accorde un xylophone de façon standard en évidant partiellement certaines lames pour ajuster la fréquence perçue au tempérament voulu et pour éliminer certains partiels pouvant mener à des battements indésirables.        </p>
         </div>
@@ -545,17 +554,43 @@
           
          <div id="marimba">
         <h4>Quelques lamellophones (glockenspiel, xylophone ou  marimba)</h4> 
-          <p>Plusieurs instruments plus ou moins sophistiqués utilisent le principe de la lame vibrante que l'on frappe avec un ou plusieurs maillets simultanément. Les lames sont simplement nouées sur leur support afin d'hériter des fréquences correspondant aux vibrations d'une lame simplement posée. Nous avons vu en effet que ce cas est intermédiaire : suspendues les lames vibreraient trop dans l'aigu et encastrées à une extrémité elles vibreraient trop dans le grave. A première vue, l'agencement des lames du glockenspiel, du xylophone et du marimba se ressemblent dans la mesure où il  respecte la progression des touches blanches et noires d'un clavier de piano selon la gamme chromatique des 12 sons par octave. A l'écoute, les sons diffèrent pourtant notablement. Que le raffinement du son produit tourne nettement à l'avantage du marimba,  voilà qui va nous occuper. </p>
+          <p>Plusieurs instruments plus ou moins sophistiqués utilisent le principe de la lame vibrante. Les lames sont  nouées sur un support en position nodale afin que le point de contact n'empêche pas la lame de vibrer librement (Cas (a) évoqué en théorie).   </p>
+          
+          <div class="conteneurImageSeule">
+                      <div>
+                          <figure>
+                            <img src="../images/violon/xylophone.png" alt="Xylophone" />
+                              <figcaption>Xylophone</figcaption>
+                          </figure>
+          </div>
+        </div> 
+        
+          <p>A première vue, les claviers du glockenspiel, du xylophone et du marimba se ressemblent : tous disposent   leurs lames en suivant la progression des  touches blanches et noires d'un clavier chromatique de piano. Cependant, si l'on jette un coup d'oeil vers la face cachée des lames on observe des différences qui expliquent pourquoi les  sons émis diffèrent  notablement d'un instrument à l'autre. Des trois, c'est incontestablement le marimba qui bénéficie du timbre le plus raffiné. Voici quelques éléments qui éclairent ces différences.</p>
           
           <ul class="miniListCorps">
-<li>Les lames du glockenspiel sont en acier. Leur raideur est grande comme l'est leur module d'Young, E, d'où leur registre se situe tellement dans l'aigu, de sol<sub>5</sub> (784 Hz) à do<sub>8</sub> (4186 Hz), que les partiels se situent dans une zone où l'oreille est peu sensible. Il en résulte un timbre métallique peu avantageux qui confinent l'instrument dans des effets  spéciaux. Très présent dans l'oeuvre pédagogique de Carl Orff et Gunild Keetman (Orff-Schulwerk), à l'usage des enfants, on le trouve également dans un épisode célèbre de la Flûte enchantée de Mozart.</li>
-                    <li>Les lames du xylophones sont en bois exotique comme le nom l'indique. Il existe des variantes modernes en matériaux synthétiques et même en métal dans les jouets de votre enfance mais c'est clairement un abus de langage. Le module d'Young, E, du bois étant inférieur d'un ordre décimal environ à celui de l'acier, cela  a pour effet d'abaisser le seuil de fréquence de l'instrument au fa<sub>4</sub> éventuellement au do<sub>5</sub>. Cela n'a pas suffi  à rendre l'instrument exploitable en musique savante en dehors des effets pittoresques  que l'on rencontre dans le Carnaval des Animaux ou la Danse macabre de Saint-Saêns. Toutefois  Iberia mvt 2 de Debussy, etc) mais les transcriptions ne sont pas rares.</li>
-                    <li>Le marimba est pour faire simple un xylophone (d'origine africaine et exporté en Amérique du Sud), muni dès l'origine de tuyaux résonants pour chaquelle lamelle. Cette définition est sans doute défaillante (car on connait actuellement des xylophones égaelement munis de résonateurs) mais elle dispense  d'entrer dans des détails historico-ethniques qui ne nous concernent pas directement. Le marimba (moderne) est en réalité beaucoup plus qu'un xylophone (moderne) comme en témoigne cette démonstration de <a href="https://www.youtube.com/watch?v=wAFIZjuIpvg">Yumiko Noto</a>. D'invention relativement récente il se distingue par un timbre velouté qui aurait à coup sûr séduit plus d'un grand compositeur du passé si seulement ils avaient connu l'instrument e ses possibilités. Steve reich s'es tintéressé de très près aux possibilités de l'instruments. Les instruments (de concert) de grande taille ne nécessitent pas de résonateurs mais lorsqu'il y en a ils se présentent comme autant de tuyaux présentant une extrémité fermée et l'autre ouverte ce qui correspond à une résonance  selon une suite &lambda;/4, 3&lambda;/4, 5&lambda;/4, ..., qui privilégie les harmoniques impairs (Cf supra : le diapason). or le marimba propose les harmoniques 1, 4, 9, 16, ... d'où le deuxième est clairement ignoré par le résonateur. On peut éventuellement pallier cette carence en plaçant un deuxième résonateur accordé sur 4f<sub>1</sub> ou plus simplement adapter une vanne qui ouvre ou ferme à la demande le tuyau sonore. Pour les lames aigües on peut aussi prévoir un résonateur ouvert aux deux extrémités ce qui le fait passer de &lambda;/4 à &lambda;/2 (soit plus généralement les partiels pairs (selon la suite 2&lambda;/4, 4&lambda;/4, 6&lambda;/4, ...). Il assure une meilleure rayonnement du son sauf vers l'interprète mais ce n'est pas gênant.</li>
-		 </ul>
-         
+<li>Les lames du glockenspiel sont en acier, ce qui leur confère une grande raideur (E=3 10<sup>11</sup> N/m<sup>2</sup>). Son registre se situe donc dans l'aigu, typiquement de sol<sub>5</sub> (784 Hz) à do<sub>8</sub> (4186 Hz). Même pour la note la plus basse (784 Hz), les partiels (2161 Hz, 4240 Hz, etc) se situent déjà dans une zone  où l'oreille est moins  sensible. Il en résulte un timbre métallique peu avantageux qu'on n'a pas  cherché à corriger. Ceci confine l'instrument dans des effets  spéciaux : le glockenspiel est très présent dans l'oeuvre pédagogique de Carl Orff et Gunild Keetman (Orff-Schulwerk), à l'usage des enfants et,  au concert, on ne le rencontre que très rarement, par exemple dans un épisode célèbre de la Flûte enchantée de Mozart.</li>
+                    <li>Les lames du xylophones sont en bois (exotique) comme le nom l'indique. Il existe des variantes modernes en matériaux synthétiques et même en métal - dont les jouets de votre enfance - mais parler de xylophone dans ce cas est  clairement un abus de langage. Le module d'Young, E, du bois étant inférieur d'un ordre décimal environ à celui de l'acier, cela  a pour effet d'abaisser la plage des fréquences du registre  de l'instrument qui s'étend normalement du fa<sub>4</sub> (349 Hz) au do<sub>8</sub> (4186 Hz)<sub></sub>. Le xylophone peut faire partie de l'orchestre symphonique, la brillance et la puissance de sa sonorité le permettent mais on le confine généralement dans les effets pittoresques  tels ceux que Saint-Saëns a incorporé dans Le Carnaval des Animaux ou la Danse macabre. Toutefois  Iberia mvt 2 de Debussy, etc) mais les transcriptions ne sont pas rares.  En contraste, la sonorité plus chaude et plus intime du marimba l'oriente plutôt vers les formations réduites.</li>
+                    <li>Le marimba est pour faire simple un xylophone (d'origine africaine et qui a transité par l'Amérique du Sud), muni dès l'origine de tuyaux résonants,  un par  lame. Les commentateurs de tous bords entretiennent une certaine confusion entre xylophone et marimba, aggravée par le fait que les deux instruments ont mutuellement profité des progrès de l'autre. Par exemple, on a prétendu les distinguer par l'absence de résonateur dans le cas du xylophone ce qui n'a jamais été le cas du marimba mais aujourd'hui le xylophone profite pleinement de ce progrès évident. Le registre d'un grand marimba de concert s'étend habituellement du la<sub>2</sub> (110 Hz) au do<sub>7</sub> (2093 Hz) mais il peut descendre jusqu'au do<sub>2</sub> (65 Hz). Ses lames, en bois de rose, en palissandre ou en padouk, sont de dimensions croissantes à mesure que l'on plonge dans le grave profond (clavier progressif ???).</li>
+           </ul>
+                    
+                     <p>Reste que la sonorité des deux instruments est très différente et que c'est le point le plus intéressant à discuter. La théorie des barres à section droite nous a appris que les deux premiers partiels, f<sub>1</sub> et f<sub>2</sub> = 2.76 f<sub>1</sub>, sont distants de 1200 &ell;g(z<sub>2</sub><sup>2</sup>/z<sub>1</sub><sup>2</sup>) = 1755.5 cents, soit un peu moins que 3/2 octave et cela est vrai pour un xylophone comme pour un marimba, tous paramètres égaux. Le fait que 2.76 ne soit pas un nombre entier signe évidemment l'inharmonicité de la lame d'où l'idée de la corriger.      On y parvient en évidant la face inférieure des lames selon un profil d'allure parabolique. Ceci affecte séparément f<sub>1</sub> et f<sub>2</sub> donc leur rapport qui peut être ajusté à 3 (f<sub>2</sub>=3f<sub>1</sub>, quinte de l'octave, cas du xylophone) ou à 4 (f<sub>2</sub>=4f<sub>1</sub>, octave de l'octave, cas du marimba mais aussi du vibraphone). En principe la largeur des lames n'intervient pas dans le calcul du spectre des fréquences d'une lame parallélélpipédique mais lorsqu'on l'évide il y a lieu de faire la correction d'élargir insensiblement ces largeurs à mesure que la fréquence augmente (clavier progressif). L'accord par (double) octave étant  plus confortable pour l'oreille, il ne faut pas chercher plus loin la raison du son moelleux du marimba par rapport au son plus agressif du xylophone (En Europe, il arrive qu'on accorde  le xylophone selon, f<sub>2</sub>=4f<sub>1</sub>, mais sans poursuivre pour les partiels suivants comme cela se pratique avec marimba, cf infra).</p>
+                     
+                     <div class="conteneurImageSeule">
+                    <div>
+                          <figure>
+                            <img src="../images/violon/fig3.png" alt="Tuyau fermé ou ouvert" />
+                              <figcaption>Tuyau fermé amplifiant f<sub>1</sub> et 3f<sub>1</sub><br/> Tuyau ouvert amplifiant f<sub>1</sub> et 4f<sub>1</sub></figcaption>
+                          </figure>
+          </div>
+        </div> 
+                     
+                     <p>Ces modifications ont une incidence sur les résonateurs attachés à chaque lame. Un tuyau de bonne longueur , ouvert à une extrémité et fermé à l'autre, permet de faire résonner une fréquence et son triple mais pas son quadruple. Pour ce dernier cas, les lois de la physique indiquent qu'un tuyau ouvert aux deux extrémités peut faire l'affaire au prix d'un allongement double du résonateur mais on retient souvent la variante où  un système de valve modifiant l'ouverture du tuyau semi-ouvert a été préféré en dépit du surcroit de travail que cel impose à l'interpète qui doit gérer ce degré de liberté supplémentaire.</p>
+                     <p>Des entailles supplémentaires  permettent de repositionner les  partiels suivants si on le souhaite dans un rapport simple par rapport à la fréquence fondamentale. C'est peut-être la différence la plus audible entre les sonorités du xylophone et du marimba : dans le cas du xylophone, on règle le deuxième partiel à la quinte de l'octave du fondamentale (f<sub>2</sub>=3f<sub>1</sub>) tandis que dans le cas du marimba on le règle à l'octave de l'octave (f<sub>2</sub>=4f<sub>1</sub>). Le résultat est immédiat : on a une bien meilleure perception de la hauteur de la note visée dans ce dernier cas. dans le premeir cas On peut même raffiner cette technique et parvenir à des modifications du spectre sonore particulièrement bienvenues : elle permet de repositionner les deuxième partiels successifs jusqu'à obtenir le résultat le plus flatteur pour l'oreille. C'est d'autant plus nécessaire que les résonateurs sont des tuyaux fermés à une extrémité et ouverts à l'autre (donc accordés selon les multiples impairs du fondamental, f<sub>1</sub>, 3f<sub>1</sub>, 5f<sub>1</sub>, ...) ce qui ne correspond pas au duexième partiel situé à 4f<sub>1</sub>. On est alors contraint de prévoir un système de vanne capable d'obturer ou de libérer l'ouverture des résonateurs à la demande de l'interprète, ce qui complique son jeu. Les trésors d'inventivité qu'on a déployé pour le marimba ont été récompensés par une sonorité unique en son genre. Bien que le répertoire pour l'instrument soit fatalement mince, on observe actuellement qu'on effectue e nombreux trravaux de transcriptions pour rendre justice à ce très bel instrument.  D'invention relativement récente il se distingue par un timbre velouté qui aurait à coup sûr séduit plus d'un grand compositeur du passé si seulement ils avaient connu l'instrument e ses possibilités. Steve reich s'es tintéressé de très près aux possibilités de l'instruments. Les instruments (de concert) de grande taille ne nécessitent pas de résonateurs mais lorsqu'il y en a ils se présentent comme autant de tuyaux présentant une extrémité fermée et l'autre ouverte ce qui correspond à une résonance  selon une suite &lambda;/4, 3&lambda;/4, 5&lambda;/4, ..., qui privilégie les harmoniques impairs (Cf supra : le diapason). or le marimba propose les harmoniques 1, 4, 9, 16, ... d'où le deuxième est clairement ignoré par le résonateur. On peut éventuellement pallier cette carence en plaçant un deuxième résonateur accordé sur 4f<sub>1</sub> ou plus simplement adapter une vanne qui ouvre ou ferme à la demande le tuyau sonore. Pour les lames aigües on peut aussi prévoir un résonateur ouvert aux deux extrémités ce qui le fait passer de &lambda;/4 à &lambda;/2 (soit plus généralement les partiels pairs (selon la suite 2&lambda;/4, 4&lambda;/4, 6&lambda;/4, ...). Il assure une meilleure rayonnement du son sauf vers l'interprète mais ce n'est pas gênant. Le marimba (moderne) est en réalité beaucoup plus qu'un xylophone (moderne) comme en témoigne cette démonstration de <a href="https://www.youtube.com/watch?v=wAFIZjuIpvg">Yumiko Noto</a>.</p>
+		  
+       <p> que l'on frappe avec un ou plusieurs maillets simultanément </p>
 
           
-         </div> 
+        </div> 
          
          
       <div id="raide">
@@ -700,6 +735,14 @@
     
     Distance par rapport à l'étrier
     Pour un son de fréquence pure, le mécanisme actif amplifie (env. + 50 dB) la vibration de la membrane basilaire (ce qui augmente la sensibilité de la cochlée) sur une portion très étroite de l'organe de Corti. Deux fréquences très proches peuvent donc activer deux zones distinctes de la cochlée permettant ainsi de les distinguer l'une de l'autre (sélectivité en fréquences). Cet accord en fréquences (tuning) dépend étroitement des propriétés d'électromotilité des CCE et se retrouve à l'identique au niveau des fibres du nerf auditif auquel il est fidèlement transmis par les CCI.</p>
+    
+    <div class="conteneurImages">
+                      <div> <figure>
+                              <img src="../images/violon/cils.png" alt="Cellules ciliées" />
+                                 </figure></div>                
+	    </div>
+    
+  <p>Les cellules ciliées qui tapissent la cochlée sont au coeur de la transduction acoustico-électrique. Lorsque les cellules entrent en vibration qui en ouvrant des canaux ioniques provoquent un influx électrique que le cerveau se charge de transformer en ce que nous avons pris l'habitude de nommer un son.</p>
         
 <p>L'organologie n'a pas attendu les progrès de l'acoustique physique pour se développer. C'est particulièrement vrai pour les instruments à cordes pincées et frottées qui ont  atteint leur plus haut niveau de perfection vers  1700 dans l'atelier d'Antonio Stradivari, dit Stradivarius (1644-1737), alors que les premiers travaux  concernant l'application des lois de Newton aux cordes vibrantes datent des années 1750 (Daniel Bernoulli (1700-1782) et Jean  le Rond d'Alembert (1717-1783). Sans surprise, ces travaux ont confirmé les grandes lignes des options retenues par les luthiers crémonais sans toutefois nécessairement élucider les points de détails qui ont souvent fait la différence entre violons satisfaisants et exceptionnels. Un point en particulier a reçu une explication convenable : tous autres paramètres égaux la taille des instruments d'une même famille conditionne leur registre en fréquence, les instruments géants étant réservés au registre grave et ceux de petite taille au registre aigu. Cette remarque peut sembler fort anodine après tout nous sommes habitués aux tailles respectives d'une contrebasse (ou d'un contrebasson) et d'un violon (d'un basson) et nous admettons sans sourciller que les cordes vocales d'une basse profonde sont  plus longues que celles d'une soprano. Pourtant si au lieu de s'intéresser à la production acoustique des sons on s'intéresse à leur écoute , à l'autre nbout de la chaîne acosutique, on se trouve confronté à une sorte de paradoxe : notre oreille décode les fréquences sonores au moyen d'un appareil auditif unique qui plus est aux dimensions fort modestes, apparemment peu ompatibles avec les dimensions exigées lors de la production des ons graves. Mais la question intrigante est ailleurs : </p>
 <p>Les vibrations dues à l'arrivée d'une onde sonore vont se propager plus ou moins loin dans la membrane au niveau de la base de la cochlée - fine et rigide, vers l'apex - large et souple.
