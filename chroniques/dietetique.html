@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Faits divers | Le violon parfait : science ou intuition ?</title>
+  <meta name="description" content="L'architecture du violon, un des instruments essentiels à la musique savante, est-elle le fruit d'avancées technologiques ou d'une succession d'intuitions fécondes de la part de luthiers experts ?" />
+  <link rel="shortcut icon" href="../logo.ico" />
+  <link href="../style.css" rel="stylesheet" type="text/css" /> 
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <script src="../js/jquery-1.10.2.js"></script>
+  <script src="../js/menus.js"></script>
+  <script src="../js/design.js"></script>
+  <script src="../js/gestionAudioVideo.js"></script>
+  <script> 
+    // Inclusion Header et Footer
+    $(function(){
+      $(function(){
+        $.ajax({
+           url: "../template/header.php",
+           type: "POST",
+           data: ({ROOT: '../'}),
+           success: function(data) {
+             $("#header").html(data);
+             $("#faitsDivers").addClass("active"); /*a changer en fonction de la page*/
+             update_design_when_header_loaded();
+          }
+        });
+      });
+      $("#miniMenus").load("../template/miniMenus.php", { ROOT: '../' }, mini_menus_after_loading);
+      $("#footer").load("../template/footer.php", { ROOT: '../' }, update_design_footer);  
+    });
+  </script> 
+</head>
+
+<body id="site">
+
+    <div>
+        <!-- Inclusion header -->
+       <div id="header"></div>
+
+        <div id="miniMenus"></div>
+
+        <nav id="menuLateralAncres">
+            <ul>         
+            <li>
+                    <a id="ancreson" href="#son" class="linavMenu active">
+                    <span>Le son comme onde de pression</span>
+                    </a>
+</li>
+
+             <li>
+                    <a id="ancreclasses" href="#classes" class="linavMenu">
+                    <span>Classification des instruments de musique</span>
+                    </a>
+</li>
+                <li>
+                    <a id="ancrediapason" href="#diapason" class="linavMenu">
+                    <span>Le cas d'école du diapason</span>
+                    </a>
+</li>
+               
+                
+                <li>
+                    <a id="ancreideale" href="#ideale" class="linavMenu">
+                    <span>Vibrations de la corde idéale</span>
+                    </a>
+</li>
+                
+                 <li>
+                    <a id="ancreviolon" href="#violon" class="linavMenu">
+                    <span>Le violon et la corde idéale</span>
+                    </a>
+</li>
+                <li>
+                    <a id="ancrelame" href="#lame" class="linavMenu">
+                    <span>Vibrations de la lame épaisse</span>
+                    </a>
+</li>
+
+             <li>
+                    <a id="ancremarimba" href="#marimba" class="linavMenu">
+                    <span>Quelques lamellophones</span>
+                    </a>
+</li>
+                <li>
+                    <a id="ancreraide" href="#raide" class="linavMenu">
+                    <span>Vibrations de la corde raide</span>
+                    </a>
+</li>
+               
+                
+                <li>
+                    <a id="ancrepiano" href="#piano" class="linavMenu">
+                    <span>Le piano fait de la corde raide</span>
+                    </a>
+</li>
+                
+                 <li>
+                    <a id="ancreperception" href="#perception" class="linavMenu">
+                    <span>La perception du son</span>
+                    </a>
+            </li>
+                
+                <li>
+                    <a id="ancreelectronique" href="#electronique" class="linavMenu">
+                    <span>Mirages et merveilles de l'électronique</span>
+                    </a>
+            </li>
+                
+                <li>
+                    <a id="ancredietetique" href="#dietetique" class="linavMenu">
+                    <span>Pour une diététique de l'écoute musicale</span>
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
+
+        <div id="corps">
+
+<div id="contenuPrincipal">
+                <h2>Faits divers</h2>
+                <h3>Les limites de l'acoustique physique</h3>
+                
+
+                 <nav class="filAriane">
+                    <ul>
+                        <li class="breadcrumbItem"><span>Vous êtes ici : </span> Musique</li>
+                        <li class="breadcrumbItem">
+                          <a href="../chroniques.html">Chroniques</a>
+                        </li>
+                        <li class="breadcrumbItem">
+                          <a href="../faitsDivers.html">Faits divers</a>
+                        </li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Les limites de l'acoustique physique</li>
+                    </ul>
+                </nav>
+                
+                <div class="sommaire">
+                    <div class="sommaireTitle">
+                        <h6>Sommaire</h6>
+                        <a role="button" tabindex="0" class="sommaireLink">[ afficher ]</a>
+                    </div>
+
+                    <ul class="linksSummary">
+                        <li><a href="#son">Le son comme onde de pression</a></li>
+                        <li><a href="#classes">Classification des instruments de musique</a></li>
+                        <li><a href="#diapason">Le cas d'école du diapason</a></li>
+                        
+                        <li><a href="#ideale">Vibrations de la corde idéale</a></li>
+                        <li><a href="#violon">Le violon et la corde idéale</a></li>
+                        <li><a href="#lame">Vibrations de la lame épaisse</a></li>
+                        <li><a href="#marimba">Quelques lamellophones</a></li>
+                        <li><a href="#raide">Vibrations de la corde raide</a></li>
+                        
+                        <li><a href="#piano">Le piano fait de la corde raide</a></li>
+                        <li><a href="#perception">La perception du son</a></li>
+                        <li><a href="#electronique">Mirages et merveilles de l'électronique</a></li>
+                        <li><a href="#dietetique">Pour une diététique de l'écoute musicale</a></li>
+                    </ul>
+                </div> 
+  
+     
+     <div class="blocImgFirstAndText">
+        <div class="conteneurImageSeule">
+                      <div>
+                          <figure>
+                              <img src="../images/acoustique/helmholtz.png" alt="Hermann Ludwig von Helmholtz"/>
+                              <figcaption>Hermann von Helmholtz</figcaption>
+                          </figure>
+                      </div>
+                  </div>
+     
+      
+
+
+<div id="dietetique">
+  <h4>Pour une diététique de l'écoute musicale</h4>
+
+
+<p>Il n'est pas facile de conclure une chronique qui s'est égarée en parlant un peu de tout ce qui touche au phénomène de l'écoute musicale. C'est bien connu, rien ne  remplace l'écoute au concert : la musique y circule directement du producteur  au consommateur, une belle illustration du principe du circuit court que célèbrent les nouveaux papes de l'alimentation responsable. C'est bien plus qu'une métaphore  tant nos oreilles méritent les mêmes égards que notre appareil digestif. Certes, il n'est pas envisageable de passer ses matinées et ses soirées au concert et reconnaissons qu'au vu des programmes habituels, même une fréquentation assidue des salles ne réussirait pas à élargir sérieusement  le répertoire accessible tant celui-ci tourne en rond, d'un concert au suivant. Or les musiques disponibles à l'écoute sont devenues légions grâce aux initiatives  de l'industrie de l'enregistrement. Cela  semble en contradiction avec l'idée fausse que la musique savante est  moribonde au motif qu'elle n'enrichit plus personne, au plan financier s'entend. </p>
+<p>C'est le prix à payer pour nourrir tout le monde et il est acoustique.</p>
+      </div>
+      
+      <p>L'électrification a envahi le monde moderne et la musique n'y a pas échappé :</p>
+
+<ul class="miniListCorps">
+<li>Les premiers enregistrements, datant du début des années 1900, ont été réalisés en Europe par quelques  compagnies discographiques (Victor, Pathé et Gramophone). Malgré leur fidélité précaire à l'original ils demeurent le seul moyen d'entendre la voix de quelques grands chanteurs tel Enrico Caruso. Ce n'est nullement un hasard si les seuls témoignages qui demeurent écoutables sont vocaux, la voix se situe dans un registre que l'on pouvait prétendre capter.</li>
+<li>Les Etats-Unis sont entrés dans la danse deux décennies plus tard. Deux chaînes de radio, la NBC (National Broadcasting Company) en 1926 et CBS (Columbia Broadcasting System) en 1927, ont participé à l’émergence d’une forme de diffusion massive de la musique fondée sur le vedettariat. Les concerts dirigés par Artuto Toscanini à la tête de son orchestre de la NBC ont largement participé à l'éducation musicale de masse à une époque où peu d'autres distractions existaient.</li>
+<li>La sonorisation du cinéma a constitué une autre étape importante du développement de l'enregistrement musical ouvrant la porte à l'enregistrement en studio mettant le grand répertoire à la disposition du plus grand nombre. </li>
+<li></li>
+
+</ul>
+
+
+<p>Bien que l'aventure de l'enregistrement ait commencé au tout début des années 1900, sur le Continent, avec les compagnies discographiques Victor, Pathé et Gramophone enregistraient sur disquesAux États-Unis, l’apparition successive de . Cette forme de transmission n’était pas nouvelle : depuis le début des années 1900, les  des interprètes de renom afin de les populariser et de les vendre auprès du plus grand nombre. Mais la crise de 1929 entraînant l’effondrement du marché du disque, la radio devint le médium le plus écouté et apprécié, rivalisant de près avec le cinéma. Cela a commencé par les progrès de la radiodiffusion. Aux Etats-Unis </p>
+<p>Le monde de la musique dite classique vit actuellement un paradoxe étrange. D'un côté on nous répète tous les cinq ans que le CD classique est virtuellement mort non seulement parce que le support est condamné mais encore parce que le secteur n'est pas rentable. En fait, il ne s'est jamais si bien porté :  on enregistre à tours de bras, toutes époques créatrices confondues.  On peut enfin entendre dans de bonnes conditions les Messes du Moyen-Age ou de la Renaissance, tout Monteverdi, Bach père &amp; fils, Lully et Rameau, Hasse et Haendel, etc, et à l'autre extrémité de l'échelle du temps, les symphonies de Pettersson ou de Langgaard, jusqu'aux chefs-d'oeuvre de notre temps signés Penderecki, Rautavaara ou Adams et ceci n'est qu'un raccourci abusif car on nous propose désormais des raretés inimaginables il y a 50 ans à peine.  De nouveaux labels  osent la mode du &quot;low cost&quot; en imposant des destinations complètement exotiques qu'aucun major d'hier (Decca, DGG, etc) n'aurait imaginé envisager.  Diversifier à l'infini son écoute  domestique est désormais possible pour un prix actuarisé dix fois moindre que celui que DGG réclamait naguère pour un LP de 50 minutes. La marge bénéficiaire des labels est devenue bien plus raisonnable qu'avant, se rattrappant sur l'explosion des ventes. Reste que les interprètes actuels, souvent jeunes, ne deviennent pas forcément riches tant il est vrai qu'en musique on ne l'est souvent qu'intérieurement.</p>
+<p> On l'a compris la haute fidélité est l'art de mettre les sons en boîte. Il ne viendrait à personne l'idée de recommander un restaurant qui servirait de la nourriture industrielle mais en musique c'est une démarche que nous faisons plus souvent qu'à notre tour. La comparaison tient-elle, le débat est ouvert ? <br/><br/></p>
+        
+      </div>
+        
+        </div>
+
+            <a id="ancreRetourHautPage" href="#site">&uarr;</a>
+
+            <!-- Inclusion footer -->
+            <div id="footer"></div>
+
+        </div>
+    
+    
+    </div>
+
+    <!-- Effet smooth ancres -->
+    <script src="../js/onclick.js"></script>
+    <script src="../js/anchors.js"></script>
+
+</body>
+</html>
