@@ -11,7 +11,7 @@
 <div id="articlesRecents">
 	<h5>ARTICLES RECENTS</h5>
 	<ul>
-        <li><a href="<?php echo $_POST['ROOT']; ?>chroniques/acoustique.html">Les limites de l'acoustique physique (31/06/2018)</a></li>
+        <li><a href="<?php echo $_POST['ROOT']; ?>chroniques/acoustique.html">Acoustiques musicales (31/06/2018)</a></li>
     	<li><a href="<?php echo $_POST['ROOT']; ?>chroniques/us.html">USA (03/04/2018)</a></li>
     	<li><a href="<?php echo $_POST['ROOT']; ?>chroniques/opus54.html">L'histoire cryptée des Sonates opus 54 &amp; 57 de Beethoven (par Georges Kan) (15/03/2018)</a></li>
 
