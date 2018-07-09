@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Genres musicaux | Le Concerto pour piano jusqu'à nos jours</title>
+  <meta name="description" content="Histoire du concerto pour piano, des origines à nous jours" />
+  <link rel="shortcut icon" href="../logo.ico" />
+  <link href="../style.css" rel="stylesheet" type="text/css" /> 
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <script src="../js/jquery-1.10.2.js"></script>
+  <script src="../js/menus.js"></script>
+  <script src="../js/design.js"></script>
+  <script src="../js/gestionAudioVideo.js"></script>
+  <script> 
+    // Inclusion Header et Footer
+    $(function(){
+      $(function(){
+        $.ajax({
+           url: "../template/header.php",
+           type: "POST",
+           data: ({ROOT: '../'}),
+           success: function(data) {
+             $("#header").html(data);
+             $("#grandscycles").addClass("active"); /*a changer en fonction de la page*/
+             update_design_when_header_loaded();
+          }
+        });
+      });
+      $("#miniMenus").load("../template/miniMenus.php", { ROOT: '../' }, mini_menus_after_loading);
+      $("#footer").load("../template/footer.php", { ROOT: '../' }, update_design_footer);  
+    });
+  </script> 
+</head>
+
+<body id="site">
+
+    <div>
+        <!-- Inclusion header -->
+        <div id="header"></div>
+
+        <div id="miniMenus"></div>
+
+        <nav id="menuLateralAncres">
+            <ul>
+                <li>
+                    <a id="ancreInstrument" href="#instrument" class="linavMenu">
+                    <span>L'instrument</span>
+                    </a>
+        </li>
+                <li>
+                    <a id="ancreConcertoPreClassique" href="#concertoPreClassique" class="linavMenu">
+                    <span>Le concerto à l'ère (pré)classique (1750-1800)</span>
+                    </a>
+        </li>
+                <li>
+                    <a id="ancreBeethovenEtConsorts" href="#beethovenEtConsorts" class="linavMenu">
+                    <span>Beethoven et consorts</span>
+                    </a>
+        </li>
+                <li>
+                    <a id="ancreVagueRomantique" href="#vagueRomantique" class="linavMenu">
+                    <span>La vague romantique</span>
+                    </a>
+        </li>
+                <li>
+                    <a id="ancreAube20emeSiecle" href="#aube20emeSiecle" class="linavMenu">
+                    <span>L'aube du 20<sup>ème</sup> siècle</span>
+                    </a>
+        </li>
+                <li>
+                    <a id="ancreGdClassiques20emeSiecle" href="#gdClassiques20emeSiecle" class="linavMenu">
+                    <span>Les grands classiques du 20<sup>ème</sup> siècle</span>
+                    </a>
+        </li>
+                <li>
+                    <a id="ancrePtClassiques20emeSiecle" href="#ptClassiques20emeSiecle" class="linavMenu">
+                    <span>Les petits classiques du 20<sup>ème</sup> siècle</span>
+                    </a>
+        </li>
+                <li>
+                    <a id="ancreEpoqueContemporaine" href="#epoqueContemporaine" class="linavMenu">
+                    <span>L'époque contemporaine</span>
+                    </a>
+        </li>
+                <li>
+                    <a id="ancreConcertosMainGauche" href="#concertosMainGauche" class="linavMenu">
+                    <span>Les concertos pour la main gauche</span>
+                    </a>
+        </li>
+                <li>
+                    <a id="ancreConcertos2pianos" href="#concertos2pianos" class="linavMenu">
+                    <span>Les concertos pour deux pianos</span>
+                    </a>
+        </li>
+                <li>
+                    <a id="ancreConcertosPromenades" href="#concertosPromenades" class="linavMenu">
+                    <span>Les concertos "promenades"</span>
+                    </a>
+        </li>
+                <li>
+                    <a id="ancreConcertosTravestis" href="#concertosTravestis" class="linavMenu">
+                    <span>Les concertos "travestis"</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="corps">
+
+            <div id="contenuPrincipal">
+                <h2>Genres musicaux</h2>
+                <h3>Concertos pour instruments insolites</h3>
+
+                <nav class="filAriane">
+                    <ul>
+                        <li class="breadcrumbItem"><span>Vous êtes ici : </span> Musique</li>
+                        <li class="breadcrumbItem">
+                          <a href="../chroniques.html">Chroniques</a>
+                        </li>
+                        <li class="breadcrumbItem">
+                          <a href="../grandscycles.html">Genres musicaux</a>
+                        </li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Concertos pour instruments insolites</li>
+                    </ul>
+                </nav>  
+
+              <div class="sommaire">
+                    <div class="sommaireTitle">
+                        <h6>Sommaire</h6>
+                        <a role="button" tabindex="0" class="sommaireLink">[ afficher ]</a>
+                    </div>
+
+                    <ul class="linksSummary">
+                        <li><a href="#instrument">L'instrument</a></li>
+                        <li><a href="#concertoPreClassique">Le concerto à l'ère (pré)classique (1750-1800)</a></li>
+                        <li><a href="#beethovenEtConsorts">Beethoven et consorts</a></li>
+                        <li><a href="#vagueRomantique">La vague romantique</a></li>
+                        <li><a href="#aube20emeSiecle">L'aube du 20<sup>ème</sup> siècle</a></li>
+                        <li><a href="#gdClassiques20emeSiecle">Les grands classiques du 20<sup>ème</sup> siècle</a></li>
+                        <li><a href="#ptClassiques20emeSiecle">Les petits classiques du 20<sup>ème</sup> siècle</a></li>
+                        <li><a href="#epoqueContemporaine">L'époque contemporaine</a></li>
+                        <li><a href="#concertosMainGauche">Les concertos pour la main gauche</a></li>
+                        <li><a href="#concertos2pianos">Les concertos pour deux pianos</a></li>
+                        <li><a href="#concertosPromenades">Les concertos "promenades"</a></li>
+                        <li><a href="#concertosTravestis">Les concertos "travestis"</a></li>
+                    </ul>
+                </div>
+  
+                <p>Le grand répertoire concertant fait la part la plus belle aux pianistes, violonistes et violoncellistes. D'autres instruments, d'ailleurs variables selon les époques, ont été éventuellement honorés  avec constance </p>
+                <p>Cette chronique est plutôt consacrée à des intruments solistes nettement plus exotiques.</p>
+                
+                <p>Euphonium, sitar, . percussions (James MacMillan n°2), .
+
+Contrebasse. Dans la famille des cordes l'alto fait déjà figure de parent pauvre malgré quelques chefs-d'oeuvre dus à Bartok. mais que dire de la contrebasse le plus souvent réduite à l'exécution des "basses" tâches.
+
+Accordéon diatonique & chromatique
+
+Platine (Turning table)</p>
+                
+                
+                 <div id="idiophone">
+                  <h4>Cordophones exotiques</h4>
+<p>contrebasse, </p>
+                  
+</div>
+
+                <div id="membranophone">
+                  <h4>Membranophones exotiques</h4>
+
+                  
+</div> 
+                
+                
+                <div id="cordophone">
+                  <h4>Cordophones exotiques</h4>
+
+                  <p><a href="https://www.youtube.com/watch?v=cf-yD9TWsxo">Concerto n°2</a>  de Ravi Shankar joué par la fille du compositeur. Notez l'amplification requise pour permettre à l'instrument de rivaliser avec l'orchestre.</p>
+                  <p>Le piano est l'instrument concertant par excellence : le contraste sonore qu'il entretient avec l'orchestre autorise toutes les variantes, des plus mélodiques (Mozart, Chopin, Rachmaninov, …) aux plus percussives (Bartok, Prokofiev,  …). Il a, on s'en doute, beaucoup évolué en trois siècles.</p>
+               
+                  <ul class="miniListCorps">
+                    <li>
+                      <div class="conteneurImageSeule">
+                          <div>
+                              <figure>
+                                  <img src="../images/concpiano/piano1.jpg" alt="Batolommeo Cristofori (vers 1710)"/>
+                                  <figcaption>Batolommeo Cristofori (vers 1710)</figcaption>
+                              </figure>
+                          </div>
+                      </div>
+                      On situe la naissance du piano(-forte) en 1709 (admirez la précision !), lorsque Batolommeo Cristofori inventa le "Gravicembalo col piano e forte". Il est  issu d'un croisement entre le clavecin et le clavicorde dont il retient le principe de la frappe des cordes, à la recherche d'une meilleure dynamique des attaques. L'instrument original est exposé au Metropolitan Museum de New-York avec interdiction d'y toucher. L'entendre sonner vous décevrait d'ailleurs très probablement. On sait, par ailleurs, que Bach connaissait le facteur Silbermann mais les experts débattent encore de la destination de ses oeuvres majeures pour clavier (Quel clavier ?) : l'inventaire de sa succession ne mentionnait, en tous cas, que 5 clavecins. Cela dit, beaucoup de mélomanes apprécient Bach joué sur piano moderne.
+                    </li>
+                    <li>
+                      
+                      Les décennies suivantes n'enregistrèrent aucun progrès fulgurant mais plutôt une diffusion, à travers l'Europe, des possibilités qu'offrait l'instrument. C'est ainsi que Carl Philip Emanuel Bach (1714-1788) a mentionné sur certaines partitions "pour clavecin ou piano-forte", une invitation prise en compte dans l'intégrale BIS de ses Concertos pour clavier : le soliste, Miklós Spányi, joue certaines oeuvres au clavecin (<a href="http://www.bis.se/naxos.php?aID=BIS-CD-707">Volume 1</a>) et d'autres au piano à tangentes, une variante rare du piano-forte (<a href="http://www.bis.se/naxos.php?aID=BIS-CD-1097">Volume 11</a>). Mikhail Pletnev a même tenté l'aventure du piano moderne dans un superbe <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Carl-Philipp-Emanuel-Bach-Klaviersonaten/hnum/4233934">CD</a>  proposant des oeuvres  de CPE.
+                      Il a fallu attendre les années 1770 pour qu'Andreas Stein conçoive le mécanisme d'échappement "austro-allemand". Certes, le son demeure grêle mais les notes ne résonnent plus en échos indésirables. Ce progrès décisif provoqua l'admiration et l'adhésion de Mozart.
+                    </li>
+
+                    <li>
+                      
+                      En déplaçant le lieu des concerts des palais princiers vers des salles publiques toujours plus vastes, en doublant en peu de temps l'effectif de l'orchestre avec lequel le piano devait  lutter, le besoin s'est fait sentir d'un instrument plus sonore.  La révolution beethovenienne rendit cette exigence encore plus nécessaire : outre que le compositeur démolissait régulièrement la fragile mécanique des instruments de l'époque, le 5<sup>ème</sup> Concerto "L'Empereur" - pire encore la sonate n°29 "Hammerklavier" - exigeaient un instrument beaucoup plus viril. Cet instrument que le compositeur appelait de ses voeux, il ne l'a pas connu, indépendamment du fait qu'il devenait sourd : même le superbe piano qu'il reçut, en hommage, du facteur anglais Broadwood ne remplissait pas les conditions requises par ses oeuvres hardies.  Cet instrument (ci-contre) ne fait pas partie des collections de la Beethoven Hauss à Bonn : les hasards de l'histoire l'ont déménagé au musée Franz Liszt de Budapest.
+                    C'est au 19<sup>ème</sup>siècle que les facteurs, Erard, Bösendorfer, Pleyel, ..., imaginèrent enfin les perfectionnements menant tout droit au piano à queue moderne (pédale tonale, double échappement, clavier étendu à 88 touches, ...). Ces progrès ne furent cependant pas immédiats et Chopin jouait d'un instrument à la sonorité encore fort éloignée de celle du piano actuel, que des pianistes nostalgiques mais parfaitement sérieux - tel Andreas Staier - ressuscitent à l'occasion.</li>
+                  </ul>
+
+                </div>
+               
+               
+                
+                <div id="aerophone">
+                  <h4>Aérophones exotiques</h4>
+
+                  <p>Accordéon, bandonéon, harmonica, concertina, harmonium, sheng</p>
+                  
+                 
+</div>
+                
+                <div id="electrophone">
+                  <h4>Electrophones exotiques</h4>
+
+                  <p>On sait qu'il n'existe aucune frontière nette séparant la fin du (post)romantisme et le début de l'ère moderne et quelques musiciens évoqués ci-dessus (Roussel, Hindemith, ... ) pourraient aussi bien apparaître ci-dessous.  Cette frontière coïncide conventionnellement avec la guerre 14-18, parce que Nijinski a créé le Sacre du Printemps de Stravinsky en 1913, que Mahler est mort en 1914 et que Debussy l'a suivi en 1918.</p>
+                  <p>&nbsp;</p>
+                </div>
+
+                <div id="gdClassiques20emeSiecle">
+                  <h4>Les grands classiques du 20<sup>ème</sup> siècle</h4>
+
+                  <p><a href="http://www.jpc.de/jpcng/classic/detail/-/art/Bela-Bartok-Klavierkonzerte-Nr-1-3/hnum/2452641">Bela Bartok</a> (1881-1945), <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Serge-Prokofieff-Klavierkonzerte-Nr-1-5/hnum/6024710">Serge Prokofiev</a> (1891-1953) et <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Dimitri-Schostakowitsch-Klavierkonzerte-Nr-1-2/hnum/9589581">Dimitri Schostakovitch</a> (1906-1975) ont innové en exploitant, chacun à sa manière - les possibilités percussives du piano.  Ils l'ont fait avec infiniment de tact, n'hésitant pas à faire machine arrière toutes les fois que cela leur semblait opportun (<a href="https://www.youtube.com/watch?v=elaY_d3uG6A">3<sup>ème</sup> de Bartok</a>, <a href="http://www.youtube.com/watch?v=NOybfjTRCdo">3<sup>ème</sup> de Prokofiev</a> et <a href="http://www.youtube.com/watch?v=re6Ayy0N9TY">2<sup>ème</sup> de Schostakovitch</a>).  Les deux concertos de <a href="http://www.youtube.com/watch?v=5Fpim9AanqI&feature=related">Maurice Ravel</a> complètent le palmarès des oeuvres les plus écoutées.</p>
+                  <p>On ajoutera au tableau d'excellence le peu joué concerto d'<a href="http://www.youtube.com/watch?v=A-fyWc6Mpd8">Arnold Schönberg</a> (1874-1951), les 5 concertos  de <a href="https://www.youtube.com/watch?v=utqa8JEpDvM">Bohuslav Martinu</a> (1890-1959) et l'oeuvre de jeunesse de <a href="https://www.youtube.com/watch?v=lD7gjmvM66M">Benjamin Britten</a> (1913-1976).</p>
+                </div>
+               
+                <div id="ptClassiques20emeSiecle">
+                  <h4>Les petits classiques du 20<sup>ème</sup> siècle</h4>
+
+                  <p>Toutes les oeuvres écrites au 20<sup>ème</sup> siècle ne sont pas forcément novatrices, en particulier, celles qui proviennent des Iles Britanniques ou d'URSS, deux nations  volontiers conservatrices.</p>
+
+                  <ol class="miniListCorps listNumber">
+                    <li> </li>
+                    <li>
+                      
+                      <div class="conteneurImages"> </div>
+                    </li>
+                  </ol>
+                </div>
+
+                <div id="epoqueContemporaine">
+                  <h4>L'époque contemporaine</h4>
+
+                  <p>Il est sans doute trop tôt pour recenser, sans erreur, les oeuvres incontournables écrites depuis les années 1950. Commençons par celles issues des pôles principaux, russe, scandinave et anglo-saxon :</p>
+
+                  
+</div>
+
+                <div id="concertosMainGauche">
+                  <h4>Les concertos pour la main gauche</h4>
+
+                  <p>Quelques pianistes, Otakar Hollmann, Gary Graffman, Paul Wittgenstein, ayant perdu l'usage de leur main droite ont souhaité surmonter leur handicap en commandant des oeuvres exclusivement pour la main gauche.  Paul Wittgenstein fut l'un d'entre eux qui en  reçut 17, dont le célèbre concerto de Ravel.  Les autres sont beaucoup moins connus (Korngold, Strauss, Britten, Hindemith, ..., quand même) et ils forment un monde à part, détaillé dans cette <a href="../chroniques/wittgenstein.html">chronique</a>.</p>
+                </div>
+
+                <div id="concertos2pianos">
+                  <h4>Les concertos pour deux pianos</h4>
+
+                  
+                </div>
+
+                <div id="concertosPromenades">
+                  <h4>Les concertos "promenades"</h4>
+
+                  
+                </div>
+
+                <div id="concertosTravestis">
+                  <h4>Les concertos "travestis"</h4>
+
+                  
+
+              </div>
+
+
+            <a id="ancreRetourHautPage" href="#site">&uarr;</a>
+
+            <!-- Inclusion footer -->
+            <div id="footer"></div>
+
+        </div>
+    
+    
+    </div>
+
+    <!-- Effet smooth ancres -->
+    <script src="../js/onclick.js"></script>
+    <script src="../js/anchors.js"></script>
+
+</body>
+</html>
