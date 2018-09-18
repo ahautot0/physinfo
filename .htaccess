@@ -1,4 +1,6 @@
 Options +FollowSymlinks
 RewriteEngine on
-RewriteCond %{HTTP_HOST} ^physinfo.org$
-RewriteRule ^(.*)$ http://www.physinfo.org/$1 [r=301,nc] 
+
+#Redirection http vers https
+    RewriteCond %{HTTPS} off
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [r=301,nc]
