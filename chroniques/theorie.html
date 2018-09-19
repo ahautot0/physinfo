@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Faits divers | Rudiments épars de théorie musicale</title>
+<meta name="description" content="Les éléments de théorie musicale sont couramment enseignés dans le cadre des cours de solfège. Peu soucieux de logique, ils ont découragé des générations d'apprentis musiciens. Ce regard oblique pourrait leur rendre espoir." />
+<link rel="shortcut icon" href="../logo.ico" />
+<link href="../style.css" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<script src="../js/jquery-1.10.2.js"></script>
+<script src="../js/menus.js"></script>
+<script src="../js/design.js"></script>
+<script src="../js/gestionAudioVideo.js"></script>
+<script> 
+    // Inclusion Header et Footer
+    $(function(){
+        $(function(){
+            $.ajax({
+                url: "../template/header.php",
+                type: "POST",
+                data: ({ROOT: '../'}),
+                success: function(data) {
+                    $("#header").html(data);
+                    $("#faitsDivers").addClass("active"); /*a changer en fonction de la page*/
+                    update_design_when_header_loaded();
+                }
+            });
+        });
+        $("#miniMenus").load("../template/miniMenus.php", { ROOT: '../' }, mini_menus_after_loading);
+        $("#footer").load("../template/footer.php", { ROOT: '../' }, update_design_footer);  
+    });
+</script>
+</head>
+<body id="site">
+
+  <!-- Inclusion header -->
+  <div id="header"></div>
+  <div id="miniMenus"></div>
+  <nav id="menuLateralAncres">
+    <ul>
+      <li> <a id="ancrediatonique" href="#diatonique" class="linavMenu"> <span>La portée diatonique</span> </a> </li>
+      <li> <a id="ancreorthographe" href="#orthographe" class="linavMenu"> <span>Ah l'orthographe !</span> </a> </li>
+     
+      <li> <a id="ancrerousseau" href="#rousseau" class="linavMenu"> <span>La notation de Rousseau</span> </a> </li>
+      <li> <a id="ancrebase12" href="#base12" class="linavMenu"> <span>Une notation duodécimale</span> </a> </li>
+      
+      <li> <a id="ancrechromatique" href="#chromatique" class="linavMenu"> <span>La portée chromatique</span> </a> </li>
+      <li> <a id="ancreschonberg" href="#schonberg" class="linavMenu"> <span>Schönberg : Le Style et l'Idée</span> </a> </li>
+      <li> <a id="ancregodjevatz" href="#godjevatz" class="linavMenu"> <span>La notation de Godjevatz</span> </a> </li>
+      
+      <li> <a id="ancresemantique" href="#semantique" class="linavMenu"> <span>Objections sémantiques</span> </a> </li>
+     
+      <li> <a id="ancreconclusion" href="#conclusion" class="linavMenu"> <span>Epilogue ?</span> </a> </li>
+    </ul>
+  </nav>
+  <div id="corps">
+    <div id="contenuPrincipal">
+      <h2>Faits divers</h2>
+      <h3>Rudiments épars de théorie musicale</h3>
+      <nav class="filAriane">
+        <ul>
+          <li class="breadcrumbItem"><span>Vous êtes ici : </span> Musique</li>
+          <li class="breadcrumbItem"> <a href="../chroniques.html">Chroniques</a> </li>
+          <li class="breadcrumbItem"> <a href="../faitsDivers.html">Faits divers</a> </li>
+          <li class="breadcrumbItem breadcrumIitem--current">Rudiments épars de théorie musicale</li>
+        </ul>
+      </nav>
+      <div class="sommaire">
+        <div class="sommaireTitle">
+          <h6>Sommaire</h6>
+          <a role="button" tabindex="0" class="sommaireLink">[ afficher ]</a> </div>
+        <ul class="linksSummary">
+          <li> <a href="#diatonique">La portée diatonique </a> </li>
+          <li> <a href="#orthographe">Ah l'orthographe !</a> </li>
+         
+          <li> <a href="#rousseau">La notation de Rousseau</a> </li>
+          <li> <a href="#base12">Une notation duodécimale </a> </li>
+  
+       
+          <li> <a href="#chromatique">La portée chromatique </a> </li>
+          <li> <a href="#schonberg">Schönberg : Le Style et l'Idée </a> </li>
+          <li> <a href="#godjevatz">La notation de Godjevatz </a> </li>
+          
+          <li> <a href="#semantique">Objections sémantiques </a> </li>
+          
+          <li> <a href="#conclusion">Epilogue ?</a> </li>
+        </ul>
+      </div>
+     
+      <div class="blocImgFirstAndText">
+
+                  <div class="conteneurImageSeule">
+                      <div>
+                          <figure>
+                              <img src="../images/theorie/danhauser.png" alt="Allemagne"/>
+                              <figcaption>Adolphe Danhauser</figcaption>
+                          </figure>
+                      </div>
+                  </div>
+       <p>Adolphe Danhauser (1835-1896) est un musicien français, dont le seul succès avéré, en composition, est un second Prix de Rome, en 1863.  En 150 ans, plus personne n'a  entendu la moindre note de lui, en particulier de l'un de ses drames lyriques, "Le proscrit" ou "Maures et Castillans", et il est peu probable que cela se produira un jour. Monsieur Danhauser est pourtant universellement célèbre dans la communauté des musiciens francophones pour avoir publié, en 1872, une <a href="https://fr.wikisource.org/wiki/Th%C3%A9orie_de_la_musique_(Danhauser,_1889)/Texte_entier">Théorie de la Musique</a>, dont le succès ne s'est jamais démenti. Réédité en 1996, cet ouvrage a bénéficié des améliorations apportées par quelques auteurs qui ont su préserver la limpidité de l'exposé primitif. 
+ Sa forme en est en tous points admirable : je connais peu d'exposés aussi  clairs d'une matière  pas toujours simple. Car la musique a son langage et celui-ci possède toutes sortes de particularités propres aux langages fiers de leurs singularités, qu'ils considèrent comme autant de richesses intouchables.  Je ne vais évidemment pas refaire l'article puisque je serais parfaitement incapable de faire ne fut-ce qu'aussi bien. Pourtant j'ai eu envie d'y mettre mon grain de sel car par endroits, la théorie exposée par Monsieur Danhauser se répand dans des explications qui interpellent, non pas qu'elles soient obscures mais plutôt qu'elles empruntent des détours tels qu'on se demande comment les élèves même motivés ne se perdent pas en chemin. Ce commentaire n'est pas un résumé de l'ouvrage complet : cela n'aurait aucun sens de redire plus mal ce que l'auteur a dit si bien. Il propose plutôt un regard distancié, provocateur ou zélé, qui n'a d'autre but que de prendre quelques distances avec une théorie qui embrouille parfois plus qu'elle n'éclaire, sur le fond s'entend car je le répète sur la forme Monsieur Danhauser a été parfait. Il n'est donc pas question de reprendre la théorie ine extenso mais plutôt d'éclairer différemment les sujets qui méritent d'être connus mêm des profanes.</p>
+     
+      
+      <div id="diatonique">
+        <h4>La double portée</h4>
+        <p>Les pianistes en herbe sont très tôt confrontés au problème de la double portée. Celle-ci  sépare les notes réservées aux mains gauche et droite.  Les plages fréquentielles couvrent habituellement  au minimum trois octaves que les deux mains se partagent sauf entrelacement.</p>
+        <div class="conteneurImageSeule">
+          <div>
+            <figure> <img src="../images/theorie/porteesolfa.png" alt="Cycle de 21 quintes"/>
+              <figcaption>Double portée usuelle</figcaption>
+            </figure>
+          </div>
+        </div>
+        
+      <p>La notation musicale s'est constituée sur le principe d'une lecture graphique immédiate. Confrontée au problème de gérer un empilement de lignes qui, sans précaution, s'avérerait vite ingérable pour un cerveau normalement constitué on a imaginé un système de clés. Passe encore pour des instruments très particuliers comme le cornet à piston il est tout à fait étrange qu'on ait retenue une clé de fa à la main gauche et une clé de sol à la main droite et c'est d'autant plus étrange qu'il n'y a qu'un ton d'écart entre le fa et le sol ! Autrement dit utiliser deux clés de sol ne coûterait qu'une seule ligne intercalaire supplémentaire. Etrangement elle a </p>
+      
+       <div class="conteneurImageSeule">
+          <div>
+            <figure> <img src="../images/theorie/porteesolsol.png" alt="Cycle de 21 quintes"/>
+              <figcaption>Double portée modifiée</figcaption>
+            </figure>
+          </div>
+        </div> 
+<p>On ne me fera pas croire qu'il est plus simple de dissocier les clés que de positionner mentalement une deuxième ligne intercalaire : le confort de lire les mêmes (noms de) notes aux mêmes emplacements n'a pas de prix et respecte d'ailleurs bien mieux le principe de lisibilité à vue.</p>
+
+     
+      </div>
+      
+
+      
+      <div id="orthographe">
+        <h4>Modalité et (a)tonalité</h4>
+      <p>La notion de mode est importante en musique mais il est probable que si l'on pose la question de savoir ce qu'est un mode à un panel de musiciens de tous niveaux, on doit s'attendre à recevoir  quantité de réponses fort différentes, de quoi s'y perdre. L'une des sources de confusion provient de ce que la notion de mode est (très) ancienne et qu'elle a progressivement changé de signification. Un peu de rigueur d'inspiration mathématique devrait faciliter la compréhension des profanes sans troubler les certitudes des professionnels qui de toutes façons  se posent rarement ces questions qu'ils jugent futiles.</p>
+      <p>Une partition est un ensemble ordonné de notes (et de signes divers de ponctuations) prélevées dans un alphabet universellement admis. Toute suite de notes n'est pas recevable musicalement parlant : par exemple une suite aléatoire ne présente aucun intérêt. Il faut donc, d'une manière ou d'une autre, restreindre l'ensemble des notes. Une restriction envisageable consiste à ne pas utiliser toutes les notes au sein d'un morceau mais de s'en tenir à quelques-unes bien choisies pour leur affinité. Une gamme est précisément un sous-ensemble de l'ensemble des notes disponibles dont les notes constitutives partagent une propriété définie. Cette définition pour ainsi dire mathématique a pour conséquence que le nombre des modes possibles est a priori infini. Tous ne sont cependant pas de valeurs musicales égales et c'est évidemment l'expérience et la pratiqu des musiciens qui a contribué à sélectionner quelques modes particulièrement porteurs. </p>  
+      <p>Il est rare qu'un mouvement de sonate, de quatuor ou de symphonie se déroule dans une tonalité immuable. Des transitions existent destinées à introduire autant de diversions qui rompent la monotonie. </p>
+       
+ 
+      </div>
+      
+      
+      
+      
+      <div id="rousseau">
+        <h4>L'arm(at)ure</h4>
+      <p>Tout épisode de  musique tonale se déroule dans une tonalité spécifique (majeure ou mineure) que l'on précise en tête de portée. Comme il est clair d'emblée que certaines notes sont systématiquement affectées d'une altération en dièse ou en bémol, la notation musicale traditionnelle prévoit de les mettre une fois pour toutes en évidence à la clé, ce qui constitue l'armure (ou armature). On ne fait rien d'autre, en algèbre, lorsqu'on remplace 2a+2b+2c+... par 2(a+b+c+...). Tout débutant doit par conséquent apprendre à répondre aux questions élémentaires suivantes : 1) Combien d'altération(s) faut-il mettre en évidence à la clé si on souhaite écrire un morceau dans une tonalité (majeure ou mineure) donnée et lesquelles ? 2) Etant donnée une armure dans quelle tonalité se trouve-t-on ?</p>
+      <p>L'ouvrage de Monsieur Danhauser répond évidemment à ces questions mais comme il a prévu de s'adresse parfois à de jeunes enfants, il ne craint pas le ton du catéchisme qui ne s'embarrasse d'aucune justification logique. Or celle-ci existe, vous en trouverez les raisons dans la chronique antérieure relative aux Gammes & Tempéraments. Pour peu que vous disposiez d'une bonne mémoire visuelle, le cycle des quintes déployé sur un axe linéaire répond instantanément aux questions posées :</p>
+      
+      <div class="conteneurImages">
+                        <div> <figure>
+                          <img src="../images/theorie/armure.png" alt="Suite de quintes" />
+                            <figcaption>Détermination de l'armure des tonalités (Majeures et mineures)</figcaption>
+                        </figure></div>
+        </div>
+       
+       
+       <div class="conteneurImageSeule">
+                      <div>
+                          <figure>
+                              <img src="../images/theorie/reM.png" alt="Armure de ré M"/>
+                              <figcaption>ré M</figcaption>
+                          </figure>
+                      </div>
+        </div>
+                  
+       <p>Pour trouver l'armure correspondant à une tonalité majeure donnée, il suffit de faire glisser la fenêtre inférieure de telle façon que la lettre M se trouve en face de la tonique (ré dans l'exemple) et de prendre note des altérations présentes. Dans l'exemple ce sont deux dièses (fa et do) qu'il est d'usage de noter, de gauche à droite  dans l'ordre ascendant des dièses, sur la quatrième octave de la portée. La même armure vaut pour la gamme mineure relative, si mineur dans l'exemple; il suffit que la lettre m soit positionnée en face de la nouvelle tonique. Le raisonnement est parfaitement réversible qui permet lorsqu'on connait le nombre d'altérations de repositionner la fenêtre. Dans ce cas il subsiste une ambiguïté car la méthode ne permet pas de différencier les tonalités majeure ou mineure (nécessairement relatives). Dans l'exemple la simple inspection de la fenêtre mobile ne distingue pas les tonalités de ré M et de si m. Seule l'analyse du contenu musical de la partition permet de trancher entre ces deux options (cf infra).</p>
+       <p>Bien que la méthode proposée soit tout à fait générale vous noterez que la grille affichée ne va pas au-delà des tonalités  dobM (ou labm) - 7 bémols - ou du côté des dièses des tonalités de do#M (ou la#m) du côté des dièses. Une tonalité du genre si#M ferait intervenir des doubles dièses ce qui n'est pas usité.</p>             
+                    
+      <p>Si la mémoire visuelle n'est pas votre fort, sachez qu'il existe une réponse mathématique (élémentaire, pas de panique !) tout aussi imparable.</p>
+        
+        
+      </div>
+      
+      
+      
+      <div id="chromatique">
+        <h4>Les intervalles</h4>
+       <p>La définition des intervalles ainsi que leur gestion est un des traits les plus caractéristiques de la musique tonale. On y rencontre des phénomènes d'attraction plus faciles à rzessentir qu'à expliquer en des termes rigoureux. Deux exemples disent mieux de quoi il s'agit. 1) Une phrase musicale (pensez à Au clair de la lune) suit, comme n'immporte quelle phrase déclamée par la parole, un contour accentué qui fait comprendre qu'elle est terminée et qu'une autre peut commencer.   Un morceau de musique écrit dans une tonalité spécifique commence habituellement par la note tonique mais ce qui est plus surprenant c'est qu'il tend à se clore sur la même note éventuellement à une octave de distance comme si la pièce se souvenait de son point de départ. Jamais il ne se terminera de façon satisfaisante sur la sensible, située un demi ton plus bas. </p>
+       <p>La gamme majeure définit 8 degrés d'importances inégales. On les numérote habituellement par un chiffre romain, entre I et VIII. La note de départ s'appelle la tonique (I). Aussssi étrange</p> 
+  
+        
+      </div>
+      
+      
+      
+      <div id="schonberg">
+        <h4>Arnold Schönberg : le style et l'idée</h4>
+        
+        
+        
+      </div>
+      
+      
+      
+      <div id="godjevatz">
+        <h4>La notation de Godjevatz</h4>
+        
+        
+        
+        
+      </div>
+      
+      
+      <div id="semantique">
+        <h4>Objections sémantiques</h4>
+        
+        
+</div>
+      
+      
+     
+      <div id="conclusion">
+        <h4>Epilogue ?</h4>
+        
+        
+	</div>
+    
+       
+</div>
+</div>
+
+    
+    <a id="ancreRetourHautPage" href="#site">&uarr;</a>
+    <!-- Inclusion footer -->
+    <div id="footer"></div>
+  </div>
+</div>
+<!-- Effet smooth ancres -->
+<script src="../js/onclick.js"></script>
+</body>
+</html>
