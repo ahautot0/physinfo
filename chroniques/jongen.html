@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Compositeurs négligés | Anton Urspruch</title>
+  <meta name="description" content="Prix de Rome (belge !) Joseph Jongen a confirmé cette distinction plutôt académique dans une oeuvre magistrale, inspirée par Franck, d'Indy et Fauré." />
+  <link rel="shortcut icon" href="../logo.ico" />
+  <link href="../style.css" rel="stylesheet" type="text/css" /> 
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <script src="../js/jquery-1.10.2.js"></script>
+  <script src="../js/menus.js"></script>
+  <script src="../js/design.js"></script>
+  <script src="../js/gestionAudioVideo.js"></script>
+  <script> 
+    // Inclusion Header et Footer
+    $(function(){
+      $(function(){
+        $.ajax({
+           url: "../template/header.php",
+           type: "POST",
+           data: ({ROOT: '../'}),
+           success: function(data) {
+             $("#header").html(data);
+             $("#tiresdeloubli").addClass("active"); /*a changer en fonction de la page*/
+             update_design_when_header_loaded();
+          }
+        });
+      });
+      $("#miniMenus").load("../template/miniMenus.php", { ROOT: '../' }, mini_menus_after_loading);
+      $("#footer").load("../template/footer.php", { ROOT: '../' }, update_design_footer);  
+    });
+  </script> 
+</head>
+
+<body id="site">
+
+    <div>
+        <!-- Inclusion header -->
+        <div id="header"></div>
+
+        <div id="miniMenus"></div>
+
+        <div id="corps">
+
+            <div id="contenuPrincipal">
+                <h2>Compositeurs négligés</h2>
+                <h3>Joseph Jongen</h3>
+
+                <nav class="filAriane">
+                    <ul>
+                        <li class="breadcrumbItem"><span>Vous êtes ici : </span> Musique</li>
+                        <li class="breadcrumbItem">
+                          <a href="../chroniques.html">Chroniques</a>
+                        </li>
+                        <li class="breadcrumbItem">
+                          <a href="../tiresdeloubli.html">Compositeurs négligés</a>
+                        </li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Joseph Jongen</li>
+                    </ul>
+                </nav>  
+
+                <div class="blocImgFirstAndText">
+                  <div class="conteneurImageSeule">
+                      <div>
+                          <figure>
+                              <img src="../images/jongen/jongen.png" alt="Joseph Jongen"/>
+                              <figcaption>Joseph Jongen</figcaption>
+                          </figure>
+                      </div>
+                  </div>
+
+                  <p>Joseph Jongen (1873-1953) est le musicien belge le plus important depuis César Franck et son infortuné élève, Guillaume Lekeu. Il a attiré très tôt l'attention en remportant un Premier Prix de Rome certes moins prestigieux que son homologue français mais tout de même. De plus il a confirmé les espoirs que le jury a mis en lui, ce qui n'est pas si fréquent dans les annales du fameux Concours. </p>
+                  <p>La question demeure de comprendre pour quelles raisons on parle si peu de (la musique écrite par) Jongen. Il est vrai qu'il n'a pas fait le voyage à Paris qui lui aurait sans doute ouvert d'autres portes. Au lieu de cela il n'a quitté sa bonne ville de Liège que pour aller enseigner au Conservatoire de Bruxelles ce qui n'était au bilan pas la meilleure façon de contenter le plus grand monde. Liège l'honore certes comme l'un des siens mais ne lui réserve aucun accueil dans ses programmtions de concert. Il n'y a même pas une rue à son nom (mais il y a une Avenue Joseph Jongen à Uccle)</p>
+                  <p>Les oeuvres de qualité de manquent pas et l'OPL (Orchestre Philharmonique de Liège) a toutes les qualités requises pour y contribuer. Reste le Cd et là encore on reste sur une petite faim.</p>
+                  <p>&nbsp;</p>
+<p>Sauf quelques infidélités pendant les années de perfectionnement, la vie d'Urspruch s'est largement passée à Francfort, sa ville natale : c'est là qu'il a suivi les leçons d'Ignaz Lachner (1807-1895), alors chef en titre de l'orchestre de cette ville. Après avoir pris des leçons de piano, à Wiesbaden, auprès de <a href="../chroniques/raff.html">Joachim Raff</a> (1822-1882) puis, sur recommandation de ce dernier, auprès du grand Liszt, à Weimar, il revint au bercail à l'invitation du même Raff, nommé  Directeur du Conservatoire de Francfort, en 1877. Il invita Urspruch à y intégrer le corps professoral, non seulement dans la classe de piano mais aussi dans celle de composition, c'est dire les espoirs  fondés sur lui.</p>
+
+                  <p>Bien que le catalogue des oeuvres écrites par Jongen soit copieux (137 opus réellement numérotés plus aun grand nombre de partitions pour orgue que le compositeur n'a pas pris la peine de numéroter mais que le grand organiste )</p>
+
+                  <ul class="miniListCorps">
+                  <li>Une oeuvre a davantage fait pour la célébrité de Jongen que tout les reste de son catalogue, c'est d'ailleurs la seule oeuvre de Jongen qui ait fait l'objet de plusieurs enregistrements : la <a href="https://www.youtube.com/watch?v=9WF951J5l4k">Symphonie concertante (opus 81)</a> pour orgue &amp; orchestre (opus 81). (The work was commissioned by Rodman Wanamaker for debut in the Grand Court of his palatial Philadelphia department store, Wanamaker's. Its intended use was for the re-dedication of the world's largest pipe organ there, the Wanamaker Organ, as part of a series of concerts Rodman Wanamaker funded with Leopold Stokowski and the Philadelphia Orchestra. Wanamaker's death in 1928 precluded the performance of the work at that time in the venue for which it was written, but it was finally performed for the first time with the Wanamaker Organ and the Philadelphia Orchestra on 27 September 2008.). D'autres oeuvres symphoniques auraient mérité une reconnaissance comparable, telle le <a href="https://www.youtube.com/watch?v=9ITkOXQDhKQ">Concerto pour violon (opus 17)</a> à qui il ne manque que les soins d'interprètes plus engagés.</li>
+                    <li><a href="https://www.youtube.com/watch?v=WVBJrl1ZczI">Cinq mélodies (opus 57)</a>  interprétées par la soprano luxembourgeoise Mariette Kemmer et l'orchestre de Monte Larlo dirigé par le chef bien connu (liégeois quand même !) Pierre Bartholomée. </li>
+                    <li>L'oeuvre pour piano est s'inscrit clairement dans la grande tradition française de l'époque (Chabrier, Debussy, Séverac, Ravel ?) mais elle sait rester pleine d'agréables surprises (<a href="https://www.youtube.com/watch?v=KNTxhXTrDl0">2 Pièces, opus 33</a>, <a href="https://www.youtube.com/watch?v=rxbei6HsewU">5 Pièces, opus ??</a>). Elle tient sur un double CD qui a été enregistré par Diane Andersen hélas pas dans les meilleures conditions. L'instrument sonne mal et comme j'imagine mal que la pianiste aurait réagi j'en déduis que c'est la prise de son qui est médiocre (A l'appui de cette thèse, je propose à nouveau les mêmes pièces extraites de cete enregistrement). C'est un peu rageant car cette musique est franchement belle et constamment intéressante. </li>
+                     <li>La musique de chambre s'est clairement inscrite dans la mouvance de gabriel Fauré. a connu un sort plus enviable <a href="https://www.youtube.com/watch?v=ALvanNt-gAc">Trio à clavier (opus 30)</a>: l'intégrale des 3 quatuors à cordes a bénéficié de meilleurs soins de la part du Quatuor Gong. <a href="https://www.youtube.com/watch?v=ALvanNt-gAc">Concert à 5</a> où une harpe et une flûte complètenr avec grâce un trio à cordes.</li>
+                   
+                  </ul>
+
+<p>Retour à l'oeuvre pour orgue. Le grand organiste John Scott Whiteley (born 1950) a publié un ouvrage de référence sur l'oeuvre d'orgue de Jongen.</p>
+
+<ul class="miniListCorps">
+          <li>L'orgue pratiqué par Jongen est évidemment celui, symphonique, de ses modèles <a href="https://www.youtube.com/watch?v=XiNYB1832uE">Sonate héroïque</a> (opus 94) interprétée ici sur l'instrument monumental de la Nieuwe Kerk de Katwijk aan Zee, aux Pays-Bas. Dans un registre plus intime, voici <a href="https://www.youtube.com/watch?v=KA-vN2TPDQY">Prière</a> (Quatre pièces pour orgue, l'instrument est cette fois celui de la Cathédrale d'Hereford, en Angleterre). </li>
+                  </ul>
+                  
+                  <p>Léon Jongen (1884-1969), frère cadet de Joseph, est encore beaucoup moins connu. Les fidèles du Concours Reine Elisabeth de Belgique se souviennent éventuellement que son Concerto pour violon a été retenu comme œuvre imposée lors des finales de l'édition 1963. Après des études au conservatoire de Liège, il remporte le Premier Grand Prix de Rome de Belgique avec sa cantate Les fiancés de Noël (1913), puis occupe les postes de directeur et chef d'orchestre de l'Opéra français de Hanoï et directeur du Conservatoire royal de Bruxelles. Il succède à son frère Joseph Jongen à l'orgue de l'église Saint-Jacques de Liège. Il effectue de nombreux voyages en Asie (Chine, Indochine, Japon) et au Maroc. Installé au Tonkin, il est nommé directeur de la musique et premier chef d'orchestre de l'Opéra français d'Hanoï. Nommé professeur de fugue au Conservatoire de Bruxelles à son retour en Belgique en 1934, il succède à son frère comme directeur de cet établissement de 1939 à 19491. Il est aussi recteur de la chapelle de la Reine Élisabeth (1956). Il est l'auteur de nombreuses œuvres lyriques et instrumentales.</p>
+                  <p>Le violoniste Charles Jongen fait également partie de la famille mais j'avoue ne pas avoir cherché à en savoir davantage.</p>
+
+                  <div class="conteneurImages">
+                    <div>
+                      <figure>
+                        <img src="../images/urspruch/lieder.jpg" alt="Urspruch : Mélodies">
+                        <figcaption>Urspruch : Mélodies</figcaption>
+                      </figure>
+                    </div>
+                    <div>
+                      <figure>
+                        <img src="../images/urspruch/piano.jpg" alt="Urspruch : Oeuvres pour piano">
+                        <figcaption>Urspruch : Oeuvres pour piano</figcaption>
+                      </figure>
+                    </div>
+                  </div>
+
+                 
+                 
+              </div>
+            </div>
+
+
+            <a id="ancreRetourHautPage" href="#site">&uarr;</a>
+
+            <!-- Inclusion footer -->
+            <div id="footer"></div>
+
+        </div> 
+    
+    </div>
+
+</body>
+</html>
