@@ -11,7 +11,7 @@
 <div id="articlesRecents">
 	<h5>ARTICLES RECENTS</h5>
 	<ul>
-    	<li><a href="<?php echo $_POST['ROOT']; ?>chroniques/jongen.html">Joseph Jongen (03/11/2018)</a></li>
+    	<li><a href="<?php echo $_POST['ROOT']; ?>chroniques/jongen.html">Joseph Jongen (01/11/2018)</a></li>
     	<li><a href="<?php echo $_POST['ROOT']; ?>chroniques/quatuor.html">Le quatuor à cordes jusqu'à nos jours (03/10/2018)</a></li>
         <li><a href="<?php echo $_POST['ROOT']; ?>chroniques/acoustique.html">Acoustiques musicales (31/06/2018)</a></li>
     	
