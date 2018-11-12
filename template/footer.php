@@ -1,6 +1,6 @@
 <!-- FOOTER -->
 <div id="contact">
-    <img src="<?php echo $_POST['ROOT']; ?>images/moi1.jpg" alt="portrait andre hautot" />
+    <img src="<?php echo $_POST['ROOT']; ?>images/moi1.png" alt="portrait andre hautot" />
 	<div>
 		<h3>ANDRE HAUTOT</h3>
 		<h4>Dr. en Physique<br/>Université de Liège<br/>Belgique</h4>
