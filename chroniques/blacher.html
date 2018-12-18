@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Compositeurs négligés | Boris Blacher &amp; Gottfried von Einem</title>
+  <meta name="description" content="Pas facile d'être compositeur dans l'Allemagne national socialiste; Boris Blacher a non seulement tenu son rang mais il a montré la voie à son talentueux élève, Gottfried von Einem." />
+  <link rel="shortcut icon" href="../logo.ico" />
+  <link href="../style.css" rel="stylesheet" type="text/css" /> 
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <script src="../js/jquery-1.10.2.js"></script>
+  <script src="../js/menus.js"></script>
+  <script src="../js/design.js"></script>
+  <script src="../js/gestionAudioVideo.js"></script>
+  <script> 
+    // Inclusion Header et Footer
+    $(function(){
+      $(function(){
+        $.ajax({
+           url: "../template/header.php",
+           type: "POST",
+           data: ({ROOT: '../'}),
+           success: function(data) {
+             $("#header").html(data);
+             $("#tiresdeloubli").addClass("active"); /*a changer en fonction de la page*/
+             update_design_when_header_loaded();
+          }
+        });
+      });
+      $("#miniMenus").load("../template/miniMenus.php", { ROOT: '../' }, mini_menus_after_loading);
+      $("#footer").load("../template/footer.php", { ROOT: '../' }, update_design_footer);  
+    });
+  </script> 
+</head>
+
+<body id="site">
+
+    <div>
+        <!-- Inclusion header -->
+        <div id="header"></div>
+
+        <div id="miniMenus"></div>
+
+        <div id="corps">
+
+            <div id="contenuPrincipal">
+                <h2>Compositeurs négligés</h2>
+                <h3>Boris Blacher &amp; Gottfried von Einem</h3>
+
+                <nav class="filAriane">
+                    <ul>
+                        <li class="breadcrumbItem"><span>Vous êtes ici : </span> Musique</li>
+                        <li class="breadcrumbItem">
+                          <a href="../chroniques.html">Chroniques</a>
+                        </li>
+                        <li class="breadcrumbItem">
+                          <a href="../tiresdeloubli.html">Compositeurs négligés</a>
+                        </li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Boris Blacher &amp; Gottfried von Einem</li>
+                    </ul>
+                </nav>  
+
+               
+
+                  <p>La fin de la première guerre mondiale a marqué un tournant dans l'histoire de la musique austro-allemande : celle-ci a tout simplement cessé d'être dominante après deux siècles d'hégémonie (1715-1915). Plusieurs facteurs se sont conjugués à cette fin. Au plan musical, le gigantisme qui a frappé les orchestres mis en scène par Gustav Mahler (Symphonie des Mille, 1906), le jeune Arnold Schönberg (Gurre Lieder, 1911) et Richard Strauss (Symphonie alpestre, 1915), a mené la musique symphonique dans une impasse. Aucune surenchère n'étant plus  envisageable, il devenait urgent de proposer autre chose et ce sont les musiques russe et française qui ont trouvé une issue de sortie passant par une diversification d'ensembles instrumentaux de tailles à nouveau raisonnables.</p>
+                  <p>Il est évidemment légitime de se demander, à ce stade, pourquoi une réaction n'a pas pris également naissance en Allemagne. Des tentativres de ce genre ont effectivement existé mais elles ont été rapidement contrariées par un régime autoritaire qui s'est mis en tête de tout régenter y compris le domaine des arts. Le régime national socialiste a décrété l'éviction les musiciens juifs au motif qu'ils étaient juifs et les musiciens modernistes au motif qu'ils étaient modernistes. Presque tout ce que l'Allemagne (et l'Autriche provisoirement annexée) comptait encore de musiciens sérieux a fui, essentiellement aux USA. Les lecteurs fidèles de ce site connaissent Wolfgang Korngold, Bernard Hermann et Ernst Toch, trois compositeurs de premier plan qui survécurent financièrement en consacrant une part de leur temps au cinéma hollywoodien. Le plus sérieux de tous, Paul Hindemith, vécut de son enseignement tout en continuant d'écrire une oeuvre qui mériterait une étude approfondie. Cette chronique s'intéresse à Boris Blacher (1903-1975), un compositeur passionnant qui a décidé de rester au pays, de résister à la dictature ambiante et, la paix revenue, de former quelques élèves prometteurs. L'un d'eux, Gottfried von Einem (1918-1996), a appliqué la méthode à la lettre, écrivant une musique accessible sans compromission. C'est l'histoire illustrée de cette filiation qui est contée ci-après. </p>
+                  
+                  <div class="conteneurImages">
+                <div> <figure>
+                  <img src="../images/blacher/blacher.png" alt="Boris Blacher" />
+                              <figcaption>Boris Blacher</figcaption>
+                    </figure></div>
+                      <div><figure>
+       <img src="../images/blacher/einem.png" alt="Gottfried von Einem" />
+                              <figcaption>Gottfried von Einem</figcaption>
+                          </figure></div>
+</div>
+                  
+                  
+              <div id="professeur">
+                <h4>Le professeur Blacher</h4>
+                <p>Blacher est né, en Manchourie, d'une mère allemande et d'un père russo-estonien, c'est à Irkoutsk qu'il a reçu ses premières leçons de musique. Il n'a atterri à Berlin que tardiveent en fait à l'occasion de ses études d'arhitecture puis de musique à la Musikhochschule, un établissement qu'il fréquentera à nouveau pour le diriger après la (deuxième) guerre mondiale. Au terme de ses études, à 28 ans, ce qui est relativement tard, il partagea son temps entre le métier d'arrangeur et celui de compositeur. Son premier succès a été une <a href="https://www.youtube.com/watch?v=176-29Afk68">Concertante Musik</a> (1937) qui a défini un premier axe de composition : une rythmique parfaitement articulée à la Stravinsky.</p>
+                <p><a href="https://www.youtube.com/watch?v=EK1XgCO8BbI">Elektronische Impulse</a> (1965)</p>
+                <p><a href="https://www.youtube.com/watch?v=9Nw8snKSjdE">Concerto</a>, pour violon (1948), <a href="https://www.youtube.com/watch?v=cwitPeYpwNQ">Concerto</a>, pour violoncelle (1964), <a href="https://www.youtube.com/watch?v=Z7HFYl1tHkQ">Concerto n°1</a>, pour piano (1948), <a href="https://www.youtube.com/watch?v=1aWKL0Qqjzg">Concerto n°2</a>, pour piano (1952), <a href="https://www.youtube.com/watch?v=km9i7uJsMyw">Symphonie</a> (1938), <a href="https://www.youtube.com/watch?v=wdqHKJgWT3M"> Variations Paganini</a> (1947), <a href="https://www.youtube.com/watch?v=RTUOXXhr6vg"> Variations Clementi</a> (1947), <a href="https://www.youtube.com/watch?v=DSSm5z21nYU">Poème</a>, pour orchestre (1974), <a href="https://www.youtube.com/watch?v=HORB_g0XEQg">Concerto</a>, pour trompette (aigue) (1971), <a href="https://www.youtube.com/watch?v=QcmPylb4c_o">Ouverture de concert</a>, pour orchestre (1931),  <a href="https://www.youtube.com/watch?v=2T83YhMygPM">Orchester-Ornament</a> (1953)                </p>
+                <p>le Quatuor Petersen a enregistré les <a href="https://www.youtube.com/watch?v=ZPXu_ctbLQw&t=155s">5 quatuors</a> de Blacher parmi lesquels le superbe n°5 (1967, en 42:52), <a href="https://www.youtube.com/watch?v=LbDhAhDWbck">Ornamente</a>, 7 études pour piano (1950), <a href="https://www.youtube.com/watch?v=EszRfkHEx9I">Sonate</a>, pour deux violoncelles & ensemble (1971), <a href="https://www.youtube.com/watch?v=Bx6b51_FhfU">Sonate</a>, pour piano (1951) aux parfum jazzy, <a href="https://www.youtube.com/watch?v=erBFs8Z4y_A">Trio</a> à clavier, <a href="https://www.youtube.com/watch?v=5pjOJ2LG8xc">Divertimento</a>, pour petit ensemble (1951)</p>
+                <p>Il cherche sa voie dans ces lieder de jeunesse <a href="https://www.youtube.com/watch?v=JLSf8creQUg">Sprüche Omars des Zeltmachers</a> (1931)</p>
+                <p><a href="https://www.youtube.com/watch?v=DSSm5z21nYU">Roméo et Juliette</a>, opéra de chambre (1943), <a href="https://www.youtube.com/watch?v=RsNGLWyOPmA">Abstrakte Oper n°1</a> (1953), l'oratorio <a href="https://www.youtube.com/watch?v=-CcL-6L7kuo">Der Großinquisitor</a> (1947)</p>
+                  
+                </div>
+                  
+                  
+                  <div id="eleve">
+                 <h4>L'élève von Einem</h4>
+                  <p>On a longtemps colporté que von Einem ne s'était intéressé valablement qu'à l'opéra mais c'est totalement faux même s'il est vrai que ce furent là qu'il rencontra son public (<a href="https://www.youtube.com/watch?v=lsb47VyBu90&t=2242s">La Mort de Danton</a>, 1963, <a href="https://www.youtube.com/watch?v=wMSkFiTsINU&t=662s">Le Procès</a>, 1953). Cantate (<a href="https://www.youtube.com/watch?v=s7Yzp8CF9iI">An die Nachgeborenen</a>, 1975, </p>
+                  <p>et de ballets (<a href="https://www.youtube.com/watch?v=ngpEpKiz5IY">Medusa</a>, 1957,</p>
+                  <p>Le moment est toutefois venu d'insister sur son oeuvre instrumentale, absolument digne d'intérêt (<a href="https://www.youtube.com/watch?v=ZgZbEnrgf6g">Nachtstuck</a>, 1962, <a href="https://www.youtube.com/watch?v=AlmTzUyN5IA">Méditations</a>, 1954, <a href="https://www.youtube.com/watch?v=aW_V5tt_VHQ">Scènes symphoniques</a>, 1956,  <a href="https://www.youtube.com/watch?v=ztE4_FPw-Ew">Wandlungen</a>, 1956, <a href="https://www.youtube.com/watch?v=BRRXHWvk5hk">Bruckner Dialog</a>, 1971, les délicieusement rétro Symphonies dites de <a href="https://www.youtube.com/watch?v=NWUXg-fipiA">Vienne</a>, 1977, <a href="https://www.youtube.com/watch?v=pO6_17m0rC8">Munich</a>, 1985, et de <a href="https://www.youtube.com/watch?v=pKNDjEt2gLY">Philadelphie</a>, 1960, où se mêlent toutes les influences du passé puis les symphonies numérotées <a href="https://www.youtube.com/watch?v=Ue6jqAp7DtM&t=144s">n°4</a>, 1988. <a href="https://www.youtube.com/watch?v=O3QsB2FPZIk">Concerto</a>, pour orchestre (1943),  <a href="https://www.youtube.com/watch?v=mka_AxTwuxE">Tanz-Rondo</a>, 1959, typique d'un certin art de la ponctuation, comme dans <a href="https://www.youtube.com/watch?v=mka_AxTwuxE">Hexameron</a>, 1970???,  <a href="https://www.youtube.com/watch?v=CoNuKdkfM2U">Ballade</a>, pour orchestre (1958),</p>
+                  <p><a href="https://www.youtube.com/watch?v=O3QsB2FPZIk">Concerto opus 20</a>, pour piano (1953), <a href="https://www.youtube.com/watch?v=UIXxo7G4cBg">Concerto opus 62</a>, pour orgue (19??), </p>
+                  <p>Insouciante <a href="https://www.youtube.com/watch?v=gdqCwTMoZTc">Sérénade</a>, pour double orchestre à cordes 1949, étonnant et passionnant <a href="https://www.youtube.com/watch?v=tG5C_uugMRM">Concertino</a>, pour 12 (instruments à) cordes (1989), <a href="https://www.youtube.com/watch?v=i-p3utnzOfs">Sonate</a>, pour violon &amp; piano 19??</p>
+                  <p>Quatuors <a href="https://www.youtube.com/watch?v=_m11o3vK1to">n°1</a>, 1976,  <a href="https://www.youtube.com/watch?v=fK5i1pp-eFM">n°2</a>, 19??,    <a href="https://www.youtube.com/watch?v=KZJlv930O4g">n°3</a>, 19??, <a href="https://www.youtube.com/watch?v=N4Ij90N1IuM">n°4</a>, 19??,  <a href="https://www.youtube.com/watch?v=-1rGnypbm9c">n°5</a>, 19??, inspirés de la Sérénade italienne de Hugo Wolff tous enregistrés par le Quatuor Artis. </p>
+                  
+                  </div>
+                  
+                  
+                  
+                 
+
+                 
+                 
+            
+          </div>
+
+
+            <a id="ancreRetourHautPage" href="#site">&uarr;</a>
+
+            <!-- Inclusion footer -->
+            <div id="footer"></div>
+
+        </div> 
+    
+    </div>
+
+</body>
+</html>
