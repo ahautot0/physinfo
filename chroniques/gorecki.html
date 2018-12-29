@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Compositeurs contemporains | Henryk Gorecki</title>
+  <meta name="description" content="Henryk Gorecki n'a pas composé que la Symphonie des chants plaintifs : le reste de son oeuvre vaut une écoute attentive de même que celle de son fils, Mikolaj" />
+  <link rel="shortcut icon" href="../logo.ico" />
+  <link href="../style.css" rel="stylesheet" type="text/css" /> 
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <script src="../js/jquery-1.10.2.js"></script>
+  <script src="../js/menus.js"></script>
+  <script src="../js/design.js"></script>
+  <script src="../js/gestionAudioVideo.js"></script>
+  <script> 
+    // Inclusion Header et Footer
+    $(function(){
+      $(function(){
+        $.ajax({
+           url: "../template/header.php",
+           type: "POST",
+           data: ({ROOT: '../'}),
+           success: function(data) {
+             $("#header").html(data);
+             $("#portraitscompositeurs").addClass("active"); /*a changer en fonction de la page*/
+             update_design_when_header_loaded();
+          }
+        });
+      });
+      $("#miniMenus").load("../template/miniMenus.php", { ROOT: '../' }, mini_menus_after_loading);
+      $("#footer").load("../template/footer.php", { ROOT: '../' }, update_design_footer);  
+    });
+  </script> 
+</head>
+
+<body id="site">
+
+    <div>
+        <!-- Inclusion header -->
+        <div id="header"></div>
+
+        <div id="miniMenus"></div>
+
+        <div id="corps">
+
+            <div id="contenuPrincipal">
+                <h2>Compositeurs contemporains</h2>
+                <h3>Henryk Gorecki (1933-2010), compositeur polonais</h3>
+
+                <nav class="filAriane">
+                    <ul>
+                        <li class="breadcrumbItem"><span>Vous êtes ici : </span> Musique</li>
+                        <li class="breadcrumbItem">
+                          <a href="../chroniques.html">Chroniques</a>
+                        </li>
+                        <li class="breadcrumbItem">
+                          <a href="../portraitscompositeurs.html">Compositeurs contemporains</a>
+                         </li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Henryk Gorecki</li>
+                    </ul>
+                </nav>  
+  
+              <div class="blocImgFirstAndText">
+                <div class="conteneurImageSeule">
+                      <div>
+                          <figure>
+                              <img src="../images/gorecki/gorecki.png" alt="Henryk Gorecki" />
+                              <figcaption>Henryk Gorecki</figcaption>
+                          </figure>
+                      </div>
+                  </div>
+
+<p>De tous temps, il s'est trouvé des compositeurs sauvés de l'oubli par la grâce - si c'en est une - d'une oeuvre singulière ayant occulté toutes les autres pourtant présentes à leur catalogue. Leur liste est de longueur variable selon le degré de culture musicale de chacun : à titre d'exercice, assurez-vous que vous ne connaissez pas que l'Apprenti Sorcier de Paul Dukas, le Poème d'Ernest Chausson, les Planètes de  Gustav Holst, les Nuits dans les Jardins d'Espagne de Manuel de Falla, Carmina Burana de Carl Orff, ..., et, précisément, amusez-vous à compléter cette liste, à l'usage des autres bien sûr ! La même (més)aventure  est arrivée à Henryk Gorecki (1933-2010), un musicien polonais qui nous a quittés prématurément il y a 8 ans. De santé précaire depuis l'enfance, dont 6 séjours  hospitaliers avant 26 ans, il n'a pas connu d'autre choix que de passer ses 60 premières années à (proximité de) Katowice, une des cités les plus polluées d'Europe. Tout a changé après 1991, à la faveur d'un événement musical exceptionnel  sur lequel nous allons revenir mais c'était trop tard pour lui assurer une longévité normale.</p>
+<p>Gorecki (prononcez &quot;Goretzki&quot;) a hérité des dons musicaux de sa mère, une pianiste malheureusement décédée  à 26 ans. D'abord instituteur, il a repris, en 1955, des études musicales de composition auprès de Boleslaw Szabelski (1896-1979) (Intéressante <a href="https://www.youtube.com/watch?v=YFdrCgJXAWQ">Symphonie n°4</a>,  1957), un professeur influent, lui-même élève de Karol Szymanowski (1882-1937). Dans sa nouvelle vie professionnelle, Gorecki a été assez rapidement considéré comme une  personnalité indépendante  bien que sa trajectoire stylistique ne se soit guère écartée  de celles suivies par quelques contemporains en Europe de l'Est (au sens large),  <a href="../chroniques/rautavaara.html">Einojuhani Rautavaara</a> (1928-2016) en Finlande, <a href="../chroniques/silvestrov.html">Valentin Silvestrov</a> (1937- ) en Ukraine et <a href="../chroniques/penderecki.html">Krzysztof Penderecki</a> (1933- ) en Pologne : une courte amorce néo-classique suivie d'une violente réaction moderniste d'avant-garde, enfin un retour à un compromis davantage davantage inscrit dans la sérénité. </p>
+<p>On a longtemps ignoré l'oeuvre de Gorecki en Occident car les enregistrements ont largement fait défaut. Cette excuse n'est plus valable aujourd'hui, depuis que   l'Institut national polonais de l'audiovisuel a entrepris de célébrer le 25<sup>ème</sup> anniversaire des élections libres de 1989, en Pologne, en mettant en ligne certaines parmi les plus importantes  archives de la Radio polonaise. La plateforme Internet <a href="https://ninateka.pl/kolekcje">ninateka.pl</a>, entièrement libre d'accès,  propose actuellement un inventaire exceptionnel  d'oeuvres de Witold Lutosławski, <a href="https://ninateka.pl/kolekcje/trzej-kompozytorzy/gorecki">Henryk Górecki</a>, Krzysztof Penderecki, Andrzej Panufnik et Wojciech Kilar,  incontournable ! Voilà qui facilite l'accès à l'oeuvre du compositeur, il ne reste plus qu'à compléter par quelques enregistrements réalisés à l'étranger.</p>
+
+<h4>Période néo-classique (1956-1957)</h4>
+<p>La période néo-classique n'a que très peu duré, juste le temps nécessaire pour affermir l'écriture au niveau professionnel. Seules les oeuvres portant un numéro d'opus inférieur à 11 sont littéralement concernées (<a href="https://ninateka.pl/kolekcje/trzej-kompozytorzy/gorecki/audio/wariacje-op-4-na-skrzypce-i-fortepian">Variations opus 4</a>, pour violon &amp; piano (1956) et <a href="https://ninateka.pl/kolekcje/trzej-kompozytorzy/gorecki/audio/sonata-na-dwoje-skrzypiec-op-10">Sonate opus 10</a>, pour 2 violons (1957)). Cependant  on sent  qu'une évolution est en cours dès le <a href="https://ninateka.pl/kolekcje/trzej-kompozytorzy/gorecki/audio/piesni-o-radosci-i-rytmie-op-7">Chant pour orchestre, opus 7</a> (1956) où pointe une nette recherche  vers davantage de complexité.  </p>
+<p>Parvenu à un premier carrefour, il a opéré un virage dans la mouvance sérielle de Webern écrit une oeuvre remarquable  (<a href="https://ninateka.pl/kolekcje/trzej-kompozytorzy/gorecki/audio/wariacje-op-4-na-skrzypce-i-fortepian">Nonette opus 11</a>, 1957, <a href="https://ninateka.pl/kolekcje/trzej-kompozytorzy/gorecki/audio/piec-utworow-op-13-na-dwa-fortepiany">Miniatures opus 13</a>, pour deux pianoforte, 1957). On trouve en particulier dans le Nonette une exploitation  du raffinement sonore  webernien qui aurait dû ouvrir une  voie prometteuse.</p>
+
+<h4>Le sonorisme fracassant (1958-1975)</h4>
+
+<p>Gorecki n'a pas insisté dans cette voie, préférant adopter le sonorisme à la mode en Pologne à cette époque : il s'agissait de cultiver le son pour lui-même sans égard particulier pour les oreilles des auditeurs éventuels. L'avant-garde polonaise  avait pris l'habitude de se réunir lors du  festival  contemporain annuel de l'&quot;Automne de Varsovie&quot;. Penderecki s'y rendait également mais Gorecki s'est  distingué par sa conception personnelle d'un mélange pur et dur de sonorisme dissonant (recherche du son éclaté pour lui-même) et de motorisme (culte du rythme haletant). </p>
+<p>Hélas il allait gâcher les subtilités sonores atteintes en cédant à une tentation vers un sonorisme de plus en plus bruyant. il a bien vite basculé dans l'avant-garde sérielle (Epitaphe (1958), <a href="https://ninateka.pl/kolekcje/Home/HtmlPlayer?action=play&id=2378">Symphonie n°1, opus 14</a> (1959), <a href="https://ninateka.pl/kolekcje/Home/HtmlPlayer?action=play&id=2376">Monologhi, opus 16</a> (1960) et Scontri (1960)). Insensiblement à partir des années 1965 il a quitté l'avant-garde pour revenir à un mode d'expression plus traditionnel, en fait néoromantique pour s'accommoder d'un retour à l'expression vocale, seulement perturbé par des incantations obsédantes sur des  motifs courts, voire des brusqueries rythmiques, deux procédés qu'il n'abandonnera jamais tout à fait. Une oeuvre charnière à cet égard est <a href="https://ninateka.pl/kolekcje/trzej-kompozytorzy/gorecki/audio/wariacje-op-4-na-skrzypce-i-fortepian">Choeur, opus 21</a>, 1965, qui revient à de meilleurs sentiments. Le titre étrange fait référence au traitement particulier que le compositeur réserve à l'écriture par tons entiers qui se substitue à l'échelle chromatique complète de la période sérielle. On y trouve les nouveaux tics d'écriture décliné dans une atmosphère apaisée. </p>
+<p>Enseignant, Gorecki s'est avéré aussi  peu avenant  avec ses étudiants qu'il l'était aves son public. Il les a régulièrement houspillés, leur expliquant qu'un compositeur digne de ce nom n'a de compte à rendre à personne afin de  décider de l'oeuvre qui vaut la peine d'être écrite. Il avait coutume de dire, j'adapte : &quot;Si vos écoutez les souhaits des uns et des autres, vous n'entendrez que des voeux contradictoires et vous finirez par ne plus rien écrire de valable. Le public doit faire sa part du travail et  le compositeur ne peut être tenu pour comptable de l'effort que cela lui réclamera éventuellement&quot;.</p>
+
+<h4>Le minimalisme archaïque et poétique (1976-2010)</h4>
+
+<p> Je fais un peu arbitrairement commencer la dernière manière du compositeur   en 1976 car c'est la date de composition de la Symphonie n°3, dite des &quot;Chants plaintifs&quot;, l'oeuvre qui a transformé son art et sa vie. On a présenté cette oeuvre comme un OVNI surgit de nulle part  mais c'était oublier que le <a href="https://www.youtube.com/watch?v=jwOTBSisRIk">finale</a> (mais le finale seulement !) de la Symphonie n°2, opus 31 (1972) annonçait déjà un changement radical d'esthétique par un retour à une modalité venue d'un autre âge, quasiment intemporelle. Cette oeuvre stylistiquement hybride a résulté d'une commande de la fondation Kosciuszko de New York, laissant toute latitude au compositeur sauf qu'elle devait porter le surnom &quot;Copernicus&quot; ! Peut-être ce dernier mouvement planant évoque-t-il le mouvement éternel des planètes autour du Soleil, copernicisme oblige.</p>
+<p>En 1977, le <a href="http://fr.wikipedia.org/wiki/Festival_international_d%27art_contemporain_de_Royan">Festival de Royan</a>, sanctuaire traditionnel de l'avant-garde la plus pointue  (Stockhausen, Mefano, Amy, etc.), avait assez normalement invité Gorecki à produire sa dernière symphonie, terminée un an plus tôt. La surprise fut double : d'une part le public eut droit à une oeuvre néo-modale ramant complètement à contre-courant et de plus il demeura sans réaction, ni hostile ni enthousiaste. A vrai dire, en Europe occidentale, l'oeuvre fut proprement enterrée sauf qu'elle fut  récupérée comme bande sonore pour le film &quot;Police&quot; (1985) de Maurice Pialat. Que le compositeur ait donné son accord peut surprendre mais il faut bien vivre et les temps en Pologne étaient sans doute plus durs qu'ailleurs (Quelques films feront encore ultérieurement un usage ponctuel de cette musique : &quot;Fearless (1993)&quot; de Peter Weir, enfin dans &quot;The Tree of Life (2011)&quot; et &quot;To the Wonder (2012)&quot;, tous deux de Terrence Malick).  L'oeuvre a pourtant immédiatement fait carrière en Pologne, grâce en particulier à la soprano, <a href="https://ninateka.pl/kolekcje/trzej-kompozytorzy/gorecki/audio/iii-symfonia-symfonia-piesni-zalosnych-op-36">Stefania Woytowicz</a>, ici dirigée par Andrzej Markowski. Je possède un enregistrement paru chez Olympia dont je ne me sépare pas, où elle  est accompagnée par. </p>
+<p>Cependant, c'est un enregistrement paru en 1991, chez Nonesuch, qui a révélé l'oeuvre au monde entier, 15 ans après sa parution. La soprano était cette fois de <a href="https://www.youtube.com/watch?v=eSiQ8UTxnp8">Dawn Upshaw</a>, accompagnée par David Zinman. Il ne fait aucun doute qu'un  marketing efficace  a joué un rôle dans cette promotion fulgurante (un million de CD vendus rien que dans les pays anglo-saxons !) : l'oeuvre fut présentée à un public jeune comme un équivalent classique à la tendance New Age à la mode dans la culture populaire et l'accès aisé de cette musique a fait le reste. Gorecki s'est désolidarisé de ce genre de récupération mais il l'a fait suffisamment discrètement pour ne pas nuire à la rentabilité du phénomène commercial. </p>
+<p>Cette symphonie a été enregistrée un très grand nombre de fois et les comparaisons ont fleuri etre toutes ces versions plus ou moins idiomatiques. Celles dirigées par <a href="https://www.youtube.com/watch?v=-mEWlGLkjIw">Antoni Wit</a> (parue chez Naxos) et <a href="http://www.jpc.de/jpcng/classic/detail/-/hnum/6335546?rk=classic&rsk=hitlist">David Zinman</a> (chez Nonesuch) se partagent généralement les meilleurs suffrages mais je possède une version garantie polonaise d'origine dont je ne me sépare pas (<a href="https://ninateka.pl/kolekcje/en/three-composers/gorecki/audio/iii-symfonia-symfonia-piesni-zalosnych-op-36">Andrzej Markowski</a>, chez Olympia). Dans tous les cas, c'est la magie ressentie de l'entrée  de la voix de la soprano dans chaque mouvement  qui décidera de votre choix personnel (Soyez patient, il faut attendre environ 13 minutes dans le mouvement initial). </p>
+<p>&nbsp;</p>
+                  <p>&nbsp;</p>
+                  <p>les recettes ont de son propre aveu amélioré la condition de Gorecki qui a pu enfin s'extraire de la pollution de Katowice. (Certains seréveilleront, tel Pierre Boulez qui, avec sa délicatesse habituelle, taxa l'œuvre de nullité absolue - je n'oserais répéter les termes utilisés - dans une interview au BBC Music Magazine). Pourtant Gorecki n'a absolument pas tenté d'exploiter la veine qu'il avait mise à jour. </p>
+<p>Ce minimalisme poétique, typique des pays d'Europe de l'Est, s'est exprimé dans la musique vocale profane (<a href="https://ninateka.pl/kolekcje/trzej-kompozytorzy/gorecki/audio/piesni-maryjne-op-54-na-chor-mieszany-a-cappella">Chants mariaux, opus 54</a>, pour choeur,  1985) ou sacrée (<a href="https://ninateka.pl/kolekcje/trzej-kompozytorzy/gorecki/audio/przybadz-duchu-swiety-op-61">Viens Esprit Saint, opus 61</a>, pour choeur,  1988) voire intrumentale (Adorable <a href="https://ninateka.pl/kolekcje/trzej-kompozytorzy/gorecki/audio/mala-fantazja-op-73-na-skrzypce-i-fortepian">Fantaisie, opus 73</a>, pour violon &amp; piano,  1997)</p>
+                  <p>L'oeuvre de Gorecki n'a gagné l'étranger que vers le milieu des années 1970, en particulier à la faveur d'une  collaboration jamais interrompue avec le Quatuor Kronos qui a enregistré ses trois opus du genre (<a href="https://www.youtube.com/watch?v=WpuOK1n3gSE">n°1, opus 62</a> (1989) = déjà c'est le Crépuscule, <a href="https://www.youtube.com/watch?v=X7RF_p6FgAY">n°2, opus 64</a> (1991) et l'immense <a href="https://www.youtube.com/watch?v=yyEFzRFjLZ0">n°3, opus ???</a> = Songs are sung (2005, 50 minutes !)). </p>
+                  <p>, il s'est reconverti dans une esthétique plus (con)sensuelle participant de ce qu'on pourrait appeler le minimalisme mystique est-européen.  Lui aussi forçait l'admiration de ses pairs lorsqu'il alimentait l'Automne de Varsovie avec des œuvres d'un modernisme parfois grinçant.  Il a également fait volte-face, adaptant les techniques minimalistes à sa conception de la spiritualité.  </p>
+                  <p>Le succès remporté par cette  symphonie n'a pas eu que des conséquences heureuses : déjà absorbé par l'enseignement et handicapé par une santé perpétuellement chancelante, il s'est trouvé piégé par une pression médiatique à laquelle il n'était pas préparé. Le résultat de tout cela fut qu'il n'a pas écrit tant que cela; on dénombre 85 numéros d'opus environ. la célébrité est une médaille et son revers n'est pas mince quand on est sollicité de toutes parts pour tenir le rang de son pays (Lech Walesa, Jean-Paul II, une commande du Carnegie Hall, presse internationale, , ..., on y perdrait vite son temps et peut-être son âme). Gorecki a écrit cette symphonie il y a 17 ans. Non membre du parti, Il était en guerre presque perpétuelle avec les patrons communistes de Katowice 
+
+Puis, lors du premier pèlerinage du pape en Pologne, il a dirigé "Beatus Vir", une œuvre chorale émouvante pour baryton solo, chœur et orchestre en présence du pape. Au cours des années 1980, il a continué à exprimer son opposition aux communistes par le biais de sa musique, écrivant une pièce intitulée "Miserere" pour commémorer la violence policière contre Solidarité en 1981 et une autre œuvre majeure, "Totus Tuus", pour le troisième pèlerinage du pape, en 1987. .
+
+En 1989, alors que le communisme s'effondrait en Pologne, la musique de Gorecki se répandit. En 1990, la symphonie n ° 3 était créée avec de grands orchestres, de Brooklyn à Sydney, et plusieurs enregistrements étaient réalisés. Mais ce n’est pas avant que la voix douce de la soprano Dawn Upshaw, combinée au son intégral du London Sinfonietta de David Zinman sur le label Elektra Nonesuch, n’ait commencé.
+
+Publié en mai 1992, cet enregistrement de 52 minutes a permis à la symphonie de passer d’une pièce réputée du répertoire moderne à une œuvre universellement populaire. L'enregistrement occupait la première place du palmarès classique de Billboard pendant 37 semaines et figurait dans les 25 meilleurs pendant 93 semaines. Il a culminé à la sixième place du classement de la pop britannique. Les ventes mondiales de l'enregistrement Nonesuch s'élevaient à plus de 600 000 à la fin de l'année. Les orchestres se sont précipités pour exécuter le travail comme un moyen de rester en contact avec leurs auditoires. Naturellement, cette renommée n'a pas échappé aux cinéastes. Le réalisateur Peter Weir a choisi le premier mouvement de la symphonie pour la scène culminante de son film "Fearless".
+
+GORECKI a souffert de nombreux problèmes de santé causés par l’environnement pollué de Katowice et a subi six opérations avant l’âge de 26 ans. Cette soudaine importance a été à la fois mitigée. Cela a nécessité de nombreux voyages, ce qui lui semble avoir été agréable, mais cela l’a également éloigné de la composition. Et cela a suscité beaucoup de questions, souvent très acerbes, sur la signification du succès de la Symphonie n°3, de jalouise certainement aggravée par le caractère réputé imposssible du musicien avec tout le monde interprètes élèves, ....  Gorecki a rejeté l'analyse du New Age selon laquelle la musique répondait aux besoins spirituels de cette époque, comme une explication du succès de la Symphonie n ° 3. Il ne sait pas ce qu'est le New Age, dit-il. Il a déclaré que le travail ne portait pas sur la Seconde Guerre mondiale en Pologne, bien que la chanson du deuxième mouvement soit extraite d’une inscription sur un mur d’un jeune prisonnier des nazis. Et il a insisté sur le fait qu'il ne s'agissait pas d'une œuvre religieuse, même si le texte du premier mouvement est une lamentation monastique polonaise du XVe siècle, connue sous le nom de Lamentation Sainte Croix, dans laquelle la Vierge Marie demande à son fils mourant de partager ses blessures avec elle. Le troisième mouvement est basé sur une mélodie populaire polonaise du XIXe siècle, avec une mère en deuil du décès de son jeune fils soldat lors d'un soulèvement dans la région de Silésie en Pologne, où Gorecki est né. En bref, la pièce traite des motifs de la mère, de l’enfant et de la prémonition de la mort.
+
+La musique de la symphonie n ° 3 est avant tout lente. Voici ce que décrit un critique du New York Times, John Rockwell: "La Symphonie de chansons douloureuses" de M. Gorecki consiste en près d'une heure de musique lente, trois lentos se succédant sans honte. L'orchestre respire et bat comme un organisme blessé, avec une voix de femme prononçant périodiquement des lamentations angoissées ". Rockwell a également écrit: "Le chant, bien que crucial, est composé de longues étendues de texture purement instrumentale. La plainte du premier mouvement construit comme un immense canon est flanquée des deux moitiés d’un énorme canon pour cordes, allant de la quasi inaudibilité à la montée en puissance, au triomphe Ailleurs, la musique rappelle non seulement les minimalistes mystiques, 
+
+L'écriture de "Beatus Vir", l'oratorio commandé par le pape en 1977, alors qu'il était encore cardinal de Cracovie, avait entraîné un processus créatif similaire, mais visiblement plus émotionnel. "Un jour, un ami est arrivé de Cracovie avec une lettre du cardinal me demandant d'écrire à l'occasion du 900e anniversaire de la mort de saint Stanislaw", a déclaré Gorecki. "Une des questions que je devais me poser: est-ce que Stanislaw a été assassiné? Une fois que j'ai décidé d'accepter une commission, je dois tout savoir sur la personne. J'ai parcouru les textes de l'époque et il y avait ce doute. C'est ce qui m'a plu à propos de l’histoire. J’ai passé un an à lire sur St Stanislaw. "
+
+Gorecki disposa de deux ans pour écrire cette pièce - l'anniversaire ne fut pas jusqu'en 1979 - mais entre-temps, le cardinal Wojtyla était devenu le pape. Et le fait qu'il écrivait pour le pape était clairement un tournant dans la carrière du compositeur.  Pour des raisons de sécurité et à la grande déception du compositeur, le pape n'a pas pu s'asseoir au premier rang. "J'ai discuté avec le pape après. Nous nous sommes embrassés." (C’est probablement un euphémisme: Malecka se souvient que les deux hommes étaient tellement émus après le spectacle qu’ils ont été émus aux larmes au cours de l’audience privée.) "L’orchestre était merveilleux. La chorale aussi. Aucun des grands chanteurs ne voulait chanter non plus, alors j’ai pris un jeune homme inconnu, il s’est très bien débrouillé, je dirigeais et après la première mi-temps, je sentais mes mains tomber. C'était un tel effort. C'était un travail difficile mais la plus grande aventure de ma vie. C'était le premier pape polonais et j'étais le premier compositeur polonais à avoir écrit pour le pape. Personne ne peut me battre à ça. "
+
+Malecka se souvient que le pape était lui aussi impressionné. "La dévotion de Gorecki, son mode de vie simple et son sens de la justice ont ému le Saint-Père", dit-elle. "Il a continué à communiquer avec Henryk après la représentation."  Avec une fille, Anna, une pianiste qui a récemment fait ses débuts à Londres à Wigmore Hall, et un fils, Mikolaj, compositeur et étudiant à l'académie de musique, et sa femme, Jadwiga, professeur de piano, il n'y a pas beaucoup de place pour Gorecki dans l'appartement urbain de la famille. "Je ne pouvais pas travailler avec toute cette musique", rit-il.
+
+Chez lui - un petit jardin, quelques sapins et une haie - il a un piano, d'autres instruments et un peu de paix, de plus en plus interrompus par le téléphone. Mais la pollution industrielle qui a imprégné Katowice au cours des 40 années de communisme est écrasante, même là. "L'eau est terrible et l'air est pollué - toute la région est l'endroit le plus pollué de la planète.  "Je vais acheter ma paix." Il a en tête une maison dans les montagnes de Zakopane, où il reste encore du désert.
+
+"Cela fait 30 ans", dit-il, "j'ai essayé de déménager, il est donc grand temps de me donner une chance de regarder quelque chose de bien avant de mourir. Quand vous aurez 60 ans, vous devrez vous calmer."</p>
+                  <p> When d.j.s at the British radio station Classic FM began playing the disk on a weekly basis, it became an unlikely mainstream hit, and went on to sell more than a million copies. Ritualistic, mesmeric, melancholy, enveloping, the Third supplied sonic ambience in many a home that otherwise lacked classical trappings. It has appeared on movie soundtracks—Maurice Pialat’s “Police,” —and has been sampled or echoed in various pop songs, including Lamb’s “Gorecki,” which, in 1997, reached No. 30 on the British singles chart.
+
+ The triumph of the Third was one that he neither sought nor exploited.
+
+For years, Górecki was said to be writing a sequel to his most popular work. At his death, in 2010, the promised symphony remained unfinished, but it was complete in sketch form, and indications for orchestration were precise enough that Górecki’s son, Mikołaj, was able to fashion a convincing full score, possibly, a coded critique of the mode of listening that had helped to make a phenomenon of the Third. All told, it is a commanding, haunting farewell—one that deserves, but is unlikely to receive, the cult fame accorded to its predecessor.
+
+</p>
+                  <p> Górecki’s early works were among the wildest of their era. The First Symphony, subtitled “1959,” inhabits a space between the tightly coiled serialism of Pierre Boulez and the more expansive gestures of middle-period Lutosławski. Fortissimo eruptions coincide with pianissimo meditations, in a back-and-forth that would become a mainstay of Górecki’s style. Even more striking is the Second Symphony, a tribute to Copernicus, which pivots from a brutally dissonant opening section to a liturgically chanting climax. But the composer’s early masterpiece is the orchestral monolith “Refrain” (1965), which ought to be as familiar as György Ligeti’s otherworldly soundscapes of the same period. Here, Górecki reveals his flair for generating almost unbearable tension within apparently static structures.
+                    
+                    In “Three Pieces in Old Style,” from 1963, Górecki moved in a quite different direction, adopting a stripped-down, archaically tonal voice. Before Arvo Pärt, even before Terry Riley, Górecki took up certain hypnotically looping patterns that would come to be associated with minimalist music, broadly defined. The Third Symphony, which had its première in France, in 1977, grew from the sound world of the Three Pieces and the “Copernican” Symphony’s finale.  The dissonances that had temporarily retreated in the Third Symphony made a return in a 1979 setting of “Beatus Vir,” for chorus and orchestra. The Third String Quartet, “…songs are sung,” completed in 1995, takes up relatively simple-seeming, lyrical materials and subjects them to strenuous elongation, until they assume an alien, tormented character. The fact that Górecki withheld that quartet for a decade before finally releasing it to the Kronos Quartet, his longtime advocates, suggests a conflicted relationship with the mass public that had gathered around him.
+                    
+                    The Fourth Symphony is a conscious summing-up; the ailing composer may have sensed that it would be his valediction. The subtitle, “Tansman Episodes,” invokes the Polish-born twentieth-century composer Alexandre Tansman; the initial theme, heavy on the notes A, E, and E-flat, is derived from the letters of Tansman’s name. (In German, E-flat is called “Es.”)</p>
+<p>L'œuvre de Gorecki ne se limite évidemment pas à ce tube : <a href="http://www.jpc.de/jpcng/classic/detail/-/hnum/7209220?rk=classic&rsk=hitlist">Miserere</a>, <a href="http://www.jpc.de/jpcng/classic/detail/-/hnum/6469117?rk=classic&rsk=hitlist">Requiem für eines Polka</a> (plages 1 à 4), Concerto pour clavecin, …, ne peuvent manquer de charmer l'auditeur réceptif. La santé de Gorecki s'est déteriorée au point que plus personne n'espérait une quatrième symphonie, 35 ans après la troisième. Elle existait cependant à l'état de réduction pour piano et, à sa mort, on en a effectivement retrouvé les esquisses complètes dans ses tiroirs. qu'il n'a plus écrit grand chose pendant les xxx années de sa vie. Il a commencé une 4<sup>ème</sup> symphonie qu'il n'a pu terminer et qu'il a confié à son fils, à cette fin. </p>
+           
+
+                 
+                  
+              <div class="conteneurImageSeule">
+                      <div>
+                          <figure>
+                            <img src="../images/gorecki/goreckifils.png" alt="Mikolaj Gorecki" />
+                              <figcaption>Mikolaj Gorecki</figcaption>
+                          </figure>
+                </div>
+                </div>    
+                  
+                  
+                <p>L'une des plus grandes réussites d'Henryk Gorecki pourrait bien être (la formation de son)  propre fils, Mikolaj Gorecki (1971- ), dont l'oeuvre sort progressivement de l'ombre à l'Ouest, à mesure qu'on l'enregistre et la diffuse. Il s'est effectivement attelé à la tâche d'instrumenter l'ultime symphonie ébauchée par son père sous la forme d'une réduction pour piano (<a href="https://www.youtube.com/watch?v=3UQpE1EhQ24">Symphonie n°4</a>). Le travail du fils est irréprochable et cependant l'oeuvre ne (me) convainc pas absolument. </p>
+                  
+
+                    
+              </div></div>
+
+
+             
+
+
+            <a id="ancreRetourHautPage" href="#site">&uarr;</a>
+
+            <!-- Inclusion footer -->
+            <div id="footer"></div>
+
+        </div>
+    
+    
+    </div>
+
+</body>
+</html>
