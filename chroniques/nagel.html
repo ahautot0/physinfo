@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Faits divers | L'histoire cryptée des Sonates opus 54 &amp; 57 de Beethoven </title>
+  <meta name="description" content="Le pianiste et compositeur François Nagel appartient à la jeune génération des musiciens français : il défend son dernier enregistrement, Le Livre de Piano, un projet artistique au parfum pédagogique" />
+  <link rel="shortcut icon" href="../logo.ico" />
+  <link href="../style.css" rel="stylesheet" type="text/css" /> 
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <script src="../js/jquery-1.10.2.js"></script>
+  <script src="../js/menus.js"></script>
+  <script src="../js/design.js"></script>
+  <script src="../js/gestionAudioVideo.js"></script>
+  <script> 
+    // Inclusion Header et Footer
+    $(function(){
+      $(function(){
+        $.ajax({
+           url: "../template/header.php",
+           type: "POST",
+           data: ({ROOT: '../'}),
+           success: function(data) {
+             $("#header").html(data);
+             $("#faitsDivers").addClass("active"); /*a changer en fonction de la page*/
+             update_design_when_header_loaded();
+          }
+        });
+      });
+      $("#miniMenus").load("../template/miniMenus.php", { ROOT: '../' }, mini_menus_after_loading);
+      $("#footer").load("../template/footer.php", { ROOT: '../' }, update_design_footer);  
+    });
+  </script> 
+</head>
+
+<body id="site">
+
+    <div>
+        <!-- Inclusion header -->
+       <div id="header"></div>
+
+        <div id="miniMenus"></div>
+
+        <nav id="menuLateralAncres">
+            <ul>
+                <li>
+                    <a id="ancrepresentation" href="#presentation" class="linavMenu active">
+                    <span>Présentation</span>
+                    </a>
+        </li>
+                <li>
+                    <a id="ancredescription" href="#description" class="linavMenu">
+                    <span>Description</span>
+                    </a>
+        </li>
+                <li>
+                    <a id="ancremodesdejeu" href="#modesdejeu" class="linavMenu">
+                    <span>Modes de jeu</span>
+                    </a>
+        </li>
+                <li>
+                    <a id="ancrebruits" href="#bruits" class="linavMenu">
+                    <span>Les bruits de la guerre</span>
+                    </a>
+                </li>
+                
+                 <li>
+                    <a id="ancreappassionata" href="#appassionata" class="linavMenu">
+                    <span>Le cas de la Sonate n°23</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="corps">
+
+            <div id="contenuPrincipal">
+                <h2>Faits divers</h2>
+                <h3>Carte blanche à François Nagel, pianiste et compositeur</h3>
+                
+
+                 <nav class="filAriane">
+                    <ul>
+                        <li class="breadcrumbItem"><span>Vous êtes ici : </span> Musique</li>
+                        <li class="breadcrumbItem">
+                          <a href="../chroniques.html">Chroniques</a>
+                        </li>
+                        <li class="breadcrumbItem">
+                          <a href="../faitsDivers.html">Faits divers</a>
+                        </li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Carte blanche à François Nagel</li>
+                    </ul>
+                </nav>
+                
+                <div class="sommaire">
+                    <div class="sommaireTitle">
+                        <h6>Sommaire</h6>
+                        <a role="button" tabindex="0" class="sommaireLink">[ afficher ]</a>
+                    </div>
+
+                    <ul class="linksSummary">
+                        <li><a href="#presentation">Présentation</a></li>
+                        <li><a href="#description">Description</a></li>
+                        <li><a href="#modesdejeu">Modes de jeu</a></li>
+                        <li><a href="#bruits">Les bruits de la guerre</a></li>
+                        <li><a href="#appassionata">Le cas de la Sonate n°23</a></li>
+                    </ul>
+                </div> 
+  
+                <p></p>
+                <p><i>NDRL : physinfo ouvre occasionnellement ses colonnes à tout musicien porteur d'un projet artistique et soucieux de lui assurer  une audibilité accrue. L'artiste peut y faire entendre (des extraits de l'une de) ses oeuvres, les analyser, les commenter voire les expliquer, dans le respect des règles en usage. Tout exposé n'engage que son auteur. Cette chronique présente la dernière production en date du pianiste et compositeur François Nagel, intitulée &quot;Le Livre de Piano&quot; ainsi qu'une interview circonstanciée de son auteur.</i></p>
+                
+                <div id="presentation">
+          <h4>L'auteur</h4>
+      <p>Né en France, en 1979, Florent Nagel L’opus 54 de Ludwig van Beethoven serait-il une contribution secrète à la Révolution Française ? C’est ce que tente de démontrer le musicologue Georges Kan dans ce dossier. Selon lui, pour composer cette sonate, Beethoven se serait particulièrement bien renseigné, autant sur la fin de Louis XVI que sur la réalité du champ de bataille à Valmy. Les nombreux indices et jeux de mots en français pointent naturellement la personnalité de Jean-Baptiste Bernadotte avec lequel Beethoven a été en contact à l’Ambassade de France, à Vienne, en 1798, avant d’entamer les esquisses de sa <em>Troisième Symphonie</em>, contemporaine de l’opus 54. Par ailleurs, le fait que la sonate ne comporte aucune indication de pédale (<em>senza sord.</em> ou <em>Ped.</em>), tend à renforcer l’idée d’une œuvre antérieure à l’opus 26 et composée avant 1800, sur un piano viennois de type <em>Hammerflügel</em> à genouillères (Walter ou Streicher).</p>
+      
+      <div class="conteneurImageSeule">
+                      <div>
+                          <figure>
+                              <img src="../images/kan/opus54.png" alt="Sonate n°22, opus 54" />
+                              <figcaption>Sonate n°22, opus 54</figcaption>
+                          </figure>
+                      </div>
+                  </div>
+      <p>La Sonate pour piano n°22 de Ludwig van Beethoven serait donc la représentation musicale de la <strong>Fuite de Varennes (1791)</strong> et de la <strong>Bataille de Valmy (1792)</strong>. Sur la couverture de la première édition (<em>A Vienne, au Bureau des arts et d’industrie</em>) on peut lire l'inscription, <em><strong>LI</strong> <sup>me</sup> SONATE</em>. La typographie utilisée (un gras renforcé) crée l’illusion d’un &quot;LI&quot; gravé dans le marbre. Il ne peut s’agir de la 51<sup>ème</sup> Sonate car Beethoven, d’une part n’en a composé que 32 en tout et que, d’autre part, s’il numérote effectivement ses œuvres (op. 54 en l’occurrence), il ne comptabilise jamais sa production par genre. &quot;LI&quot; serait une double référence cachée à Louis XVI et à Valmy : le produit de X et V ajouté au I donne LI, et les lettres VY entrelacées créent un V barré (ancêtre du L) et un I. Cette conjecture soulève une question subsidiaire, relative à la  Sonate n°23 (Appassionata), opus 57,  parue chez le même éditeur; afin de ne pas alourdir l'exposé, son examen est différé en fin de chronique.<br/><br/></p> 
+      <p>Concise, la Sonate n°22 est composée de deux mouvements dont voici les titres, accompagnés de propositions métronomiques (MM = Maelzel's metronome oscillations) :</p>
+      
+      <ul class="miniListCorps">
+                    <li>1. <em>In Tempo d'un Menuetto</em> (sic) (40 MM la mesure)</li>
+                    <li>2. <em>Allegretto</em> (60 MM la mesure) - <em>piu allegro</em> (80 MM la mesure)</li>
+</ul>
+   
+         
+       <p>A noter dans la première partie, mesures 3 et 7 à la main gauche, la citation des 6 croches du <em>Menuet d’Exaudet</em> (fa-la-do-la-si-sol-fa) sous lesquelles venaient se placer les paroles révolutionnaires <em>Imagine, un beau matin</em> dans la Parodie &quot;Sur l’inimitable machine du médecin Guillotin propre à couper les têtes et dite de son nom Guillotine&quot;. Le jeu de mots du titre <em>In Tempo d'un Menuet tô(t)</em>, confirme que la Guillotine, objet de cette parodie très populaire pendant la Révolution française, est bien le sujet central de cette Sonate de Beethoven. En voici le premier couplet :</p>
+       
+        <i>Guillotin,<br/>
+                  Médecin,<br/>
+                  Politique,<br/>
+                  Imagine, un beau matin<br/>
+                  Que prendre est inhumain<br/>
+                  Et peu patriotique.<br/>
+                  Et sa main<br/>
+                  Fait soudain<br/>
+                  Une machine<br/>
+                  Humainement qui tuera, ...<br/>
+                 </i>
+
+          </div>
+                
+                
+                 <div id="description">
+                 <h4>Livre pour piano</h4>
+    
+<p>Le Livre pour Piano est un recueil de 25 pièces relativement courtes dédicacées, isolément ou par groupe de deux, à un musicien différent. Chacune porte un sous-titre qui évoque le principe théorique ou technique sur lequel elle s'appuye ou qu'elle entend illustrer. Bien que l'auteur affirme n'avoir apposé ces titres qu'a posteriori, on ne peut s'empêcher de penser qu'ils ont au moins inconsciemment participé à l'inspiration et la construction de la pièce entière. Voici la succession des pièces destinée à faciliter l'écoute :</p>
+
+<ul class="miniListCorps">
+                    <li>1 &amp; 2. <a href="https://www.youtube.com/watch?v=SF7-rYL77qM&list=PLmLJhiY5ntu4oJGL9Xk0uoAhWpjQNvW_0&index=1">Prélude</a> et <a href="https://www.youtube.com/watch?v=nJ90QbkZ6iM&list=PLmLJhiY5ntu4oJGL9Xk0uoAhWpjQNvW_0&index=2">Fugue</a> en Fa (dédié à Virginie Gros)</li>
+                    <li>3. <a href="https://www.youtube.com/watch?v=IB1E03m1jU4&list=PLmLJhiY5ntu4oJGL9Xk0uoAhWpjQNvW_0&index=3">Quartes</a> (dédié à Alain Cochard)</li>
+                    <li>4. <a href="https://www.youtube.com/watch?v=IhsRkdROM0Q&index=4&list=PLmLJhiY5ntu4oJGL9Xk0uoAhWpjQNvW_0">Glissements</a> (dédié à Damien Top)</li>
+                    <li>5 &amp; 6. <a href="https://www.youtube.com/watch?v=FEhKvcellWg&index=5&list=PLmLJhiY5ntu4oJGL9Xk0uoAhWpjQNvW_0">Burlesca</a> et <a href="https://www.youtube.com/watch?v=TxXSuudsUHk&index=6&list=PLmLJhiY5ntu4oJGL9Xk0uoAhWpjQNvW_0">Ostinato</a> en La (dédié à Christophe Frionnet)</li>
+                    <li>7. <a href="https://www.youtube.com/watch?v=ULbts0llz6I&list=PLmLJhiY5ntu4oJGL9Xk0uoAhWpjQNvW_0&index=7">Etude Giratoire</a> (dédié à Aurore et Jacques Corito n)</li>
+                    <li>8. <a href="https://www.youtube.com/watch?v=80atqPVXuqM&index=8&list=PLmLJhiY5ntu4oJGL9Xk0uoAhWpjQNvW_0">Octaves</a> (dédié à Pascal Amoyel)</li>
+                    <li>9 &amp; 10. <a href="https://www.youtube.com/watch?v=bPZvmlSjOXk&index=9&list=PLmLJhiY5ntu4oJGL9Xk0uoAhWpjQNvW_0">Prélude</a> et <a href="https://www.youtube.com/watch?v=OKwfzNXZr_A&index=10&list=PLmLJhiY5ntu4oJGL9Xk0uoAhWpjQNvW_0">Fuga</a> Antica (dédié à Isabelle Kevorkian)</li>
+                    <li>11. <a href="https://www.youtube.com/watch?v=rjXF-fhj4kk&index=11&list=PLmLJhiY5ntu4oJGL9Xk0uoAhWpjQNvW_0">Invention toccata</a> (dédié à Michaël Ertzscheid)</li>
+                    <li>12 &amp; 13. <a href="https://www.youtube.com/watch?v=i7QfVQskCdE&list=PLmLJhiY5ntu4oJGL9Xk0uoAhWpjQNvW_0&index=12">Prélude</a> et <a href="https://www.youtube.com/watch?v=72qoNzE-E-E&list=PLmLJhiY5ntu4oJGL9Xk0uoAhWpjQNvW_0&index=13">Fugue</a> en Sol (dédié à Steve Journey)</li>
+                    <li>14. <a href="https://www.youtube.com/watch?v=8qwX6d8-zrE&list=PLmLJhiY5ntu4oJGL9Xk0uoAhWpjQNvW_0&index=14">Canon</a> (dédié à Fabien Cailleteau)</li>
+                    <li>15. <a href="https://www.youtube.com/watch?v=-3PVBY6l8to&list=PLmLJhiY5ntu4oJGL9Xk0uoAhWpjQNvW_0&index=15">Quintes</a> (dédié à Jean-François Marquet)</li>
+                    <li>16 &amp; 17. <a href="https://www.youtube.com/watch?v=WXScfT5YMhw&list=PLmLJhiY5ntu4oJGL9Xk0uoAhWpjQNvW_0&index=16">Bagatelle</a> et <a href="https://www.youtube.com/watch?v=DTuo-TEFc38&index=17&list=PLmLJhiY5ntu4oJGL9Xk0uoAhWpjQNvW_0">Fugue</a> en Ut (dédié à Pierrick Cordonnier)</li>
+                    <li>18. <a href="https://www.youtube.com/watch?v=e4uoTWmoABQ&index=18&list=PLmLJhiY5ntu4oJGL9Xk0uoAhWpjQNvW_0">Hommage à Ligeti et Rautavaara</a> (dédié à Lang Lang)</li>
+                    <li>19 &amp; 20. <a href="https://www.youtube.com/watch?v=nRsunxoKA3g&index=19&list=PLmLJhiY5ntu4oJGL9Xk0uoAhWpjQNvW_0">Prélude</a> et <a href="https://www.youtube.com/watch?v=rofoeoR-FGg&index=20&list=PLmLJhiY5ntu4oJGL9Xk0uoAhWpjQNvW_0">Fuga</a> ricercata (dédié à Nicolas Bacri)</li>
+                    <li>21 &amp; 22. <a href="https://www.youtube.com/watch?v=N778SnuI0aE&list=PLmLJhiY5ntu4oJGL9Xk0uoAhWpjQNvW_0&index=21">Invention</a> et <a href="https://www.youtube.com/watch?v=Z7ZNnymLe6A&list=PLmLJhiY5ntu4oJGL9Xk0uoAhWpjQNvW_0&index=22">Fugue</a> en Mi (dédié à Jean-Roch Lyeuté)</li>
+                    <li>23 &amp; 24. <a href="https://www.youtube.com/watch?v=ueFieZ2fFv4&list=PLmLJhiY5ntu4oJGL9Xk0uoAhWpjQNvW_0&index=23">Prélude</a> et <a href="https://www.youtube.com/watch?v=DPuGDqbLZF4&list=PLmLJhiY5ntu4oJGL9Xk0uoAhWpjQNvW_0&index=24">Fugue</a> en Ré (dédié à Bona Song)</li>
+                    <li>25. <a href="https://www.youtube.com/watch?v=twlxwHyorkQ&list=PLmLJhiY5ntu4oJGL9Xk0uoAhWpjQNvW_0&index=25">Annexe - Pour le Dos</a> (Exercices)</li>
+</ul>
+<p><sub><sub><sub> 
+                  <audio controls preload="none">
+                    <source src="../son.mp3/kan/MONO-017.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/kan/MONO-017.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible
+                  </audio>
+                  </sub></sub></sub>.</p>
+<p>&nbsp;</p>      
+                 
+          
+          
+          
+          </div>
+          
+           <div id="modesdejeu">
+          <h4>Modes de jeu</h4>
+          <p></p><p><span class ="souligner">Jeu à contretemps</span></p>
+<p>Le <em>perpetuum mobile</em> en double-croches du 2<sup>ème</sup> mouvement est basé sur un thème composé d’une gamme montante brisée en sixtes alternées offrant un motif aigu différent du grave si l’on joue à contretemps.
+</p>
+
+<div class="conteneurImages">
+                      <div> <figure>
+                              <img src="../images/kan/allegretto.jpg" alt="Beethoven, Sonate opus 54, Allegretto, mes. 1-5" />
+                              <figcaption>Allegretto, mes. 1-5</figcaption>
+                                 </figure></div>                
+</div>
+
+<p>Pour retrouver la ligne mélodique, on peut s’aider des relais entre m.g. et m.d., par exemple mes. 3, où le premier <em>la</em> doit être légèrement accentué pour consolider la répétition du suivant, juste après, à la m.d.</p>
+
+<p>De cet impératif technique découle que les 2 premières mesures sont jouées à contretemps ainsi que les mes. 5-6, 9-10 et 13-16. Les <em>sf</em> placés trop à droite dans la première édition ne concernent pas la note tenue, mais la précédente, soit le <em>la</em> m.g. mes. 3, et le <em>fa</em> m.d. mes. 5. Ainsi, il est possible de rechercher une &quot;orchestration&quot; du mouvement qui correspondra peu ou prou au jeu des pouces <sub><sub><sub> 
+                  <audio controls preload="none">
+                    <source src="../son.mp3/kan/MONO-019.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/kan/MONO-019.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible
+                  </audio>
+                  </sub></sub></sub>.
+</p>
+
+<p><span class ="souligner">Dynamiques</span></p>
+<p>A noter, l’utilisation du <em>cresc.</em> en <span class ="souligner">dynamique locale</span> [lire] :</p>
+
+ <ul class="miniListCorps">
+                    <li>Mes. 11, le <em>cresc.</em>, s’applique au <em>sol</em> m.g., renforcé avant de conduire au <em>la-sol-fa-mi</em> de la m.d à la mesure suivante.</li>
+                    <li>Mes. 17, le <em>cresc.</em>, s’applique au <em>do</em> m.g. en double-croche, ce qui donne deux gammes descendantes avec un accent sur le début de la première (effet d’artillerie avec le décalage vers le grave, connu depuis sous le nom d’effet Doppler).</li>
+                    <li>Mes. 19, le <em>decresc.</em> explicitement pour le 2<sup>ème</sup> temps de double-croches à la m.g. : dynamique de précaution, <em>decresc. = senza cresc.</em> Ceci confirme que le <em>cresc.</em> mes. 17 est pour la m.g.</li>
+</ul>
+
+
+
+<p><span class ="souligner">Ornementation</span></p>
+<p>Dans l’<em>Allegretto</em> deux trilles seulement, l’un dans la 2<sup>ème</sup> volta de la mes. 20, l’autre aux mes. 160-161, deux roulements de tambour notés <em>cresc.</em> sur l’amorce (une sorte d’accent). Celui de la mes. 20, particulièrement court et dru, amorcé sur la note supérieure dans un contexte <em>p dolce</em>, donne l’illusion d’un roulement de tambour entendu de loin. Celui-là autant que les deux autres interviennent avant la relance de l’ostinato.
+</p>
+          
+          </div>
+          
+           <div id="bruits">
+          <h4>Interview</h4>
+      <p>Pour faciliter la lecture, les questions sont imprimées en caractères gras.</p>  
+      <p><strong>Chaque pièce du recueil porte un sous-titre qui évoque clairement un point de  théorie musicale. Faut-il y voir l'expression un procédé d'atelier d'écriture ou une volonté didactique à l'intention de l'auditeur ?</strong></p>
+      <p><strong>Certains titres, quintes, quartes, octaves, de réclament pas d'explication particulière. D'autres sont plus sybillins, &quot;Etude giratoire&quot;, par exemple. Pouvez-vous nous en dire davantage ?</strong></p>  
+      <p><strong>La pièce portant le n°18 est un hommage à Ligeti et Rautavaara où les intervalles de secondes jouent un rôle important. Sont-ce ces intervalles qui motivent le choix de ces illustres collègues ?</strong></p>
+      <p><strong>Dans la même pièce, vous distinguez des intervalles de secondes chromatiques et diatoniques. Comment le lecteur doit-il comprendre cette distinction alors qu'on joue sur un piano au tempérament égal ?</strong></p> 
+       
+       
+      
+   
+          
+
+
+ 
+          </div>
+  
+  <div id="appassionata">
+          <h4>Le cas de la Sonate n°23</h4>
+          
+        <div class="conteneurImageSeule">
+                      <div>
+                          <figure>
+                              <img src="../images/kan/opus57.png" alt="Sonate n°22, opus 54" />
+                              <figcaption>Sonate n°23, opus 57</figcaption>
+                          </figure>
+                      </div>
+                  </div>
+                  
+                  
+        <p>L'histoire ne s'arrête pas là : &quot;Napoléon à la bataille de Rivoli&quot; serait, d’après Georges Kan, le sujet de la Sonate n°23, opus 57, du même Beethoven. </p>
+          <p>Un premier problème est le suivant : la couverture de l'édition originale de cette oeuvre (chez le même éditeur) fait état d'une inscription énigmatique en tous points analogue à celle qui figure sur la couverture de la sonate n°22. La seule différence significative est le remplacement de la mention <em><strong>LI</strong> me SONATE</em> par <em><strong>LIV</strong> me SONATE</em>.  Aucune autre oeuvre de Beethoven publiée  au Bureau des arts et d’industrie ne comporte de mention similaire. </p>
+          <p>La première idée qui vient à l'esprit a été développée par Barry Cooper, dans &quot;The Creation of Beethoven’s 35 Piano Sonatas&quot; (Cooper incorpore au corpus habituel des 32 sonates, les 3 sonates d'extrême jeunesse, dites &quot;A l'Electeur&quot;). Il y cite Hans-Werner Küthen selon qui les inscriptions &quot;LI me&quot; et &quot;LIV me&quot; renvoient aux  51<sup>ème</sup> et 54<sup>ème</sup> sonates réellement publiées par le Bureau des arts et d’industrie <em>tous auteurs confondus</em>. Pour que cette interprétation tienne la route, il faudrait admettre que cet éditeur n'ait publié aucune sonate entre avril 1806 et février 1807 (dates de parution des opus 54 et 57). Déjà cela pose  question et d'autre part, serait-il vraisemblable que Beethoven subisse par deux fois l’annonce d’une information qui ne relève en rien de son propre catalogue, lui qui maîtrisait les publications dans leur moindre détail ? </p>
+          <p>Une autre interprétation est envisageable : Beethoven aurait  manipulé son éditeur en lui demandant de publier au moment opportun ses  opus 54 et 57 sous les intitulés de LI et LIV sans  révéler ses intentions subversives. En d'autres termes, Beethoven aurait cherché à retarder ces deux publications pour pouvoir les placer comme &quot;LI me&quot; et &quot;LIV me&quot; dans le catalogue de son éditeur et brouiller ainsi la lecture des titres respectifs, à savoir &quot;La Révolution&quot; pour l’opus 54 (LI faisant référence autant à la fin de Louis XVI qu’à Valmy), et &quot;Napoléon à Rivoli&quot; pour l’opus 57 (LIV décomposé en LI et [An] V).            </p>
+          <p>La <a href="https://www.youtube.com/watch?v=URL1HEBciWc">Sonate n°23</a>, surnommée &quot;Appassionata&quot;, est composée de trois mouvements :</p>
+          
+          <ul class="miniListCorps">
+                    <li>Le premier, Allegro assai, dépeint la colère de Napoléon Bonaparte : bloqué à Mantoue, il risque maintenant la défaite face aux Autrichiens du Général Alvinzy. Le thème tantôt martial, tantôt impérial, ponctué de 4 croches dans le grave (reprises dans la Symphonie n° 5), est interrompu par des accords colériques.</li>
+                    <li>Le deuxième mouvement, Andante con moto, décrit l’attente. Le thème varié change progressivement d’éclairage : nocturne dans la 1<sup>ère</sup> variation, aux aurores à la 2<sup>ème</sup>, puis plein soleil dans la suivante avant une conclusion résignée.</li>
+                   <li>Le troisième mouvement, Allegro ma non troppo,  annonce l’arrivée des renforts. Allégresse, vaillance et détermination ponctuent ce mouvement qui se clôt sur une tarentelle endiablée.</li>
+</ul>
+
+            
+            
+    
+             
+          </div>   
+          
+          
+          </div>
+        
+
+
+            <a id="ancreRetourHautPage" href="#site">&uarr;</a>
+
+            <!-- Inclusion footer -->
+            <div id="footer"></div>
+
+        </div>
+    
+    
+    </div>
+
+    <!-- Effet smooth ancres -->
+    <script src="../js/onclick.js"></script>
+    <script src="../js/anchors.js"></script>
+
+</body>
+</html>
