@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Compositeurs contemporains | Henryk Gorecki</title>
+  <meta name="description" content="Henryk Gorecki n'a pas composé que la Symphonie des chants plaintifs : le reste de son oeuvre vaut une écoute attentive de même que celle de son fils, Mikolaj" />
+  <link rel="shortcut icon" href="../logo.ico" />
+  <link href="../style.css" rel="stylesheet" type="text/css" /> 
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <script src="../js/jquery-1.10.2.js"></script>
+  <script src="../js/menus.js"></script>
+  <script src="../js/design.js"></script>
+  <script src="../js/gestionAudioVideo.js"></script>
+  <script> 
+    // Inclusion Header et Footer
+    $(function(){
+      $(function(){
+        $.ajax({
+           url: "../template/header.php",
+           type: "POST",
+           data: ({ROOT: '../'}),
+           success: function(data) {
+             $("#header").html(data);
+             $("#portraitscompositeurs").addClass("active"); /*a changer en fonction de la page*/
+             update_design_when_header_loaded();
+          }
+        });
+      });
+      $("#miniMenus").load("../template/miniMenus.php", { ROOT: '../' }, mini_menus_after_loading);
+      $("#footer").load("../template/footer.php", { ROOT: '../' }, update_design_footer);  
+    });
+  </script> 
+</head>
+
+<body id="site">
+
+    <div>
+        <!-- Inclusion header -->
+        <div id="header"></div>
+
+        <div id="miniMenus"></div>
+
+        <div id="corps">
+
+            <div id="contenuPrincipal">
+                <h2>Compositeurs contemporains</h2>
+                <h3>Kaija Saariaho (1933-2010), compositeur polonais</h3>
+
+                <nav class="filAriane">
+                    <ul>
+                        <li class="breadcrumbItem"><span>Vous êtes ici : </span> Musique</li>
+                        <li class="breadcrumbItem">
+                          <a href="../chroniques.html">Chroniques</a>
+                        </li>
+                        <li class="breadcrumbItem">
+                          <a href="../portraitscompositeurs.html">Compositeurs contemporains</a>
+                         </li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Henryk Gorecki</li>
+                    </ul>
+                </nav>  
+  
+              <div class="blocImgFirstAndText">
+                <div class="conteneurImageSeule">
+                      <div>
+                          <figure>
+                              <img src="../images/gorecki/gorecki.png" alt="Henryk Gorecki" />
+                              <figcaption>Henryk Gorecki</figcaption>
+                          </figure>
+                      </div>
+                </div>
+
+<p>De tous temps il s'est trouvé des compositeurs sauvés de l'oubli par la grâce - si c'en est une - d'une oeuvre singulière ayant quasiment occulté toutes les autres, pourtant présentes à leur catalogue. Leur liste est de longueur variable selon le degré de culture musicale de chacun : à titre d'exercice, assurez-vous quand même que vous ne connaissez pas que l'Apprenti Sorcier de Paul Dukas, le Poème d'Ernest Chausson, les Planètes de  Gustav Holst, les Nuits dans les Jardins d'Espagne de Manuel de Falla, Carmina Burana de Carl Orff, ...,  et amusez-vous à compléter cette liste, à l'usage des autres bien sûr ! Cette (més)aventure  est arrivée à Henryk Gorecki (1933-2010), un musicien polonais qui nous a quittés trop tôt. De santé précaire (on lui a comptabilisé 6 séjours  hospitaliers rien qu'avant 26 ans),  il n'a pas connu d'autre choix que de passer les 60 premières années de son existence à (proximité de) Katowice, une des cités les plus polluées d'Europe. Lorsqu'une éclaircie est apparue dans sa vie, vers 1991, à la faveur d'un événement musical exceptionnel  sur lequel nous allons revenir, l'homme put enfin se retirer dans l'environnement agréable auquel il aspirait. Le musicien eut moins de chance : handicapé par la maladie, il ne composa plus que parcimonieusement, visant à l'essentiel.</p>
+<p>Gorecki (prononcez &quot;Goretzki&quot;) a hérité des dons musicaux de sa mère, une pianiste  décédée  à 26 ans alors que lui-même n'avait que deux ans. D'abord instituteur, il a repris, en 1955, des études  de composition musicale auprès de Boleslaw Szabelski (1896-1979), un professeur influent (Intéressante <a href="https://www.youtube.com/watch?v=YFdrCgJXAWQ">Symphonie n°4</a>,  1957), lui-même élève de Karol Szymanowski (1882-1937). </p>
+<p>Dans sa  vie professionnelle, faite d'enseignement autant que de composition, Gorecki a été perçu comme une  personnalité intransigeante et indépendante (en particulier à l'égard du parti communiste avec lequel il était en conflit permanent). Le professeur Gorecki était réputé  peu commode  avec ses étudiants, les houspillant  sans cesse et  leur expliquant qu'un compositeur digne de ce nom n'a de compte à rendre à personne afin de  décider de l'oeuvre qui vaut la peine d'être écrite. Il avait coutume de dire, j'adapte : &quot;Si vous écoutez les souhaits des uns et des autres, vous n'entendrez que des voeux contradictoires et vous finirez par ne plus rien écrire de valable. Le public doit faire sa part du travail et  le compositeur ne peut être tenu pour comptable de l'effort que cela lui aura demandé&quot;. Le compositeur Gorecki a  tenté de rester  fidèle à  cette profession de foi, ce qui ne l'a pas empêché de glisser insensiblement d'un modernisme pur et dur vers un retour à une tradition parfois fort ancienne.  C'est l'histoire de cette évolution qui est contée ci-après.</p>
+
+<p>On a longtemps ignoré l'oeuvre de Gorecki, en Occident, au motif que les enregistrements faisaient largement défaut. Cette excuse n'est plus valable aujourd'hui, depuis que   l'Institut National Polonais de l'Audiovisuel a entrepris de mettre en ligne d'importantes  archives de la Radio Polonaise, une conséquence culturelle du 25<sup>ème</sup> anniversaire des élections libres de 1989, en Pologne. La plateforme Internet <a href="https://ninateka.pl/kolekcje">ninateka.pl</a>, entièrement libre d'accès,  propose actuellement un inventaire exceptionnel  d'oeuvres de  <a href="https://ninateka.pl/kolekcje/trzej-kompozytorzy/lutoslawski">Witold Lutosławski</a>, <a href="https://ninateka.pl/kolekcje/trzej-kompozytorzy/gorecki">Henryk  Górecki</a>, <a href="https://ninateka.pl/kolekcje/trzej-kompozytorzy/penderecki">Krzysztof Penderecki</a>, <a href="https://ninateka.pl/kolekcje/panufnik/muzyka">Andrzej Panufnik</a> et <a href="https://ninateka.pl/kolekcje/kilar/muzyka">Wojciech Kilar</a>,  incontournable ! Cette chronique puise abondamment dans cette manne et complète éventuellement par quelques enregistrements réalisés en studio.</p>
+<p>Les toutes premières oeuvres de Gorecki ne sont pour la plupart que des travaux de fin d'études en style néo-classique, l'occasion de se faire la main. Dans son catalogue, ces oeuvres  peu nombreuses,  ne dépassent pas l'opus 10, par exemple : <a href="https://ninateka.pl/kolekcje/trzej-kompozytorzy/gorecki/audio/wariacje-op-4-na-skrzypce-i-fortepian">Variations opus 4</a>, pour violon &amp; piano (1956) et <a href="https://ninateka.pl/kolekcje/trzej-kompozytorzy/gorecki/audio/sonata-na-dwoje-skrzypiec-op-10">Sonate opus 10</a>, pour 2 violons (1957). Cependant  on devine  qu'une évolution est  en cours dans la <a href="https://www.youtube.com/watch?v=tlZYL8zjBb8">Sonate opus 6</a> (1956), pour piano : les dissonances apparaissent    que  le <a href="https://ninateka.pl/kolekcje/trzej-kompozytorzy/gorecki/audio/piesni-o-radosci-i-rytmie-op-7">Chant pour orchestre opus 7</a> (1956) démultiplie, noyant deux pianos dans le magma en fusion d'un orchestre de chambre. </p>
+
+
+<h4>Un modernisme intransigeant</h4>
+
+spectre sonore et sonagramme
+
+
+
+
+                
+              </div></div>
+
+
+             
+
+
+            <a id="ancreRetourHautPage" href="#site">&uarr;</a>
+
+            <!-- Inclusion footer -->
+            <div id="footer"></div>
+
+        </div>
+    
+    
+    </div>
+
+</body>
+</html>
