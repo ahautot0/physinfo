@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Faits divers | L'histoire cryptée des Sonates opus 54 &amp; 57 de Beethoven </title>
+  <meta name="description" content="Le musique spectrale, d'invention relativement récente, ambitionne de soigner sa qualité acoustique par d'autres moyens que les choix de tempéraments pratiqués à l'âge baroque." />
+  <link rel="shortcut icon" href="../logo.ico" />
+  <link href="../style.css" rel="stylesheet" type="text/css" /> 
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <script src="../js/jquery-1.10.2.js"></script>
+  <script src="../js/menus.js"></script>
+  <script src="../js/design.js"></script>
+  <script src="../js/gestionAudioVideo.js"></script>
+  <script> 
+    // Inclusion Header et Footer
+    $(function(){
+      $(function(){
+        $.ajax({
+           url: "../template/header.php",
+           type: "POST",
+           data: ({ROOT: '../'}),
+           success: function(data) {
+             $("#header").html(data);
+             $("#faitsDivers").addClass("active"); /*a changer en fonction de la page*/
+             update_design_when_header_loaded();
+          }
+        });
+      });
+      $("#miniMenus").load("../template/miniMenus.php", { ROOT: '../' }, mini_menus_after_loading);
+      $("#footer").load("../template/footer.php", { ROOT: '../' }, update_design_footer);  
+    });
+  </script> 
+</head>
+
+<body id="site">
+
+    <div>
+        <!-- Inclusion header -->
+       <div id="header"></div>
+
+        <div id="miniMenus"></div>
+
+        <nav id="menuLateralAncres">
+            <ul>
+                <li>
+                    <a id="ancrepresentation" href="#presentation" class="linavMenu active">
+                    <span>Présentation</span>
+                    </a>
+    </li>
+                <li>
+                    <a id="ancredescription" href="#description" class="linavMenu">
+                    <span>Description</span>
+                    </a>
+    </li>
+                <li>
+                    <a id="ancremodesdejeu" href="#modesdejeu" class="linavMenu">
+                    <span>Modes de jeu</span>
+                    </a>
+    </li>
+                <li>
+                    <a id="ancrebruits" href="#bruits" class="linavMenu">
+                    <span>Les bruits de la guerre</span>
+                    </a>
+          </li>
+                
+                 <li>
+                    <a id="ancreappassionata" href="#appassionata" class="linavMenu">
+                    <span>Le cas de la Sonate n°23</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="corps">
+
+            <div id="contenuPrincipal">
+                <h2>Faits divers</h2>
+                <h3>Musique spectrale</h3>
+                
+
+                 <nav class="filAriane">
+                    <ul>
+                        <li class="breadcrumbItem"><span>Vous êtes ici : </span> Musique</li>
+                        <li class="breadcrumbItem">
+                          <a href="../chroniques.html">Chroniques</a>
+                        </li>
+                        <li class="breadcrumbItem">
+                          <a href="../faitsDivers.html">Faits divers</a>
+                        </li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Musique spectrale</li>
+                    </ul>
+                </nav>
+                
+                <div class="sommaire">
+                    <div class="sommaireTitle">
+                        <h6>Sommaire</h6>
+                        <a role="button" tabindex="0" class="sommaireLink">[ afficher ]</a>
+                    </div>
+
+                    <ul class="linksSummary">
+                        <li><a href="#presentation">Présentation</a></li>
+                        <li><a href="#description">Description</a></li>
+                        <li><a href="#modesdejeu">Modes de jeu</a></li>
+                        <li><a href="#bruits">Les bruits de la guerre</a></li>
+                        <li><a href="#appassionata">Le cas de la Sonate n°23</a></li>
+                    </ul>
+                </div> 
+  
+                
+                
+              <div id="presentation">
+          <h4>Introduction</h4>
+ <p>Il manquait (au moins) une pierre importante à l'histoire de la musique contemporaine telle que proposée en pièces détachées sur ce site : celle relative au courant de la musique dite spectrale. L'exposé qui va suivre ne prétend pas être complet mais il n'a, fort heureusement, pas besoin de l'être dans la mesure où la seule chose qui compte est non seulement d'informer mais surtout de faire entendre un ensemble de pièces portant en elles la promesse de susciter une saine curiosité voire carrément de plaire. Un guide est cependant nécessaire au néophyte, suivez-le, j'ai bon espoir que vous ne ne regretterez pas. </p>
+ <p>L'immédiat après-guerre a tenté de donner un sens à la démarche d'Anton Webern, ce fut le courant post-sériel. L'entreprise ne fut pas couronnée de sucès c'est le mois qu'on puisse en dire, ayant eu pour seul effet de faire fuir les auditeurs potentiels. Deux courants sont alors nés en réaction à l'hyper complexité : aux USA un courant minimaliste a popularisé le retour à une nouvelle modalité courant, vous trouverez l'aperçu ici. En France la réaction a été différente soucieuse de restaurer la qualité acoustique avec des moyens plus accessibles. Il est communément admis que le courant spectral est né des &quot;travaux&quot; préliminaires d'Horatiu Radulescu, un compositeur roumain installé en France et qui y a fait école.</p>
+      
+
+
+              </div>
+                
+                
+              <div id="description">
+                <h4>Pixellisation de l'espace des fréquences</h4>
+  <p>L'importance du sujet est réelle car il s'agit ni plus ni moins de comprendre qu'au niveau de la qualité acoustique toutes les musiques ne se valent pas.</p>
+  <p>Tout son harmonique (au sens faible) est constitué d'une composante fondamentale sinusoïdale de fréquence, f<sub>1</sub>, et d'une ensemble secondaire de sons partiels, de fréquence, fn. Pour ne pas compliquer les choses, nous convenons  de nous restreindre, ci-après, au cas harmonique (au sens fort, cf les définitions théoriques), où  les fréquences partielles sont multiples de la fréquence fondamentale (f<sub>n</sub> = n f<sub>1</sub>), le son résultant est alors rigoureusement périodique. Dans tous les cas, c'est la fréquence de base, f<sub>1</sub>, qui désigne la hauteur de la note telle qu'elle est perçue par l'oreille.</p>
+  <p>Deux sons sont consonants lorsqu'ils partagent certains partiels présentant une intensité suffisante. Plus on dénombre de partiels intenses communs, plus la consonance est nette. </p>
+  <p>La tradition musicale s'est développée avec les moyens historiques du bord : une notation s'est progressivement développée basée sur l'usage de modes et de gammes. Dans tous les cas il s'agissait de définir un cadre global où une oeuvre pourrait être écrite sur base d'un ensemble fini de notes consonantes ente elles et censées pixelliser l'espace des fréquences sonores avec un pouvoir de résolution suffisant. </p>
+  <p>Cet objectif est une chimère car  la consonance globale n'existe pas : aucune pixellisation de l'espace des fréquences sonores ne définit  une gamme universellement autosuffisante.  </p>
+  <p>Cette conception n'est pas la seule envisageable pour l'avenir car le développement des moyens numériques autorise une programmation bien plus flexible ne s'embarrassant plus d'une notation littéralement contraignante. Que cette voie numérique soit musicalement porteuse est une autre histoire car elles sous-entend une tra(ns)duction sonore nécessitant un recours à l'électronique donc in fine aux haut-parleurs, or ce n'est pas forcément le progrès qu'on attend.</p>
+  <p>L'inexistence d'une gamme universellement autosuffisante n'empêche pas qu'il existe une gamme qui le soit localement. </p>
+  <p>La construction d'une gamme exploitable passe inévitablement par une pixellisation de l'espace des fréquences. L'octave étant une contrainte imposée, aucune solution n'existe à ce problème capable d'assurer une consonance à tous les étages. On peut certes s'arranger pour que certaines notes particulières soient consonantes entre elles mais il est impossible de les rendre toutes. Puisque la consonance globale ne peut être exacte, force est de se contenter d'une approximation et là sans surprises plusieurs solutions sont envisageables. dans un mode particulier, l'opération ne Il existe essetiellement deux voies d'approche pour pixelliser l'espace des fréquences.</p>
+          
+              </div>
+          
+          
+           <div id="modesdejeu">
+          <h4>Modes de jeu</h4>
+
+ 
+          </div>
+          
+  
+  <div id="appassionata">
+          <h4>Le cas de la Sonate n°23</h4>
+          
+        <div class="conteneurImageSeule">
+                      <div>
+                          <figure>
+                              <img src="../images/kan/opus57.png" alt="Sonate n°22, opus 54" />
+                              <figcaption>Sonate n°23, opus 57</figcaption>
+                          </figure>
+                      </div>
+                  </div>
+                  
+
+          </div>   
+          
+          
+          </div>
+        
+
+
+            <a id="ancreRetourHautPage" href="#site">&uarr;</a>
+
+            <!-- Inclusion footer -->
+            <div id="footer"></div>
+
+        </div>
+    
+    
+    </div>
+
+    <!-- Effet smooth ancres -->
+    <script src="../js/onclick.js"></script>
+    <script src="../js/anchors.js"></script>
+
+</body>
+</html>
