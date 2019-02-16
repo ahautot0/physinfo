@@ -1835,7 +1835,66 @@ p<sub>0</sub> =  ||0&gt;&lt;0||1&gt;|<sup>2</sup> = |0|<sup>2</sup> = 0 &nbsp;&n
            <p>Le problème de la réflexion sur un miroir (plan) fixe est bien connu. Chacun a au moins appris à l'école élémentaire, que tout photon (ou rayon) lumineux émis au niveau d'une source ponctuelle, S, et détecté au niveau d'un détecteur ponctuel, D, a nécessairement transité, au niveau du miroir, par un point, M, situé à l'aplomb du milieu entre S et D. Autrement dit l'angle d'incidence, i, égale celui de réflexion, r, c'est la loi de la réflexion. Vous trouverez par ailleurs sur ce site une explication plus savante de cette loi, reposant sur le principe variationnel de Fermat : la trajectoire lumineuse entre la source et le détecteur via le miroir est celle qui rend le temps de vol extrémal, en l'occurence minimal dans ce cas.</p>
            <p>Il est intéressant de se demander ce que devient cette loi si le miroir est mobile. Pour ne pas compliquer les choses nous considérerons uniquement le cas d'un miroir qui recule (= s'éloigne de la droite SD) en translation uniforme à la vitesse constante, v. On présume, sans faire le moindre calcul, que rien ne change substantiellement si la vitesse v est très faible devant la vitesse de la lumière (v&lt;&lt;&lt;c) mais cela reste-t-il vrai  lorsque cela cesse d'être le cas ? On entre clairement dans le domaine de compétence de la relativité restreinte, d'où on pressent que le choix du système de référence peut jouer un rôle plus ou moins simplificateur dans le déroulement des calculs. Nous allons typiquement en considérer deux, celui lié au miroir (le plus simple) et ensuite celui lié à la source (et au détecteur). Le mouvement relatif de ces deux repères s'effectuant à la vitesse v, orientée perpendiculairement au miroir, on s'attend à ce que le déplacement éventuel, x, du point de contact de la lumière avec le miroir soit le même dans les deux cas. Cependant nous allons voir que la difficulté des calculs diffère notablement.</p>
            
-           <h5>Référentiel lié au miroir. </h5>           
+           <h5>Référentiel lié au miroir. </h5>   
+     <p>Dans le référentiel lié au miroir, celui-ci est immobile, par définition, et ce sont la source et le détecteur qui reculent, tous deux à la vitesse constante, v (orientée vers le haut sur la figure suivante).  Les figures qui suivent présentent les trois instants remarquables : lorsque la lumière est émise, lorsqu'elle frappe le miroir et enfin lorsqu'elle est détectée. On note 2d la distance séparant la source du détecteur, H la distance de la source au miroir au moment précis où la lumière quitte la source et x la distance mesurant l'écart du point d'impact sur le miroir par rapport à l'aplomb.</p>      
+           
+           <div class="conteneurImages">
+                    <div>
+                      <figure>
+                        <img src="annexes/miroir/miroir.png" alt="Recul du couple source détecteur"/>
+                   
+                      </figure>
+             </div>
+                </div>
+           
+      <p>L'application du principe de Fermat exige de connaître préalablement le temps de vol complet, t<sub>1</sub>+t<sub>2</sub>. La figure de droite le permet par une double application du théorème de Pythagore, on trouve :</p>
+      
+      <div class="conteneurImages">
+                    <div>
+                      <figure>
+                        <img src="annexes/miroir/equ1.png" alt="Equation"/>
+                   
+                      </figure>
+             </div>
+                </div>
+                
+ <p>On détermine ensuite pour quelle valeur de x, cette quantité est stationnaire (minimale dans ce cas). On a successivement :</p>     
+<div class="conteneurImages">
+                    <div>
+                      <figure>
+                        <img src="annexes/miroir/equ2.png" alt="principe de Fermat"/>
+                        
+                      </figure>
+                    </div>
+            </div>
+            
+            <p>Ce résultat s'avère particulièrement simple puisqu'il montre que les angles d'incidence et de réflexion sont égaux comme si le miroir était fixe. Cela ne signifie cependant nullement que la distance x est nulle ! On le vérifie en éliminant t<sub>1</sub> et t<sub>2</sub> entre les trois équations précédentes, ce qui demande sinon de l'habileté du moins de la méthode (Les détails sont repris en annexe (Notebook Mathematica)). On trouve tous calculs faits :</p>
+            
+            <div class="conteneurImages">
+                    <div>
+                      <figure>
+                        <img src="annexes/miroir/equ3.png" alt="point d'impact sur le miroir mobile"/>
+                        
+                      </figure>
+                    </div>
+            </div>
+            
+            <p>Les calculs qui précèdent sont élémentaires, requérant seulement de résoudre une équation du second degré. Il faut seulement prendre  soin de retenir la seule racine garantissant que x s'annule avec v, ce qu'on vérifie aisément sur le résultat obtenu. A noter que la singularité apparente, lorsque v/c = H/d, n'en est pas réellement une; lorsqu'on lève l'indétermination, on trouve : x = (d<sup>2</sup> + H<sup>2</sup>)/(2d).</p>
+            
+            <h5>Référentiel lié à la source et au détecteur.</h5>
+            <p>On peut légitimement se demander en quoi il peut être utile de recommencer les calculs dans ce nouveau référentiel. Après tout, deux observateurs inertiels doivent pouvoir se mettre d'accord sur la même mesure d'un segment (x) orienté perpendiculairement à leur mouvement relatif, c'est imposé par la transformation relativiste de Lorentz. Pour vérifier que cela est bien vrai, il faut cependant prendre certaines précautions dont le détail justifie l'intérêt qui est porté à ce calcul alternatif.  </p>
+            
+<div class="conteneurImageSeule">
+                    <div>
+                      <figure>
+                        <img src="annexes/miroir/miroir1.png" alt="Recul du couple source détecteur"/>
+                        
+                      </figure>
+                    </div>
+            </div>
+            
+            <p>La figure est plus simple dans ce cas, il suffit de représenter le miroir en train de reculer, à la vitesse, v. Par contre, les calculs sont plus fastidieux car il va vite apparaître que les angles d'incidence et de réflexion ne sont plus égaux. Avant de lancer ce calcul, observons que le nouvel observateur, lié au couple SD, mesure certainement les mêmes intervalles de temps que le précédent, lié au miroir. Cel est dû au fait que la vitesse de la lumière vaut c dans tous les cas. H' désigne à nouveau la distance séparant la source du miroir au moment où la lumière est émise mais sa valeur est moindre que H à cause du phénomène de contraction de Lorentz. Il convient donc de poser, H' = H (1-v<sup>2</sup>/c<sup>2</sup>)<sup>1/2</sup> et c'est à cette condition qu'on peut espérer concilier les calculs dans les deux référentiels.. </p>
+                         
               </div> 
                 
             </div>
