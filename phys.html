@@ -1828,7 +1828,7 @@ p<sub>0</sub> =  ||0&gt;&lt;0||1&gt;|<sup>2</sup> = |0|<sup>2</sup> = 0 &nbsp;&n
                     <div>
                       <figure>
                         <img src="annexes/miroir/miroir2.png" alt="Rélexion sur un miroir fixe"/>
-                        <figcaption>Rélexion sur un miroir fixe</figcaption>
+                        <figcaption>Réflexion sur un miroir fixe</figcaption>
                       </figure>
                     </div>
             </div>
@@ -1879,10 +1879,21 @@ p<sub>0</sub> =  ||0&gt;&lt;0||1&gt;|<sup>2</sup> = |0|<sup>2</sup> = 0 &nbsp;&n
                     </div>
             </div>
             
-            <p>Les calculs qui précèdent sont élémentaires, requérant seulement de résoudre une équation du second degré. Il faut seulement prendre  soin de retenir la seule racine garantissant que x s'annule avec v, ce qu'on vérifie aisément sur le résultat obtenu. A noter que la singularité apparente, lorsque v/c = H/d, n'en est pas réellement une; lorsqu'on lève l'indétermination, on trouve : x = (d<sup>2</sup> + H<sup>2</sup>)/(2d).</p>
+            <p>Les calculs qui précèdent sont élémentaires, requérant seulement de résoudre une équation du second degré. Il faut seulement prendre  soin de retenir la seule racine garantissant que x s'annule avec v, ce qu'on vérifie aisément sur le résultat obtenu. A noter que la singularité apparente, lorsque v/c = H/d, n'en est pas réellement une; lorsqu'on lève l'indétermination, on trouve : x = (d<sup>2</sup> + H<sup>2</sup>)/(2d). Les courbes suivantes affichent l'évolution de la distance, x, à mesure que le miroir sécarte de la source pour 6 valeurs de la vitesse d'éloignement, choisies suffisamment proches de ce pour qu'un effet de délocalisation par rapport à l'aplomb (x&gt;0) soit décelable :</p>
+            
+            <div class="conteneurImages">
+                    <div>
+                      <figure>
+                        <img src="annexes/miroir/courbesxH.png" alt="point d'impact sur le miroir mobile"/>
+                        
+                      </figure>
+                    </div>
+            </div>
+   
+   <p>Sans surprise, pour toute valeur (non nulle) donnée de H, x tend vers zéro lorsque v tend vers zéro. Par contre, pour toute valeur donnée de v, x tend asymptotiquement vers d v/c (&gt;0 !) à mesure que le miroir s'éloigne à l'infini.</p>         
             
             <h5>Référentiel lié à la source et au détecteur.</h5>
-            <p>On peut légitimement se demander en quoi il peut être utile de recommencer les calculs dans ce nouveau référentiel. Après tout, deux observateurs inertiels doivent pouvoir se mettre d'accord sur la même mesure d'un segment (x) orienté perpendiculairement à leur mouvement relatif, c'est imposé par la transformation relativiste de Lorentz. Pour vérifier que cela est bien vrai, il faut cependant prendre certaines précautions dont le détail justifie l'intérêt qui est porté à ce calcul alternatif.  </p>
+            <p>On peut légitimement se demander en quoi il peut être utile de recommencer les calculs dans ce nouveau référentiel. Après tout, deux observateurs inertiels doivent pouvoir se mettre d'accord sur la même mesure d'un segment (x), orienté perpendiculairement à leur mouvement relatif, c'est imposé par la transformation relativiste de Lorentz. Pour vérifier que cela est bien vrai, il faut cependant prendre une précaution qui justifie l'intérêt qui est porté à ce calcul alternatif.  </p>
             
 <div class="conteneurImageSeule">
                     <div>
@@ -1893,8 +1904,32 @@ p<sub>0</sub> =  ||0&gt;&lt;0||1&gt;|<sup>2</sup> = |0|<sup>2</sup> = 0 &nbsp;&n
                     </div>
             </div>
             
-            <p>La figure est plus simple dans ce cas, il suffit de représenter le miroir en train de reculer, à la vitesse, v. Par contre, les calculs sont plus fastidieux car il va vite apparaître que les angles d'incidence et de réflexion ne sont plus égaux. Avant de lancer ce calcul, observons que le nouvel observateur, lié au couple SD, mesure certainement les mêmes intervalles de temps que le précédent, lié au miroir. Cel est dû au fait que la vitesse de la lumière vaut c dans tous les cas. H' désigne à nouveau la distance séparant la source du miroir au moment où la lumière est émise mais sa valeur est moindre que H à cause du phénomène de contraction de Lorentz. Il convient donc de poser, H' = H (1-v<sup>2</sup>/c<sup>2</sup>)<sup>1/2</sup> et c'est à cette condition qu'on peut espérer concilier les calculs dans les deux référentiels.. </p>
+            <p>La figure est plus simple dans ce cas, il suffit de représenter le miroir en train de reculer, à la vitesse, v. Par contre, les calculs sont plus fastidieux car il se fait que les angles d'incidence et de réflexion ne sont plus égaux. Avant de lancer le calcul, observons que l'observateur lié au couple SD, mesure certainement les mêmes intervalles de temps, t<sub>1</sub> et t<sub>2</sub>, que celui lié au miroir. Cela est dû au fait que la vitesse de la lumière vaut c dans tous les cas. Par contre,  la distance, H', séparant la source du miroir au moment où la lumière est émise diffère  à cause du phénomène de contraction de Lorentz. Il convient donc de poser, H' = H (1-v<sup>2</sup>/c<sup>2</sup>)<sup>1/2</sup>. A  cette condition,  les calculs effectués dans les deux référentiels doivent être d'accord sur la valeur de x. </p>
+            <p>L'application du principe de Fermat exige de connaître préalablement le temps de vol complet, t<sub>1</sub>+t<sub>2</sub>. On y parvient à nouveau par une double application du théorème de Pythagore, on trouve :</p>
+            
+            <div class="conteneurImages">
+                    <div>
+                      <figure>
+                        <img src="annexes/miroir/equ4.png" alt="Equation"/>
+                   
+                      </figure>
+             </div>
+                </div>
+                   
+      <p>La première équation permet d'isoler la valeur de c t<sub>1</sub>, en fonction de x, puis la deuxième équation permet d'en faire autant pour c t<sub>2</sub>. Remplaçant H' par H (1-v<sup>2</sup>/c<sup>2</sup>)<sup>1/2</sup>, comme annoncé, il reste à exprimer le principe de Fermat en cherchant pour quelle valeur de x, le temps de vol total, t<sub>1</sub> + t<sub>2</sub>, est stationnaire :</p>             
+          
+           <div class="conteneurImages">
+                    <div>
+                      <figure>
+                        <img src="annexes/miroir/equ5.png" alt="Equation"/>
+                   
+                      </figure>
+             </div>
+                </div>
+                   
+                   <p>Le détail des calculs élémentaires mais fastidieux qui s'ensuivent sont repris dans l'annexe. On retrouve la même formule pour le décalage, x, au niveau du miroir. Les deux observateurs sont donc d'accord sur le résultat final.      
                          
+                   <p>Note additionnelle. Lorsqu'une lumière émise par une source (ponctuelle) est recueillie au niveau d'un détecteur (ponctuel) en ayant transité par un obstacle (par exemple, un miroir), le principe de Fermat  détermine la trajectoire lumineuse en rendant le temps de vol extrémal. Dans le cas du miroir plan, mais aussi d'un miroir convexe, cet extremum est un minimum mais cela cesse d'être le cas si le miroir est concave : dans ce cas c'est un maximum !
               </div> 
                 
             </div>
