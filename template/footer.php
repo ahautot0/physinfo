@@ -11,9 +11,9 @@
 <div id="articlesRecents">
 	<h5>ARTICLES RECENTS</h5>
 	<ul>
-    	<li><a href="<?php echo $_POST['ROOT']; ?>chroniques/nagel.html">Le Livre pour Piano de Florent Nagel (29/01/2019)</a></li>
+    	<li><a href="<?php echo $_POST['ROOT']; ?>chroniques/blacher.html">Boris Blacher &amp; Gottfried von Einem (28/02/2019)</a></li>
+        <li><a href="<?php echo $_POST['ROOT']; ?>chroniques/nagel.html">Le Livre pour Piano de Florent Nagel (29/01/2019)</a></li>
         <li><a href="<?php echo $_POST['ROOT']; ?>chroniques/gorecki.html">Henryk Gorecki (06/01/2019)</a></li>
-        <li><a href="<?php echo $_POST['ROOT']; ?>chroniques/stravinsky.html">Stravinsky, l'ultime métamorphose (01/12/2018)</a></li>
           	     
 	</ul>
 </div>
