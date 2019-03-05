@@ -2,8 +2,8 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Billets d'humeur</title>
-  <meta name="description" content="Vous cherchez à comprendre le point de vue constructiviste en sciences ou vous cherchez des musiques rares ou contemporaines, vous êtes à la bonne adresse!" />
+  <title>Genres musicaux | L'opéra : conduire une action en musique ?</title>
+  <meta name="description" content="Histoire brève de l'opéra, réduite à l'examen de la conduite d'une action en musique" />
   <link rel="shortcut icon" href="../logo.ico" />
   <link href="../style.css" rel="stylesheet" type="text/css" /> 
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
@@ -22,6 +22,7 @@
            data: ({ROOT: '../'}),
            success: function(data) {
              $("#header").html(data);
+             $("#grandscycles").addClass("active"); /*a changer en fonction de la page*/
              update_design_when_header_loaded();
           }
         });
@@ -40,11 +41,66 @@
 
         <div id="miniMenus"></div>
 
+        <nav id="menuLateralAncres">
+            <ul>
+                <li>
+                    <a id="ancreRDVManqueRenaissance" href="#RDVManqueRenaissance" class="linavMenu">
+                    <span>Le rendez-vous manqué de la Renaissance</span>
+                    </a>
+        </li>
+                <li>
+                    <a id="ancreAgeDOrBaroque" href="#ageDOrBaroque" class="linavMenu">
+                    <span>L'âge d'or du baroque ...</span>
+                    </a>
+        </li>
+                <li>
+                    <a id="ancreMusiqueTheatrale" href="#musiqueTheatrale" class="linavMenu">
+                    <span>... et la musique théâtrale</span>
+                    </a>
+        </li>
+                <li>
+                    <a id="ancreMusiqueSacree" href="#musiqueSacree" class="linavMenu">
+                    <span>... et la musique sacrée</span>
+                    </a>
+        </li>
+                <li>
+                    <a id="ancreViolonMemeNom" href="#violonMemeNom" class="linavMenu">
+                    <span>... et le violon du même nom</span>
+                    </a>
+        </li>
+                <li>
+                    <a id="ancreConcertinoRipienoContinuo" href="#concertinoRipienoContinuo" class="linavMenu">
+                    <span>... Concertino, Ripieno &amp; Continuo</span>
+                    </a>
+        </li>
+                <li>
+                    <a id="ancreCoupDeFrein" href="#coupDeFrein" class="linavMenu">
+                    <span>Le coup de frein, du classicisme au romantisme naissant</span>
+                    </a>
+        </li>
+                <li>
+                    <a id="ancreEnvolLyrique" href="#envolLyrique" class="linavMenu">
+                    <span>L'envol lyrique</span>
+                    </a>
+        </li>
+                <li>
+                    <a id="ancreEpoqueContemporaine" href="#epoqueContemporaine" class="linavMenu">
+                    <span>L'époque contemporaine</span>
+                    </a>
+        </li>
+                <li>
+                    <a id="ancreVieMusicaleItalie" href="#vieMusicaleItalie" class="linavMenu">
+                    <span>La vie musicale en Italie</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
         <div id="corps">
 
             <div id="contenuPrincipal">
-                <h2>Billets d'humeur</h2>
-                <h3>Textes d'opinions humoristiques souvent satiriques</h3>
+                <h2>Tour du monde</h2>
+                <h3>L'opéra, conduire une action en musique ?</h3>
 
                 <nav class="filAriane">
                     <ul>
@@ -53,21 +109,385 @@
                           <a href="../chroniques.html">Chroniques</a>
                         </li>
                         <li class="breadcrumbItem">
-                          <a href="../portraitscompositeurs.html">Compositeurs contemporains</a>
+                          <a href="../grandscycles.html">Genres musicaux</a>
                         </li>
-                        <li class="breadcrumbItem breadcrumIitem--current">John Adams</li>
+                        <li class="breadcrumbItem breadcrumIitem--current">L'opéra, une action en musique ?</li>
                     </ul>
-                </nav>  
-  <h2>L'opéra de nos jours. Conduire une action en musique.</h2>
+                </nav>
+
+                <div class="sommaire">
+                    <div class="sommaireTitle">
+                        <h6>Sommaire</h6>
+                        <a role="button" tabindex="0" class="sommaireLink">[ afficher ]</a>
+                    </div>
+
+                    <ul class="linksSummary">
+                        <li><a href="#RDVManqueRenaissance">Le rendez-vous manqué de la Renaissance</a></li>
+                        <li><a href="#ageDOrBaroque">L'âge d'or du baroque ...</a></li>
+                        <li><a href="#musiqueTheatrale">... et la musique théâtrale</a></li>
+                        <li><a href="#musiqueSacree">... et la musique sacrée</a></li>
+                        <li><a href="#violonMemeNom">... et le violon du même nom</a></li>
+                        <li><a href="#concertinoRipienoContinuo">... Concertino, Ripieno &amp; Continuo</a></li>
+                        <li><a href="#coupDeFrein">Le coup de frein, du classicisme au romantisme naissant</a></li>
+                        <li><a href="#envolLyrique">L'envol lyrique</a></li>
+                        <li><a href="#epoqueContemporaine">L'époque contemporaine</a></li>
+                        <li><a href="#vieMusicaleItalie">La vie musicale en Italie</a></li>
+                    </ul>
+                </div>   
+
+
+                  <p>Ce billet n'est en aucune manière une histoire même condensée de l'opéra, un sujet tellement vaste qu'il ne tiendrait pas en dix épais volumes. Il ne se penche modestement que sur un inventaire des procédés auxquels  les compositeurs de toutes les époques ont eu recours afin de conduire une action en musique, du moins quand action il y avait. L'objectif peut paraître  secondaire voire anodin mais il ne l'est pas tant que cela : de tous temps, un problème difficile s'est  posé de garantir l'équilibre entre des récitatifs censés faire progresser l'action et les airs chantés supposés libérer l'émotion accumulée. Un grand nombre de voies plus ou moins exploitables ont été explorées et c'est l'objet de cette chronique de les évoquer en musique, au bilan une autre façon de décliner l'histoire de l'opéra.</p>
+              <p>L'opéra est perçu par ses adorateurs voire plus simplement par ses amateurs  comme étant un art total, mêlant la musique et le chant au théâtre des passions humaines avec tous les à-côtés qu'on peut y incorporer, de la danse à la mise en scène et  tous ses accessoires (décors, costumes, éclairages, ...). Les passions humaines n'ayant guère varié selon les époques, il en est résulté que les intrigues développées se sont le plus souvent contentées de tourner en rond entre vengeances amoureuses, jalousies destructrices et amours contrariés. Cette perspective limitée n'a jamais  découragé  les amateurs passionnés d'opéras qui sont  prêts à (re)voir et (ré)entendre Les Noces de Figaro, Carmen ou la Bohème autant de fois qu'on les leur proposera. Chacun aura ses raisons d'y retourner, soit que la mise en scène  ou  la distribution des rôles ont changé. </p>
+<p> L'opéra est un  genre particulièrement  improbable qui repose sur un ensembles de conventions théâtrales et musicales souvent dures à avaler : on y meurt en chantant pour les yeux d'une belle qui pourrait être sa mère qu'on lui a régulièrement prédit une  mort prochaîne qui ne s'est jamais produite. Celui qui refuse d'adhérer à ces conventions n'est pas fait pour l'opéra et l'opéra n'est pas fait pour lui. Il n'est pas rare qu'il soit préférable de fermer les yeux surtout pour ne pas lire les sous-titres aussi inutiles que dévastateurs. Dès lors, l'opéra est un genre qu'on adore ou qu'on  déteste, il y a rarement un milieu. bien qu'il en fait  jamais cessé de bien se porter : art total mais théâtre des voix et des sentiments bien davantage que des intrigues le plus souvent simplistes pour ne pas dire ineptes, c'est le lieu de rencontre entre des chanteurs qui  donnent à voix nue ce qu'ils portent en eux et un public qui les reçoit comme une autre forme d'énergie, non solaire.</p>
+                  
+                  <div class="conteneurImageSeule">
+                      <div>
+                          <figure>
+                              <img src="../images/opera/boris.png" alt="Chaliapine dans Boris"/>
+                              <figcaption>Chaliapine dans Boris</figcaption>
+                          </figure>
+                    </div>
+              </div>
   
-  <p>Ce billet n'est en aucune manière une histoire même condensée de l'opéra, un sujet tellement vaste qu'il ne tiendrait pas en dix épais volumes. Il se concentre modestement sur quelques aspects syntaxiques ou sémantiques qui concernent l'opéra, en particulier les mille et une façons de conduire l'action en musique, du moins quand action il y a. L'opéra est un univers en soi qui possède ses aficionados qui n'ont d'yeux et d'oreilles que pour lui. Car l'opéra est - ou du moins ambitionne d'être - un art tellement total qu'il suffit aux amateurs acharnés. Il mêle, en effet, chant, musique et théâtre avec tous les à-côtés et donc les protagonistes que cela présuppose. Cela fait au bilan tellement de  responsabilités partagées qu'il est plutôt rare que le spectacle  soit réellement total mais cela ne décourage nullement les passionnés d'opéras qui sont de toutes façons prêts à (re)voir et entendre Les Noces de Figaro, Carmen ou la Bohème autant de fois qu'on le leur proposera. On le pressent, cette chronique va devoir se limiter si elle veut tenir en un espace raisonnable.</p>
+  <p>Art total, il devrait l'être mais ne l'est de fait pas souvent. Ses ingrédients : un livret qui met en scène les passions humaines éternelles au travers d'une histoire plus ou moins anecdotique. Une musique qui souligne les contours Une mise en scène où les acteurs bougent dans des costumes, des décors, des éclairages dont le luxe est proportionnel aux moyens mis en oeuvre. Et puis il y a la voix</p>
+  <p>Tout opéra doit répondre à la question fondamentale de la progression de l'action. Ce ne sont pas les grands airs qui y contribuent car ils ne font qu'exprimer et développer l'émotion du moment, la colère, la vengeance, la jalousie, l'amour, le dépit et tant d'autres. Au cours de l'histoire, quantité de solutions ont été essayées qu'il vaut la peine de rappeler brièvement.</p>
+  
+  
   <p>L'opéra est  né en Italie, de parents italiens. Les premiers essais  ne furent guère que des intermèdes chantés que l'on tente éventuellement de reconstituter aujourd'hui à partir des fragments existants (La Pellegrina (1589), La Dafne (1597), Euridice (1600)). L'acte officiel de baptème du genre entièrement constitué concerne l'Orfeo de Claudio Monteverdi et il mentionne la date du 24 février 1607, date d'ouverture du carnaval  à la Cour de Mantoue. </p>
-  <p>L'opéra repose sur un ensembles de conventions théâtrales et musicales. Ce lui qui refuse d'y adhérer n'est pas fait pour l'opéra et l'opéra n'est pas fait pour lui. Dès lors, l'opéra, on l'adore ou on le déteste, il y a rarement un milieu. </p>
+  <p>&nbsp;</p>
   <p>Pour le néophyte qui  se rend peu ou pas à l'opéra, le genre se résume à quelques grands airs fredonnables sous la douche, à condition d'être (vraiment très) doué. Ces airs fameux ont beau être (fatalement) toujours les mêmes, il semble impossible d'en épuiser la charge émotionnelle, en tous cas ils survivent à toutes les exécutions dans tous les sens du terme. Cela semble étrange comme si on relisait  sans cesse le même livre, réentendait  la même pièce de théâtre ou revoyait le même film. Or cette addiction est parfaitement concevable à l'opéra pour une raison qui tient essentiellement au pouvoir de renouvellement de la voix chantée. </p>
   <p>La musique et le chant, le point de vue du compositeur et du librettiste (Primo la musica ?). La voix humaine. La mise en scène syntaxique (décors, éclairages et costumes, conduite de l'action et des acteurs) et sémantique (adaptation)</p>
+  
+  <div class="conteneurImageSeule">
+                      <div>
+                        <figure>
+                          <img src="../images/opera/stats.png" alt="Statistiques du MET"/>
+                          <figcaption>Statistiques du MET (En rouge les 4 &quot;HITS&quot;)</figcaption>
+                        </figure>
+                      </div>
+              </div>
+  
+  <p>Statistiques. Les <a href="http://archives.metoperafamily.org/archives/frame.htm">archives du MET</a> sont éloquentes : en un peu plus d'un siècle, 4 opéras ont monopolisé la programmation. leurs titres sont faciles à retenir par les premières lettres, A, B et C, de leur titre, sigle auquel vous ajouterez la lettre T. Le site <a href="https://www.operabase.com/statistics/en">operabase.com</a> vous a concocté un petit jeu interactif  qui devrait ravir les amateurs de statistiques musicales. Ayant compilé une fois pour toutes, depuis la saison 2004-5 les statistiques de productions de par le monde, tous genres vocaux confondus, il vous est possible d'afficher les hits en tous lieux. </p>
+  
+https://www.operabase.com/statistics/en
+  
+  <p>Un recensement effectué de par le monde lors de la saison 2015-2016 saison mentionne parmi les 10 opéras les plus fréquemment montés : 2 Verdi (Traviata et Rigoletto), 3 Mozart (la Flûte enchantée, Les Noces de Figaro et Don Giovanni), 3 Puccini (Tosca, la Bohème et Madame Butterfly), 1 Bizet (Carmen) et 1 Rossini (Le Barbier de Séville).  Bien sûr  le hit parade change un peu chaque année mais tant que cela. L'Europe privilégie davantage Mozart que l'Amérique du Nord qui adore le vérisme italien au point qu'au  MET on tourne  en rond, d'années en années entre  Bohême, Aïda,  et Traviata seul Carmen parvenant à s'immiscer en troisième position. si on se restreint à l'Amérique du Nord grosse consommatrice (1996-97 jusque 2006-07), le trio de tête demeure Bohême (300 représentations), Traviata (281) et (l'inattendue) Madame Butterfly (272) avec une perte mozartienne au profit des italiens. Les maisons d'opéras de seconde main très nombreuses en Amérique du Nord sont comparativement plus éclectiques et c'est généralement vers elles qu'il faut se tourner pour entendre des oeuvres rares qui ne rentreraient pas dans les frais des grandes maisons.</p>
+  <p>&nbsp;</p>
+  <p>Le chant théâtral, comme  la musique instrumentale, exige idéalement la présence dans la salle. Ce n'est pas toujours possible ne serait-ce que parce qu'une oeuvre est rarement montée au-delà d'une douzaine de représentations au terme desquelles les protagonistes sont obligés de s'éclipser pour se produire ailleurs. </p>
+  <p>Berlioz estimait (vers 1850) que les salles italiennes mais aussi parisiennes étaient beaucoup trop grandes, privilégiant la recette à l'exercice de l'art vocal. Il professait qu'au-delà d'une distance critique par rapport à la scène, l'auditeur peut bien continuer d'entendre, il ne vibre plus. Le chanteur est alors condamné à s'époumonner plus que de raison au lieu de privilégier la nuance.</p>
+  
+  
   <p>https://www.cennarium.com/genre/opera/</p>
-  <p></p>
-  <p>Quelques opéras contemporains.  Nouvelle cuisine et vieilles marmites
+
+                  <div id="RDVManqueRenaissance">
+                    <h4>Le rendez-vous manqué de la Renaissance                    </h4>
+                    <p>La naissance de l'opéra. Nul ne conteste raisonnablement que l'opéra est né en Italie. Vous trouverez des études d'archéo-musicologie prêtes à soutenir que le Jeu Médiéval est bien antéireur et qu'il représente à sa façon une première tentative d'unir les composantes du drame en musique mais ce sont là des supputations d'experts qui nous éloignent du sujet qui a été dans l'âme l'expression de l'émancipation du chant. Jusqu'à la fin du 16<sup>ème</sup> siècle celui-ci est resté prisonnier de conventions formelles extrêmement contraignantes dont l'archétype est le madrigal à N voix. De plus en plus sophistiqué pour ne pas dire déconnecté des préoccupations d'un âge nouveau le moment était venu de célébrer la mélodie chantée linéairement en suivant les inflexions d'une voix ne craignant plus de trahir ses émotions. Seule l'Italie pouvait trouver une solution à ce problème urgent car elle possédait le réservoir des voix qui ne lui avait guère été utile jusque-là. Quelques essais timides ont lancé l'initiative d'un genre qui s'est cherché sa voie pendant quelques décennies. </p>
+  
+  <p>Les premières monodies dans le nouveau stile rappresentativo sont dues à Galilei (œuvre perdue) et à Caccini (Nuove musiche). Peri les surpassa sur le plan de la qualité dramatique avec sa pastorale <a href="https://www.youtube.com/watch?v=JbaL-RVwdbw">Dafne</a>, composée entre 1594 et 1595,représentée en 1597 au Palazzo Corsi, puis au carnaval de 1598. Le succès en fut tel qu’on lui demanda un ouvrage du même genre à l’occasion du mariage d’Henri IV et de Marie de Médicis : ce fut <a href="https://www.youtube.com/watch?v=6Z1i4aYgmyc">Euridice</a>, représentée en 1600 au Palazzo Pitti), écrite en collaboration avec Giulio Caccini (le prologue présenté ci-avant est de peri); en 1602, chacun termina cette oeuvre de son côté. Euridice est le premier opéra dont la musique nous soit parvenue intégralement (En voici une version estudiantine <a href="https://www.youtube.com/watch?v=MIN5btYNn0M">made in USA</a>, qu ia au moins le mérite d'exister). </p>
+  
+  <p>Le premier baroque, de Monteverdi à Cavalli, a mêlé le verbe à la musique et la musique au verbe sans chercher à ce qu'une composante écrase l'autre. Cela a été rendu possible par le soin avec lequel le discours a été ponctué par un continuo élargi et toute édition moderne de ce type d'oeuvre doit en tenir compte. </p>
+  <p>le problème majeur qui se pose à la musique de Gluck c'est qu'elle n'a pas encore reçu les attentions nécessaires auxquelles ont eu droit des musiciens parfois bien moins doués. On peut cepndant espérer qu'une génération d'interprètes classiqueux va poser le problème et le résoudre;</p>
+              </div>
+
+                  <div id="ageDOrBaroque">
+                    <h4>L'âge d'or du baroque ...</h4>
+
+                    <p> Un artiste de génie,  Claudio Monteverdi (1567-1643), a incarné les débuts de cet âge d'or qui allait durer un siècle.</p>
+
+                    <div class="conteneurImageSeule">
+                      <div>
+                        <figure>
+                          <img src="../images/italie/monteverdi1.jpg" alt="Claudio Monteverdi"/>
+                          <figcaption>Claudio Monteverdi</figcaption>
+                        </figure>
+                      </div>
+                    </div>
+
+                    <p>Monteverdi est assurément un des plus grands compositeurs européens, le premier à avoir affiché une éternelle modernité : on peut dire qu'il y a eu l'avant et l'après Monteverdi. Cet artiste détient pourtant le triste record du plus grand nombre de partitions perdues, singulièrement des opéras (Arianna,  Le Nozze d'Enea con Lavinia et une bonne douzaine d'autres). Quand on sait le prix des trois qui nous sont parvenus (<a href="https://www.youtube.com/watch?v=uJ_mjTTDM5A">Orfeo</a>, <a href="http://www.youtube.com/watch?v=CJeFcOqzdXc">Il Ritorno di Ulisse in Patria</a> et <a href="http://www.youtube.com/watch?v=rZZyySg6JZU">L'incoronazione di Poppea</a>), on demeure inconsolable. Il est possible que les oeuvres égarées correspondent à des travaux collectifs impliquant le concours d'élèves et que la dispersion du travail a entraîné celle des manuscrits.  Rappelons, à l'appui de cette thèse, que le Couronnement de Poppée, l'oeuvre ultime du Maître, nous est parvenue en pièces détachées et que l'on a jamais vraiment élucidé la part prise par chacun, dont Cavalli, dans sa composition. D'ailleurs, le thème de l'air conclusif <a href="http://www.youtube.com/watch?v=4pjXfChGWds">Pur ti miro, pur ti godo</a>, assurément l'un des plus beaux duos amoureux de l'histoire de la musique,  fut apparemment emprunté à l'opéra, Il Pastor regio, de Benedetto Ferrari, un musicien remarquable dont nous aurons à reparler. Tant que vous y êtes, réécoutez tout l'<a href="http://www.youtube.com/watch?v=j650NanGNyk">acte 3</a> de l'opéra  dans la version Harnoncourt-Ponnelle et profitez de l'extraordinaire moment théâtral que procure le finale (à partir de 23 min 40 sec) : le couronnement de Poppée (Rachel Yakar), sa jubilation intérieure puis  son duo magique avec Néron (Eric Tappy), la perfection est parfois de ce monde.                  </p>
+                  </div>
+
+                  <div id="musiqueTheatrale">
+                    <h4>... et la musique théâtrale</h4>
+
+                    <p>L'expression madrigalesque des sentiments  appelait une action  et sa mise en scène théâtrale. L'opéra  est  entré en gestation en Italie, peu avant 1600, le temps que divers compositeurs  expérimentent  des formes possibles :</p>
+
+                    <ul class="miniListCorps">
+                      <li>
+                      <div class="conteneurImageSeule">
+                        <div>
+                          <figure>
+                            <img src="../images/italie/poliziano.jpg" alt="Angelo Poliziano : La Fabula di Orfeo"/>
+                            <figcaption>Angelo Poliziano : La Fabula di Orfeo</figcaption>
+                          </figure>
+                        </div>
+                      </div>Une oeuvre étonnamment précoce et collective est demeurée sans lendemain immédiat : <a href="https://www.youtube.com/watch?v=JnTe3-jnRJ8">La Fabula di Orfeo</a> (1480, d'après des poèmes d'Angelo Poliziano (1454-1494)). Due à la collaboration de Serafino dall' Aquilano, Marchetto Cara, Bartolomeo Tromboncino et Michele Pesenti, elle fut la première tentative de mise en musique du mythe souvent reconduit d'Orphée.  Le magnifique <a href="http://www.youtube.com/watch?v=JnTe3-jnRJ8">CD</a> ci-contre, paru chez K617, en ravira plus d'un, davantage que l'ancien enregistrement de l'ensemble Huelgas, pas encore rôdé à l'époque.</li>
+                      <li>La comédie madrigalesque s'esseya à une transposition musicale de la Commedia dell'arte mais elle ne survécut pas longtemps à son côté  caricatural   qu'aucune intrigue digne de ce nom ne relevait. Les meilleurs spécimens parvenus jusqu'à nous sont dus à : Alessandro Striggio (Il Cicalamento delle Donne al Bucato, 1567), Orazio Vecchi (<a href="https://www.youtube.com/watch?v=e7a8GcLL8nk">L'Amfiparnaso</a>, 1594), Giovanni Croce (<a href="https://www.youtube.com/watch?v=HilvBKJPW7Q">Triaca musicale</a>, 1595, désolé pour l'interprétation ...) et Adriano Banchieri (<a href="http://www.youtube.com/watch?v=bcBpOKhIa50">La Pazzia senile</a>, 1598 et <a href="https://www.youtube.com/watch?v=vLp1Yz1TVGw">La Barca di Venezia per Padova</a>, 1605). </li>
+                      <li>Jacopo Peri (1561-1633) trouva le bon chemin, en 1597, avec Dafne, une oeuvre aujourd'hui perdue, puis il récidiva 3 ans plus tard avec <a href="http://www.youtube.com/watch?v=MIN5btYNn0M">Euridice</a>, une commande pour les noces florentines de Henri IV (absent !) et Marie de Médicis.  Signalons que la même année, Giulio Caccini (1551-1618) qui avait  collaboré à l'oeuvre de Peri, produisit sa propre <a href="https://www.youtube.com/watch?v=fIdd7BS3cU0">Euridice</a>, effectivement montée en 1602.  De toute évidence, il s'était réservé le meilleur de son inspiration ! Comme Orfeo et Euridice, Dafne fut un  thème à la mode et en 1608, <a href="https://www.youtube.com/watch?v=sxL2iQ6SoOY">Marco da Gagliano</a> (1582-1643) écrivit la sienne en tous points excellente (Soit dit en passant, Dafne sera également le titre du premier opéra allemand, sur une musique d'Heinrich Schütz (1627), malheureusement perdue elle aussi).  Toutes ces oeuvres se déroulent cependant encore largement à la troisième personne du singulier,  un personnage souvent allégorique  commentant l'action davantage qu'il ne la vit.</li>
+                      <li>Bien qu'écrit dans la même veine allégorique,  <a href="http://www.youtube.com/watch?v=njX9fn2iUI4">La Rappresentazione di Anima et di Corpo</a>, d'Emilio de Cavalieri (1550-1602) a revendiqué le titre de premier opéra en date. C'est en tous cas ce qu'a affirmé son auteur, contestant de ce fait les prétentions similaires de Jacopo Peri. Aujourd'hui, il n'est pas rare qu'on contente  tout le monde en considérant que vu son argument, La Rappresentazione est le premier oratorio profane de l'histoire.</li>
+                    </ul>
+
+                    <p> Monteverdi mit, en fait, tout le monde d'accord en 1606 :  la <a href="http://www.youtube.com/watch?v=mjpFi9bn1do">toccata</a> initiale d'Orfeo a sonné l'avènement du baroque. Ce fut un coup de tonnerre semblable à ceux qui retentiront 200 et 300 ans plus tard à l'avènement des périodes romantique et moderne (L'Héroïque de Beethoven en 1804 et le Sacre du Printemps de Stravinsky en 1913). Les trois opéras montéverdiens, Orfeo, Ulysse et Poppée  sont  disponibles en plusieurs versions. On n'a jamais entendu meilleur Orphée  que celui d'Eric Tappy (Corboz encore !) mais je ne suis pas certain que le CD reste disponible. Je ne vous querellerai cependant pas si vous préférez l'intégrale Harnoncourt (cfr supra),  surtout qu'au DVD, vous profiterez de la mise en scène du regretté Jean-Pierre Ponnelle. </p>
+                    <p>Monteverdi ne facilita pas la tâche de ses successeurs immédiats :   Domenico Mazzocchi (1592-1665) (<a href="http://www.youtube.com/watch?v=QjZMBypX2Fw">La Catena d'Adone</a>), Francesco Cavalli (1602-1676) (superbe <a href="https://www.youtube.com/watch?v=FbEmMXZjoc8">Ercole amante</a>), Antonio Cesti (1623-1669) (<a href="http://www.youtube.com/watch?v=yd7PuwTWMBg">Orontea</a>), Agostino Steffani (1654-1728) (<a href="http://www.youtube.com/watch?v=iny4nGATZ8I">I Trionfi del Fato</a>, <a href="https://www.youtube.com/watch?v=9FTa5_KVwJw">Tassilone</a> et le très émouvant <a href="http://www.youtube.com/watch?v=96KAc63csJk">Niobe, Regina di Tebe</a>), Antonio Caldara (1670-1736) (<a href="https://www.youtube.com/watch?v=Wii5hi-z0dM">La Clemenza di Tito</a>) et Giovanni Battista Bononcini (1670-1747) (<a href="http://www.youtube.com/watch?v=vXwJVHkG1To">Il lamento d'Olimpia</a>) firent de leur mieux, sans atteindre la même incandescence.</p>
+
+                    <div class="conteneurImages">
+                      <div>
+                        <figure>
+                          <img src="../images/italie/vivaldi.jpg" alt="Antonio Vivaldi">
+                          <figcaption>Antonio Vivaldi</figcaption>
+                        </figure>
+                      </div>
+                      <div>
+                        <figure>
+                          <img src="../images/italie/vinci.jpg" alt="Leonardo Vinci">
+                          <figcaption>Leonardo Vinci</figcaption>
+                        </figure>
+                      </div>
+                    </div>
+
+                    <p>Antonio Vivaldi (1678-1741) apparaît comme le phénomène opératique du baroque finissant : on lui attribue au moins  50 oeuvres mais le compte n'est pas certain. La qualité de cette musique saute aujourd'hui aux oreilles : <a href="https://www.youtube.com/watch?v=ATPJw-goBTY">La Silvia</a>, <a href="https://www.youtube.com/watch?v=pDB1NWg-RJ4">L'Oraccolo in Messenia</a>, <a href="https://www.youtube.com/watch?v=oPscqrbZgsM">Tito Manlio</a>, <a href="https://www.youtube.com/watch?v=jLM2-BIazNI">Farnace</a>, <a href="https://www.youtube.com/watch?v=Ooq0S0uspsM">Orlando finto Pazzo</a>, <a href="http://www.youtube.com/watch?v=U3lHfQ9hnnc">Griselda</a>, <a href="http://www.youtube.com/watch?v=1CSk1BvgmjE">Armida</a>, ..., impossible de citer tous les enregistrements récents, parus chez Virgin ou dans le cadre de l'Edition Vivaldi en cours chez Naïve jusqu'en 2015. Ne vous étonnez pas d'entendre parfois des mouvements entiers déjà entendus ailleurs, c'est l'illustration de la méthode du pasticcio, recyclage d'oeuvres antérieures, un procédé très répandu à une époque où il fallait produire à tour de bras.</p>
+                    <p>Quelques musiciens moins essentiels ont écrit des oeuvres  parfaitement estimables : Domenico Scarlatti (1685-1757) (<a href="https://www.youtube.com/watch?v=XPkKP2xmRdg">Ottavia Restituita al Trono</a>), Nicola Porpora (1686-1768) (un des grands pourvoyeurs d'airs virtuoses pour le castrat Farinelli : <a href="http://www.youtube.com/watch?v=2ZLba_VGHso">Polifemo</a>) et surtout Leonardo Vinci (1690-1730) (<a href="http://www.youtube.com/watch?v=FZne1B1oRds">La Partenope</a>, <a href="https://www.youtube.com/watch?v=rTX8b4hcUiQ">Artaserse</a>, <a href="http://www.youtube.com/watch?v=3xWui0bzOVc">Catone in Utica</a>). Voilà un  génie méconnu, normal me direz-vous, avec un nom pareil, n'empêche qu'il n'est pas de la famille de l'illustre inventeur. Même des musiciens parfaitement inconnus ont écrit de belles choses, tels Geminiano Giacomelli (1692-1740) (<a href="http://www.youtube.com/watch?v=4C937EPhbdo">Merope</a>, bien servi par Cecilia Bartoli), ou l'étonnant Riccardo Broschi (1698-1756) (<a href="http://www.youtube.com/watch?v=6IDqAkPVoAY">Merope</a>, <a href="http://www.youtube.com/watch?v=eZq-lRF2-vg">Idaspe</a>). </p>
+                    <p>Giovanni Battista Pergolesi (1710-1736) a illuminé de son génie éphémère la génération suivante. Ne passez pas à côté de son opéra, <a href="http://www.youtube.com/watch?v=q7J5xKlh1YA">Lo Frate 'nnammurato</a>, il contient tous les ingrédients du Pulcinella de Stavinsky, amusez-vous à les repérer.</p>
+                    <p>L'opéra  italien a poursuivi son chemin  grâce, entre autres, à Niccolò Jommelli (1714-1774) (<a href="http://www.youtube.com/watch?v=RH69bqt5sQ8">Armida Abbandonata</a>), Gennaro Manna (1715-1779) (<a href="https://www.youtube.com/watch?v=uc2PgOp158M">Lucio Papiro dittatore</a>) et Antonio Mazzoni (1717-1785) (<a href="http://www.youtube.com/watch?v=s0crw51ChNs">Aminta</a>)   et l'opéra  &quot;à l'italienne&quot;, en langue originale s'il vous plaît, s'est rapidement imposé sur toutes les scènes d'Europe,  particulièrement bien servi par deux  grands  saxons, Georg Friedrich Haendel (1685-1759) et Johann Adolph Hasse (1699-1783).                  </p>
+                  </div>
+
+                  <div id="musiqueSacree">
+                    <h4>... et la musique sacrée</h4>
+
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+
+                    <div class="conteneurImages">
+                      <div>
+                        <figure>
+                          <img src="../images/italie/caldara.jpg" alt="Antonio Caldara">
+                          <figcaption>Antonio Caldara</figcaption>
+                        </figure>
+                      </div>
+                      <div>
+                        <figure>
+                          <img src="../images/italie/jomelli.jpg" alt="Niccolò Jommelli">
+                          <figcaption>Niccolò Jommelli</figcaption>
+                        </figure>
+                      </div>
+                    </div>
+
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+</div>
+
+                  <div id="violonMemeNom">
+                    <h4>... et le violon du même nom</h4>
+
+                    <p>&nbsp;</p>
+</div>
+
+                  <div id="concertinoRipienoContinuo">
+                    <h4>... Concertino, Ripieno &amp; Continuo</h4>
+
+                    <p>&nbsp;</p>
+<p>Voici, pour résumer,   quelques musiciens  parmi les meilleurs du baroque finissant, qui se sont  illustrés  dans les trois genres évoqués :</p>
+
+                    <table>
+                      <tr>
+                        <th></th>
+                        <th>Ensembles instrumentaux</th>
+                        <th>Messes &amp; Oratorios</th>
+                        <th>Cantates &amp; Opéras</th>
+                      </tr>
+
+                      <tr>
+                        <th>A. Caldara</th>
+                        <td>
+                          <a href="http://www.youtube.com/watch?v=cz4sYC2zsP0">Sonate a 3</a><br/>
+                          <a href="https://www.youtube.com/watch?v=BjkZ0ZpM5N0">Sonates pour violoncelle</a>
+                        </td>
+                        <td>
+                          <a href="https://www.youtube.com/watch?v=RjpfutXceYo">Maddalena ai piedi di J-C</a><br/>
+                          <a href="https://www.youtube.com/watch?v=zYia8HXd4Co">La Conversion de Clovis</a>
+                        </td>
+                        <td>
+                          <a href="https://www.youtube.com/watch?v=Wii5hi-z0dM">La Clemenza di Tito</a><br/>
+                          <a href="http://www.youtube.com/watch?v=3VIKbL7VjOA">Airs isolés</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>A. Vivaldi</th>
+                        <td>
+                          <a href="http://www.youtube.com/watch?v=o8p5z-TcWiY">Concerti pour violon</a><br/> 
+                          <a href="http://www.youtube.com/watch?v=Tn4S4XVmw7E">Sonates pour violoncelle</a>
+                        </td>
+                        <td>
+                          <a href="https://www.youtube.com/watch?v=K6Frp0XCP0Y">Vêpres à la Vierge</a><br/>
+                          <a href="https://www.youtube.com/watch?v=KNKXik-jJO8">Juditha Triumphans</a>
+                        </td>
+                        <td>
+                          <a href="https://www.youtube.com/watch?v=jLM2-BIazNI">Farnace</a><br/>
+                          <a href="https://www.youtube.com/watch?v=3jPpLLtSt7c">Arsilda Regina di Ponto</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>B. Marcello</th>
+                        <td>
+                          <a href="https://www.youtube.com/watch?v=82g9QcZCa_A">Concerti grossi op 1</a><br/>
+                          <a href="http://www.youtube.com/watch?v=Qb4baUWEQn8">6 Sonates pour violoncelle</a>
+                        </td>
+                        <td>
+                          <a href="http://www.youtube.com/watch?v=9L_IudT2MQs">Requiem vénitien</a><br/>
+                          <a href="http://www.youtube.com/watch?v=ozkz8VVC1Ws">Psaumes de David</a>
+                        </td>
+                        <td>
+                          <a href="http://www.youtube.com/watch?v=nGfdoi-HZ1A">Arianna</a><br/>
+                          <a href="http://www.youtube.com/watch?v=rLXss8TRsZA">Cantates pour basse</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>N. Porpora</th>
+                        <td>
+                          <a href="http://www.youtube.com/watch?v=HkBNfNKNqQ0&list=PL2u_e4oN40EoNEFpaXXDdHsMJbrRPlBz3">Sinfonia opus 2-4</a><br/>
+                          <a href="http://www.youtube.com/watch?v=-MgAvs4hKZ4">12 Sonates pour violon</a>
+                        </td>
+                        <td>
+                          <a href="http://www.youtube.com/watch?v=3q_slGvC45s">Salve Regina</a><br/>
+                          <a href="https://www.youtube.com/watch?v=3GH60Vy9tcI">6 Duetti sulla Passione</a>
+                        </td>
+                        <td>
+                          <a href="http://www.youtube.com/watch?v=C_u8trRkM_c">Polifemo</a><br/>
+                          <a href="https://www.youtube.com/watch?v=uVmlQg-fLFk">Dorindo, dormi ancor</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>JB Pergolèse</th>
+                        <td>
+                          <a href="https://www.youtube.com/watch?v=r7Fn6iSReds">Concerto pour violon</a><br/>
+                          <a href="https://www.youtube.com/watch?v=CI76bJfw2U0">Concerto pour flûte</a>
+                        </td>
+                        <td>
+                          <a href="http://www.youtube.com/watch?v=2BtrbK8jcHQ">Vêpres à la Vierge</a><br/>
+                          <a href="https://www.youtube.com/watch?v=kQnXs05bQ0c">Messa Sant Emidio</a>
+                        </td>
+                        <td>
+                          <a href="http://www.youtube.com/watch?v=dmFwPKsMdtg">L'Olimpiade</a><br/>
+                          <a href="http://www.youtube.com/watch?v=Cbr4jB2M_UI">Lo Frate 'nnammurato</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>N. Jommelli</th>
+                        <td>
+                          <a href="http://www.youtube.com/watch?v=dtA_85NItAg">Concerto pour clavier</a><br/>
+                          <a href="http://www.youtube.com/watch?v=e3-xCNUauOY&list=TLAsz50nqMHQX3TCfK3y0Bb-D-vA48P97w">Chaconne</a>
+                        </td>
+                        <td>
+                          <a href="https://www.youtube.com/watch?v=DOw60Evzd7I">La Passion de J-C</a><br/>
+                          <a href="http://www.youtube.com/watch?v=46D942CsFc4">Requiem</a>
+                        </td>
+                        <td>
+                          <a href="http://www.youtube.com/watch?v=RH69bqt5sQ8">Armida Abbandonata</a><br/>
+                          <a href="https://www.youtube.com/watch?v=m-SgIOv7Ryk">L'Uccellatrice</a>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <p>&nbsp;</p>
+                  </div>
+
+                  <div id="coupDeFrein">
+                    <h4>Le coup de frein, du classicisme au romantisme naissant</h4>
+
+                    <p>L'ère baroque s'est achevée en 1750 mais comme toujours un certain flou a existé entre ceux qui se sont attardés et d'autres qui ont anticipé sur le classicisme naissant. Les frères Sammartini, Giuseppe  (1695-1750) (<a href="http://www.youtube.com/watch?v=-wda1jEHobU">Concerto</a> pour flûte) et Giovanni Battista  (1700-1775) (<a href="http://www.youtube.com/watch?v=otJUzvxdiRI">Sinfonia</a> en sol majeur), ont déjà écrit en style galant voire Sturm und Drang et Baldassare Galuppi (1706-1785) a fait preuve d'encore plus de curiosité  dans des oeuvres ambitieuses, religieuses (<a href="https://www.youtube.com/watch?v=2DqEItCy6vE">Messe</a> pour la libération des esclaves) ou théâtrales (<a href="http://www.youtube.com/watch?v=VHHQqZtxM4E">L'Olimpiade</a>, <a href="http://www.youtube.com/watch?v=-Kmn4qfPGck">Il Mondo alla Roversa</a>).</p>
+                    <p>Globalement la transition du baroque vers le classicisme a vu le recul de la musique italienne, plutôt mal à l'aise dans un corset trop rigide pour elle. Dès 1700, la concurrence allemande - Bach  et Haendel - était devenue forte et à partir de 1750, l'hégémonie autrichienne - Haydn, Mozart, Gluck -  acheva de la repousser dans une pénombre relative.  La querelle des Gluckistes et des Piccinnistes fut un épisode parisien de ce transfert de compétences : les encyclopédistes,  d'Alembert en tête, ardents défenseurs de l'opéra à l'italienne, se sont émus de l'influence grandissante des réformes préconisées par Gluck en vue d'un théâtre moins virtuose et plus proche du drame exprimé.  S'ensuivit une querelle de salon que Gluck alimenta davantage que Piccinini et qu'il finit par remporter.</p>
+                    <p>Les musiciens suivants furent talentueux à défaut d'être géniaux :  Pietro Nardini (1722-1793)  (<a href="https://www.youtube.com/watch?v=aJJ5esA2rDQ">Concerti</a> pour violon et mieux encore <a href="http://www.youtube.com/watch?v=FELDa7RfLpI">Quatuors</a> à cordes, parus chez Brillant). Niccolò Piccinni (1728-1800) (<a href="http://www.youtube.com/watch?v=LaJDg4GL8uk">Didone abbandonata</a>), Giuseppe Sarti (1729-1802) (<a href="http://www.youtube.com/watch?v=gw3vvpGrb2g">Oratorio russe</a>), Antonio Sacchini (1730-1786) (<a href="http://www.youtube.com/watch?v=zcR688CF_hw">Œdipe à Colone</a>), Gaetano Pugnani (1731-1798) (<a href="http://www.youtube.com/watch?v=_172a1SVN-c">Sinfonia</a> en sol majeur), Giovanni Paisiello (1740-1816) (<a href="https://www.youtube.com/watch?v=8T5zPSdEu_s">Concerto n°7</a> pour piano et surtout <a href="http://www.youtube.com/watch?v=jSpaYtq3V1A">Il Barbiere di Siviglia</a>, oeuvre qui annonce clairement   Rossini), Andrea Luchesi (1741-1801) (<a href="https://www.youtube.com/watch?v=4ujEC5YlHS0">Requiem</a>), ... .</p>
+
+                    <p>Le talent fut davantage présent à la génération suivante  :</p>
+                    
+                    <ul class="miniListCorps">
+                      <li>Luigi Boccherini (1743-1805) fait partie de ces musiciens auquel le destin a réservé un sort plutôt flatteur, en premier lieu grâce à un <a href="http://www.youtube.com/watch?v=kSE15tLBdso">Menuet</a> anodin et un <a href="http://www.youtube.com/watch?v=p0f-rQV--jU">Quintette</a> opus 30 imaginatif, deux oeuvres fréquemment arrangées pour ensembles à cordes. Il a largement contribué au développement de la musique de chambre, singulièrement l'art du  quintette (à <a href="http://www.youtube.com/watch?v=PqcFZyOit1k">cordes</a> ou avec <a href="http://www.youtube.com/watch?v=6YXleGIULMA">guitare</a>). J'avoue cependant ne guère accrocher à ces oeuvres largement interchangeables, écrites à une époque où Mozart proposait ses ultimes chefs-d'oeuvre.</li>
+                      <li>Domenico Cimarosa (1749-1801) en étonnera plus d'un avec ses opéras &quot;mozartiens&quot; <a href="http://www.youtube.com/watch?v=2lv4MokgIdc">Li Sposi per Accidenti</a>, <a href="http://www.youtube.com/watch?v=glBJowqKIAY">Le astuzie femminili</a>, sans compter le plus léger et mieux connu <a href="http://www.youtube.com/watch?v=FHgiTVn58kQ">Il Matrimonio Segreto</a>
+                      !<div class="conteneurImages">
+                          <div>
+                            <figure>
+                              <img src="../images/italie/salieri.jpg" alt="Antonio salieri">
+                              <figcaption>Antonio salieri</figcaption>
+                            </figure>
+                          </div>
+                          <div>
+                            <figure>
+                              <img src="../images/italie/clementi.jpg" alt="Muzio Clementi">
+                              <figcaption>Muzio Clementi</figcaption>
+                            </figure>
+                          </div>
+                          <div>
+                            <figure>
+                              <img src="../images/italie/cherubini.jpg" alt="Luigi Cherubini">
+                              <figcaption>Luigi Cherubini</figcaption>
+                            </figure>
+                          </div>
+                        </div>
+                      </li>
+                      <li>Antonio Salieri (1750-1825), qui n'a évidemment pas empoisonné Mozart, mérite une réhabilitation en bonne et due forme : sa musique est d'une réelle efficacité sonore, singulièrement à l'opéra : <a href="http://www.youtube.com/watch?v=YPW382xDjuo">Les Danaïdes</a>, <a href="http://www.youtube.com/watch?v=JvMXFIlSWVU">Axur</a>, <a href="https://www.youtube.com/watch?v=vZ-KppJzwqs">Europa riconosciuta</a>, sans oublier le magnifique finale de <a href="http://www.youtube.com/watch?v=16GJfESSLbI">Prima la Musica e poi le Parole</a> (écoutez à partir de 1 min 16 sec, Mozart a peut-être écouté avant vous, ses Noces de Figaro datent en tous cas de la même année, 1786 !).  Si son <a href="http://www.youtube.com/watch?v=exXujZFSXH8">Requiem</a> ne vaut qu'un petit détour, je recommande sans hésitation les superbes <a href="http://www.youtube.com/watch?v=pUJkROWNROU">Variations</a> sur le thème des Folies d'Espagne et pourquoi pas la <a href="http://www.youtube.com/watch?v=s1bRATRhSeA">Symphonie Veneziana</a> qui ne manque effectivement pas d'allure ?</li>
+                      <li>Muzio Clementi (1752-1832), présenté par ailleurs sur ce <a href="../chroniques/clementi.html">site</a>, a peut-être fait souffrir des générations d'apprentis pianistes, il n'en demeure pas moins un créateur de premier plan.  L'intégrale de son oeuvre pour piano est un must incontestable, disponible à petit prix sous les doigts peu experts de <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Muzio-Clementi-1752-1832-S%E4mtliche-Klaviersonaten/hnum/2975556">Costantino Mastroprimiano</a>, à prix doux sous ceux, experts, de <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Muzio-Clementi-1752-1832-Klavierwerke-Box-2-Vol-10-18/hnum/1750528">Pietro Spada</a> et au prix fort sous ceux brillantissimes de <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Muzio-Clementi-1752-1832-S%E4mtliche-Klaviersonaten-Vol-5/hnum/4298574">Howard Shelley</a>. Notez que le didactique et néanmoins passionnant <a href="https://www.youtube.com/watch?v=ruhsfzChf24">Gradus ad Parnassum</a> (court extrait joué ici par Danielle Laval) est rarement présent au rendez-vous de ces &quot;intégrales&quot; mais que Naxos  vient de combler cette lacune.</li>
+                      <li>Luigi Cherubini (1760-1842) détient le titre de gloire du plus grand compositeur vivant de son temps, enfin c'est Beethoven qui l'a dit et on soupçonne que, muré dans son isolement, il n'était que très imparfaitement informé (Il n'a  découvert Schubert que sur son lit de mort, il fréquentait pourtant la même taverne viennoise que lui  !).  Cela dit, l'oeuvre de  Cherubini vaut effectivement une écoute attentive ne serait-ce que pour comprendre le début de ce que Beethoven voulait dire (<a href="http://www.youtube.com/watch?v=laO7Zi6Zsm8">Requiem en do mineur</a>, <a href="http://www.youtube.com/watch?v=cz_FjyPEWEc&list=TL3Wy7w3eknK6duHan_khERhvlMrONUbTf">Chant sur la mort de Joseph Haydn</a>, sans oublier l'opéra <a href="http://www.youtube.com/watch?v=0HTlS0GSn98">Médée</a>, ressuscité en son temps par Maria Callas).</li>
+                    </ul>
+
+                    <p>Quelques compositeurs se sont illustrés dans la pratique virtuose de leur instrument de prédilection, guitare et/ou violon, curieusement souvent associés  : Giovanni Battista Viotti (1755-1824), Alessandro Rolla (1757-1841), Ferdinando Carulli (1770-1841), Mauro Giuliani (1781-1829), Giovanni Viotti (1755-1824) et
+                    bien sûr Niccolò Paganini (1782-1840). Quant à Domenico Dragonetti (1763-1846) et Giovanni Bottesini (1821-1889), ils se sont consacrés à la contrebasse, contribuant ainsi au maigre répertoire  de cet instrument. </p>
+                  </div>
+
+                  <div id="envolLyrique">
+                    <h4>L'envol lyrique</h4>
+
+                    <p>Le chant qui avait déjà connu ses premières heures de gloire virtuose à l'époque baroque va en connaître d'autres, nettement plus lyriques, pendant près de 100 ans. La démocratisation du concert a appelé l'agrandissement des salles et a encouragé l'éclosion de voix amples et belles. Un public de plus en plus fervent s'est constitué  à la Scala de Milan, à la Fenice de Venise ou à San Carlo de Naples, trois théâtres inaugurés vers 1778. De nombreux théâtres de province ont également vu le jour, alimentés par un large réservoir de chanteurs de qualité. Il ne restait plus qu'à mettre ces voix en valeurs, ce que firent  Gioacchino Rossini (1792-1868), dans la veine pyrotechnique (± 40 opéras, composés en à peine 25 ans),  Giuseppe Verdi (1813-1901, ± 35 opéras) dans la veine héroïque et Giacomo Puccini (1858-1924, ± 12 opéras) dans le mode vériste. D'autres ont suivi, avec plus ou moins de bonheur et de goût : Gaspare Spontini (1774-1851), Gaetano Donizetti (1797-1848, ± 70 opéras), Vincenzo Bellini (1801-1835, ± 12 opéras), Amilcare Ponchielli (1834-1886), Arrigo Boito (1842-1918), Alfredo Catalani (1854-1893), Ruggero Leoncavallo (1858-1919), Alberto Franchetti (1860-1942), Pietro Mascagni (1863-1945), Francesco Cilea (1866-1950), Umberto Giordano (1867-1948) et Italo Montemezzi (1875-1952).</p>
+                    <p>Cet  univers est fascinant mais son étude sérieuse exigerait des développements qui ne peuvent trouver leur place ici. Je me bornerai donc à faire la publicité du <a href="https://www.youtube.com/watch?v=vd1XL9-lBpY">Mefistofele</a> de Arrigo Boito, plus connu comme librettiste de Verdi dans ses deux chefs-d'oeuvre ultimes, Othello et Falstaff. On sait trop peu qu'il fut également un compositeur de valeur et on peut légitimement regretter l'oubli qui  frappe ses autres oeuvres scéniques, sauf peut-être <a href="http://www.youtube.com/watch?v=CduRaK-Fmg8">Nerone</a>, opéra interrompu par la mort et  complété, à des degrés divers, par Arturo Toscanini (qui l'a effectivement créé), Vincenzo Tommasini et Antonio Smareglia.</p>
+
+                    <p>&nbsp;</p>
+<p>Toutes ces célébrités ne doivent pas occulter l'existence d'excellents musiciens bien moins connus : d'ascendance suisse, Carlo Evasio Soliva (1791-1853) a écrit  <a href="http://www.youtube.com/watch?v=I0mSgTIhIWg">La Testa di Bronzo</a> et <a href="https://www.youtube.com/watch?v=Vvhls2tyibo">Giulia e Sesto Pompeio</a>, qui ont fait l'objet de beaux enregistrements, à découvrir par les amateurs du genre. Saverio Mercadante (1795-1870) (<a href="http://www.youtube.com/watch?v=X2l2oD4sE1w">Il Lamento del Bardo</a>, <a href="http://www.youtube.com/watch?v=1wQt6lBCjg8">Emma d'Antiochia</a>), 
+                    Giovanni Pacini (1796-1867) (<a href="http://www.youtube.com/watch?v=VL2d4bnL9Pg">L'ultimo Giorno di Pompei</a>), Lauro Rossi (1810-1885) (<a href="http://www.jpc.de/jpcng/classic/detail/-/art/Lauro-Rossi-1812-1885-Cleopatra/hnum/4950425">Cleopatra</a>) et Filippo Marchetti (1831-1902) (<a href="http://www.jpc.de/jpcng/classic/detail/-/art/Filippo-Marchetti-1831-1902-Romeo-Giulietta/hnum/6827091">Romeo e Giulietta</a>) ont également contribué au genre. Les amateurs de raretés vocales italiennes peuvent se tourner avec bonheur vers des enregistrements <a href="http://www.jpc.de/s/bongiovanni">Bongiovanni</a> ou vers l'album <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Opera-Italiana-Operngesamtaufnahmen/hnum/8981613">Opera italiana</a> paru chez Neos (40 CD pour 40 euros !)</p>
+
+                    <p>La musique italienne s'étant largement concentrée sur l'opéra, on admirera que  quelques artistes du cru aient eu le courage de résister à cette mode du temps, au risque avéré de se priver d'une large audience :</p>
+                    
+                    <ul class="miniListCorps">
+                      <li>Giovanni Sgambati (1843-1914)  fut un pianiste-compositeur surtout à l'aise dans la pratique de son instrument.  Ecoutez cet académiquement beau <a href="http://www.youtube.com/watch?v=GD9qCQmNkWo">Prélude &amp; Fugue</a>, opus 6, ou encore, pour le plaisir, l'un des bis favoris de Nelson Frère, une <a href="https://www.youtube.com/watch?v=0Iy2jjWYkRU">adaptation</a> très réussie d'un air célèbre de Gluck. Son <a href="http://www.youtube.com/watch?v=37dlnzTSF-s">Concerto</a> pour piano propose  un instrument brillant hélas flanqué d'un orchestre anémique.</li>
+                      <li>Luigi Mancinelli (1848-1921) mériterait que les éditeurs s'intéressent davantage à son oeuvre, certes légère mais très plaisante comme en atteste cet enregistrement Naxos reprenant <a href="http://www.youtube.com/watch?v=_OoWSJeHhYc">Scene Veneziane &amp; Cleopatra</a>. </li>
+                      <li>Giuseppe Martucci (1856-1909) a été nettement plus heureux avec ses 2 symphonies (<a href="https://www.youtube.com/watch?v=a-fgTHRy9bI">n°1</a>, <a href="https://www.youtube.com/watch?v=8R_NnD9ohFs">n°2</a>) et ses 2 concertos pour piano (<a href="https://www.youtube.com/watch?v=Nuy86Kcry5s">n°1</a>, <a href="https://www.youtube.com/watch?v=02DJl5fA6EU">n°2</a>), à découvrir !</li>
+                    </ul>
+
+                    <div class="conteneurImages">
+                      <div>
+                        <figure>
+                          <img src="../images/italie/busoni.jpg" alt="Ferruccio Busoni">
+                          <figcaption>Ferruccio Busoni</figcaption>
+                        </figure>
+                      </div>
+                      <div>
+                        <figure>
+                          <img src="../images/italie/wolff.jpg" alt="Ermanno Wolf-Ferrari">
+                          <figcaption>Ermanno Wolf-Ferrari</figcaption>
+                        </figure>
+                      </div>
+                    </div>
+
+                    <p>Sans pour autant délaisser l'opéra mais en cessant de le privilégier, deux musiciens très différents, Ferruccio Busoni (1866-1924) et Ermanno Wolf-Ferrari (1876-1948), ont accéléré le renouveau instrumental italien. Il convient d'ajouter qu'ils présentaient, l'un et l'autre, le mélange assez rare des sensibilités italienne et allemande et ceci explique peut-être cela : </p>
+
+                    <ul class="miniListCorps">
+                      <li>Busoni a passé l'essentiel de son existence en Allemagne dont il a adopté une forme de rigueur qui le rapproche esthétiquement de Max Reger. Son goût pour le contrepoint l'a incité à transcrire pour le piano nombre d'oeuvres de Bach, pour le plus grand bonheur de pianistes avides d'épaisseur sonore (<a href="http://www.youtube.com/watch?v=sw9DlMNnpPM">Chaconne BW 1004</a>, <a href="http://www.dailymotion.com/video/x4pii6_bach-busoni-chorale-vladimir-horowi_music">Choral "Nun komm der Heiden Heiland" BWV 659</a>). Busoni s'est également rendu célèbre grâce à son grandiose et wagnérien <a href="http://www.youtube.com/watch?v=-rFV_g6T5lM">Concerto</a> pour piano, choeur &amp; orchestre, une oeuvre  miraculeusement préservée de la grandiloquence. Son remarquable opéra <a href="https://www.youtube.com/watch?v=xrFwfeKzRuE">Doktor Faust</a> est au répertoire des maisons exigeantes, au contraire d'Arlecchino, nettement plus anecdotique.</li>
+                      <li>Wolf-Ferrari a davantage hérité de sa  mère vénitienne que de son père allemand et c'est tant mieux.  Autant l'oeuvre de Busoni est dense et sévère, autant celle  de Wolf-Ferrari (Concertos pour <a href="http://www.youtube.com/watch?v=HJlrtuccFLM">violon</a> et pour <a href="http://www.youtube.com/watch?v=ZTEkIyLMwgs">cor anglais</a>) est légère et parfois sentimentale (sans honte, j'adore !). Les Joyaux de la Madonne (célèbre <a href="http://www.youtube.com/watch?v=x_B7Iavkuhs">Intermezzo</a>) est son opéra le plus connu mais écoutez aussi le prélude de <a href="https://www.youtube.com/watch?v=WSweXbiN8Wk">Il Campiello</a> : d'accord l'oeuvre, écrite en 1936, est anachronique mais quel bonheur !</li>
+                    </ul>
+
+                    
+
+                    <p>Quatre musiciens particulièrement attachants,  Ottorino Respighi (1879-1936), Ildebrando Pizzetti (1880-1968), Gian Francesco Malipiero (1882-1973) et Alfredo Casella (1883-1947), ont représenté l'Italie dans le concert européen du début du 20<sup>ème</sup> siècle, jusqu'à ce qu'un fascisme précoce ne vienne mettre un frein à cette belle vitalité :</p>
+
+                    <ul class="miniListCorps">
+                      <li>Des quatre, Respighi est le plus justement célèbre, ayant  brillé dans tous les genres et tous les styles (<a href="https://www.youtube.com/watch?v=bB5KRHTPTjA">Concerto grégorien</a>, <a href="http://www.youtube.com/watch?v=NsE0NDzWw74">Sinfonia Drammatica</a>). Sauf les grincheux, tout le monde trouve son bonheur quelque part dans l'oeuvre de Respighi, depuis la célèbre Trilogie romaine (Pins de Rome, Fontaines de Rome, <a href="https://www.youtube.com/watch?v=C2EPHoMlqnk">Fêtes romaines</a>) jusqu'aux 3 joyeuses Suites dans le style ancien (<a href="http://www.youtube.com/watch?v=3BPloCq3ODE">Suite n°2</a>, ne manquez pas l'alerte Bergamasque à partir de 14:21). <a href="http://www.youtube.com/watch?v=-ugVAU5PneY">La Flamma</a> est son opéra le plus joué.</li>
+                      <li>Pizzetti n'a pas connu les mêmes honneurs et cependant il fut l'égal de Respighi  : certes, sa <a href="https://www.youtube.com/watch?v=IvJW1h7RsH8">Sonate</a>, datée de 1942, sonne sans complexe comme issue d'un autre âge mais <a href="http://www.youtube.com/watch?v=-V-6TiWeUzo">Assassinio nella cattedrale</a> figure parmi les grands opéras du 20<sup>ème</sup> siècle. De même si <a href="https://www.youtube.com/watch?v=xTzVwMSxz3g">Canti della stagione alta</a> nage à contre-courant, en plein romantisme, le <a href="http://www.youtube.com/watch?v=XIPByJMmsTc">Quatuor</a> à cordes est plus sévère. Quoi qu'il en soit, l'inspiration est au rendez-vous.</li>
+                      <li>Etrangement, c'est Malipiero qui a été le mieux servi par les studios d'enregistrements, en particulier sa musique symphonique : 11 symphonies (<a href="http://www.youtube.com/watch?v=m1Tuwn0LBsA">n°8</a>, <a href="http://www.youtube.com/watch?v=_1JkOcveH4g">n°11</a>), 6 concertos pour piano (<a href="http://www.youtube.com/watch?v=sxDxyj7B864">n°6</a>) et 2 concertos pour violon (<a href="https://www.youtube.com/watch?v=6zIZL1rwrCM">n°1</a>). C'est une anomalie dont le sens m'échappe.</li>
+                      <li>L'oeuvre de Casella a mis davantage de temps à s'imposer que celle de Malipiero alors qu'elle lui est supérieure en tous points. Ses 3 symphonies (<a href="https://www.youtube.com/watch?v=dk7eqDwQz9E">n°1</a>, <a href="http://www.youtube.com/watch?v=02MMhs3mcTU">n°2</a> et <a href="http://www.youtube.com/watch?v=a7uwpB11TpM">n°3</a>) qui ont enfin trouvé des interprètes à leur mesure sont  remarquables de même que <a href="https://www.youtube.com/watch?v=k8QBZwd986A">A Notte Alta</a>, pour piano &amp; orchestre. Voici encore le <a href="http://www.youtube.com/watch?v=U3GaXpfSGcY">Concerto</a> pour cordes, piano &amp; percussions.</li>
+                    </ul>
+                  </div>
+
+                  <div id="epoqueContemporaine">
+                    <h4>L'époque contemporaine</h4>
+
+                    <p>Quelques opéras contemporains.  Nouvelle cuisine et vieilles marmites
     http://operacritiques.free.fr/css/index.php?2012/07/23/2023-une-brassee-de-bons-operas-contemporains-classes-par-courants
     
     Messiaen, Schostakovitch, Ligeti, Pizzetti, 
@@ -84,44 +504,59 @@
     Sallinen The palace
     
     Manfred Trojahn (geb. 1949) Oreste
-    Tobias Picker Thérèse Raquin et surtout Emmeline
+    Tobias Picker Thérèse Raquin et surtout Emmeline.
   </p>
   
-  
-   <div class="conteneurImageSeule">
-                      <div>
-                        <figure>
-                          <img src="../images/opera/stats.png" alt="Statistiques du MET"/>
-                          <figcaption>Statistiques du MET (En rouge les &quot;HITS&quot;)</figcaption>
-                        </figure>
-                      </div>
-              </div>
-  
-  <p>Statistiques. Le site <a href="https://www.operabase.com/statistics/en">operabase.com</a> vous a concocté un petit jeu interactif  qui devrait ravir les amateurs de statistiques musicales. Ayant compilé une fois pour toutes, depuis la saison 2004-5 les statistiques de productions de par le monde, tous genres vocaux confondus, il vous est possible d'afficher les hits en tous lieux. </p>
-  
-https://www.operabase.com/statistics/en
-  
-  <p>Un recensement effectué de par le monde lors de la saison 2015-2016 saison mentionne parmi les 10 opéras les plus fréquemment montés : 2 Verdi (Traviata et Rigoletto), 3 Mozart (la Flûyte enchantée, Les Noces de Figaro et Don Giovanni), 3 Puccini (Tosca, la Bohème et Madame Butterfly), 1 Bizet (Carmen) et 1 Rossini (Le Barbier de Séville).  Bien sûr  le hit parade change un peu chaque année mais tant que cela. L'Europe privilégie davantage Mozart que l'Amérique dyu Nord qui adore le vérisme italien au point qu'au  MET on tourne  en rond, d'années en années entre  Bohême, Aïda,  et Traviata seul Carmen parvenant à s'immiscer en troisième position. si on se restreint à l'Amérique du Nord grosse consommatrice (1996-97 jusque 2006-07), le trio de tête demeure Bohême (300 représentations), Traviata (281) et (l'inattendue) Madame Butterfly (272) avec une perte mozartienne au profit des italiens. Les maisons d'opéras de seconde main très nombreuses en Amérique du Nord sont comparativement plus éclectiques et c'est généralement vers elles qu'il faut se tourner pour entendre des oeuvres rares qui ne rentreraient pas dans les frais des grandes maisons.</p>
-  <p>&nbsp;</p>
-  <p>Le chant théâtral, comme  la musique instrumentale, exige idéalement la présence dans la salle. Ce n'est pas toujours possible ne serait-ce que parce qu'une oeuvre est rarement montée au-delà d'une douzaine de représentations au terme desquelles les protagonistes sont obligés de s'éclipser pour se produire ailleurs. </p>
-  <p>Berlioz estimait (vers 1850) que les salles italiennes mais aussi parisiennes étaient beaucoup trop grandes, privilégiant la recette à l'exercice de l'art vocal. Il professait qu'au-delà d'une distance critique par rapport à la scène, l'auditeur peut bien continuer d'entendre, il ne vibre plus. Le chanteur est alors condamné à s'époumonner plus que de raison au lieu de privilégier la nuance.</p>
-  <p></p>
-  <p>&nbsp;</p>
-  <p>Il fut un temps où les modèles de l'opéra moderne se résumaient à Wozzek, Die Soldaten et Lear d'Aribert Reimann (1936- ).</p>
-  <p> Ce genre a priori improbable que l'on a dit mort à toutes les époques n'a jamais cessé de bien se porter : art total mais théâtre des voix et des sentiments bien davantage que des intrigues le plus souvent simplistes pour ne pas dire ineptes, c'est le lieu de rencontre entre des chanteurs qui  donnent à voix nue ce qu'ils portent en eux et un public qui les reçoit comme une autre forme d'énergie, non solaire.</p>
-  
-  <p>Art total, il devrait l'être mais ne l'est de fait pas souvent. Ses ingrédients : un livret qui met en scène les passions humaines éternelles au travers d'une histoire plus ou moins anecdotique. Une musique qui souligne les contours Une mise en scène où les acteurs bougent dans des costumes, des décors, des éclairages dont le luxe est proportionnel aux moyens mis en oeuvre. Et puis il y a la voix</p>
-  <p>Tout opéra doit répondre à la question fondamentale de la progression de l'action. Ce ne sont pas les grands airs qui y contribuent car ils ne font qu'exprimer et développer l'émotion du moment, la colère, la vengeance, la jalousie, l'amour, le dépit et tant d'autres. Au cours de l'histoire, quantité de solutions ont été essayées qu'il vaut la peine de rappeler brièvement.</p>
-  <p>La naissance de l'opéra. Nul ne conteste raisonnablement que l'opéra est né en Italie. Vous trouverez des études d'archéo-musicologie prêtes à soutenir que le Jeu Médiéval est bien antéireur et qu'il représente à sa façon une première tentative d'unir les composantes du drame en musique mais ce sont là des supputations d'experts qui nous éloignent du sujet qui a été dans l'âme l'expression de l'émancipation du chant. Jusqu'à la fin du 16<sup>ème</sup> siècle celui-ci est resté prisonnier de conventions formelles extrêmement contraignantes dont l'archétype est le madrigal à N voix. De plus en plus sophistiqué pour ne pas dire déconnecté des préoccupations d'un âge nouveau le moment était venu de célébrer la mélodie chantée linéairement en suivant les inflexions d'une voix ne craignant plus de trahir ses émotions. Seule l'Italie pouvait trouver une solution à ce problème urgent car elle possédait le réservoir des voix qui ne lui avait guère été utile jusque-là. Quelques essais timides ont lancé l'initiative d'un genre qui s'est cherché sa voie pendant quelques décennies. </p>
-  
-  <p>Les premières monodies dans le nouveau stile rappresentativo sont dues à Galilei (œuvre perdue) et à Caccini (Nuove musiche). Peri les surpassa sur le plan de la qualité dramatique avec sa pastorale <a href="https://www.youtube.com/watch?v=JbaL-RVwdbw">Dafne</a>, composée entre 1594 et 1595,représentée en 1597 au Palazzo Corsi, puis au carnaval de 1598. Le succès en fut tel qu’on lui demanda un ouvrage du même genre à l’occasion du mariage d’Henri IV et de Marie de Médicis : ce fut <a href="https://www.youtube.com/watch?v=6Z1i4aYgmyc">Euridice</a>, représentée en 1600 au Palazzo Pitti), écrite en collaboration avec Giulio Caccini (le prologue présenté ci-avant est de peri); en 1602, chacun termina cette oeuvre de son côté. Euridice est le premier opéra dont la musique nous soit parvenue intégralement (En voici une version estudiantine <a href="https://www.youtube.com/watch?v=MIN5btYNn0M">made in USA</a>, qu ia au moins le mérite d'exister). </p>
-  
-  <p>Le premier baroque, de Monteverdi à Cavalli, a mêlé le verbe à la musique et la musique au verbe sans chercher à ce qu'une composante écrase l'autre. Cela a été rendu possible par le soin avec lequel le discours a été ponctué par un continuo élargi et toute édition moderne de ce type d'oeuvre doit en tenir compte. </p>
-  <p>le problème majeur qui se pose à la musique de Gluck c'est qu'elle n'a pas encore reçu les attentions nécessaires auxquelles ont eu droit des musiciens parfois bien moins doués. On peut cepndant espérer qu'une génération d'interprètes classiqueux va poser le problème et le résoudre;</p>
-  
   <p>Georg Friedrich Haas: <a href="https://www.youtube.com/watch?v=3cDfgKk-aZ8">Bluthaus</a> (2011) Armel Opera Festival (Budapest) investit autant dans la création de nouvelles oeuvres que dans la découverte de jeunes talents lyriques.</p>
-    
-              </div>
+                    <div id="retros"> </div>
+
+                    <div id="gauchos">
+                      <h5>&nbsp;</h5>
+   
+                      <ul class="miniListCorps">
+                        <li><div class="conteneurImageSeule">
+                          <div>
+                            <figure>
+                              <img src="../images/italie/dallapiccola.jpg" alt="Luigi Dallapiccola"/>
+                              <figcaption>Luigi Dallapiccola</figcaption>
+                            </figure>
+                          </div>
+                        </div>Plus ancien donc peut-être plus sage, Luigi Dallapiccola (1904-1975) est celui par qui vous devez commencer cette exploration, d'autant que son oeuvre est tout simplement magistrale. Il n'a jamais cherché à étaler sa science, elle s'est imposée naturellement au travers d'oeuvres aussi diverses que  <a href="http://www.youtube.com/watch?v=d7_Cm8Y2OyA">Vol de Nuit</a>, d'après Saint Exupéry, <a href="http://www.youtube.com/watch?v=UKXJqlQj1vM">Sonatina Canonica</a>, d'après Paganini,  <a href="http://www.youtube.com/watch?v=0wGj3URCZlQ">Il Prigioniero</a>, d'après Villiers de l'Isle-Adam et Charles de Coster ou <a href="http://www.youtube.com/watch?v=Adsb2HokV6I">Tartiniana I</a> &amp;  <a href="http://www.youtube.com/watch?v=ADqAareCDaw">Tartiniana II</a>, d'après Tartini. Vous l'avez observé, les références sont multiples et elles font mouche.</li>
+                        <li></li>
+                      </ul>
+
+                      <p>&nbsp;</p>
+
+                      
+                      <p>Je n'ai hélas trouvé qu'un seul <a href="http://musique.fnac.com/a1578748/Flavio-Testi-Saul-CD-album">enregistrement</a>  d'une oeuvre de Flavio Testi (1923- ) et je le regrette. Cet extrait de <a href="http://www.youtube.com/watch?v=w1iKbeFRndk">Saül</a>, étonnant de conviction sonore, exige qu'on nous en propose d'autres. </p>
+
+                      
+
+                      <p>Deux musiciens émergent cependant avec un maximum de force, sans doute les compositeurs les plus remarquables de l'Italie contemporaine :</p>
+                      
+                      <ul class="miniListCorps">
+                        <li>Ivan Fedele (1953- ) écrit de la bonne musique moderne capable de satisfaire les auditeurs exigeant clarté et complexité (<a href="http://www.youtube.com/watch?v=BtIFAa1blO4">33 noms</a>, <a href="http://www.youtube.com/watch?v=zLXVrLTUBZ4">Notturno</a>, <a href="http://www.youtube.com/watch?v=L41flQVQ7L8">La Chute de la Maison Usher</a>). Ne manquez pas davantage <a href="http://www.youtube.com/watch?v=CUay0x5oRLI">Etudes Australes I, II &amp; IV</a>, de l'excellent piano moderne. &quot;Le ali di Cantorun&quot; est un chef-d'oeuvre qui a eu la chance d'être superbement dirigé par Pierre Boulez hélas j'ai perdu la trace de l'enregistrement</li>
+                        <li>Fausto Romitelli (1963-2004) (<a href="http://www.youtube.com/watch?v=gnhhZY3AJRo">La sabbia del tiempo</a>, <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Fausto-Romitelli-20-Jh-1963-2004-Kammermusik-The-Nameless-City/hnum/2689676">The Nameless City</a>)  a également écrit des oeuvres extrêmement convaincantes : quel dommage qu'il ait disparu si jeune ! Deux CD made in Belgium (Ensembles Musiques nouvelles et Ictus) ont parus chez Cypres,  qui doivent  figurer en bonne place sur votre liste de cadeaux pour Noël, on vous remerciera dans 20 ans !</li>
+                      </ul>
+
+                      <p>Le label Naxos s'intéresse à  la musique écrite par Elisabetta Brusa (1954- ), plusieurs volumes sont déjà disponibles. Le néo-tonalisme de bon aloi de la <a href="https://www.youtube.com/watch?v=GR4PsVlpVHw">Symphonie n°1</a> rend la découverte agréable.</p>
+                      <p>Le cinéma italien, particulièrement créatif  après la deuxième guerre mondiale, a donné du boulot aux collègues musiciens. Deux compositeurs célèbres ont fait preuve d'inspiration à cette occasion :</p>
+                      
+                      <ul class="miniListCorps">
+                        <li>Le nom de Nino Rota (1911-1979) a été fréquemment associé à celui de Federico Fellini (La Strada, La dolce Vita, Huit et demi, Satyricon, Amarcord, Casanova et Prova d'orchestra). Rota a également beaucoup écrit dans tous les genres traditionnels : 4 Symphonies (<a href="https://www.youtube.com/watch?v=ncAMkK-r7_E">n°1</a>), trois fois plus de Concertos (<a href="http://www.youtube.com/watch?v=H36IgwvkYbs">pour piano</a>, <a href="https://www.youtube.com/watch?v=-wc7tGwY_C4">pour cordes</a>),  de la musique de chambre (<a href="https://www.youtube.com/watch?v=Obb4BZA85Yk">Nonette</a>, <a href="https://www.youtube.com/watch?v=qSw9J8N9aFo">Persepio</a>) sans compter une douzaine d'opéras, fort oubliés il est vrai. Son oeuvre plaisante a fait l'objet de nombreux enregistrements.  </li>
+                        <li></li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div id="vieMusicaleItalie">
+                    <h4>Les temps modernes</h4>
+
+                    <p>Il fut un temps où les modèles de l'opéra moderne se résumaient à Wozzek, Die Soldaten et Lear d'Aribert Reimann (1936- ).</p>
+</div>                 
+          </div>
+            
+          
 
 
             <a id="ancreRetourHautPage" href="#site">&uarr;</a>
@@ -134,7 +569,9 @@ https://www.operabase.com/statistics/en
     
     </div>
 
-    <script src="../js/chroniques.js"></script>
+    <!-- Effet smooth ancres -->
+    <script src="../js/onclick.js"></script>
+    <script src="../js/anchors.js"></script>
 
 </body>
 </html>
