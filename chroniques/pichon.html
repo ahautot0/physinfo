@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Interprètes actuels | Raphaël Pichon, un surdoué de la musique</title>
+  <meta name="description" content="Raphaël Pichon s'est imposé en quelques années à peine comme le plus grand espoir de la musique ancienne" />
+  <link rel="shortcut icon" href="../logo.ico" />
+  <link href="../style.css" rel="stylesheet" type="text/css" /> 
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <script src="../js/jquery-1.10.2.js"></script>
+  <script src="../js/menus.js"></script>
+  <script src="../js/design.js"></script>
+  <script src="../js/gestionAudioVideo.js"></script>
+  <script> 
+    // Inclusion Header et Footer
+    $(function(){
+      $(function(){
+        $.ajax({
+           url: "../template/header.php",
+           type: "POST",
+           data: ({ROOT: '../'}),
+           success: function(data) {
+             $("#header").html(data);
+             $("#interpretesActuels").addClass("active"); /*a changer en fonction de la page*/
+             update_design_when_header_loaded();
+          }
+        });
+      });
+      $("#miniMenus").load("../template/miniMenus.php", { ROOT: '../' }, mini_menus_after_loading);
+      $("#footer").load("../template/footer.php", { ROOT: '../' }, update_design_footer);  
+    });
+  </script> 
+</head>
+
+<body id="site">
+
+    <div>
+        <!-- Inclusion header -->
+        <div id="header"></div>
+
+        <div id="miniMenus"></div>
+
+        <div id="corps">
+
+            <div id="contenuPrincipal">
+                <h2>Interprètes actuels</h2>
+                <h3>Raphaël Pichon, un surdoué de la musique</h3>
+
+                <nav class="filAriane">
+                    <ul>
+                        <li class="breadcrumbItem"><span>Vous êtes ici : </span> Musique</li>
+                        <li class="breadcrumbItem">
+                          <a href="../chroniques.html">Chroniques</a>
+                        </li>
+                        <li class="breadcrumbItem">
+                          <a href="../interpretesActuels.html">Interprètes actuels</a>
+                        </li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Raphaël Pichon, un surdoué de la musique</li>
+                    </ul>
+                </nav>  
+
+                <p>Il est heureusement révolu le temps où les musiciens français peinaient à rivaliser avec leurs collègues étrangers dans le domaine de la musique ancienne y compris celle provenant du sol hexagonal. Les premiers Lully, Rameau, Leclair, etc, dignes de ces noms ont longtemps été  signés William Christie, John Elliott Gardiner, Sigiswald Kuyken ou Franz Bruggen et une réaction  a mis du temps à se dessiner, en France, capable de  rivaliser. En 1953, date de la création, par Jean-François Paillard, de  l'ensemble Jean-Marie Leclair Il y a 60 ans, on devait se contenter d'entendre Rameau joué à la mode bonbon. Puis on a connu La Grande Ecurie &amp; la Chambre du Roy (1966) de Jean-Claude Malgloire, puis nettement mieux au point,   les Musiciens du Louvre de Marc Minkowski (1982) et les Talents lyriques de Christophe Rousset (1991).  On dispose aujourd'hui d'un grand nombre de versions enfin soucieuses de l'esprit baroque, comme dans cet  Air des Sauvages, extrait des Indes Galantes de Rameau (<a href="https://www.youtube.com/watch?v=3zegtH-acXE">William Christie</a>, <a href="https://www.youtube.com/watch?v=C8YQDlSkiKA&list=RDMhWS9JLveEU&index=18">Alexis Kossenko</a>, <a href="https://www.youtube.com/watch?v=OmOXl17ibDc">Frans Bruggen</a>,<a href="https://www.youtube.com/watch?v=bD9fLIBP13k"> Christophe Rousset</a>, <a href="https://www.youtube.com/watch?v=RKvd4tMkFHc">Marc Minkowski</a>). On peut désormais ajouter à cette liste la version de l'ensemble Pygmalion de <a href="https://www.youtube.com/watch?v=4ynGSQRE_mE">Raphaël Pichon</a>, un jeune homme sachant apparemment tout faire et à qui tout réussit.</p>
+                
+                
+              <div class="conteneurImageSeule">
+<div>
+                        <figure>
+                            <img src="../images/pichon/pichon.png" alt="Raphaël Pichon"/>
+                            <figcaption>Raphaël Pichon</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                
+                <p>A à peine 35 ans, la carrière de Raphaël Pichon est déjà fort bien remplie. Surdoué et hyperactif à bon escient, il collectionne les projets aboutis à un rythme qui étonne. A ce degré de profusion variée, je ne lui connais qu'un seul rival, son illustre aîné (de 43 ans !), Jordi Savall. Les éléments biographiques qui suivent sont partiellement empruntés à un cycle d'entretiens qu'il a accordés à <a href="https://www.francemusique.fr/personne/raphael-pichon">France Musique</a>.</p>
+                <p>Raphaël Pichon est né  de parents musiciens amateurs davantage attentifs à lui ouvrir   les yeux sur le monde que de l'initier intensivement à la musique. Ses premières leçons de violon et de piano pprises vers l'âge de 8 ans ne l'ont pas enthousiasmé à cause de l'inévitable approche individuelle que ces instruments impliquent auprès de professeurs souvent rébarbatifs. L'étincelle est plutôt venue de son admission, vers l'âge de 10 ans, à la Manécanterie de Versailles, alors dirigée par Jean-François Frémont. C'est là, pendant 10 ans, qu'il goûté au plaisir du son collectif  des voix superposées.  Dès lors sa vocation était trouvée : un jour, il dirigera son propre ensemble, ce sera Pygmalion. Mais il y avait du chemin à parcourir avant que ce rêve se réalise d'autant que le CNSM (Conservatoire national supérieur de musique de Paris) ne l'a guère aidé dans son entreprise, le recalant par deux fois pour la direction d'orchestre. Qu'une institution aussi prestigieuse ait été capable de se tromper à ce point dans ses prédictions est évidemment inquiétant, en particulier pour tous ceux qui ont subi un sort comparable et qui ne s'en sont pas remis. Raphaël Pichon ne s'est heureusement pas découragé, parfaisant sa formation avec d'autres maîtres mieux avisés (Geoffroy Jourdain qui l'a accueilli comme contre-ténor dans son ensemble vocal &quot;Les Cris de Paris&quot; ou encore le chef, Pierre Cao, dans ses masterclasses). Puisque le circuit traditionnel ne voulait pas de lui comme chef, il le court-circuiterait, voilà tout. L'occasion s'est présentée en 2006 à la faveur du désistement d'un ensemble  pour un concert prévu de longue date : Raphaël Pichon s'est lancé le défi de rassembler en quelques semaines une poignée d'instrumentistes et autant de choristes tous inexpérimentés mais habités par l'ambition de réussir ce pari fou. Aussi incroyable que cela puisse paraître, il fut tenu, le succès fut au rendez-vous et il l'est plus que jamais. </p>
+                <p>Douze ans plus tard le chemin parcouru est énorme : on peine à croire que cet ensemble s'est professionnalisé aussi rapidement se forgeant un répertoire où les grands classiques (Opéras de Rameau, Passions et Cantates de Bach) cotoient les découvertes musicologiques (Passions de Telemann, Orfeo de Luigi Rossi, Graupner).</p>
+                <p>Pygmalion est en résidence à l’Opéra national de Bordeaux. Il est aidé par la Direction régionale des affaires culturelles de Nouvelle-Aquitaine, la Ville de Bordeaux et la région Nouvelle-Aquitaine. </p>
+                <p>Ensemble associé à l’Opéra-Comique (2017-2019), Pygmalion reçoit le soutien de la Fondation Bettencourt Schueller et de Mécénat Musical Société Générale. Pygmalion est en résidence à la Fondation Singer-Polignac.</p>
+<p>Contre-ténor amateur, piano, orgue et clavecin pour les besoins des répétitions.</p>
+                <p>En France, il y a deux manières de devenir chef d’orchestre : faire de longues études puis patienter des années dans l’ombre d’un chef reconnu… ou griller les étapes, monter sa formation et partir à l’aventure, comme l’a fait Raphaël Pichon, 28 ans, qui dirige depuis sept ans l’ensemble Pygmalion.
+
+Un groupe créé en 15 jours
+A 11 ans, ce Versaillais a un coup de foudre pour Bach . « J’ai chanté la Passion selon Saint Jean dans une chorale. Une révélation », confie-t-il. A 21 ans, baguette à la main, il se tourne naturellement vers le compositeur allemand.
+
+En 2005, alors étudiant au Conservatoire national supérieur de musique, il saisit l’opportunité de montrer ses talents en remplaçant, au pied levé, une formation qui a annulé sa participation à un festival en l’honneur de Bach, à Paris.
+
+« Je me suis proposé, et ça a marché. J’ai monté un groupe en quinze jours, trouvé un répertoire et on s’est lancés… », se rappelle Raphaël.
+
+Essentiellement composé d’amis du conservatoire, son ensemble compte une cinquantaine de choristes et musiciens qui jouent des instruments d’époque.
+
+Ils se baptisent Pygmalion, en référence au mythe grec où un sculpteur tombe amoureux d’une statue qui finit par prendre vie. « Comme la musique, sculptée en répétition, qui prend vie pendant le concert », précise Raphaël.
+
+Ovationné par la critique
+Sorti en 2008, Missae Breves BWV 234 et 235, de Bach, est ovationné par la critique : le magazine français de référence, Diapason, lui décerne un Diapason d’or, et son équivalent anglais, Gramophone, un Editor’s Choice.
+
+Les portes des festivals s’ouvrent en France et en Europe. Après un deuxième album, en 2010, Pygmalion sort chez Alpha, en septembre 2012, Missa (1733), un enregistrement de la première version de la Messe en si de Bach.
+
+</p>
+
+
+                <p><a href="http://www.jpc.de/jpcng/home/search?fastsearch=Marc-Antoine%20Charpentier&rubric=classic&pd_orderby=score">Marc-Antoine Charpentier</a> (1634-1704), Jean-Baptiste Lully (1632-1687), <a href="https://www.youtube.com/watch?v=9IB7Ij_N21Y">Sébastien de Brossard</a> (1655-1730), Michel Richard de Lalande (1657-1726), André Campra (1660-1744), Henry Desmaret (1661-1741), <a href="http://www.youtube.com/watch?v=4KGA05HcLqk">Jacques Antoine DeNoyé</a> (1700-1759), ... . Quant aux nombreuses Leçons des Ténèbres, elles sont toutes éclipsées par celles, lumineuses, de <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Francois-Couperin-Lecons-de-Tenebres/hnum/6738285">François Couperin</a>.</p>
+              <p>Toutefois, la grande affaire du baroque français, c'est la tragédie lyrique, (Platée de Rameau), Hervé Niquet (Sémélé de Marin Marais), Hugo Reyne (Ulysse de Jean-Féry Rebel), Christophe Rousset (Belléphoron de Lully), proposent enfin des produits faits maison et de qualité.  Outre les chefs-d'oeuvre disponibles de Lully et Rameau, </p>
+                <p><a href="http://www.youtube.com/watch?v=y0pWHJgjEIw">David et Jonathas</a> de Marc-Antoine Charpentier (1634-1704), <a href="http://www.youtube.com/watch?v=rZ_wKbw9580">Achille et Polyxène</a> de Pascal Collasse (1649-1709), Sémélé de Marin Marais (1656, 1728), <a href="https://www.youtube.com/watch?v=PoKC-J0kntY">Tancrède</a> et <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Andre-Campra-1660-1744-La-Carnaval-de-Venise-Opera-ballet-Paris-1699/hnum/4919623">Le Carnaval de Venise</a> d'André Campra (1660-1744), <a href="http://www.youtube.com/watch?v=uDgcsLOQ1h0">Vénus et Adonis</a> de Henry Desmaret (1661-1741), Céphale et Procris d'Elisabeth-Claude Jacquet de la Guerre (1665-1729), <a href="http://www.youtube.com/watch?v=a24PKtZzelY">Ulysse</a> de Jean-Fery Rebel (1666-1747), Callirhoé d'André-Cardinal Destouches (1672-1749), <a href="http://www.youtube.com/watch?v=A4_fYsb5a4M">Les Amours de Ragonde</a> de Jean-Joseph Mouret (1682-1738), Daphnis et Chloé de Joseph Bodin de Boismortier (1689-1755), Scylla et Glaucus de Jean-Marie Leclair (1697-1764) et <a href="http://www.youtube.com/watch?v=QZPEK4X8ABY">Les Fêtes de Paphos</a> de Jean-Joseph Cassanea de Mondonville (1711-1772). Les bachoteurs se contenteront de <a href="http://www.youtube.com/watch?v=8Re2dG8Kvi4">Sémélé</a>, de <a href="http://www.youtube.com/watch?v=x_6GMZFxsJg">Callirhoé</a>, de <a href="http://www.youtube.com/watch?v=uu-sGfLSge8">Daphnis et Chloé</a> et de <a href="https://www.youtube.com/watch?v=akYcmjYvkJc">Scylla et Glaucus</a>. Pour la petite histoire, sachez que Lully eut deux fils, Louis et Jean-Louis, qui écrivirent également des tragédies lyriques : elles connurent un succès (d'estime ?) avant de sombrer (définitivement ?) dans les oubliettes de l'histoire.</p>
+                
+                <div class="conteneurImageSeule">
+              <div>
+                        <figure>
+                            <img src="../images/pichon/sabine.png" alt="Sabine Devieilhe et Raphaël Pichon"/>
+                            <figcaption>Sabine Devieilhe et Raphaël Pichon</figcaption>
+                        </figure>
+                  </div>
+                </div>
+                <p>A la ville comme à la scène, Raphaël Pichon est inséparable de Sabine Devieilhe, la soprano qui monte.</p>
+
+                
+               
+                
+                
+                
+          </div>
+
+
+            <a id="ancreRetourHautPage" href="#site">&uarr;</a>
+
+            <!-- Inclusion footer -->
+            <div id="footer"></div>
+
+        </div>
+    
+    
+    </div>
+
+</body>
+</html>
