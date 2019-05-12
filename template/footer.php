@@ -11,10 +11,10 @@
 <div id="articlesRecents">
 	<h5>ARTICLES RECENTS</h5>
 	<ul>
-    	<li><a href="<?php echo $_POST['ROOT']; ?>chroniques/pichon.html">Raphaël Pichon dirige Pygmalion (31/03/2019)</a></li>
+    	<li><a href="<?php echo $_POST['ROOT']; ?>chroniques/hindemith.html">Paul Hindemith, génie mal-aimé (09/05/2019)</a></li>
+        <li><a href="<?php echo $_POST['ROOT']; ?>chroniques/pichon.html">Raphaël Pichon dirige Pygmalion (31/03/2019)</a></li>
         <li><a href="<?php echo $_POST['ROOT']; ?>chroniques/blacher.html">Boris Blacher &amp; Gottfried von Einem (28/02/2019)</a></li>
-        <li><a href="<?php echo $_POST['ROOT']; ?>chroniques/nagel.html">Le Livre pour Piano de Florent Nagel (29/01/2019)</a></li>
-        
+
           	     
 	</ul>
 </div>
