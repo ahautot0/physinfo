@@ -707,6 +707,34 @@
 		}
 
 	
+		.goog-te-gadget img{
+			margin-top:0;
+			
+		}
+		
+		#google_translate_element {
+			margin-bottom:16px;	
+		}
+		
+		
+		.goog-te-gadget-simple {
+			padding-bottom:0;
+			background-color:#27282A !important;
+		}
+		
+		.goog-te-gadget-simple .goog-te-menu-value {
+			color:#FFF !important;
+			
+		}
+		
+		.goog-te-gadget-simple .goog-te-menu-value span {
+			padding-right:12px;	
+		}
+		
+		
+		
+	
+	
 	/*======= MENU LATERAL (contenu principal) =======*/
 		#menuLateralAncres {
 		    position: fixed;
