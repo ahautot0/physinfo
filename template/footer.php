@@ -11,12 +11,11 @@
 <div id="articlesRecents">
 	<h5>ARTICLES RECENTS</h5>
 	<ul>
-    	<li><a href="<?php echo $_POST['ROOT']; ?>chroniques/septuor.html">Ensembles de chambre, du sextuor au dixtuor (23/06/2019)</a></li>
+    	<li><a href="<?php echo $_POST['ROOT']; ?>chroniques/pianomoderne.html">Piano moderne hors des sentiers battus (29/08/2019)</a></li>
+        <li><a href="<?php echo $_POST['ROOT']; ?>chroniques/septuor.html">Ensembles de chambre, du sextuor au dixtuor (23/06/2019)</a></li>
         <li><a href="<?php echo $_POST['ROOT']; ?>chroniques/hindemith.html">Paul Hindemith, génie mal-aimé (09/05/2019)</a></li>
-        <li><a href="<?php echo $_POST['ROOT']; ?>chroniques/pichon.html">Raphaël Pichon dirige Pygmalion (31/03/2019)</a></li>
         
-
-          	     
+   	     
 	</ul>
 </div>
 
