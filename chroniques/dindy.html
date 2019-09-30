@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Compositeurs négligés | Vincent d'Indy</title>
+  <meta name="description" content="Vincent d'Indy n'a pas écrit que la Symphonie cévenole, que d'ailleurs bien peu de monde connaît, c'est tout dire ! Portrait d'un acteur majeur de la vie musicale française à une époque décisive de son histoire." />
+  <link rel="shortcut icon" href="../logo.ico" />
+  <link href="../style.css" rel="stylesheet" type="text/css" /> 
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <script src="../js/jquery-1.10.2.js"></script>
+  <script src="../js/menus.js"></script>
+  <script src="../js/design.js"></script>
+  <script src="../js/gestionAudioVideo.js"></script>
+  <script> 
+    // Inclusion Header et Footer
+    $(function(){
+      $(function(){
+        $.ajax({
+           url: "../template/header.php",
+           type: "POST",
+           data: ({ROOT: '../'}),
+           success: function(data) {
+             $("#header").html(data);
+             $("#tiresdeloubli").addClass("active"); /*a changer en fonction de la page*/
+             update_design_when_header_loaded();
+          }
+        });
+      });
+      $("#miniMenus").load("../template/miniMenus.php", { ROOT: '../' }, mini_menus_after_loading);
+      $("#footer").load("../template/footer.php", { ROOT: '../' }, update_design_footer);  
+    });
+  </script> 
+</head>
+
+<body id="site">
+
+    <div>
+        <!-- Inclusion header -->
+        <div id="header"></div>
+
+        <div id="miniMenus"></div>
+
+        <div id="corps">
+
+            <div id="contenuPrincipal">
+                <h2>Compositeurs négligés</h2>
+                <h3>Vincent d'Indy</h3>
+
+                <nav class="filAriane">
+                    <ul>
+                        <li class="breadcrumbItem"><span>Vous êtes ici : </span> Musique</li>
+                        <li class="breadcrumbItem">
+                          <a href="../chroniques.html">Chroniques</a>
+                        </li>
+                        <li class="breadcrumbItem">
+                          <a href="../tiresdeloubli.html">Compositeurs négligés</a>
+                        </li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Vincent d'Indy</li>
+                    </ul>
+                </nav>  
+
+                <div class="blocImgFirstAndText">
+                  <div class="conteneurImageSeule">
+                      <div>
+                          <figure>
+                              <img src="../images/dindy/dindy.png" alt="Vincent d'Indy"/>
+                              <figcaption>Vincent d'Indy</figcaption>
+                          </figure>
+                      </div>
+                  </div>
+
+                  <p>En décédant en 1869, Hector Berlioz (1803-1869) a abandonné la musique française à la veine de l'opéra et de l'<a href="../chroniques/operacomique.html">Opéra-comique</a> alors en vogue quasiment exclusive, avec la bénédiction d'un Conservatoire de Paris bientôt dirigé (entre 1871 et 1896) par Ambroise Thomas ce qui n'était pas vraiment de nature à arranger les choses. La France se devait cependant de participer au mouvement paneuropéen d'émergence de la musique nationale re^posant sur un inventaire de ses ressources populaires et d'un idiome spécifique. Une chronique antérieure relative aux exploits de l'Opéra-comique vous rappelle qu'à cette époque seuls (ou presque) Napoléon Henri Reber (1807-1880) et Félicien César David (1810-1876) luttèrent courageusement à contre-courant pour maintenir un niveau d'excellence en musique instrumentale. Avec la naissance un peu partout en Europe des écoles nationales de musique, une réaction s'imposait qui s'est matérialisée par la fondation d'écoles de musique concurrentes au Conservatoire (Société nationale de Musique, Société de Musique indépendante, Schola Cantorum, Ecole César Franck, cf le paragraphe relatif aux écoles françaises dans la chronique consacrée à la <a href="../chroniques/france.html">France</a>) où purent s'épanouir les talents de jeunes musiciens enfin libérés du carcan opératique, en priorité, Camille Saint-Saëns (1835-1921) et Gabriel Fauré (1845-1924). Cette chronique se penche sur le cas de Vincent d'Indy (1851-1931) l'un des membres-fondateurs et bientôt plénipotentiaire de la Schola Cantorum.</p>
+                  
+                  
+                  <h4>Biographie</h4>
+             <p></p>     
+                  
+               
+                  <h4>Liste des oeuvres</h4>
+                  <p>Dans le meilleur des cas, d'Indy est connu pour sa <a href="https://www.youtube.com/watch?v=KTeTh2iB6nQ">Symphonie cévenole</a>, avec piano obligé. Ce fut sa contribution à la glorification de l'héritage populaire français, en l'occurence un chant montagnard. les plus érudits en savent un peu plus, par exemple le luxurieux poème symphonique <a href="https://www.youtube.com/watch?v=83shRaUBLeI">Istar</a> voire la tryptique <a href="https://www.youtube.com/watch?v=jaK4uM-CyCI">Wallenstein</a> d'après Schiller. Pourtant les merveilles symphoniques abondent tel ce <a href="https://www.youtube.com/watch?v=qH-tMH5u6oU">Jour d'été à la Montagne</a> (1905), ici défendu par le vétéran Pierre Dervaux. Le label Chandos s'est lancé dans une large édition des oeuvres orchestrales (6 volumes parus à ce jour) et comme d'habitude il fait miex que tout le monde (Pour une interprétation plus actuelle, cf cet enregistrement paru chez Chandos <a href="https://www.youtube.com/watch?v=-I7w2YgJxoQ">Part 1</a>, <a href="https://www.youtube.com/watch?v=h0o2uE4pPRQ">Part 2</a> et <a href="https://www.youtube.com/watch?v=WBV-5NqrrRY">Part 3</a>).</p>
+                  
+                  
+                  <h4>Le wagnérisme en France</h4>
+                  <p>Au cours de la seconde moitié du 19<sup>ème</sup> siècle, la France a participé au mouvement paneuropéen de développement d'une école nationale de musique. C'était d'autant plus nécessaire que la plupart des compositeurs importants de l'époque avaient cédé à ma tentation de respecter cette règle tacite qu'il n'était de salut que dans le cadre de l'opéra, traditionnel ou comique. la conséquence funeste avait été que la musique instrumentzle avait périclité en France sauf dans le chef de rares musiciens ayant perdu pignon sur rue.  Un compositeur a joué un rôle partiulièrment important dans la construction </p>
+  
+  <p>N'ayant jamais cultivé le moindre doute intime sur ses capacités intellectuelles et artistiques, Richard Wagner se serait bien vu écrivain autant que musicien. Il a de fait écrit beaucoup de textes dont  aucun n'est passé à la postérité pour de très bonnes raisons. Même ses propres livrets d'opéra font peine à lire, n'ayant survécu que par la grâce d'une musique qui les a réduits à l'état de faire-valoir. D'autres écrits furent polémiques (La judaïcité en Musique, de triste mémoire) ou politiques, qui lui ont d'ailleurs valu d'être fiché comme agitateur  adhérent au mouvement anarchiste favorable à l'unification de la (future) nation allemande. Inquiété un temps par les forces de l'ordre et accessoirement par des créanciers, il a dû son salut à l'intervention de son ami, Franz Liszt, qui l'a aidé à s'exfiltrer hors d'Allemagne. On a pu  dès lors le suivre à la trace, en France, en Suisse, en Italie et même, amnistié, de retour en Allemagne car il n'était au fond qu'un agitateur d'opérette. Seul le Wagner musicien est passé à la postérité pour le génie qu'il a mis dans un renouvellement total de la conduite de son Art.</p>
+  <p>Richard Wagner a séjourné à Paris à deux reprises (et en 1860-61 pour une représentation de Tannhaüser) situées relativement tôt dans sa carrière et il n'en a pas gardé le meilleur souvenir. La guerre de 1870 a laissé des traces dans les relations franco-allemandes. Les collaborations scientifiques  ont mis un coup de frein aux collaborations désintéressées (Poincaré et , Pasteur et ), les rivalités musicales se sont faites jour sur fond de querelles d'écoles et les tensions politiques ont fait le reste sur fond de mauvaise foi revancharde. Une rue Richard Wagner a pourtant existé jusqu'en 1914 en plein 16<sup>ème</sup> arrondissement de Paris mais elle a été rebaptisée du nom d'Albéric Magnard (1865-1914), illustre compositeur français dont nous aurons à reparler. Il fallait certainement honorer Magnard mais était-ce une raison pour déshonorer Wagner qui n'a jamais récupéré de rue à son nom ?</p>              
+
+                
+                <p>https://www.franceculture.fr/histoire/wagner-et-la-france-difficile-contrepoint</p>
+             
+                  
+                   <h4>Contributions théoriques et musicologiques</h4>
+                  <p>D'Indy a naturellement publié un traité résumant ses vues sur l'art de composer. Il ne contient rien de révolutionnaire, en particulier de nature à préparer la modernité à venir. D'Indy respectait les écoles naissantes tant en france (Debussy) qu'à l'étranger (Bartok, Stravinsky et Schönberg) mais il n'netnedait pas cautionner leurs audaces dans le cadre de son enseignement demeuré classique. Il considérait que son adhésion au wagnérisme à une époque où cela n'était nullement évident en France constituait déjà une belle avancée et il n'était pas décidé à déborder davantage.</p>
+                  <p>Il a entrepris un travail utile de redécouverte d'oeuvres anciennes, en particulier des oeuvres de Monteverdi et de Rameau. Il l'a fait avec les moyens du bord c'est-à-dire maladroitement en particulier sans disposer des informations historiques nécessaires pour une restitution proche des originaux. on ne lui en tiendra pas rigueur sur ce point d'ailleurs il faudra attendre 80 ans supplémentaires pour que les musicologues reconsidèrent le problème avec des données mises à jour. Il n'empêche qu' à défaut d'être pertinentes, ses exhumations furent utiles et courageuses.</p>
+                  
+                  <p>D'indy a tenu sa promesse de tout tenter pour restaurer la pratique musicale chantée au sein de maîtrises, l'idée ayant toujours été de travailler le fonds des musiques populaires au sein des chorales constituées et de plain-chant dans le cadre ecclésisatique. Ses opus 99 et 100 proposent en particulier des harmonisations de chansons d'autrefois qui sont de ce fait parvenues jusqu'à nous (La pêche aux moules !). </p>
+                  
+                  <h4>Controverses tardives</h4>
+                  <p>Si les esprits ouverts n'ont jamais mis en question l'adhésion de d'Indy au wagnérisme, il n'en a pas été de même de ses dérives. Peu enclin à l'esprit critique, D'Indy a adhéré non seulement au chromatidsme wagnérien mais aussi à ses idées fumeuses relayant un antisémtisme primaire en particulier doutant de la capacuité des compositeurs juifs à crééer une musique originale. Il a aggravé son cas en se trompant de camp lors de l'affaire Dreyfus et il l'a fait si bruyamment que certains s'en sont souvenu plus d'un siècle plus tard. C'est ainsi qu'est née une controverse au sein de l'administration du 12<sup>ème</sup>  arrondissement de Paris : le remuant Alexis Corbière porte-pariole de mélenchon demande en juillet 2010 (et obtint 3 ans plus tard) la rebaptisation du Collège <a href="https://fr.wikipedia.org/wiki/Vincent_d%27Indy" title="Vincent d'Indy">Vincent d'Indy</a> en Collège Germaine Tillion, du nom de la résistante entrée récemment au Panthéon. Vous trouverez sa démarche parfaitement argumentée en <a href="../annexes/dindy.pdf">annexe</a>. Tout au plus commencerez-vous à la trouver suspecte  lorsque vous apprendrez que l'intéressé s'est également opposé (mais cette fois sans succès) à ce qu’une rue de Paris porte le nom du célèbre écrivain dissident Alexandre Soljenitsyne au motif qu'il le considère comme un dangereux réactionnaire. Vous commencerez à comprendre lorsque vous saurez qu'Alexis Corbière est porte-parole de <a href="https://fr.wikipedia.org/wiki/Alexis_Corbi%C3%A8re#cite_note-Le_Vaillant2016-3"></a>. Personnellement je suis d'avis que les collégiens qui par ailleurs étudie Céline dans le texte sache que la France a aussi compté de grands musiciens à qui il ne manque qu'un peu de publicité pour contrarier le bruit actuel. Si d'Indy possède son avenue dans le 12<sup>ème</sup> arrondissement de Paris il a perdu son Collège. Les édiles de Privas n'ont pas cédé à la même manie de même que les montréalais ont été plus conciliants  de même que les astronomes : l'astéroïde 11530 de la ceinture principale conserve son surnom;<br/>
+                  <p><i>Note sur les rues de Paris. Par bonheur, l'avenue d'Indy n'a pas été débaptisée. En flânant dans Paris, vous pourriez vous intéresser aux noms des rues, des squares voire des impasses, histoire de vérifier que les grands musiciens y sont  mis à l'honneur, davantage qu'au Panthéon. L'affaire risquant de vous prendre du temps - il y  a plus de 5000 voies à explorer ! - une solution plus rapide consiste à consulter l'<a href="http://www.parisrues.com/ruesgen/toutes-les-rues-de-paris.html">annuaire</a>. On y apprend plein de choses sur les rapports que l'administration entretient avec les musiciens, français ou étrangers. Jean-Sebastien Bach, qui possédait sa rue dans le 16<sup>ème</sup> (devenue Henri Heine), a été déménagé, en 1954, dans le 13<sup>ème</sup>; Beethoven n'a jamais quitté son impasse dans le 16<sup>ème</sup> tandis que  Mozart a bénéficié de plus de considération, recevant une Avenue  plus un Square en plein 16<sup>ème</sup>. La voierie de la capitale française ayant inévitablement évolué, un grand nombre d'intitulés actuels datent en fait de la deuxième moitié du 19<sup>ème</sup> siècle voire ils sont postérieurs, de plus les rebaptêmes ont été fréquents. Berlioz en 16 (square en 9), Rameau en 2, Debussy en 17, Ravel en 12, Messiaen en 13, Chausson en 17 (square), d'Indy en 12, Paul Dukas en 12, Chabrier en 17 (square), Fauré en 17 (square), César Franck en 15, Albert Roussel en 17, tous noms dont nous aurons à reparler.</i></p> 
+                  </p>
+                 
+                 
+              </div>
+            </div>
+
+
+            <a id="ancreRetourHautPage" href="#site">&uarr;</a>
+
+            <!-- Inclusion footer -->
+            <div id="footer"></div>
+
+        </div> 
+    
+    </div>
+
+</body>
+</html>
