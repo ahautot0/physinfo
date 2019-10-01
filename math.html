@@ -47,25 +47,31 @@
                     <a id="ancreChronique1" href="#chronique1" class="linavMenu">
                     <span>Le Problème de Steiner</span>
                     </a>
-            </li>
+        </li>
                 <li>
                     <a id="ancreChronique2" href="#chronique2" class="linavMenu">
                     <span>L'étonnante équation différentielle de Lee Rubel</span>
                     </a>
-            </li>
+        </li>
                 <li>
                     <a id="ancreChronique3" href="#chronique3" class="linavMenu">
                     <span>Trois candidats à la roulette russe</span>
                     </a>
-            </li>
+        </li>
                 <li>
                     <a id="ancreChronique4" href="#chronique4" class="linavMenu">
                     <span>Chute libre sur un centre fixe et oscillateur harmonique : le changement de variables de Sundman</span>
                     </a>
-            </li>
+        </li>
                 <li>
                     <a id="ancreChronique5" href="#chronique5" class="linavMenu">
                     <span>Poincaré ou Fibonacci ?</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a id="ancreChronique6" href="#chronique6" class="linavMenu">
+                    <span>Quaternions</span>
                     </a>
                 </li>
             </ul>
@@ -427,6 +433,34 @@
 
                   <p>De nombreux auteurs ont voulu voir dans cette expérience numérique une illustration du théorème du retour de Poincaré. Rappelons brièvement en quoi il consiste : un système dynamique instable dont le point représentatif évolue dans un espace des phases borné, y suit une trajectoire chaotique : deux trajectoires initialement proches subissent une divergence localement exponentielle et des repliements successifs qui les séparent définitivement.  Toutefois si on découpe l'espace des phases en cellules même microscopiques, un moment viendra où la trajectoire repassera par la même configuration locale, autrement dit, à condition d'être patient le système finira par repasser aussi près que l'on veut de sa configuration de départ.  Toutefois cette éventualité ne se produira qu'auterme d'un temps extraordinairement long, sans commune mesure avec ce qu'on observe dans le cas des images discrétisées.  Celui-ci est, en fait, la conséquence des propriétés remarquables de divisibilté des entiers de Fibonacci.</p>
                 </div>
+                
+                
+              <div id="chronique6">
+                  <h4>Quaternions</h4>
+     <p>Les quaternions sont nés, vers 1843, de l'imagination de Sir William Rowan Hamilton (1805-1865), mathématicien, physicien et astronome irlandais. Se présentant comme une généralisation des nombres réels et complexes, ils ont été préconisés et réellement utilisés dans une formalisation des équations de la mécanique de Newton et de l'électromagnétisme de Maxwell, jusqu'à ce que le calcul vectoriel le remplace (définitivement ?), au début du 20<sup>ème</sup> siècle. Aujourd'hui les quaternions refont surface dans des domaines particulier où leur algèbre concise apporte un vrai confort d'utilisation (Gestion des rotations dans le traitement des images 3D et mécanique quantique).</p>
+     <p>Une théorie modernisée situe actuellement les quaternions parmi les algèbres hypercomplexes, par exemple dans le cadre de la chaîne de Cayley-Dickson. Il s'agit d'une généralisation par étapes successives de la notion de nombre réel. La construction de Cayley-Dickson procède par récurrence en partant de l'ensemble des nombres réels muni des règles usuelles d'addition et de multiplication. On y ajoute simplement une notion de conjugaison telle que le conjugué d'un réel est  égal à lui-même : Conj[a] = a. Ces réels constituent la base de la construction, que l'on pourrait appeler  nombres hypercomplexes de rang zéro (K=0). Ayant défini les hypercomplexes de rang, K, par exemple, A, B, C et D, on définit les hypercomplexes de rang (K+1), X et Y, comme couples ordonnés d'hypercomplexes de rang K, X = {A, B} et Y = {C, D}, entre lesquels sont définies les règles suivantes d'addition,  de multiplication  et de conjugaison :</p>
+     
+      <ul class="miniListCorps">
+      <li>Addition : X+Y = {A, B} + {C, D} = {A+C, B+D}. </li>
+      <li>Multiplication : X Y = {A, B} {C, D} = {A C-Conj[D] B, D A+B Conj[C]}. </li>
+      <li>Conjugaison : Conj[X] = Conj[{A, B}] = {Conj[A], -B}. </li>
+      </ul>
+      
+     <p>La construction progresse donc comme suit (les détails figurent en annexe dans un fichier Mathematica ou pdf) :</p>
+      
+     <ul class="miniListCorps">
+                    <li>On part de l'ensemble usuel des  nombres réels, notés a, b, ... . </li>
+                    <li>Première étape : les nombres complexes. On définit un nombre complexe, z, comme un couple ordonné de réels : z = {a<sub>1</sub>, a<sub>2</sub>}. Son conjugué se note, Conj[z] = {a<sub>1</sub>, -a<sub>2</sub>}. On  utilise habituellement une notation alternative algébrique, z = e a<sub>1</sub>+i a<sub>2</sub>, où les deux clés, e=1 et i, respectent la table de mutiplication, ee=e,ei=ie=i et ii<sup></sup> = -1 (Cf annexe). </li>
+                    <li>Deuxième étape : les quaternions. On définit un quaternion, q, comme un couple ordonné de complexes : q = {{a<sub>1</sub>, a<sub>2</sub>}, {a<sub>3</sub>, a<sub>4</sub>}}. Son conjugué se note, en respectant la définition générale, Conj[q] = {{a<sub>1</sub>, -a<sub>2</sub>}, -{a<sub>3</sub>, a<sub>4</sub>}}. On  note habituellement les quaternions sous une forme algébrique alternative (mais équivalente), q = e a<sub>1</sub>+ i a<sub>2</sub>+ j a<sub>3</sub>+ k a<sub>4</sub>, où les  clés, e=1, i, j et k, respectent la table de mutiplication détaillée en annexe. </li>
+                    <li>Troisième étape : les octonions. On définit un octonion, &Oscr;, comme un couple ordonné de quaternions : &Oscr; = {{{a<sub>1</sub>, a<sub>2</sub>}, {a<sub>3</sub>, a<sub>4</sub>}}, {{a<sub>5</sub>, a<sub>6</sub>}, {a<sub>7</sub>, a<sub>8</sub>}}}. Son conjugué se note, en respectant la définition générale, Conj[&Oscr;] = {{{a<sub>1</sub>,-a<sub>2</sub>}, -{a<sub>3</sub>, a<sub>4</sub>}}, {-{a<sub>5</sub>, a<sub>6</sub>}, -{a<sub>7</sub>, a<sub>8</sub>}}}. On  note habituellement les octonions sous une forme algébrique alternative (mais équivalente), q = e a<sub>1</sub>+ i a<sub>2</sub>+ j a<sub>3</sub>+ k a<sub>4</sub>+ l a<sub>5</sub>+ m a<sub>6</sub>+ n a<sub>7</sub>+ p a<sub>8</sub>, où les  clés, e=1, i, j, k, l, m, n et p, respectent la table de mutiplication détaillée en annexe. </li>
+                </ul>
+                
+                <p>Cette construction double la dimension de l'espace utilisé à chaque étape. L'étape suivante définirait les sédénions à 16 composantes dont on ne fait habituellement aucun usage concret. Ces algèbres  successives perdent les propriétés suivantes : complexes (pertes de l'autoconjugaison et de la notion de comparaison &lt;&gt;), quaternions (perte de la commutativité de la multiplication), octonions (perte de l'associativité de la multiplication).</p> 
+                
+                <p>Concentrons-nous sur les applications des quaternions pour lesquels on peut définir une théorie des fonctions d'une variable quaternionique. La fonction exponentielle, exp[q] = exp[e a<sub>1</sub>+ i a<sub>2</sub>+ j a<sub>3</sub>+ k a<sub>4</sub>], est particulièrement intéressante. En se rappelant la définition sous forme de développement en série, on a : exp[q] = exp[a<sub>1</sub>] [cos&alpha; +  (i a<sub>2</sub>+ j a<sub>3</sub>+ k a<sub>4</sub>)sin&alpha;/&alpha;]. On trouve que le produit exp[-(i n<sub>x</sub> + j n<sub>y</sub> + k n<sub>z</sub>)&theta;/2] (i b+jc+kd)              exp[+(i n<sub>x</sub> + j n<sub>y</sub> + k n<sub>z</sub>)&theta;/2] = (i b'+jc'+kd'), définit un vecteur (b',c',d') ayant subi une rotation inverse d'angle &theta; autour du vecteur unitaire (n<sub>x</sub>, n<sub>y</sub>, n<sub>z</sub>). On trouvera en annexe l'exemple d'une pyramide ayant subi une rotation.</p>
+              </div>
+                
+                
             </div>
 
 
