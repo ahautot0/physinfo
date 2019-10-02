@@ -457,7 +457,49 @@
                 
                 <p>Cette construction double la dimension de l'espace utilisé à chaque étape. L'étape suivante définirait les sédénions à 16 composantes dont on ne fait habituellement aucun usage concret. Ces algèbres  successives perdent les propriétés suivantes : complexes (pertes de l'autoconjugaison et de la notion de comparaison &lt;&gt;), quaternions (perte de la commutativité de la multiplication), octonions (perte de l'associativité de la multiplication).</p> 
                 
-                <p>Concentrons-nous sur les applications des quaternions pour lesquels on peut définir une théorie des fonctions d'une variable quaternionique. La fonction exponentielle, exp[q] = exp[e a<sub>1</sub>+ i a<sub>2</sub>+ j a<sub>3</sub>+ k a<sub>4</sub>], est particulièrement intéressante. En se rappelant la définition sous forme de développement en série, on a : exp[q] = exp[a<sub>1</sub>] [cos&alpha; +  (i a<sub>2</sub>+ j a<sub>3</sub>+ k a<sub>4</sub>)sin&alpha;/&alpha;]. On trouve que le produit exp[-(i n<sub>x</sub> + j n<sub>y</sub> + k n<sub>z</sub>)&theta;/2] (i b+jc+kd)              exp[+(i n<sub>x</sub> + j n<sub>y</sub> + k n<sub>z</sub>)&theta;/2] = (i b'+jc'+kd'), définit un vecteur (b',c',d') ayant subi une rotation inverse d'angle &theta; autour du vecteur unitaire (n<sub>x</sub>, n<sub>y</sub>, n<sub>z</sub>). On trouvera en annexe l'exemple d'une pyramide ayant subi une rotation.</p>
+                
+                <h5>Application des quaternions aux rotations 3D</h5>
+                
+                <p>On peut montrer qu'en effectuant le double produit suivant, on trouve un quaternion qui représente exactement le même vecteur tourné en sens inverse d'un angle &theta; autour de la direction définie par le vecteur unitiare, de composantes (n<sub>x</sub>,n<sub>x</sub>,n<sub>x</sub>), peut calquer une  théorie des fonctions d'une variable quaternionique sur celle, usuelle, des fonctions d'une variable complexe. La fonction exponentielle, exp[q] = exp[e a<sub>1</sub>+ i a<sub>2</sub>+ j a<sub>3</sub>+ k a<sub>4</sub>], est particulièrement intéressante. En se rappelant sa définition sous forme de développement en série, on trouve après quelques calculs :</p>
+                
+                <div class="conteneurImages">
+                    <div>
+                      <figure>
+                        <img src="annexes/quaternions/exponential.png" alt="Exponentielle quaternionique">
+                      </figure>
+                    </div>
+                </div>
+                
+                <p>On trouve que le produit suivant transforme un vecteur de composantes (v<sub>x</sub>, v<sub>y</sub>, v<sub>z</sub>) en un vecteur (v'<sub>x</sub>, v'<sub>y</sub>, v'<sub>z</sub>) tourné en sens inverse d'un angle &theta; autour du vecteur unitaire (n<sub>x</sub>, n<sub>y</sub>, n<sub>z</sub>). On trouvera en annexe l'exemple d'une pyramide ayant subi une telle rotation :</p>
+                
+                <div class="conteneurImages">
+                    <div>
+                      <figure>
+                        <img src="annexes/quaternions/rotation.png" alt="Rotation quaternionique">
+                      </figure>
+                    </div>
+                </div>
+                
+                
+                <h5>Application des quaternions à la réécriture des équations de Maxwell</h5>
+                <p>Il est possible de condenser les équations (de l'électromagnétisme) de Maxwell en forme (bi)quaternionique. Il faut commencer par définir les (bi)quaternions suivants (on utilise la notation &radic;-1 pour désigner le symbole imaginaire) :</p>
+                
+                <ul class="miniListCorps">
+                <li>Le potentiel électromagnétique : P = &radic;-1 V/c + i A<sub>x</sub> + j A<sub>y</sub> + k A<sub>z</sub> </li>
+                <li>Le champ électromagnétique : F = i (&radic;-1 E<sub>x</sub>/c - B<sub>x</sub>) + j (&radic;-1 E<sub>y</sub>/c - B<sub>y</sub>) + k (&radic;-1 E<sub>z</sub>/c - B<sub>z</sub>) </li>
+                <li>Le courant : C = &mu;<sub>0</sub> (&radic;-1 c &rho; + i I<sub>x</sub> + j I<sub>y</sub> + k I<sub>z</sub>) </li>
+                <li>Le nabla : &nabla; = &radic;-1/c &part;<sub>t</sub> + i &part;<sub>x</sub> + j &part;<sub>y</sub> + k &part;<sub>z</sub> et son conjugué, &nabla;<sup>-</sup> </li>
+                </ul>
+                
+                <p>Avec ces outils, on peut dériver le champ du potentiel puis condenser les 8 équations scalaires de maxwell en une seule :</p>
+                
+                <ul class="miniListCorps">
+                <li>F = - &nabla;P</li>
+                <li>&nabla;<sup>-</sup>F = C</li>
+                </ul>
+                
+                <h5>Application des quaternions aux transformations de Lorentz</h5>
+               
               </div>
                 
                 
