@@ -458,9 +458,9 @@
                 <p>Cette construction double la dimension de l'espace utilisé à chaque étape. L'étape suivante définirait les sédénions à 16 composantes dont on ne fait habituellement aucun usage concret. Ces algèbres  successives perdent les propriétés suivantes : complexes (pertes de l'autoconjugaison et de la notion de comparaison &lt;&gt;), quaternions (perte de la commutativité de la multiplication), octonions (perte de l'associativité de la multiplication).</p> 
                 
                 
-                <h5>Application des quaternions aux rotations 3D</h5>
+                <h5>1) Application des quaternions aux rotations 3D</h5>
                 
-                <p>On peut montrer qu'en effectuant le double produit suivant, on trouve un quaternion qui représente exactement le même vecteur tourné en sens inverse d'un angle &theta; autour de la direction définie par le vecteur unitiare, de composantes (n<sub>x</sub>,n<sub>x</sub>,n<sub>x</sub>), peut calquer une  théorie des fonctions d'une variable quaternionique sur celle, usuelle, des fonctions d'une variable complexe. La fonction exponentielle, exp[q] = exp[e a<sub>1</sub>+ i a<sub>2</sub>+ j a<sub>3</sub>+ k a<sub>4</sub>], est particulièrement intéressante. En se rappelant sa définition sous forme de développement en série, on trouve après quelques calculs :</p>
+                <p>On peut montrer qu'en effectuant le double produit suivant, on trouve un quaternion qui représente exactement le même vecteur tourné en sens inverse d'un angle &theta; autour de la direction définie par le vecteur unitiare, de composantes (n<sub>x</sub>,n<sub>y</sub>,n<sub>z</sub>), peut calquer une  théorie des fonctions d'une variable quaternionique sur celle, usuelle, des fonctions d'une variable complexe. La fonction exponentielle, exp[q] = exp[e a<sub>1</sub>+ i a<sub>2</sub>+ j a<sub>3</sub>+ k a<sub>4</sub>], est particulièrement intéressante. En se rappelant sa définition sous forme de développement en série, on trouve après quelques calculs :</p>
                 
                 <div class="conteneurImages">
                     <div>
@@ -481,8 +481,8 @@
                 </div>
                 
                 
-                <h5>Application des quaternions à la réécriture des équations de Maxwell</h5>
-                <p>Il est possible de condenser les équations (de l'électromagnétisme) de Maxwell en forme (bi)quaternionique. Il faut commencer par définir les (bi)quaternions suivants (on utilise la notation &radic;-1 pour désigner le symbole imaginaire) :</p>
+                <h5>2) Application des quaternions à la réécriture des équations de Maxwell</h5>
+                <p>Il est possible de condenser les équations (de l'électromagnétisme) de Maxwell en forme (bi)quaternionique. On commence par définir les (bi)quaternions suivants (en utilisant la notation &radic;-1 pour désigner le symbole imaginaire) :</p>
                 
                 <ul class="miniListCorps">
                 <li>Le potentiel électromagnétique : P = &radic;-1 V/c + i A<sub>x</sub> + j A<sub>y</sub> + k A<sub>z</sub> </li>
@@ -491,15 +491,37 @@
                 <li>Le nabla : &nabla; = &radic;-1/c &part;<sub>t</sub> + i &part;<sub>x</sub> + j &part;<sub>y</sub> + k &part;<sub>z</sub> et son conjugué, &nabla;<sup>-</sup> </li>
                 </ul>
                 
-                <p>Avec ces outils, on peut dériver le champ du potentiel puis condenser les 8 équations scalaires de maxwell en une seule :</p>
+                <p>Avec ces outils, on peut dériver le champ du potentiel puis condenser les 8 équations scalaires de Maxwell en une seule :</p>
                 
                 <ul class="miniListCorps">
                 <li>F = - &nabla;P</li>
                 <li>&nabla;<sup>-</sup>F = C</li>
                 </ul>
                 
-                <h5>Application des quaternions aux transformations de Lorentz</h5>
-               
+                <h5>3) Application des quaternions aux transformations de Lorentz</h5>
+                
+                <p>Les équations de Maxwell sont invariantes par rapport au groupe de Lorentz que l'on peut décomposer par commodité en deux sous-groupes, celui des rotations spatiales (traitées au point 1) et de la transformation de Lorentz proprement dite, par exemple selon l'axe Oz :</p>
+                
+                <div class="conteneurImages">
+                    <div>
+                      <figure>
+                        <img src="annexes/quaternions/lorentz.png" alt="transformation de Lorentz quaternionique">
+                      </figure>
+                    </div>
+                    <div>
+                      <figure>
+                        <img src="annexes/quaternions/phi.png" alt="transformation de Lorentz quaternionique">
+                      </figure>
+                    </div>
+                </div>
+                
+                
+              
+               <ul class="miniListCorps">
+                <li>Nous avons vu comment traiter les rotations 3D. Quel que soit le type du quaternion, Q, considéré (type quadri-vecteur, position, R = &radic;-1 c t + i x + j y + kz, nabla, &nabla; ou son conjugué &nabla;<sup>-</sup>, potentiel, P,  courant, C, ou champ, F), la loi de transformation se note (pour une rotation en sens direct d'un angle 2&theta; autour de Oz) : Q' = exp(k&theta;) Q exp(-k&theta;). L'invariance annoncée résulte de l'enchaînement évident : &nabla;'<sup>-</sup>F' = C' &Implies; exp(k&theta;) &nabla;<sup>-</sup> exp(-k&theta;) exp(k &theta;) F exp(-k&theta;) = exp(k&theta;) C exp(-k&theta;), donc après simplifications, &nabla;<sup>-</sup>F = C.</li>
+                <li>La  transformation de Lorentz proprement dite (selon Oz pour simplifier) se traite de la même façon sauf qu'il faut distinguer la loi de transformation pour les quaternions de type, R, qui se note R' = exp(-k&phi;) R exp(-k&phi;) (d'où &nabla;' = exp(k&phi;) &nabla; exp(k&phi;) mais attention &nabla;'<sup>-</sup> = exp(-k&phi;) &nabla;<sup>-</sup> exp(-k&phi;)), alors qu'elle se note, F' = exp(k&phi;) F exp(-k&phi;), pour les (bi)quaternions purement vectoriel tel celui associé au champ. L'invariance annoncée résulte de l'enchaînement à nouveau évident : &nabla;'<sup>-</sup>F' = C' &Implies; exp(-k&phi;) &nabla;<sup>-</sup> exp(-k&phi;) exp(k&phi;) F exp(-k&phi;) = exp(-k&phi;) C exp(-k&phi;), donc après simplifications, &nabla;<sup>-</sup>F = C.</li>
+                </ul>
+                
               </div>
                 
                 
