@@ -437,8 +437,8 @@
                 
               <div id="chronique6">
                   <h4>Quaternions</h4>
-     <p>Les quaternions sont nés, vers 1843, de l'imagination de Sir William Rowan Hamilton (1805-1865), mathématicien, physicien et astronome irlandais. Considérés comme une généralisation des nombres réels et complexes, ils ont été préconisés et réellement utilisés dans une formalisation des équations de la mécanique de Newton et de l'électromagnétisme de Maxwell, jusqu'à ce que le calcul vectoriel les remplace (définitivement ?), au début du 20<sup>ème</sup> siècle. Aujourd'hui les quaternions refont surface dans des domaines particuliers où leur algèbre concise apporte un vrai confort d'utilisation (Gestion des rotations dans le traitement des images 3D, électromagnétisme et mécanique quantique relativiste).</p>
-     <p>Une théorie modernisée situe actuellement les quaternions parmi une infinité d'algèbres hypercomplexes, de dimensions croissantes, par exemple dans le cadre de la chaîne de Cayley-Dickson. Celle-ci développe une généralisation  de la notion de nombre réel en procédant par récurrence au départ de l'ensemble des  réels muni des règles usuelles d'addition et de multiplication. On y ajoute simplement une notion de conjugaison telle que le conjugué d'un réel est  égal à lui-même : Conj[a] = a. Les réels constituent la base de la construction, que l'on pourrait appeler  nombres hypercomplexes de rang zéro (K=0). Ayant défini les hypercomplexes de rang, K, par exemple, A, B, C et D, on définit les hypercomplexes de rang (K+1), X et Y, comme des couples ordonnés d'hypercomplexes de rang K, X = {A, B} et Y = {C, D}, entre lesquels on définit les règles suivantes d'addition,  de multiplication  et de conjugaison :</p>
+     <p>Les quaternions sont nés, vers 1843, de l'imagination de Sir William Rowan Hamilton (1805-1865), mathématicien, physicien et astronome irlandais. Considérés d'emblée comme une généralisation des nombres réels et complexes, ils ont été préconisés et réellement utilisés dans une formalisation des équations de la mécanique de Newton et de l'électromagnétisme de Maxwell, jusqu'à ce que le calcul vectoriel les remplace (définitivement ?), au début du 20<sup>ème</sup> siècle. Aujourd'hui les quaternions refont surface dans des domaines particuliers où leur algèbre concise apporte un vrai confort d'utilisation (Gestion des rotations dans le traitement des images 3D, électromagnétisme et mécanique quantique relativiste).</p>
+     <p>Une théorie modernisée situe actuellement les quaternions parmi une infinité d'algèbres hypercomplexes, de dimensions croissantes, par exemple dans le cadre de la chaîne de Cayley-Dickson. Celle-ci développe une généralisation  de la notion de nombre réel en procédant par récurrence au départ de l'ensemble des  réels, muni des règles usuelles d'addition et de multiplication. On y ajoute simplement une notion de conjugaison telle que le conjugué d'un réel est  égal à lui-même : Conj[a] = a. Les réels constituent la base de la construction, que l'on pourrait appeler  nombres hypercomplexes de rang zéro (K=0). Ayant défini les hypercomplexes de rang, K, par exemple, A, B, C et D, on définit les hypercomplexes de rang (K+1), X et Y, comme des couples ordonnés d'hypercomplexes de rang K, X = {A, B} et Y = {C, D}, entre lesquels on définit les règles suivantes d'addition,  de multiplication  et de conjugaison :</p>
      
       <ul class="miniListCorps">
       <li>Addition : X+Y = {A, B} + {C, D} = {A+C, B+D}. </li>
@@ -450,7 +450,7 @@
       
      <ul class="miniListCorps">
                     <li>On part de l'ensemble usuel des  nombres réels, notés a, b, ... . </li>
-                    <li>Première étape : les nombres complexes. On définit un nombre complexe, z, comme un couple ordonné de réels : z = {a<sub>1</sub>, a<sub>2</sub>}. Son conjugué se note, Conj[z] = {a<sub>1</sub>, -a<sub>2</sub>}. Comme annoncé, la somme de deux complexes, {a<sub>1</sub>, a<sub>2</sub>}+{b<sub>1</sub>, b<sub>2</sub>}, est triviale, valant simplement, {a<sub>1</sub>+b<sub>1</sub>, a<sub>2</sub>+b<sub>2</sub>}. Seul le produit ne l'est pas : {a<sub>1</sub>, a<sub>2</sub>} {b<sub>1</sub>, b<sub>2</sub>} = {a<sub>1</sub>b<sub>1</sub>-a<sub>2</sub>b<sub>2</sub>, a<sub>1</sub>b<sub>2</sub>+a<sub>2</sub>b<sub>1</sub>}. On  utilise habituellement une notation alternative algébrique, z = e a<sub>1</sub>+i a<sub>2</sub>, où les deux clés, e=1 et i=&radic;-1, respectent la table de multiplication suivante :<br/>
+                    <li>Première étape : les nombres complexes. On définit un nombre complexe, z, comme un couple ordonné de réels : z = {a<sub>1</sub>, a<sub>2</sub>}. Son conjugué se note, Conj[z] = {a<sub>1</sub>, -a<sub>2</sub>}. Comme annoncé, la somme de deux complexes, {a<sub>1</sub>, a<sub>2</sub>}+{b<sub>1</sub>, b<sub>2</sub>},  vaut simplement, {a<sub>1</sub>+b<sub>1</sub>, a<sub>2</sub>+b<sub>2</sub>} et le produit vaut, {a<sub>1</sub>, a<sub>2</sub>} {b<sub>1</sub>, b<sub>2</sub>} = {a<sub>1</sub>b<sub>1</sub>-a<sub>2</sub>b<sub>2</sub>, a<sub>1</sub>b<sub>2</sub>+a<sub>2</sub>b<sub>1</sub>}. On  utilise habituellement une notation algébrique alternative (mais équivalente), z = e a<sub>1</sub>+i a<sub>2</sub>, où les deux clés, e=1 et i=&radic;-1, respectent la table de multiplication suivante :<br/>
                     <div class="conteneurImages">
                     <div>
                       <figure>
@@ -460,7 +460,7 @@
                 </div>
                     
 </li>
-                    <li>Deuxième étape : les quaternions. On définit un quaternion, q, comme un couple ordonné de complexes : q = {{a<sub>1</sub>, a<sub>2</sub>}, {a<sub>3</sub>, a<sub>4</sub>}}. Son conjugué se note, conformément à la définition générale, Conj[q] = {{a<sub>1</sub>, -a<sub>2</sub>}, -{a<sub>3</sub>, a<sub>4</sub>}}. La somme de deux quaternions est à nouveau triviale et le produit est détaillé en annexe. On  utilise habituellement une notation algébrique alternative (mais équivalente), q = e a<sub>1</sub>+i a<sub>2</sub>+j a<sub>3</sub>+k a<sub>4</sub>, où les  clés, e=1, i, j et k, respectent la table de mutiplication suivante : <br/>
+                    <li>Deuxième étape : les quaternions. On définit un quaternion, q, comme un couple ordonné de complexes : q = {{a<sub>1</sub>, a<sub>2</sub>}, {a<sub>3</sub>, a<sub>4</sub>}}. Son conjugué se note, conformément à la définition générale, Conj[q] = {{a<sub>1</sub>, -a<sub>2</sub>}, -{a<sub>3</sub>, a<sub>4</sub>}}. La somme de deux quaternions est à nouveau triviale et le produit est détaillé en annexe. On  utilise habituellement une notation algébrique alternative (mais équivalente), q = e a<sub>1</sub>+i a<sub>2</sub>+j a<sub>3</sub>+k a<sub>4</sub>, où les  clés, e=1, i, j et k, respectent la table de multiplication suivante : <br/>
                     <div class="conteneurImages">
                     <div>
                       <figure>
@@ -482,12 +482,12 @@
 </li>
                 </ul>
                 
-                <p>On voit que cette construction double, à chaque étape, la dimension de l'espace utilisé. L'étape suivante définirait les sédénions à 16 composantes dont on ne fait  aucun usage concret, du moins en physique. Ces algèbres   ne sont pas de qualité égales, perdant une propriété algébrique à chaque étape de la construction  : complexes (pertes de l'autoconjugaison et de la notion de comparaison &lt;&gt;), quaternions (perte de la commutativité de la multiplication), octonions (perte de l'associativité de la multiplication), etc.</p> 
+                <p>On voit que cette construction double, à chaque étape, la dimension de l'espace utilisé. L'étape suivante définirait les sédénions à 16 composantes dont on ne fait  aucun usage concret, du moins en physique. Ces algèbres   ne sont pas de qualités égales, perdant une propriété à chaque étape de la construction  : complexes (pertes de l'autoconjugaison et de la notion de comparaison &lt;&gt;), quaternions (perte de la commutativité de la multiplication), octonions (perte de l'associativité de la multiplication), etc.</p> 
                 
                 
                 <h5>1) Application des quaternions aux rotations 3D</h5>
                 
-                <p>Les quaternions proprement dits, q = e a<sub>1</sub>+i a<sub>2</sub>+j a<sub>3</sub>+k a<sub>4</sub>, (présup)posent que les coefficients, a<sub>1</sub>, ..., a<sub>4</sub>, sont réels. Cela permet de leur associer une norme, ||q|| (positive), via la relation : q Conj[q] = a<sub>1</sub><sup>2</sup>+a<sub>2</sub><sup>2</sup>+a<sub>3</sub><sup>2</sup>+a<sub>4</sub><sup>2</sup> = ||q||<sup>2</sup>. Ils apparaissent naturellement en géométrie à 3 dimensions sous la forme purement vectorielle, i a<sub>x</sub>+j a<sub>y</sub>+k a<sub>z</sub>, où (a<sub>x</sub>, a<sub>y</sub>, a<sub>z</sub>) représentent les composantes cartésiennes du vecteur a. C'est sans doute cette observation qui a motivé le remplacement du calcul quaternionique par le calcul vectoriel, à la fin du 19<sup>ème</sup> siècle. Pourtant le caractère purement algébrique du calcul quaternionique lui conserve des vertus incontestables dans le traitement des rotations dans l'espace 3D. On commence par un détour utile en calquant une  théorie des fonctions d'une variable quaternionique sur celle, usuelle, des fonctions d'une variable complexe. La fonction exponentielle, exp[q] = exp[e a<sub>1</sub>+ i a<sub>2</sub>+ j a<sub>3</sub>+ k a<sub>4</sub>], est particulièrement intéressante. En se rappelant sa définition sous forme de développement en série, exp[q] = Sum[q<sup>n</sup>/n!, {n,0,&infin;}], on trouve, après quelques calculs faisant un large usage de l'identité, (i a<sub>2</sub>+ j a<sub>3</sub>+ k a<sub>4</sub>)<sup>2</sup> = (-a<sub>2</sub><sup>2</sup>-a<sub>3</sub><sup>2</sup>-a<sub>4</sub><sup>2</sup>)<sup>n</sup> = (-&alpha;<sup>2</sup>)<sup>n</sup>  :</p>
+                <p>Les quaternions proprement dits, q = e a<sub>1</sub>+i a<sub>2</sub>+j a<sub>3</sub>+k a<sub>4</sub>, (présup)posent que les coefficients, a<sub>1</sub>, ..., a<sub>4</sub>, sont réels. Cela permet de leur associer une norme, ||q|| (positive), via la relation : ||q||<sup>2</sup> = q Conj[q] = a<sub>1</sub><sup>2</sup>+a<sub>2</sub><sup>2</sup>+a<sub>3</sub><sup>2</sup>+a<sub>4</sub><sup>2</sup>. Ils apparaissent naturellement en géométrie à 3 dimensions sous la forme particulière, purement vectorielle, i a<sub>x</sub>+j a<sub>y</sub>+k a<sub>z</sub>, où (a<sub>x</sub>, a<sub>y</sub>, a<sub>z</sub>) représentent les composantes cartésiennes du vecteur a. C'est sans doute cette observation qui a motivé le remplacement du calcul quaternionique par le calcul vectoriel, à la fin du 19<sup>ème</sup> siècle. Pourtant le caractère purement algébrique du calcul quaternionique lui conserve des vertus incontestables, par exemple dans le traitement des rotations dans l'espace 3D. On commence par un détour utile en évoquant brièvement une  théorie des fonctions d'une variable quaternionique calquée sur celle, usuelle, des fonctions d'une variable complexe. La fonction exponentielle, exp[q] = exp[e a<sub>1</sub>+ i a<sub>2</sub>+ j a<sub>3</sub>+ k a<sub>4</sub>], est particulièrement intéressante. En se rappelant sa définition sous forme de développement en série, exp[q] = Sum[q<sup>n</sup>/n!, {n,0,&infin;}], on trouve, après quelques calculs faisant un large usage de l'identité, (i a<sub>2</sub>+ j a<sub>3</sub>+ k a<sub>4</sub>)<sup>2</sup> = -(a<sub>2</sub><sup>2</sup>+a<sub>3</sub><sup>2</sup>+a<sub>4</sub><sup>2</sup>) = -&alpha;<sup>2</sup>  :</p>
                 
                 <div class="conteneurImages">
                     <div>
@@ -497,7 +497,7 @@
                     </div>
                 </div>
                 
-                <p>Un cas intéressant apparaît lorsque q est privé de sa partie scalaire (a<sub>1</sub> = 0) et que (a<sub>1</sub>, a<sub>2</sub>, a<sub>3</sub>) sont les composantes d'un vecteur unitaire (n<sub>x</sub>, n<sub>y</sub>, n<sub>z</sub>). Sa norme &alpha; valant 1, la formule précédente donne (N =  i n<sub>x</sub>+j n<sub>y</sub>+k n<sub>z</sub>) :</p>
+                <p>Un cas intéressant apparaît lorsque q est privé de sa partie scalaire (a<sub>1</sub> = 0) et que (a<sub>2</sub>, a<sub>3</sub>, a<sub>4</sub>) sont les composantes d'un vecteur unitaire, N = (n<sub>x</sub>, n<sub>y</sub>, n<sub>z</sub>).  &alpha; valant 1, dans ce cas, la formule précédente se réduit à :</p>
                 
                 <div class="conteneurImages">
                     <div>
@@ -516,40 +516,42 @@
                     </div>
                 </div>
                 
-                <p>On trouvera en annexe l'exemple d'une pyramide ayant subi une  rotation de ce genre.</p>
+                <p>Posant par exemple, n<sub>x</sub> = n<sub>y</sub> = 0, n<sub>z</sub> = 1 et &theta; = &pi;/4, dans cette formule, on trouve que les produits suivants transforment effectivement i en -j, j en i et k en lui-même :</p>
                 
-                <h5>2) Application des quaternions à la réécriture des équations de Maxwell</h5>
+                <ul class="miniListCorps">
+      <li>(&radic;2/2)(1-k) i (&radic;2/2)(1+k) = -j</li>
+      <li>(&radic;2/2)(1-k) j (&radic;2/2)(1+k) = +i </li>
+      <li>(&radic;2/2)(1-k) k (&radic;2/2)(1+k) = +k</li>
+      </ul>
+      
                 
-                <p>Rien ne s'oppose à ce qu'on considère le cas plus général où certains coefficients des quaternions sont aux-mêmes complexes, on parle de biquaternions dans ce cas. Une précaution doit cependant être prise afin de ne pas confondre la clé i des complexes avec celle des quaternions. Dans ce but, on note ci-après la clé des complexes sous la forme parlante, i=√-1). </p>
+                <div class="conteneurImages">
+                    <div>
+                      <figure>
+                        <img src="annexes/quaternions/rotaxes.png" alt="Rotation quaternionique">
+                      </figure>
+                  </div>
+                </div>
+                
+                <p>On trouvera en annexe un autre exemple d'une pyramide ayant subi une  rotation de ce genre.</p>
+                
+                <h5>2) Application des quaternions à l'invariance des équations de Maxwell</h5>
+                
+                <p>Rien ne s'oppose à ce qu'on considère le cas plus général où certains coefficients des quaternions sont  complexes, on parle alors de biquaternions. Une précaution doit cependant être prise afin de ne pas confondre la clé i des complexes avec celle des quaternions. Dans ce but, on note ci-après la clé des complexes sous la forme parlante, i=&radic;-1. </p>
                 <p>En physique (relativiste), on distingue deux structures  (bi)quaternioniques principales, correspondant respectivement aux quadrivecteurs et aux tenseurs de la théorie  usuelle :</p>
     
                 <ul class="miniListCorps">
-                <li>La première regroupe, la position spatio-temporelle d'un événement, R = &radic;-1 c t + i x + j y + kz, le potentiel électromagnétique, P = &radic;-1 V/c + i A<sub>x</sub> + j A<sub>y</sub> + k A<sub>z</sub> et le courant, C = &mu;<sub>0</sub> (&radic;-1 c &rho; + i I<sub>x</sub> + j I<sub>y</sub> + k I<sub>z</sub>).</li>
-                <li>La deuxième, purement vectorielle, coïncide avec le champ électromagnétique, F = i (&radic;-1 E<sub>x</sub>/c - B<sub>x</sub>) + j (&radic;-1 E<sub>y</sub>/c - B<sub>y</sub>) + k (&radic;-1 E<sub>z</sub>/c - B<sub>z</sub>).                </li>
+                <li>La première regroupe, la position spatio-temporelle d'un événement, R = &radic;-1 c t + i x + j y + kz, le potentiel électromagnétique, P = &radic;-1 V/c + i A<sub>x</sub> + j A<sub>y</sub> + k A<sub>z</sub> et le courant, C = &mu;<sub>0</sub> (&radic;-1 c &rho; + i I<sub>x</sub> + j I<sub>y</sub> + k I<sub>z</sub>). On note que la partie scalaire est imaginaire pure et la partie vectorielle est réelle.</li>
+                <li>La deuxième s'adresse essentiellement au champ électromagnétique, F = i (&radic;-1 E<sub>x</sub>/c - B<sub>x</sub>) + j (&radic;-1 E<sub>y</sub>/c - B<sub>y</sub>) + k (&radic;-1 E<sub>z</sub>/c - B<sub>z</sub>). On note que la partie scalaire est absente et que la partie vectorielle est complexe.     </li>
                 </ul>
                 
-                <p>De même qu'il ne suffit pas, en calcul tensoriel, d'associer 4 grandeurs pour constituer un quadrivecteur, il ne suffit pas de les assembler au sein d'un (bi)quaternion; il faut encore vérifier que les composantes se transforment correctement lors d'un changement de coordonnées, par exemple suite à une rotation des axes ou à une transformation de Lorentz. </p>
+                <p>De même qu'il ne suffit pas, en calcul tensoriel, d'associer 4 grandeurs pour constituer un quadrivecteur, il ne suffit pas de les assembler au sein d'un (bi)quaternion; il faut encore  que les composantes se transforment correctement lors d'un changement de coordonnées, par exemple suite à une rotation des axes ou à une transformation de Lorentz. </p>
                 
                 <ul class="miniListCorps">
-                <li>Lors d'une rotation directe des axes, d'un angle &amp;theta;, disons autour de Oz pour ne pas compliquer, tous les biquaternions, qu'ils soient du premier groupe (R, P ou C) ou du deuxième  (F), se transforment  selon la loi du type, R' = exp[k&theta;/2] R exp[-k&theta;/2]. </li>
-                <li>Lors d'une transformation de Lorentz, disons à vitesse relative, v, selon Oz, pour ne pas compliquer, les biquaternions du premier groupe (R, P ou C) se transforment selon la loi du type, R' = exp[-k&phi;] R exp[-k&phi;] tandis que ceux du deuxième groupe (F) se transforment selon la loi du type, R' = exp[k&phi;] R exp[-k&phi;]. L'angle &phi; est tel que l'on a simultanément </li>
-                </ul>
+                <li>Lors d'une rotation directe des axes, d'un angle &theta;, disons autour de Oz pour ne pas compliquer, tous les biquaternions, qu'ils soient du premier groupe (R, P ou C) ou du deuxième  (F), se transforment  selon la loi du type, R' = exp[k&theta;/2] R exp[-k&theta;/2]. </li>
+                <li>Lors d'une transformation de Lorentz à vitesse relative, v, disons selon Oz pour ne pas compliquer, les biquaternions du premier groupe (R, P ou C) se transforment selon la loi du type, R' = exp[-k&phi;] R exp[-k&phi;] tandis que ceux du deuxième groupe (F) se transforment selon la loi du type, F' = exp[k&phi;] F exp[-k&phi;]. Ces lois sont conformes aux transformations usuelles, par exemple celles relatives aux  coordonnées spatio-temporelles :<br/>
                 
-                
-               <p>Le nabla : &nabla; = &radic;-1/c &part;<sub>t</sub> + i &part;<sub>x</sub> + j &part;<sub>y</sub> + k &part;<sub>z</sub> et son conjugué, &nabla;<sup>-</sup></p>
-                
-                <p>Avec ces outils, on peut dériver le champ du potentiel puis condenser les 8 équations scalaires de Maxwell en une seule :</p>
-                
-                <ul class="miniListCorps">
-                <li>F = - &nabla;P</li>
-                <li>&nabla;<sup>-</sup>F = C</li>
-                </ul>
-                
-                <h5>3) Application des quaternions aux transformations de Lorentz</h5>
-                
-                <p>Les équations de Maxwell sont invariantes par rapport au groupe de Lorentz que l'on peut décomposer par commodité en deux sous-groupes, celui des rotations spatiales (traitées au point 1) et de la transformation de Lorentz proprement dite, par exemple selon l'axe Oz :</p>
-                
-                <div class="conteneurImages">
+                 <div class="conteneurImages">
                     <div>
                       <figure>
                         <img src="annexes/quaternions/lorentz.png" alt="transformation de Lorentz quaternionique">
@@ -562,12 +564,32 @@
                     </div>
                 </div>
                 
+                 </li>
+                </ul>
+                
+
+      
+                <p>L'écriture  des équations de Maxwell requiert l'intervention de l'opérateur différentiel (bi)quaternionique, nabla,  &nabla; = &radic;-1/c &part;<sub>t</sub> + i &part;<sub>x</sub> + j &part;<sub>y</sub> + k &part;<sub>z</sub> et de son conjugué, &nabla;<sup>- </sup>= &radic;-1/c &part;<sub>t</sub> - i &part;<sub>x</sub> - j &part;<sub>y</sub> - k &part;<sub>z</sub>. Les lois de transformation pour ce nabla se notent, &nabla;' = exp[k&theta;/2] &nabla; exp[-k&theta;/2] (idem pour &nabla;<sup>-</sup>), dans  le cas des rotations spatiales, et &nabla;' = exp[k&phi;] &nabla; exp[k&phi;] (mais &nabla;'<sup>-</sup> = exp[-k&phi;] &nabla;<sup>-</sup> exp[-k&phi;]), dans le cas des transformations pures de Lorentz.</p>
+                <p>On commence par  dériver le champ, F, du potentiel, P, puis on condense les 8 équations scalaires de Maxwell en une seule :</p>
+                
+                <ul class="miniListCorps">
+                <li>F = - &nabla;P</li>
+                <li>&nabla;<sup>-</sup>F = C</li>
+                </ul>
+                
+                
+                <p>L'invariance des ces relations se démontre aisément en effectuant les transformations suivantes :</p>
+                
+               
                 
               
                <ul class="miniListCorps">
-                <li>Nous avons vu comment traiter les rotations 3D. Quel que soit le type du quaternion, Q, considéré (type quadri-vecteur, position, R = &radic;-1 c t + i x + j y + kz, nabla, &nabla; ou son conjugué &nabla;<sup>-</sup>, potentiel, P,  courant, C, ou champ, F), la loi de transformation se note (pour une rotation en sens direct d'un angle 2&theta; autour de Oz) : Q' = exp(k&theta;) Q exp(-k&theta;). L'invariance annoncée résulte de l'enchaînement évident : &nabla;'<sup>-</sup>F' = C' &Implies; exp(k&theta;) &nabla;<sup>-</sup> exp(-k&theta;) exp(k &theta;) F exp(-k&theta;) = exp(k&theta;) C exp(-k&theta;), donc après simplifications, &nabla;<sup>-</sup>F = C.</li>
-                <li>La  transformation de Lorentz proprement dite (selon Oz pour simplifier) se traite de la même façon sauf qu'il faut distinguer la loi de transformation pour les quaternions de type, R, qui se note R' = exp(-k&phi;) R exp(-k&phi;) (d'où &nabla;' = exp(k&phi;) &nabla; exp(k&phi;) mais attention &nabla;'<sup>-</sup> = exp(-k&phi;) &nabla;<sup>-</sup> exp(-k&phi;)), alors qu'elle se note, F' = exp(k&phi;) F exp(-k&phi;), pour les (bi)quaternions purement vectoriel tel celui associé au champ. L'invariance annoncée résulte de l'enchaînement à nouveau évident : &nabla;'<sup>-</sup>F' = C' &Implies; exp(-k&phi;) &nabla;<sup>-</sup> exp(-k&phi;) exp(k&phi;) F exp(-k&phi;) = exp(-k&phi;) C exp(-k&phi;), donc après simplifications, &nabla;<sup>-</sup>F = C.</li>
+                <li>Dans le cas des rotations 3D,  la loi de transformation est la même quel que soit le type de quaternion, Q, considéré (type quadrivecteur, position, R = &radic;-1 c t + i x + j y + kz, nabla, &nabla; ou son conjugué &nabla;<sup>-</sup>, potentiel, P,  courant, C, ou champ, F). Elle s'écrit  (pour une rotation en sens direct d'un angle &theta; autour de Oz) : Q' = exp(k&theta;/2) Q exp(-k&theta;/2). L'invariance annoncée résulte des enchaînements évidents suivants : 1) F' = - &nabla;'P' &Implies; exp(k&theta;/2) F exp(-k&theta;/2) = - exp(k&theta;/2) &nabla; exp(-k&theta;/2) exp(k&theta;/2) P exp(-k&theta;/2), d'où F = - &nabla;P, après simplifications, et 2) &nabla;'<sup>-</sup>F' = C' &Implies; exp(k&theta;/2) &nabla;<sup>-</sup> exp(-k&theta;/2) exp(k&theta;/2) F exp(-k&theta;/2) = exp(k&theta;/2) C exp(-k&theta;/2), d'où &nabla;<sup>-</sup>F = C, après simplification.</li>
+                <li>Dans le cas d'une  transformation de Lorentz proprement dite (selon Oz pour simplifier), l'invariance résulte des enchaînements suivants : 1) F' = - &nabla;'P' &Implies; exp(k&phi;) F exp(-k&phi;) = - exp(k&phi;) &nabla; exp(k&phi;) exp(-k&phi;) P exp(-k&phi;), d'où F = - &nabla;P, après simplifications, et 2) &nabla;'<sup>-</sup>F' = C' &Implies;  exp(-k&phi;) &nabla;<sup>-</sup> exp(-k&phi;) exp(k&phi;) F exp(-k&phi;) = exp(-k&phi;) C exp(-k&phi;), donc après simplifications, &nabla;<sup>-</sup>F = C.</li>
+                
                 </ul>
+                
+                <p>Remarque finale : bien que l'on se soit contenté de cas particuliers (rotation autour du seul axe Oz et translation lorentzienne selon le même axe), les lois de transformations énoncées sont plus générales : il suffit de remplacer le quaternion, k, par N =  i n<sub>x</sub>+j n<sub>y</sub>+k n<sub>z</sub>, pour que l'axe Oz soit remplacé par l'axe défini par la direction de N.</p>
                 
               </div>
                 
