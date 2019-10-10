@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Compositeurs négligés | Bartok : oeuvres de jeunesse</title>
+  <meta name="description" content="L'oeuvre complète de Bela Bartok constitue un des monuments essentiels de la musique au 20<sup>ème</sup> siècle. Si les oeuvres tardives sont bien présentes au répertoire, il n'en va pas de même des oeuvres de jeunesse, nettement plus difficiles d'accès." />
+  <link rel="shortcut icon" href="../logo.ico" />
+  <link href="../style.css" rel="stylesheet" type="text/css" /> 
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <script src="../js/jquery-1.10.2.js"></script>
+  <script src="../js/menus.js"></script>
+  <script src="../js/design.js"></script>
+  <script src="../js/gestionAudioVideo.js"></script>
+  <script> 
+    // Inclusion Header et Footer
+    $(function(){
+      $(function(){
+        $.ajax({
+           url: "../template/header.php",
+           type: "POST",
+           data: ({ROOT: '../'}),
+           success: function(data) {
+             $("#header").html(data);
+             $("#tiresdeloubli").addClass("active"); /*a changer en fonction de la page*/
+             update_design_when_header_loaded();
+          }
+        });
+      });
+      $("#miniMenus").load("../template/miniMenus.php", { ROOT: '../' }, mini_menus_after_loading);
+      $("#footer").load("../template/footer.php", { ROOT: '../' }, update_design_footer);  
+    });
+  </script> 
+</head>
+
+<body id="site">
+
+    <div>
+        <!-- Inclusion header -->
+        <div id="header"></div>
+
+        <div id="miniMenus"></div>
+
+        <div id="corps">
+
+            <div id="contenuPrincipal">
+                <h2>Compositeurs négligés</h2>
+                <h3>Bartok : oeuvres de jeunesse</h3>
+
+                <nav class="filAriane">
+                    <ul>
+                        <li class="breadcrumbItem"><span>Vous êtes ici : </span> Musique</li>
+                        <li class="breadcrumbItem">
+                          <a href="../chroniques.html">Chroniques</a>
+                        </li>
+                        <li class="breadcrumbItem">
+                          <a href="../tiresdeloubli.html">Compositeurs négligés</a>
+                        </li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Bartok : oeuvres de jeunesse</li>
+                    </ul>
+                </nav> 
+
+                
+                
+                <p>Cette chronique répond en quelque sorte à  celle déjà consacrée à  Stravinsky. Cependant, alors que dans le cas de Stravinsky, c'est l'oeuvre tardive qui est moins connue du public, c'est l'inverse dans le cas qui va nous intéresser, consacré à Bela Bartok. nécessite Dans les années 1950-60, il paraissait évident que Bela Bartok (1881-1945) et Igor Stravinsky (1882-1971) étaient les représentants les plus valeureux du modernisme classique (par opposition au modernise atonal, par ailleurs défendu magistralement  par Arnold Schönberg (1874-1951)). Si l'étoile de Stravinsky n'a jamais pâli, il n'en a pas tout à fait été de même pour celle de Bartok, bientôt rejoint voire dépassé après la deuxième guerre, au moins dans l'estime  populaire, par Dimitri Schostakovitch (1906-1975).</p>
+                <p>Bartok n'a certes jamais été vraiment oublié : quelques-unes de ses oeuvres  orchestrales demeurent au répertoire des grandes phalanges instrumentales et l'ensemble de ses 6 Quatuors à cordes figurent toujours en bonne place au Panthéon de la musique de chambre mais cela ne constitue au bilan qu'une modeste partie de son oeuvre. Le moment semble venu de réévaluer cette oeuvre magnifique et essentielle afin d'en apprécier toutes les facettes. En principe, la tâche devrait être facile, après tout le catalogue complet n'est pas très étendu (car il est sans déchet !) mais elle est rendue difficile par le peu d'accessibilité aux (enregistrements des) oeuvres rarement jouées. La firme hongroise Hungaroton a publié en son temps (1960-1980) une (pseudo)intégrale en 29 CD difficilement trouvable dans le commerce en dépit d'une <a href="http://www.classical.net/music/recs/reviews/h/hgr41002a.php">réédition</a> en 2000 distribuée erratiquement d'où il vous faudra fouiller les médiathèques qui ont pris la précaution d'investir dans cette réalisation passionnante. </p>
+              
+                
+              <ul class="miniListCorps">
+  <li><br/></li>
+  <li/li>
+                    
+              </ul>
+              
+
+
+        <h4>Rivalités d'égo ...</h4>
+        
+        <p>Rien ne laissait présager, vers 1950, que Stravinsky se laisserait tenter un jour par les théories de Schönberg. Les deux hommes entretenaient  une inimitié soigneusement calculée afin que,  dans leur entourage respectif, personne n'ait  l'idée d'évoquer l'oeuvre rivale, du moins en leur présence. Rivaux, les deux musiciens l'étaient sur fonds de jalousie latente : Schönberg enviait les succès publics remportés par Stravinsky  et Stravinsky enviait le prestige de Schönberg  incarnant une refonte théorique progressiste du langage et de la théorie musicale.</p>
+                
+<div class="conteneurImages">
+                <div> <figure>
+                  <img src="../images/stravinsky/schonberg.png" alt="Arnold Schönberg" />
+                              <figcaption>Arnold Schönberg</figcaption>
+                    </figure></div>
+                      <div><figure>
+       <img src="../images/stravinsky/stravinsky.png" alt="Igor Stravinsky" />
+                              <figcaption>Igor Stravinsky</figcaption>
+                          </figure></div>
+</div>
+
+
+             
+          </div>
+
+            <a id="ancreRetourHautPage" href="#site">&uarr;</a>
+
+            <!-- Inclusion footer -->
+            <div id="footer"></div>
+
+        </div>
+    
+    
+    </div>
+
+</body>
+</html>
