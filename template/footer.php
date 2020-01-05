@@ -11,7 +11,7 @@
 <div id="articlesRecents">
 	<h5>ARTICLES RECENTS</h5>
 	<ul>
-    	<li><a href="<?php echo $_POST['ROOT']; ?>chroniques/bartok.html">Bartók, un génie exemplaire (04/12/2019)</a></li>
+    	<li><a href="<?php echo $_POST['ROOT']; ?>chroniques/bartok.html">Bartók, une modernité exemplaire (04/12/2019)</a></li>
     	<li><a href="<?php echo $_POST['ROOT']; ?>chroniques/dindy.html">Vincent d'Indy (17/10/2019)</a></li>
         <li><a href="<?php echo $_POST['ROOT']; ?>chroniques/pianomoderne.html">Piano moderne hors des sentiers battus (29/08/2019)</a></li>
 
