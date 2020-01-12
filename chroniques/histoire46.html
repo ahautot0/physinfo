@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Faits divers | Une histoire de la musique</title>
+  <meta name="description" content="Cette histoire personnelle de la musique se veut le mode d'emploi des nombreuses chroniques disponibles sur ce site. Elle ne vise pas à l'encyclopédisme mais plutôt à l'originalité." />
+  <link rel="shortcut icon" href="../logo.ico" />
+  <link href="../style.css" rel="stylesheet" type="text/css" /> 
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <script src="../js/jquery-1.10.2.js"></script>
+  <script src="../js/menus.js"></script>
+  <script src="../js/design.js"></script>
+  <script src="../js/gestionAudioVideo.js"></script>
+  <script> 
+    // Inclusion Header et Footer
+    $(function(){
+      $(function(){
+        $.ajax({
+           url: "../template/header.php",
+           type: "POST",
+           data: ({ROOT: '../'}),
+           success: function(data) {
+             $("#header").html(data);
+             $("#faitsDivers").addClass("active"); /*a changer en fonction de la page*/
+             update_design_when_header_loaded();
+          }
+        });
+      });
+      $("#miniMenus").load("../template/miniMenus.php", { ROOT: '../' }, mini_menus_after_loading);
+      $("#footer").load("../template/footer.php", { ROOT: '../' }, update_design_footer);  
+    });
+  </script> 
+</head>
+
+<body id="site">
+
+    <div>
+        <!-- Inclusion header -->
+       <div id="header"></div>
+
+        <div id="miniMenus"></div>
+
+        <nav id="menuLateralAncres">
+            <ul>         
+            <li>
+                    <a id="ancreson" href="#son" class="linavMenu active">
+                    <span>Le son comme onde de pression</span>
+                    </a>
+</li>
+
+             <li>
+                    <a id="ancreclasses" href="#classes" class="linavMenu">
+                    <span>Classification des instruments de musique</span>
+                    </a>
+</li>
+                <li>
+                    <a id="ancrediapason" href="#diapason" class="linavMenu">
+                    <span>Le cas d'école du diapason</span>
+                    </a>
+</li>
+               
+                
+                <li>
+                    <a id="ancreideale" href="#ideale" class="linavMenu">
+                    <span>Vibrations de la corde idéale</span>
+                    </a>
+</li>
+                
+                 <li>
+                    <a id="ancreviolon" href="#violon" class="linavMenu">
+                    <span>Le violon et la corde idéale</span>
+                    </a>
+</li>
+                <li>
+                    <a id="ancrelame" href="#lame" class="linavMenu">
+                    <span>Vibrations de la lame épaisse</span>
+                    </a>
+</li>
+
+             <li>
+                    <a id="ancremarimba" href="#marimba" class="linavMenu">
+                    <span>Quelques lamellophones</span>
+                    </a>
+</li>
+                <li>
+                    <a id="ancreraide" href="#raide" class="linavMenu">
+                    <span>Vibrations de la corde raide</span>
+                    </a>
+</li>
+               
+                
+                <li>
+                    <a id="ancrepiano" href="#piano" class="linavMenu">
+                    <span>Le piano fait de la corde raide</span>
+                    </a>
+</li>
+                
+                 <li>
+                    <a id="ancreperception" href="#perception" class="linavMenu">
+                    <span>La perception du son</span>
+                    </a>
+</li>
+                
+                <li>
+                    <a id="ancreelectronique" href="#electronique" class="linavMenu">
+                    <span>Mirages et merveilles de l'électronique</span>
+                    </a>
+            </li>
+                
+               
+            </ul>
+        </nav>
+
+        <div id="corps">
+
+<div id="contenuPrincipal">
+                <h2>Faits divers</h2>
+                <h3>Une histoire de la musique</h3>
+                
+
+                 <nav class="filAriane">
+                    <ul>
+                        <li class="breadcrumbItem"><span>Vous êtes ici : </span> Musique</li>
+                        <li class="breadcrumbItem">
+                          <a href="../chroniques.html">Chroniques</a>
+                        </li>
+                        <li class="breadcrumbItem">
+                          <a href="../faitsDivers.html">Faits divers</a>
+                        </li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Une histoire de la musique</li>
+                    </ul>
+                </nav>
+                
+                <div class="sommaire">
+                    <div class="sommaireTitle">
+                        <h6>Sommaire</h6>
+                        <a role="button" tabindex="0" class="sommaireLink">[ afficher ]</a>
+                    </div>
+
+                    <ul class="linksSummary">
+                        <li><a href="#son">Le son comme onde de pression</a></li>
+                        <li><a href="#classes">Classification des instruments de musique</a></li>
+                        <li><a href="#diapason">Le cas d'école du diapason</a></li>
+                        
+                        <li><a href="#ideale">Vibrations de la corde idéale</a></li>
+                        <li><a href="#violon">Le violon et la corde idéale</a></li>
+                        <li><a href="#lame">Vibrations de la lame épaisse</a></li>
+                        <li><a href="#marimba">Quelques lamellophones</a></li>
+                        <li><a href="#raide">Vibrations de la corde raide</a></li>
+                        
+                        <li><a href="#piano">Le piano fait de la corde raide</a></li>
+                        <li><a href="#perception">La perception du son</a></li>
+                        <li><a href="#electronique">Mirages et merveilles de l'électronique</a></li>
+                       
+                    </ul>
+                </div> 
+                
+
+      
+      <div id="son">
+        <h4>Avertissement</h4>
+       <p>Ceci n'est pas une Histoire de la Musique (une de plus), tout au plus mon histoire personnelle. D'aucuns la trouveront peut-être incomplète, partiale et engagée, pire fausse à leurs yeux par endroits, mais cela ne me décourage nullement. Je ne crois guère aux certitudes de l'Histoire telle que des générations d'historiens plein de bonne volonté tente de l'enseigner et je doute que la notion de vérité y trouve son meilleur terrain de jeu. Que de fois ne nous a-t-on pas présenté &quot;de bonne foi&quot; tel épisode relatif aux rôles joués par les uns et les autres, par exemple dans le cadre de la Révolution de 1789 et de ses suites dramatiques, avant de rectifier le tir au motif que de nouveaux documents ont fait surface ? Robespierre, un héros ou un triste sire ? Il n'est pas sain de confier la réponse à ce genre de question à des hommes qui ont parfois sans le savoir en tous cas sans l'avouer une arrière pensée politique. Une chose m'a en tous cas toujours paru suspecte dans ce contexte précis, c'est le peu d'honneur rétrospectif que l'on (les historiens mais aussi la République toute entière) a réservé aux membres de la Convention qui ont osé se dresser contre la folie sanguinaire de la Terreur. Tout bachelier connaît (les noms de) Robespierre et Danton mais connaissent-ils autant les complices de la première heure qui ont enfin osé retourner leur veste, au  péril de leur vie (Tallien, Louchet, ..., attention pas forcément des enfants de choeur pour autant !) ?</p>
+       <p>Les historiens ne sont pas seuls à être visés : les économistes ne font pas mieux lorsqu'ils proposent un modèle  qui s'inscrit en parfaite contradiction avec les modèles concurrents. Les uns assurent &quot;preuves et calculs&quot; à l'appui qu'il est impératif de repousser l'âge de la retraite quand les autres &quot;prouvent&quot; exactement le contraire et le Comité Nobel qui ne s'y retrouve pas les couronne  éventuellement  à des années de distance.   L'une des sources des difficultés réside sans doute dans le glissement de la science (molle) économique ou historique vers sa consoeur politique qui plombe l'objectivité.</p>
+       <p>On peut encore en dire autant des écologistes. L'écologie est une science pas une idéologie et c'est une erreur de confier les décisions aux politiciens. C'est le rôle de la science de déteminer ce qui est mieux pour la préservation des écosystèmes et le rôle des politiques doit se limiter à entériner le résultat des recherches en dégageant les budgets nécessaires au détriment probable de secteurs jadis favorisés mais devenus non prioritaires du simple fait que les budgets ne sont pas indéfiniment extensibles. Pour prendre un exemple simple, il a paru être une avancée sociale de proposer aux citoyens un pécule de vacances mais aujourd'hui il paraît insensé que le budget de l'état serve à faire voyager au-delà de frontières raisonnables, en tous les cas ce n'est pas son rôle.</p>
+       <p>Il faut se faire à cette raison que la notion de Vérité intangible n'est pas davantage de mise en Histoire (même musicale) qu'elle ne l'est en économie. La musique n'est pas une science dans la mesure où la notion de vérité n'y joue aucun rôle. Nikolaus Harnoncourt était d'ailleurs d'avis que la contradiction assumée est nécessaire dans le domaine des arts précisément pour équilibrer l'obsession cartésienne de la science. Si la vérité vous préoccupe absolument alors faites des études de mathématiques, vous serez servis. Au terme d'un préambule pessimiste comment prétendre proposer une histoire de la musique ? La réponse est simple elle consiste à ne pas prendre parti au-delà d'une simple mais très nécessaire échelle des valeurs.</p> 
+        
+        
+        </div>
+      
+      
+      <div id="son">
+        <h4>De la musique pour quoi faire ?</h4>
+        <p>Sauf à remonter à l'époque des cavernes - et encore ! - la musique a toujours existé. Elle est un mode d'expression qui trouve des sons pour traduire des émotions lorsque les mots manquent. Même lorsqu'on les a trouvé, la musique demeure car elle est universelle. On présume qu'en ces temps reculés la musique se faisait davantage qu'elle ne s'écoutait. Cette création permanente était favorisée par l'improvisation ou ce qui revient au même par l'absence d'une théorie contraignante. L'instrumentarium demeurant rudimentaire, aucune habileté extraordinaire n'était requise et d'ailleurs la voix s'est imposée comme l'instrument de choix vu qu'il était et de loin  le plus parfait.</p>
+        <p>Au cours des siècles, ces deux critères ont fait l'objet d'expérimentations de plus en plus savantes aboutissant à ce que nous nommons un peu abusivement &quot;Grande Musique&quot;. Cela s'est fait très progressivement en développant un instrumentarium de plus en plus sophistiqué et dans la foulée son mode d'emploi, sous la forme d'une théorie musicale soucieuse des lois de l'acoustique physique.</p>
+        <p>La musique dont il est question sur ce site est &quot;savante&quot;, &quot;grande&quot; ou &quot;sérieuse&quot;, appelez-la comme vous voulez du moment que vous évitez le qualificatif &quot;classique&quot;, qui  ne convient qu'à la musique composée à l'époque du même nom (1750-1800, soit de Haydn à Mozart). Ce titre commode ne signifie nullement que toute autre musique doive être considérée comme &quot;triviale&quot;, au sens mathématique du terme), &quot;petite&quot; ou &quot;fantaisiste&quot;. Il existe une toute autre tradition musicale qui revendique son caractère populaire. Sa facture mélodique, rythmique, ..., peut être excellente et d'ailleurs les exemples abondent de musiquee savantee qui lui ont emprunté l'une ou l'autre tournures. Sauf à être particulièrement intransigeant et dans tous les cas cela représente une perte, il est des moments émotionnels de l'existence qui appellent d'autres musiques.</p>
+        <p>La meilleure musique à un temps t est celle qui nous fait croire qu'on pourrait se passer e toutes les autres.</p>
+        <p>On dit cet art mort mais il se porte très bien : comme l'a fait remariquer Alex Ross dans deux ouvrages recommandables  (The Rest is Noise et Listen to this, traduits en français) le concert s'est transformé au 19ème siècle en office  avec ses codes (ponctualité, silence religieux, applaudissements réglementés, etc) mais il est vrai qu'en musique comme en religion on est passé à l'ère des non-pratiquants qui se contente d'une écoute domestique. Ceux qui pensent que le public vieillit se trompent si c'était vrai il serait mort depuis longtemps (gainsbourg : après 50 ans on passe au classique et tant mieux si cela se fait plus tôt : comment attirer un jeune public sans le ringardiser aux yeux de ses camarades ?) le public vieillit mais les orchestres rajeunissent et de nombreux labels existent qui </p>
+        <p>L'improvisation musicale souffre du défaut de n'offrir qu'une musique particulière produite dans l'urgence de celui qui la joue. Elle se distingue de la musique écrite qui implique un auditoire beaucoup plus vaste.</p>
+        <p>L'émotion ressentie à l'écoute d'un morceau de musique quel qu'il soit n'a pas valeur universelle. Ecoutez cet extrait d'ue des dernières sonates de Franz Schubert et dites-moi si vous le trouvez triste, joyeux, consolant, apaisant, ou tout autre chose. Il n'y a pas de réponse universelle à ce genre de question qui du coup perd toute signification sauf pour celui qui l'éprouve. Elle dépend de  l'état d'esprit de l'auditeur en ce moment précis. Peut-être une toute autre musique vous convient-elle mieux en ce moment car tout est envisageable sans la moindre honte. Ce qui n'est pas concevable, c'est de se contenter en tout temps d'une réponse commode éprouvée en son temps. </p>
+        <p>Il est en effet essentiel de garder à l'esprit le devoir de respect d'une échelle des valeurs sans laquelle une confusion s'installe inévitablement. Elle repose sur deux critères essentiels relatifs 1) à la complexité savamment dosée de la structure musicale et 2) à son expression acoustique irréprochable. Personne normalement constitué n'a le droit d'économiser ses efforts pour en apprendre davantage dans ses domaines de  compétence. Et sauf le cas extrême où la musique n'intéresse pas, il existe un devoir d'éducation. Vous observerez que je suis en train de me mêler de ce qui ne me regarde pas et pourtant convenez que cet air ne vous est pas inconnu. Si vous êtes un (bon) parent, vous avez fatalement bataillé pour que votre rejeton avale son épinard, pour qu'il se vête suffisamment en sortant, qu'il soit poli avec les autres, qu'il apprenne bien à l'école, j'en passe, et peut-être qu'il se demande de quoi vous vous mêlez. Evidemment si pour avoir la paix, vous ne lui servez que des pizzas  ne variant son alimentation que pour passer aux burgers, alors je perds mon temps et autant en rester là, d'ailleurs je suppose que vous n'êtes pas arrivé à ce stade de la lecture. Je prétends pourtant que les choses ne vont pas autrement en musique : que s'il n'est nullement désagréable ni évidemment interdit d'aimer Céline Dion, Soprano ou </p>
+        
+        <p>La musique possède un statut particulier parmi les arts usuels : dans sa version savante reposant  sur une notation   élaborée, elle est de conception relativement récente, ne remontant guère au-delà de l'an 1000. Quelques musicologues spécialisés dans les exhumations archéologiques (Cf, par exemple, les travaux d'<a href="http://www.archeo.ens.fr/spip.php?article55">Annie Bélis</a> et de son ensemble <a href="https://www.youtube.com/watch?v=JWZ6WMw4aas">Kérilos</a>) protesteront au motif qu'on possède des (copies de) traités relatifs aux connaissances musicales des grecs et même des fragments notés et gravés dans le marbre mais ce serait ignorer  que ces oeuvres antiques sont de facture rudimentaire comparée à ce qu'on a connu en  architecture et en sculpture, à la même époque. La musique  n'ayant jamais, à cette époque reculée, dépassé le stade de la déclamation homophone,  parler ultérieurement, vers 1400, de  Renaissance musicale est donc un contresens manifeste : sauf puiser les principes de la construction d'une gamme exploitable dans l'arithmétique pythagoricienne (Cf <a href="../chroniques/arithmétique.html">Gammes et Tempéraments</a>, G&amp;T pour la suite), elle a, en effet, dû   s'inventer de toutes pièces sans avoir pu compter sur le moindre illustre modèle antique. </p>
+         <p>La musique savante est également singulière dans le rapport quasiment fusionnel qu'elle entretient auprès du &quot;grand public&quot;  avec deux siècles  de passé barocco-classico-romantique : Bach, Mozart et Beethoven en sont les piliers inamovibles  et tant pis si les programmes de concert naviguent le plus souvent entre 1715 et 1915. </p>
+        
+      </div>
+      
+      
+      
+      
+      
+      
+      
+
+	
+        </div>
+
+            <a id="ancreRetourHautPage" href="#site">&uarr;</a>
+
+            <!-- Inclusion footer -->
+            <div id="footer"></div>
+
+        </div>
+    
+    
+    </div>
+
+    <!-- Effet smooth ancres -->
+    <script src="../js/onclick.js"></script>
+    <script src="../js/anchors.js"></script>
+
+</body>
+</html>

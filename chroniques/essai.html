@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  
+
+  
+  
+  .thumbnail 
+{
+ float: left;
+ margin: 8px 16px 8px 4px;
+}
+.comment
+{
+  overflow: auto;
+}
+  
+  
+  <title>Compositeurs négligés | Paul Hindemith, génie mal-aimé</title>
+  <meta name="description" content="Paul Hindemith s'affirme comme le compositeur allemand le plus important de son temps et pourtant il est rare qu'on entende sa musique au concert, en dehors de quelques oeuvres toujours les mêmes." />
+  <link rel="shortcut icon" href="../logo.ico" />
+  <link href="../style.css" rel="stylesheet" type="text/css" /> 
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <script src="../js/jquery-1.10.2.js"></script>
+  <script src="../js/menus.js"></script>
+  <script src="../js/design.js"></script>
+  <script src="../js/gestionAudioVideo.js"></script>
+  <script> 
+    // Inclusion Header et Footer
+    $(function(){
+      $(function(){
+        $.ajax({
+           url: "../template/header.php",
+           type: "POST",
+           data: ({ROOT: '../'}),
+           success: function(data) {
+             $("#header").html(data);
+             $("#tiresdeloubli").addClass("active"); /*a changer en fonction de la page*/
+             update_design_when_header_loaded();
+          }
+        });
+      });
+      $("#miniMenus").load("../template/miniMenus.php", { ROOT: '../' }, mini_menus_after_loading);
+      $("#footer").load("../template/footer.php", { ROOT: '../' }, update_design_footer);  
+    });
+  </script> 
+</head>
+
+<body id="site">
+
+    <div>
+        <!-- Inclusion header -->
+        <div id="header"></div>
+
+        <div id="miniMenus"></div>
+
+        <nav id="menuLateralAncres">
+            <ul>
+                <li>
+                    <a id="ancreBio" href="#bio" class="linavMenu active">
+                    <span>Eléments biographiques</span>
+                    </a>
+</li>
+                <li>
+                    <a id="ancreOeuvre" href="#oeuvre" class="linavMenu">
+                    <span>L'oeuvre d'Hindemith</span>
+                    </a>
+</li>
+                <li>
+                    <a id="ancreTheorie" href="#theorie" class="linavMenu">
+                    <span>Le pédagogue musicologue</span>
+                    </a>
+</li>
+                <li>
+                    <a id="ancreWergo" href="#wergo" class="linavMenu">
+                    <span>Discographie sélective</span>
+                    </a>
+</li>
+                <li>
+                    <a id="ancreRudolf" href="#rudolf" class="linavMenu">
+                    <span>Rudolf Hindemith</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="corps">
+
+            <div id="contenuPrincipal">
+                <h2>Compositeurs négligés</h2>
+                <h3>Paul Hindemith, génie mal-aimé</h3>
+
+                <nav class="filAriane">
+                    <ul>
+                        <li class="breadcrumbItem"><span>Vous êtes ici : </span> Musique</li>
+                        <li class="breadcrumbItem">
+                          <a href="../chroniques.html">Chroniques</a>
+                        </li>
+                        <li class="breadcrumbItem">
+                          <a href="../tiresdeloubli.html">Compositeurs négligés</a>
+                        </li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Paul Hindemith, génie mal-aimé</li>
+                    </ul>
+                </nav>  
+
+                <div class="sommaire">
+                    <div class="sommaireTitle">
+                        <h6>Sommaire</h6>
+                        <a role="button" tabindex="0" class="sommaireLink">[ afficher ]</a>
+                    </div>
+
+                    <ul class="linksSummary">
+                        <li><a href="#bio">Eléments biographiques</a></li>
+                        <li><a href="#oeuvre">L'oeuvre d'Hindemith</a></li>
+                        <li><a href="#theorie">Le pédagogue musicologue</a></li>
+                        <li><a href="#wergo">Discographie sélective</a></li>
+                        <li><a href="#rudolf">Rudolf Hindemith</a></li>
+                    </ul>
+                </div> 
+  
+             
+  
+                  
+                  
+                 
+                  
+
+                  
+                  
+                  
+                  <div id="bio">
+                    <h4>Elements biographiques</h4>
+                    
+                   
+                    <div class="conteneurImageSeule">
+                      <div>
+                          <figure>
+                              <img src="../images/hindemith/famille.png" alt="La famille Hindemith"/>
+                              <figcaption>La famille Hindemith</figcaption>
+                          </figure>
+                      </div>
+                  </div> 
+                    
+                 
+              </div>
+                  
+                  
+                  
+              <div id="oeuvre">
+                <h4>L'oeuvre d'Hindemith</h4>
+                
+                
+                <img src="https://www.xul.fr/images/orange.jpg" class="thumbnail" />
+<div class="comment">
+
+<p>
+  Ceci n'est pas du tout une orange (c'est l'image d'une orangelllllllllllllllllllllllll).<br>
+  Etc... 
+</p>
+</div>
+
+
+
+
+
+
+                
+            </div>
+
+           
+                   
+                    
+              <div id="theorie">
+                <h4>Le pédagogue musicologue</h4>
+                    
+               </div>   
+                
+<div id="wergo">
+  <h4>Discographie sélective</h4>
+
+   </div>
+    
+    
+
+                 
+          <div id="rudolf">
+                    <h4>Rudolf Hindemith</h4>
+    
+                    
+                    
+                </div>
+
+               
+
+          
+</div>
+
+            <a id="ancreRetourHautPage" href="#site">&uarr;</a>
+
+            <!-- Inclusion footer -->
+            <div id="footer"></div>
+
+ 
+    
+    
+    </div>
+
+    <!-- Effet smooth ancres -->
+    <script src="../js/onclick.js"></script>
+    <script src="../js/anchors.js"></script>
+
+</body>
+</html>
