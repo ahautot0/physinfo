@@ -74,6 +74,13 @@
                     <span>Quaternions</span>
                     </a>
                 </li>
+                
+                <li>
+                    <a id="ancreChronique7" href="#chronique7" class="linavMenu">
+                    <span>1, 2, 4, 8, 16, 31 !, ... et le problème de Moser</span>
+                    </a>
+                </li>
+                
             </ul>
         </nav>
 
@@ -105,6 +112,8 @@
                       <li><a href="#chronique3">Trois candidats à la roulette russe</a></li>
                       <li><a href="#chronique4">Chute libre sur un centre fixe et oscillateur harmonique : le changement de variables de Sundman</a></li>
                       <li><a href="#chronique5">Poincaré ou Fibonacci ?</a></li>
+                      <li><a href="#chronique6">Quaternions</a></li>
+                      <li><a href="#chronique7">1, 2, 4, 8, 16, 31 !, ... et le problème de Moser</a></li>
                   </ul>
                 </div>
 
@@ -595,8 +604,23 @@
                 <p>Remarque finale : bien que l'on se soit contenté de cas particuliers (rotation autour du seul axe Oz et translation lorentzienne selon le même axe), les lois de transformations énoncées sont plus générales : il suffit de remplacer le quaternion, k, par N =  i n<sub>x</sub>+j n<sub>y</sub>+k n<sub>z</sub>, pour que l'axe Oz soit remplacé par l'axe défini par la direction de N.</p>
                 
               </div>
+              
+<div id="chronique7">
+                  <h4>1, 2, 4, 8, 16, 31 !, ... et le problème de Moser</h4>   
+        <p>Les amateurs de soi-disant tests d'intelligence sont férus de problèmes proposant de compléter une suite donnée d'entiers. Ils ont une idée logique en tête et entendent récompenser ceux qui vont y adhérer spontanément. C'est ainsi que la séquence, 1, 2, 4, 8, 16, est présumée appeler la suite &quot;naturelle&quot;, 32, 64, 128, ..., au motif qu'on énumère de cette manière les puissances successives de 2. Au fond, l'interrogateur attend que le candidat propose un programme (au sens informatique du terme) capable non seulement de restituer la séquence donnée mais encore de l'extrapoler. Dans l'exemple proposé, le programme attendu pourrait s'écrire dans le langage informatique de votre choix, s<sub>1</sub> = 1, s<sub>n</sub> = s<sub>n-1</sub> (n = 2, 3, 4, ...).</p>
+        
+        <p>Les esprits critiques ont pourtant beau jeu de  faire remarquer que le problème est certainement mal posé et qu'il est facile de proposer d'autres programmes (en fait une infinité) restituant la séquence donnée mais l'extrapolant différemment, par exemple sous la forme (m = 1, 2, 3, ...),  s<sub>m</sub> = 1, 2, 4, 8, 16, 31, 57, 99, ... ou n'importe quelle autre de votre choix.          On  s'en convainc aisément en se donnant une formule d'extrapolation, f(m), contenant autant de paramètres que de valeurs données (5 dans l'exemple) puis en cherchant quelles valeurs il convient de donner à ces paramètres pour que l'on ait, f(m) = s<sub>m</sub>, pour m = 1, 2, ..., 5. Un modèle simple possible est polynomial, f(m) = c<sub>0</sub> + c<sub>1</sub> m
++ c<sub>2</sub> m<sup>2</sup> + ... +  c<sub>4</sub> m<sup>4</sup> et il exige de résoudre un système linéaire de 5 équations, f(m) = s<sub>m</sub> = 2<sup>m-1</sup>, à 5 inconnues les c<sub>0</sub>, ..., c<sub>4</sub>. Le calcul (fastidieux à la main) est fait en <a href="annexes/rubel/rubelequation.html">annexe</a> (<a href="annexes/rubel/rubelequation.nb">Notebook Mathematica</a>) : il livre la formule d'extrapolation, .</p>
+
+
+
+
+
+       
+</div>
                 
-                
+           
+           
             </div>
 
 
