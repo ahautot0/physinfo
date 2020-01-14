@@ -47,33 +47,33 @@
                     <a id="ancreChronique1" href="#chronique1" class="linavMenu">
                     <span>Le Problème de Steiner</span>
                     </a>
-    </li>
+</li>
                 <li>
                     <a id="ancreChronique2" href="#chronique2" class="linavMenu">
                     <span>L'étonnante équation différentielle de Lee Rubel</span>
                     </a>
-    </li>
+</li>
                 <li>
                     <a id="ancreChronique3" href="#chronique3" class="linavMenu">
                     <span>Trois candidats à la roulette russe</span>
                     </a>
-    </li>
+</li>
                 <li>
                     <a id="ancreChronique4" href="#chronique4" class="linavMenu">
                     <span>Chute libre sur un centre fixe et oscillateur harmonique : le changement de variables de Sundman</span>
                     </a>
-    </li>
+</li>
                 <li>
                     <a id="ancreChronique5" href="#chronique5" class="linavMenu">
                     <span>Poincaré ou Fibonacci ?</span>
                     </a>
-            </li>
+    </li>
                 
                 <li>
                     <a id="ancreChronique6" href="#chronique6" class="linavMenu">
                     <span>Quaternions</span>
                     </a>
-                </li>
+        </li>
                 
                 <li>
                     <a id="ancreChronique7" href="#chronique7" class="linavMenu">
@@ -606,17 +606,57 @@
               </div>
               
 <div id="chronique7">
-                  <h4>1, 2, 4, 8, 16, 31 !, ... et le problème de Moser</h4>   
-        <p>Les amateurs de soi-disant tests d'intelligence sont férus de problèmes proposant de compléter une suite donnée d'entiers. Ils ont une idée logique en tête et entendent récompenser ceux qui vont y adhérer spontanément. C'est ainsi que la séquence, 1, 2, 4, 8, 16, est présumée appeler la suite &quot;naturelle&quot;, 32, 64, 128, ..., au motif qu'on énumère de cette manière les puissances successives de 2. Au fond, l'interrogateur attend que le candidat propose un programme (au sens informatique du terme) capable non seulement de restituer la séquence donnée mais encore de l'extrapoler. Dans l'exemple proposé, le programme attendu pourrait s'écrire dans le langage informatique de votre choix, s<sub>1</sub> = 1, s<sub>n</sub> = s<sub>n-1</sub> (n = 2, 3, 4, ...).</p>
+                  <h4>1, 2, 4, 8, 16, 31 !, ... et le problème de Moser</h4>
+                  
+                  <div class="conteneurImages">
+                    <div>
+                      <figure>
+                        <img src="annexes/moser/moser.png" alt="Problème de Moser">
+                        <figcaption>m=5 : 10 cordes, 10 sommets, 18 arêtes, 16 (sur)faces</figcaption>
+                      </figure>
+                  </div>
+                </div>
+                
+                   
+        <p>Le problème de Moser dispose m points au hasard sur le périmètre d'un cercle et il trace  les m(m-1)/2 cordes possibles. Il pose alors les questions suivantes : combien la figure dessine-t-elle de sommets d'intersection, d'arêtes (rectilignes) et de (sur)faces élémentaires (y compris les secteurs circulaires) ? Ce problème offre une illustration amusante d'un problème connu d'extrapolation.</p>
+        <p>1)  Les amateurs de soi-disant tests d'intelligence sont férus de tests proposant de compléter une suite donnée d'entiers. Les concepteurs ont une idée logique en tête et entendent récompenser ceux qui vont y adhérer spontanément. C'est ainsi que la séquence, 1, 2, 4, 8, 16, est présumée appeler la suite &quot;naturelle&quot;, 32, 64, 128, ..., au motif qu'elle énumère  les puissances successives de 2. Au fond, l'interrogateur attend que le candidat propose un programme (au sens informatique du terme) capable non seulement de restituer la séquence donnée mais encore de l'extrapoler dans le sens qu'il a présupposé. Dans l'exemple proposé, le programme attendu pourrait s'écrire simplement dans le langage informatique de votre choix, s<sub>1</sub> = 1, s<sub>n</sub> = s<sub>n-1</sub> (n = 2, 3, 4, ...).</p>
         
-        <p>Les esprits critiques ont pourtant beau jeu de  faire remarquer que le problème est certainement mal posé et qu'il est facile de proposer d'autres programmes (en fait une infinité) restituant la séquence donnée mais l'extrapolant différemment, par exemple sous la forme (m = 1, 2, 3, ...),  s<sub>m</sub> = 1, 2, 4, 8, 16, 31, 57, 99, ... ou n'importe quelle autre de votre choix.          On  s'en convainc aisément en se donnant une formule d'extrapolation, f(m), contenant autant de paramètres que de valeurs données (5 dans l'exemple) puis en cherchant quelles valeurs il convient de donner à ces paramètres pour que l'on ait, f(m) = s<sub>m</sub>, pour m = 1, 2, ..., 5. Un modèle simple possible est polynomial, f(m) = c<sub>0</sub> + c<sub>1</sub> m
-+ c<sub>2</sub> m<sup>2</sup> + ... +  c<sub>4</sub> m<sup>4</sup> et il exige de résoudre un système linéaire de 5 équations, f(m) = s<sub>m</sub> = 2<sup>m-1</sup>, à 5 inconnues les c<sub>0</sub>, ..., c<sub>4</sub>. Le calcul (fastidieux à la main) est fait en <a href="annexes/rubel/rubelequation.html">annexe</a> (<a href="annexes/rubel/rubelequation.nb">Notebook Mathematica</a>) : il livre la formule d'extrapolation, .</p>
-
-
-
-
-
+        <p>2) Les esprits critiques ont pourtant beau jeu de  faire remarquer que le problème est certainement mal posé et qu'il est facile de proposer d'autres programmes (en fait une infinité) restituant la séquence donnée mais l'extrapolant différemment, par exemple sous la forme (m = 1, 2, 3, ...),  s<sub>m</sub> = 1, 2, 4, 8, 16, 31, 57, 99, ... ou n'importe quelle autre de votre choix.          On  s'en convainc aisément en se donnant une formule d'extrapolation, f(m), comprenant autant de paramètres que de valeurs données (5 dans l'exemple) puis cherchant quelles valeurs il convient de donner à ces paramètres pour que l'on ait, f(m) = s<sub>m</sub>, pour m = 1, 2, ..., 5. Un modèle simple possible est polynomial, f(m) = c<sub>0</sub> + c<sub>1</sub> m
++ c<sub>2</sub> m<sup>2</sup> + ... +  c<sub>4</sub> m<sup>4</sup> et il exige de résoudre un système linéaire de 5 équations, f(m) = s<sub>m</sub> = 2<sup>m-1</sup>, à 5 inconnues les c<sub>0</sub>, ..., c<sub>4</sub>. Le calcul (un  brin fastidieux à la main) est fait en <a href="annexes/rubel/rubelequation.html">annexe</a> (<a href="annexes/rubel/rubelequation.nb">Notebook Mathematica</a>) : il livre la formule d'extrapolation, f(m) = 1-3m/4+23m<sup>2</sup>/24-m<sup>3</sup>/4+m<sup>4</sup>/24. On vérifie sans peine que f(m) commence effectivement par prendre les valeurs annoncées, au total, s<sub>m</sub> = 1, 2, 4, 8, 16, 31, 57, 99. Un autre modèle, par exemple inversément polynomial,  fonctionnerait de la même façon, extrapolant la suite de départ,  1, 2, 4, 8, 16, de toute autre façon. Il n'y a pas de limite à la fantaisie extrapolatoire.</p>
+        <p>3) Il est pourtant possible de conférer un sens au problème posé en entrée, à condition de préciser un point. La (bonne) question n'est pas &quot;Extrapolez   1, 2, 4, 8, 16&quot; mais pourrait être &quot;Ecrivez le programme le plus concis, qui reproduit la suite, 1, 2, 4, 8, 16, dans le langage usuel de votre choix et voyez comment il poursuit l'énumération de la suite&quot;. Le programme énoncé précédemment, s<sub>1</sub> = 1, s<sub>n</sub> = s<sub>n-1</sub> (n = 2, 3, 4, ...), est tellement concis qu'on ne voit pas le moyen de faire plus court. La longueur du programme le plus court qui imprime une suite après calculs définit la complexité de la suite au sens de Kolmogorov (Pour plus de détails, reportez-vous aux leçons sur la <a href="Seminaires.html">Théorie classique de l'information</a>). C'est dans le cadre de la théorie de l'information que  l'extrapolation &quot;attendue&quot;, 1, 2, 4, 8, 16, 32, 64, 128, ... prend  tout son sens.</p>
        
+       <h5>Retour au problème de Moser</h5>
+       <p>Le lecteur a compris que tout début de suite pouvait être prolongé algorithmiquement de façon tellement arbitraire qu'il est illusoire dans la plupart des cas d'espérer rencontrer une suite prolongée artificiellement dans un problème concret. Le problème de Moser évoqué en introduction est un contre-exemple célèbre. Les figures suivantes illustrent la géométrie du problème dans les cas simples, m = 1, 2, 3, ..., 7, où les points extérieurs ont été ajoutés un à un au hasard sur les bords du cercle.</p>
+       
+        <div class="conteneurImages">
+                    <div>
+                      <figure>
+                        <img src="annexes/moser/moser1to7.png" alt="Problème de Moser">
+                        <figcaption>Construction de Moser entre 1 et 7 points</figcaption>
+                      </figure>
+                  </div>
+        </div>
+
+<p>Sur chacune de ces figures on peut vérifier la validité des dénombrements suivants. Lorsque m sommets (= points) points extérieurs son présents sur les bords du cercle, on trouve :</p>
+
+<ul class="miniListCorps">
+<li>m(m-1)/2 cordes. En effet, chaque point lance une corde vers ses m-1 voisins et au bilan elles sont comptées deux fois.</li> 
+<li>C<sub>m</sub><sup>4</sup> = m(m-1)(m-2)(m-3)/24 sommets (= points) intérieurs. En effet, chaque sommet intérieur se trouve nécessairement à l'intersection de deux cordes définies par 4 points extérieurs; toutes les combinaisons sont distinctes et ne laissent aucun point ignoré. Il y a donc autant de points intérieurs que de façons de combiner m points 4 à 4. Si l'on comptabilise ensemble les sommets intérieurs et extérieurs, ils sont donc en nombre, S = m + C<sub>m</sub><sup>4</sup>.</li>
+<li>2C<sub>m</sub><sup>4</sup> + m(m+1)/2  arêtes   joignant les points voisins (intérieurs ou extérieurs), y compris les arcs de cercle.  En effet, de chaque point intérieur émane 4 segments rectilignes et de chaque point extérieur émane m-1 segments rectilignes (un par corde émanant de ce point). Au total, chaque segment rectiligne étant compté deux fois, leur nombre total vaut : 2C<sub>m</sub><sup>4</sup> + m(m-1)/2.  Si l'on inclut également les m arcs de cercles entre points extérieurs voisins, on trouve un nombre d'arêtes valant, A = 2C<sub>m</sub><sup>4</sup> + m(m+1)/2.</li>
+<li>C<sub>m</sub><sup>4</sup> + C<sub>m</sub><sup>2</sup> + 1 (sur)faces (élémentaires), celles-ci étant définies comme étant les portions d'aires comprises entre les arêtes adjacentes, y compris les m secteurs circulaires périphériques. Ce calcul fait appel à un cousin du théorème d'Euler, qui relie les nombres d'arêtes, de sommets et de faces de tout polyhèdre convexe (par la relation universelle, S+F-A=2). Dans le problème plan qui nous occupe, la relation correcte s'écrit plutôt, S+F-A=1. On démontre celle-ci à partir de celle-là en partant de n'importe quelle figure de Moser, supposée parfaitement élastique) et en la déformant pour la faire sortir du plan et reconstituer un polyhèdre dont une seule face serait manquante. Une démonstration directe est également possible en démontant progressivement la figure de Moser par extractions successives d'une arête; deux cas sont possibles 1) A et F diminuent d'une unité et S reste intact ou 2) A et S diminuent d'une unité et F reste intact mais dans tous les cas, S+F-A demeure constant. Lorsqu'il ne reste plus qu'une seule arête, S=2, F=0 et A=1 donc la constante ne peut valoir que 1. Le nombre de faces, F, se déduit donc du nombre des arêtes et des sommets et on trouve bien, F = C<sub>m</sub><sup>4</sup> + C<sub>m</sub><sup>2</sup> + 1.</li>
+</ul>
+<p>Le nombre des faces s'écrit encore, dans le détail, F = m(m-1)(m-2)(m-3)/24 + m(m-1)/2 +1, une expression visiblement polynomiale. On ne peut que retrouver le polynôme d'interpolation de degré 4 trouvé en introduction; de fait on vérifie que l'on a bien F = 1-3m/4+23m<sup>2</sup>/24-m<sup>3</sup>/4+m<sup>4</sup>/24.</p>
+<p>Pour ceux qui veulent comprendre par quelle coïncidence 5 puissances successives de 2 interviennent dans l'inventaire des (C<sub>m</sub><sup>4</sup> + C<sub>m</sub><sup>2</sup> + 1) faces (pour m = 1, 2, 3, 4, 5), le plus simple est d'observer que les grandeurs, 1, C<sub>m</sub><sup>2</sup> et C<sub>m</sub><sup>4</sup>, occupent les diagonales n°1, 3 et 5  du fameux triangle (symétrique) de Pascal, dont les lignes totalisent notoirement les puissances successives de 2. Les éléments intéressants pour le problème de Moser ont été imprimés en rouge pour faciliter les sommations. On voit qu'à partir de la 6<sup>ème</sup> ligne, le total vaut 31 et non 32 : on s'écarte inexorablement de la puissance de 2 naïvement espérée.</p>
+
+<div class="conteneurImages">
+                    <div>
+                      <figure>
+                        <img src="annexes/moser/pascal.png" alt="Triangle de Pascal">
+                        <figcaption>Triangle de Pascal (Les lignes sont numérotables : m = 1, 2, 3, etc</figcaption>
+                      </figure>
+                  </div>
+        </div>
+        
 </div>
                 
            
