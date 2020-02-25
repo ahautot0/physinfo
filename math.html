@@ -73,11 +73,17 @@
                     <a id="ancreChronique6" href="#chronique6" class="linavMenu">
                     <span>Quaternions</span>
                     </a>
-    </li>
+</li>
                 
                 <li>
                     <a id="ancreChronique7" href="#chronique7" class="linavMenu">
                     <span>1, 2, 4, 8, 16, 31 !, ... et le problème de Moser</span>
+                    </a>
+        </li>
+                
+                <li>
+                    <a id="ancreChronique8" href="#chronique8" class="linavMenu">
+                    <span>Un problème géométrique élémentaire mais surprenant</span>
                     </a>
                 </li>
                 
@@ -114,6 +120,7 @@
                       <li><a href="#chronique5">Poincaré ou Fibonacci ?</a></li>
                       <li><a href="#chronique6">Quaternions</a></li>
                       <li><a href="#chronique7">1, 2, 4, 8, 16, 31 !, ... et le problème de Moser</a></li>
+                      <li><a href="#chronique8">Un problème géométrique élémentaire mais surprenant</a></li>
                   </ul>
                 </div>
 
@@ -344,6 +351,7 @@
                       </figure>
                     </div>
                   </div>
+                  
                 </div>
 
                 <div id="chronique5">
@@ -605,6 +613,8 @@
                 
               </div>
               
+              
+              
 <div id="chronique7">
                   <h4>1, 2, 4, 8, 16, 31 !, ... et le problème de Moser</h4>
                   
@@ -612,7 +622,7 @@
                     <div>
                       <figure>
                         <img src="annexes/moser/moser.png" alt="Problème de Moser">
-                        <figcaption>m=5 : 10 cordes, 10 sommets, 18 arêtes, 16 (sur)faces</figcaption>
+                        <figcaption>m=5 points : 10 cordes, 10 sommets, 18 arêtes, 16 (sur)faces</figcaption>
                       </figure>
                   </div>
                 </div>
@@ -622,7 +632,7 @@
         <p>1)  Les amateurs de soi-disant tests d'intelligence sont férus de questions demandant de compléter une suite donnée d'entiers. Les concepteurs ont une idée logique en tête et entendent récompenser ceux qui vont y adhérer spontanément. C'est ainsi que la séquence, 1, 2, 4, 8, 16, est présumée appeler la suite &quot;naturelle&quot;, 32, 64, 128, ..., au motif qu'elle énumère  les puissances successives de 2. Au fond, l'interrogateur attend que le candidat propose un programme (au sens informatique du terme) capable non seulement de restituer la séquence donnée mais encore de l'extrapoler dans le sens qu'il a présupposé. Dans l'exemple considéré, le programme attendu pourrait s'écrire simplement dans le langage informatique de votre choix, s<sub>1</sub> = 1, s<sub>n</sub> = 2s<sub>n-1</sub> (n = 2, 3, 4, ...).</p>
         
         <p>2) Les esprits critiques ont pourtant beau jeu de  faire remarquer que le problème est certainement mal posé et qu'il est facile de proposer d'autres programmes (en fait une infinité) restituant la séquence donnée mais l'extrapolant différemment, par exemple sous la forme,  s<sub>m</sub> = 1, 2, 4, 8, 16, 31, 57, 99, ... (m = 1, 2, 3, ...) ou n'importe quelle autre de votre choix.          On  s'en convainc aisément en se donnant une formule d'extrapolation, f(m), comprenant autant de paramètres que de valeurs données (5 dans l'exemple) puis en cherchant quelles valeurs il convient de donner à ces paramètres pour que l'on ait, f(m) = s<sub>m</sub>, pour m = 1, 2, ..., 5. Un modèle simple possible est polynomial, f(m) = c<sub>0</sub> + c<sub>1</sub> m
-+ c<sub>2</sub> m<sup>2</sup> + ... +  c<sub>4</sub> m<sup>4</sup> et il exige de résoudre un système linéaire de 5 équations, f(m) = s<sub>m</sub> = 2<sup>m-1</sup>, à 5 inconnues, les c<sub>0</sub>, ..., c<sub>4</sub>. Le calcul (un  brin fastidieux s'il est fait à la main) est détaillé en <a href="annexes/moser/moser.html">annexe</a> (<a href="annexes/moser/moser.nb">Notebook Mathematica</a> disponible sous peu) : il livre la formule d'extrapolation, f(m) = 1-3m/4+23m<sup>2</sup>/24-m<sup>3</sup>/4+m<sup>4</sup>/24. On vérifie sans peine que f(m)  prend successivement les valeurs, s<sub>m</sub> = 1, 2, 4, 8, 16, 31, 57, 99, en accord avec les 5 premières valeurs données. Un autre modèle, par exemple inversément polynomial,  fonctionnerait de la même façon, extrapolant la suite de départ,  1, 2, 4, 8, 16, de toute autre façon. Il n'y a pas de limite à la fantaisie extrapolatoire.</p>
++ c<sub>2</sub> m<sup>2</sup> + ... +  c<sub>4</sub> m<sup>4</sup> et il exige de résoudre un système linéaire de 5 équations, f(m) = s<sub>m</sub> = 2<sup>m-1</sup>, à 5 inconnues, les c<sub>0</sub>, ..., c<sub>4</sub>. Le calcul (un  brin fastidieux s'il est fait à la main) est détaillé en <a href="annexes/moser/moser.html">annexe</a> (<a href="annexes/moser/moser.nb">Notebook Mathematica</a>) : il livre la formule d'extrapolation, f(m) = 1-3m/4+23m<sup>2</sup>/24-m<sup>3</sup>/4+m<sup>4</sup>/24. On vérifie sans peine que f(m)  prend successivement les valeurs, s<sub>m</sub> = 1, 2, 4, 8, 16, 31, 57, 99, en accord avec les 5 premières valeurs données. Un autre modèle, par exemple inversément polynomial,  fonctionnerait de la même façon, extrapolant la suite de départ,  1, 2, 4, 8, 16, de toute autre façon. Il n'y a pas de limite à la fantaisie extrapolatoire.</p>
         <p>3) Il est pourtant possible de conférer un sens au problème posé en entrée, à condition de préciser un point. La (bonne) question n'est pas &quot;Extrapolez   1, 2, 4, 8, 16&quot; mais pourrait être &quot;Ecrivez le programme le plus concis qui reproduit la suite, 1, 2, 4, 8, 16, dans le langage usuel de votre choix et voyez comment il poursuit l'énumération. Le programme énoncé précédemment, s<sub>1</sub> = 1, s<sub>n</sub> = 2s<sub>n-1</sub> (n = 2, 3, 4, ...), est tellement concis qu'on ne voit pas le moyen de faire plus court, c'est en cela qu'il justifie les attentes du concepteur du test. La longueur du programme le plus court qui imprime une suite après calculs définit la complexité de la suite au sens de Kolmogorov (Pour plus de détails, reportez-vous aux leçons sur la <a href="Seminaires.html">Théorie classique de l'information</a>). C'est dans le cadre de la théorie de l'information que  l'extrapolation &quot;attendue&quot;, 1, 2, 4, 8, 16, 32, 64, 128, ... prend  tout son sens.</p>
        
        <h5>Retour au problème de Moser</h5>
@@ -637,13 +647,13 @@
                   </div>
         </div>
 
-<p>Sur chacune de ces figures on peut vérifier la validité des dénombrements suivants. Lorsque m  points extérieurs son présents sur les bords du cercle, on trouve :</p>
+<p>Sur chacune de ces figures on peut vérifier la validité des dénombrements suivants. Lorsque m  points extérieurs sont présents sur les bords du cercle, on dénombre :</p>
 
 <ul class="miniListCorps">
 <li>m(m-1)/2 cordes. En effet, chaque point lance une corde vers ses m-1 voisins et au bilan elles sont comptées deux fois.</li> 
 <li>C<sub>m</sub><sup>4</sup> = m(m-1)(m-2)(m-3)/24 sommets (= points) intérieurs. En effet, chaque sommet intérieur se trouve nécessairement à l'intersection de deux cordes définies par 4 points extérieurs; toutes les combinaisons sont distinctes et ne laissent aucun point ignoré. Il y a donc autant de points intérieurs que de façons de combiner m points 4 à 4. Si l'on comptabilise ensemble les sommets intérieurs et extérieurs, ils sont donc en nombre, S = m + C<sub>m</sub><sup>4</sup>.</li>
 <li>2C<sub>m</sub><sup>4</sup> + m(m+1)/2  arêtes   joignant les points voisins (intérieurs ou extérieurs), y compris les arcs de cercle.  En effet, de chaque point intérieur émanent 4 segments rectilignes et de chaque point extérieur émanent m-1 segments rectilignes (un par corde émanant de ce point). Au total, chaque segment rectiligne étant compté deux fois, leur nombre total vaut : 2C<sub>m</sub><sup>4</sup> + m(m-1)/2.  Si l'on inclut  les m arcs de cercles entre points extérieurs voisins, on trouve un nombre d'arêtes valant, A = 2C<sub>m</sub><sup>4</sup> + m(m+1)/2.</li>
-<li>C<sub>m</sub><sup>4</sup> + C<sub>m</sub><sup>2</sup> + 1 (sur)faces (élémentaires), celles-ci étant définies comme étant les portions d'aires comprises entre les arêtes adjacentes, y compris les m secteurs circulaires périphériques. Ce calcul fait appel à un cousin du théorème d'Euler, qui relie les nombres d'arêtes, de sommets et de faces de tout polyèdre convexe (par la relation universelle, S+F-A=2). Dans le problème plan qui nous occupe, la relation correcte s'écrit plutôt, S+F-A=1. On démontre celle-ci à partir de celle-là en partant de n'importe quelle figure de Moser, supposée parfaitement élastique, et en la déformant pour la faire sortir du plan de manière à reconstituer un polyèdre dont une seule face serait manquante (Celle qui correspondrait au périmètre déformé du cercle). Une démonstration directe par récurrence est également possible en démontant progressivement la figure de Moser par extractions successives d'une arête. Deux cas sont possibles : 1) A et F diminuent d'une unité et S reste intact ou 2) A et S diminuent d'une unité et F reste intact mais dans tous les cas, S+F-A demeure constant. Lorsqu'il ne reste plus qu'une seule arête, S=2, F=0 et A=1, donc la constante ne peut valoir que 1. Le nombre de faces, F, se déduit donc du nombre des arêtes et des sommets et on trouve bien, F = C<sub>m</sub><sup>4</sup> + C<sub>m</sub><sup>2</sup> + 1.</li>
+<li>C<sub>m</sub><sup>4</sup> + C<sub>m</sub><sup>2</sup> + 1 (sur)faces (élémentaires), celles-ci étant définies comme étant les portions d'aires comprises entre les arêtes adjacentes, y compris les m secteurs circulaires périphériques. Ce calcul fait appel à un cousin du théorème d'Euler, qui relie les nombres d'arêtes, de sommets et de faces de tout polyèdre convexe (par la relation universelle, S+F-A=2). Dans le problème plan qui nous occupe, la relation correcte s'écrit plutôt, S+F-A=1. On démontre celle-ci à partir de celle-là en partant de n'importe quelle figure de Moser, supposée parfaitement élastique, et en la déformant pour la faire sortir du plan de manière à reconstituer un polyèdre dont une seule face serait manquante (Celle qui correspondrait au périmètre déformé du cercle). Une démonstration directe par récurrence est également possible en démontant progressivement la figure de Moser par extractions successives d'une arête. Deux cas sont en effet possibles : 1) A et F diminuent d'une unité et S reste intact ou 2) A et S diminuent d'une unité et F reste intact mais dans tous les cas, S+F-A demeure constant. Lorsqu'il ne reste plus qu'une seule arête, S=2, F=0 et A=1, donc la constante ne peut valoir que 1. Le nombre de faces, F, se déduit donc du nombre des arêtes et des sommets et on trouve bien, F = C<sub>m</sub><sup>4</sup> + C<sub>m</sub><sup>2</sup> + 1.</li>
 </ul>
 <p>Le nombre des faces s'écrit encore, en développant l'expression précédente, F = m(m-1)(m-2)(m-3)/24 + m(m-1)/2 +1, un  polynôme de degré 4. On ne peut que retrouver le polynôme d'interpolation de degré 4 trouvé en introduction et de fait, on vérifie que l'on a bien, F = 1-3m/4+23m<sup>2</sup>/24-m<sup>3</sup>/4+m<sup>4</sup>/24.</p>
 <p>Pour ceux qui veulent comprendre par quelle coïncidence 5 puissances successives de 2 interviennent dans l'inventaire des (C<sub>m</sub><sup>4</sup> + C<sub>m</sub><sup>2</sup> + 1) faces (pour m = 1, 2, 3, 4, 5), le plus simple est d'observer que les grandeurs, 1, C<sub>m</sub><sup>2</sup> et C<sub>m</sub><sup>4</sup>, occupent les diagonales n°1, 3 et 5  du fameux triangle (symétrique) de Pascal, dont les lignes totalisent notoirement les puissances successives de 2. Les éléments intéressants pour le problème de Moser ont été imprimés en rouge pour faciliter les sommations. On voit qu'à partir de la 6<sup>ème</sup> ligne, le total vaut 31 et non 32 : on s'écarte inexorablement de la puissance de 2 naïvement espérée.</p>
@@ -658,9 +668,101 @@
         </div>
         
 </div>
+     
+     
+     <div id="chronique8">
+        <h4>Un problème géométrique élémentaire mais surprenant</h4>           
+     <p>Le problème suivant est a priori élémentaire et cependant si on procède à un sondage (en famille, à l'école, ...) en vue de collecter les réponses possibles, obtenues sans effectuer le moindre calcul mais en exerçant simplement son intuition, on se trouve confronté à une grande disparité de résultats.  Le  problème pourrait avantageusement être discuté en classe : il permettrait à des élèves de 14-15 ans de récapituler de façon ludique quelques notions qu'ils peinent éventuellement à assimiler. L'énoncé est le suivant : </p>
+     
+     <ul class="miniListCorps">
+       <li>On considère un terrain de football de 100 m de long. On tend une corde souple mais inextensible, longue de 100 m, entre les lignes de but et on la fixe à ses extrémités. La surface du terrain étant supposée  plane, la corde est forcément parfaitement rectiligne, rien de particulier à ce stade.</li>
+       <li>Si on allonge la corde d'un mètre, sans toucher à ses extrémités qui demeurent fixées, elle mesure à présent 101 m et elle cesse d'être parfaitement rectiligne, lézardant sans doute un (petit) peu. Il est à présent possible de saisir la corde entre le pouce et l'index, soit en son milieu soit quelque part près d'une extrémité  de telles manières que, tendue à la verticale de la ligne médiane  (cas 1) ou de celle de but  (cas 2), elle dessine l'un ou l'autre des motifs représentés ci-après en vue de profil (Pas forcément à l'échelle !).</li>
+       <li>La question posée est : pouvez-vous estimer (deviner), <strong>à l'intuition seulement</strong>, l'ordre de grandeur de la hauteur, h, que la corde atteint  dans les deux cas de figure envisagés ? Personne ne se trompe dans le cas n°2 : de fait la portion oblique de corde mesurant visiblement un peu plus de 100 m, la portion verticale (précisément égale à h) ne peut qu'être légèrement inférieure à 1 m, la valeur exacte ne pouvant résulter que d'un calcul détaillé qui n'est pas demandé à ce stade. Il n'en va pas de même dans le cas n°1 : faites un sondage autour de vous, vous récolterez probablement des avis divergents, compris entre 20 cm et 4 m (voire davantage mais avec une concentration nette  en-dessous d'un mètre).     </li>
+     </ul>
+     <div class="conteneurImages">
+                    <div>
+                      <figure>
+                        <img src="annexes/corde/corde.png" alt="Corde tendue">
+                        <figcaption>Cordes (mesurant 100 m ou 101 m) tendues entre deux extrémités distantes de 100 m <br/> (Echelle non nécessairement respectée !)</figcaption>
+                      </figure>
+                  </div>
+        </div>
+        
+         <p>Pour contrôler les résultats exacts dans chaque cas, un calcul s'impose qui est à la portée de n'importe quel collégien au fait du théorème de Pythagore et capable de mettre un système en équations puis de le résoudre. Tant qu'à faire, effectuons  le calcul dans le cas  général où la corde est pincée en un point quelconque et épouse le profil final suivant :</p>
+         
+         <div class="conteneurImages">
+                    <div>
+                      <figure>
+                        <img src="annexes/corde/casgeneral.png" alt="Corde tendue">
+                        <figcaption>Cas général (Echelle non  respectée !)</figcaption>
+                      </figure>
+                  </div>
+        </div> 
+        
                 
-           
-           
+        <div class="conteneurImageSeule">
+                      <div>
+                          <figure>
+                              <img src="annexes/corde/systeme.png" alt="Système d'équations">
+                          </figure>
+                      </div>
+        </div>
+                
+                
+                <p>Les contraintes géométriques et l'application répétée du théorème de Pythagore aux deux triangles rectangles de la figure précédente imposent le système ci-contre, duquel il convient de tirer h en fonction de u. Soustrayant membre à membre les équations 3 et 4 donne immédiatement : v<sup>2 </sup>- u<sup>2</sup> = c<sup>2 </sup>- b<sup>2</sup>, soit encore, 100(v-u) = 101(c-b). En combinant cette équation avec b+c=101, on a ce qu'il faut pour tirer b (et c) en fonction de u. On trouve par exemple (et cela suffit) : b = 101/2 - 100/101 (50-u). En introduisant ce résultat dans la troisième équation, on trouve  la réponse souhaitée sous la forme : h<sup>2</sup> = [101/2 - (100/101)(50-u)]<sup>2</sup> - u<sup>2</sup>, soit finalement : </p>
+                
+                
+                <div class="conteneurImages">
+                    <div>
+                      <figure>
+                        <img src="annexes/corde/resu.png" alt="Résultat du calcul">
+                      </figure>
+                  </div>
+        </div> 
+        
+      <p>On détaille aisément les deux cas proposés :</p>  
+        
+        <ul class="miniListCorps">
+        <li>Cas 2 (u=100 et v=0 ou, ce qui revient au même, u=0 et v=100) : h = 50.5 - 5000/101 = 201/202 = 0.995 m. Aviez-vous prédit d'être si proche de 1 m ?</li>
+        <li>Cas 1 (u = v = 50) : h<sup>2</sup> = 201/4, d'où h = 7.088 m !</li>
+        </ul>
+        
+        <p>On peut représenter graphiquement la solution, dans le cas général, en affichant la hauteur, h, atteinte selon la valeur de u. La courbe dessinée est manifestement le lieu des points dont la somme des distances aux points fixes de coordonnées (u, h) = (0, 0) et (100, 0) est constante, en effet b+c=101; c'est donc une ellipse très aplatie dont les foyers sont précisément situés en ces points  (Ne vous fiez pas aux échelles du graphique, en u et en h, qui sont très différentes !).</p>
+        
+        <div class="conteneurImages">
+                    <div>
+                      <figure>
+                        <img src="annexes/corde/tunnel.png" alt="Profil final">
+                        <figcaption>Cas général (Echelles non proportionnelles !)</figcaption>
+                      </figure>
+          </div>
+        </div> 
+        
+        <p>Il est facile de voir que la formule trouvée ci-dessus, b = 101/2 - 100/101 (50-u), est  équivalente à l'équation de cette ellipse en coordonnées polaires, (b, &theta;). Il suffit de noter sur la figure générale précédente que l'angle &theta; est tel que u = b cos(&theta;). En faisant le remplacement, on trouve alors, après simplifications, l'équation polaire d'une ellipse de distance focale, FF' = 100, et d'excentricité, e = 100/101 : </p>
+        
+        <div class="conteneurImages">
+                    <div>
+                      <figure>
+                        <img src="annexes/corde/ellipse.png" alt="Equation polaire de l'ellipse">
+                      </figure>
+          </div>
+		</div>
+        
+        
+            <div class="conteneurImages">
+                    <div>
+                      <figure>
+                        <img src="annexes/corde/polaire.png" alt="Profil elliptique">
+                      </figure>
+          </div>
+			</div>
+        
+      <p>On note que le grand axe excède légèrement 100 m, précisément 101 m, valeur calculée d'après la valeur de b = 201/2, en &theta; = 0. C'était prévisible puisque cela correspond à l'étalement de la corde tendue horizontalement en arrière de l'un quelconque des deux buts.</p>
+      <p>Parvenu à ce stade, on aperçoit une méthode d'estimation mentale directe de la hauteur h atteinte par la corde tendue à la verticale du milieu du terrain. Le cosinus de l'angle &theta; vaut clairement 50/50.5 = 100/101, dans ce cas. Pour trouver h, on a besoin de la tangente de &theta; (car h = 50 tg&theta;). Or celle-ci est reliée au cosinus par la formule classique, 1 + tg<sup>2</sup>&theta; = 1/cos<sup>2</sup>&theta;. L'inverse du cosinus valant  exactement 1.01, son carré vaut 1.02 avec une excellente approximation donc tg<sup>2</sup>&theta; est (très) proche de 2/100 et tg&theta; est également proche de &check;2/10 = 0.141. Au bilan 2h est proche de 14.1 donc h de 7.05. Dans ce cas précis, il n'y a sans doute pas moyen de faire plus court dans l'estimation de h.</p>  
+         
+            </div>
+            
+            
             </div>
 
 
