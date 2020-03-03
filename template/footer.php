@@ -11,9 +11,9 @@
 <div id="articlesRecents">
 	<h5>ARTICLES RECENTS</h5>
 	<ul>
+        <li><a href="<?php echo $_POST['ROOT']; ?>chroniques/jarvi.html">Kristjan Järvi à l'OPL (02/03/2020)</a></li>
         <li><a href="<?php echo $_POST['ROOT']; ?>chroniques/sibelius.html">Jean Sibelius : l'oeuvre pour Orchestre (&amp; Voix) (05/02/2020)</a></li>
     	<li><a href="<?php echo $_POST['ROOT']; ?>chroniques/bartok.html">Bartók, une modernité exemplaire (04/12/2019)</a></li>
-    	<li><a href="<?php echo $_POST['ROOT']; ?>chroniques/dindy.html">Vincent d'Indy (17/10/2019)</a></li>
 
 	</ul>
 </div>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Billets d'humeur | Kristjan Järvi à l'OPL</title>
+  <meta name="description" content="Kristjan Järvi à l'OPL dans un programme Reich-Glass-Järvi, une ouverture bienvenue vers une programmation enfin différente !" />
+  <link rel="shortcut icon" href="../logo.ico" />
+  <link href="../style.css" rel="stylesheet" type="text/css" /> 
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <script src="../js/jquery-1.10.2.js"></script>
+  <script src="../js/menus.js"></script>
+  <script src="../js/design.js"></script>
+  <script src="../js/gestionAudioVideo.js"></script>
+  <script> 
+    // Inclusion Header et Footer
+    $(function(){
+      $(function(){
+        $.ajax({
+           url: "../template/header.php",
+           type: "POST",
+           data: ({ROOT: '../'}),
+           success: function(data) {
+             $("#header").html(data);
+             $("#billetdhumeur").addClass("active"); /*a changer en fonction de la page*/
+             update_design_when_header_loaded();
+          }
+        });
+      });
+      $("#miniMenus").load("../template/miniMenus.php", { ROOT: '../' }, mini_menus_after_loading);
+      $("#footer").load("../template/footer.php", { ROOT: '../' }, update_design_footer);  
+    });
+  </script> 
+</head>
+
+<body id="site">
+
+    <div>
+        <!-- Inclusion header -->
+        <div id="header"></div>
+
+        <div id="miniMenus"></div>
+
+        <div id="corps">
+
+            <div id="contenuPrincipal">
+                <h2>Billets d'humeur</h2>
+                <h3>Kristjan Järvi à l'OPL</h3>
+
+                <nav class="filAriane">
+                    <ul>
+                        <li class="breadcrumbItem"><span>Vous êtes ici : </span> Musique</li>
+                        <li class="breadcrumbItem">
+                          <a href="../chroniques.html">Chroniques</a>
+                        </li>
+                        <li class="breadcrumbItem">
+                          <a href="../billetdhumeur.html">Billets d'humeur</a>
+                        </li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Kristjan Järvi à l'OPL</li>
+                    </ul>
+                </nav>  
+  
+                <p>Cela fait des années que j'insiste  pour que l'on diversifie la programmation des concerts symphoniques dans le sens d'un rajeunissement des oeuvres et du public. Ce ne serait pas un luxe de concevoir un abonnement, au moins, capable de fédérer tous les publics, y compris les (très) jeunes, autour de quelques musiques bien choisies de notre temps et ce n'est nullement un hasard si ce site a consacré les premiers portraits de compositeurs actuels à <a href="../chroniques/reich.html">Steve Reich</a> et <a href="../chroniques/Glass.html">Philip Glass</a>, il y a  12 ans déjà. Les professionnels  indulgents - inutile d'évoquer les autres - m'ont souvent gentiment (sou)ri au nez, singulièrement à propos du second nommé : en salons savants, il est de bon ton de dénigrer Glass  au motif (éventuellement fondé) qu'il lui arrive d'abuser, jusqu'à saturation, du remplissage harmonique sur fond d'arpèges. Je me suis expliqué de façon nuancée, à ce sujet,  dans la chronique mentionnée ci-avant. Mon point de vue a pourtant évolué lorsque je suis passé de l'écoute domestique (sur CD) à la salle de concert, toutes les fois que l'occasion m'en a été donnée (à condition de voyager !). En principe, toute musique indigente atteint rapidement ses limites et si celle de Glass l'était réellement, cela n'aurait pas manqué de produire ses effets désastreux. Le fait est, au bilan, que toutes mes rencontres  avec l'oeuvre symphonique de Glass en concert se sont beaucoup mieux passées que ce que les CD et leurs critiques délatrices auraient éventuellement pu laisser redouter. J'ai même atteint le point de non-retour, en 2012, lorsque j'ai assisté à la reprise d'<a href="../chroniques/einstein.html">Einstein on the Beach</a>, qui s'est imposé avec force et évidence comme l'opéra le plus novateur de ces 50 dernières années. </p>
+<p>Je ne pouvais dès lors  ignorer le concert de ce  29 février 2020 où  l'Orchestre Philharmonique de Liège (OPL)  a enfin répondu à l'un de mes voeux : rassembler Reich et Glass en y ajoutant  Kristjan Järvi, chef brillant et compositeur pour la deuxième partie. </p>
+                
+                
+              <div id="programme">
+                <h4>Le programme</h4>
+  
+                  <p>Le <a href="../annexes/minimalisme.pdf">programme</a> proposait <a href="https://www.youtube.com/watch?v=tdl1CzzkQxI">Music for Ensemble &amp; Orchestra</a> (2018) de Reich, le <a href="https://www.youtube.com/watch?v=w2UlDIw-9GI">Concerto n°1</a> (1987) pour violon de Glass et Too Hot to Handel (2018), une oeuvre &quot;originale&quot; composée par Kristjan Järvi à partir de thèmes empruntés aux <a href="https://www.youtube.com/watch?v=Y8tE9MYOCeI">Concerti grossi, opus 6</a>, de Georg Friedrich Haendel. </p>
+                    <p>Reich a très peu composé pour le grand orchestre, estimant que cette formation peinait à mettre en valeur les déphasages subtils sur lesquels  son écriture était basée. <a href="https://www.youtube.com/watch?v=erXPxEypw2I">The Desert Music</a> (1983), <a href="https://www.youtube.com/watch?v=rADlLLE4ZSE">Three Movements</a> (1986) et surtout <a href="https://www.youtube.com/watch?v=OpNXmmmRPTo">The Four Sections</a> (1987) ont longtemps constitué ses seules incursions dans le domaine symphonique et vous aurez noté que Järvi était déjà à la baguette. Reich est  revenu  à l'orchestre en 2018, proposant une oeuvre rigoureuse mais tellement dense et monolithique qu'elle exigera quelques écoutes avant d'être pleinement appréciée. </p>
+                    
+                    
+           <div class="conteneurImageSeule">
+                      <div>
+                        <figure>
+                          <img src="../images/jarvi/kremer.png" alt="Kremer joue Glass"/>
+                          
+                        </figure>
+                      </div>
+                </div>         
+                    
+                    
+                <p>Le Concerto n°1, pour violon, de Glass compte parmi ses oeuvres les mieux réussies et les plus souvent enregistrées. Il plaît dès la première écoute et son mouvement lent enchante tous les publics. L'enregistrement déjà ancien de <a href="https://www.youtube.com/watch?v=w2UlDIw-9GI">Gidon Kremer</a> est resté insurpassé et il demeure indispensable à toute CD-thèque, d'autant qu'il propose en complément le Concerto grosso n°5 d'Alfred Schnittke.</p>
+            <p>On attendait avec curiosité la deuxième partie du concert où le compositeur Järvi s'est inspiré  de Haendel : Too Hot to Haendel est une oeuvre que l'on pourrait aussi bien intituler Haendelmania (Cf la note ci-dessous). Je ne peux malheureusement pas (encore) proposer d'illustration sonore de cette belle partition d'où je me contente de la <a href="https://www.youtube.com/watch?v=FG6odZ7OCQE">Water Music</a>, écrite dans le même esprit  par le compositeur suisse, David Schnyder, sur base de l'oeuvre éponyme du même Haendel. Le procédé    a été utilisé maintes fois par le passé : il consiste à adapter des musiques plus ou moins anciennes à des canons esthétiques plus actuels. Järvi a  clairement tenté d'accommoder Haendel au goût du jour de la musique pop(ulaire), en maintenant la contrainte d'une instrumentation sérieuse et virtuose. La direction de l'OPL a poussé la fantaisie jusqu'à éclairer la salle de lumières vaguement psychédéliques qui n'ajoutaient certes rien au spectacle mais ne lui nuisaient pas non plus.</p>
+                    <p><i>Note. L'endroit est  choisi pour vous rappeler que la manie des hommages fidèles ou des arrangements plus ou moins élaborés de musiques du passé n'est pas neuve; en voici quelques exemples où il vous suffira d'ôter le suffixe (i)ana pour deviner quel musicien  était honoré : Rossiniana (1820) (<a href="https://www.youtube.com/watch?v=IXMoogK2RF0">Mauro Giuliani</a>), Schumanniana (1887) (<a href="https://www.youtube.com/watch?v=aj7R_4tBfho">Vincent d'Indy</a>), Mozartiana (1887)  (<a href="https://www.youtube.com/watch?v=8POk6yID06w">Pyotr Ilyich Tchaikovsky</a>, brillant !), Chopiniana (1907) (<a href="https://www.youtube.com/watch?v=5ZnHrNmBygw">Alexander Glazunov</a>), Rossiniana (1925) (<a href="https://www.youtube.com/watch?v=z9-7fIrqdtM">Ottorino Respighi</a>, à ne pas manquer !), Scarlattiana (1926) (<a href="https://www.youtube.com/watch?v=l5GM5K42a_4">Alfredo Casella</a>), Tartiniana I (1951) & II (1956) (<a href="https://www.youtube.com/watch?v=qFqToy0pi-w">Luigi Dallapiccola</a>, de 7:40 à 37:18), Vivaldiana (1952) (<a href="https://www.youtube.com/watch?v=g_WHA9Mxvm8">Gian Francesco Malipiero</a>) et Telemanniana (1967) (<a href="https://www.youtube.com/watch?v=pTToxw8GplM">Hans Werner Henze</a>, à ne pas manquer !).  Attention au contre-exemple : la suite pour piano Kreisleriana de <a href="https://www.youtube.com/watch?v=nZHcerNk7qg">Robert Schumann</a> n'a rien à voir avec le célèbre violoniste et compositeur, Fritz Kreisler (Le Kreisler en question est un personnage fictif créé par <a href="../chroniques/hoffmann.html">E. T. A. Hoffmann</a>).</i></p>
+              </div>  
+
+
+
+                <div id="orchestre">
+                <h4>L'orchestre</h4>
+  
+                    <p>L'orchestre a largement fait honneur à sa réputation dans un répertoire qui ne lui est pas familier. Fait plutôt inhabituel, ses membres les plus anxieux (ou les plus consciencieux !)  étaient présents sur scène bien avant le début du concert, appliqués à répéter les enchaînements de notes en décalages perpétuels exigés, en particulier, par la musique de Reich. Les musiciens de l'orchestre étaient par ailleurs visiblement heureux de jouer sous la direction de Kristjan Järvi, celui-ci habitué à dynamiter les salles  et sortir les musiciens de leur routine. On  peut en tous cas les remercier d'avoir consacré beaucoup de  temps à l'apprentissage d'oeuvres qu'ils ne sont hélas pas supposés rejouer de sitôt. </p>
+</div>
+
+
+
+
+
+<div id="chef">
+                    <h4>Kristjan Järvi,  chef et arrangeur-compositeur</h4>
+                    
+                    
+                    <div class="conteneurImageSeule">
+                      <div>
+                        <figure>
+                          <img src="../images/jarvi/lesjarvi.png" alt="Kristjan, Neeme et Paavo Järvi"/>
+                          <figcaption>Kristjan, Neeme et Paavo</figcaption>
+                        </figure>
+                      </div>
+                </div>
+                
+                
+
+                    <p>Kristjan, frère de Paavo et fils de Neeme, appartient à la prestigieuse dynastie des Järvi. Neeme Järvi est connu de tous les mélomanes curieux pour avoir exploré des répertoires différents à une époque où cela ne se faisait guère. Grâce à lui, on a découvert quantité de musiques (souvent) nordiques rarement sinon jamais entendues : <a href="https://www.youtube.com/watch?v=kTkp7C5scDg">Zdeněk Fibich</a> (1850-1900), <a href="https://www.youtube.com/watch?v=rCyThHmmK84">Franz Schmidt</a> (1874-1939), <a href="https://www.youtube.com/watch?v=9eJ4X8dIe88">Eduard Tubin</a> (1905-1982), <a href="https://www.youtube.com/watch?v=vAPlDGME4qI">Villem Kapp</a> (1913-1964), <a href="https://www.youtube.com/watch?v=WHZEixEfyJM">Anti Marguste</a> (1931-2016), et tant d'autres puisqu'on lui compte plus de 350 enregistrements !</p>
+<p>Paavo  est le fils aîné, tendance classique, qui s'est particulièrement consacré à la musique balte nous laissant notamment de brillants enregistrements d'oeuvres  de Jean Sibelius (<a href="https://www.youtube.com/watch?v=N5kKhZjNfuU">Kullervo</a>, à partir de 4:55) ou d'Arvo Pärt (<a href="https://www.youtube.com/watch?v=XIlFN8oqqug">Swansong</a>).</p>
+                    <p>Kristjan, le fils cadet, est nettement plus déjanté, dans le noble sens du terme  (<a href="https://www.youtube.com/watch?v=CTWw6onotWc">Sound Experience</a>). Pourvu d'une énergie à la mesure de sa curiosité, il n'hésite pas à bousculer l'ordonnance du concert-type en y introduisant toutes sortes d'éléments actuels. Ses projets aboutis et ceux qu'ils projette pour un futur proche nous le présentent comme l'un des acteurs possibles du renouvellement très nécessaire de l'ordonnance du concert (trop) classique.</p>
+        </div>
+
+                <div id="soliste">
+                  <h4>David Nebel, Le soliste</h4>
+
+                    
+
+                    <p>Il fut une ombre au tableau et je regrette d'autant plus de le dire qu'il ne fut pas seul responsable, le chef ayant failli à brider les ardeurs de l'orchestre. Dès les premières attaques du violon, il a très vite sauté aux oreilles que jamais le soliste ne réussirait à imposer sa sonorité, en particulier lorsque l'orchestre s'emportait. Assis   face aux ouïes de l'instrument (Zone réputée idéale entre 550 et 1500 Hz), j'ai peiné à  en entendre le  son, singulièrement dans le finale où l'orchestre s'est complètement lâché. Je n'ai fatalement pas pu me transporter à l'opposé de la salle mais je suis convaincu que le son du violon (en principe un (Antonio) Stradivarius de 1707) y est passé largement inaperçu.  Le soliste étant en difficulté de s'imposer, il appartenait au chef  de tempérer les ardeurs de l'orchestre dès les répétitions (Comparez  avec cette autre version où la soliste, <a href="https://www.youtube.com/watch?v=QiRhfhS_H78">Adèle Anthony</a>, bénéficie d'un meilleur équilibre sonore). Cette défaillance est d'autant plus surprenante que Järvi semble  avoir pris <a href="https://www.youtube.com/watch?v=WurBOcWMUFo">Nebel</a> sous sa protection puisqu'il envisage de collaborer avec lui dans  une série d'enregistrements concertants dont précisément le Concerto de Glass. Evidemment en studio, nul doute que les ingénieurs du son auront à coeur de rectifier la balance sonore si celle-ci s'avère défectueuse. Décidément, le Concerto de Glass est moins simple que ce que les mauvaises langues prétendent à son sujet. </p>
+
+                   
+</div>
+
+                <div id="public">
+                  <h4>Le public</h4>
+
+                    <p>Le gala de ce soir affichait complet, une preuve s'il en fallait une, qu'il existe une demande pour ce genre de concert. On a refusé du monde en particulier un public jeune qui n'a pas eu un accès facile à la salle. Les  détenteurs d'un billet d'entrée ont reçu un courriel les priant  de se manifester si une circonstance imprévue les empêchait d'assister à la représentation. Cette initiative louable a peut-être permis d'accueillir quelques  retardataires mais je suis témoin que le système n'a fonctionné qu'imparfaitement car des lots isolés de places sont demeurées inoccupées. </p>
+                    <p>Ma conclusion est qu'il faut renouveler  l'expérience au plus vite, avec ou sans Kristjan Järvi. L'OPL est en pleine mutation, en particulier suite à l'arrivée d'un jeune chef permanent (Gergely Madaras) débordant d'enthousiasme : jamais les conditions n'ont été mieux rassemblées pour rajeunir non seulement les structures de l'établissement à tous ses étages mais aussi la musique qui devrait y trouver sa place.</p>
+              </div>
+
+                
+            
+          </div>
+
+
+            <a id="ancreRetourHautPage" href="#site">&uarr;</a>
+
+            <!-- Inclusion footer -->
+            <div id="footer"></div>
+
+        </div>
+    
+    
+    </div>
+
+</body>
+</html>
