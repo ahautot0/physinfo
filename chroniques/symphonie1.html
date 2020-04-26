@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Genres musicaux | La symphonie (I) : des origines à la disparition de Mahler</title>
+  <meta name="description" content="La symphonie incarne la &quot;grande&quot; musique aux oreilles du &quot;grand&quot; public, qui apprécie autant ses climats sonores que ses grandes envolées lyriques. Cette première partie s'arrête à la mort de Gustav Mahler." />
+  <link rel="shortcut icon" href="../logo.ico" />
+  <link href="../style.css" rel="stylesheet" type="text/css" /> 
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <script src="../js/jquery-1.10.2.js"></script>
+  <script src="../js/menus.js"></script>
+  <script src="../js/design.js"></script>
+  <script src="../js/gestionAudioVideo.js"></script>
+  <script> 
+    // Inclusion Header et Footer
+    $(function(){
+      $(function(){
+        $.ajax({
+           url: "../template/header.php",
+           type: "POST",
+           data: ({ROOT: '../'}),
+           success: function(data) {
+             $("#header").html(data);
+             $("#grandscycles").addClass("active"); /*a changer en fonction de la page*/
+             update_design_when_header_loaded();
+          }
+        });
+      });
+      $("#miniMenus").load("../template/miniMenus.php", { ROOT: '../' }, mini_menus_after_loading);
+      $("#footer").load("../template/footer.php", { ROOT: '../' }, update_design_footer);  
+    });
+  </script> 
+</head>
+
+<body id="site">
+
+    <div>
+        <!-- Inclusion header -->
+        <div id="header"></div>
+
+        <div id="miniMenus"></div>
+
+        <nav id="menuLateralAncres">
+            <ul>
+            <li>
+                    <a id="ancreBaroque" href="#baroque" class="linavMenu active">
+                    <span>La sinfonia baroque</span>
+                    </a>
+</li>
+            	<li>
+                    <a id="ancrePreclassique" href="#preclassique" class="linavMenu">
+                    <span>La symphonie préclassique</span>
+                    </a>
+</li>
+                <li>
+                    <a id="ancreClassique" href="#classique" class="linavMenu">
+                    <span>La symphonie classique</span>
+                    </a>
+</li>
+                <li>
+                    <a id="ancreBeethoven" href="#beethoven" class="linavMenu">
+                    <span>La révolution beethovenienne</span>
+                    </a>
+</li>
+                <li>
+                    <a id="ancreRomantisme" href="#romantisme" class="linavMenu">
+                    <span>La tradition (post)romantique austro-allemande</span>
+                    </a>
+</li>
+                <li>
+                    <a id="ancreNationaleFrance" href="#nationalefrance" class="linavMenu">
+                    <span>Ecoles nationales (post)romantiques : France</span>
+                    </a>
+</li>
+                <li>
+                    <a id="ancreNationaleScandinavie" href="#nationalescandinavie" class="linavMenu">
+                    <span>Ecoles nationales (post)romantiques : Scandinavie</span>
+                    </a>
+</li>
+                <li>
+                    <a id="ancreNationaleFinlande" href="#nationalebalte" class="linavMenu">
+                    <span>Ecoles nationales (post)romantiques : Finlande et Etats baltes</span>
+                    </a>
+</li>
+ 					<li>
+                    <a id="ancreNationaleRussie" href="#nationaleest" class="linavMenu">
+                    <span>Ecoles nationales (post)romantiques : Pologne et Russie</span>
+                    </a>
+</li>
+
+ 					<li>
+                    <a id="ancreNationaleCentrale" href="#nationalecentre" class="linavMenu">
+                    <span>Ecoles nationales (post)romantiques : Europe centrale</span>
+                    </a>
+</li>
+				    <li>
+                    <a id="ancreNationaleLatins" href="#nationalelatins" class="linavMenu">
+                    <span>Ecoles nationales (post)romantiques : Pays latins</span>
+                    </a>
+</li>
+ 					<li>
+                    <a id="ancreNationaleHollande" href="#nationalepaysbas" class="linavMenu">
+                    <span>Ecoles nationales (post)romantiques : Pays-Bas</span>
+                    </a>
+</li>
+ 					<li>
+                    <a id="ancreNationaleGrandeBretagne" href="#nationaleangleterre" class="linavMenu">
+                    <span>Ecoles nationales (post)romantiques : Grande-Bretagne</span>
+                    </a>
+</li>
+					<li>
+                    <a id="ancreNationaleUSA" href="#nationaleusa" class="linavMenu">
+                    <span>Ecoles nationales (post)romantiques : USA</span>
+                    </a>
+</li>
+                
+            </ul>
+             
+        </nav>
+
+        <div id="corps">
+
+          <div id="contenuPrincipal">
+                <h2>Genres musicaux</h2>
+                <h3>La symphonie jusqu'à nos jours (I) :<br/> Des origines à la disparition de Gustav Mahler</h3>
+
+                <nav class="filAriane">
+                    <ul>
+                        <li class="breadcrumbItem"><span>Vous êtes ici : </span> Musique</li>
+                        <li class="breadcrumbItem">
+                          <a href="../chroniques.html">Chroniques</a>
+                        </li>
+                        <li class="breadcrumbItem">
+                          <a href="../grandscycles.html">Genres musicaux</a>
+                        </li>
+                        <li class="breadcrumbItem breadcrumIitem--current">La symphonie jusqu'à nos jours (I)</li>
+                    </ul>
+                </nav> 
+
+                <div class="sommaire">
+                    <div class="sommaireTitle">
+                        <h6>Sommaire</h6>
+                        <a role="button" tabindex="0" class="sommaireLink">[ afficher ]</a>
+                    </div>
+
+                    <ul class="linksSummary">
+                        <li><a href="#baroque">La sinfonia baroque</a></li>
+                        <li><a href="#preclassique">La symphonie préclassique</a></li>
+                        <li><a href="#classique">La symphonie classique</a></li>
+                        <li><a href="#beethoven">La révolution beethovenienne</a></li>
+                        <li><a href="#romantisme">La tradition (post)romantique austro-allemande</a></li>
+                        <li><a href="#nationalefrance">Ecoles nationales (post)romantiques : France</a></li>
+                        <li><a href="#nationalescandinavie">Ecoles nationales (post)romantiques : Suède, Danemark et Norvège</a></li>
+                        <li><a href="#nationalebalte">Ecoles nationales (post)romantiques : Finlande et Etats baltes</a></li>
+                        <li><a href="#nationaleest">Ecoles nationales (post)romantiques : Pologne et Russie</a></li>
+                        <li><a href="#nationalecentre">Ecoles nationales (post)romantiques : Europe centrale</a></li>
+                        <li><a href="#nationalelatins">Ecoles nationales (post)romantiques : Pays latins</a></li>
+                        <li><a href="#nationalepaysbas">Ecoles nationales (post)romantiques : Pays-Bas</a></li>
+                        <li><a href="#nationaleangleterre">Ecoles nationales (post)romantiques : Grande-Bretagne</a></li>
+                        <li><a href="#nationaleusa">Ecoles nationales (post)romantiques : USA</a></li>
+                        
+                        
+                    </ul>
+                </div>
+              <p>La symphonie est un  genre musical apprécié du public, qui goûte  l'ivresse sonore que lui procure le grand orchestre.  Rien qu'au long des 250 années qui  séparent  le classicisme de Haydn du modernisme de Schnittke, on compte les symphonies  par centaines sinon par milliers. Ensemble, elles constituent un  réservoir   immense que même les plus grands orchestres ne font qu'effleurer. Toutes ces symphonies ne sont évidemment pas de valeurs égales même si chacune a sans doute demandé pas mal de travail à son auteur (Après tout, chaque page de partition doit comporter autant de portées qu'il y a de  groupes d'instruments de l'orchestre et à l'époque de Mahler  un format A4 ne suffisait plus). Les  orchestres qui ont pignon sur rue se restreignent généralement  aux oeuvres consacrées du répertoire : lorsqu'une Société philharmonique veut (r)assurer sa billetterie pour la durée d'une saison, il lui suffit de programmer une intégrale Beethoven, Bruckner, Mahler ou Schostakovitch, il a la certitude que le succès sera au rendez-vous. Les orchestres dits (sans le moindre dédain) &quot;de province&quot; réagissent éventuellement en occupant des niches moins fréquentées, c'est leur manière de survivre, sinon au concert du moins dans les studios d'enregistrement. Leur patiente prospection nous vaut régulièrement de belles découvertes que nous ne soupçonnions pas il y a  quelques décennies et auxquelles cette chronique fait largement écho. </p>
+              <p>Un <a href="http://www.classical-music.com/article/20-greatest-symphonies-all-time">sondage</a> effectué en 2018 par le BBC Music Magazine,  auprès de 151 chefs  en activité, a révélé un classement des 20 symphonies les mieux notées, tous critères confondus. Comme on pouvait s'y attendre,  Beethoven occupe les deux marches supérieures du podium, la seule surprise - mais en est-ce vraiment une ? - venant de l'ordre du classement, la n°3 volant la première place à la n°9 !</p>
+              <p><i>Note. Cet ordre ne devrait pas surprendre  tant que cela. L'architecture de la 3<sup>ème</sup> (Eroica) est parfaite ce qui, de l'avis de nombreux professionnels, n'est pas vraiment le cas de la 9<sup>ème</sup>. Certes, il n'y a pas une note à retrancher (ni à ajouter) aux trois premiers mouvements de celle-ci, y compris l'étonnante transition-récapitulation menant vers le finale, mais d'aucuns pensent, avec quelques raisons, qu'il n'en va pas de même de l'Hymne à la Joie qui, avec ses insertions d'épisodes inattendus (militaire, turc, ...), fait le même effet qu'une flèche gothique sur une église romane. Notez que c'est  exactement pour les mêmes raisons  que le panel des chefs a classé la prodigieuse 9<sup>ème</sup> de Mahler avant l'énorme mais hétéroclite 3<sup>ème</sup>.</i></p>
+              <p>Ce classement fait la part  (un peu trop ?) belle à la symphonie austro-allemande avec 16 nominations sur 20, seuls Berlioz, Tchaïkovsky, Sibelius et Schostakovitch réussissant à s'insérer. On peut contester (l'utilité voire la pertinence de) l'initiative  du magazine anglais au motif qu'elle contient une sérieuse part d'arbitraire, elle n'en traduit pas moins une échelle des valeurs en vigueur chez les musiciens professionnels actuels. Il n'est pas dit que le même sondage effectué auprès du public mélomane livrerait  un verdict similaire mais ne comptez pas sur le &quot;BBC M M&quot; pour tenter l'expérience : il craindrait par-dessus tout d'avoir à publier un classement fantaisiste et d'y laisser sa réputation de magazine sérieux. Cela dit, était-il indispensable de couronner les 4 symphonies de Brahms et tant qu'à mentionner (la 7<sup>ème</sup> de) Sibelius, n'eût-il pas  été préférable d'honorer la 4<sup>ème</sup>, assurément l'une des oeuvres symphoniques les mieux réussies de tous les temps ?</p>
+<p>Le palmarès proclamé  a-t-il quelque chance d'être perturbé un jour, suite à l'immixtion de quelques compositions plus récentes ? On le souhaite, pour le renouvellement de la Musique mais, à court terme, on en doute. Certes, on continue d'écrire des symphonies, particulièrement dans les mondes anglo-saxons, baltes, scandinaves et d'Europe de l'Est,  mais le fait est qu'elles peinent à rivaliser avec les grands modèles du passé. </p>
+<p>Vu l'ampleur du sujet, cette  chronique est en deux parties : la première va des origines à la mort de Mahler (1911) et la deuxième complète l'histoire jusqu'à nos jours. L'idée est de séparer le monde symphonique ancien du monde moderne tout en observant que de nombreux musiciens se sont évertués à ne pas choisir leur camp. Dans un tel cas, il a fallu tricher avec les dates en rangeant un brin arbitrairement chacun dans le cadre de ses  options stylistiques essentielles. Les objectifs généralement poursuivis sur ce site seront généralement respectés : dresser un inventaire  élargi et (tenter de) montrer  que de nombreux compositeurs, pas forcément célèbres, y trouvent une place légitime.  La seule dérogation concerne l'oeuvre  de Beethoven qui ne pouvait décemment être escamotée, d'abord parce qu'elle est essentielle et ensuite parce qu'un hommage particulier s'imposait en 2020, date anniversaire du compositeur. A cela près, cette promenade s'apparente à une déambulation muséale où les salles se succèdent souvent tapissées d'oeuvres (considérées comme) mineures, sauf qu'en y prêtant une meilleure attention, des trésors  s'y cachent éventuellement qu'il faut pouvoir apprécier. Répétons que cette chronique ne  prétend pas à l'exhaustivité tant la littérature existante s'avère pléthorique.</p>
+             
+              <div class="conteneurImages">
+<div> <figure>
+                              <img src="../images/symphonie/orchestre.png" alt="Orchestre symphonique"/>
+                              <figcaption>Disposition possible de l'orchestre symphonique moderne</figcaption>
+                </figure></div>
+                     
+	</div>
+ 
+  
+  <div id="baroque">
+        <h4>La sinfonia baroque</h4>
+  
+  <p>Le terme &quot;Symphonie&quot; dérive du grec &quot;σύν φωνή (syn-phônê)&quot;,  signifiant  littéralement &quot;sonner ensemble&quot;. Chez les romains, cela a donné &quot;symphonia&quot;  que les (musiciens) italiens ont modernisé en &quot;sinfonia&quot;, une appellation qui s'est imposée à  une Europe musicale férue d'italianismes  (Pour rappel, c'est en Italie, au 17<sup>ème</sup> siècle, qu'on a enregistré les progrès les plus significatifs de la facture instrumentale autorisant une musique  pour ensembles de plus en plus étoffés).  Bien que ne possédant pas encore la structure complexe  de la symphonie moderne, la sinfonia est bien le point de départ de notre histoire :<br/>
+    <br/>
+   - La formule  primitive n'a eu recours qu'aux seules cordes, généralement accompagnées par un  continuo  assurant  la basse. On  trouve évidemment des symphonies pour cordes  en Italie (lutherie oblige !), sous les plumes de Tomaso Albinoni (1671-1751) (<a href="https://www.youtube.com/watch?v=spr4C_8xy2U">sol mineur</a>) ou d'Antonio Vivaldi (1678-1741) (<a href="https://www.youtube.com/watch?v=3oVbSKGqt8Q">ré majeur, RV 125</a>)    mais on en trouve aussi en Allemagne, dues par exemple à Johann Friedrich Fasch (1688-1758) (<a href="https://www.youtube.com/watch?v=ZjmLnhiCbmM">sol mineur</a>). Bien que le modèle pour cordes seules ne se soit pas imposé à la postérité,  il lui est  arrivé de réapparaître ultérieurement (Felix Mendelssohn, <a href="https://www.youtube.com/watch?v=EgBS21nxvBY">n°7 pour cordes</a>, 1821, Hans Rott, <a href="https://www.youtube.com/watch?v=sfT8_SbEHkc">la bémol majeur</a>, 1875, et Benjamin Britten, <a href="https://www.youtube.com/watch?v=FwSwopSro0k">Simple Symphony</a>, 1934).<br/>
+   <br/>
+    - La formule s'est  étoffée progressivement par adjonction d'un  nombre croissant d'instruments appartenant aux  autres groupes instrumentaux,  bois,  vents et  percussions. On trouve  déjà des  tentatives du genre chez Salomone Rossi (1570-1630) (<a href="https://www.youtube.com/watch?v=woLWN-S-9OM">Sinfonie à 3-4-5</a> parties) mais ce n'est que deux ou trois générations plus tard que la formule s'est  généralisée,  d'abord en Italie, grâce à Giuseppe Torelli (1658-1709) (<a href="https://www.youtube.com/watch?v=z_HpMbBlsbQ">ré majeur</a>) et Antonio Caldara (1670-1736) (<a href="https://www.youtube.com/watch?v=Q6SqimMsp1I">ut majeur</a>),  puis en Allemagne, grâce à Johann Melchior Molter (1697-1765) (<a href="https://www.youtube.com/watch?v=Qy1JEkkwXsA">n°99</a>, il en a écrit plus de  170 !) et Johann Adolf Hasse (1699-1783) (<a href="https://www.youtube.com/watch?v=PNuZpSsDU6A">ré majeur</a>,  <a href="https://www.youtube.com/watch?v=9aiLWlY-MzM">fa majeur</a>). Ces oeuvres étant normalement destinées aux salons princiers, on les range habituellement sous l'appellation de  &quot;Sinfonia da Camera&quot;.<br/>
+    <br/>
+    
+     - A la même époque, on appelle aussi sinfonia  une pièce  instrumentale préludant à une oeuvre vocale,  religieuse ou profane. Certaines Cantates de J-S Bach (1685-1750) commencent par une Sinfonia (<a href="https://www.youtube.com/watch?v=BJxH_6A6UJ8">Cantate BWV 42</a>). Les &quot;Sinfonie da chiesa&quot; s'insèrent habituellement dans le déroulement de l'Office, telles celles, particulièrement remarquables, de l'opus 2 de Francesco Manfredini (1684-1762) (<a href="https://www.youtube.com/watch?v=KCqIo7PDUgg">ré mineur</a>, où l'on entend brièvement le thème de l'Art de la Fugue de Bach). Quant à la &quot;Sinfonia del Drama&quot;, qui  en est le pendant profane, c'est une ouverture à l'italienne préludant un opéra (Leonardo Vinci (1690-1730), <a href="https://www.youtube.com/watch?v=9SsOfQYWNcs">Artaserse</a>, ou Antonio Vivaldi (1678-1741), <a href="https://www.youtube.com/watch?v=dDZiZmFe1IA"> Montezuma</a>) ou un oratorio (Georg Friedrich Haendel (1685-1759), <a href="https://www.youtube.com/watch?v=yNguOV-lKCA">Le Messie</a>).  On retrouve une classification déjà utilisée à propos de la <a href="../chroniques/sonate.html">sonate</a> à l'ancienne  (Sonata da camera et da chiesa). </p>
+    
+    <div class="conteneurImageSeule">
+                  <div>
+                    <figure>
+                       <img src="../images/symphonie/manfredini.png" alt="CD Manfredini" />
+                              <figcaption>Francesco Manfredini</figcaption>
+                    </figure>
+                  </div>
+        </div>
+
+
+  <p>Les oeuvres renseignées ci-avant ne sont qu'une part infime de la littérature  mise à jour et on présume que beaucoup d'autres dorment encore dans les bibliothèques. Mal jouée, cette musique est insipide d'où l'intérêt de l'écouter pratiquée par des ensembles instrumentaux jouant sur instruments anciens et attentifs à la dynamique des articulations (Concerto Köln, English Concert, Academy of ancient Music, Arpa Festante, Orfeo Barockorchester, New Dutch Academy, etc). </p>
+
+  
+  </div>
+  
+  
+  <div id="preclassique">
+        <h4>La symphonie préclassique</h4>
+        
+        <p>Il est d'usage de situer la fin de l'époque baroque à la mort de J-S Bach (1750) donc la naissance de   l'âge (pré)classique à l'avènement de ses fils et de leurs contemporains. C'est  commode mais approximatif car les temps étaient déjà en train de changer alors que Bach vivait encore (Cf  ci-après, l'oeuvre de Mathias Monn, disparu prématurément la même année que Bach). </p>
+        <p>Définitivement affranchie de l'oeuvre vocale qui lui servait éventuellement d'hôte, la sinfonia préclassique a conservé la structure   en 3 mouvements, vif-lent-vif, héritée de l'âge baroque. Ce modèle s'est répandu dans toute l'Europe et l'on recense encore aujourd'hui des &quot;sinfonie&quot; par centaines dans un inventaire jamais à jour : l'énumération qui suit  mentionne éventuellement une borne inférieure pour le nombre d'oeuvres  écrites par  les compositeurs connus   mais c'est sans compter les autres car ils sont loin d'être tous cités ! Une des raisons qui explique cette pléthore tient au  fait que les musiciens baroques  publiaient des symphonies par (demi-)douzaines afin d'honorer la commande de leur employeur princier. A cette époque,   la quantité  primait et cette  habitude douteuse a longtemps été un obstacle à l'individualisation des oeuvres.</p>
+        
+        <div class="conteneurImageSeule">
+                  <div>
+                    <figure>
+                       <img src="../images/symphonie/monn.png" alt="CD Monn" />
+                              <figcaption>Matthias Monn</figcaption>
+                    </figure>
+          </div>
+        </div>
+                
+                
+        <p>- Deux   musiciens  particulièrement brillants  ont fait le lien entre les périodes baroque et  préclassique. Abandonnant la rigueur contrapuntique verticale, portée par J-S Bach à son point de perfection, ils ont initié un  développement horizontal opérant par sections contrastées (Forme sonate, ABA, etc). En Italie,  Giovanni Battista Sammartini (1700-1775) a écrit des dizaines  d'oeuvres de qualité (&ge;78, dont certaines demeurent  pour cordes seules : <a href="https://www.youtube.com/watch?v=6VTpmuPJYWU">la majeur</a> et célèbre <a href="https://www.youtube.com/watch?v=btsMAXzj5kk">sol majeur</a>), tandis qu'à Vienne,   Matthias Monn (1717-1750) (&ge;21 : <a href="https://www.youtube.com/watch?v=9Z3_xuqr-QQ">sol majeur</a>, <a href="https://www.youtube.com/watch?v=Nh7zFqzrLy4">si majeur</a>)  a fait preuve d'un immense talent (Ne manquez pas le superbe   <a href="https://www.jpc.de/jpcng/cpo/detail/-/art/Matthias-Georg-Monn-1717-1750-6-Symphonien/hnum/7073528">enregistrement</a> consacré à son oeuvre, paru chez CPO). </p>
+        <p>- En Bohème, les membres de l'école de Mannheim ont été particulièrement actifs :  Franz Xaver Richter (1709-1789) (&ge;69 : <a href="https://www.youtube.com/watch?v=f0Msr9jt40Q">sol mineur</a>,  <a href="https://www.youtube.com/watch?v=uKMONClR4MM">ré majeur</a>), Johann Stamitz (1717-1757, à ne pas confondre avec ses deux fils Carl et Anton, cf infra) (&ge;58 : <a href="https://www.youtube.com/watch?v=__HFUpc6tRs">la majeur</a>, <a href="https://www.youtube.com/watch?v=GDRQp52zLgo">ré majeur</a>) et Christian Cannabich (1731-1798) (&ge;70 : <a href="https://www.youtube.com/watch?v=BmNDbfFKzns">mi bémol majeur</a>,  <a href="https://www.youtube.com/watch?v=EQTAANxbtjA">ré majeur</a>)  mériteraient  que les studios d'enregistrement se penchent  plus sérieusement sur leur catalogue. </p>
+  <p>- En Autriche, singulièrement à Vienne, les	musiciens ont également  pratiqué l'écriture en (grandes) séries  : Ignaz Holzbauer (1711-1783) (&ge;69 : <a href="https://www.youtube.com/watch?v=rnxRrJMDaD0">5 symphonies</a>, appréciez le travail de la chef Michi Gaigg, qui sauve ces oeuvres de la routine), Christoph Willibald Gluck (1714-1787, moins influent dans le domaine instrumental que dans celui lié au monde de l'opéra) (&ap; 18 : <a href="https://www.youtube.com/watch?v=RCPLLPwALSQ">sol majeur</a>) et Georg Christoph Wagenseil (1715-1777) (&ge;96 : <a href="https://www.youtube.com/watch?v=swwwg3qaR18">sol majeur</a> et <a href="https://www.youtube.com/watch?v=3vcmmQTYORY">sol mineur</a>). </p>
+  <p>- L'Allemagne a  emboîté le pas avec talent et prodigalité, la liste suivante (très incomplète !) le montre : Christoph Graupner (1683-1760) (&ge;110 :  <a href="https://www.youtube.com/watch?v=7l0ffilFRiI">GWV 571</a>, qui évoque Rameau,  singulière <a href="https://www.youtube.com/watch?v=wYm9yw_zQN8">GWV 566</a>, avec ses appels de  timbales), Johann Melchior Molter (1696-1765) (&ge;140 : joyeuse <a href="https://www.youtube.com/watch?v=Qy1JEkkwXsA">n°99</a>), 	Heinrich Graun
+    (1702-1771) (nerveuse <a href="https://www.youtube.com/watch?v=y9gARWTWdbM">ut majeur</a>), son frère Johann Gottlieb Graun (1703-1771) (&ge;97 : <a href="https://www.youtube.com/watch?v=HCDp7hNr55U">mi bémol majeur</a>), Christoph Schaffrath (1709-1763) (<a href="https://www.youtube.com/watch?v=xln0ZqdFtDw">sol mineur</a>)  et Anton Fils (1733-1760) (&ge;30 : <a href="https://www.youtube.com/watch?v=4WE9JpBYjF4">la majeur</a>, <a href="https://www.youtube.com/watch?v=0zmQ9yrvJew">sol mineur</a>).  D'un point de vue autant historique que musical, les contributions des fils de J-S Bach ont été essentielles, particulièrement celles des   aînés, Wilhelm Friedemann  (1710-1784)  et  Carl Philipp Emanuel  (1714-1788). WF, que son père considérait comme le plus doué, a parfois anticipé le cours de l'histoire préromantique : admirez ces <a href="https://www.youtube.com/watch?v=8skAg1dAjWc&t=613s">7 Symphonies</a>, dont, en entrée, la &quot;fa majeur&quot; (dite &quot;des dissonances&quot;, enfin tout est relatif !), puis la  très belle &quot;ré majeur&quot; en 21:05. La postérité a pourtant davantage célébré  son frère, CPE, qui a, de fait, reçu  l'attention des plus grands interprètes baroques, séduits par son style nerveux et plein d'humeurs. Tournant définitivement le dos à l'esprit galant, ses 18 symphonies incarnent    les courants successifs de l'Empfindsamkeit (Sensibilité exacerbée, 1740-1760) et de sa suite naturelle (plus techniquement sophistiquée),  &quot;Sturm und Drang&quot; (Tempête et Passion, 1760-1770). Ses oeuvres, à connaître par coeur, sont réparties en 3 sous-ensembles : 8 Symphonies berlinoises (<a href="https://www.youtube.com/watch?v=-6MLOcPmER8">Wq 173</a> et suiv.), 6 Symphonies pour cordes seules (<a href="https://www.youtube.com/watch?v=h9ig9xNWHHY">Wq 182/1-6</a>)   et par-dessus tout   4 Symphonies hambourgeoises (<a href="https://www.youtube.com/watch?v=2PJ6TiWIw08">Wq 183/1-4</a>), qui dépassent en véhémence rythmique tout ce qui a été écrit jusque-là. Ces oeuvres novatrices  se caractérisent par une liberté fiévreuse dans l'expression  des sentiments exacerbés (Changements brusques de rythmes et de tempi, silences inattendus, ..., tous procédés destinés à mimer les sautes d'humeur), qui annoncent les bouleversements révolutionnaires encore en couveuse. N'oubliez pas  pour autant les deux demi-frères cadets, Johann Christian Bach (1735-1782) (<a href="https://www.youtube.com/watch?v=0e38bHW8yo0">opus 6, 9 &amp; 18</a>) et  Johann Christoph Friedrich Bach (1732-1795) (<a href="https://www.youtube.com/watch?v=wsYLupnsvdI">ré mineur</a>), même s'ils se sont montrés nettement moins aventureux. Dans la foulée, ce sont quantité de musiciens  importés (de Silésie, de Bohême, etc) qui ont participé avec plus ou moins de talent à la vie musicale allemande, en particulier berlinoise à la Cour de Frederic II de Prusse :    Johann Gottlieb Janitsch
+    (1708-1762)   (&ge;7 : <a href="https://www.youtube.com/watch?v=is_AtbGTAY8">mi bémol majeur </a> et en <a href="https://www.youtube.com/watch?v=tF-HI2ec1Aw">sol majeur</a>) et deux (des trois) frères Benda, Franz  (1709-1786) (<a href="https://www.youtube.com/watch?v=Sw_vr90-Fb4">ut majeur</a>) et Georg Anton (1722-1795) (<a href="https://www.youtube.com/watch?v=YoMRY34XAI4">ré majeur</a>).</p>
+  <p>- La mode de la symphonie a diffusé  un peu partout en Europe :  au Danemark, Johann Adolf Scheibe (1708-1760) (&ge;70 : <a href="https://www.youtube.com/watch?v=yTA8wHLyhVw">ré majeur (Der Tempel des Ruhmes)</a> et <a href="https://www.youtube.com/watch?v=CTmvC0GGyjs"> ré  majeur a 16</a>), en	Angleterre, Thomas Arne (1710-1778) (&ge;12 : <a href="https://www.youtube.com/watch?v=jBbCEOwom-k">n°1 à 4</a>) et	surtout William Boyce (1711-1779), dont l'opus 2 propose 8 symphonies électrisantes lorsqu'elles sont jouées à la perfection. A vous de voir si vous préférez le mètre régulier de Neville Marriner (<a href="https://www.youtube.com/watch?v=kgMqMct1G64">n°1</a>, <a href="https://www.youtube.com/watch?v=0ZDl-iJojHQ">n°2</a>, <a href="https://www.youtube.com/watch?v=xMFvA3NpyBA&list=PLeVj8l2xeJefpjOS_YpDGRPsv8cWNo45B&index=382">n°5</a>) ou celui légèrement plus débridé de Trevor Pinnock  (<a href="https://www.youtube.com/watch?v=IhAwb_47igE">n°1</a>, <a href="https://www.youtube.com/watch?v=DThHajAGwAM">n°5</a>, <a href="https://www.youtube.com/watch?v=OiE2w3i7Tts">n°8</a>). Notez que  les oeuvres de Arne et de Boyce sont en fait des ouvertures pour des musiques de scène, détachées de leur contexte.	En France,  le genre de la symphonie a  peiné à s'imposer par respect pour le   style Versaillais alors en vigueur  : Jean-Joseph Cassanéa de Mondonville (1711-1772) en a écrit 6, en fait des sonates en forme de symphonies <a href="https://www.youtube.com/watch?v=MXdHBitm2sY">(opus 3/1</a>),  et Antoine Dauvergne (1713-1797) en a écrit 4 (en fait des concerts de <a href="https://www.youtube.com/watch?v=FLymd2jGpik">symphonies</a>), aucunes n'avouant franchement leur nom. Simon Le Duc (1742-1777) (<a href="https://www.youtube.com/watch?v=dwTJgQTJMsY">n°2</a>, <a href="https://www.youtube.com/watch?v=C7_Lz3tCPpg">n°3</a>)  était parti pour s'affranchir des contraintes de Cour mais il est hélas mort trop tôt pour confirmer ses évidentes dispositions.  </p>
+  <p>Dans les Flandres proches, l'oeuvre de Pieter van Maldere (1729-1768) mériterait d'être davantage explorée par les éditeurs (&ge;45 : <a href="https://www.youtube.com/watch?v=-9df2qdbIJM">sol mineur</a>, <a href="https://www.youtube.com/watch?v=CK3SWF8ZPyk">ré majeur</a>). Ce musicien, un temps membre du Concert Spirituel à Paris, a compté parmi les premiers immigrés (Grétry, Gossec, etc) en provenance d'une Belgique non encore constituée.</p>
+  <p>Le répertoire évoqué ci-avant est tellement immense qu'il est menacé par la redondance. Au concert et plus souvent au disque, c'est alors la qualité des interprètes, en particulier leur maîtrise des (articulations sur) instruments anciens, qui décide de l'intérêt de l'écoute. Les  ensembles Concerto Köln et Musica Antiqua Köln ne vous décevront jamais mais il y en a d'autres, en Angleterre, aux Pays-Bas, en Belgique et en France.</p>
+  </div>
+  
+ 
+  
+  <div id="classique">
+        <h4>La symphonie classique</h4>
+
+  <p>Le modèle de la symphonie (de coupe) classique a été  sinon inventé du moins fixé par Joseph Haydn (1732-1809). Il s'agit d'une structure relativement invariable en 4 mouvements, allegro - andante (ou adagio) - minuetto - finale allegro (mais il arrive que  l'ordre des mouvements soit permuté ou qu'il n'y en ait que trois). Une excellente <a href="https://www.jpc.de/jpcng/classic/detail/-/art/Joseph-Haydn-1732-1809-Symphonien-Nr-1-104/hnum/4897680">intégrale</a> est disponible chez Brillant qui vous donnera d'autant plus de satisfaction qu'elle ne vous aura coûté que 45 euros (pour 33 CD !).  Adam Fischer y dirige l'Austro-Hungarian Haydn Orchestra, un ensemble constitué en 1987 sur base de la participation volontaire de membres d'orchestres en activité à Vienne et à Budapest. Les instruments sont  modernes et le chef s'est surtout attaché à restituer l'idiome très particulier de  la musique de tradition austro-hongroise (accentuations dynamiques, rubato, ralentandi mesurés, syncopes légères, etc). Si vous exigez les  instruments anciens, ce qui est légitime en ce qui concerne  les oeuvres précoces, de styles galant ou Sturm und Drang, sachez que l'ensemble Il Giardino Armonico  a fait des merveilles sous la direction de Giovanni Antonini (<a href="https://www.youtube.com/watch?v=g_i2ysfCG2k">n°12</a>, <a href="https://www.youtube.com/watch?v=QvrO6IBxuhQ">n°70</a>).</p>
+  <p>Les 106  symphonies de Haydn sont numérotées de 1 à 104 (!) car on adjoint habituellement deux oeuvres arbitrairement répertoriées A (= 1 bis) et B (= 1 ter). Leur composition s'est étalée sur un laps de temps considérable (1757-1795), ce qui explique que le musicien soit passé par tous les stades de l'évolution esthétique prérévolutionnaire. Suivez le guide dans un premier parcours rapide  et  refaites  la promenade complète à votre aise, si cela vous a plu, en détaillant : </p>
+  
+  <ul class="miniListCorps">
+<li>Les Symphonies de jeunesse (préclassique, en gros n°1 à 33). Les n°6-7-8, datant de l'arrivée de Haydn à la cour d'Estherhazy (1761), comptent parmi ses premières grandes réussites dans le genre. Surnommées <a href="https://www.youtube.com/watch?v=wwUKZG-fFZI">Le Matin</a>, <a href="https://www.youtube.com/watch?v=OJapgNM15Z0">Le Midi</a> et <a href="https://www.youtube.com/watch?v=C9hqn_kq2hY">Le Soir</a> (En français le plus souvent sur les partitions), elles sont (encore) en 3 mouvements, vif-lent-vif, un héritage de l'ancienne sinfonia. Comme la plupart des symphonies de jeunesse, elles sont en tonalité majeure (Il faudra attendre la n°26 pour voir apparaître une tonalité mineure), ce qui leur confère un entrain  constituant un excellent remède contre la mélancolie.</li>
+                    <li>Les  symphonies Sturm und Drang (n°34 à 59), dynamiques par définition, n'ont eu aucune peine à inspirer l'un ou l'autre  surnom permettant de les identifier (<a href="https://www.youtube.com/watch?v=VNhmhBp8uSw">Le Feu</a>, La Passion, <a href="https://www.youtube.com/watch?v=HJd79Us2RH8">Marie Thérèse</a>, Les Adieux, <a href="https://www.youtube.com/watch?v=1Uo7L_c8iYc">Le Palindrome</a>, Le Maître d'Ecole,  ...). 
+                    
+</li>
+                    <li>Les symphonies classiques (n°60 à 81) débordent des cadres précédents par l'ampleur de leur construction : elles sont pour la première fois clairement destinées à la salle de concert alors en pleine expansion (<a href="https://www.youtube.com/watch?v=wyLJ1axlV6A">Le Distrait</a>, <a href="https://www.youtube.com/watch?v=PC55ByuyvV4">n°76</a>).</li>
+                    <li>Les 6 symphonies parisiennes (n°82 à 87, <a href="https://www.youtube.com/watch?v=Gv7nmLVny0w">L'Ours</a>, <a href="https://www.youtube.com/watch?v=DMP2nA0tCoE">La Poule</a>, <a href="https://www.youtube.com/watch?v=vDw8Ykxep40">La Reine</a>,  ...) sont le fruit d'une  commande du Comte d'Ogny et  elles ont été suivies par cinq autres (<a href="https://www.youtube.com/watch?v=oIo1d41YNos">n°88</a> à <a href="https://www.youtube.com/watch?v=cTP9akopWpU">92</a>, celle-ci surnommée "Oxford"  suite à la proclamation de Haydn au titre de Docteur en Musique de la célèbre Université). </li>
+                    <li>Les fameuses <a href="https://www.youtube.com/watch?v=55XgmvOIGCM">12 symphonies londoniennes</a> (n°93 à 104) couronnent l'oeuvre du Maître. Elles ont été composées à la faveur des deux séjours que Haydn a effectués dans la capitale anglaise (1791-1795). Elles ont  longtemps alimenté en priorité le répertoire (haydnien) des concerts d'abonnements et, de fait, la dernière, justement surnommée London Symphony, s'impose comme le dernier témoignage  d'une époque  révolue.</li>
+  </ul>
+  
+  <p><i>Note. Les sous-titres abondent dans les symphonies de Haydn (souvent en français, langue pratiquée à la Cour, sauf bien sûr en ce qui concerne les symphonies londoniennes) mais ils ne sont généralement pas de l'auteur :  la plupart ont été donnés après coup pour attirer l'attention sur une particularité  de l'un des mouvements, participant de l'anecdote ou de la malice, celle-ci fréquente chez le compositeur. Par exemple, la symphonie n°45 s'appelle <a href="https://www.youtube.com/watch?v=Tx8Tmu_AyYw&list=RDTx8Tmu_AyYw&start_radio=1&t=319">Les Adieux</a> car Haydn a prévu que les musiciens quittent la scène un à un pendant l'ultime section adagio du finale afin de protester contre le séjour prolongé que  le Prince Nicolas Esterházy leur imposait dans sa résidence  d'été,  loin de leurs foyers  d'Eisenstadt (Une action syndicale qui fut couronnée de succès dès le lendemain  !). Autre exemple, la symphonie n°82 a été baptisée &quot;L'Ours&quot; en rapport avec le début volontairement pataud de son <a href="https://www.youtube.com/watch?v=ttwGnAJWbPw">vivace final</a>. Quant au  palindrome dont il est question dans  la symphonie n°47, il  renvoie au 3<sup>ème</sup> mouvement (menuet) dont le thème principal (10 mesures) est finalement réexposé (deux fois consécutivement) d'abord à l'endroit  puis  à l'envers. </i></p>
+                    
+                    
+        <div class="conteneurImages">
+<div> <figure>
+                              <img src="../images/symphonie/palindrome.png" alt="Haydn : Menuet de la symphonie 47"/>
+                              <figcaption>Symphonie n°47 (Palindrome à la fin du menuet <sub><sub><sub> 
+                    <audio controls preload="none" >
+                    <source src="../son.mp3/symphonie/palindrome.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/symphonie/palindrome.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible
+                  </audio>
+</sub></sub></sub>)</figcaption>
+                </figure></div>
+                     
+	</div>
+  <p>Nos oreilles volontiers blasées rechignent souvent à apprécier à leur juste valeur les progrès accumulés par Haydn au cours de ses 38 années de composition symphonique. Au risque de passer pour un dangereux contestataire, je soutiens que ce vaste corpus surpasse en (valeur) <strong>moyenne</strong> tout ce qui s'est écrit dans le genre à cette époque, Mozart y compris. Celui-ci n'a de fait surpassé Haydn que dans ses (disons sept) dernières symphonies. </p>
+  <p>L'autre artisan de la symphonie classique a précisément été Wolfgang Mozart (1756-1791), qui  a travaillé le genre entre 1764 et 1788. Le catalogue établi, vers 1862, par Ludwig  von Köchel (1800-1877), est toujours  d'actualité malgré un grand nombre d'erreurs et de corrections successives, la dernière en 2013. Il recense 41 symphonies authentifiées à ce jour. La <a href="https://www.youtube.com/watch?v=b4IXXpTHjok">première, KV 16</a> a été composée par un enfant de 8 ans sans que l'on connaisse avec certitude le niveau d'assistance  du père. Une réponse commode mais désormais caduque a été que Leopod Mozart (1719-1787) n'a jamais rien écrit de comparable. On a pu penser cela à une époque où l'on ne connaissait de lui qu'une anodine <a href="https://www.youtube.com/watch?v=QaQDZ6xZyhE">Symphonie des Jouets</a> mais aujourd'hui notre connaissance de son oeuvre a nettement progressé dans le bon sens (<a href="https://www.youtube.com/watch?v=KmEutbYxXNw">sol majeur</a>). La majorité des symphonies de jeunesse de Wolfgang (<a href="https://www.youtube.com/watch?v=i1lCXtiWjVI">n°7</a>) ne s'écartent guère de l'esprit de la Sérénade, un genre qu'il a abondamment pratiqué par ailleurs. Par rapport aux oeuvres contemporaines de Haydn, on observe un retour au style galant que le génie de Mozart transcende cependant. Au bilan, il n'empêche que les 20 premières oeuvres    (KV 16 à 133), sont nettement interchangeables, seulement sauvées par leur grâce inimitable. Le niveau s'est élevé  à partir de la Symphonie <a href="https://www.youtube.com/watch?v=3md8zc7Ernc">n°21</a> pour atteindre  des sommets de classicisme à partir de la <a href="https://www.youtube.com/watch?v=up4_6UKrcxE">n°35</a>. L'ensemble culmine  avec l'extraordinaire fugue finale de la Symphonie n°41 (<a href="https://www.youtube.com/watch?v=Wz8NsYReYaA">Jupiter</a>, en 28:05). Pour la petite histoire, ce finale démarre sur un motif de 4 notes, do, ré, fa, mi <sub><sub><sub> 
+                    <audio controls preload="none" >
+                    <source src="../son.mp3/symphonie/last.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/symphonie/last.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible
+                  </audio>
+</sub></sub></sub>, déjà joué (en notes longues, par les cors) dans l'andante de la n°1 <sub><sub><sub> 
+          <audio controls preload="none" >
+                    <source src="../son.mp3/symphonie/first.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/symphonie/first.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible
+          </audio>
+</sub></sub></sub>, une façon de fermer la boucle car Mozart ne reviendra plus à la symphonie, consacrant les trois années qui lui restent à vivre à ses dernières grandes oeuvres vocales. </p>
+  <p>Diriger une symphonie de Mozart avec un orchestre moderne est une entreprise périlleuse, en cause l'équilibre des parties : voici  deux  interprétations  déjà anciennes mais parfaitement mises en place par de vrais chefs mozartiens, <a href="https://www.youtube.com/watch?v=RYsN6C5fdks">Karl Böhm</a> (1894-1981) et <a href="https://www.youtube.com/watch?v=x8F1ThI9KSg">Josef Krips </a>(1902-1974). Si vous préférez une intégrale sur instruments anciens,  celle réalisée par <a href="https://www.youtube.com/watch?v=nrPTxmQWicA&list=PL58xcngIUT0Pp8Evu_pn925pPrtYm1nBM">Trevor Pinnock</a> (chez Archiv) est parfaite et elle ne vous coûtera que 33 euros pour 11 CD. Celle de  <a href="https://www.youtube.com/watch?v=sjTLIW-qx_A">Jaap ter Linden</a>, parue chez Brillant, est encore moins chère mais, chaque chose pour son prix, elle est aussi moins incisive.</p>
+  
+  
+  <div class="conteneurImageSeule">
+                  <div>
+                    <figure>
+                       <img src="../images/symphonie/herschel.png" alt="CD Herschel" />
+                             
+                    </figure>
+          </div>
+        </div>
+        
+        
+  <p>La firme Chandos a publié une vaste collection d'enregistrements  consacrés à des symphonies contemporaines de celles de  Mozart mais rarement entendues (Série <a href="https://www.chandos.net/products/catalogue/CHUSB%200001">Contemporaries of Mozart</a>). Ils bénéficient d'une interprétation exemplaire des London Mozart Players, dirigés par Matthias Bamert. 30 CD sont parus isolément,   à un prix fort peu démocratique mais fort heureusement, ils ont ensuite été regroupés  en 3 albums de 10 CD chacun,   à un prix cette fois tout à fait convenable (Vérifiez quand même, si toutefois vous les trouvez, car les éditeurs sont versatiles !). Vous trouverez quelques beaux échantillons dans les paragraphes qui suivent.</p>
+  <p>Le modèle de la symphonie classique a rapidement diffusé autour de son foyer initial (Bohême-Autriche-Allemagne) : </p>
+  
+  
+  <ul class="miniListCorps">
+  <li>En Bohême,   Franz Ignaz Beck (1734-1809) (&ge;24 : <a href="https://www.youtube.com/watch?v=0eIV8c9HgKE">mi majeur</a>),  Josef Myslivecek (1737-1781)  (&ge;85 : <a href="https://www.youtube.com/watch?v=olwLvogpKek">n°1 à 6</a>),  Jean-Baptiste Vanhal (1739-1813) (&ge;76 :  <a href="https://www.youtube.com/watch?v=PrClPyuIVJY">sol, ré  &amp; ut mineur</a>, d'un grand pouvoir expressif !) et Leopold Kozeluch (1747-1818) (<a href="https://www.youtube.com/watch?v=wM38CNN1ikQ">sol  mineur</a>) ont fait de petites merveilles. J'attire particulièrement votre attention sur (le réel talent de) Paul Wranitzky (1756-1808), qui s'est imposé comme révolutionnaire avant la lettre dans ses belles <a href="https://www.youtube.com/watch?v=UkLuP_C3WDw">ut mineur</a> et <a href="https://www.youtube.com/watch?v=4LNeRjxISdM">ré majeur</a>, bientôt suivies par la pompeuse et descriptive  <a href="https://www.youtube.com/watch?v=EFCxwZ7VXkI">Grande Symphonie</a> pour la Paix avec la République française. Les temps étant manifestement en train de changer, il n'a manqué à toutes ces oeuvres qu'un nouvel idiome capable d'incarner ce changement d'époque (Réécoutez le formidable adagio initial de la &quot;ré majeur&quot; et déplorez, comme moi, la rupture inappropriée de ton lorsque  l'allegro  s'enchaîne, en 3:40).</li>
+  <li>En Autriche, Michael Haydn (1737-1806), le frère cadet de Joseph, a écrit 43 oeuvres  auxquelles on ne peut reprocher que d'avoir été  coulées dans un moule unique. Un enregistrement intégral est disponible  chez CPO (<a href="https://www.youtube.com/watch?v=nNEmvc9xMt0">n°5</a>, <a href="https://www.youtube.com/watch?v=4Ep4hsLMRBQ">n°8</a>, <a href="https://www.youtube.com/watch?v=RX-i8mW5Z20">n°16</a>, <a href="https://www.youtube.com/watch?v=P8zNG6XKw1A">n°28</a>, <a href="https://www.youtube.com/watch?v=w2vBQiLx6tU">n°39</a>). Karl Ditters von Dittersdorf (1739-1799) s'est illustré dans le genre naissant de la symphonie à programme (<a href="https://www.youtube.com/watch?v=ymc99Gd7YY8">La Prise de la Bastille</a> ou l'excellent cycle d'après les Métamorphoses d'Ovide, <a href="https://www.youtube.com/watch?v=H9ZyUyjR9vI">I</a>, <a href="https://www.youtube.com/watch?v=F78X-UCAXyQ">II</a>, <a href="https://www.youtube.com/watch?v=TbnoCGCylNs">III</a>, <a href="https://www.youtube.com/watch?v=OAis3mLrOOU">IV</a>, <a href="https://www.youtube.com/watch?v=k4tqMc_4i70">V</a>, <a href="https://www.youtube.com/watch?v=pUBAJr6c5ak">VI</a>).  Franz Anton Rösler (alias Antonio Rosetti, 1750-1792) (&ge;44 : <a href="https://www.youtube.com/watch?v=9y0HeHFuhtg">ré majeur</a>) et Anton Eberl (1765-1807) (<a href="https://www.youtube.com/watch?v=pIHpFVt9OQQ">ut majeur</a>, 1785, <a href="https://www.youtube.com/watch?v=V8WGqQH6wTs">ré mineur</a>, 1804) se sont révélés de bons artisans tardifs, dommage qu'Eberl ait si explicitement pillé  l'oeuvre  de Mozart (<a href="https://www.youtube.com/watch?v=0BdGepu19mo">n°35, KV 385</a> : exercez-vous à rassembler les preuves dès le début de l'ut majeur). </li>
+  <li>En Allemagne, si Carl Friedrich Abel (1723-1787) a fait figure de proue 
+    (<a href="https://www.youtube.com/watch?v=c7kVfDN-Qho&list=RDc7kVfDN-Qho&start_radio=1&t=5">6 Symphonies</a>, opus 7), ma préférence va vers un  autre personnage illustre que ce site partiellement dévolu à la science ne pouvait  ignorer : William Herschel (1738-1822), le grand astronome à qui l'on doit la découverte d'Uranus en 1781,  a également écrit de la très belle musique (<a href="http://www.youtube.com/watch?v=Ry8_v-nYdqg">Symphonie n°8</a>).  Ernst Eichner (1740-1777) (&ge;31 : <a href="http://www.youtube.com/watch?v=l2xAa0dImzU">Symphonie</a>, opus 7-4) fut célèbre en son temps, hélas pour lui, les temps ont changé; quant à Georg Joseph Vogler (alias l’abbé Vogler, 1749-1814), il est  demeuré connu davantage comme pédagogue influent que comme compositeur (<a href="https://www.youtube.com/watch?v=ihhyiX6_wqs">ut majeur</a>, 1799) tant il fut moqué par Mozart. Enfin, l'excellent Joseph Martin Kraus (1756-1792) (&ge;12 : <a href="https://www.youtube.com/watch?v=dsNmBGlpEoQ">ut mineur</a>, <a href="https://www.youtube.com/watch?v=Vhn45VXPrSc">mi bémol majeur</a>) est désormais passé  à la postérité grâce à quelques beaux enregistrements  de l'ensemble Concerto Köln, parus en album chez Capriccio.</li>
+  <li>En Italie, Luigi Boccherini (1743-1805) (&ge;33 : <a href="https://www.youtube.com/watch?v=znlfh2xwJRg">ut majeur G 523</a>, <a href="https://www.youtube.com/watch?v=O9SWIyi50wA">ré majeur G 503</a>) s'est imposé d'autant plus facilement comme chef de file que son plus sérieux rival, Antonio Casimir Cartellieri (1772-1807), n'a pas dépassé l'âge de 25 ans.  On redécouvre aujourd'hui l'oeuvre de ce météore musical itinérant,  né à Gdansk d'un père italien et d'une mère lettone, et qui a terminé  sa courte carrière, à Vienne, comme Maître de Chapelle du Prince Joseph  Lobkowicz. Il y a bien connu Beethoven, partageant même avec lui l'affiche de quelques concerts privés. Ses <a href="https://www.jpc.de/jpcng/cpo/detail/-/art/Antonio-Casimir-Cartellieri-1772-1807-Symphonien-Nr-1-4/hnum/2273575">4 symphonies</a> font  un lien remarquable entre le Haydn tardif et le jeune Beethoven.
+    
+      <li>En France,  où la symphonie ne fait toujours pas partie des genres prioritaires, on n'a pu compter que sur l'inusable François-Joseph Gossec (1734-1829), qui a survécu à tous les régimes sans pour autant véritablement évoluer en passant de l'un à l'autre (<a href="https://www.youtube.com/watch?v=1hn4FIEPl0w">ré majeur</a>). </li>
+    </ul>
+ 
+  
+  <p>La symphonie classique a  été profondément stylistiquement liée à l'(ordre régnant au sein de l')Ancien Régime. La Révolution de 1789 ayant frappé les esprits un peu partout en Europe, il est rapidement devenu clair que la Musique, en particulier la symphonie, allait fatalement s'en trouver bouleversée. Nul ne sait quels chemins elle aurait emprunté pendant la décennie 1790-1800 si Mozart avait vécu plus longtemps car avec la &quot;Jupiter (1788)&quot; il était clairement passé dans une nouvelle dimension. Le Destin a répondu à sa façon à cette question passablement  vide de sens  : Mozart est décédé prématurément, en 1791, abandonnant la place viennoise à un autre musicien d'exception, Ludwig van Beethoven (1770-1827). </p>
+  <p>Alors qu'il n'avait pas encore quitté sa ville natale de  Bonn, le jeune Beethoven a suivi  avec enthousiasme les péripéties de la Révolution française, n'en retenant  que les épisodes glorieux. Dans l'enthousiasme d'un romantisme naissant, il a compris que le moment était venu de  libérer les   individus et surtout que la Musique y contribuerait   plus vite et plus sûrement que la Politique. Il a puisé dans des événements idéalisés à l'extrême l'inspiration nécessaire, capable de révolutionner non seulement son art mais l'Art tout entier. Ce fut le sens de son combat, affirmé dès la création de sa première symphonie, en 1800.</p>
+  </div>
+                  
+
+                  <div id="beethoven">
+                    <h4>La révolution Beethovenienne</h4>
+                    
+                    <h5>Les prémices</h5>
+                    <p>Une oeuvre (scientifique, artistique, ...), aussi novatrice soit-elle, ne sort jamais tout à fait du néant :   bien des idées nouvelles même inabouties  préexistent souvent, attendant qu'un esprit clairvoyant opère la cristallisation nécessaire.  L'oeuvre symphonique de Beethoven a participé de ce cheminement créatif. Elle a certes  plongé ses premières racines dans l'oeuvre sinon dans l'enseignement épisodique de son professeur, Joseph Haydn, mais c'était loin de suffire.  Les idées originales et le langage novateur adapté (Toutes choses que le même Haydn, attentif mais incrédule, qualifiait de &quot;bizarreries&quot;), Beethoven les a certainement puisées intérieurement mais en respirant l'air du temps et ce n'est pas diminuer ses mérites de penser qu'il a pu s'inspirer d'accents répandus par quelques devanciers  incapables d'expliciter  davantage leurs intuitions. </p>
+                    
+            <div class="conteneurImageSeule">
+                  <div>
+                    <figure>
+                       <img src="../images/symphonie/knecht.png" alt="CD Knecht" />
+                             
+                    </figure>
+          </div>
+        </div>        
+                    
+                    
+<p>L'un d'eux fut assurément   Justin Heinrich Knecht (1752-1817), un organiste et compositeur allemand  que l'on redécouvre aujourd'hui. Sa surprenante symphonie à programme, <a href="https://www.youtube.com/watch?v=HP2QW21cqcM">Le Portrait musical de la Nature</a> (1785 !),  est désormais disponible chez Carus sous la direction du  toujours excellent Frieder Bernius. Cette oeuvre préfigure, avec 20 ans d'avance, la Symphonie Pastorale, orage compris. On peut légitimement se demander si Beethoven a  eu connaissance de cette oeuvre étonnante. Personnellement je n'en serais guère surpris : dès l'exposition, on entend distinctement des accents que l'on retrouve non seulement dans la &quot;Pastorale&quot; mais aussi dans les premiers mouvements de l'&quot;Eroica&quot; et, plus surprenant, du &quot;<a href="https://www.arte.tv/fr/videos/072431-000-A/beethoven-triple-concerto-pour-violon-violoncelle-et-piano/">Triple Concerto</a>&quot;. </p>
+
+<h5>Le massif des 9 symphonies</h5>
+<p>Beethoven n'a écrit que <a href="https://www.youtube.com/watch?v=USHg3KypLv8">9 symphonies</a>, ce qui  paraît  peu si l'on compare avec ses illustres devanciers, Haydn et Mozart.  Mais c'est précisément cette parcimonie qui  fait le prix de l'ensemble car aucune de ces oeuvres ne  ressemble à l'autre. Sans être, inévitablement, d'importances égales  (On  colporte que les symphonies paires innovent moins, se concentrant sur une consolidation des acquis des oeuvres précédentes mais ce slogan est loin de faire l'unanimité), elles sont toutes indispensables au répertoire et d'ailleurs celui-ci ne s'en prive pas : les symphonies du Maître de Bonn sont -  de loin et depuis 200 ans - championnes du monde de la programmation des concerts symphoniques. Les analyses séminales de Berlioz et Wagner, ont  été suivies  d'un nombre incalculable d'études (En français, les travaux historiques de Jacques-Gabriel Prod'homme et Jean Chantavoine), soucieuses  de percer le mystère de leur éloquence et peut-être surtout de leur inaltérabilité malgré une programmation insistante. Il n'est pas certain qu'ils y soient parvenus et c'est tant mieux pour la préservation du mystère musical. </p>
+<p>La  préoccupation essentielle de Beethoven a été d'écrire une oeuvre  universelle, compréhensible par le plus grand nombre sans rien concéder    à la facilité. Un fait au moins ne s'est  jamais démenti : un grand nombre de mélomanes   en herbes ont commencé  leurs pérégrinations musicales au son des 9 symphonies. Même ceux qui se sont crus lassés de les avoir trop entendues et qui en ont pris congé, pour se lancer à la découverte d'autres horizons, y reviennent tôt ou tard,  lorsque l'exigence finit par s'imposer   de distinguer  l'essentiel de l'accessoire.  </p>
+
+
+<h5>Les interprètes</h5>
+<p>Les 9 symphonies  ont été enregistrées un nombre incalculable de fois depuis un siècle et il est illusoire  de mettre d'accord  deux mélomanes à la recherche des  meilleures interprétations. L'expérience montre, à ce sujet, que nous sommes souvent pris en otage par la version, parfois ancienne, qui nous a révélé une oeuvre particulière lorsque nous étions jeunes : elle nous pousse   souvent inconsciemment à retrouver le son de cette &quot;Madeleine de Proust&quot;. De toutes façons, il n'est pas possible de départager les &quot;meilleures&quot; versions sans faire des choix préalables concernant les paramètres qu'on entend privilégier (et qui conviennent mieux à certaines symphonies plutôt qu'à d'autres) : </p>
+
+<ul class="miniListCorps">
+<li>Les nostalgiques de la grande tradition germanique ne jurent que par les versions   grandioses captées sur le vif ou en studio, autour des années 1950, et dirigées par Otto Klemperer (1885-1973) (<a href="https://www.youtube.com/watch?v=RHTDUktFiOg">n°9</a>), Bruno Walter (<a href="https://www.youtube.com/watch?v=1pwSkmYYlgw">n°9</a>), Erich Kleiber (<a href="https://www.youtube.com/watch?v=26akR-esdN8">n°9</a>) ou Wilhelm Furtwängler (<a href="https://www.youtube.com/watch?v=dHDXdbSWu0E">n°9</a>, interprétation légendaire, quasiment métaphysique, enregistrée lors de la réouverture du Festival de Bayreuth en 1951; certains lui préfèrent la version de <a href="https://www.youtube.com/watch?v=_AI9kp02eq0">Berlin</a> de 1942 et surtout celle de <a href="https://www.youtube.com/watch?v=QOlx3syY6Lo">Lucerne</a> de 1954 mais je crains qu'ils se laissent abuser par la meilleure qualité de la prise de son). A cette époque on privilégiait l'ampleur et la rondeur de la sonorité orchestrale sans craindre une part de flou artistique dans les attaques. Ce n'est pas un hasard si l'illustration comparative choisie  porte sur (le début de) la 9<sup>ème</sup> : les premières mesures font surgir la lumière  d'un monde désordonné en pleine gestation.  Furtwängler, en particulier, a  estimé  que pour suggérer idéalement cette genèse, il convenait de  ne pas exiger une synchronisation parfaite des musiciens de l'orchestre dans la quinte descendante initiale (la-mi), jouée pianissimo par les cors  et  en trémolo par les cordes <sub><sub><sub> 
+<audio controls preload="none" >
+                    <source src="../son.mp3/symphonie/furt9eme.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/symphonie/furt9eme.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible
+            </audio>
+</sub></sub></sub> (Il en ira différemment, en 1954, lorsque Karajan prendra la relève de  Furtwängler à la tête de l'orchestre de Berlin, insistant au contraire sur la précision de l'attaque <sub><sub><sub> 
+            <audio controls preload="none" >
+                    <source src="../son.mp3/symphonie/kar9eme.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/symphonie/kar9eme.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible
+            </audio>
+</sub></sub></sub>).  Même lorsqu'ils sont anciens, ces enregistrements  historiques demeurent étonnamment audibles, le souffle épique qui anime l'orchestre compensant largement le souffle des enregistreurs de l'époque. Voici une <a href="https://www.youtube.com/watch?v=KQRBOr4L-yk">intégrale Furtwängler</a>  compilée  par EMI.</li>
+<li>D'autres amateurs préfèrent les interprétations cliniques, où  chaque détail est mis en place sans rien laisser au hasard de l'improvisation. Ceux-là ne se séparent pas des interprétations chirurgicales du Karajan des années 1960, telle celle de la <a href="https://www.youtube.com/watch?v=f6N18Ok4xhg">n°5</a> filmée par Henri-Georges Clouzot, en 1966, dans un film-culte volontairement (et judicieusement) cadré en noir &amp; blanc. On ne peut manquer d'admirer l'extraordinaire pouvoir de conviction d'un chef qui  administre la preuve définitive que cette oeuvre est une merveille de concision  ne tolérant aucune altération  de note. Karajan atteint  là un des objectifs majeurs de la direction d'orchestre : entendre intérieurement un son et l'obtenir des musiciens sans exception. C'est particulièrement le cas dans le célèbre début de la 5<sup>ème</sup> qui ne se décline pas du tout &quot;pom-pom-pom-pom&quot; (onomatopée parfaitement ridicule) mais bien &quot;ta-ta-ta-daa&quot;, en insistant sur l'exploit d'avoir obtenu des cordes quasiment seules (à l'exception des deux clarinettes) l'attaque la plus percussive qui soit.<i><br/>
+  Notes. 1. La collaboration pourtant prometteuse entre Karajan et Clouzot ne s'est pas prolongée au-delà de quelques réalisations, le chef estimant qu'il n'était pas suffisamment mis en évidence.  Karajan s'est alors associé au cinéaste Hugo Niebeling qui a corrigé le tir dans une <a href="https://www.arte.tv/fr/videos/094370-006-A/karajan-dirige-la-sixieme-symphonie-de-beethoven/">n°6</a> (Pastorale) impeccablement léchée. Pour la petite histoire, Karajan qui voulait décidément tout contrôler, a également mis un terme à cette collaboration pour se charger personnellement de sa propre mise en scène. Prosaïques (<a href="https://www.youtube.com/watch?v=cNFPILp1jy0/">n°7</a>), ses montages n'ont pas été à la hauteur de sa direction d'orchestre, chacun son job. </i><i>2. Karajan a enregistré plusieurs  cycles complets,  que l'on différencie en fonction de l'orchestre  ou de la décennie pendant laquelle ils ont été gravés (London Philharmonia orchestra, <a href="https://www.jpc.de/jpcng/classic/detail/-/art/herbert-von-karajan-edition-2-beethoven/hnum/4107956">années 1950</a>, chez EMI ou Berliner Philharmoniker, <a href="https://www.jpc.de/jpcng/classic/detail/-/art/beethoven-9-sinfonien/hnum/5278014">années 1960</a>, 1970 et 1980, chez DGG). Karajan a, en effet, (ré)enregistré les symphonies toutes les décennies, entendant mettre à profit les progrès techniques les plus récents. Au plan interprétatif, ce fut une toute autre histoire, les deux premières intégrales étant de loin les plus recommandables par leur urgence radicale. C'est d'ailleurs l'intégrale des années 60 qui a retenu le maximum des suffrages tant auprès des spécialistes que du public (Un million d'exemplaires vendus !). Les deux dernières versions bénéficient certes de tout le confort imaginable, en particulier d'un orchestre sans faille (Les Berliner), mais le résultat est devenu trop apprêté.</i></li>
+<li>Les chefs appartenant aux générations suivantes ont cherché leur voie entre les approches contrastées ci-avant. Dans la mouvance liée à la  grande tradition, on trouve  Sergiu Celibidache (1912-1996), Gunther Wand (1912-2002),   Kurt Masur (1927-2015), Carlos Kleiber (1930-2004, le fils d'Erich), Lorin Maazel (1930-2014), Gunther Herbig (1931- ) et beaucoup d'autres. A Berlin, on trouve sans surprise, les successeurs  de Karajan à la (tête de) la Philharmonie,  Claudio Abbado et Simon Rattle, tandis que d'autres chefs se sont mis en évidence à la tête  des autres grands orchestres continentaux (Staatskappelle de Dresde, Gewandhaus de Leipzig, Concertgebouw d'Amsterdam, Wiener Philharmoniker, etc) : Daniel Barenboim (1942- ), Riccardo Chailly (1953- ),  Christian Thielemann (1959- ), ... . </li>
+<li>Mentionnons enfin  une troisième voie, très différente. Comprenant qu'il leur serait toujours plus difficile d'innover dans un répertoire aussi fréquenté, quelques chefs directement issus du monde baroque ont eu l'idée d'exercer leur compétence des instruments d'époque afin de proposer une  sonorité    présumée  proche de celle en cours à Vienne, vers 1820. On comprend la démarche même si on doute de la pertinence absolue de l'argument invoqué : il ne fait guère de doute que la qualité des interprétations entendues lors des académies viennoises devait être médiocre (Même 60 ans plus tard, le chroniqueur musical, Bernard Shaw, se plaignait encore de n'entendre que des versions routinières servies par des ensembles peu professionnels au sens où nous l'entendons aujourd'hui). La démarche &quot;classiqueuse&quot;  se défend cependant d'un point de vue acoustique (verdeur des instruments) et prosodique (dynamique des articulations). <a href="https://www.youtube.com/watch?v=G7axvM2ArQE">Nikolaus Harnoncourt</a> a été le premier à montrer la voie, ici dans l'Eroica,<a href="https://www.youtube.com/watch?v=REHdv4KhMJM"></a> bientôt suivi par <a href="https://www.youtube.com/watch?v=tGqRczMf2Yc">Roger Norrington</a>, <a href="https://www.youtube.com/watch?v=pf6BEE5RivY">John Elliot Gardiner</a> et le dernier en date, <a href="https://www.youtube.com/watch?v=4CZrV8uGj08">Jos van Immerseel</a>. Ironiquement, tous, chacun à leur tour, ont prétendu opérer un retour aux sources  des partitions originales,  révélant quantité de détails (différents !) qui étaient auparavant noyés dans la masse orchestrale voire qui avaient carrément disparu, en cause l'utilisation d'éditions &quot;remaniées&quot;  présumées abusivement fantaisistes. Sans réelle surprise ce sont les deux premières symphonies qui tirent le meilleur bénéfice de cette approche  et, de fait, l'ensemble Anima Eterna livre une des meilleures versions existantes de la <a href="https://www.youtube.com/watch?v=ORy8jAhi71M">n°2</a>. Les interprétations  &quot;historiquement informées&quot; souffrent cependant (à mon avis) d'une addiction à l'inouï : une fois passé l'effet de surprise, elles  finissent par s'émousser et  perdent progressivement de leur pouvoir de persuasion.  Si cette approche  a plutôt bien fonctionné, elle s'est néanmoins heurtée à l'obstacle de la 9<sup>ème</sup>, une oeuvre monumentale trop projetée vers l'avenir    pour s'accommoder d'une réduction des effe(cti)fs sonores.</li>
+</ul>
+<h5>Le fantasme d'une 10<sup>ème</sup> symphonie</h5>
+<p> On sait avec certitude qu'en 1827, année de sa disparition, Beethoven avait en tête le projet d'une 10<sup>ème</sup> 
+ symphonie destinée à la Société philharmonique de Londres. S'il faut en croire l'ami Karl Holz, son visiteur d'un jour, il lui aurait joué une réduction pour piano (d'esquisses ?) du premier mouvement. Ces esquisses ont été perdues, au mieux  (?) dispersées à la mort du compositeur au profit d'iconoclastes qui voulaient conserver ou monnayer des reliques du Maître. Il a fallu attendre de nombreuses décennies avant qu'elles réapparaissent en ordre dispersé, à la faveur de ventes publiques. Barry Cooper, l'un des meilleurs spécialistes de Beethoven, a identifié l'équivalent de 200 mesures probablement destinées au premier mouvement d'une nouvelle oeuvre. Il a même tenté de les assembler  pour un résultat tout à fait estimable même s'il est probablement très éloigné de ce qu'aurait été le produit fini  tant, chez Beethoven, il y a loin de l'esquisse à la mise au net (<a href="https://www.youtube.com/watch?v=To4HHCZtNXg">allegro initial</a>, reconnaissons  que le passage à partir de 4:35 sonne comme du vrai Beethoven; ensuite hélas, on commence  à tourner en rond car il  manque les développements  imprévisibles qui sont la marque du meilleur Beethoven). </p>
+<p>Quelques spécialistes de l'intelligence artificielle (Projet soutenu par Deutsche Telekom dans le cadre des festivités de l'année Beethoven 2020)  tentent actuellement d'exploiter les mêmes esquisses  en empruntant une voie différente reposant sur l'injection des procédés connus (voire des tics) d'écriture du compositeur   dans un logiciel d'apprentissage semi-automatique (Deep Learning, cf la thèse de <a href="../annexes/tenth.pdf">Paula Mu&ntilde;oz Lago</a>). Précisons que si la démarche peut paraître amusante, elle participe davantage de l'exercice informatique que de la création artistique. Il ne faut pas demander aux algorithmes ce qu'ils ne peuvent donner : même s'ils sont incroyablement astucieux, jamais ils ne feront  preuve de génie, celui-ci étant imprévisible par définition. C'est peut-être frustrant  mais  c'est au fond  mieux comme cela. On attend une version remaniée de ce projet en  2020 car une première version (de chambre), publiée en 2019, laissait franchement à désirer.</p>
+
+<h5>Les contemporains de Beethoven</h5>
+
+
+<p>Composer des symphonies  à l'époque de Beethoven pouvait sembler  relever de la témérité voire de l'inconscience. Tempérons cependant en rappelant qu'à cette époque, l'information circulait encore en diligence,   d'où la réputation du musicien Beethoven, hors de Vienne, précédait souvent sa musique d'une ou deux décennies. Quoi qu'il en ait été, plusieurs musiciens se sont  jetés à l'eau :</p>
+
+<ul class="miniListCorps">
+<li>Un  autre viennois de génie, Franz Schubert (1797-1828), a démarré  gauchement puis il a pris de l'assurance à mesure que la mort le menaçait.  L'inventaire n'est pas simple car il  a commencé plus de symphonies  qu'il n'en a terminées, soit  7, si vous adhérez à la thèse officielle selon laquelle le compositeur a incontestablement commencé 30 mesures d'un troisième mouvement pour la célèbre &quot;Inachevée&quot;, et 8, si vous faites partie de ceux  qui considèrent, avec quelque raison, qu'il a logiquement abandonné l'idée d'un scherzo allegro (voire d'un quatrième mouvement, finale allegro) qui aurai(en)t rompu le charme de l'enchaînement allegro-andante des deux mouvements existants. C'est en tout cas ce que confirment  les tentatives récentes de complétion, par exemple, celle de <a href="https://www.youtube.com/watch?v=v_w9Tpcbmg0">Brian Newbould</a>. Cette manie typiquement schubertienne d'abandonner des esquisses sans jamais y donner suite (au moins 5, tel ce <a href="https://www.youtube.com/watch?v=-34-xdF5mwc">Fragment</a>, D615) a semé  la confusion parmi les musicologues toujours pressés de classer les oeuvres par genres. La numérotation  usuelle des symphonies de Schubert est officiellement déclinée comme suit dans le catalogue  d'Otto Erich Deutsch : n°1 (D82), n°2 (D125), n°3 (D200), n°4 (D417, &quot;Tragique&quot;), n°5 (D485), n°6 (D589), n°8 (D759), n°9 (D944, &quot;La Grande&quot;). L'absence d'une symphonie n°7 n'est pas une erreur mais la conséquence des hésitations mentionnées (La nature ayant horreur du vide, Brian Newbould, encore lui,  s'est chargé de reconstituer une symphonie <a href="https://www.youtube.com/watch?v=C_cc0OKmKxw">n°7</a> à partir d'esquisses éparses abandonnées par Schubert et tant qu'il y était, il  a récidivé avec une Symphonie <a href="https://www.youtube.com/watch?v=7VDFckdHrZw">n°10</a> (D936a), en fait une orchestration   de 3 mouvements n'existant qu'à l'état d'esquisses pour piano (Le chef liégeois <a href="https://www.youtube.com/watch?v=UgYLMvCDeXA">Pierre Bartholomée</a> a également proposé et enregistré sa propre version).  Les Symphonies <a href="https://www.youtube.com/watch?v=AiwhbZf3oZM">n°8</a> et <a href="https://www.youtube.com/watch?v=bD6ThHOOI8g">n°9</a> sont les plus justement célèbres mais ne négligez pas les autres et ne comptez pas sur moi pour vous conseiller une version discographique  car je manquerais d'objectivité : depuis que j'ai découvert la version dégraissée sur instruments anciens du Hanover Band, dirigé par Roy Goodman,  je ne peux plus m'en passer (Tentez votre chance sur <a href="https://www.deezer.com/en/album/12370254">Deezer</a>).</li>
+<li>Carl Maria von Weber (1786-1826), a composé deux symphonies  courtes mais pleines d'entrain, qui s'accommodent  également parfaitement d'une interprétation sur instruments d'époque  (<a href="https://www.youtube.com/watch?v=fripUC8e-wU">n°1</a> et <a href="https://www.youtube.com/watch?v=CKrGCqLzCyU">n°2</a>).</li>
+<li>Anton Reicha (1770-1836), originaire de Prague, est venu très jeune à Bonn où il a  bien connu  Beethoven. Leur amitié  ne s'est jamais démentie même lorsque le destin les a séparés (Reicha s'est déplacé vers la capitale française où il est devenu un professeur influent). L'oeuvre  symphonique de Reicha comporte une douzaine de symphonies longtemps demeurées inédites mais désormais partiellement accessibles (<a href="https://www.youtube.com/watch?v=_NEuvS2HV54">ut mineur</a>, <a href="https://www.youtube.com/watch?v=8pNG7SXZWLk">mi bémol majeur</a>, 1803, <a href="https://www.youtube.com/watch?v=PcqZT7hjxMk">fa majeur</a>, 1808).  Autres musiciens originaires de Bohême : Jan Václav Voříšek (1791-1825) (<a href="https://www.youtube.com/watch?v=ZGTema63PWg">ré majeur</a>, 1821) et surtout Ignaz Moscheles (1794-1870), qui fut un collaborateur occasionnel  de Beethoven et avec lequel il est resté en contact épistolaire toute sa vie (<a href="https://www.youtube.com/watch?v=QssXo4AM73k&list=RDOUrsh3C5LHE&index=22">ut majeur</a>, 1828).</li>
+
+<li>Friedrich Witt (1770-1836) a bénéficié d'une méprise de l'histoire : sa <a href="https://www.youtube.com/watch?v=x-LttiSc17E">Symphonie Iena</a> (Surnom d'emprunt désignant le lieu de redécouverte du manuscrit non signé) a  longtemps été attribuée au jeune Beethoven, à une époque où l'on considérait qu'un musicien &quot;inconnu&quot; était incapable d'une telle réussite. L'oeuvre emprunte  une partie de son matériau à la Symphonie 97 de Haydn (Exercez-vous à le retrouver, par exemple en 4:22). On a découvert, par la suite, que Witt avait écrit 22 autres symphonies.  Actuellement en cours d'édition, elles ne manquent décidément pas d'intérêt  (<a href="https://www.youtube.com/watch?v=Yw3m5rkD7zA">la majeur</a>, 1785, <a href="https://www.youtube.com/watch?v=L72tyrljuBA">n°6</a>, 1808, <a href="https://www.youtube.com/watch?v=Pupozl7COU4">n°9</a>, 1819).</li>
+  <li>Les deux élèves les plus assidus de Beethoven, Ries et Czerny, ont pris des leçons entre 1800 et 1810. Lâchés dans la nature, ils se sont  mesurés à leur maître sans prendre  de risques. Dans ses 8 symphonies  (<a href="https://www.youtube.com/watch?v=YcO7v_ixKuE">n°1</a> 1809, <a href="https://www.youtube.com/watch?v=-ond1PRVZnk">n°3</a>, 1816, <a href="https://www.youtube.com/watch?v=rO9KPvD3vfI">n°4</a>, 1818, <a href="https://www.youtube.com/watch?v=NhY-3tx25h0">n°6</a>, 1822, <a href="https://www.youtube.com/watch?v=bALls9E_CwY">n°7</a>, 1835), Ferdinand Ries (1784-1838) ne s'est guère gêné  pour emprunter  des tournures entières de phrase à son illustre professeur. Par exemple, la <a href="https://www.youtube.com/watch?v=fKypTr2QJR0">n°2</a> (1814) se réfère clairement à l'Eroica et les accents qui ouvrent la <a href="https://www.youtube.com/watch?v=CuCjVAo1FOo">n°5</a> (1813) ont des airs  déjà entendus ! Toutes ont été enregistrées chez <a href="https://www.jpc.de/jpcng/cpo/detail/-/art/Ferdinand-Ries-1784-1838-Symphonien-Nr-1-8/hnum/6725881">CPO</a> et, si vous connaissez vos classiques, vous passerez de  bons moments  à traquer les emprunts au Maître de Bonn.  Carl Czerny (1791-1857) s'est  trouvé un peu dans la même situation d'emprunt avec ses 6 symphonies  (<a href="https://www.youtube.com/watch?v=tCV0miiH4rI">n°1</a>, <a href="https://www.youtube.com/watch?v=-j1RE9qccig">n°2</a>, <a href="https://www.youtube.com/watch?v=waxn4Dp0lwU">n°5</a>, non datées), toutes  enregistrées chez Christophorus. <br/><br/>
+    
+     <table>
+       <tr>
+        <th>Ries</th>
+        <th>Beethoven</th>
+        </tr>
+      <tr>
+        <td>
+          
+          n°2 : allegro <sub><sub><sub> 
+            <audio controls preload="none"> 
+              <source src="../son.mp3/symphonie/ries2-1.mp3" type="audio/mpeg"/> 
+              <source src="../son.mp3/symphonie/ries2-1.ogg" type="audio/ogg"/> 
+              Votre navigateur n'est pas compatible 
+              </audio>
+            </sub></sub></sub>
+          <br/>
+          n°4 : scherzo <sub><sub><sub> 
+                    <audio controls preload="none"> 
+                      <source src="../son.mp3/ries/riessy4-3.mp3" type="audio/mpeg"/> 
+                      <source src="../son.mp3/ries/riessy4-3.ogg" type="audio/ogg"/> 
+                      Votre navigateur n'est pas compatible 
+                  </audio></sub></sub></sub>
+          
+          </td>
+        <td>
+          
+          n°3 : allegro <sub><sub><sub> 
+            <audio controls preload="none"> 
+              <source src="../son.mp3/symphonie/third.mp3" type="audio/mpeg"/> 
+              <source src="../son.mp3/symphonie/third.ogg" type="audio/ogg"/> 
+              Votre navigateur n'est pas compatible 
+              </audio>
+            </sub></sub></sub>
+          <br/>
+          n°1 : scherzo <sub><sub><sub> 
+            <audio controls preload="none"> 
+              <source src="../son.mp3/ries/lvbsy1-3.mp3" type="audio/mpeg"/> 
+              <source src="../son.mp3/ries/lvbsy1-3.ogg" type="audio/ogg"/> 
+              Votre navigateur n'est pas compatible 
+              </audio>
+            </sub></sub></sub>
+          
+          </td>
+      </table>
+    
+    
+    
+    
+    <table>
+      <tr>
+        <th>Czerny</th>
+        <th>Beethoven</th>
+        </tr>
+      <tr>
+        <td>
+          
+          n°2 : andante <sub><sub><sub> 
+            <audio controls preload="none"> 
+              <source src="../son.mp3/ries/czernysy2-1.mp3" type="audio/mpeg"/> 
+              <source src="../son.mp3/ries/czernysy2-1.ogg" type="audio/ogg"/> 
+              Votre navigateur n'est pas compatible 
+              </audio>
+            </sub></sub></sub>
+          <br/>
+          n°2 : scherzo <sub><sub><sub> 
+            <audio controls preload="none"> 
+              <source src="../son.mp3/ries/czernysy2-3.mp3" type="audio/mpeg"/> 
+              <source src="../son.mp3/ries/czernysy2-3.ogg" type="audio/ogg"/> 
+              Votre navigateur n'est pas compatible 
+              </audio>
+            </sub></sub></sub>
+          
+          </td>
+        <td>
+          
+          n°2 : allegro <sub><sub><sub> 
+            <audio controls preload="none"> 
+              <source src="../son.mp3/symphonie/second.mp3" type="audio/mpeg"/> 
+              <source src="../son.mp3/symphonie/second.ogg" type="audio/ogg"/> 
+              Votre navigateur n'est pas compatible 
+              </audio>
+            </sub></sub></sub>
+          <br/>
+          n°1 : scherzo <sub><sub><sub> 
+            <audio controls preload="none"> 
+              <source src="../son.mp3/ries/lvbsy1-3.mp3" type="audio/mpeg"/> 
+              <source src="../son.mp3/ries/lvbsy1-3.ogg" type="audio/ogg"/> 
+              Votre navigateur n'est pas compatible 
+              </audio>
+            </sub></sub></sub>
+          
+          </td>
+      </table>
+  </li>
+  <li>Joseph Wölfl (1773-1812), rival de Beethoven au piano, dans les salons viennois,  n'a guère autant brillé  à l'orchestre (<a href="https://www.youtube.com/watch?v=rgSSw1vLMcI">sol mineur</a>, 1803, <a href="https://www.youtube.com/watch?v=WhqN42ZoD0E">ut majeur</a>, 1804) et Philipp  Riotte (1776-1856), également très en vue à Vienne à la même époque, peine  à sortir de l'anonymat (<a href="https://www.youtube.com/watch?v=DwSl-El4NCM">n°1</a>, 1812). Par contre, Friedrich Ernst Fesca (1789-1826) mérite toute votre considération (Superbes, <a href="https://www.youtube.com/watch?v=ILZBLs7aTU4">n°2</a>, 1809, et <a href="https://www.youtube.com/watch?v=RA6hm21XzKw">n°3</a>, 1816, parues chez CPO). </li>
+  
+ <li>
+ 
+  <div class="conteneurImageSeule">
+    <div>
+      <figure>
+        <img src="../images/symphonie/clementi.png" alt="CD Clementi" />
+        
+        </figure>
+      </div>
+    </div>   
+    
+  En dehors de  Vienne,  Peter von Winter (1754-1825) (<a href="http://www.youtube.com/watch?v=uJYf5pDcYS4&feature=related">ré majeur</a>, 1795 ?), Franz Krommer (1759-1831) (<a href="https://www.youtube.com/watch?v=Cyo4gICxw7E">n°4</a>, 1819), Bernhard Romberg (1767-1841) (<a href="https://www.youtube.com/watch?v=KsW5AblC8oY">n°1</a>, 1810, <a href="https://www.youtube.com/watch?v=I5wpng263zg">n°2</a>, 1810, <a href="https://www.youtube.com/watch?v=nv8jrv8cRQc">n°3</a>, 1820) et <a href="../chroniques/hoffmann.html">Ernst Theodor Amadeus Hoffmann</a> (1776-1822) (<a href="https://www.youtube.com/watch?v=8JWOZP8QjGY">mi bémol majeur</a>, 1806) se sont frayé un chemin dans l'ombre de Beethoven mais,  plus on s'éloigne de Vienne, plus on  rencontre des musiciens pour qui  le  modèle haydnien est resté d'actualité. Par exemple en Pologne : Józef Elsner (1769-1854) (<a href="https://www.youtube.com/watch?v=UX9xIkOoY_s">ut majeur</a>, 1805) et Karol Lipiński (1790-1861) (<a href="https://www.youtube.com/watch?v=PvOkmNL0QlA">si bémol majeur</a>, 1809). En Italie, les meilleurs compositeurs ont  émigré : Muzio Clementi (1752-1832) s'est installé à Londres dès 1766 et  Luigi Cherubini (1760-1842) en France, en 1787. On pense que Clementi a composé une vingtaine de symphonies mais la plupart sont perdues, sauf six non datées   qu'il faut impérativement connaître :  <a href="https://www.youtube.com/watch?v=XWHdSYiIsgU">si bémol </a>(quelle fougue !) & <a href="https://www.youtube.com/watch?v=UCegqH3qAM0">ré</a>, opus 18,  tempétueuse <a href="https://www.youtube.com/watch?v=zs-IxORZ5Bc">n°1</a>,  <a href="https://www.youtube.com/watch?v=Dbiy-BI6woM">n°2</a>,  <a href="https://www.youtube.com/watch?v=GGCGT5utjAs">n°3</a> (avec  ses brillantes variations sur le thème astucieusement déguisé du &quot;God save the King&quot;, dans l'andante, à partir de 11:30) et <a href="https://www.youtube.com/watch?v=m0EmtB2MNYI">n°4</a>. Cherubini  n'a  composé qu'une  Symphonie en <a href="https://www.youtube.com/watch?v=QntyF-2ZNUo">ré majeur</a> (1815); était-ce à elle  que Beethoven pensait pour  tenir Cherubini en si haute estime ? Né en Allemagne, Johann Wilhelm Wilms (1772-1847)  est parti vivre en Hollande. Ses 7 symphonies sont passionnantes surtout lorsqu'elles sont interprétées par le Concerto Köln  (<a href="https://www.youtube.com/watch?v=L9PEBga8yZI">n°6</a>, 1820, <a href="https://www.youtube.com/watch?v=-lhgsMEuBlM">n°7</a>, 1835). Le danois Christoph  Weyse (1774-1842) est davantage connu pour avoir accueilli  la veuve de Mozart lorsque celle-ci s'est installée à Copenhague, en 1810, que pour avoir  composé 7 symphonies pourtant très belles (<a href="https://www.youtube.com/watch?v=U8NBuzwfLH8">n°6</a>, 1798, <a href="https://www.youtube.com/watch?v=Bq62dl2ABH0">n°7</a>, 1799).</li>
+<li>En France, Etienne Nicolas Méhul (1763-1817) s'est trouvé bien seul pour défendre les idées révolutionnaires  (Brillante et originale <a href="https://www.youtube.com/watch?v=mQMHdbaaZYE">n°1</a>, 1808, <a href="https://www.youtube.com/watch?v=LyyesKxvd9s">n°2</a>, 1809, <a href="https://www.youtube.com/watch?v=LXq1RmsQR7g">n°3</a>, 1809, <a href="https://www.youtube.com/watch?v=QxWByfy58p4">n°4</a>, 1810). Les années de composition ne doivent pas abuser : à cette époque, seules les symphonies n°1 &amp; 2 de Beethoven étant jouées à Paris,  Méhul n'a probablement pas eu connaissance des développements en cours à partir de l'Eroica.  Ferdinand Hérold (1791-1833) pouvait difficilement espérer rencontrer un succès comparable avec ses oeuvres banales pour l'époque (<a href="https://www.youtube.com/watch?v=7oFSZcvmXnU">n°2</a>, 1815). Restons à Paris où Juan Crisóstomo de Arriaga (1806-1826), natif de Bilbao, aurait certainement brillé si seulement il avait vécu au-delà de ses 20 ans (<a href="https://www.youtube.com/watch?v=maxTuLONCZs">en ré</a>, 1824).</li>
+</ul>
+
+<h5>L'intermède Berlioz-Liszt</h5>
+<p>Les générations qui ont succédé à Beethoven ont été confrontées au problème de continuer à écrire des symphonies capables d'exister sans paraître dérisoires. Par un de ces pieds-de-nez dont l'histoire a le secret, alors que la France avait largement boudé le genre jusque-là, c'est un musicien français, le bouillonnant Hector Berlioz (1803-1869), qui a proposé, dès 1830, une solution originale dans le cadre de la musique dite "à programme" (<a href="https://www.youtube.com/watch?v=gfI9da_bwXY">Symphonie fantastique</a>, exigez Charles Munch si vous voulez qu'elle le soit vraiment !). Autant chef que compositeur, Berlioz a connu les symphonies de Beethoven dès leur introduction à Paris. Il en a d'ailleurs fait ultérieurement des analyses  qu'il a vulgarisées dans son ouvrage recommandable, "<a href="http://www.hberlioz.com/Predecessors/beethsymf.htm">A travers Chants</a>". Il est remarquable que, malgré cette proximité, il a réussi  cette oeuvre singulière qu'est la &quot;Fantastique&quot; sans se laisser intimider par son modèle. Pourtant ce coup de maître n'a  été suivi  d'aucun effet immédiat, de part et d'autre des rives du Rhin : en France parce que le genre de la symphonie peinait décidément à s'imposer et en Allemagne parce que le poids de la tradition liée au principe de la musique dite &quot;pure&quot; faisait obstacle. </p>
+
+<p> Il faudra  attendre 25 ans pour qu'un musicien hongrois, Franz Liszt (1811-1886), comprenne l'intérêt de la voie ouverte par Berlioz et l'emprunte à nouveau dans deux oeuvres puissantes, à connaître absolument, les Symphonies <a href="https://www.youtube.com/watch?v=flXQsrFAoy0">Faust</a> (1854) et <a href="https://www.youtube.com/watch?v=hko1TNkgUUE">Dante</a> (1856, admirez la direction ... dantesque de Daniel Barenboim). Liszt  s'est beaucoup investi dans le développement de la musique germanique, cherchant, en particulier,  à la libérer  du carcan de la tonalité classique.  Réécoutez le tout début de la symphonie Faust : après un la<i>b</i> initial, vous entendrez la première série dodécaphonique consciemment militante de l'histoire de la musique (sol, si, ré<i>#</i>, fa<i>#</i>, si<i>b</i>, ré, fa, la, do<i>#</i>, mi, sol<i>#</i>, do), soit tous les degrés de la gamme chromatique. Cette tentative de se libérer des contraintes liées aux modes classiques, majeurs et mineurs, a trouvé une oreille attentive chez Richard Wagner. Par contre, les musiciens traditionnels, emmenés par Johannes Brahms, ont fait la sourde oreille. </p>
+
+<div class="conteneurImages">
+                <div> <figure>
+                              <img src="../images/symphonie/faust.png" alt="Début de la Faust Symphonie" />
+                              <figcaption>Série initiale de la Symphonie &quot;Faust&quot;  <sub><sub><sub> 
+                              <audio controls preload="none">
+                    <source src="../son.mp3/complexite/faust.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/complexite/faust.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible
+                  </audio></sub></sub></sub></figcaption>
+          </figure></div>
+        </div>
+
+              </div>
+                  
+
+                  <div id="romantisme">
+                  
+                    <h4>La tradition (post)romantique austro-allemande</h4>
+<p>En Allemagne, Felix Mendelssohn (1809-1847) (<a href="https://www.youtube.com/watch?v=mo_1CdiehDI">5 opus</a> remarquables mais seules les n°3, 4 &amp; 5 sont vraiment connues) a indiqué l'autre chemin praticable, celui de la musique pure (= dépourvue d'intention extra-musicale), directement issu des oeuvres de la période médiane de Beethoven. Ses collègues et successeurs ont suivi ses traces, de Robert Schumann (1810-1856) (<a href="https://www.youtube.com/watch?v=OSgv7iciZXM">4 opus</a> dont les n°3 &amp; 4, les plus connues)  à Johannes Brahms (1833-1897) (<a href="https://www.youtube.com/watch?v=2PAJ1u0hXqM">4 opus</a> tous célèbres  et d'ailleurs présents au palmarès cité en introduction).  La formule a tellement bien fonctionné qu'on a fini par croire  (un peu abusivement) que la symphonie était devenue une chasse gardée germanique, capable à elle presque seule d'alimenter le répertoire des salles de concerts symphoniques. Les seuls cycles concurrents ont été composés par  Pyotr Ilyich Tchaïkovsky (1840-1893) (<a href="https://www.youtube.com/watch?v=iCxQf1FlFxQ">6 opus</a> dont les trois dernières &quot;squattant&quot; les programmes mais n'oubliez pas les autres !) et Antonin Dvorak (1841-1904) (<a href="https://www.youtube.com/watch?v=RsB9oWbS_YQ">9 opus</a>, même remarque). Toutes ces oeuvres figurant au grand répertoire, intéressons-nous plutôt à   celles qui n'ont jamais connu cet honneur :</p>
+
+<ul class="miniListCorps">
+<li>Un grand nombre de musiciens ont vécu dans l'ombre  directe de Mendelssohn et de Schumann. Ludwig Spohr (1784-1859) a terminé 9 symphonies (<a href="https://www.youtube.com/watch?v=3YTnhU0Yuxg">n°1</a>, 1811, <a href="https://www.youtube.com/watch?v=h0fEZjLQzzE">n°5</a>, 1837, <a href="https://www.youtube.com/watch?v=dVHkkadRTKY">n°7</a>, 1841), qui se laissent écouter avec un certain intérêt (Une 10<sup>ème</sup> a été complétée par Eugen Minor). La <a href="https://www.youtube.com/watch?v=7g8_3avJs3o">n°6</a> ("Historique", 1839)  se veut originale avec ses 4 mouvements illustrant chacun une période différente de l'histoire musicale (1720, 1780, 1810 et 1840). Si l'idée semblait intéressante, sa réalisation laisse toutefois à désirer. Johann Ludwig Böhmer (1787-1860) n'a pas manqué d'aisance dans cette <a href="https://www.youtube.com/watch?v=E7Pgjtm1Xm0">ré mineur</a> (1844) mais Carl Loewe (1796-1869), surtout connu pour ses cycles de ballades populaires, a frappé plus fort avec sa <a href="https://www.youtube.com/watch?v=nyUjeccUEDM">n°1</a> (1832), une  franche réussite que la <a href="https://www.youtube.com/watch?v=2EQ_Onp4XZk">n°2</a> (1834) n'a pas réussi à égaler. Un troisième larron est  Franz Lachner (1803-1890), un musicien qui s'est souvent montré plaisant, en particulier dans ses 8 symphonies (<a href="https://www.youtube.com/watch?v=7ZJx7czDDdU">n°1</a>, 1828, <a href="https://www.youtube.com/watch?v=XQy8_LkkSuw">n°5</a>, 1835, <a href="https://www.youtube.com/watch?v=0yOqafiZVe0">n°8</a>, 1851).</li>
+<li>La deuxième génération a vécu suffisamment pour connaître Brahms. Johann Rufinatscha (1812-1893) a écrit 5 belles symphonies  (<a href="https://www.youtube.com/watch?v=iFJpXVxsirg">n°2</a>, 1840, <a href="https://www.youtube.com/watch?v=SMqR86CI81M">n°5</a>, 1850,  la n°3 est perdue). On sait peu que le (très) jeune Richard Wagner (1813-1883)  s'est    essayé à la symphonie avant de bifurquer vers l'opéra (<a href="https://www.youtube.com/watch?v=atqpRkaMhg4">ut majeur</a>, 1832). Il connaissait  bien l'oeuvre de Beethoven pour l'avoir analysée et il est clairement  resté dans son sillage. Il en a  même commencé une deuxième,   deux ans plus tard (<a href="https://www.youtube.com/watch?v=yBVfw5B-S9E">mi majeur</a>, 1834), mais il en a abandonné les esquisses (complétées par le grand chef, Felix Mottl). Les oeuvres de Friedrich  Volkmann (1815-1883) (Brillantes <a href="https://www.youtube.com/watch?v=bPoRckvXyQY">n°1</a>, 1863 et <a href="https://www.youtube.com/watch?v=w7GoFqxwQsM">n°2</a>, 1865), Adolf Reichel (1816-1896) (<a href="https://www.youtube.com/watch?v=d80zIb5KIow&list=RDOUrsh3C5LHE&index=2">n°2</a>, 1869) et <a href="../chroniques/eduardfranck.html">Eduard Franck</a> (1817-1893)  (<a href="https://www.youtube.com/watch?v=uFaN4jd6KWs">si bémol majeur</a>, 1856 et majestueuse <a href="https://www.youtube.com/watch?v=vAEPv4Bh_rU">la majeur</a>, 1883) ont été enregistrées par de très bons orchestres  provinciaux, un témoignage s'il en fallait de la vitalité de la vie musicale d'Outre-Rhin. Joachim Raff (1822-1882) est l'auteur de 11 symphonies louées par Mendelssohn et  Liszt (<a href="https://www.youtube.com/watch?v=z4xHAZDtkZM">n°7</a>, 1875, <a href="https://www.youtube.com/watch?v=NUJ6k3g8oUw">n°8</a>, 1876, <a href="https://www.youtube.com/watch?v=zWlgml1Rm9E">n°9, </a>1878). Sa gigantesque <a href="https://www.youtube.com/watch?v=6_Mr321iQ9w">n°1, "La Patrie"</a> (1861, 70 minutes !) a d'ailleurs obtenu le convoité premier prix de la Wiener Gesellschaft der Musikfreunde. Ensuite, il vous appartient de passer en revue les oeuvres écrites par  une ribambelle de compositeurs plus ou moins (in)connus mais qui ont souvent quelque chose à dire : <a href="../chroniques/reinecke.html">Carl Reinecke</a> (1824-1910) (<a href="https://www.youtube.com/watch?v=oAIcXJ7GXwE">n°2</a>, 1874, <a href="https://www.youtube.com/watch?v=djDDVVGcGJs">n°3</a>, 1895), Karl Goldmark (1830-1915) (<a href="https://www.youtube.com/watch?v=3jXjalygEYA">n°2</a>, 1887), Salomon Jadassohn (1831-1902) (<a href="https://www.youtube.com/watch?v=Xvcy_LFxjJc">n°4</a>, 1889),  <a href="../chroniques/draeseke.html">Felix  Draeseke</a> (1835-1913)  (<a href="https://www.youtube.com/watch?v=QIUwwQtaGtw">n°3</a>, 1886), Max Bruch (1838-1920) (<a href="https://www.youtube.com/watch?v=MRCyeCqbrIw">n°1</a>, 1868, <a href="https://www.youtube.com/watch?v=jntFBNcxa3E">n°2</a>, 1870, <a href="https://www.youtube.com/watch?v=XfEE-GoJS2E">n°3</a>, 1887), Josef Rheinberger (1839-1901) (<a href="https://www.youtube.com/watch?v=UQjdo3WtFD8">n°1</a>, 1866, <a href="https://www.youtube.com/watch?v=c2moAb-J6Rc">n°2</a>, 1874), Friedrich Gernheim (1839-1916) (<a href="https://www.youtube.com/watch?v=qz2cwEJeQfQ">n°1</a>, 1875, <a href="https://www.youtube.com/watch?v=27p5p3GC9Mk">n°4</a>, 1895), Hermann Goetz (1840-1876) (étonnante <a href="https://www.youtube.com/watch?v=Fycqx_wXF08">fa majeur</a>, d'un musicien malheureusement happé par la tuberculose à 36 ans), Heinrich von Herzogenberg (1843-1900) (<a href="https://www.youtube.com/watch?v=9b7WNVOlkPY">n°1</a>, 1884, <a href="https://www.youtube.com/watch?v=1CQ8JDGqJDw">n°2</a>, 1889), Robert Fuchs (1847-1927) (<a href="https://www.youtube.com/watch?v=-JKxhuyMmTo">n°2</a>, 1887), August  Klughardt (1847-1902) (<a href="https://www.youtube.com/watch?v=Ex9M4AgjXEY">n°1</a>, 1873) et <a href="../chroniques/urspruch.html">Anton Urspruch</a> (1850-1907) (mi bémol majeur <sub><sub><sub> 
+            <audio controls preload="none"> 
+              <source src="../son.mp3/urspruch/symphonie.mp3" type="audio/mpeg"/> 
+              <source src="../son.mp3/urspruch/symphonie.ogg" type="audio/ogg"/> 
+              Votre navigateur n'est pas compatible 
+            </audio>
+            </sub></sub></sub>, 1881).   Hans Rott (1858-1884) n'a vécu que 26 ans mais il a quand même trouvé le moyen de faire le lien entre Bruckner et Mahler  (<a href="https://www.youtube.com/watch?v=SxjLWC1aTh8">n°1</a>, 1880 et n°2 inachevée); ce  dernier a d'ailleurs volontiers convenu qu'il devait beaucoup à Rott.  Enfin Eugen d'Albert (1864-1932), pianiste allemand d'origine écossaise connu  pour ses interprétations  de Bach et Beethoven, a également brillé à la scène mais aussi à l'orchestre comme en témoigne cette superbe <a href="https://www.youtube.com/watch?v=8cCAO58V4u4">fa majeur</a> (1886). Seul grand nom manquant à l'appel, Max Reger (1873-1916) n'a pas  publié de symphonie, seulement une <a href="https://www.youtube.com/watch?v=AwT18bIcuas">Sinfonietta</a> (1904) qui n'en est d'ailleurs pas vraiment une (Elle dure 50 minutes et elle ne se déroule pas sur un mode particulièrement léger !). Veuillez noter que plusieurs musiciens cités ci-avant ont fait l'objet d'une chronique dédicacée à laquelle vous pouvez vous référer en suivant le lien mentionné.</li>
+</ul>
+
+
+<p>A la fin du 19<sup>ème</sup> siècle, la musique austro-allemande était encore en position dominante mais plus pour très longtemps.  Deux géants, Anton Bruckner (1824-1896) et son élève Gustav Mahler (1860-1911), ont inauguré le métier de symphoniste professionnel. On entend par là des compositeurs qui se sont essentiellement consacrés  à la symphonie (avec tout de même de beaux restes dans d'autres domaines, un quintette à cordes et des messes chez Bruckner et des cycles de lieder orchestraux chez Mahler). On pourrait s'étonner qu'ils n'aient l'un et l'autre écrit qu'une dizaine de symphonies  (colossales tout de même) mais ils n'avaient pas que cela à faire : Bruckner avait une charge d'orgue et d'enseignement et Mahler de direction d'orchestre et (de maison) d'opéra. Tout mélomane qui se respecte a fait  le tour de leurs oeuvres cultes au moins une fois dans sa vie et il en est sans doute sorti ébloui sinon bouleversé, en particulier par les mouvements lents des deux 9<sup>ème</sup> (Bruckner <a href="https://www.youtube.com/watch?v=MIJET6NO4-k">n°9</a>, 1896, Malher <a href="https://www.youtube.com/watch?v=ug1oh9JG_DQ">n°9</a>, 1910). Ces deux oeuvres (ne) brillent (pas que) par  leur longueur : la 9<sup>ème</sup> de Bruckner dépasse l'heure alors qu'il lui manque son finale, empêché par la mort, et celle de Mahler approche l'heure et demie ! Cette observation n'est pas anodine : vers 1900, la symphonie austro-allemande s'est prise pour une supernova, enflant progressivement, en durée comme en effectif orchestral, jusqu'à l'implosion finale. Ce fut le début de la fin  de la domination germanique, de Vienne à Leipzig, contestée dans les faits  par l'émergence des écoles nationales  alors en pleine expansion. </p>
+<p>- Un musicien de génie, Arnold Schönberg (1874-1951), a vu le danger et c'est, de son propre aveu, pour tenter de maintenir l'hégémonie menacée qu'il a codifié l'expérience dodécaphonique. En fondant ce qu'on a appelé la deuxième école de Vienne (La première référant habituellement au tandem Haydn-Mozart et même Beethoven par extension), il était convaincu qu'il  prolongerait l'ordre ancien pour un siècle au moins. <i>Note. Cette prédiction avait quelque chose de tragique sous la plume d'un artiste juif qui allait quitter l'Autriche en 1933 : en lançant sa prophétie hasardeuse autant qu'utopique, elle usait, avec 20 ans d'avance, d'une  rhétorique réutilisée par Adolf Hitler à propos d'un nouveau Reich devant durer 1000 ans.</i> </p>
+<p>- Schönberg n'a pas composé de symphonie pour grand orchestre (seulement 2 symphonies de chambre qui ne nous concernent pas directement) contrairement à son professeur et beau-frère, Alexandre von Zemlinsky (1871-1942). Celui-ci   a incarné ce qu'on pourrait appeler la troisième école de Vienne. Au premier quart de 20<sup>ème</sup> siècle,  la capitale autrichienne rassemblait une nouvelle élite autour de Gerhart Hauptmann (Prix Nobel de littérature), Josef Olbricht et Otto Wagner (Architectes), Gustav Klimt (Peintre), Siegmund Freud (Psychanalyste), Gustav Mahler et  Arnold Schönberg (musiciens). Zemlinsky a brillé dans ce cercle grâce, en particulier, à  3 superbes symphonies (<a href="https://www.youtube.com/watch?v=Meno1bBhjKs">n°1</a>, 1893, <a href="https://www.youtube.com/watch?v=tc6WYFAXucQ">n°2</a>, 1897 et la très originale <a href="https://www.youtube.com/watch?v=gfKJiGdWnUs">Symphonie lyrique</a>, 1923). La défaite de 1918 et la tourmente politique qui a suivi l'ont ensuite entraîné à émigrer aux USA.</p>
+<p>- Il n'a dès lors plus subsisté sur le sol allemand que le seul prodige,  Richard Strauss (1864-1949), qui, outre une pléiade d'oeuvres magnifiques dans tous les domaines, a écrit 4 symphonies qu'on entend étonnamment  peu : deux oeuvres  de jeunesse (16 et 20 ans ! : <a href="https://www.youtube.com/watch?v=eiLpuhfoAyk">n°1</a>, 1880, <a href="https://www.youtube.com/watch?v=fO22oE7jZ4c">n°2</a>, 1884) et deux oeuvres matures &quot;à programmes&quot; (<a href="https://www.youtube.com/watch?v=zvymcR85HPY">Domestique</a>, 1903, et  colossale <a href="https://www.youtube.com/watch?v=cvXQMl7X-4A">Alpestre</a>, 1915). </p>
+
+<p>La symphonie germanique est ensuite  rentrée dans les rangs, en particulier elle a retrouvé des dimensions raisonnables sous la plume de   musiciens certes peu connus mais encore  bien inspirés :  <a href="../chroniques/schmidt.html">Franz Schmidt</a> (1874-1939) dont les 4 oeuvres sont de très bonne facture (<a href="https://www.youtube.com/watch?v=PkBiI9P3U_M">n°1</a>, 1899, <a href="https://www.youtube.com/watch?v=pI2HBsgUCZo">n°2</a>, 1913, <a href="https://www.youtube.com/watch?v=XwHivCh-uIk">n°3</a>, 1928 et <a href="https://www.youtube.com/watch?v=tiz4yHQUhlc">n°4</a>, 1934). Trois étoiles sont même habituellement décernées à la 2<sup>ème</sup>, en particulier aux variations dans le deuxième mouvement (démarrant en 16:00 et culminant en 23:03). Le contemporain  exact, Julius Bittner (1874-1939), surprend  avec cette <a href="https://www.youtube.com/watch?v=SslH7w1im0Y">fa  mineur</a> (1923) au parfum exotique; il est étonnant  que ce musicien très connu dans la Vienne des années 1900 ait disparu aujourd'hui de la circulation.   Karl Bleyle (1880-1969) n'a pas manqué  d'idées dans cette <a href="https://www.youtube.com/watch?v=ST8Md_L0-Mg">fa  majeur</a> (1906), une oeuvre de jeunesse;  il a malheureusement quasiment cessé de composer peu après. Emil  von Reznicek (1860-1945) a  réussi à faire parler ses ascendances tchèques dans 5 oeuvres de  qualité (<a href="https://www.youtube.com/watch?v=4pNTDN1W6Xg">n°1</a>, 1902, <a href="https://www.youtube.com/watch?v=Cu-eNV0p1KI">n°2</a>, 1904, <a href="https://www.youtube.com/watch?v=i_feIAVHtWY">n°3</a>, 1918, <a href="https://www.youtube.com/watch?v=lyFg39beFTE">n°4</a>, 1919).   </p>
+<p>Voici enfin une dernière liste de musiciens tout à fait estimables même s'ils ne s'imposent pas comme les maîtres de leur temps : Felix Woyrsch (1860-1944) (<a href="https://www.youtube.com/watch?v=NSQvNKnkXpw">ut mineur</a>, 1907),  Hermann Bischoff (1868-1936) (<a href="https://www.youtube.com/watch?v=m4rwFgPSqAE">n°2</a>, 1910), le trop sous-estimé Siegfried Wagner (1869-1930, le fils de Richard) (<a href="https://www.youtube.com/watch?v=Id64uPCw6P0&t=30s">ut majeur</a>, 1913),  <a href="../chroniques/germains.html">Hans Pfitzner</a> (1869-1949)   (<a href="https://www.youtube.com/watch?v=kd961b2KIaQ">ut dièse mineur</a>, 1932, <a href="https://www.youtube.com/watch?v=hrlnhMAyWxI">ut majeur</a>, 1940), Paul Graener (1872-1944) (<a href="https://www.youtube.com/watch?v=VnmbvzCRHW0">ré mineur</a>, 1912), Siegmund von Hausegger (1872-1948)  (<a href="https://www.youtube.com/watch?v=LDpH6mLg6Vg">Natursymphonie</a>, 1911),  Richard Wetz (1875-1935)    (Belle et sinueuse <a href="https://www.youtube.com/watch?v=ZmHFcySu82s">n°2</a>, 1919, <a href="https://www.youtube.com/watch?v=buSMfk6YbnA">n°3</a>, 1922),  Karl Weigl (1881-1949)   (<a href="https://www.youtube.com/watch?v=kNm-y89oEmI">n°1</a>, 1905). Joseph Marx (1882-1964) est connu pour son unique Symphonie &quot;<a href="https://www.youtube.com/watch?v=0Ug0YmxUaoA">Automne</a>&quot; (1921), une belle oeuvre qui illustre parfaitement le retard autrichien à la modernité.  Le cas de Marcel Tyberg (1893-1944) est assez singulier, qui ne s'est pas gêné  pour imiter - le mot est faible - avec quelques décennies de retard, Anton Bruckner (Dans sa <a href="https://www.youtube.com/watch?v=VyLL7jSxQqA">n°2</a>, 1927) et Gustav Mahler (Dans sa <a href="https://www.youtube.com/watch?v=0CIjRepsSYk">n°3</a>, 1938). </p>
+<div class="conteneurImageSeule">
+                  <div>
+                    <figure>
+                       <img src="../images/symphonie/weingartner.png" alt="Album Weingartner" />
+                             
+                    </figure>
+          </div>
+        </div>  
+        
+        
+<p>La grande tradition symphonique austro-allemande a également bénéficié d'une longue filiation dans la direction d'orchestre, d'Hans von Bülow (1830-1894) à Kurt Masur (1927-2015), en passant par Gustav Mahler et Richard Strauss. La  pratique de l'orchestre a donné  des ailes  à ceux parmi eux qui se sont sentis  visités par l'inspiration et surtout qui ont estimé avoir assez de métier pour instrumenter leurs  idées. Deux exemples précoces ont été Albert Dietrich (1829-1908) (<a href="https://www.youtube.com/watch?v=84YSOPqU8Lw">ré mineur</a>, 1868) et  surtout Friedrich Gernsheim (1839-1916) (<a href="https://www.youtube.com/watch?v=qz2cwEJeQfQ">n°1</a>, 1875, <a href="https://www.youtube.com/watch?v=xmiChTnEicE">n°2</a>, 1882, <a href="https://www.youtube.com/watch?v=loHVCdUEeGc">n°3</a>, 1887) : tous deux ont écrit des oeuvres solides, à défaut d'être révolutionnaires. La génération suivante a fait encore mieux, dopée parfois jusqu'à la caricature par l'exemple de Mahler :  Felix Weingartner (1863-1942) (<a href="https://www.youtube.com/watch?v=JXW7eqVdfhI">n°1</a>, 1899, <a href="https://www.youtube.com/watch?v=kHmPPmDAw-U&t=25s">n°2</a>, 1901, <a href="https://www.youtube.com/watch?v=WuoKHUlhH9w">n°3</a>, 1910, <a href="https://www.youtube.com/watch?v=JrNtzx2VDoE">n°4</a>, 1917, <a href="https://www.youtube.com/watch?v=luz19bKvQZM&t=20s">n°5</a>, 1926, <a href="https://www.youtube.com/watch?v=JeWkXtC6Yac">n°6</a>, 1929), Bruno Walter (1876-1962) (<a href="https://www.youtube.com/watch?v=f26lUmnFHWw">ré mineur</a>, 1907), Otto Klemperer (1885-1973) (<a href="https://www.youtube.com/watch?v=EU4kD8xWNtc">n°2</a>, ne manquez pas le mouvement lent en 4:31) et Wilhelm Furtwângler (1886-1954) (<a href="https://www.youtube.com/watch?v=9hgHueGOkNs">n°2</a>, 1946). L'<a href="https://www.jpc.de/jpcng/cpo/detail/-/art/felix-weingartner-saemtliche-symphonien/hnum/5426200">album</a>, paru chez CPO, qui rassemble les 7 symphonies de Weingartner est une vraie découverte !</p>
+              </div>
+                  
+                  
+                  
+  
+    <h4>Les écoles nationales (post)romantiques</h4>
+    
+    <p>Il a fallu attendre la deuxième moitié du 19<sup>ème</sup> siècle pour que le reste du monde musical réagisse à l'hégémonie austro-allemande, en particulier dans le domaine symphonique. Chaque nation a ainsi  pris  conscience  des spécificités de sa langue, de son patrimoine culturel et populaire, etc, à charge pour ses musiciens de les traduire en une musique authentiquement nationale. Cette section regroupe les pays par zones d'influences esthétiques et elle empiète plus ou moins sur le 20<sup>ème</sup> siècle toutes les fois qu'un retard stylistique l'impose.</p>
+    
+    
+  <div id="nationalefrance">  
+    <h5>Ecoles nationales (post)romantiques : France</h5>
+
+<p>A quelques rares mais valeureuses exceptions près (Méhul, Berlioz et quelques acolytes), la symphonie n'a jamais fait fortune en France avant 1850. Il faut fouiller  pour   découvrir les noms (et entendre les oeuvres) de <a href="../chroniques/femmesdenotes.html">Louise Farrenc</a> (1804-1875)   (<a href="https://www.youtube.com/watch?v=ZE0rEnljNok">n°1</a>, 1842, <a href="https://www.youtube.com/watch?v=f3F7USt9tUw">n°2</a>, 1845, <a href="https://www.youtube.com/watch?v=yv3LXXlmwNs">n°3</a>, 1847), Félicien David (1810-1876)  (<a href="https://www.youtube.com/watch?v=H4jKnYMFsA4">n°3</a>, 1838) et surtout <a href="../chroniques/gouvy.html">Théodore Gouvy</a> (1819-1898) (6 belles symphonies qui témoignent de sa double nationalité franco-prussienne : <a href="https://www.youtube.com/watch?v=IEY0k1FEvxU">n°2</a>, 1848, <a href="https://www.youtube.com/watch?v=sgKozgQavLA">n°3</a><a href="https://www.youtube.com/watch?v=sgKozgQavLA"></a>, 1854, <a href="https://www.youtube.com/watch?v=BEHJbwTmoE8">n°4</a>, 1855, <a href="https://www.youtube.com/watch?v=EkfHm9Wtd4k&list=TLPQMTcwMzIwMjADlbvFw9qNfg&index=2">n°5</a>, 1865). Tous ces musiciens   ont combattu plus ou moins consciemment la mode envahissante du tout-puissant opéra(-comique) parisien. </p>
+<p> Il a fallu tout le tact et le pouvoir de persuasion d'un musicien liégeois installé à Paris, César Franck (1822-1890), pour convaincre  ses hôtes de l'urgence qu'il y avait à combler le retard instrumental criant que la France avait accumulé par rapport à ses voisins d'Outre-Rhin. Fervent wagnérien, il a montré l'exemple avec sa superbe  Symphonie en <a href="https://www.youtube.com/watch?v=uRWFjK11lfw">ré mineur</a> (1886), qui émargeait davantage au courant peu fréquenté Berlioz-Liszt qu'à celui, encombré, hérité de Mendelssohn. C'était habile de sa part car cela ouvrait une perspective inédite aux musiciens français qui allaient pouvoir s'exprimer en toute indépendance.</p>
+<p>Quelques disciples plus ou moins proches ont répondu à l'appel de  Franck, avec le bon goût de privilégier l'oeuvre rare mais parfaitement polie :  Théodore Dubois (1837-1924) (<a href="https://www.youtube.com/watch?v=VxnxGXmFShY&t=244s">fa mineur</a>, 1908), Ernest Chausson (1855-1899) (<a href="https://www.youtube.com/watch?v=h_VR8AvBkp4">si bémol majeur</a>, 1890) et Paul Dukas (1865-1935) (Incontournable <a href="https://www.youtube.com/watch?v=ZmAdoC9zz1s">ut majeur</a>, 1896). Trois autres musiciens ont été (un peu) plus prolixes : <a href="../chroniques/dindy.html">Vincent d'Indy</a> (1851-1931) (<a href="https://www.youtube.com/watch?v=AQgFdfI2By0">n°1</a>, 1870, <a href="https://www.youtube.com/watch?v=aYAXhD_iCE0">n°2</a>, 1903 et la patriotique <a href="https://www.youtube.com/watch?v=kXA99TsX1Fc">n°3</a>, 1918), Guy Ropartz (1864-1955)  (<a href="https://www.youtube.com/watch?v=axtUF2DkeKk">n°1</a>, 1894, <a href="https://www.youtube.com/watch?v=Z-4Gl1ulX5M">n°2</a>, 1900, <a href="https://www.youtube.com/watch?v=IL_TxFeSfvo">n°3</a>, 1905,  <a href="https://www.youtube.com/watch?v=d3YUZ4PI--M">n°4</a>, 1910 et <a href="https://www.youtube.com/watch?v=QnjjdvvAPGI">n°5</a>, 1945, composée à 80 ans !) et  Albéric Magnard (1865-1914), dont les 4 symphonies forcent l'admiration, en particulier la merveilleuse 3<sup>ème</sup>   (<a href="https://www.youtube.com/watch?v=BZ6bN5zAgb0">n°1</a>, 1889, <a href="https://www.youtube.com/watch?v=QiMwU6UH2D4">n°2</a>, 1893, <a href="https://www.youtube.com/watch?v=f-rypJCH90E">n°3</a>, 1896, <a href="https://www.youtube.com/watch?v=96gOEWfJJ8o">n°4</a>, 1913). Organiste de formation, Charles Tournemire (1870-1939) a également composé 8 symphonies où l'on retrouve des sonorités héritées de son instrument favori. Elles ont toutes été enregistrées par les orchestres  de Liège (<a href="https://www.youtube.com/watch?v=vExShHDeHQo">n°3</a>, 1913) et de Moscou (<a href="https://www.youtube.com/watch?v=oZMiXSTApZg">n°8</a>, 1924).</p>
+<p>Le renouveau de la symphonie en France n'a  été qu'un feu de paille, non que la compétence vint à manquer (on en verra des exemples à la période moderne, cf 2<sup>ème</sup> partie) mais plutôt parce que le genre de la symphonie était décidément  trop historiquement connotée germanique. Or la défaite éclair de 1870, dans le cadre du conflit franco-prussien, a été très mal vécue en  France : même les esprits les plus savants (Poincaré, Pasteur, etc) ont été marqués par ce qu'ils ont ressenti comme une catastrophe nationale. Les musiciens français ont alors massivement préféré se tourner vers une esthétique  intimiste (en particulier, impressionniste) &quot;made in France&quot; où la symphonie n'avait quasiment plus sa place. </p>
+<p>Une mention spéciale s'impose, à ce stade, destinée à honorer Camille Saint-Saëns (1835-1921), le plus inspiré des musiciens académiques (à moins que ce soit l'inverse). Il a transmis à la postérité, 5 oeuvres  brillantes : la  beethovenienne <a href="https://www.youtube.com/watch?v=TtXmYXWyg8k">la majeur</a> (1850, l'auteur avait 15 ans !), une <a href="https://www.youtube.com/watch?v=yhLd_m65Ft8">fa majeur, &quot;Urbs Roma&quot; </a>(1856), et trois opus numérotés dans l'ordre, <a href="https://www.youtube.com/watch?v=7bbC49fPx1M">n°1</a>, 1853, <a href="https://www.youtube.com/watch?v=3Mj7PyZ1hzE">n°2</a>, 1859 et <a href="https://www.youtube.com/watch?v=ZWCZq33BrOo">n°3</a>, 1905. La postérité n'a  accueilli au répertoire que la seule la n°3 (avec orgue) et c'est  injuste. D'ailleurs, en France comme ailleurs, c'est toute l'oeuvre de Saint-Saëns qui devrait être célébrée et je ne pense pas au &quot;Carnaval des Animaux&quot; ! </p>
+<p>Enfin, il convient  d'évoquer le cas particulier de compositeurs qui ont consacré leur vie à l'opéra, par goût, sensibilité ou opportunisme, mais qui ont démontré ponctuellement qu'ils auraient certainement pu s'illustrer dans le genre présumé plus savant de la symphonie.  Les tentatives de Charles Gounod (1818-1893)  (<a href="https://www.youtube.com/watch?v=K5Tkc_Dqra4">n°1</a>, 1855, <a href="https://www.youtube.com/watch?v=R1v9nX3hrRQ">n°2</a>, 1855),  Ernest Reyer (1823-1909) (<a href="https://www.youtube.com/watch?v=5mSZqdIT9oU&list=RDOUrsh3C5LHE&index=21">Le Sélam</a>, Symphonie vocale orientale, 1850), Edouard Lalo (1823-1892) (<a href="https://www.youtube.com/watch?v=10eRKLNa8fs">sol mineur</a>, 1886), Georges Bizet (1838-1875)  (célébrissime <a href="https://www.youtube.com/watch?v=-xk7TVPyboY">ut majeur</a>, 1855 et <a href="https://www.youtube.com/watch?v=IqQbLxZG_JM">Symphonie &quot;Roma&quot;</a>, 1868) et  Benjamin Godard (1849-1895) (Symphonies <a href="https://www.youtube.com/watch?v=oHL3hNuE6wY">Gothique</a>, 1874, et <a href="https://www.youtube.com/watch?v=5ua8lOxNSuM">Orientale</a>, 1884) nous font regretter leur manque de persévérance dans la voie tracée d'une musique claire et raffinée.</p>
+<p>Bien que la Belgique voisine se soit montrée fort discrète, ne manquez pas les belles partitions d'Auguste de Boeck (1865-1937) (<a href="https://www.youtube.com/watch?v=NNbHaIA0LW4">sol majeur</a>, 1896) et de Joseph Ryelandt (1870-1965) (<a href="https://www.youtube.com/watch?v=GOX8Nwtf2iI">n°3</a>, 1908, <a href="https://www.youtube.com/watch?v=eWnZVn9rbzA&list=RDOUrsh3C5LHE&index=18">n°4</a>, 1913).</p>
+      
+      </div>              
+     
+
+
+  <div id="nationalescandinavie"> 
+                      
+    <h5 class="espaceTextConsequent">Ecoles nationales (post)romantiques : Suède, Danemark et Norvège</h5>
+                      <p>La symphonie romantique a durablement  prospéré dans les pays nordiques donc ne vous étonnez pas que les dates de composition  de certaines oeuvres dépassent la mort de Mahler : accepter cette entorse au sous-titre  de cette chronique permet d'éviter de situer ces musiques rétro en plein modernisme (2<sup>ème</sup> partie). L'inventaire suivant est détaillé par pays d'origine :</p>
+                        
+                        
+                        <div class="conteneurImageSeule">
+                  <div>
+                    <figure>
+                       <img src="../images/symphonie/berwald.png" alt="Les symphonies de Berwald" />
+                             
+                    </figure>
+          </div>
+        </div>
+        
+                         <p> - En Suède, le père-fondateur, Franz Berwald (1796-1868), a produit 4 oeuvres remarquables qu'il a affublées de  surnoms présumés caractéristiques  (<a href="https://www.youtube.com/watch?v=adVqnCKNz20">n°1 &quot;sérieuse&quot;</a>, 1842, <a href="https://www.youtube.com/watch?v=_7Fly9zFCgg">n°2 &quot;capricieuse&quot;</a>, 1842, <a href="https://www.youtube.com/watch?v=z0G1Z9dwyPU">n°3 &quot;singulière&quot;</a>, 1845 et <a href="https://www.youtube.com/watch?v=reGz7PkUjXQ">n°4 &quot;naïve&quot;</a>, 1845), un procédé qui sera repris par d'autres ultérieurement. La génération suivante a marché dans ses pas sans se poser la question du renouvellement  : Emil Hartmann (1836-1898) (<a href="https://www.youtube.com/watch?v=aFQa44nbr1M">n°5</a>, 1880), Joseph Dente (1838-1905) (Etonnante <a href="https://www.youtube.com/watch?v=wd-a7yNFnKs">ré mineur</a>, 1887), Wilhelm Stenhammar (1871-1927)   (Remarquables  <a href="https://www.youtube.com/watch?v=Hcon59QUQKo">n°1</a>, 1903, et <a href="https://www.youtube.com/watch?v=8ey3wdhE1OI">n°2</a>, 1915), Hugo Alfven (1872-1960)  (<a href="https://www.youtube.com/watch?v=VtAbzIeD7Cc">n°1</a>, 1897, <a href="https://www.youtube.com/watch?v=aa0Gl7Q1Yw4">n°3</a>, 1905, <a href="https://www.youtube.com/watch?v=RkpSdyL0N5M">n°4, </a> 1919. Il a renié sans toutefois la détruire une tardive <a href="https://www.youtube.com/watch?v=f8OXTiMckxU">n°5</a>, 1953), Otto Olsson (1879-1964)  (<a href="https://www.youtube.com/watch?v=xUho-xD0xxw">sol mineur</a>, 1902), Melcher Melchers (1882-1925) (<a href="https://www.youtube.com/watch?v=iRz1-iJdRYo">ré mineur</a>, 1925) et John Fernström (1897-1961) (<a href="https://www.youtube.com/watch?v=SPEUhgS4MCo">n°6</a>, 1938).<br/></p>
+                          
+     <div class="conteneurImageSeule">
+                  <div>
+                    <figure>
+                       <img src="../images/symphonie/gade.png" alt="Les symphonies de Gade" />
+                             
+                    </figure>
+          </div>
+        </div>
+                       <p>   - Au Danemark, le père-fondateur se nomme Niels Gade (1817-1890)  (8 Symphonies incontournables,  enregistrées chez BIS : <a href="https://www.youtube.com/watch?v=AalOD4mB2mQ">n°1, </a> 1842, <a href="https://www.youtube.com/watch?v=kxM22t0ZS5k">n°2, </a> 1843,  <a href="https://www.youtube.com/watch?v=dQjdR4bY3MM">n°3, </a> 1847, <a href="https://www.youtube.com/watch?v=T6FH1Ea4K-E">n°7, </a> 1864, <a href="https://www.youtube.com/watch?v=WaHsjnBaQ1M">n°8, </a> 1871). Les 7 symphonies  schumaniennes d'Asger Hamerik (1843-1923), enregistrées chez DaCapo, constituent  une autre agréable découverte  (<a href="https://www.youtube.com/watch?v=omrRF231wus">n°1 &quot;poétique&quot;</a>, 1880, <a href="https://www.youtube.com/watch?v=wTv_QSjIPTc">n°2 &quot;tragique</a>&quot;, 1883, <a href="https://www.youtube.com/watch?v=mBFby0l7K8Q">n°3 &quot;lyrique&quot;</a>, 1884, <a href="https://www.youtube.com/watch?v=UNqyUIRavh0">n°4 &quot;majestueuse&quot;</a>, 1889, <a href="http://www.youtube.com/watch?v=BIkwnW4FKVo">n°5 &quot;sérieuse&quot;</a>, 1891, <a href="http://www.youtube.com/watch?v=-Txomg_OQwU">n°6 &quot;spirituelle&quot;</a>, 1897, <a href="https://m.youtube.com/watch?v=jy5GqRt7E4A">n°7 &quot;chorale&quot;</a>, 1897). Appréciez le finale de la n°6 (à partir de 25:37), spirituel comme sur surnom l'indique. Peter Lange-Müller (1850-1926) a écrit deux symphonies aux tournures inhabituelles comme dans le début de la <a href="https://www.youtube.com/watch?v=APzpRxRMR9s">n°1 </a> (1882). J'attire l'attention de ceux qui ne veulent pas se prendre la tête sur l'oeuvre de Victor Bendix (1851-1926) :  une musique simple mais tellement agréable (Lyrique <a href="https://www.youtube.com/watch?v=rfYp0qQpJNs">n°3</a>, 1895 et légère <a href="https://www.youtube.com/watch?v=r_PGtodnguc">n°4</a>, 1906). Complétons avec August Enna (1859-1939) (<a href="https://www.youtube.com/watch?v=7kLHgb-jbwk">n°2, </a> 1908) et Louis Glass (1864-1936), un élève de Gade, qui a écrit 6 oeuvres,  nostalgiques  (la mieux réussie : <a href="https://www.youtube.com/watch?v=ibqFg3tEU_4">n°3</a>, 1901) ou épiques (<a href="https://www.youtube.com/watch?v=V9w5Iqz9Pk8">n°6</a>, 1924). Carl Nielsen (1865-1931) s'est montré digne de  son professeur, Niels Gade, s'avérant être le plus grand symphoniste danois : ses 6 symphonies, à nouveau porteuses de sous-titres évocateurs, constituent un massif aussi impressionnant que celui (contemporain) de Sibelius en Finlande; elles doivent impérativement être connues  (<a href="http://www.youtube.com/watch?v=KHHg2M9qyrc">n°1</a>, 1894, <a href="https://www.youtube.com/watch?v=bq_c8Za33To">n°2 "Les 4 Tempéraments"</a>, 1902, <a href="https://www.youtube.com/watch?v=-E_yy28_4A4">n°3 &quot;Expansive&quot;</a>, 1911, <a href="https://www.youtube.com/watch?v=niF6Y7ZNqys">n°4 &quot;Inextinguible&quot;</a>, 1916, <a href="http://www.youtube.com/watch?v=uSn1bgadRaA&feature=related">n°5</a>, 1922, <a href="https://www.youtube.com/watch?v=SRLT5vq1weM">n°6 &quot;Simplice&quot;</a>, 1925).  On retombe ensuite inévitablement d'un étage avec Hakon Borresen (1876-1954) (<a href="https://www.youtube.com/watch?v=cCLmliWKSX8">n°1</a>, 1901, et <a href="https://www.youtube.com/watch?v=m-8WuZo7PiE">n°2</a>, 1904) et Rudolph Simonsen (1889-1947)  (Etrange <a href="https://www.youtube.com/watch?v=7QwePNcDw0k">n°2</a>, 1921, écoutez le beau mouvement lent, en mode ancien, en 07:28). </p>
+                         <p> - La Norvège n'a guère autant brillé : Johan Svendsen (1840-1911) a vécu l'essentiel de sa vie à Copenhague où il a écrit deux symphonies légères mais plutôt bien notées  (<a href="https://www.youtube.com/watch?v=VXs0y5mXRUQ">n°1</a>, 1866, <a href="https://www.youtube.com/watch?v=HieAMZXGzS0">n°2</a>, 1877). Son ami, Edvard Grieg (1843-1907),  s'est curieusement montré peu à l'aise avec la symphonie : il n'a pas renouvelé son unique essai qu'il jugeait d'ailleurs sévèrement (<a href="https://www.youtube.com/watch?v=JFJV4Wrva8I">ut mineur</a>, 1864). Une génération plus tard, Christian Sinding (1856-1941) l'a jouée sur le mode (très) léger (<a href="https://www.youtube.com/watch?v=KamDPcaU_uQ">n°1</a>, 1887, <a href="https://www.youtube.com/watch?v=-2_7h-gsmIQ">n°2</a>, 1904, <a href="https://www.youtube.com/watch?v=gWlwlGsQAek">n°3</a>, 1919), Sigurd Lie (1871-1904) sur le mode banal (<a href="https://www.youtube.com/watch?v=Qm9SwayNRm0">la mineur</a>, 1903) mais, au bilan, c'est encore Eyvind Alnaes (1872-1932) qui s'est le mieux tiré d'affaire  (<a href="https://www.youtube.com/watch?v=gt1BbDQqsjk">n°1</a>, 1896). </p>
+   
+       </div>                
+                
+   
+    <div id="nationalebalte">       
+<h5 class="espaceTextConsequent">Ecoles nationales : Finlande et Etats baltes</h5>
+
+                        <p>La symphonie romantique a également prospéré sur les bords de la Baltique  et la même remarque s'applique  à propos des dates de composition. </p>
+            <p>- La Finlande tardivement indépendante (en 1917) a mis du temps à s'activer  avant de rayonner par la grâce des <a href="https://www.youtube.com/watch?v=DYLNqoSwQO4">7 Symphonies</a>   de <a href="../chroniques/sibelius.html">Jean Sibelius</a> (1865-1957), évoquées par ailleurs.  Les 9 symphonies d'Erkki Melartin (1875-1937) (<a href="https://www.youtube.com/watch?v=lBM0_4TeJz8">n°1</a>, 1902,  <a href="https://www.youtube.com/watch?v=CgLRS_sw5oA">n°3</a>, 1907, <a href="https://www.youtube.com/watch?v=_B9SMZApi_A">n°5</a>, 1915, <a href="https://www.youtube.com/watch?v=Ypqb6XHqz28">n°6</a>, 1924) auraient pu logiquement s'en inspirer mais elles sont  davantage tournées vers Mahler, compositeur que Melartin  a introduit en Scandinavie, lors des nombreux concerts qu'il y a dirigés. Ernst Mielck (1877-1899), mort bien trop jeune,  promettait  beaucoup avec sa <a href="https://www.youtube.com/watch?v=sXKjLkrQQzM">fa mineur</a> (1897). 
+            Ernest Pingoud (1887-1942), d'origine alsacienne mais né à Saint-Pétersbourg où il a étudié avec Glazounov et Rimski-Korsakov, aurait mérité de meilleurs enregistrements de ses deux symphonies (<a href="http://www.youtube.com/watch?v=2hk3TmymGHM">n°1</a>, 1920, et <a href="https://www.youtube.com/watch?v=c1TiFv4d96I">n°2</a>, 1921). 
+            Leevi Madetoja (1887-1947) est resté fidèle à l'idiome national  et rien que cela  devrait vous inciter à l'écouter  (<a href="https://www.youtube.com/watch?v=Pl9m5GUHmkA">n°1</a>, 1916, <a href="https://www.youtube.com/watch?v=jz27RKPF8eY">n°2</a>, 1918, <a href="http://www.youtube.com/watch?v=uNSkfOuJYjk"> n°3</a>, 1926). Victime d'une panne progressive d'inspiration, il a peiné à achever une 4<sup>ème</sup> symphonie qui n'a existé que sur le papier, l'auteur s'étant fait dérober le manuscrit lors d'un séjour en France.</p>
+<p>- Parmi les trois petits états baltes, seule l'Estonie s'est  tôt éveillée  à l'art  symphonique grâce aux talents conjugués d'Arthur Lemba (1885-1963) (<a href="https://www.youtube.com/watch?v=y9AinZb3trw">ut dièse mineur</a>, 1908), d'Heino Eller (1887-1970)  (<a href="https://www.youtube.com/watch?v=JTU4DkQhVko">n°1</a>, 1936, et <a href="https://www.youtube.com/watch?v=qStQa2AFMrc">n°2</a>, 1947, hélas inachevée) et du retardataire (mais sincère) Villem Kapp (1913-1964) (<a href="https://www.youtube.com/watch?v=vAPlDGME4qI">n°2</a>, 1955). La lettonie et la Lituanie ayant suivi avec  retard, vous les retrouverez en deuxième partie (Période moderne).</p>
+       
+       </div>
+          
+ 
+<div id="nationaleest">  
+
+      <h5 class="espaceTextConsequent">Ecoles nationales (post)romantiques : Pologne et Russie</h5>
+      
+        <p>On connaît trop peu la tradition musicale polonaise pourtant extrêmement riche. Józef Brzowski (1805-1888)  (<a href="https://www.youtube.com/watch?v=X6hQ2MEwla8">Symphonie dramatique</a>, 1840) y a fait figure de précurseur, suivi à distance respectable par Zygmunt Noskowski (1846-1909) (<a href="https://www.youtube.com/watch?v=6u_4ZTb3Crw">n°3</a>, 1903), Zygmunt Stojowski (1870-1946) (<a href="https://www.youtube.com/watch?v=yws0pKH3diY">ré mineur</a>, 1897, attendez que l'allegro se déchaîne vers 02:00), Witold Maliszewski (1873-1939) (Habile <a href="https://www.youtube.com/watch?v=o4hoWoREtPg">n°1</a>, 1902), Mieczysław Karłowicz (1876-1909) (<a href="https://www.youtube.com/watch?v=LDeols0tIzs">mi mineur</a>, 1902) et surtout Karol Szymanowski (1882-1937) (<a href="https://www.youtube.com/watch?v=d3EWpHP8y_I">n°1</a>, 1907,   <a href="https://www.youtube.com/watch?v=YOpO8VJ_m18">n°2</a>, 1910, <a href="https://www.youtube.com/watch?v=56-ZzBvLoUs">n°3</a>, 1916 et la belle concertante <a href="https://www.youtube.com/watch?v=FEZ18RVS4Vw">n°4</a>, 1932), le musicien qui a anticipé la modernité occidentale dans une Pologne encore sous l'emprise du romantisme de Chopin.   Karol Rathaus (1895-1954) n'a malheureusement plus rien écrit de significatif après son exil forcé aux USA et son attirance par la musique de film (<a href="https://www.youtube.com/watch?v=PNqqHq1e_uo">n°2</a>, 1923). On trouvera, en deuxième partie, une Pologne plus active que jamais à l'époque moderne.</p>
+        <p>Passons à présent en Russie,  bientôt promise au grand destin de ravir pour un siècle la palme symphonique, rien moins que cela ! Notez que le plus illustre compositeur russe de l'époque,  Pyotr Ilyich Tchaïkovsky (1840-1893) (<a href="https://www.youtube.com/watch?v=iCxQf1FlFxQ">6 opus</a> universellement célèbres), n'y est  pas pour grand-chose,  ayant toujours été considéré dans son propre pays comme bien trop occidentalisé pour favoriser un essor authentiquement national. La véritable école russe a pris son essor sous l'impulsion de Mikhail Glinka (1804-1857), qui n'a jamais terminé sa &quot;Symphonie sur deux thèmes russes&quot; (Vissarion Shebalin s'en est chargé : <a href="https://www.youtube.com/watch?v=wjlJ5eMlu3s">ré mineur</a>, 1834). La longue et glorieuse histoire de la symphonie russe a véritablement commencé  avec Anton Rubinstein (1829-1894), un musicien polyvalent (pianiste, chef d'orchestre et compositeur)    dont les oeuvres, encore empreinte de tournures occidentalisantes, sont autant  passionnées que passionnantes (<a href="https://www.youtube.com/watch?v=XicH6SxkpI0">n°1</a>, 1850, superbe <a href="https://www.youtube.com/watch?v=yDlw4J3TLEQ">n°2</a>, 1851, <a href="https://www.youtube.com/watch?v=bpooQ8CwqgE">n°3</a>, 1855, <a href="https://www.youtube.com/watch?v=aJ_lLIpSiGY">n°4</a>, 1874, <a href="https://www.youtube.com/watch?v=sy6qu7bllrM">n°5</a>, 1880, <a href="https://www.youtube.com/watch?v=1xuXpbtM8g4">n°6</a>, 1886 !). Elle s'est diversifiée, de plus en plus russe, avec trois membres du Groupe des Cinq,  Alexander Borodin (1833-1887)  (<a href="https://www.youtube.com/watch?v=23cgNPAZ_1Q">n°1</a>, 1867, <a href="https://www.youtube.com/watch?v=1DF09Cipq_w">n°2</a>, 1869), Mili Balakirev (1836-1910)   (<a href="https://www.youtube.com/watch?v=ACn8kJTR_b0">n°1</a>, 1864, <a href="https://www.youtube.com/watch?v=i4RcCKdp5B8">n°2</a>, 1900,  <a href="https://www.youtube.com/watch?v=kkTGMaI0z9s">n°3</a>, 1910, inachevée et orchestrée par Glazunov)  et fatalement le  brillant orchestrateur du groupe, Nikolaï Rimski-Korsakov  (1844-1908), qui ne pouvait laisser passer l'occasion de montrer l'exemple dans le maniement de l'orchestre (<a href="https://www.youtube.com/watch?v=cWrqBqHUg1U">n°1</a>, 1865, <a href="https://www.youtube.com/watch?v=4Fsoh8snawk">n°2</a>, 1868, <a href="https://www.youtube.com/watch?v=prw4nzMoe0I">n°3</a>, 1873).  Ensuite, Serge Taneiev (1856-1915)  (<a href="https://www.youtube.com/watch?v=gwY4I6Vi2CM">n°2</a>, 1878, <a href="https://www.youtube.com/watch?v=zGTCyt0TcLY">n°4</a>, 1901),  Mikhaïl Ippolitov Ivanov (1859-1935) (<a href="https://www.youtube.com/watch?v=MWJ4PpbPwpE">n°1</a>, 1908), Anton Arensky (1861-1906) (<a href="https://www.youtube.com/watch?v=PswkKLIhs-s">n°1</a>, 1883, <a href="https://www.youtube.com/watch?v=Yrr_-WWZyF4">n°2</a>, 1889), Georgy Catoire (1861-1926)  (<a href="https://www.youtube.com/watch?v=BwZSRP_zZkk">ut mineur</a>, 1897), l'excellent Alexander Gretchaninov (1864-1956)  (<a href="https://www.youtube.com/watch?v=hckt5-aqo5M">n°1</a>, 1894, <a href="https://www.youtube.com/watch?v=P6ybUZs9HYg">n°3</a>, 1923, <a href="https://www.youtube.com/watch?v=jSQzhPVcKeA">n°4</a>, 1927, <a href="https://www.youtube.com/watch?v=1fhrQPfaooo">n°5</a>, 1936),   le merveilleux Vasily Kalinnikov (1866-1901) dont on ne se consolera jamais assez de la perte prématurée (Russissimes <a href="https://www.youtube.com/watch?v=TVakXOkE2G4">n°1</a>, 1895 et <a href="https://www.youtube.com/watch?v=qslHwFCu2sc"> n°2</a>, 1897), l'ésotérique mais essentiel Alexander Scriabin (1872-1915) (<a href="https://www.youtube.com/watch?v=IUA_A-KwXU8">n°1</a>, 1900, <a href="https://www.youtube.com/watch?v=Lp9FGDD6eQg">n°2</a>, 1901, <a href="https://www.youtube.com/watch?v=PuDt9_Nt8tA">n°3</a>, 1904; les Poèmes de l'<a href="https://www.youtube.com/watch?v=HAnVrdQ3qFk">Extase</a>, 1908,  et du <a href="https://www.youtube.com/watch?v=6osJBtQRjoY">Feu</a>, 1910,  sont parfois assimilés à des symphonies, n°4 &amp; 5) et Reynold Glière (1875-1956) (<a href="https://www.youtube.com/watch?v=oKM-yM-MF2Q">n°1</a>, 1900, <a href="https://www.youtube.com/watch?v=A0VaxoFewis">n°2</a>, 1907) poursuivent, parfois en dents de scie, l'irrésistible ascension symphonique russe. </p>
+<p>Alexandre Glazounov (1865-1936) mérite une  attention particulière avec ses  8 symphonies surannées mais formellement très au point (<a href="https://www.youtube.com/watch?v=QYvNs8-nU30">n°3</a>, 1890, <a href="https://www.youtube.com/watch?v=WZeZtXPjqgg&list=RDWZeZtXPjqgg&start_radio=1&t=81">n°5</a>, 1895, <a href="https://www.youtube.com/watch?v=CQre9vxLpBo">n°8</a>, 1906). Il est dommage que ce personnage influant de la vie musicale russe ait si obstinément milité pour une musique du passé.  Installé en France dès 1929,  il a  dénigré le modernisme ambiant, indisposant au passage Stravinsky qui s'est souvenu de lui comme le personnage le moins agréable qu'il ait rencontré. </p>
+<p>Le bilan qui précède, aussi prometteur qu'il paraisse, n'annonce pas encore fermement l'hégémonie symphonique à venir mais il la prépare. Il revient aux   musiciens de la génération suivante d'avoir su tirer profit  des secousses de la Révolution de 1917 (y compris la tolérance  au modernisme  de la courte période léniniste) puis  de la résistance (active ou larvée) à la dérive staliniste, pour enregistrer la plus éclatante des victoires  de l'Art sur la politique. Nikolaï Roslavets (1881-1944) aurait pu servir d'éclaireur mais, dans un pays de plus en plus intolérant, il a payé ses audaces artistiques au prix fort d'un exil à Tachkent (<a href="https://www.youtube.com/watch?v=zyB01jPpE7w">Symphonie de chambre n°1</a>, 1926). Beaucoup d'oeuvres de ce musicien remarquable ont, de ce fait, été perdues mais certaines ont été reconstituées (par Marina Lobanova) dont une symphonie en ut mineur (1910), toujours en attente d'enregistrement. La lente et souvent douloureuse ascension de tous les autres sera examinée dans la 2<sup>ème</sup> partie de cette histoire symphonique.</p>
+
+         </div>
+         
+         
+        <div id="nationalecentre">      
+<h5 class="espaceTextConsequent">Ecoles nationales (post)romantiques : Europe centrale</h5>
+                        
+                        <p>Ce titre générique demeure suffisamment vague pour qu'il ne soit pas nécessaire de  s'embarrasser des déplacements incessants de frontières à cette époque. Ce paragraphe couvre essentiellement l'héritage prépondérant des musiciens de Bohême, si actifs au siècle précédent.</p>
+                        <p>La Bohême a, en effet, continué de produire des musiciens de qualité. Peu concernés par les enjeux de la modernité à venir, ils ont réussi à faire preuve d'originalité dans l'éloquence classique : écoutez Johann Wenzel Kalliwoda (1801-1866)  (<a href="https://www.youtube.com/watch?v=A5DMxPyEt30">n°3</a>, 1830, <a href="https://www.youtube.com/watch?v=8IOMIfk6Gkw">n°5</a>, 1840, <a href="https://www.youtube.com/watch?v=cp7CNwDbbcM">n°6</a>, 1843) ou, une génération plus tard, Vilém Blodek (1834-1874)   (<a href="https://www.youtube.com/watch?v=eftrUSXY3nM">ré mineur</a>, 1859) et surtout Ignaz Brüll (1846-1907) (<a href="https://www.youtube.com/watch?v=SVEdd8ULyGQ">mi mineur</a>, 1880, ne pas manquer). Tous ces musiciens ont fait le lien avec Bedřich Smetana (1824-1884), dont l'unique symphonie exhale  un vrai parfum  national (<a href="https://www.youtube.com/watch?v=8MmwMHrnWhU">mi majeur</a>, 1854), puis avec  le cycle de l'illustre, Antonin Dvorak (1841-1904) (<a href="https://www.youtube.com/watch?v=RsB9oWbS_YQ">9 symphonies</a> dont on ne se lasse pas).  Le  côté narratif  de ces oeuvres a inspiré quantité de musiciens étiquetés nationaux qui y ont vu la possibilité de mettre en valeur leur patrimoine folklorique, en particulier, Zdeněk Fibich (1850-1900) (<a href="https://www.youtube.com/watch?v=g_XT8btNiMI">n°1</a>, 1877, <a href="https://www.youtube.com/watch?v=T_YaabT0MUo">n°2</a>, 1893, <a href="https://www.youtube.com/watch?v=eRHSXMaAaRU">n°3</a>, 1898) et, une génération plus tard, l'élève et gendre de Dvorak,  Josef Suk (1874-1935)  (<a href="https://www.youtube.com/watch?v=VwM28UFt6R8">n°1</a>, 1898, <a href="https://www.youtube.com/watch?v=-gHX37aarfA">n°2</a>, 1906).</p>
+                        <p>Le slovaque, Johann Nepomuk Hummel (1778-1837), n'a curieusement pas touché à la symphonie, au contraire du hongrois  Karl Goldmark (1830-1915) (Excellentes <a href="https://www.youtube.com/watch?v=6eoIl8GKXbc">n°1</a>, 1877, avec sa curieuse &quot;Marche &amp; variations&quot;, et  <a href="https://www.youtube.com/watch?v=3jXjalygEYA">n°2</a>, 1887). </p>
+                        
+            </div>
+                        
+                        
+ <div id="nationalelatins">                       
+<h5 class="espaceTextConsequent">Ecoles nationales (post)romantiques : Pays latins</h5>  
+                        
+                        <p> Suivant sans doute l'exemple de  la France mais l'exagérant, les musiciens latins n'ont écrit que fort peu de symphonies. En Italie,  on ne remarque que Giovanni Sgambati (1841-1914)  (<a href="https://www.youtube.com/watch?v=Dctdcp7FNSY">n°1</a>, 1881 et <a href="https://www.youtube.com/watch?v=mtU4EAFsUgs">n°2</a>, 1885) et surtout Giuseppe Martucci (1856-1909)  (<a href="https://www.youtube.com/watch?v=a-fgTHRy9bI">n°1</a>, 1888 et <a href="https://www.youtube.com/watch?v=fASbUHQBxEc">n°2</a>, 1899). On déplore hélas que ni le grandiose Ferruccio Busoni (1866-1924) ni le léger mais spirituel Ermanno Wolf-Ferrari (1876-1948)  n'aient contribué au genre d'où il ne reste plus qu'une valeur sûre,  Ottorino Respighi (1879-1936) et encore pour une oeuvre seulement (<a href="https://www.youtube.com/watch?v=NsE0NDzWw74">Sinfonia drammatica</a>, 1914). </p>
+<p>Comme en France, deux musiciens spécialisés dans l'opéra,    Gaetano Donizetti (1797-1848) et Vincenzo Bellini (1801-1835) (Volubiles <a href="http://www.youtube.com/watch?v=2cnLTQKMBso">ré mineur</a> et <a href="https://www.youtube.com/watch?v=WeVwGdoXaZQ">si bémol majeur</a>), ont meublé leurs temps libres en composant respectivement 13 et 7 symphonies que l'on n'entend rarement.        </p>
+<p>L'Espagne a été encore  moins active dans le genre, n'ayant à proposer que  le confidentiel Ruperto Chapi (1851-1909) (<a href="https://www.youtube.com/watch?v=6-nyGg5QAJE&list=RDOUrsh3C5LHE&index=19">ré mineur</a>, 1879). </p>
+
+</div>
+
+
+      <div id="nationalepaysbas">                  
+<h5 class="espaceTextConsequent">Ecoles nationales (post)romantiques : Pays-Bas</h5>
+                        
+                        <p>Le lecteur sera peut-être surpris qu'un paragraphe soir consacré à la musique  des Pays-Bas mais il doit savoir que les musiciens de ce petit pays  ont brillé à l'ère romantique, et tant pis s'ils ont prolongée parfois bien au-delà des délais que d'autres jugent raisonnables. On commence avec Johannes Verhuslt (1816-1891),  remarqué par Mendelssohn en personne (<a href="https://www.youtube.com/watch?v=mURWs5DfZzU">mi mineur</a>, 1841), et on poursuit avec Daniël de Lange (1841-1918)  (Excellente <a href="https://www.youtube.com/watch?v=P3pU4q9iIq4">ut mineur</a>, 1865), Bernard Zweers (1854-1924)  (<a href="https://www.youtube.com/watch?v=e1CvsTJAkCA">n°1</a>, 1881, <a href="https://www.youtube.com/watch?v=8fXLIPKmyTA">n°3</a>, 1890), Cornelis Dopper (1870-1939) (<a href="https://www.youtube.com/watch?v=Obiy7WuN9_w">n°1</a>, 1896, <a href="https://www.youtube.com/watch?v=Efuqh43oR6A">n°2</a>, 1904, <a href="https://www.youtube.com/watch?v=M8DCiyhU2uA">n°7</a>, 1932), Jan van Gilse (1881-1944) (<a href="https://www.youtube.com/watch?v=PRUl3aCq86U">n°2</a>, 1903) et Leopold  van der Pals (1884-1966)   (<a href="https://www.youtube.com/watch?v=RPnFsXkZJZ8">n°1</a>, 1909). Il n'existe aucun catalogue à jour des oeuvres du néerlandais d'origine allemande, <a href="../chroniques/roentgen.html">Julius Röntgen</a> (1855-1932). On  crédite en principe ce compositeur important de 25 symphonies mais certaines manquent  à l'appel des éditeurs,  perdues ou sommeillant   encore inédites dans les archives du Nederlands Muziek Instituut (La Haye). Actuellement 10 seulement ont été enregistrées chez CPO. Le désordre règne particulièrement parmi les oeuvres écrites avant 1930 (<a href="https://www.youtube.com/watch?v=A2O3b-wO3T0">n°3</a>, 1910). A cette date, peu avant son décès, il a été  pris d'une fringale symphonique, au point d'en écrire  17 en deux ans, l'occasion pour lui de combler à moitié son retard en modernité (Pari plutôt réussi dans une série d'oeuvres qui valent le détour : <a href="https://www.youtube.com/watch?v=5gaQwGRrNA4">n°8</a>, 1930, <a href="https://www.youtube.com/watch?v=wa8gp2o-w0s">n°9</a>, 1930, <a href="https://www.youtube.com/watch?v=BORsCGxI-yU">n°18</a>, 1931).</p>
+                        
+            </div>
+                        
+     
+     <div id="nationaleangleterre">                    
+                        
+<h5 class="espaceTextConsequent">Ecoles nationales (post)romantiques : Grande Bretagne</h5>
+                        
+                        <p>Les anglais ont longtemps écouté avec envie ce qui se composait sur le continent. Ce n'est pas un hasard si, à toutes les époques, ils ont attiré sur leur île plusieurs musiciens de valeur, leur garantissant de bonnes conditions de travail (Haendel, Haydn, Clementi, ...; ils ont aussi fait des propositions à Beethoven qui aurait volontiers accepté sauf qu'il était  casanier). Quand le moment est enfin venu de briser leurs complexes symphoniques, ils se sont lancé dans l'aventure et il n'y a plus eu moyen de les arrêter au point qu'ils ont continué à écrire de belles symphonies d'inspiration romantique à toutes les époques ultérieures. </p>
+                        <p>Cela  a commencé avec l'excellent Hubert Parry (1848-1918) (<a href="https://www.youtube.com/watch?v=LI94hJ-qWXM">n°2</a>, 1883,  <a href="https://www.youtube.com/watch?v=tm42_jPbFoU">n°4</a>, 1889,  <a href="https://www.youtube.com/watch?v=ST2hZMuq3Ec">n°5</a>, 1912) et Charles Villiers Stanford (1852-1924) (Symphonies <a href="https://www.youtube.com/watch?v=dhHS23qczK8">n°1</a>, 1877,  <a href="https://www.youtube.com/watch?v=cWl_3XdsCDI">n°3</a>, 1887,<a href="https://www.youtube.com/watch?v=w9wGfLIKgEc"> n°5</a>, 1894). Frederic Cliffe (1857-1931), qui avait démarré en fanfare avec un opus 1 particulièrement réussi (<a href="https://www.youtube.com/watch?v=ruRnbNFfYlY">ut mineur</a>, 1889), n'a étrangement plus rien écrit après 1905. Une deuxième symphonie existe, mais  seulement éditée en 2010,  elle attend toujours qu'on l'enregistre; nous aussi. Toutefois, c'est   Edward Elgar (1857-1934) qui a forcé le respect des continentaux dès les premières mesures de sa mythique   <a href="https://www.youtube.com/watch?v=6SX9m2V9mbM">n°1</a> (1908). L'oeuvre suivante (<a href="https://www.youtube.com/watch?v=NxoZqSxYQRM">n°2</a>, 1911) n'a pas connu un succès comparable. Quant à la <a href="https://www.youtube.com/watch?v=14jq8JNjfxA">n°3</a> (1934), elle est demeurée inachevée quoique fidèlement complétée par Anthony Payne, une belle réussite dans ce genre d'exercice  périlleux.</p>
+                        <p>  Ce qui est  remarquable, Outre-Manche, c'est que même des musiciens dits &quot;de seconde zone&quot; se débrouillent très bien, tels l'écossais  John Blackwood McEwen (1868-1948)  toujours plaisant (<a href="https://www.youtube.com/watch?v=C3Z0ZW6uKZc">n°5</a>, 1911), Gustav Holst (1874-1934), l'auteur des fameuses  <a href="https://www.youtube.com/watch?v=Isic2Z2e2xs">Planètes</a> (1917, en fait une symphonie déguisée en Suite orchestrale, très supérieure à l'antérieure<a href="https://www.youtube.com/watch?v=lz8wjnRKHfU"> fa majeur</a>, datée de 1900) et Donald Tovey (1875-1940) (<a href="https://www.youtube.com/watch?v=oey6cfrJ4_k">ré majeur</a>, 1913).</p>
+                        
+            </div>
+                        
+                     
+                        
+          <div id="nationaleusa">                
+                        
+<h5 class="espaceTextConsequent">Ecoles nationales (post)romantiques : USA</h5>
+                        
+
+  <p>Le préambule mais aussi les conclusions énoncés à la section précédente valent  également ici, mot pour mot. Initialement, c'est le modèle beethovenien qui a prévalu, aux USA (du fait de l'omniprésence sur le territoire de légions entières de musiciens émigrés austro-allemands) et ce fut une  longue quête  des compositeurs américains de trouver leur propre voie (Cf la chronique consacrée à l'histoire musicale des <a href="../chroniques/usa.html">USA</a>). Les pionniers, encore fort dépendants de ce qui se faisait en Europe (depuis 50 ans au moins, les temps ont bien changé !), peuvent paraître encore maladroits, mais  cela n'a pas duré ! Ils eurent pour nom : George Frederick Bristow (1825-1898) (<a href="https://www.youtube.com/watch?v=Y1Cj8eY4zx8">n°2</a>, 1856,  <a href="https://www.youtube.com/watch?v=GfONY8xHxTw&t=204s">n°4</a>, 1872),  John Knowles Paine (1839-1906) (<a href="https://www.youtube.com/watch?v=yt9vopxw09Y">n°1</a>, 1875, <a href="https://www.youtube.com/watch?v=3eYOaaNCk5c">n°2</a>, 1879), George Chadwick (1854-1931) (<a href="https://www.youtube.com/watch?v=v1uTXxVZGi4">n°2</a>, 1885 et brillante <a href="https://www.youtube.com/watch?v=D2qdCS5YBOo">n°3</a>, 1894) et Amy Beach (1867-1944) (<a href="https://www.youtube.com/watch?v=6WlSwUu8dto">Symphonie Gaélique</a>, 1896). Ensemble, ils ont contribué à fonder l'école nord-américaine, appelée à gravir  les échelons de la renommée au 21<sup>ème</sup> siècle.</p>
+  
+  <h5>Fin de la première partie</h5>
+  
+  </div>
+  
+
+  
+ 
+  
+
+
+          </div>
+                  
+
+
+
+
+            <a id="ancreRetourHautPage" href="#site">&uarr;</a>
+
+            <!-- Inclusion footer -->
+            <div id="footer"></div>
+
+        </div>
+    
+    </div>
+
+    <!-- Effet smooth ancres -->
+    <script src="../js/onclick.js"></script>
+    <script src="../js/anchors.js"></script>
+    
+
+  
+
+</body>
+</html>

@@ -79,11 +79,17 @@
                     <a id="ancreChronique7" href="#chronique7" class="linavMenu">
                     <span>1, 2, 4, 8, 16, 31 !, ... et le problème de Moser</span>
                     </a>
-        </li>
+    </li>
                 
                 <li>
                     <a id="ancreChronique8" href="#chronique8" class="linavMenu">
                     <span>Un problème géométrique élémentaire mais surprenant</span>
+                    </a>
+          </li>
+                
+                 <li>
+                    <a id="ancreChronique9" href="#chronique9" class="linavMenu">
+                    <span>In Memoriam John Horton Conway</span>
                     </a>
                 </li>
                 
@@ -121,6 +127,7 @@
                       <li><a href="#chronique6">Quaternions</a></li>
                       <li><a href="#chronique7">1, 2, 4, 8, 16, 31 !, ... et le problème de Moser</a></li>
                       <li><a href="#chronique8">Un problème géométrique élémentaire mais surprenant</a></li>
+                      <li><a href="#chronique9">In Memoriam John Horton Conway</a></li>
                   </ul>
                 </div>
 
@@ -761,6 +768,50 @@
       <p>Parvenu à ce stade, on aperçoit une méthode d'estimation mentale directe de la hauteur h atteinte par la corde tendue à la verticale du milieu du terrain. Le cosinus de l'angle &theta; vaut clairement 50/50.5 = 100/101, dans ce cas. Pour trouver h, on a besoin de la tangente de &theta; (car h = 50 tg&theta;). Or celle-ci est reliée au cosinus par la formule classique, 1 + tg<sup>2</sup>&theta; = 1/cos<sup>2</sup>&theta;. L'inverse du cosinus valant  exactement 1.01, son carré vaut 1.02 avec une excellente approximation donc tg<sup>2</sup>&theta; est (très) proche de 2/100 et tg&theta; est également proche de &check;2/10 = 0.141. Au bilan 2h est proche de 14.1 donc h de 7.05. Dans ce cas précis, il n'y a sans doute pas moyen de faire plus court dans l'estimation de h.</p>  
          
             </div>
+            
+            
+        <div id="chronique9">
+        <h4>In memoriam John Horton Conway (1937-2020)</h4>      
+        
+        <div class="conteneurImageSeule">
+                  <div>
+                    <figure>
+                      <img src="annexes/conway/conway.png" alt="CD Herschel" />
+                             
+                    </figure>
+          </div>
+        </div>
+        
+             
+     <p>Le Covid19 a eu raison de John Horton Conway, l'un des mathématiciens les plus remarquables de notre temps. Il a fait des recherches dans divers domaines des mathématiques, Théorie des Groupes, Géométrie topologique, Automates cellulaires, Algorithmique, etc, mais le point remarquable qui l'a distingué de la plupart de ses collègues, c'est qu'il a tenté de mettre ses résultats à la portée du plus grand nombre toutes les fois que cela s'est avéré possible. Il s'est montré particulièrement habile pour  déconstruire des théories complexes, parfois abstraites, et leur trouver des illustrations  ludiques dans le domaine prisé des mathématiques récréationnelles (Cf : E. R. Berlekamp, J. H. Conway and R. K. Guy, Winning Ways for Your Mathematical Plays, A K Peters/CRC Press; 2nd edition, 2004) : </p>
+     <ul class="miniListCorps">
+     <li>Il a fait fortune intellectuelle auprès des amateurs distingués en concevant le plus célèbre des automates cellulaires, désormais connu sous le nom de <a href="https://fr.wikipedia.org/wiki/Jeu_de_la_vie">Jeu de la Vie</a> (Vous trouverez les règles simples du jeu à cette adresse). Cet automate a ultérieurement été démontré équivalent à une machine de Turing universelle, c'est-à-dire capable de calculer tout ce qui est calculable sous réserve d'un codage adéquat. Avec le temps, une communauté  active  s'est développée à laquelle n'importe quel amateur (doué !) peut contribuer (Voici un <a href="https://www.conwaylife.com/wiki/Conway%27s_Game_of_Life">exemple</a> qui propose simultanément plusieurs sous-structures aux comportements caractéristiques : invariantes, périodiques, mobiles, etc). Pour vous donner une idée des prouesses réalisées en matière de codage, visitez le <a href="https://www.conwaylife.com/wiki/List_of_common_oscillators">musée des oscillateurs connus</a>, c'est à dire des structures qui se répètent périodiquement en suivant les règles prescrites par Conway. </li>
+     <li>Il a récidivé avec son langage minimaliste  <a href="info.html#chronique2">Fractran</a> évoqué  ailleurs sur ce site. </li>
+     <li>Vous trouverez encore sur ce site son <a href="info.html#chronique1">algorithme</a> de résolution du problème des 12, 39, 120, ..., boules, celui du calcul de la <a href="chroniques/passion.html">date de Pâques</a> ou encore, ci-après, cette méthode simplifiée  du calcul du jour correspondant à une date donnée. </li>
+     
+     </ul>
+     
+     <p>Le problème posé est lié à celui de la construction d'un calendrier perpétuel (grégorien, celui que nous utilisons actuellement). Pour rappel, le calendrier grégorien (Du nom du pape de l'époque, Grégoire XIII) a remplacé son homologue julien en octobre 1582. Le calendrier julien reposait sur une année fictive comportant 365,25 jours : il comptabilisait le quart de jour excédentaire en imposant une année bissextile de 366 jours tous les 4 ans. Lorsqu'on s'est rendu compte, par un ensemble de mesures astronomiques de la position du soleil, que  la vraie valeur tournait plutôt autour de 365,2422 jours, on a été amené à modifier  le critère de reconnaissance des années bissextiles selon la règle :  les années &quot;multiples de 4 non multiples de 100&quot; ou (inclusif !) les années &quot;multiples de 400&quot;. Ce nouveau mode de calcul est meilleur car il table sur une année de 365,2425 jours mais il n'est clairement pas encore parfait (Il faudrait sans doute retirer une année bissextile tous les 4000 ans environ mais à cette échelle temporelle il plane des incertitudes 1) sur la trajectoire terrestre et 2) sur la capacité de l'espèce humaine à se maintenir en vie). Les subtilités  relatives au calcul des années bissextiles compliquent l'établissement d'une formule attribuant un jour de la semaine à n'importe quelle date donnée d'avance, sous la forme, d(ay)-m(onth)-y(ear). Ne m'en veuillez pas d'utiliser trois mots anglais mais c'est par respect pour Mike Keith qui a publié la formule réputée la plus simple (Journal of Recreational math. Vol 22 (1980), p 280). Elle s'écrit, j'adapte les notations (accrochez-vous quand même !) :</p>
+     <p>jour(d,m,y) = Mod[ div(23m,9) + d + 4 + y + div(z,4) - div(z,100) + div(z,400) - If[m&ge;3,2,0] , 7]</p> 
+     <p>où on a posé : z = If[m&ge;3,y,y-1].</p>
+     <p>(Notation : div(a,b) est le quotient entier de a par b, Mod[a,b] est le reste entier laissé par ce quotient  et If[condition, a, b] vaut a si la condition est remplie et b sinon. Le résultat est un entier compris entre 0 et 6 qui désigne le jour cherché en commençant par 0 pour dimanche).</p>
+     <p>Sauf à la programmer, personne n'utilisera jamais cette formule bien trop compliquée. Si vous tenez néanmoins à connaître le jour de votre prochain anniversaire ou de tout autre événement qui vous tient à coeur, Conway a pensé à vous en simplifiant considérablement la procédure. Vous devez simplement connaître le &quot;jour pivot&quot; de l'année qui vous intéresse. Toute année possède son jour pivot; par exemple,  en 2020, c'est un samedi. La méthode de Conway vous assure que les jours suivants tombe toujours le jour pivot de l'année en cours :</p>
+     
+     <ul class="miniListCorps">
+      <li>Les 4/4, 6/6, 8/8, 10/10 et 12/12 (En effet, à partir de mars, les couples de mois consécutifs comportent 61 jours et 61+2=63 est multiple de 7). </li>
+      <li>Le dernier jour de février peu importe qu'il comporte 28 ou 29 jours, ainsi que les jours de mars multiples de 7 (donc les 7/3, 14/3, 21/3 et 28/3 car le dernier jour de février pourrait aussi bien s'appeler le 0 mars). </li>
+      <li>Le 3 janvier si l'année est ordinaire (365 jours) et le 4 janvier si elle est bissextile (Retenez 3 et 4, c'est facile).</li>
+      <li>Enfin pour les mois restants, débrouillez-vous pour retenir : les 5/9 et  9/5, d'une part, et les 7/11 et  11/7, d'autre part (Observez, par exemple, que 11-7 = 9-5 = 4).</li>
+      </ul>
+     <p>Connaissant le jour pivot vous êtes assez grand pour trouver le jour qui vous intéresse. Par exemple, si l'anniversaire de votre conjoint tombe un 8 octobre, sachant qu'en 2020, le 10/10 est un samedi (le pivot), la réponse est un jeudi. </p>
+     <p>Encore faut-il connaître le jour pivot pour l'année considérée : il progresse en général d'un jour par année (en 2021, ce sera un dimanche et en 2022 un lundi car 365 est multiple de 7 plus 1) mais attention aux années bissextiles car on saute un jour supplémentaire vu que 366 est multiple de 7 plus 2 ! En cas de doute, voici la formule exacte :</p>
+     <p>jour_pivot(y) = Mod[2+y+div(y,4)-div(y,100)+div(y,400), 7]</p>
+     <p>Exemple : jour_pivot(2020) = Mod[2+2020+505-20+5, 7]=Mod[2512,7]=6 &rarr; samedi</p>
+     <p>Vous le constatez, aussi brillant qu'il ait été dans des domaines qui échappent au commun des mortels, Conway a pensé à vous dans de menus problèmes de la vie de tous les jours. Ne manquez pas, en retour, de penser  à lui, là où il repose à présent.</p>
+        </div>
+        
+            
+            
             
             
             </div>
