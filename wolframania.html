@@ -2,8 +2,8 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Wolframania | Mathematica etc</title>
-  <meta name="description" content="Stephen Wolfram est le père de Mathematica mais aussi d'un ouvrage 'A New kind of Science' qui propose une relecture digitale de quelques grands thèmes physico-matématiques" />
+  <title>Wolframania | Mathematica, A new Kind of Science, A Project for Physics and many more</title>
+  <meta name="description" content="Stephen Wolfram est le créateur du logiciel de calcul formel, Mathematica, mais aussi l'initiateur de projets relatifs à l'étude des mathématiques par programmes informatiques (A New Kind of Science) et d'un ambitieux projet de refondation de la Physique (A Project to find the fundamental Theory of Physics)." />
   <link rel="shortcut icon" href="logo.ico" />
   <link href="style.css" rel="stylesheet" type="text/css" /> 
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
@@ -45,7 +45,7 @@
 
             <div id="contenuPrincipal">
                 <h2>Wolframania</h2>
-                <h3>De Mathematica à NKS (A New Kind of Science)</h3>
+                <h3>Mathematica, A New Kind of Science and A Project to find the fundamental Theory of Physics</h3>
 
                 <nav class="filAriane">
                     <ul>
@@ -57,7 +57,7 @@
                     </ul>
                 </nav>  
 
-                <div class="blocImgFirstAndText">
+               <h4>Mathematica</h4>
                   <div class="conteneurImageSeule">
                       <div>
                           <figure>
@@ -67,10 +67,35 @@
                       </div>
                   </div>
 
-                  <p>Physicien, Stephen Wolfram est surtout connu comme concepteur du logiciel de calcul formel, Mathematica. Il est également à la base du projet A New Kind of Science (NKS) dont la philosophie est exposée dans l'ouvrage fondateur du même nom (accessible gratuitement en lecture électronique <a href="http://www.wolframscience.com/nksonline/toc.html">ici</a>). Le Wolfram Demonstration Project regroupe des applications interactives consultables sur le site de Wolfram ou  sur n'importe quel site qui les relaie. La consultation en ligne requiert une licence Mathematica ou, à défaut, le téléchargement préalable et entièrement gratuit du logiciel CDF (télécharger <a href="http://www.wolfram.com/cdf-player/">ici</a>).</p>
+                  <p>Physicien de formation (Il a été un  élève remarqué  par le professeur Richard Feynman), Stephen Wolfram est surtout connu comme concepteur du logiciel de calcul formel, Mathematica qui, en  2020,   en est déjà à sa version 12. Seulement concurrencé dans le domaine purement mathématique par le logiciel Maple, il  surpasse celui-ci par la somme des extensions disponibles,  utiles à la recherche dans un très grand nombre de domaines, pas seulement scientifiques. Wolfram est  un chercheur hyperactif et un manager efficace (<a href="https://www.wolfram.com/">wolfram.com</a>), parfaitement secondé par une armada de collaborateurs formés dans un grand nombre de disciplines. Dans tous les cas, les solutions proposées par l'équipe de Wolfram sont proches de l'optimum algorithmique. La <a href="https://reference.wolfram.com/language/?source=nav">documentation</a> relative au langage (et ses applications) est disponible en ligne et elle est inévitablement tentaculaire. Il existe heureusement des exposés introductifs pour les débutants. En français, l'ouvrage le plus remarquable est dû à Yvon Poitevineau (Mathematica 3 par la pratique) hélas il n'a jamais été réédité (mais il est trouvable d'occasion). Qu'il s'agisse de la version 3 du logiciel n'a aucune importance  car l'essentiel s'y trouve qui permet de bien démarrer.</p>
+                  <p>La version 12 couvre une somme (de domaines) d'applications proprement stupéfiante et le prix payé pour une telle débauche est inévitablement la lourdeur croissante du système : même compartimenté par sections, Mathematica  pèche  par une relative lenteur, en particulier il n'est pas conçu pour convenir aux calculs numériques massifs, domaine où il est préférable de recourir à un langage traditionnel tel C++. Cette lenteur peut être tempérée par une programmation adéquate respectant les contraintes syntaxiques propres à ce langage mais les maîtriser réclame une expertise que l'usager ne possède pas forcément (Cf, par exemple, les <a href="https://blog.wolfram.com/2011/12/07/10-tips-for-writing-fast-mathematica-code/">conseils</a> prodigués çà et là par des experts occasionnels). Il existe fort heureusement une <a href="https://community.wolfram.com/content?curTag=mathematica">communauté d'entraide</a> active et efficace. </p>
+                  
+                  
+ <h4>A new Kind of Science</h4>                 
+                  
+                  <p>Wolfram est également à la base du projet A New Kind of Science (NKS) dont la philosophie est exposée dans l'ouvrage fondateur du même nom (accessible  en lecture électronique <a href="http://www.wolframscience.com/nksonline/toc.html">ici</a>). Cette &quot;nouvelle sorte de science&quot; repose sur deux idées maîtresses (et beaucoup d'idées subsidiaires) :</p>
+                  
+                  <ul class="miniListCorps">
+    <li>Il est communément admis que les mathématiques sont le langage de choix pour le développement des sciences. Les mathématiques traditionnellement enseignées dans le cadre formel de la théorie des ensembles (ZFC) font un large usage de l'analyse infinitésimale, par exemple pour la définition des fonctions utiles. En reposant largement sur la notion de passage à la limite (pour des intervalles d'espace-temps arbitrairement proches de zéro), ZFC modélise continûment l'espace et le temps, s'interdisant pratiquement de  quantifier ces grandeurs. NKS privilégie l'approche par programmes d'où elle réserve une place de choix aux automates discrets de toutes sortes (automates cellulaires, systèmes multivoies, machines de Turing, ...). Discrétisation rimant avec quantification, cette option n'est pas dépourvue de bon sens sous réserve d'apporter des preuves  pertinentes de son utilité.</li>
+    <li>Wolfram a étudié les propriétés contre-intuitives des automates, montrant que leur évolution peut s'avérer extrêmement riche et compliquée en dépit du fait qu'elle repose sur des règles de base extrêmement simples.  Il va plus loin en mettant en évidence une classe de systèmes capables de franchir le seuil d'universalité (calculatoire) au sens de Turing, comprenez qui, au travers d'un codage adéquat mais parfaitement défini, sont capables de calculer tout ce qui est calculable (par un humain, conformément à la thèse de Turing). C'est le principe d'équivalence calculatoire. </li>              
+                  </ul>
+                  
+          <h4>A new kind of Physics</h4> 
+                  
+                  
+                  <p>En concevant NKS, Wolfram a secrètement espéré  jeter les bases d'une nouvelle approche scientifique et en particulier renouveler  les fondements de la physique théorique, de l'infiniment petit à l'infiniment grand. La fable suivante, une initiative personnelle, peut aider à comprendre sa démarche. Imaginons un désastre quasi total mettant fin à l'espèce humaine à l'exception de quelques peuplades reculées ignorantes de toute science existante et ne disposant d'aucun moyen de la ressusciter sans tout recommencer à zéro. La question serait de (sa)voir comment ils  s'y prendraient et à quoi ressemblerait leur nouvelle science. Si ce scénario catastrophe ne vous plaît pas, une variante existe qui imagine que l'on croise un jour des extra-terrestres suffisamment aimables pour nous transmettre leurs savoirs. On imagine que pour eux qui vivent sur une autre planète, celle-ci orbite autour de son étoile comme la nôtre autour du soleil  mais il serait surprenant que la description formelle qu'ils feraient de leur mécanique céleste ressemble en quoi que ce soit à la nôtre. Les mesures que nous faisons régulièrement dans le cadre de l'observation des phénomènes naturels (ou artificiels en laboratoire) représentent un codage possible de l'information et toute la théorie subséquente est adaptée à ce codage. Toutefois il doit exister d'autres manières de condenser la réalité expérimentale donc d'autres manières de concevoir un modèle de notre univers. Celui-ci devrait sans doute épouser le nôtre, en gros, mais rien n'empêcherait qu'il diffère sur certains détails importants. C'est un projet  de ce genre que Wolfram a tenté d'initier dans son ambitieux - peut-être chimérique - <a href="https://www.wolfram-media.com/products/a-project-to-find-the-fundamental-theory-of-physics.html">Project to find the fundamental Theory of Physics</a>. Ne pouvant décemment mener seul à bien ce projet fou, il s'est assuré la collaboration de jeunes chercheurs, en particulier Jonathan Gorard et Max Piskunov, et  la saga des développements en cours perpétuel est consultable <a href="https://www.wolframphysics.org/">ici</a>. Ce projet (ré)exploite l'idée de l'évolution complexe de systèmes simples, en particulier des systèmes multivoies dont l'évolution temporelle est figurée sous forme de graphes.  Il est totalement prématuré de prédire l'avenir de cette tentative  mais on ne peut à tout le moins  contester que l'auteur y  fait preuve de trésors d'imagination. </p>
+<p>Il est  facile de démolir ce genre de projet et de fait, les <a href="https://www.scientificamerican.com/article/physicists-criticize-stephen-wolframs-theory-of-everything/">critiques</a> n'ont pas manqué de pleuvoir, provenant d'auteurs probablement moins imaginatifs que Wolfram. Tous ont pour argument  que la théorie actuelle est très bien comme elle est et qu'elle n'a nul besoin d'être révisée. C'est oublier un peu vite que le modèle standard  demeure à ce jour incapable d'expliquer raisonnablement le spectre des masses des particules élémentaires (c'est-à-dire sans introduire autant de paramètres extérieurs qu'il y a de données à expliquer à la précision donnée) et qu'à l'échelle dimensionnelle opposée, la cosmologie est empêtrée dans les problèmes d'énergie et de matière noires, deux notions inventées de toutes pièces pour rafistoler une théorie qui ne fonctionne pas en l'état pour expliquer les observations les plus récentes relatives à l'expansion de l'univers. </p>
+                  <p>Il est tout à fait possible que si l'on  consacrait au modèle de Wolfram autant d'heures de recherches que celles qui ont été traditionnellement consacrées aux modèles en vigueur, il en sortirait une vision de la physique théorique très différente de celle que nous connaissons. Au fond, il n'y a pas qu'une manière de modéliser un ensemble de grandeurs mesurées et c'est l'ambition de Wolfram d'en produire un exemple inattendu et éventuellement de nature à revitaliser la physique toute entière.</p>
+                  
+              <h4>Wolfram Alpha</h4>
+                  
+                  <p>Wolfram a consacré quelques années de sa vie à développer avec l'aide de collaborateurs un système ambitieux capable de répondre à toutes les questions que l'on peut raisonnablement se poser. Libre d'accès, <a href="https://www.wolframalpha.com/">alpha</a> ouvre une fenêtre prête à entendre votre question rédigée dans un anglais basique. Elle peut être géographique, technique, divertissante, mathématique, etc, son ambition est d'y répondre sous réserve qu'elle soit bien posée. Ce projet est un produit d'intelligence artificielle et comme tel, il apprend de ses insuffisances mais il le fait vite et bien ! Amusez-vous autant que vous voudrez en demandant par exemple, &quot;What day is november 8, 2050 ?&quot;. Il vous répondra évidemment Tuesday et comme il n'est pas avare de détails, il ajoutera ses commentaires et anecdotes, par exemple qu'on y fêtera le 133<sup>ème</sup> anniversaire de la fin de la Révolution d'Octobre (!) 1917, que le soleil se lèvera à 07:46 et qu'il se couchera à 17:05, pour une durée du jour égale à 9h 19 min ! </p>
+                  
+                  <h4>The Wolfram Demonstrations Project</h4>
+                  <p>Par ailleurs, le <a href="https://demonstrations.wolfram.com/">Wolfram Demonstrations Project</a> regroupe des applications interactives consultables sur le site de Wolfram ou  sur n'importe quel site qui les relaie. La consultation en ligne requiert une licence Mathematica ou, à défaut, le téléchargement préalable et entièrement gratuit du logiciel CDF (télécharger <a href="http://www.wolfram.com/cdf-player/">ici</a>).</p>
 
                   <div id="comportementAutomatesCellulaires">
-                    <h4>Comportements des automates cellulaires élémentaires</h4>
+                    <h5>Comportements des automates cellulaires élémentaires</h5>
                   
                     <script type="text/javascript" src="http://demonstrations.wolfram.com/javascript/embed.js" ></script>
                     <script type="text/javascript" id="DEMO_CellularAutomatonExplorer">var demoObj = new DEMOEMBED(); demoObj.run("CellularAutomatonExplorer", "", "687", "645");</script>
@@ -78,7 +103,7 @@
                   </div>
 
                   <div id="fonctionnementMachineTuring">
-                    <h4>Fonctionnement de la machine de Turing universelle (3,2) de Wolfram</h4>
+                    <h5>Fonctionnement de la machine de Turing universelle (2,3) de Wolfram</h5>
                   
                     <script type="text/javascript" src="http://demonstrations.wolfram.com/javascript/embed.js" ></script>
                     <script type="text/javascript" id="DEMO_TheWolfram23TuringMachineWithRandomConditions">var demoObj = new DEMOEMBED(); demoObj.run("TheWolfram23TuringMachineWithRandomConditions", "", "629", "405");</script>
@@ -86,14 +111,14 @@
                   </div>
 
                   <div id="liste1936MachinesTuring">
-                    <h4>Liste des 1936 premières machines binaires élégantes de Turing</h4>
+                    <h5>Liste des 1936 premières machines binaires élégantes de Turing</h5>
                   
                     <script type='text/javascript' src='http://demonstrations.wolfram.com/javascript/embed.js' ></script>
                     <script type='text/javascript'>var demoObj = new DEMOEMBED(); demoObj.run('TheFirst1936ElegantBinaryTuringMachines', '', '541', '445');</script>
                     <div id='DEMO_TheFirst1936ElegantBinaryTuringMachines'><a class='demonstrationHyperlink' href='http://demonstrations.wolfram.com/TheFirst1936ElegantBinaryTuringMachines/' target='_blank'>The First 1936 Elegant Binary Turing Machines</a> from the <a class='demonstrationHyperlink' href='http://demonstrations.wolfram.com/' target='_blank'>Wolfram Demonstrations Project</a> by André Hautot</div>
                   </div>
-                </div>
-            </div>
+          </div>
+           
 
 
             <a id="ancreRetourHautPage" href="#site">&uarr;</a>
