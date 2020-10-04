@@ -11,9 +11,9 @@
 <div id="articlesRecents">
 	<h5>ARTICLES RECENTS</h5>
 	<ul>
+        <li><a href="<?php echo $_POST['ROOT']; ?>chroniques/septembre.html">Nuits de septembre 2020 (04/10/2020)</a></li>
         <li><a href="<?php echo $_POST['ROOT']; ?>chroniques/wilson.html">George Walker, Olly Wilson, Adolphus Hailstork : Black (classical) music matters (06/09/2020)</a></li>
         <li><a href="<?php echo $_POST['ROOT']; ?>chroniques/symphonie1.html">La symphonie (II) : les temps modernes (10/06/2020)</a></li>
-        <li><a href="<?php echo $_POST['ROOT']; ?>chroniques/symphonie1.html">La symphonie (I) : des origines à la disparition de Mahler (26/04/2020)</a></li>
     	
 	</ul>
 </div>
