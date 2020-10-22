@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Billets d'humeur | Nuits de Septembre 2020</title>
+  <meta name="description" content="Le coronavirus n'a pas eu raison du Festival musical liégeois des Nuits de Septembre 2020. Cela valait bien un débriefing circonstancié." />
+  <link rel="shortcut icon" href="../logo.ico" />
+  <link href="../style.css" rel="stylesheet" type="text/css" /> 
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <script src="../js/jquery-1.10.2.js"></script>
+  <script src="../js/menus.js"></script>
+  <script src="../js/design.js"></script>
+  <script src="../js/gestionAudioVideo.js"></script>
+  <script> 
+    // Inclusion Header et Footer
+    $(function(){
+      $(function(){
+        $.ajax({
+           url: "../template/header.php",
+           type: "POST",
+           data: ({ROOT: '../'}),
+           success: function(data) {
+             $("#header").html(data);
+             $("#billetdhumeur").addClass("active"); /*a changer en fonction de la page*/
+             update_design_when_header_loaded();
+          }
+        });
+      });
+      $("#miniMenus").load("../template/miniMenus.php", { ROOT: '../' }, mini_menus_after_loading);
+      $("#footer").load("../template/footer.php", { ROOT: '../' }, update_design_footer);  
+    });
+  </script> 
+</head>
+
+<body id="site">
+
+    <div>
+        <!-- Inclusion header -->
+        <div id="header"></div>
+
+        <div id="miniMenus"></div>
+
+        <div id="corps">
+
+            <div id="contenuPrincipal">
+                <h2>Billets d'humeur</h2>
+                <h3>Nuits de Septembre 2020</h3>
+
+              <nav class="filAriane">
+                    <ul>
+                        <li class="breadcrumbItem"><span>Vous êtes ici : </span> Musique</li>
+                        <li class="breadcrumbItem">
+                          <a href="../chroniques.html">Chroniques</a>
+                        </li>
+                        <li class="breadcrumbItem">
+                          <a href="../billetdhumeur.html">Billets d'humeur</a>
+                        </li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Nuits de Septembre 2020</li>
+                    </ul>
+                </nav>  
+  
+                <p>Fondé en 1957, à l'initiative de la musicologue liégeoise Suzanne Clercx (1910-1985), le festival des Nuits de Septembre a été l'un des premiers en date à s'intéresser aux musiques anciennes, bien avant Saintes (Depuis 1972), Fontevraud  (Depuis 1975) ou Utrecht (Depuis 1982), pour s'en tenir à quelques  concurrents  fameux et géographiquement proches (Mais il en existe <a href="https://en.wikipedia.org/wiki/Early_music_festivals">beaucoup d'autres</a>, répartis un peu partout dans le monde). Bien que  disposant de peu de moyens, il a conservé  ce temps d'avance lui permettant d'attirer les meilleurs spécialistes  en musique ancienne et de faire entendre des musiques aussi rares que - simples exemples - celles composées par <a href="https://www.youtube.com/watch?v=oRW9B9BMHl4">Johannes Cicconia</a> (1370-1412, le sujet des recherches principales de Suzanne Clercx) ou par les frères <a href="https://www.youtube.com/watch?v=4pa3Eozh3AA">Hugo et Arnold de Lantins</a> (15<sup>ème</sup> siècle, concert mémorable donné, en 2017, par Le Miroir de Musique). Je n'ai jamais compris comment ce festival se débrouillait chaque année pour proposer des concerts de cette qualité à un prix défiant toute concurrence (80 euros pour 7 ou 8 concerts, la moitié pour les moins de 30 ans !) ni comment il se faisait qu'il n'affiche pas systématiquement complet. Convenons qu'en 2020, l'intrusion du coronavirus a pu décourager quelques amateurs timorés. </p>
+                <p>Ce virus, qui a contrarié la  tenue de la plupart  des festivals musicaux prévus en 2020,  n'a pas réussi à empêcher  les Nuits de Septembre, seulement adaptées au contraintes sanitaires. Les auditeurs se sont donc docilement espacés,  gagnant en confort de visibilité ce qu'il perdait du fait d'être masqué. Cette résistance vaillante valait bien un hommage circonstancié.</p>
+<p>Depuis qu'il existe, ce festival   demande régulièrement aux musiciens  de respecter autant que faire se peut un thème imposé. Cette année, il tournait autour des Mythes et Héros depuis l'Antiquité. Cette contrainte n'est pas  sans danger  lorsque  les ensembles invités font passer le respect des consignes avant l'équilibre de leur programmation. L'édition 2020 n'a pas toujours évité cet écueil et ce fut d'emblée le cas lors du concert d'ouverture.</p> 
+
+
+ <div class="conteneurImageSeule">
+                      <div>
+                          <figure>
+                              <img src="../images/septembre/doulce_memoire.png" alt="Ensemble Doulce Memoire"/>
+                          </figure>
+                      </div>
+                  </div>
+
+<p><strong>Samedi 05/09/2020.</strong> Privé de scène pendant plusieurs mois, l'ensemble Doulce Mémoire a ouvert les festivités avec un effectif réduit à sa plus simple expression, sa façon peut-être de maintenir la distanciation sociale jusque sur l'estrade mais aussi de s'éloigner d'un public lui-même dilué dans la grande salle philharmonique de Liège.   Cela fait plusieurs décennies que je suis l'ensemble de Denis Raisin Dadre, jusque dans ses terres les plus reculées du Sud de la France, et le fait est que je l'ai connu plus justement sérieux (<a href="https://www.youtube.com/watch?v=5gmeGJfJEMg">Requiem des Rois de France</a>) mais aussi <a href="https://www.youtube.com/watch?v=ewBhT2Hv4lw">alerte</a>, voire  enjoué jusqu'à la <a href="https://www.youtube.com/watch?v=QHYZ29LIZ68">drôlerie</a>,  un genre  où il excelle. Certes, les musiciens se sont appliqués avec talent à un programme centré sur  la personnalité de Leonardo Vinci et leur chef joue toujours aussi bien de toutes sortes de flûtes anciennes mais l'impression globale demeure d'un  concert soporifique,   ce qui est anormal quand il est composé d'une  vingtaine de pièces et qu'il y avait place pour une plus grande diversité, en particulier rythmique  (<a href="https://www.youtube.com/watch?v=rrRsOoWwJPA">Marchetto Cara : Ave Maria gratia plena</a>).  Détail qui ne trompe pas, le public  a applaudi consciencieusement chaque pièce individuellement  et je crains fort que ç'ait été pour  se tenir éveillé. En  tous cas, cette manie ne s'est (fort heureusement) plus reproduite lors des concerts suivants. </p>
+
+
+
+<div class="conteneurImageSeule">
+<div>
+                          <figure>
+                              <img src="../images/septembre/alarcon.png" alt="Capella mediterranea"/>
+                          </figure>
+                      </div>
+                  </div>
+<p><strong>Vendredi 11/09/2020.</strong> Il suffisait d'assister au concert de la Cappella Mediterranea pour mesurer la différence. Les musiciens n'étaient  guère plus nombreux sur scène mais une soprano incandescente a fait toute la différence, au service d'un programme cette fois parfaitement conçu. Je me suis toujours demandé comment il était possible d'incendier une église mais depuis cette soirée mémorable, je ne me pose plus la question : aucun bidon d'essence n'est nécessaire, la voix d'une femme suffit. Mariana Flores a de fait enflammé l'église Saint-Jacques par la seule magie d'un chant aussi somptueux que nuancé et intrépide, rendant justice aux tempéraments (musicaux !) du grand baroque italien du 17<sup>ème</sup> siècle et infléchissant (la hauteur de) chaque note avec une justesse confondante (Revivez ce <a href="https://www.youtube.com/watch?v=dzGoe150fNM">concert</a> avec des oeuvres de Francesco Cavalli, Claudio Monteverdi, Barbara Strozzi, etc). Telle un bijou dans son écrin, elle était accompagnée par un ensemble instrumental  dirigé par (son célèbre mari) Leonardo Garcia Alarcon. Ces artistes ont offert une très belle illustration  de ce principe selon lequel l'acoustique musicale est l'ingrédient de choix des meilleurs concerts, particulièrement en musique ancienne. Le public l'a parfaitement ressenti, demeurant sans voix  entre chaque morceau et conscient que son silence contribuait à la magie du moment. Il s'est même  abstenu de tousser, une prouesse en ces temps viraux. </p>
+
+
+
+<div class="conteneurImageSeule">
+<div>
+                          <figure>
+                              <img src="../images/septembre/cuiller.png" alt="Bertrand Cuiller"/>
+                          </figure>
+                      </div>
+                  </div>
+
+
+<p><strong>Jeudi 17/09/2020.</strong> La troisième séance  nous a offert le plaisir rare donc précieux d'entendre quelques pièces choisies, pour clavecin, de la grande <a href="../chroniques/clavecin.html">école française</a>, de François Couperin (1668-1733) à Jacques Duphly (1715-1789). Les lecteurs fidèles connaissent mon engouement pour ce répertoire surtout lorsqu'il est joué sur un instrument digne de ce nom. Celui proposé pour cette soirée au claveciniste Bertrand Cuiller a été réalisé  d'après un modèle ancien par le facteur belge, Jean-Luc Wolfs. L'interprète  a eu le bon goût de lui rendre un hommage discret en désignant cet instrument remarquable lors des salutations d'usage. Les auditeurs ont eu droit à un programme parfaitement conçu dont quelques morceaux d'anthologie parmi lesquels j'extrais Les Sylvains <sub><sub><sub>
+        <audio controls preload="none">
+                    <source src="../son.mp3/septembre/sylvains.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/septembre/sylvains.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible 
+        </audio>
+              </sub></sub></sub> de François Couperin et <a href="https://www.youtube.com/watch?v=y_2HnqDSVcc">La Sylva</a>  de Forqueray fils, en fait une adaptation d'une pièce pour viole de son père Jean-Baptiste, que je suis contraint de vous proposer sous les doigts de  Sophie Yates. </p>
+  
+  
+  
+  
+  <div class="conteneurImageSeule">
+                      <div>
+                          <figure>
+                              <img src="../images/septembre/ausonia.png" alt="Claude Ledoux et l'ensemble Ausonia"/>
+                          </figure>
+        </div>
+              </div>
+  
+  
+<p><strong>Jeudi 24/09/2020.</strong> Un spectacle  original a réjoui l'assistance de ce jeudi,  centré sur la musique de Monteverdi, quelques madrigaux guerriers et amoureux et surtout le Combat de Tancrède et Clorinde. Les organisateurs avaient eu, en outre, l'idée lumineuse de convier le compositeur Claude Ledoux (1960- ) à participer à la fête en écrivant une œuvre  contemporaine mais avec l'exigence de l'adresser aux musiciens de l'ensemble baroque Ausonia, une sorte d'assurance de qualité acoustique. Le compositeur s'est parfaitement tiré d'affaire, se payant même le luxe de croiser trois univers musicaux (Musiques ancienne, contemporaine et extrême-orientale) quand on ne lui en demandait que deux. Fasciné par les cultures asiatiques (sa moitié est nippone), Claude Ledoux cultive habituellement les sonorités belles et inédites comme dans <a href="https://www.youtube.com/watch?v=Z98Wt1tTVus">A Butterfly's Dream</a>. Pour &quot;Tomoe&quot;, la création de ce soir (fatalement indisponible à l'écoute), il a imaginé de répondre au Combat de Monteverdi par une œuvre célébrant les faits d'armes de la fameuse femme Samouraï, Tomoe Gozen. <a href="https://www.youtube.com/watch?v=_v8kKa4ZhXQ">Concilier les trois univers</a> n'a pas été chose facile et on présume que  l'épisode nippon a dû en dérouter plus d'un. Reste que la partition de Claude Ledoux a tenu ses promesses, jouant prudemment sur une lenteur héritée musicalement de celle cultivée par <a href="../chroniques/bryars.html">Gavin Bryars</a>, un très bon choix. Le public a acclamé ce spectacle, nullement découragé par les interventions plus ou moins distrayantes (dans tous les sens du terme) de deux danseurs hiératiques (dont l'acteur nippon No Masato Matsuura), chargés de <a href="https://www.youtube.com/watch?v=0PCz_2v2XT0">mimer l'action</a> sans toutefois nécessairement lui apporter un complément indispensable. </p>
+
+
+
+<div class="conteneurImageSeule">
+                      <div>
+                          <figure>
+                              <img src="../images/septembre/peregrina.png" alt="Ensemble Peregrina"/>
+                          </figure>
+        </div>
+              </div>
+
+
+<p><strong>Vendredi 25/09/2020.</strong> L'ensemble Peregrina  ne s'est pas compliqué la tâche en se proposant d'illustrer  le grand saint Nicolas au travers d'oeuvres traversant les siècles, du 12<sup>ème</sup> au 15<sup>ème</sup> : il a tout simplement (re)produit le contenu de son enregistrement récent du Miracle de Saint Nicolas pour le label Tacet. Le problème est que cette anthologie, qui se défend en studio, passe plus difficilement la rampe du &quot;live&quot; : une certaine monotonie s'est  installée, seulement brisée par de trop rares pages instrumentales (Nicholaus inclitus, pour vielle &amp; harpe médiévale <sub><sub><sub>
+                  <audio controls preload="none">
+                    <source src="../son.mp3/septembre/instrumental.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/septembre/instrumental.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible 
+        </audio>
+              </sub></sub></sub>) ou quelques belles pages fort bien restituées, en fin de programme : Benedicamus de Saint Bernard et de Vérone<sub><sub><sub>
+                  <audio controls preload="none">
+                    <source src="../son.mp3/septembre/peregrina.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/septembre/peregrina.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible 
+        </audio>
+              </sub></sub></sub>). Comme souvent dans ce genre de cas, l'ensemble a gardé en réserve un morceau enfin alerte qu'il a proposé en bis, en gardant sans doute d'autres pour de meilleures occasions.</p>
+              
+              
+              
+             <div class="conteneurImageSeule">
+                      <div>
+                          <figure>
+                              <img src="../images/septembre/smith.png" alt="Hopkinson Smith"/>
+                          </figure>
+                      </div>
+              </div> 
+              
+              
+              
+<p><strong>Mercredi 30/09/2020.</strong>  Un récital d'Hopkinson Smith au luth (ou au théorbe) est une expérience acoustique rare que tout médecin ORL devrait prescrire à ses patients aux tympans  bouchés. Rien que les (ré)accords  de l'instrument entre les morceaux sont des régals en soi.   Pour cette fois, l'interprète a heureusement reçu carte blanche pour composer son programme à l'abri du thème de l'année dont on ne voit pas, de fait, comment il aurait pu l'exploiter.  Le luth renaissance est (à égalité avec le théorbe et le clavecin) l'instrument à cordes pincées  qui délivre les sonorités les plus subtiles. Deux compositeurs se sont particulièrement distingués au 17<sup>ème</sup> siècle, l'anglais John Dowland (1563-1626) et l'allemand Johann Hieronymus Kapsberger (1580-1651). Dowland passe pour le maître de la mélancolie organisée tandis que Kapsberger  est davantage au service de la technique de l'instrument, ce qui présente au moins l'avantage de la variété. La première partie du récital, consacrée aux compositeurs  élisabéthains,  John Dowland et Anthony Holborne, a permis  d'entendre la fort belle <a href="https://www.youtube.com/watch?v=syuDSHXybZI">Fantasy by the most famous Gregorio Huwet</a> et de  créer une attente vers  l'évasion  dynamique de la seconde partie, précisément consacrée à Kapsberger. De celle-ci, on retiendra particulièrement  l'enchaînement improvisé pour la circonstance  "Toccata Arpegiata-Canario",    deux extraits du <a href="https://www.youtube.com/watch?v=5eq_x0rL138">Premier Livre de Tablatures</a> (Respectivement en 47:29 puis en 6:25 dans l'enregistrement complet). Ce recueil magistral, daté de 1611, ayant été prévu pour le théorbe, il a été  adapté sans inconvénient majeur pour le luth. Au bilan, il ne manquait à l'appel du luth que quelques pages de <a href="https://www.youtube.com/watch?v=v8S6w93D6KI">Sylvius Leopold Weiss</a> (1687-1750), un autre compositeur bien inspiré par l'instrument, que Smith aurait pu avantageusement servir en bis plutôt que de revenir à Dowland, la mélancolie n'étant décidément pas le remède idéal au coronavirus.</p>
+
+
+
+<div class="conteneurImageSeule">
+                      <div>
+                          <figure>
+                              <img src="../images/septembre/mechelen.png" alt="Reinoud Van Mechelen et A Nocte Temporis"/>
+                          </figure>
+                      </div>
+              </div>
+                  
+                  
+
+<p><strong>Vendredi 02/10/2020.</strong> Le festival s'est terminé en beauté au son d'airs d'opéra de l'école française, à l'époque de Louis XIV. Le héros de ce soir était  le  haute-contre  Louis Gaulard Dumesny, un cuisinier chantant dont  Lully  avait remarqué la voix incomparable et qu'il s'était attaché à  former musicalement. Pour la petite histoire, Dumesny  n'a jamais lu la musique qu'il restituait de mémoire. Dans la panoplie très diversifiée des voix d'opéra, le haute-contre se définit comme un ténor possédant suffisamment de facilités dans l'aigu pour passer en   voix de tête sans qu'on perçoive de rupture dans l'émission sonore (A ne pas confondre avec un falsettiste, qui lui chante en permanence en voix de fausset).  L'autre héros de ce soir, Reinoud Van Mechelen (né à Louvain, en 1987), a  ressuscité de fort belle façon l'art de Dumesny, parfaitement secondé par &quot;son&quot; orchestre baroque &quot;A Nocte Temporis&quot;. Le programme, qui a couvert les trois dernières décennies du 17<sup>ème</sup> siècle, a consacré la première partie au maître fondateur de la tragédie lyrique  française, Jean-Baptiste Lully (1632-1687). L'opéra lullyste émarge fortement au théâtre au point que l'essentiel de l'expression repose sur la parfaite diction de textes d'un autre âge. Il a fallu attendre ses successeurs et en ce qui nous a concerné, la deuxième partie, pour que la musique prenne ses droits en revendiquant de partager l'émotion d'égal à égal.  De celle-ci, on retiendra les airs de pascal Collasse (<a href="https://www.youtube.com/watch?v=Eflg1nErOSA">Ciel ! En voyant ce Temple redoutable ...</a>), Henry Desmarest (<a href="https://www.youtube.com/watch?v=CP-xNxnBukI">Lieux charmants, retraites tranquilles ...</a>) et André Cardinal Destouches (Hélas! Rien n'adoucit l'excès ... <sub><sub><sub>
+        <audio controls preload="none">
+                    <source src="../son.mp3/septembre/destouches.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/septembre/destouches.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible 
+        </audio>
+              </sub></sub></sub>). Un public enthousiaste a remercié ces interprètes spécialement venus des Flandres pour nous donner  une  leçon de distinction à la française, tout un symbole.</p>
+              
+              <p>Pour  ceux qui voudront se replonger dans l'atmosphère de ces Nuits, voici quatre enregistrements qui correspondent à autant de programmes  entendu à Liège. Pour les trois autres, il vous faudra fouiller dans les archives, en particulier écouter, si ce n'est déjà fait, l'un des plus beaux <a href="https://www.youtube.com/watch?v=eLYoTnt3cXM">CD</a> jamais consacrés à la musique baroque et produit par la Cappella Mediterranea (Retrouvez &quot;Che si puo fare&quot;, de Barbara Strozzi, chanté divinement par Mariana Flores, en 23:41).</p> 
+
+<div class="conteneurImages">
+                      <div> <figure>
+                              <img src="../images/septembre/vinci.png" alt="Doulce Mémoire" />
+                              <figcaption>Doulce Mémoire</figcaption>
+        </figure></div>
+                      <div><figure>
+       <img src="../images/septembre/miracle.png" alt="Peregrina" />
+                              <figcaption>Peregrina</figcaption>
+                          </figure></div>
+                          <div> <figure>
+                              <img src="../images/septembre/kapsberger.png" alt="Hokinson Smith" />
+                              <figcaption>Hokinson Smith</figcaption>
+                                 </figure></div>
+                      <div><figure>
+       <img src="../images/septembre/dumesny.png" alt="Reynoud Van Mechelen" />
+                              <figcaption>Reynoud Van Mechelen</figcaption>
+                          </figure></div>
+</div>
+
+
+
+
+            
+          </div>
+
+
+            <a id="ancreRetourHautPage" href="#site">&uarr;</a>
+
+            <!-- Inclusion footer -->
+            <div id="footer"></div>
+
+        </div>
+    
+    
+    </div>
+
+</body>
+</html>

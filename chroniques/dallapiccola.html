@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Compositeurs négligés | Luigi Dallapiccola</title>
+  <meta name="description" content="Luigi Dallapiccola a été le grand pionnier de la musique moderne en Italie. Ses gènes l'ont naturellement prédisposé à s'exprimer avec lyrisme même lorsqu'il a adopté les techniques sérielles. Il les a simplement domestiquées." />
+  <link rel="shortcut icon" href="../logo.ico" />
+  <link href="../style.css" rel="stylesheet" type="text/css" /> 
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <script src="../js/jquery-1.10.2.js"></script>
+  <script src="../js/menus.js"></script>
+  <script src="../js/design.js"></script>
+  <script src="../js/gestionAudioVideo.js"></script>
+  <script> 
+    // Inclusion Header et Footer
+    $(function(){
+      $(function(){
+        $.ajax({
+           url: "../template/header.php",
+           type: "POST",
+           data: ({ROOT: '../'}),
+           success: function(data) {
+             $("#header").html(data);
+             $("#tiresdeloubli").addClass("active"); /*a changer en fonction de la page*/
+             update_design_when_header_loaded();
+          }
+        });
+      });
+      $("#miniMenus").load("../template/miniMenus.php", { ROOT: '../' }, mini_menus_after_loading);
+      $("#footer").load("../template/footer.php", { ROOT: '../' }, update_design_footer);  
+    });
+  </script> 
+</head>
+
+<body id="site">
+
+    <div>
+        <!-- Inclusion header -->
+        <div id="header"></div>
+
+        <div id="miniMenus"></div>
+
+        <nav id="menuLateralAncres">
+            <ul>
+                <li>
+                    <a id="ancreMusiqueSymphonique" href="#musiqueSymphonique" class="linavMenu">
+                    <span>La musique symphonique</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreOpera" href="#opera" class="linavMenu">
+                    <span>L'opéra</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreMusiqueSacree" href="#musiqueSacree" class="linavMenu">
+                    <span>La musique sacrée</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreMusiqueDeChambre" href="#musiqueDeChambre" class="linavMenu">
+                    <span>La musique de chambre</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="corps">
+
+            <div id="contenuPrincipal">
+                <h2>Compositeurs négligés</h2>
+                <h3>Luigi Dallapiccola</h3>
+
+                <nav class="filAriane">
+                    <ul>
+                        <li class="breadcrumbItem"><span>Vous êtes ici : </span> Musique</li>
+                        <li class="breadcrumbItem">
+                          <a href="../chroniques.html">Chroniques</a>
+                        </li>
+                        <li class="breadcrumbItem">
+                          <a href="../tiresdeloubli.html">Compositeurs négligés</a>
+                        </li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Luigi Dallapiccola</li>
+                    </ul>
+                </nav>  
+
+               
+  
+                <div class="blocImgFirstAndText">
+                  <div class="conteneurImageSeule">
+                      <div>
+                          <figure>
+                              <img src="../images/dallapiccola/dallapiccola.png" alt="Luigi Dallapiccola"/>
+                              <figcaption>Luigi Dallapiccola</figcaption>
+                          </figure>
+                      </div>
+                  </div>
+  
+                  <p>Luigi Dallapiccola (1904-1975) est sans doute le compositeur italien le plus important au 20<sup>ème</sup> siècle et pourtant  il est largement absent des programmes de concert. Il né  à Pisino, en Istrie, une province   qui a fait la navette entre toutes sortes d'états belligérants  sur le Continent avant de se trouver unie à la Croatie à 90% (Les 10 % restants allant à la Slovenie et c'est sans compter le cas particulier de la ville de Trieste coupée du territoire italien jusqu'à ce que l'intégration européenne libère les frontières). Ce rappel on ne peut plus succint aide à comprendre le climat politique houleux qu'a connu le jeune Luigi; il en a conservé toute sa vie des engagements politiques faisant contrepoint sur sa carrière musicale. Ses parents, membres de la communauté italienne minoritaire, lui ont montré l'exemple, étant inquiété pour activité  nationaliste subversives (Toute la famille a été incarcérée un temps à Graz, ce qui n'a pas empêché le jeune Luigi de fréquenter l'opéra local, y découvrant Mozart et Wagner). L'armistice de 1918 ayant mis un terme provisoire aux ambitions autrichiennes,  le jeune Dallapiccola a été en mesure de revenir en Italie pour y faire ses études, en particulier musicales, à Florence, ville qu'il ne quittera plus guère. jamais il n'a oublié l'épisode d'incarcération ce qui l'amènera à combattre idéologiquement y compris musicalement  tous les faits de privation  de liberté. Ce n'est donc nullement un hasard si l'une de ses oeuvres les plus emblématiqes, Il Prigioniero, aborde la thématique de l'internement arbitraire. </p>
+                  <p> <a href="http://www.walter-braunfels.de/wb-html/list-of-works?lang=en">oeuvre</a> :</p>
+                  
+                  <p> Debussy,   la Renaissance italienne encore fort peu diffusée à l'époque, Gian Francesco Malipiero puis surtout  Schönberg, Busoni, Berg et Webern ont modelé son éducation musicale.
+
+Initialement tolérant quant au régime de Mussoli il a  changé d'avis lorsque celui-ci a pactisé avec le régime nazi. a Les années 30 et 40 se sont avérées difficiles. Bien que cela soit difficile à croire, Dallapiccola a commencé comme partisan du régime fasciste, mais la campagne d'Abyssinie et la guerre civile espagnole lui ont ouvert les yeux, tout comme l'adoption par Mussolini des lois raciales d'Hitler (Laura Coen, l'épouse de Dallapiccola était juive). De cette expérience est né son premier chef-d'œuvre mature, Canti di prigionia(chants d'emprisonnement, 1938-41). Il n'était bien sûr pas question à ce stade d'une carrière publique de compositeur. En effet, il a eu la chance d'avoir été laissé à peu près seul, même s'il est entré dans la clandestinité pendant environ sept mois en 1944. Il a surtout donné des récitals de piano, bien que, par principe, pas dans les pays occupés par les nazis. En effet, il a pu, en passant par l'Autriche sur le chemin d'un récital en 1942, rencontrer Webern. Après la guerre, il est devenu une voix musicale d'après-guerre, très active au sein de la ISCM. Il a enseigné, donné des conférences, écrit et composé sur la scène internationale jusqu'en 1972, ce qui a fait de lui un malade cardiaque grave. Il n'a achevé aucun nouveau travail, bien que plusieurs croquis survivent.
+
+Le nouveau et le «difficile» ont attiré l'esprit curieux de Dallapiccola, et pas seulement dans la musique. Homme d'une immense culture, parlant couramment au moins quatre langues, il entretient des correspondances avec de nombreuses figures artistiques majeures, dont le compositeur américain Roger Sessions , l'un de ses plus proches amis. Sa propre musique montre un intérêt pour le contrepoint hautement organisé et le chromatisme lourd, tous deux levés par l'amour de la mélodie lyrique. On note également un souci de perfection formelle. Dallapiccola a écrit relativement peu, mais avec un œil sur la postérité. Sa musique du début au milieu des années 30, comme le montre le premier de ses Cori di Michelangelo Buonarroti il ​​giovane(1933-36), est marquée par la modalité et un archaïsme conscient de soi. Cependant, les derniers chœurs montrent un chromatisme angoissé. Il s'intéresse de plus en plus aux procédures sérielles mais les utilise à sa manière. Dans les Canti di prigionia , par exemple, les lignes fonctionnent comme des mélodies plutôt que comme des déterminants architecturaux. Les années 50 ont vu Dallapiccola utiliser la technique dodécaphonique avec plus de rigueur (par exemple, l'oratorio Job (1950) et l'orchestre Piccola musica notturna (1954).
+
+Dallapiccola, comme il sied à son héritage italien, a écrit quelques-uns des principaux opéras du XXe siècle: Volo di notte (vol de nuit, 1939), Il prigioniero (le prisonnier, 1948), et son chef-d'œuvre, Ulisse (Ulysse, 1968), qui Condense brillamment l' Odyssée d' Homère en une soirée au théâtre et gère également des spéculations sophistiquées sur la condition humaine. Vous ne pouvez appeler aucun d'entre eux un succès, mais tous subissent un réveil de temps en temps. Non content d'étendre le vérisme , Dallapiccola a tracé sa propre voie, en prenant des sujets insolites et en écrivant ses propres livrets. Chacun de ses opéras redéfinit la nature du drame musical.
+
+Dallapiccola a également écrit certains des meilleurs essais sur la musique que je connaisse. Je le considère comme un critique au niveau de Schumann et Shaw. Il porte son savoir considérable à la légère et parvient à vous apprendre quelque chose en même temps.
+
+Je doute que Dallapiccola remportera un jour la popularité de Puccini ou de Strauss . Néanmoins, c'est un compositeur avec une passion considérable, bien qu'il dirige cette passion non seulement vers le personnage et la représentation des états émotionnels, mais aussi vers la politique et les idées. C'est un plaisir de passer du temps en sa compagnie. </p>
+                  
+                 
+                    
+                    
+              </div>
+                  </div>
+
+                </div>
+
+              </div>
+
+
+            <a id="ancreRetourHautPage" href="#site">&uarr;</a>
+
+            <!-- Inclusion footer -->
+            <div id="footer"></div>
+
+        </div>
+    
+    
+    </div>
+
+    <!-- Effet smooth ancres -->
+    <script src="../js/onclick.js"></script>
+    <script src="../js/anchors.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Compositeurs négligés | George Walker, Olly Wilson, Adolphus Hailstork : Black (classical) music matters</title>
+  <meta name="description" content="Les violences policières régulièrement exercées sur la communauté afro-américaine suscitent de façon récurrente des critiques à l'égard d'une musique classique jugée insuffisamment inclusive. Contre-analyse mettant en valeur les oeuvres de George Walker, Olly Wilson et Adolphus Hailstork." />
+  <link rel="shortcut icon" href="../logo.ico" />
+  <link href="../style.css" rel="stylesheet" type="text/css" /> 
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <script src="../js/jquery-1.10.2.js"></script>
+  <script src="../js/menus.js"></script>
+  <script src="../js/design.js"></script>
+  <script src="../js/gestionAudioVideo.js"></script>
+  <script> 
+    // Inclusion Header et Footer
+    $(function(){
+      $(function(){
+        $.ajax({
+           url: "../template/header.php",
+           type: "POST",
+           data: ({ROOT: '../'}),
+           success: function(data) {
+             $("#header").html(data);
+             $("#tiresdeloubli").addClass("active"); /*a changer en fonction de la page*/
+             update_design_when_header_loaded();
+          }
+        });
+      });
+      $("#miniMenus").load("../template/miniMenus.php", { ROOT: '../' }, mini_menus_after_loading);
+      $("#footer").load("../template/footer.php", { ROOT: '../' }, update_design_footer);  
+    });
+  </script> 
+</head>
+
+<body id="site">
+
+    <div>
+        <!-- Inclusion header -->
+        <div id="header"></div>
+
+        <div id="miniMenus"></div>
+
+        <div id="corps">
+
+            <div id="contenuPrincipal">
+                <h2>Compositeurs négligés</h2>
+                <h3>George Walker, Olly Wilson, Adolphus Hailstork :<br/> Black (classical) music matters</h3>
+
+                <nav class="filAriane">
+                    <ul>
+                        <li class="breadcrumbItem"><span>Vous êtes ici : </span> Musique</li>
+                        <li class="breadcrumbItem">
+                          <a href="../chroniques.html">Chroniques</a>
+                        </li>
+                        <li class="breadcrumbItem">
+                          <a href="../tiresdeloubli.html">Compositeurs négligés</a>
+                        </li>
+                        <li class="breadcrumbItem breadcrumIitem--current">George Walker, Olly Wilson, Adolphus Hailstork</li>
+                    </ul>
+                </nav>  
+           
+                
+      
+       <p>Une énième bavure policière  a récemment coûté la vie à un certain George Floyd, dans le Minnesota. Celui-ci avait sans doute enfreint une loi et sous-estimé les risques qu'il prenait en ignorant les sommations  d'usage mais il avait  plus sûrement  aggravé son cas du simple fait d'être noir. Images  à l'appui, les médias du monde entier ont relaté les faits, relayant bientôt le slogan lapidaire d'une communauté  révoltée autant qu'endeuillée, &quot;Black lives matter&quot;.</p>
+       <p>Ce site ne se mêlant  pas de politique, il s'abstiendra d'analyser les dessous de ce <a href="https://fr.wikipedia.org/wiki/Mort_de_George_Floyd">tragique événement</a>. Par contre, il s'occupe de musique et lorsqu'il "apprend", en particulier par le New York Times, que la musique dite &quot;classique&quot; contribuerait  au mal endémique américain au motif qu'elle ne serait pas assez inclusive  d'où elle porterait en elle des germes de racisme,  alors il se doit de réagir. Qu'une société perde  les pédales est une chose, est-ce une raison pour  qu'elle se cherche des justifications aussi improbables ? De même est-il nécessaire qu'un éminent professeur d'Université   relaye de tels bobards aux fins d'analyse (Paul May, Univ. Québec à Montréal, cf le compte-rendu paru en France dans <a href="https://www.lefigaro.fr/vox/culture/etats-unis-la-musique-classique-est-elle-un-privilege-des-blancs-et-des-asiatiques-20200621">Le Figaro</a>) ? Cette chronique n'aurait pas déparé  la rubrique des billets d'humeur mais pour des raisons constructives, elle a été adaptée pour honorer in fine quelques compositeurs négligés d'ascendance africaine. </p>
+       
+      <h4>La sphère classique</h4> 
+       
+       
+       <p>Ceux qui  enchaînent le raisonnement singulier, classique = élitiste = raciste, tentent sans doute maladroitement d'exprimer des idées qu'il faut au moins entendre avant de les démonter. Trois pistes relatives à la tenue du concert classique méritent d'être évoquées brièvement : elles concernent les interprètes, le public et peut-être surtout les compositeurs. Au lendemain de l'agression mortelle de Minneapolis, les musiciens du Metropolitan Opera de New-York (MET) ont  manifesté leur émotion dans un communiqué  de presse réclamant des réformes, sociales et surtout musicales, au sein de leur institution. Ils ont plaidé pour un renouvellement progressivement inclusif de l'orchestre ainsi que pour la mise à l'affiche, pour les saisons à venir, de concerts mélangeant chefs, solistes et compositeurs de couleurs. Autant le dire tout de suite, l'achèvement de ce vaste programme  n'est pas pour demain.</p>
+       <h5>L'orchestre  classique et son public</h5>
+       <div class="conteneurImageSeule">
+                    <div>
+                      <figure>
+                        <img src="../images/wilson/nyorchestra.png" alt="N Y Philharmonic Orchestra"/>
+                        <figcaption>New York Philharmonic Orchestra</figcaption>
+                      </figure>
+                    </div>
+              </div> 
+     
+       <p>La photographie ci-dessus présente l'Orchestre  Philharmonique de New York au grand complet. Il est  frappant de n'y distinguer aucun musicien noir. La même observation vaudrait pour les autres &quot;grands&quot; orchestres américains (Les fameux &quot;Big Fives&quot;, <a href="https://nyphil.org/about-us/meet/musicians-of-the-orchestra">New York</a>, <a href="https://www.bso.org/brands/bso/about-us/musicians/bso-musicians/strings/first-violins.aspx">Boston</a>, <a href="https://cso.org/about/performers/chicago-symphony-orchestra/violins/">Chicago</a>, <a href="https://www.philorch.org/your-philorch/meet-your-orchestra/musicians/">Philadelphie</a> et <a href="https://www.clevelandorchestra.com/About/Musicians-and-Conductors/Meet-the-Musicians/">Cleveland</a>) et elle différerait à peine si l'on s'intéressait aux phalanges moins prestigieuses :  tous niveaux confondus, la proportion d'instrumentistes noirs stagnerait en-dessous de 2 %. Notez que la communauté hispanique serait à peine mieux représentée soit moins de 3 %). N'en concluez pas que l'orchestre soit réservé aux musiciens blancs : de fait, les  asiatiques sont   majoritaires parmi les violons et l'un d'eux est même plus souvent qu'à son tour violon conducteur. L'explication est simple : depuis plusieurs décennies les violonistes (et les pianistes) asiatiques  s'illustrent dans  les grands concours internationaux d'où ils n'éprouvent aucune peine à se faire engager lors des auditions de recrutement un peu partout dans le monde. Leur niveau d'excellence ne tombe pas du ciel :  qu'ils proviennent de Chine, de Corée du Sud, de Singapour, de Taïwan voire du Japon, ces musiciens travaillent dur pour acquérir la maîtrise d'un instrument et d'un répertoire qui ne leur sont  pourtant pas naturellement  familiers. </p>
+       <p>Les musiciens noirs américains ont  leurs raisons de ne pas adhérer au  système en place : peu disposés à adopter les codes musicaux de leurs  oppresseurs,  ils ont cherché et trouvé une échappatoire dans le jazz, un art spontané qui convient à leur sens de  l'improvisation. Pour les mêmes raisons, ils ont privilégié  la pratique d'instruments faciles à détourner de leur usage  classique (Cuivres, contrebasse, percussions, etc); même le piano a reçu un traitement spécifique de leur part. En résumé, s'ils ont largement ignoré la sphère classique, c'est la conséquence de choix  délibérés et  nullement d'une quelconque ségrégation imposée de l'extérieur.  </p>
+       <p>On a  longtemps soutenu  l'idée que des préjugés ethniques et une pauvreté  endémique ont constitué des obstacles majeurs à la formation classique de musiciens afro-américains.  La pianiste <a href="https://youtu.be/0WHHW8PrF6Q">Nina Simone</a>  est l'exemple typique, qui s'est vu refuser une bourse au Curtis Institute : elle a  de ce fait renoncé au parcours classique, son premier choix, pour se reconvertir dans le jazz (mais elle n'a jamais oublié ses rêves, ne manquez pas la transition &quot;alla Bach&quot;, en 0:50 dans l'extrait proposé). On veut bien croire que l'accès aux grandes écoles (universitaires) de musique n'a  jamais été facile pour les musiciens noirs, pas plus que l'entrée à l'université n'a été de soi pour les femmes européennes,  il y a 100 ans, mais les temps sont faits pour être révolus  et l'histoire  assure  que pour enregistrer un progrès, une attitude volontariste vaut mieux qu'une attente passive.</p>
+       <p>L'accès aux grandes écoles étant particulièrement coûteux aux USA, on comprend que l'obstacle financier a pu dissuader plus d'un candidat démuni. Imparable il y a 50 ans,   cet argument l'est-il encore autant que cela ? Tous les  afro-américains ne sont pas pauvres or on n'a jamais entendu que (le basketteur) Michael Jordan ou n'importe lequel de ses pairs nantis aient consacré le moindre cent de leur fortune colossale à la promotion de l'art musical (classique) au sein de leur communauté. Certes rien ne les y oblige, surtout si la conviction manque que le projet en vaudrait la peine, mais alors, pour en revenir au débat ouvert en introduction, pourquoi faudrait-il rendre la société  responsable des choix personnels d'une classe de ses individus ?       </p>
+       <p>Il est  exact que les grands solistes  noirs sont rares sur la scène  classique et le jeune violoncelliste (anglais) <a href="https://www.youtube.com/watch?v=lNVe_1Eb5dw">Sheku Kanneh-Mason</a>, que vous avez peut-être croisé lors du mariage du Prince Harry et de Meghan Markle, fait  figure d'exception.  Cependant plusieurs chefs se sont tôt illustrés à la tête d'orchestres de renom dont  Dean Dixon (1915-1976), James DePriest (1936-2013) et surtout Paul Freeman (1936-2015), ce dernier particulièrement actif  pour défendre des partitions composées au sein de sa communauté. Mieux encore, les cantatrices de couleur ont été très présentes sur les scènes opératiques du monde entier, dès la fin de la deuxième guerre, preuve s'il en fallait que le monde classique n'est pas si hermétique qu'on le prétend : <a href="https://www.youtube.com/watch?v=YlSYwSOlN04">Grace Bumbry</a>, <a href="https://www.youtube.com/watch?v=WP3-xk9aaik&list=RDWP3-xk9aaik&start_radio=1&t=9">Jessye Norman</a>, <a href="https://www.youtube.com/watch?v=SsvqSDg4als">Shirley Verrett</a>, <a href="https://www.youtube.com/watch?v=9OPyBF8wYcI">Martina Arroyo</a>, <a href="https://www.youtube.com/watch?v=IaV6sqFUTQ4">Leontyne Price</a>, <a href="https://www.youtube.com/watch?v=hzhgDsXd5nw">Barbara Hendricks</a> et <a href="https://www.youtube.com/watch?v=NceFbvpq7wE">Roberta Alexander</a> ont  de fait compté parmi les meilleures interprètes lyrique au 20<sup>ème</sup> siècle (Curieusement, les messieurs n'ont guère été si brillants, seul Simon Estes, Eric Owens s'étant   imposés et plus récemment Lawrence Brownlee). Il semble  dès lors rétrospectivement  étrange que  les musiciens du MET  aient été les premiers à s'impliquer  dans une demande de réforme de la sphère musicale américaine alors que  c'est précisément  l'opéra qui s'est montré le plus inclusif envers les musiciens noirs, des musiciennes de surcroit ! On le voit, aucune fatalité ne semble peser autant qu'on le dit sur l'accession des musiciens de couleurs à la scène classique.</p>
+       <p>Le public des salles de concert    est actuellement à l'image de la scène, majoritairement blanc  avec une proportion non négligeable d'asiatiques. Si la  communauté noire  y est si  peu présente, c'est par manque  d'intérêt  et nullement parce que l'accès aux salles seraient filtré ou qu'il serait hors de portée de <strong><em>toutes</em></strong> les bourses. L'on voit bien que les arguments traditionnellement invoqués ne tiennent plus la route et qu'il convient plutôt d'incriminer un manque d'affinité avec le principe même du concert dit &quot;sérieux&quot;. C'est loin d'être inexplicable : de tous les continents habités, l'Afrique est incontestablement celui qui éprouve la moindre fascination pour la musique (classique) occidentale. Elle  l'ennuie parce qu'elle ne bouge pas assez et lorsqu'elle bouge, parce qu'elle ne bouge pas comme il le faudrait. C'est dans la nature africaine et c'est bien son droit mais alors, au risque de se répéter, cessons d'opposer des cultures qui ont peu en commun.</p>
+<p><i>Note. Pour en revenir au point de départ, personne ne  conteste sérieusement que les USA peinent à trouver un équilibre honorable entre ses communautés raciales et que ce soit encore le cas en 2020 interpelle vraiment. Une révolution pacifique serait sans doute nécessaire encore faudrait-il qu'elle  se prépare en profondeur dans un cénacle de  Lumières; la rue achèvera le travail lorsqu'il aura été pensé. A Minneapolis, les gens ont défilé   pour la énième fois depuis Martin Luther King. Hélas, sans préparation intellectuelle, il n'en est rien sorti que des désordres vite réprimés. De fait,  3 mois à peine après le meurtre de George Floyd, c'est Jacob Blake qui a subi un sort comparable dans le Wisconsin et l'on ne voit pas la moindre perspective   que cela cesse. Toutes les oppressions qu'on observe un peu partout dans le monde ne sont pourtant pas nécessairement le fait d'hommes de couleur différente.  En Afrique, la République démocratique du Congo, un pays  potentiellement très riche,  réussit l'exploit de réserver à sa population  le triste  176<sup>ème</sup>  niveau de vie sur 200 ! Ce grand pays est pourtant indépendant depuis 60 ans et il n'a plus aucune raison  valable de se plaindre des (éventuels) méfaits de la colonisation (belge). Restons au Congo sur une note positive : savez-vous qu'on trouve à Kinshasa  un authentique <a href="https://www.youtube.com/watch?v=GdULXWFVTSs">orchestre symphonique</a>, dit Kimbanguiste, du nom de son père spirituel et fondateur Simon Kimbangu (1887-1951) ? Peu importe son niveau d'excellence et les conditions  précaires dans lesquelles il travaille, ses musiciens largement  autodidactes et démunis forcent l'admiration par la foi qui les anime au service d'une musique qui ne leur est pas spontanément naturelle. Ces hommes et ces femmes (Actuellement 200 instrumentistes et choristes !) ne s'apitoient pas sur leur sort matériel pourtant peu enviable,  ils se libèrent par la musique, sans se poser la question de qui les aidera. Lorsqu'ils se produisent à l'étranger dans des oeuvres du grand répertoire (Beethoven, Brahms, Schubert, ...), ils se font encadrer par des musiciens professionnels mais, <a href="https://www.youtube.com/watch?v=53jUkJxf8JY">à la maison</a>, ils se débrouillent seuls et cela change leur vie. Pour être  complet mentionnons qu'il existe d'autres orchestres  sur le continent africain, en Afrique du Sud (Le Cap et Johannesburg) au Ghana, en Angola, au Caire, au Maroc et en Tunisie; tous  recourent cependant à une aide étrangère, européenne et asiatique.</i></p>
+
+
+<h5>L'élitisme intimidant de la musique classique</h5>
+
+       <p>L'élitisme reproché à la musique classique est une autre source de confusion. Certes, cette musique diffère de toutes celles  qui se sont développées ailleurs dans le monde. Dans sa version polyphonique, elle est née dans le Nord de la France, il y a près de 1000 ans, en même temps que s'y sont élevées les grandes cathédrales gothiques.   On peut discuter l'orgueil des prélats bâtisseurs et leur habileté à récolter par tous les moyens les fonds nécessaires à la réalisation de leurs projets démesurés mais, au bilan, on doit les créditer d'avoir  permis qu'une musique  savante  digne de ces  lieux naisse et se développe dans le cadre d'un office dont les Messes et les Motets de Guillaume Dufay ont représenté le premier achèvement.  La polyphonie savante est bien une exception culturelle occidentale dont on ne trouve aucun équivalent dans les traditions orthodoxes, juives ou musulmanes. Il ne faut donc pas s'étonner que les développements ultérieurs (même profanes) de cette exception n'aient longtemps concerné que les seuls occidentaux. </p>
+<p>A vrai dire, &quot;Classique&quot; n'est sans doute pas l'appellation  idéale car elle réfère trop à la courte période du même nom incarnée par Haydn et Mozart, mais c'est celle  que tout le monde comprend. On pourrait  l'appeler &quot;sérieuse&quot; ou même &quot;savante&quot;, ce qui aurait au moins l'avantage de rendre justice à son haut  degré de sophistication mais le problème est précisément que  certains en ont profité pour conclure qu'elle était   donc inévitablement élitiste.  Deux remarques s'imposent  d'emblée  :</p>
+       
+       <ul class="miniListCorps"> 
+<li><div class="conteneurImageSeule">
+                    <div>
+                      <figure>
+                        <img src="../images/wilson/londres2012.png" alt="Finale olympique du 100 m"/>
+                        <figcaption>Londres (2012) : Finale  du 100 m</figcaption>
+                      </figure>
+         </div>
+              </div> 
+       La Science est également savante et il ne viendrait à l'idée de personne de prétendre qu'elle est raciste au motif que Newton, Maxwell, Einstein et consorts étaient blancs ou que le Comité Nobel couronne des savants juifs en très grand nombre. La science appartient à tout le monde qui veut s'y consacrer et seules comptent la curiosité intellectuelle des individus et l'énergie mobilisée pour la satisfaire. Sinon, à ce compte, il faudrait blâmer les Jeux Olympiques d'aligner régulièrement 8 sprinters noirs en finale du 100 m ou de réserver les médailles du marathon aux  seuls éthiopiens.</li>
+       
+       <li>Quant à la musique, elle n'est savante que dans le chef de ceux qui la composent  et l'interprètent. Ceux  qui se contentent (dans tous les sens du terme) de l'écouter -  ils sont infiniment plus nombreux - ne sont nullement obligés d'être particulièrement instruits : il leur suffit d'une paire d'oreilles et d'une âme pour vibrer. La musique, fût-elle savante, appartient à tout le monde et sauf désintérêt personnel, ce qui ne se discute pas, ou paresse intellectuelle, ce qui est plus inquiétant, personne n'a vraiment de motif  d'en critiquer le soi-disant élitisme. La musique peut être vue comme une science  affranchie des contraintes de la logique. Elle fournit à la société le contrepoids nécessaire à une technologie toujours plus envahissante. Certains la trouvent plus ou moins intimidante selon son degré de sophistication mais tout qui veut s'en instruire trouvera toujours matière à  progresser. Beethoven, dont on fête les 250 ans, ne disait-il pas : &quot;La Musique est une révélation plus haute que toute Sagesse et toute Philosophie&quot;. Qui se priverait d'un tel bienfait au motif qu'un effort est requis ? </li>
+       </ul>
+<h5>Les compositeurs</h5>
+       
+       <p>La  récrimination la plus intéressante formulée par les membres du MET concerne le fait que les concerts classiques ne programment généralement que des compositeurs blancs.         Seuls des compositeurs noirs peuvent répondre à cette objection, hélas ils ne sont pas légion.  Dans les années qui ont suivi la guerre, les USA, qui avaient  réussi à exporter vers l'Europe le (bas) nylon, le chewing-gum, le ketchup et le coca-cola, se sont curieusement laissé envahir (au niveau universitaire) par la mode européenne de la musique sérielle. En en généralisant l'enseignement  au niveau  académique, ils ont involontairement trouvé  le  moyen le plus sûr d'écarter des musiciens dont la sensibilité, portée vers l'urgence de l'instant, se situe à mille lieues d'une esthétique spéculative et différée. En parcourant l'histoire de la musique afro-américaine, on découvre pourtant des musiciens de couleurs qui ont tenté l'aventure de la modernité. </p>
+<h4>Aux Temps héroïques des musiciens d'ascendance africaine</h4> 
+                
+                <p>Les premiers  musiciens  d'ascendance africaine ont été des métis dont la formation musicale a essentiellement été régentée voire assurée par un parent colon. La plupart d'entre eux, dont la liste suit, sont peu connus à l'exception toute relative du violoniste-compositeur, George Bridgetower (1778-1860). Né de l'union improbable d'un habitant des iles anglaises d'Amérique et d'une européenne dont on ne sait  trop si elle était anglaise ou polonaise, il serait   passé  à une postérité durable s'il n'avait pas saboté son affaire. En 1803, il a vécu l'insigne honneur de créer la Sonate n°9, pour violon &amp; piano, de Beethoven, avec le compositeur au clavier. Il a ensuite  fâché  le Maître par une remarque déplacée à l'encontre de Giulietta Guicciardi, son élève et béguin du moment. Offusqué et irascible, Beethoven lui a  retiré la dédicace de l'oeuvre au profit de Rodolphe Kreutzer, un  fameux violoniste français de l'époque, ... qui ne l'a jamais jouée, la trouvant inintelligible ! La &quot;Sonate à Kreutzer&quot; aurait donc pu s'appeler &quot;Sonate à Bridgetower&quot; ! Bridgetower a ensuite rejoint Londres où il s'est montré actif, composant des oeuvres qui ne sont plus au répertoire. Elles ont pourtant été compilées par le musicologue américain Dominique-René de Lerma (Black Music Research Journal, Vol. 10/2, 1990). </p>
+              <ul class="miniListCorps">       
+         
+         <li>
+         <div class="conteneurImageSeule">
+                    <div>
+                      <figure>
+                        <img src="../images/wilson/bologne.png" alt="Joseph Bologne, dit Chevalier de St-Georges"/>
+                      </figure>
+         </div>
+              </div> 
+         
+         
+         <a href="https://fr.wikipedia.org/wiki/Joseph_Bologne_de_Saint-George">Joseph Bologne</a> (1745-1799), dit Chevalier de St-Georges, est né en Guadeloupe  d'un  colon  blanc d'extraction noble et d'une  esclave noire. Bien qu'ayant nativement hérité du statut d'esclave, il s'est trouvé   automatiquement affranchi  à la faveur de son accueil  en France, dans la famille paternelle, où il a reçu une éducation soignée. Doué, il a connu une ascension fulgurante  dans le métier des armes, au service de la Révolution, et dans celui des arts, au service de la Musique (<a href="https://www.youtube.com/watch?v=TT5cbArFpiw">Concertos en sol, en la, en ut et en ré</a>, pour violon).</li>       
+         <li>
+         <div class="conteneurImageSeule">
+                    <div>
+                      <figure>
+                        <img src="../images/wilson/garcia.png" alt="José Mauricio Nunes Garcia"/>
+                      </figure>
+         </div>
+              </div> 
+         
+
+         Le Père <a href="https://fr.wikipedia.org/wiki/Jos%C3%A9_Maur%C3%ADcio_Nunes_Garcia">José Mauricio Nunes Garcia</a> (1767-1830),  né  (et mort) à Rio de Janeiro   de parents tous deux métis  affranchis, a reçu ses premières leçons  d'un   ami de la famille. Ordonné prêtre, il a surtout composé  de la musique d'église  (<a href="https://www.youtube.com/watch?v=xUcLxn-cbDw">Missa de Nossa Senhora </a><a href="https://www.youtube.com/watch?v=xUcLxn-cbDw">da Conceição</a>).</li>
+         
+         <li>
+         
+         <div class="conteneurImageSeule">
+                    <div>
+                      <figure>
+                        <img src="../images/wilson/white.png" alt="José Silvestre White"/>
+                      </figure>
+         </div>
+              </div> 
+              
+              <a href="https://fr.wikipedia.org/wiki/Jos%C3%A9_White_Lafitte">José Silvestre White</a> (Joseph White) (1836-1918), né d'un père espagnol et d'une mère afro-cubaine,  a suivi les traces de son père lui-même violoniste amateur (Beau <a href="https://www.youtube.com/watch?v=MWDtVvHwQCo">Concerto en fa dièse mineur</a>, pour violon).</li>
+              
+         <li>
+         
+          <div class="conteneurImageSeule">
+                    <div>
+                      <figure>
+                        <img src="../images/wilson/joplin.png" alt="Scott Joplin"/>
+                      </figure>
+         </div>
+              </div>
+              
+              <a href="https://en.wikipedia.org/wiki/Scott_Joplin">Scott Joplin</a> (1868-1917) est davantage connu. Né aux Etats-Unis d'un père  affranchi et d'une mère née libre, tous deux musiciens amateurs, il n'a connu aucune concurrence dans le domaine très particulier du <a href="https://www.youtube.com/watch?v=15mojmMZFiE">ragtime</a>, une forme qu'il a poussée à son meilleur degré de perfection avant qu'elle décline  au rang de genre classique mineur puis  se dilue dans le jazz. Joplin a montré de réelles dispositions dans son unique opéra  <a href="https://www.youtube.com/watch?v=Wrldrnv7Gy8">Treemonisha</a>, prônant l'éducation comme remède à la discrimination raciale. Ce fut le premier &quot;black-opera&quot;, 16 ans avant Porgy and Bess de George Gershwin. Treemonisha ne rencontra aucun succès auprès d'une critique blanche peu pressée de s'y intéresser et  un public noir que l'oeuvre n'encouragea pas à fréquenter l'opéra. Rongé par la maladie, l'auteur n'a pas eu  le temps de l'orchestrer complètement (Cela a été fait par Rick Benjamin et l'oeuvre a fait l'objet d'un enregistrement relativement récent chez DGG). </li>
+              
+         <li>
+         
+         <div class="conteneurImageSeule">
+                    <div>
+                      <figure>
+                        <img src="../images/wilson/taylor.png" alt="Samuel Cooleridge-Taylor"/>
+                      </figure>
+         </div>
+              </div>
+              
+              Né d'une  mère anglaise et d'un père  originaire de Sierra Leone, <a href="https://en.wikipedia.org/wiki/Samuel_Coleridge-Taylor">Samuel Cooleridge-Taylor</a> (1875-1912) a grandi en Angleterre dans un environnement musical.  Son oeuvre la plus connue (en son temps !) fut la suite <a href="https://www.youtube.com/watch?v=pkqaSqwHlsw">Hiawatha</a>, sans doute plaisante mais fort peu digne du surnom de &quot;Mahler africain&quot; dont on a pompeusement baptisé son auteur ! Vous n'aurez aucune peine à préférer sa brillante <a href="https://www.youtube.com/watch?v=lG2OyyFPkbc">Ballade pour orchestre</a> ou ses  <a href="https://www.youtube.com/watch?v=EPRNWXsdb90">Variations sur un thème africain</a>.</li>
+              
+         <li>
+         
+         <div class="conteneurImageSeule">
+                    <div>
+                      <figure>
+                        <img src="../images/wilson/price.png" alt="Florence Price"/>
+                      </figure>
+         </div>
+              </div>
+              
+              <a href="https://fr.wikipedia.org/wiki/Florence_Price">Florence Price</a> (1887-1953) a surmonté avec tous les honneurs les difficultés (en musique, singulièrement symphonique !) d'être née femme et métis. En tout cas, la postérité s'est souvenue d'elle à ce titre au point que les éditions Schirmer ont acquis  les droits sur ses partitions conservées (<a href="https://www.youtube.com/watch?v=m_YDuiDjV4I">Concerto</a> pour piano, Concertos<a href="https://www.youtube.com/watch?v=YAw16T8BPQg"> n°1</a> et <a href="https://www.youtube.com/watch?v=A50gEwDu6bU">n°2</a>, pour violon, Symphonies <a href="https://www.youtube.com/watch?v=9s4yY_A2A2k">n°1</a>, <a href="https://www.youtube.com/watch?v=VPjRug77uG8">n°3</a>, <a href="https://www.youtube.com/watch?v=Py0D9-YOc4s">n°4</a>). Certaines oeuvres intègrent avec bonheur des éléments provenant du fonds populaire afro-américain, du moins de l'idée que Price s'en faisait (Réécoutez le début de la première symphonie, qui se souvient du Nouveau Monde selon Dvorak).</li>
+              
+         <li>
+         
+         <div class="conteneurImageSeule">
+                    <div>
+                      <figure>
+                        <img src="../images/wilson/still.png" alt="William Grant Still"/>
+                      </figure>
+         </div>
+              </div>
+              
+              <a href="https://fr.wikipedia.org/wiki/William_Grant_Still">William Grant Still</a> (1895-1978)  était on ne peut plus métissé, ses ancêtres se réclamant de racines afro-américaines mais aussi écossaises, irlandaises, espagnoles et cherokees ! Sa musique plutôt bien écrite (5 symphonies et 7 opéras !)  n'a pas évité   une  légèreté coupable, héritée d'une fréquentation un peu trop assidue des studios d'Hollywood (Symphonies <a href="https://www.youtube.com/watch?v=x4wVSdzWd-M">n°1</a>, <a href="https://www.youtube.com/watch?v=Fx6cZmfEOGU">n°4</a>, <a href="https://www.youtube.com/watch?v=ZZMPaM8ROhQ">n°5</a>, <a href="https://www.youtube.com/watch?v=aDbfNS48XPE">The american Scene</a>).</li>
+              
+         <li>
+         
+         <div class="conteneurImageSeule">
+                    <div>
+                      <figure>
+                        <img src="../images/wilson/dawson.png" alt="William Levi Dawson"/>
+                      </figure>
+         </div>
+              </div>
+              
+              <a href="https://fr.wikipedia.org/wiki/William_Levi_Dawson">William Levi Dawson</a> (1899-1990) est surtout connu pour ses arrangements de spirituals (<a href="https://www.youtube.com/watch?v=cc3UO9FpZqw">Soon-ah Will Be Done</a>) et pour une incursion isolée dans le domaine symphonique (<a href="https://www.youtube.com/watch?v=wPhDb3XnXHs">Negro Folk Symphony</a>). Cette oeuvre attachante  fait regretter qu'il n'ait pas insisté dans cette voie.         </li>
+              </ul>
+              <p>Tous  ces musiciens  ont  reproduit avec plus ou moins de bonheur des schémas  européens, Florence Price méritant assurément une mention spéciale. Il a toutefois fallu attendre  la génération suivante pour découvrir des musiciens (classiques) noirs décidés à s'affranchir des clichés traditionnellement associés à une tradition apprise et/ou héritée d'un milieu social contraignant.</p>
+<h4>Aux temps modernes de l'émancipation         </h4>
+<p>Les musiciens appartenant à la génération suivante ont (enfin) apporté la preuve qu'il était parfaitement envisageable d'entreprendre des études classiques au sein d'universités réputées et d'y recevoir l'estime, les encouragements et pourquoi pas les coups de pouce bienvenus de la part de professeurs soucieux de les lancer  dans le circuit professionnel.  </p>
+<p>Commençons par évoquer le cas vraiment particulier de Julius Eastman (1940-1990). Remarquablement doué pour le chant et le piano, il  a  pris des leçons de composition au célèbre Curtis Institute  de Philadelphie, captant en particulier l'attention de Lukas Foss déterminé à favoriser sa carrière. Malheureusement  prédisposé à oublier les leçons reçues, il a  rompu avec toutes les bonnes manières, choisissant de ne se fier qu'à son seul instinct :  par exemple, noter  ses oeuvres   dans un langage de son invention ne pouvait le mener aussi loin qu'espéré. Ses albums &quot;crossover&quot;  raviront  cependant les amateurs de (très) bonnes musiques alternatives, en particulier minimalistes (<a href="https://www.youtube.com/watch?v=e_YauvN9UE4">Stay on it</a>, <a href="https://www.youtube.com/watch?v=WHgDRv6NVCI">Femenine</a>, <a href="https://www.youtube.com/watch?v=QxtLoItArrc">Unjust Malaise</a> et surtout l'époustouflant <a href="https://www.youtube.com/watch?v=6_QGQcKq1ik">Evil Nigger</a>).   Instable, Eastman a fini par sombrer  dans l'univers de la drogue qui l'a stérilisé et détruit. </p>
+<p>Si l'on réintègre les droits chemins, on découvre  trois compositeurs   particulièrement dignes d'intérêt :</p>
+         <ul class="miniListCorps">
+           <li>
+           <div class="conteneurImageSeule">
+                    <div>
+                      <figure>
+                        <img src="../images/wilson/walker.png" alt="George Walker"/>
+                        <figcaption>George Walker</figcaption>
+                      </figure>
+                    </div>
+             </div>
+           
+           George Walker (1922-2018)   est l'exemple parfait du musicien noir qui a suivi une trajectoire académique complète, apportant la preuve par l'exemple que cela était possible. Il a   cassé toutes les idées reçues relatives à la condition présumées précaires des musiciens (classiques) noirs : 1) Diplômé du fameux Curtis Institute sous les houlettes de Rudolf Serkin, William Primrose et Gregor Piatigorsky;  2) Stagiaire en perfectionnement  auprès de Nadia Boulanger à Paris; 3) Premier pianiste (classique) noir à s'être produit en soliste avec de grands orchestres américains (Philadelphie, Baltimore, ...) et en tournée européenne (Amsterdam, Londres, Francfort, ...); 4) Premier Prix Pulitzer (Section musique, 1996) remporté par un musicien afro-américain (Avec <a href="https://www.youtube.com/watch?v=Qy0NwJt6uJE">Lilacs</a>, pour soprano &amp; orchestre).  Ses oeuvres ont  été créées par de grands interprètes  mais  le succès remporté s'est inexplicablement dilué dans le temps. Ecoutez  l'émouvant <a href="https://www.youtube.com/watch?v=gZLLVacAT6Y">Lyric</a> pour cordes, <a href="https://www.youtube.com/watch?v=AKihVHxre_g">Da Camera</a>, la <a href="https://www.youtube.com/watch?v=NCsDPpRqWto">Symphonie n°3</a>, le <a href="https://www.youtube.com/watch?v=Gjp84IDB0ic">Concerto</a> pour violon et la <a href="https://www.youtube.com/watch?v=S6pRXxyrgxw">Sonate n°1</a> pour piano. </li>
+           <li>
+           
+            <div class="conteneurImageSeule">
+                    <div>
+                      <figure>
+                        <img src="../images/wilson/wilson.png" alt="Olly Wilson"/>
+                        <figcaption>Olly Wilson</figcaption>
+                      </figure>
+                    </div>
+             </div>
+              
+           Olly Wilson (1937-2018) a suivi une trajectoire comparable,   y ajoutant un ancrage d'enseignant  à la prestigieuse Université de Berkeley et un Prix de Rome (américain). Des trois musiciens repris dans cette section, il a été le plus aventureusement moderne à deux égards. Dans un premier temps mais ce n'est pas la partie la plus excitante de son oeuvre, il a fait une incursion dans le domaine électro-acoustique (en partie du fait de sa charge d'enseignement) (<a href="https://www.youtube.com/watch?v=coHCvItAUN8">Cetus</a>). Il s'est ensuite recentré sur une vision personnelle de la modernité musicale, y produisant  ses oeuvres les plus durables. Preuve de l'estime dont il a bénéficié auprès de quelques-uns des meilleurs chefs de son temps, il a reçu des commandes émanant des  orchestres de Boston, New York, Cleveland, Saint Louis, etc. On a heureusement conservé les traces de quelques créations  : New York (<a href="https://www.youtube.com/watch?v=AkgWdZRQgRA">Shango Memory</a>), Chicago (<a href="https://www.youtube.com/watch?v=pjK2UTX-L1k">Symphonie n°3</a>, commencez vers 16:00, il vous sera toujours possible de reprendre au début), Boston  (<a href="https://www.youtube.com/watch?v=xA9REv2hw40">Sinfonia</a>), Oakland (<a href="https://www.youtube.com/watch?v=7vauy9mZLFQ">Trilogy</a>), American Composers Orchestra (<a href="https://www.youtube.com/watch?v=YcrShcMFG40">Lumina</a>).  Le lecteur qui souhaiterait connaître l'homme autant que le musicien  peut se référer à un <a href="http://www.bruceduffie.com/ollywilson.html">Interview</a> qu'il a donné à Bruce Duffie.   </li>
+           
+    <li>       
+<div class="conteneurImageSeule">
+                    <div>
+                      <figure>
+                        <img src="../images/wilson/hailstock.png" alt="Adolphus Hailstork"/>
+                        <figcaption>Adolphus Hailstork</figcaption>
+                      </figure>
+                    </div>
+             </div>
+           
+           Autre stagiaire chez Nadia Boulanger, Adolphus Hailstork (1941- ) appartient tout comme Walker  et Wilson   à la génération des musiciens engagés dans des études sérieuses et démontrant que cela reste inévitablement la clé d'une maîtrise du langage musical (<a href="https://www.youtube.com/watch?v=DapKFDCv4SQ">Epitaph for a man who dreamed</a>, <a href="https://www.youtube.com/watch?v=ANxqIgHgxpA">Sonata da chiesa</a>, <a href="https://www.youtube.com/watch?v=ZasNkYyrEJQ">Symphonie n°2</a>, ne manquez pas le très original mouvement lent en 7:53, <a href="https://www.youtube.com/watch?v=ZSCX_ZpYEuA">Concerto</a> pour piano).</li>
+         </ul>
+         
+         <p> Vous  trouverez de rares enregistrements des oeuvres citées en exemple en fouillant le catalogue de séries spécialisées (Black Composer Series, dirigée par Paul Freeman,  réédité chez Sony) et la plus confidentielle African Heritage Symphonic Series (Cedille) où vous découvrirez en sus <a href="https://www.youtube.com/watch?v=u1XMaWTNdRQ">Essay for Orchestra</a> de William Banfield (1961- ), à l'intersection peu fréquentée du jazz contemporain et du classique. D'autres musiciens ayant ouvert la voie, tels Ulysses Kay (1917-1995) et Hale Smith (1925-2009), auraient pu figurer en amont de  cet inventaire, malheureusement leurs oeuvres  paraissent  aujourd'hui d'un modernisme démodé comme on en trouve également en Europe.</p>
+<h4>Epilogue</h4> 
+       <p>Cette chronique au sujet sensible a démarré sur le constat, tragiquement banal, que les sociétés dites démocratiques ne réservaient pas forcément le même sort à tous ses individus. Elle a fait écho au fait soutenu çà et là que certaines pratiques culturelles - dont la musique dite classique - contribueraient au divorce social. Sans aller jusqu'à prétendre qu'il s'agit d'une mauvaise fable, elle préconise qu'on ait au moins la lucidité d'admettre que la musique occidentale s'adresse historiquement en priorité aux occidentaux mais qu'elle accueille tout le monde en son sein. Rien n'interdit qu'on cherche  son bonheur ailleurs, du moment   qu'on renonce à porter une plainte qui n'est guère recevable. </p>
+       <p> Plutôt que de s'échiner à démonter le raisonnement douteux selon lequel les musiciens noirs seraient empêchés de rejoindre l'univers classique, il semble plus constructif d'attendre que les plus doués d'entre eux   y introduisent de nouveaux gènes bienvenus.  Il ne fait, par exemple, guère de doute que les rythmes africains seraient bienvenus en musique sérieuse. On me répondra qu'ils sont omniprésents dans la variété et dans le jazz mais précisément c'est de constructions élaborées dont on a besoin. Evidemment pour réussir,  la route de l'apprentissage est longue et  même lorsque le succès est au rendez-vous, il ne permet pas de faire fortune aussi sûrement qu'en  envoyant  un ballon dans un panier de basket. </p>
+       <p>Le très jeune Quinn Mason (1996- ) pourrait montrer l'exemple, lui qui a été capable de composer une <a href="https://masonianmusic.wixsite.com/home/symphony-in-a-flat">symphonie</a>  à 17 ans (Oeuvre jamais créée, la restitution est virtuelle, sur synthétiseur, et  vous  trouverez d'autres exemples sur <a href="https://soundcloud.com/quinnmasoncomposer">Soundcloud</a>, en particulier &quot;Across a golden sky&quot; et &quot;Faster&quot;, pour vents). Nul ne sait jusqu'où ce jeune musicien progressera après avoir écrit <a href="https://www.youtube.com/watch?v=niJdNmIWHjo">Sad Hours</a> ou encore  <a href="https://www.youtube.com/watch?v=FUwJyzuUdJw">A joyous Trilogy</a>, une oeuvre qu'il dirige à la tête d'un orchestre blanc. Serait-ce l'amorce du renouveau attendu ?</p>
+          </div>
+
+
+            <a id="ancreRetourHautPage" href="#site">&uarr;</a>
+
+            <!-- Inclusion footer -->
+            <div id="footer"></div>
+
+        </div>
+    
+    </div>
+
+</body>
+</html>
