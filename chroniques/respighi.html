@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Compositeurs négligés | Ottorino Respighi</title>
+  <meta name="description" content="Ottorino Respighi n'a pas écrit que les Pins et les Fontaines de Rome. C'est toute son oeuvre qui revit aujourd'hui grâce aux initiatives de quelques éditeurs curieux." />
+  <link rel="shortcut icon" href="../logo.ico" />
+  <link href="../style.css" rel="stylesheet" type="text/css" /> 
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <script src="../js/jquery-1.10.2.js"></script>
+  <script src="../js/menus.js"></script>
+  <script src="../js/design.js"></script>
+  <script src="../js/gestionAudioVideo.js"></script>
+  <script> 
+    // Inclusion Header et Footer
+    $(function(){
+      $(function(){
+        $.ajax({
+           url: "../template/header.php",
+           type: "POST",
+           data: ({ROOT: '../'}),
+           success: function(data) {
+             $("#header").html(data);
+             $("#tiresdeloubli").addClass("active"); /*a changer en fonction de la page*/
+             update_design_when_header_loaded();
+          }
+        });
+      });
+      $("#miniMenus").load("../template/miniMenus.php", { ROOT: '../' }, mini_menus_after_loading);
+      $("#footer").load("../template/footer.php", { ROOT: '../' }, update_design_footer);  
+    });
+  </script> 
+</head>
+
+<body id="site">
+
+    <div>
+        <!-- Inclusion header -->
+        <div id="header"></div>
+
+        <div id="miniMenus"></div>
+
+        <div id="corps">
+
+            <div id="contenuPrincipal">
+                <h2>Compositeurs négligés</h2>
+                <h3>Ottorino Respighi</h3>
+
+                <nav class="filAriane">
+                    <ul>
+                        <li class="breadcrumbItem"><span>Vous êtes ici : </span> Musique</li>
+                        <li class="breadcrumbItem">
+                          <a href="../chroniques.html">Chroniques</a>
+                        </li>
+                        <li class="breadcrumbItem">
+                          <a href="../tiresdeloubli.html">Compositeurs négligés</a>
+                        </li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Ottorino Respighi</li>
+                    </ul>
+                </nav>  
+                
+                
+
+                <div class="blocImgFirstAndText">
+                  <div class="conteneurImageSeule">
+                      <div>
+                          <figure>
+                              <img src="../images/respighi/respighi.png" alt="Ottorino Respighi"/>
+                              <figcaption>Ottorino Respighi</figcaption>
+                          </figure>
+                      </div>
+                  </div>
+
+                  <p>L'opéra a  pris une telle place dans la vie musicale, en Italie  au 19<sup>ème</sup> siècle (Rossini, Bellini, Donizetti, Verdi, ...), que la plupart des autres musiciens  n'ont pas vu d'autre issue que de suivre le mouvement sous peine de se  marginaliser.   Un  retour à la musique pure a bien été tenté par Giuseppe Martucci (1856-1909) mais il a trop regardé  du côté de l'Allemagne pour convaincre un pays en cours d'unification (1871).  On pourrait en dire autant  des contributions de Ferruccio Busoni (1866-1924) et d'Ermanno Wolf-Ferrari (1876-1948), deux musiciens aux ascendances à moitié germaniques  (Elles seront examinées prochainement). Il a donc fallu attendre une génération supplémentaire pour qu'une musique   instrumentale véritablement nationale voie  le jour et c'est un élève de Martucci, Ottorino Respighi (1879-1936), qui a ouvert  la voie, bientôt suivi par ses collègues, Ildebrando Pizzetti (1880-1968), Gian Francesco Malipiero (1882-1973), Alfredo Casella (1883-1947) et Mario Castelnuovo-Tedesco (1895-1968). Respighi a été le moteur de cette autre renaissance italienne.                </p>
+                  <h4>Quelques repères biographiques</h4>  
+         <p>Il existe peu de  biographies de Respighi disponibles en français mais elles sont de premières mains. Celle due à Gilbert Chapallaz (1956)  est en fait une adaptation d'un opuscule déjà ancien (1933) du musicologue Raffaele de Rensis, réalisée sous la supervision de la veuve du compositeur, Elsa Respighi. La seconde, plus récente (2018), est l'oeuvre d'un pianiste descendant  de la famille, Norberto Cordisco Respighi. C'est elle qui nous sert de fil conducteur au moins dans quelques grandes lignes.</p>
+         <p> La généalogie des Respighi est étonnamment riche et variée : sans remonter à Moïse, on y dénombre, entre autres, un astronome, un dermatologue, un Cardinal-Vicaire auprès du Saint-Siège et un archéologue de la Chrétienté ! La branche qui nous intéresse plus précisément était davantage tournées vers les Arts : l'arrière-grand-père d'Ottorino était sculpteur, son  grand-père  était organiste et maître de Chapelle et son père, Giuseppe, bien  que principalement fonctionnaire des postes, était également musicien semi-professionnel.          
+         <p>Conscient des difficultés inhérentes à la condition de  musicien à plein temps, Giuseppe aurait bien vu son fils rejoindre la branche intellectuelle de la famille mais le jeune homme en a décidé autrement : ayant reçu ses premières leçons de violon, d'alto et de piano vers l'âge de 8 ans, il a convaincu qu'il était un instrumentiste  doué. Toutefois, dix ans plus tard, il a réalisé que c'était la composition qui l'intéressait par-dessus tout. 
+         <p>Martucci, son premier professeur, ne pouvait lui apprendre que ce qu'il connaissait, à savoir les grands romantiques allemands. Ses premiers essais en composition (antérieurs à 1901) ont donc naturellement navigué   dans cette direction. Peu représentatifs du style qui lui vaudra plus tard la reconnaissance internationale, ils n'ont  guère encore intéressé les éditeurs discographiques. On trouve quand même, chez Claves, un enregistrement de <a href="https://www.youtube.com/watch?v=-R4uqKTsD_M">Christus</a> (P024, 1899), un  oratorio ambitieux composé (texte et musique !) à l'âge de 20 ans, et chez Naxos, un enregistrement des <a href="https://www.youtube.com/watch?v=xXc3EeTOSC4">Variations symphoniques</a> (P028, 1900).                  
+<p>Un tournant est intervenu dans la formation de Respighi, en 1894, lorsque  Luigi Torchi a fondé la &quot;Rivista Musicale Italiana&quot;. Bibliothécaire de son état, Torchi avait accès à un vaste ensemble de partitions anciennes qui témoignaient de la richesse de la musique transalpine, du Moyen-Age à l'âge baroque. A cette époque, la plupart dormaient encore  dans des rayonnages poussiéreux d'où on ne connaissait quasiment rien des musiques écrites par  Monteverdi, Cavalli, Scarlatti et même Vivaldi. C'était un patrimoine à explorer  afin  de   sortir possiblement la musique italienne de la routine. Respighi a répondu à l'appel de Torchi en pratiquant régulièrement l'arrangement modernisé et la musicologie appliquée (Cf ci-après, les paragraphes correspondants).</p>
+         <p>Comme beaucoup de musiciens, Respighi bénéficiait de réelles facilités dans l'apprentissage des langues : on rapporte qu'il  en pratiquait plus ou moins une dizaine, dont le français, l'anglais, l'allemand, le serbe, le croate, le hongrois, le finnois et le russe (sans parler des langues anciennes qui le passionnaient) ! Le russe lui a été utile lorsqu'il a postulé (et obtenu) le poste  d'altiste principal au Théâtre impérial  de Saint-Pétersbourg, pendant sa saison d'opéra italien. C'est à cette occasion qu'il a fait la rencontre du grand Nikolaï Rimski-Korsakov (1844-1908), qui lui a donné, à deux reprises, des leçons d'orchestration et de composition qui l'ont marqué à jamais. C'est de fait sous la supervision du maître russe que Respighi a écrit sa première oeuvre importante, <a href="https://www.youtube.com/watch?v=bt4I3UUu6Bo">Prélude Choral et Fugue</a> (P030, 1901). A  22 ans, à peine, la carrière de Respighi était définitivement lancée. </p>
+         
+         
+        <div class="conteneurImageSeule">
+                      <div>
+                          <figure>
+                              <img src="../images/respighi/boston.png" alt="Affiche concert Boston 1926"/>
+                              <figcaption>Boston : Concert du 19/2/1926</figcaption>
+                          </figure>
+                      </div>
+                  </div> 
+         
+         <p>En 1919, Respighi a épousé sa meilleure élève, Elsa Olivieri-Sangiacomo (1894-1996), de 14 ans sa cadette. Elle a abandonné la composition pour se consacrer à la carrière de son mari  (Une histoire déjà vécue chez les Mahler, les embrouilles en moins car leur entente fut parfaite). Ensemble, lui pianiste et compositeur et elle mezzo-soprano, ils  ont effectué de nombreuses tournées à travers le monde, en réponse aux invitations de nombreuses sociétés musicales étrangères. </p>
+         <p>Respighi est resté attaché à son Italie natale. Même la prise du pouvoir politique par   Mussolini, en 1922, ne l'a pas contrarié outre mesure. Soucieux de sa carrière académique,  il est resté  prudemment en retrait, protégé quand il le fallait  par l'autoritaire et intouchable chef, Arturo Toscanini,  acquis à sa musique. Conscient de la réputation dont le musicien jouissait de par le monde, le régime en place ne l'a jamais vraiment inquiété, préférant exploiter sa renommée à des fins de propagande. Mussolini n'était pas inculte : violoniste amateur bien avant de nourrir des ambitions politiques, il connaissait bien l'oeuvre de Respighi  et il lui a plutôt facilité la vie. En 1923, Respighi a été nommé Directeur du  Conservatoire  Santa Cecilia de Rome, poste qu'il a quitté pour ne conserver que le cours de composition et du temps libre pour écrire ses propres oeuvres. En 1932, le gouvernement fasciste l'a  même nommé membre de la Reale Accademia d'Italia, un honneur qu'il a accepté sans protester.</p>
+         <p>Respighi a de tous temps été de santé fragile, souffrant en particulier de  troubles du sommeil et dès lors d'une fatigue récurrente. En 1935, épuisé par la composition de son ultime opéra, Lucrezia (P180, 1935), il est tombé gravement malade. Un traitement expérimental importé d'Allemagne n'a pas réussi à lui éviter un empoisonnement fatal du sang; il n'avait que 56 ans et sans doute encore beaucoup à composer. Au bilan, de 1933 jusqu'à sa mort, Respighi n'a complété aucune  oeuvre importante.</p>
+         
+
+<h4>L'oeuvre de Respighi</h4>
+
+<p>Respighi nous a laissé 200 oeuvres environ, qu'il n'a jamais  pris la peine de classer. On ignore même les dates de composition de certaines oeuvres redécouvertes tardivement alors qu'on les croyait perdues.  C'est le musicologue, Potito Pedarra, qui s'est collé à la tâche d'éditer un catalogue thématique mettant fin au désordre. Chaque oeuvre recensée  porte désormais un numéro-code composé de la lettre "P" suivie de trois chiffres. L'inventaire qui suit se concentre sur les oeuvres enregistrées, présumées  les plus importantes à condition de faire confiance aux éditeurs.</p>
+<h5>L'orchestrateur</h5>
+                  
+ <p>1901 a marqué la fin de l'apprentissage scolaire  du jeune Ottorino et son  envol comme musicien professionnel.  Parmi ses premiers essais symphoniques, on note une <a href="https://www.youtube.com/watch?v=OQM1l8cw2Ho">Légende</a> pour violon &amp; orchestre (P036, 1902), une <a href="https://www.youtube.com/watch?v=9LSgj-WgG1Q">Fantasia slava </a>(P050, 1903) et deux concertos de jeunesse, l'un <a href="https://www.youtube.com/watch?v=Rhvw2AQoIFI">pour piano</a> (P040, 1903) et l'autre <a href="https://www.youtube.com/watch?v=Y2yXfLJDlfM">pour violon</a> (P049, 1903). Il ne faut pas les confondre avec les deux concertos de maturité, mentionnés plus loin.</p>
+ <p>Deux poèmes symphoniques   particulièrement réussis,  <a href="https://www.youtube.com/watch?v=XrVSC48tG1w">Fontane di Roma</a> (P106, 1916) et <a href="https://www.youtube.com/watch?v=mdve48nptNk">Pini di Roma</a> (P141, 1924), sont  au répertoire des plus grands orchestres symphoniques depuis qu'Arturo Toscanini s'en est fait l'ardent défenseur (<a href="https://www.youtube.com/watch?v=EzZD8iPuKxY">Version historique</a> du Maestro, impérieuse et emportée comme à son habitude). Ensemble, elles ont  davantage contribué à la gloire   du compositeur que toutes les autres réunies. On sait moins qu'elles appartiennent  à un triptyque et qu'il convient donc de leur associer <a href="https://www.youtube.com/watch?v=dWpQkNxGoGE">Feste romane</a> (P157, 1928, à partir de 39:45 dans cette belle interprétation du triptyque complet). Le tout ne tient malheureusement pas sur un seul CD d'où &quot;Les Fêtes romaines&quot; passe régulièrement à la trappe chez les éditeurs, ce qui a entraîné une perte de  notoriété.</p>
+ <p>D'autres fresques symphoniques méritent aussi sûrement votre attention telles, <a href="https://www.youtube.com/watch?v=ymYNWjDbo0E">Ouverture Carnevalesca</a> (P099, 1913), la <a href="https://www.youtube.com/watch?v=Fw1jAYuVptQ">Ballata delle Gnomidi</a> (P124, 1919), <a href="https://www.youtube.com/watch?v=oEWDuwojzlE">Vetrate di Chiesa</a> (P150, 1926), <a href="https://www.youtube.com/watch?v=QgTUZdvPnCg">Trittico botticelliano </a> (P151, 1927, d'après les peintures célèbres, Le Printemps, L'adoration des Mages et La Naissance de Vénus) et <a href="https://www.youtube.com/watch?v=yDh3wjJtyF0">Impressioni Brasiliane</a> (P153, 1928). La Suite  <a href="https://www.youtube.com/watch?v=8O7D-DCtdHQ">Belkis, Regina di Saba</a> (P177, 1924, ne manquez pas la danse finale en 17:18) est en fait extraite d'une oeuvre dansée plus vaste, pour récitant et orchestre, dont voici une  <a href="https://www.youtube.com/watch?v=YDSDWhZZxxc">version live</a>,  en allemand. </p>
+ <p>Toutes ces oeuvres  démontrent que le compositeur a été à l'aise avec les formes concises du poème et de la fresque symphoniques. Par contre, il a peu pratiqué  les genres classiques de la symphonie ou du concerto, sans doute trop connotés germaniques. La  <a href="https://www.youtube.com/watch?v=oyZUmXRY5oE">Sinfonia en mi majeur</a> (P051, 1907), écrite  sous l'influence de Rimski-Korsakov, est en fait la refonte d'une Suite antérieure apparemment perdue (1901-1903). Cette oeuvre très colorée est d'une légèreté insouciante au contraire de  l'énorme  <a href="https://www.youtube.com/watch?v=NsE0NDzWw74">Sinfonia drammatica </a>(P102, 1914), qui annonce clairement la tragédie imminente (Cette fois, ce sont Gustav Mahler et Richard Strauss qui ne sont jamais loin).</p>
+ <p>Dans le  genre concertant, à part les deux concertos de jeunesse déjà mentionnés, il s'est souvent cantonné dans une forme libre aux dimensions modestes : lyrique <a href="https://www.youtube.com/watch?v=I6Chu5J_SVM">Adagio avec variations</a> pour violoncelle (P133, 1921) et nerveux <a href="https://www.youtube.com/watch?v=AMFo0fz9_P0">Concert à Cinq</a>, pour hautbois, trompette, violon, contrebasse, piano &amp; cordes. Il existe deux grands concertos de maturité mais ils figurent plus loin (à la section &quot;Le musicologue&quot;) pour des raisons qui apparaîtront.</p>
+ <p>En 1930, Respighi a honoré une commande de   l'influent chef et mécène, <a href="../chroniques/koussevitzky.html">Serge Koussevitzky</a>, destinée  commémorer le cinquantième anniversaire de &quot;son&quot; Orchestre  de Boston.  <a href="https://www.youtube.com/watch?v=Udg2cZNIwbI">Metamorphoseon, Modi XII</a> (P169, 1930), se présente comme une suite magistrale de  variations sur un thème ou, si l'on préfère, comme un véritable Concerto pour orchestre où tous les pupitres sont mis en évidence à leur tour.</p>
+ 
+ <h5>L'arrangeur</h5>
+                  <p>Suivant  les indications de Torchi, Respighi s'est penché sur un certain nombre de partitions   oubliées de musique (italienne) ancienne et il a entrepris de les faire revivre  dans une autre époque. Bien servi par ses talents d'orchestrateurs, il a porté ce genre réputé à tort comme mineur à un réel niveau de distinction et de virtuosité,  transformant des pièces parfois insignifiantes en de véritables petits bijoux. Deux oeuvres  brillantes ont   contribué à la renommée de Respighi dans ce domaine, La Boutique fantasque et les Trois Suites sur des airs anciens :                  </p>
+<p>- <a href="https://www.youtube.com/watch?v=ckOEeYKRwN0">La Boutique fantasque</a> (P120, 1918) est un ballet en un acte destiné initialement  aux Ballets Russes de Diaghilev. La musique réinvente quelques   &quot;Péchés de  Vieillesse&quot;,  pièces  composées par Gioachino Rossini (1792-1868) alors qu'il était retiré de la scène opératique (14 Volumes composés entre 1857 et 1868). Facétieux, Rossini leur a donné  des titres loufoques que n'aurait pas désavoués Erik Satie :   <a href="https://www.youtube.com/watch?v=2R6cvHOPzwk">Les Cornichons</a> (Vol. IV-3), <a href="https://www.youtube.com/watch?v=zgWRi4jAYEw">Les Radis</a> (Vol. IV-1), 
+                     <a href="https://www.youtube.com/watch?v=M8RyNG_BQpA">Le Beurre</a> (Vol. IV-4), 
+                     <a href="https://www.youtube.com/watch?v=0hrIkIB1WgM">Les Amandes</a> (Vol. IV-2), <a href="https://www.youtube.com/watch?v=mUKBTJF6scI">Petit Caprice</a> (Vol. X-6), 
+          <a href="https://www.youtube.com/watch?v=x7CazZ0YD2I">Tarantelle pur Sang</a> (Vol. VIII-9),  
+                    <a href="https://www.youtube.com/watch?v=62b1ENlJcpE">L'huile de Ricin</a> (Vol. VII-6), 
+                  <a href="https://www.youtube.com/watch?v=6HNzN3WLAbs">Fausse Couche de Polka Mazurka</a> (Vol. VI-10), etc. Amusez-vous à les retrouver parfois bien cachées dans la Boutique. </p>
+                  <p>L'oeuvre a été condensée ultérieurement  en une Suite orchestrale  en 8 mouvements, 
+ Ouverture, Tarentelle, Mazurka, Danse cosaque, Cancan, Valse lente, Nocturne et Galop. C'est le succès rencontré par cette oeuvre qui a encouragé Stravinsky à proposer au même Diaghilev le ballet Pulcinella, cette fois sur des airs de Giovanni Battista Pergolèse.</p>
+                  <p>Respighi a ultérieurement arrangé d'autres pièces pour piano issues du Vol. XII des &quot;Péchés&quot;, les assemblant dans la Suite <a href="https://www.youtube.com/watch?v=z9-7fIrqdtM">Rossiniana</a> (P148, 1925).</p>
+                  <p>- Le sommet de l'arrangement a sans doute été atteint avec les trois Suites intitulée <a href="https://www.youtube.com/watch?v=Pfy7krK-Ddg">Danses anciennes et Airs pour le Luth</a> (P109, 1917; P138, 1923 et P172, 1931). Plus savantes mais toujours ludiques, ces transcriptions marient idéalement la science orchestrale de Respighi à la fantaisie des pièces d'origine, de compositeurs italiens des 16<sup>ème</sup>, 17<sup>ème</sup> et 18<sup>ème</sup> siècles. Comment résister à la <a href="https://www.youtube.com/watch?v=oivcgHDa0wo">Bergamasque</a> qui clôt la Suite n°2, au départ une pièce charmante mais anodine pour luth de <a href="https://www.youtube.com/watch?v=hfpjbNrKxcI">Bernardello Gianoncelli</a> (17<sup>ème</sup> siècle). La version proposée est celle d'Antal Dorati, déjà ancienne (1959, la seule disponible à cette époque !) mais qui n'a rien perdu de son attrait. Pour la petite histoire, le compositeur a perdu la partition de la première suite, ce qui l'a contraint à la recomposer d'après les esquisses encore en sa possession.</p>
+                  <p><a href="https://www.youtube.com/watch?v=vZ1qOBf_JQg">Gli Uccelli</a> (&quot;Les oiseaux&quot;, P154, 1928) a utilisé le même procédé au départ de  compositions baroques (Retrouvez <a href="https://youtu.be/zrGB8VI_Eb0">La Poule</a>, un extrait du 6<sup>ème</sup> Concert en sextuor de Jean-Philippe Rameau ou encore le <a href="https://www.youtube.com/watch?v=-XxinVO2QCM">Coucou</a> de Bernardo Pasquini). Rat de la bibliothèque musicale de Bologne, Respighi a passé pas mal de temps à transcrire des partitions instrumentales baroques de Locatelli, Porpora, Tartini, Veracini, dans le but d'en détourner l'usage à ses propres fins (<a href="https://www.youtube.com/watch?v=JQH6yTNKA8o">Sonate</a> pour violon &amp; piano, P077).</p>
+                  <p> Le <a href="https://www.youtube.com/watch?v=nELBXMobdLo">Concerto all'Antiqua</a>, pour violon (P075, 1908)  témoigne du même intérêt  pour le baroque italien  et la monumentale <a href="https://www.youtube.com/watch?v=BCdeqaZZvlc">Toccata</a>, pour piano &amp; orchestre (P156, 1928),  modernise un autre genre typique de cette époque. <a href="https://www.youtube.com/watch?v=QCZeuokspAo">Sèvres de la vieille France</a> (P128, 1920) part d'une transcription d'une chanson française d'autrefois (Sur le Pont d'Avignon !), <a href="https://www.youtube.com/watch?v=NOlT19KAX9U">La Pentola magica</a> (P129, 1920) est basée sur des pièces russes et 
+Scherzo Veneziano (<a href="https://www.youtube.com/watch?v=QpmHC7Zyzl4">Le Astuzie di Columbina</a>)  (P130, 1920) sur des airs vénitiens. Ces trois oeuvrettes ont servi de support pour des chorégraphies d'Ileana Leonidov. </p>
+<p>Respighi s'est également lancé dans quelques  arrangements (à la manière) de J-S Bach, du moins telle qu'il la concevait :  <a href="https://www.youtube.com/watch?v=mDXiGv_Vw9A">Suite en sol</a> pour cordes &amp; orgue (P058, 1905), <a href="https://www.youtube.com/watch?v=EHfAkmLMnOw">Passacaille et Fugue</a> en do mineur (P159, 1930) et  <a href="https://www.youtube.com/watch?v=UqWP7lxJ6Gk">Trois Chorals</a>  (P167, 1930).</p>
+                  <p>En 1929, à nouveau à l'initiative de Serge Koussevitzky, Respighi a  orchestré quelques-unes des Etudes-Tableaux de Rachmaninov. Le compositeur russe s'est montré  aussi enthousiaste envers la proposition qu'envers le résultat obtenu  (<a href="https://www.youtube.com/watch?v=YNq23SLzEKg">5 Etudes-tableaux</a> P160, 1930).</p>
+                  
+                
+            <h5>Le musicologue</h5>    
+                
+                
+                
+                  <p>Respighi s'est intéressé aux modes ecclésiastiques (grégoriens) dans le cadre de ses recherches musicologiques  et il a tenté  d'en ressusciter quelques-uns dans une perspective actualisée (Une chronique  relatant l'évolution de la   modalité en musique est en préparation). Depuis les années 1880, une tendance s'était dégagée au sein de l'Eglise catholique  avec l'objectif de débarrasser le chant d'église des tentations lyriques et d'aller dans le sens d'une purification de la tradition grégorienne telle que préconisée par les   moines de l'Abbaye de Solesmes. Respighi y a vu un moyen de débarrasser son écriture des surcharges postromantiques. Cela est  très sensible dans les <a href="https://www.youtube.com/watch?v=y0NcE0XzPLA">Trois Préludes sur des mélodies grégoriennes</a> (P131, 1921) dont l'atmosphère contemplative (Première pièce) évoque Erik Satie (1866-1925). D'autres oeuvres sont tout aussi  précieuses parce que différentes : Respighi était particulièrement satisfait de son <a href="https://www.youtube.com/watch?v=bB5KRHTPTjA">Concerto grégorien</a>,  pour violon (P135, 1921) dont le deuxième mouvement cite la séquence <a href="https://www.youtube.com/watch?v=kIkMVNk9GpI">Victimae Paschali Laudes</a>, en mode dorien. Ne manquez pas  ce concerto quitte à commencer  par son impétueux finale (en 19:40). Le <a href="https://www.youtube.com/watch?v=ddAgx5L8IAM">Concerto myxolydien</a>,  pour piano (P145, 1924),  emprunte cette fois au chant <a href="https://www.youtube.com/watch?v=aoGrPrnopQs">Omnes gentes plaudite manibus</a>. Dans le même esprit, Trittico botticelliano recourt  au mode phrygien dans la <a href="https://www.youtube.com/watch?v=ZlRA83f1YYo">section centrale</a> représentant l'Adoration des Mages. Vous trouverez encore un Quatuor dorien à la section musique de chambre.</p>
+                  <p>Respighi est considéré comme un jalon essentiel dans la redécouverte  de Claudio Monteverdi (1567-1643). Son adaptation, pour voix et orchestre,  du <a href="https://www.youtube.com/watch?v=7W6rsjeuOWw">Lamento d'Arianna</a> (P088, 1908)   a fait sensation lors de sa création, à Berlin, signant son premier succès international. Evidemment, on est loin de la restitution &quot;historiquement informée&quot; que Nikolaus Harnoncourt imposera 44 ans plus tard mais ce fut une étape importante dans la résurrection d'une oeuvre majeure. Il s'est également attaqué à l'opéra <a href="https://www.youtube.com/watch?v=a0YR1w9s4bM">Orfeo </a>(P178, 1934) quoiqu'il n'ait pas été seul dans ce cas : Vincent d'Indy, Carl Orff et Gian Francesco Malipiero ont également réalisé un travail pionnier d'édition et/ou d'adaptation de cette oeuvre. </p>
+                  <p>Enfin, Respighi s'est également consacré à la restitution d'oeuvres lyriques anciennes connues, à l'époque, des seuls historiens de la musique : <a href="https://www.youtube.com/watch?v=0AC124zEE5I">Les Astuzie femminili</a> (P126, 1920) de Domenico Cimarosa (1749-1801)  et  l'acte bouffe <a href="https://www.youtube.com/watch?v=FwfLitKTX6I">La Serva padrona</a> (P127, 1920) de Giovanni Paisiello   (1740-1816).</p>
+                  <h4>Musique de chambre</h4>
+<p> Bien qu'il ait été (un peu vite) catalogué comme symphoniste, Respighi  a également excellé en musique de chambre comme en témoigne la belle <a href="https://www.youtube.com/watch?v=Eu-yOo8EcUU">Sonate</a> pour violon & piano (P110, 1917). Elle figure dans un double <a href="https://www.youtube.com/watch?v=_WEQl1QKJn8">album</a>, paru chez Tactus, et reprenant diverses pièces pour la même formation. Chez le même éditeur, <a href="https://www.youtube.com/watch?v=JVXPOFnzQgM&list=OLAK5uy_k19Tn2lYHUhLvMdzVmoP3XIMJTN5ViFK4">Les Variations</a> pour violoncelle &amp; piano (P133, 1921) cultivent à nouveau la nostalgie pour des temps anciens.</p>
+<p>Outre un Quatuor à cordes inédit d'extrême jeunesse (datant des années 1892-98) et un gracieux <a href="https://www.youtube.com/watch?v=n3AWrbwvf5I">Quintette à vents</a> (P021, 1898), il existe un beau <a href="https://www.youtube.com/watch?v=hxoI63yBhEY">Quintette à clavier</a> (P035, 1902) et trois quatuors remarquables : <a href="https://www.youtube.com/watch?v=fSwu3hPLrAA">Quatuor en ré majeur</a>   (P053, 1904),   <a href="https://www.youtube.com/watch?v=OceiCzYuH1U">Quatuor en ré mineur</a> (P091, 1909), sous-titré par le compositeur "Ernst ist das Leben, heiter ist die Kunst" (La vie est sérieuse, l'art est serein) et surtout  l'incontournable <a href="https://www.youtube.com/watch?v=EVGJ0y-b1R0">Quatuor  dorien</a> (P144, 1924, commence en 1:40 !).</p>
+
+<p>A ces pièces essentielles, il convient d'ajouter quantité d'oeuvres plus anodines qu'il serait fastidieux d'énumérer. Mentionnons quand même deux exemples : la <a href="https://www.youtube.com/watch?v=6jyhs83Qp70">Suite della Tabacchiera</a> (P168, 1930), une pochade instrumentale pleine de bonne humeur et cette simple mais  belle <a href="https://www.youtube.com/watch?v=z94lxl8decc">Berceuse</a> (P038, 1902).</p>
+
+<p>Moins à l'aise comme pianiste que comme violoniste,  Respighi a régulièrement  défendu ses propres oeuvres sur scène, sans forcément rencontrer l'approbation inconditionnelle des critiques de l'époque. Etrangement, il n'a  pas écrit tant  que cela pour le clavier, au point que l'essentiel de son oeuvre tient sur un <a href="https://www.youtube.com/watch?v=IJwPIJaUvDU">double CD</a>, tel celui paru chez Brillant sous les doigts hélas parfois  engourdis de Michele D'Ambrosio. Comparez &quot;son&quot; Notturno (en 22:33), extrait des 6 pièces pour clavier,  avec le même, joué par <a href="https://www.youtube.com/watch?v=1Cug9OXQ9mQ">Sergei Babayan</a>, ou encore par <a href="https://www.youtube.com/watch?v=Qk1WtIjF9Jw">Konstantin Scherbakov</a> (A nouveau, Erik Satie n'est pas très loin !). Konstantin Scherbakov  apparaît décidément comme un interprète de choix, ce que confirment les Trois Préludes sur des mélodies grégoriennes (<a href="https://www.youtube.com/watch?v=J-b-yA6SL2o">I</a>, <a href="https://www.youtube.com/watch?v=USBSGvaiF2U">II</a>, <a href="https://www.youtube.com/watch?v=-IjYgx4f7dg">III</a>, P131, 1921).</p>
+<p>Le label Tactus a également publié l'essentiel des <a href="https://www.youtube.com/watch?v=VfueQt2dotU">Pièces pour orgue (&amp; orchestre)</a>, des curiosités à découvrir en suivant  les pas de J-S Bach.</p>
+<h4>Musique vocale</h4>
+<p>Respighi a rencontré la plupart de ses succès internationaux avec l'orchestre mais, en bon italien, il n'a pas délaissé la musique vocale pour autant, en particulier l'opéra. Il en a composé 9, dont plusieurs (à partir de Belfagor) sur des livrets de son ami, l'écrivain Claudio Guastalla. Ils sont demeurés relativement peu connus  en dehors des frontières de la Péninsule et il faut  chercher pour en trouver de bons enregistrements. Dans tous les cas, on doit être reconnaissant à Lamberto Gardelli d'en avoir enregistré plusieurs dans des conditions acceptables pour l'époque (Label Hungaroton). Par contre nous manquons d'enregistrements récents. L'ensemble présente la caractéristique assez rare qu'aucune oeuvre ne ressemble à une autre  : </p>
+<p>- Re Enzo (P055, 1905), en fait une opérette, a disparu des catalogues sur les recommandations de son auteur, qui s'est toujours opposé à ce que l'oeuvre survive à sa création, à l'exception de quelques extraits recyclés séparément (<a href="https://www.youtube.com/watch?v=D8bk7_9tNQ4">Canzone di Enzo</a>, P071/5, 1906). </p>
+<p><a href="https://www.youtube.com/watch?v=QQOKa-1vseM">- Semirâma</a> (P094, 1910), le premier opéra véritable, a rencontré un succès considérable lors du séjour du compositeur à Berlin. La luxuriance d'un orchestre straussien y a sans doute contribué. </p>
+<p>- <a href="https://www.youtube.com/watch?v=vlQWCaXtbPo">Marie Victoire</a> (P100, 1914) repose sur un argument lié aux événements de la Révolution française. On y trouve des chants de l'époque dont &quot;Il pleut Bergère&quot;, un air extrait de l'opéra-comique &quot;Laure et Petrarque&quot; de Louis-Victor Simon, bien oublié de nos jours (On sait que la chanson  raillait la Reine Marie-Antoinette). L'opéra de Respighi devait  être créé  à Paris en 1914 mais la guerre en a décidé autrement au point qu'il a fallu  attendre 2004 pour qu'il soit enfin présenté sur scène. Le compositeur  qui n'était guère satisfait de cette oeuvre de commande n'a jamais rien tenté pour qu'on la monte de son vivant. </p>
+<p>- <a href="https://www.youtube.com/watch?v=EZ1S3tr1VgU">La Bella Addormentata nel Bosco</a> (P134, 1921) est en fait un Conte musical, qui a fait l'objet d'un remaniement  en 1933 (Pas besoin de traduire le titre, vous l'avez sans doute identifié !). </p>
+<p>-  <a href="https://www.youtube.com/watch?v=7fYvUCp6bNA">Belfagor</a> (P137, 1922) est, à mon humble avis, le  chef-d'oeuvre  opératique de Respighi  et il est incompréhensible qu'il n'en existe pas plusieurs enregistrements à part celui de Gardelli.  </p>
+<p><a href="https://www.youtube.com/watch?v=okryIW_nfDU">- La Campana Sommersa</a> (P152, 1927), &quot;La Cloche engloutie&quot;, en  français, est un opéra féérique dont le climat surnaturel est bien rendu par un orchestre chatoyant. </p>
+<p>- <a href="https://www.youtube.com/watch?v=WthXFeWooeY">Maria Egiziaca</a> (P170, 1932) n'est pas un opéra à proprement parler ou alors, faudrait-il dire, c'est un opéra de concert. C'est aussi  un Mystère sacré en un acte et trois scènes nettement intériorisées.</p>
+<p>- <a href="https://www.youtube.com/watch?v=-ugVAU5PneY">La Fiamma</a> (P175, 1933) est le plus célèbre (?) de tous, en tous cas c'est le seul à avoir été enregistré deux (!) fois (Le fidèle Gardelli et Gelmetti). </p>
+<p>- <a href="https://www.youtube.com/watch?v=1duy_gbWjNk&list=OLAK5uy_n9HVJkIbSHvO-gp19FAbWUu0XTyybYG-U">Lucrezia</a> (P180, 1935) était en chantier quand Respighi, épuisé, est décédé. Elsa a complété l'oeuvre  sur base des esquisses existantes en respectant l'intention manifestée par son mari d'opérer un net retour vers un néo-classicisme décalé dans le temps. Ceci explique pourquoi l'orchestre a perdu  de sa luxuriance habituelle.</p>
+<p>Autre oeuvre scénique, <a href="https://www.youtube.com/watch?v=YDSDWhZZxxc">Belkis, Regina di Saba</a> (P171, 1931), est un ballet complet en 7 scènes dont a été tirée la Suite  mentionnée plus avant.</p>
+<p>Respighi  a également brillé dans l'écriture  d'oeuvres vocales de dimensions relativement modestes. En voici quelques-unes qui méritent vraiment d'être connues :  la cantate profane <a href="https://www.youtube.com/watch?v=cNBWGSDSnpA">La Primavera</a> (P136, 1922),  le (volontairement) naïf <a href="https://www.youtube.com/watch?v=sNopqAYGq-c">Lauda per la Natività del Signore</a> (P166, 1930), ou  quelques poèmes lyriques, <a href="https://www.youtube.com/watch?v=14i6FD_DWfc">Il Tramonto</a> (P101, 1914) pour petit ensemble &amp; soprano,  <a href="https://www.youtube.com/watch?v=Pegml74q_DA">La Sensitiva</a> (P104, 1915),  <a href="https://www.youtube.com/watch?v=3vdtgftmo54">Aretusa</a> (P095, 1911) et les <a href="https://www.youtube.com/watch?v=Z4pXv2Gm95Y">Quatro Liriche</a> sur des poèmes arméniens (P132, 1921). Ce sont autant de petits bijoux dont on ne se lasse pas d'autant que l'orchestre leur apporte un soutien de valeur.</p>
+<p>Même les chants avec  simple accompagnement de piano valent le détour : <a href="https://www.youtube.com/watch?v=I8YAuWvyOcw">Cinque Liriche</a> d'après Antonio Rubino (1925), <a href="https://www.youtube.com/watch?v=5I5pD0d0vjU">Deità silvane</a> (P147, 1925), <a href="https://www.youtube.com/watch?v=VtKGl-W8GGE">Sei liriche</a> pour mezzo (P090, 1909).</p>
+
+<h4>L'héritage d'Elsa</h4>
+
+<div class="conteneurImageSeule">
+                <div>
+                          <figure>
+                              <img src="../images/respighi/elsa.png" alt="Elsa Respighi"/>
+                              <figcaption>Elsa Respighi</figcaption>
+                          </figure>
+          </div>
+                  </div> 
+                  
+
+<p>Elsa a survécu à son mari pendant près de 60 ans : elle n'est décédée qu'en 1996, une semaine avant son 102<sup>ème</sup> anniversaire. Elle a  défendu   son héritage  par tous les moyens à sa disposition, en particulier en créant le  Fondo Ottorino Respighi. Elle a également repris ses activités de compositrice (Superbe <a href="https://www.youtube.com/watch?v=jRrm96hC_kg">Invocazione</a>, 1943), en profitant pour compléter les oeuvres d'Ottorino demeurées inachevées.   Des descendants de Respighi ont fait de  même  avec la collaboration du chef  et compositeur, Salvatore Di Vittorio, et de  l'archiviste,  Potito Pedarra. C'est ainsi que le Concerto pour violon en la majeur (1903) a pu être créé en 2010, avec Di Vittorio dirigeant l'Orchestre de chambre de New York.  </p>
+<p>En 2008, le même  Di Vittorio (1967- ) a écrit une pétillante Ouverture <a href="https://www.youtube.com/watch?v=OWVLbiCxtCU">Respighiana</a>, en hommage fidèle (jusque dans les thèmes traités que vous  reconnaîtrez peut-être au passage) à ce que fut la musique de son maître. Quant à Norberto Cordisco Respighi, il a enregistré, avec son collègue Giulio Biddau, des versions à quatre mains de quelques-uns des grands succès qui ont été évoqués dans cette chronique (<a href="https://www.youtube.com/watch?v=2_r3vHdbFKo">Pini di Roma</a>). </p>
+<p>Respighi n'a connu une gloire incontestée que pendant la décennie 1925-1935. Ensuite les  troubles de la guerre ont brouillé les pistes et le modernisme ambiant  a réservé à (la musique de) Respighi le même sort que celui qu'il a réservé à tous les compositeurs qui ont voulu l'ignorer (<a href="../chroniques/blacher.html">Blacher</a>, <a href="../chroniques/korngold.html">Korngold</a>, ...). En 1915, le compositeur Alfredo Casella avait pourtant   convaincu  Respighi, Malipiero, Pizzetti et Castelnuovo-Tedesco de rejoindre la Società Italiana di Musica Moderna qu'il venait de fonder, sous la présidence d'honneur d'Arturo Toscanini.  Hélas, l'affaire tourna court et l'association fut dissoute en 1919, Respighi en particulier n'y  trouvant pas un intérêt suffisant. Pire, en 1932, ce dernier s'est laissé convaincre de signer en premier un manifeste conservateur au bénéfice  du maintien d'une tradition romantique prétendument &quot;menacée&quot; par ce fameux modernisme. Ce fut interprété comme un geste au mieux inutile et au pire désobligeant envers ses anciens collègues et amis,  qui    se sont sentis blessés, en particulier Casella et Malipiero. Cette maladresse a pu compter dans la désaffection des milieux musicaux pour la musique de Respighi. Fort heureusement,  l'auditeur du 21<sup>ème</sup> siècle ne s'attarde pas à ces querelles de clocher et il garde le souvenir d'un artiste sincère  qui aura été toute sa vie utile à la diversité de son art.</p>
+<p>Les éditeurs commencent seulement à s'intéresser sérieusement à l'oeuvre  de Respighi même si aucune intégrale  symphonique  n'est actuellement disponible. Naxos, BIS et Chandos tentent cependant  de combler progressivement cette lacune, sinon il faut aller à la pêche et se délecter, par exemple, des  enregistrements qui suivent.</p>
+
+
+                
+
+                  <div class="conteneurImages">
+                    <div>
+                      <figure>
+                        <img src="../images/respighi/meta.png" alt="Respighi : Metamorphoseon">
+                        <figcaption>Metamorphoseon, Ballata ..., Belkis ...</figcaption>
+                      </figure>
+                    </div>
+                    <div>
+                      <figure>
+                        <img src="../images/respighi/airsanciens.png" alt="Respighi : Airs anciens">
+                        <figcaption>Airs anciens</figcaption>
+                      </figure>
+                    </div>
+                    <div>
+                      <figure>
+                        <img src="../images/respighi/gregorien.png" alt="Respighi : Concerto grégorien">
+                        <figcaption>Concerto grégorien</figcaption>
+                      </figure>
+                    </div>
+                    <div>
+                      <figure>
+                        <img src="../images/respighi/pini.png" alt="Jongen : Respighi : Pini & Fontane di Roma">
+                        <figcaption>Pini & Fontane di Roma</figcaption>
+                      </figure>
+                    </div>
+                    
+                    <div>
+                      <figure>
+                        <img src="../images/respighi/belfagor.png" alt="Jongen : Respighi : Belfagor">
+                        <figcaption>Belfagor</figcaption>
+                      </figure>
+                    </div> 
+                    
+                     <div>
+                      <figure>
+                        <img src="../images/respighi/boutique.png" alt="Jongen : Respighi : La Boutique fantasque">
+                        <figcaption>La Boutique fantasque</figcaption>
+                      </figure>
+                    </div> 
+                    
+                  </div>
+
+                 
+                 
+              </div>
+            </div>
+
+
+            <a id="ancreRetourHautPage" href="#site">&uarr;</a>
+
+            <!-- Inclusion footer -->
+            <div id="footer"></div>
+
+        </div> 
+    
+    </div>
+
+</body>
+</html>

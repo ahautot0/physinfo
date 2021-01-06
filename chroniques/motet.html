@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Genres musicaux | Le motet</title>
+  <meta name="description" content="Le motet est avec l'ordinaire de la Messe le premier genre musical à avoir fait fortune en Musique savante. Il a été très présent jusqu'au 17<sup>ème</sup> siècle puis il s'est effacé" />
+  <link rel="shortcut icon" href="../logo.ico" />
+  <link href="../style.css" rel="stylesheet" type="text/css" /> 
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <script src="../js/jquery-1.10.2.js"></script>
+  <script src="../js/menus.js"></script>
+  <script src="../js/design.js"></script>
+  <script src="../js/gestionAudioVideo.js"></script>
+  <script> 
+    // Inclusion Header et Footer
+    $(function(){
+      $(function(){
+        $.ajax({
+           url: "../template/header.php",
+           type: "POST",
+           data: ({ROOT: '../'}),
+           success: function(data) {
+             $("#header").html(data);
+             $("#grandscycles").addClass("active"); /*a changer en fonction de la page*/
+             update_design_when_header_loaded();
+          }
+        });
+      });
+      $("#miniMenus").load("../template/miniMenus.php", { ROOT: '../' }, mini_menus_after_loading);
+      $("#footer").load("../template/footer.php", { ROOT: '../' }, update_design_footer);  
+    });
+  </script> 
+</head>
+
+<body id="site">
+
+    <div>
+        <!-- Inclusion header -->
+        <div id="header"></div>
+
+        <div id="miniMenus"></div>
+
+        <div id="corps">
+
+            <div id="contenuPrincipal">
+                <h2>Genres musicaux</h2>
+                <h3>Le motet</h3>
+
+                <nav class="filAriane">
+                    <ul>
+                        <li class="breadcrumbItem"><span>Vous êtes ici : </span> Musique</li>
+                        <li class="breadcrumbItem">
+                          <a href="../chroniques.html">Chroniques</a>
+                        </li>
+                        <li class="breadcrumbItem">
+                          <a href="../grandscycles.html">Genres musicaux</a>
+                        </li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Le motet</li>
+                    </ul>
+                </nav>  
+  
+                
+<div id="exception">
+        <h4>l'exception musicale occidentale</h4>
+                  
+                  
+             
+                  
+                <p>Les ethnologues s'accordent à penser que l'Afrique est le berceau de l'Humanité. Ils sont également unanimement prêts à considérer que toutes les sociétés humaines qui se sont succédées depuis 10000 ans ont  pratiqué la musique, chacunes à leurs niveaux, à l'occasion de rites initiatiques,  sacrés ou plus simplement festifs. La voix a naturellement précédé  l'instrument et celui-ci a connu des niveaux de perfectionnement très inégaux, ne décollant véritablement que dans un passé beaucoup plus récent n'excédant guère 1000 ans. Ceci explique sans doute que l'art musical a enregistré un retard séculaire sur  les  arts classiques.</p>
+                <p>figures de portées accords, mélodie, bourdon (copie d'écran)<br>
+                  <br>
+                  Les progrès musicaux n'ont en effet en rien été comparables à ceux qu'ont enregistrés nombre de sociétés antiques  développées (Egypte pharaonique, République athénienne, Empire romain), dans les domaines  de l'architecture, de la sculpture, voire de la peinture. Limitée par un instrumentarium rudimentaire, la musique antique n'a de fait jamais dépassé le stade de la monodie éventuellement accompagnée. C'est à ce point que parler ultérieurement (après 1400) d'une Renaissance musicale  n'est guère porteur de sens dans la mesure où la musique médiévale n'a manifestement pas pu compter sur l'exemple de modèles antiques évolués. </p>
+                <p>La musique savante occidentale est née en France sur le terreau d'une longue tradition chrétienne certes inspirée à ses débuts par des apports orientaux mais qui a voulu et su s'en affranchir au point d'évouer quand les modèles demeuraient figés. L'évolution a été d'une lenteur extrême au point qu'à l'exception des rares spécialistes, nos oreilles peu exercées ne font guère de différence entre le chant ambrosien, le vieux chant romain et même avec le chant grégorien qui s'est durablement installé en Occident pendant xxx siècles. Ce dernier s'est  constitué un répertoire monodique où la mélodie  obstinément horizontale  a retenti sans partage dans les abbayes. Il en est résulté un répertoire fort austère comparé à la luxuriance de la tradition byzantine. Il ne semblait guère promis à un avenir fastueux et pourtant c'est de lui qu'est partie, vers 1100, la grande aventure musicale d'Occident. </p>
+                <p>Elle est née en France au début du deuxième millénaire, dans le même élan de ferveur  qui a animé les  bâtisseurs de cathédrales gothiques, à l'oeuvre dès 1144 à la Basilique de Saint Denis, voulue par l'évêque Suger. L'escalade architecturale était sensée concrétiser le mythe de la Jerusalem céleste au travers d'édifices gothiques toujours plus altiers. L'économie de la pierre devait permettre d'ouvrir  de larges baies accueillant la lumière et chassant les ténèbres. Comment concevoir une musique digne de ces nouveaux lieux voilà le problème qui s'est posé à des musiciens  complètement novices.  Le style grégorien, essentiellement horizontal, convenait sans doute aux allées basses des monastères mais il n'était plus du tout digne de la verticalité des cathédrales alors en pleine construction aux quatre coins (du Nord) de la France. </p>
+                <p>Pour rivaliser avec l'audace de leurs collègues architectes, les musiciens n'ont pu compte que sur eux-mêmes ainsi que sur quelques fragments de théories musicales  héritées de l'école pythagoricienne (Cf un exposé antérieur auquel le lecteur peut se reporter,  présentant la théorie modale en cours à cette époque). Elle n'était guère parfaite mais elle a suffi pour servir de première fondation. L'ingéniosité et la foi des musiciens du Moyen-Age ont fait le reste au cours d'une lente évolution qui a mené de l'organum au conduit puis à un premier état d'achèvement, le Motet. Parallèlement, la mise en musique de l'ordinaire de la Messe a également fait l'objet de recherches très poussées (Cf la chronique Où sont passées les messes d'antan ?). </p>
+<p>Autant prévenir, les progrès ont été lents aux débuts puis ils ont accéléré à mesure que les techniques vocales se sont perfectionnées. Les instruments ont progressé encore plus lentement  d'abord pour des raisons techniques  mais aussi à cause de la méfiance de l'église rétive à l'idée de voir l'office transformé en concert. Pourtant on ne peut s'empêcher de penser que quelques intruments primitifs ont pu jouer un rôle dans la mise en place de techniques polyphoniques. La cornemuse médiévale a peut-être inspiré aux musiciens l'idée de superposer deux voix distinctes dans le but de surprendre des tympans habiyués jusque là à une mélodie linéaire.        </p>
+<p>Tout est parti sans surprise de la simple homophonie (ou monodie), le déroulement d'une phrase mélodique horizontale  dépourvue d'ornement voire d'accompagnement. C'était l'héritage direct de la tradition grégorienne. Des perfectionnements sont très vite apparus, destinés à diversifier et complexifier le discours musical. L'hétérophonie, qui se contente de superposer à une mélodie donnée une variante rythmique ou ornementale est, au fond, une première ébauche de  polyphonie. Vos qui admiramini/Gratissima Virginis. Quant à la polyphonie proprement dite, elle superpose plusieurs mélodies destinées à être entendues simultanément au sein de constructions musicales de plus en plus élaborées : l'organum, le conduit et enfin le motet, premier  aboutissement du genre (bientôt rejoint par  la Messe). Homophonie, hétérophonie et polyphonies sont des appellations génériques désignant des étapes vers l'accomplissement de la construction polyphonique. Celle-ci en a été l'aboutissement atteint grâce qux développements de trois genres musicaux de plus en plus ambitieux :</p>
+        <ul class="miniListCorps">
+<li>L'organum déroule sur la superposition des voix sur un rythme invariable. La technique du bourdon en est la variante la plus élémentaire sans doute inspirée par la sonorité de la cornemuse (Cf supra). Elle consiste à confier la mélodie à la voix supérieure quand la voix inférieure se contente de tenir de longues notes une xxxen-dessous. Elle s'est progressivement complexifiée en organum parallèle (Une quinte en-dessous), organum oblique et enfin libre. Une nouvelle acquisition a eu lieu lorsque les voix se sont déroulées sur des rythmes distincts c'est le déchant puis l'organum fleuri. Ars subtilior ?</li>
+<li>Le conduit</li>
+<li>Le motet . Guillaume de Machaut (Guillaume de Machaut - <a href="https://www.youtube.com/watch?v=cu7-RV7XB9k">Quant en moy / Amour et biaute / Amara valde</a>) (Motet isorhythmique)</li>
+
+</ul>
+            
+    
+              </div>
+              
+              
+              
+
+        <div id="renaissance">
+                  <h4>La Renaissance</h4>
+                  
+          <p>D'un point de vue technique, la Renaissance musicale ne mérite guère son nom : rompant avec l'héritage pythagoricien auquel elle reprochait ses tierces (jugées trop) fausses, elle a plutôt emprunté  à quelques idées (ne disons pas aux théories) attribuées à  d'Aristoxène (-360, -300) et effectivement formalisées par Gioseffo Zarlino (1517-1590). L'idée  de Zarlino (Cf la chronique Gammes et tempéraments) a été de privilégier la justesse des tierces en payant le prix d'un certain relâchement des quintes. Son apport essentiel a été d'initier  l'harmonie, soit la science des accords et de ses enchaînements. Désormais, à l'horizontalité (= parallèlement à la portée) de l'écriture mélodique allait répondre la verticalité (= perpendiculairement à la portée) des accords de notes superposées.</p>
+          <p>On parle d'accord toutes les fois que trois sons au moins sont superposés (S'il n'y en a que deux, on ne parle pas d'accord car c'est un simple intervalle mesurable en cents). La constitution des (&quot;bons&quot;) accords  est directement héritée de l'expérience polyphonique qui a catalogué les associations (de notes)  porteuses de qualité musicale. La Renaissance s'en est essentiellement tenue à l'accord parfait (Majeur ou mineur) résultant de la superposition d'une octave, d'une quinte et d'une tierce (M ou m) (Les accords à quatre sons, par ajout d'une sixte, ne sont intervenus qu'à l'époque classique et les accords de 7<sup>ème</sup> et 9<sup>ème</sup> aux temps romantique et moderne). </p>
+          <p>C'est sur le principe de trois accords parfaits majeurs (do-mi-sol, fa-la-do et sol-si-ré) que Zarlino a construit le principe de sa gamme heptatonique. Par la position légèrement altérée de ses notes (de quelques cents), en particulier au niveau des tierces justes, elle a ambitionné d'approcher l'idéal de parfaite consonance mieux que ne le faisait la gamme pythagoricienne. L'excès (de justesse) a fini par entraîner des conséquences imprévues et fâcheuses : en évacuant la dissonance, il a aussi enlevé toute notion de tension acoustique, produisant une polyphonie tellement lisse qu'elle a fini par lasser (Giovanni Pierluigi da Palestrina <a href="https://www.youtube.com/watch?v=X-qWPOjzGYU">Viri Galilaei</a>) mais n'anticipons pas. </p>
+          <p>C'est pourtant au début du 15<sup>ème</sup> siècle que le motet a connu sa première apogée par la grâce des chefs-d'oeuvre de Guillaume Dufay (Motets isorythmiques : <a href="https://www.youtube.com/watch?v=f9Y55hkTXns">O sancte Sebastiane</a>) et de Josquin Desprez. <br/>
+          Apostolo glorioso [Motet isorhythmique] Compositeur: Guillaume Dufay (vers 1397 - 1474) Interprètes: Ensemble Huelgas, dir. Paul Van Nevel Transcription de la partition par: Alejandro Enrique Planchart ___________________________________________________ "Les treize motets isorythmiques écrits par Guillaume Dufay doivent tous être considérés comme appartenant à la première moitié de sa carrière. En fait, le dernier d'entre eux, probablement écrit en 1442, peut être vu comme un adieu symbolique au Moyen Âge. La série ne forme pas un cycle unifié en soi, mais chacune des œuvres est une pièce de circonstance, parfois écrite avec des intervalles de plusieurs années entre elles. Cependant, elles sont toutes esthétiquement définies par un dénominateur commun unique: dans ces treize œuvres, Dufay utilise une technique appelée isorythme. Le motet isorhythmique est une composition dans laquelle une formule rythmique, ou période, est constamment répétée dans une ou plusieurs des parties tandis que le matériau mélodique change. Le nombre de répétitions de ces périodes rythmiques varie de deux à huit dans les cas extrêmes. Le nombre de répétitions dépend, bien entendu, de la durée de la période rythmique, qui peut varier d'unités de quatre brèves ou longues à jusqu'à quarante. Cet isorhythm doit apparaître dans la partie ténor, mais peut également être utilisé dans d'autres parties. Il se produit dans certains motets isorythmiques de Dufay que toutes les voix doivent être «soumises» à un traitement isorythmique. Naturellement, la formulation rythmique varie d'une voix à l'autre; sinon nous aurions affaire à l'homophonie. Le terme «isorhythm» date du XXe siècle. Il a été inventé à la fin du XIXe siècle par le musicologue allemand Friedrich Ludwig lorsqu'il a découvert et décrit le phénomène dans les motets du XIIIe siècle. La couleur et la talée, deux concepts inhérents à la nature même de l'isorythmie, ont cependant été mentionnés au XIIIe siècle (Johannes de Garlandia dans son De Mensurabili Musica) et au XIVe siècle (Johannes de Muris dans son Libellus Cantus Mensurabilis). Talea est le terme utilisé pour la période rythmique répétée, tandis que la couleur désigne la mélodie répétée. Au XIVe siècle, le principe de l'isorythme s'est développé en une technique de composition décisive avec des structures complexes et de nombreuses variantes. Ainsi, par exemple, l'isorhythm n'était plus limité aux ténores, mais pouvait également être appliqué dans les autres parties, ce qui signifiait que la durée de la période isorythmique ne coïncidait pas toujours dans les différentes voix. Au tournant crucial de l'isorythme, c'est-à-dire à la fin d'une talée, une intensification de la complexité rythmique a lieu au moyen de hockets, de syncopes et de valeurs de notes sensiblement plus courtes. Ces passages sont des moments significatifs car la structure interne du motet vient à la surface: le contraste entre la structure rythmique virtuose à la fin d'une talea et le début généralement tranquille de la suivante est frappant même sur une première audition. Le développement de loin le plus important du motet isorythmique a eu lieu à la fin du XIVe et au début du XVe siècles, culminant avec le cycle de Guillaume Dufay, la dernière talée de l'œuvre étant maintenant composée en diminution. En outre, cette tendance s'est accentuée dans les dernières étapes de l'évolution du motet isorhymique. Par exemple, une couleur (mélodie) serait répétée sous quatre formes rythmiques différentes, à condition que les répétitions soient soumises à une proportion mathématique spécifique de l'une à l'autre [...]. "~ Paul Van Nevel, traduction de Derek Yeld Source:  </p>      
+                  
+                  
+    <div class="conteneurImageSeule">
+                  <div>
+                    <figure>
+                      <img src="../images/passion/paques.png" alt="Histogramme des jours de Pâques"/>
+                      <figcaption>Histogramme des dates de Pâques</figcaption>
+                    </figure>
+          </div>
+</div>
+
+                 </div>
+                 
+<div id="renaissance">
+                  <h4>L'époque baroque</h4>
+                  
+        <h5>Le baroque primitif</h5>
+                  <p>La perfection des accords zarliniens a consommé la perte d'intérêt pour une polyphonie angélique, incapable de rendre les (désordres des) passions humaines. Le premier baroque a vu l'éveil des musiciens italiens et l'ascension de la mélodie accompagnée au sein d'une nouvelle pratique. On trouve de merveilleux motets à voix soliste dans l'immense recueil de la Selva Morale de Monteverdi (<a href="https://www.youtube.com/watch?v=GcQmC3F3WSI">Confitebor</a>). </p>
+                  
+                      <h5>Le grand motet à la française</h5>
+                      <p>Le grand motet à la française date de l'époque du règne de Louis XIV. Il incarne le faste de la Cour versaillaise avec le même décalage que l'a fait la tragédie lyrique mise au point par Lully. Dans les eux cas c'est la magnifiscence des oeuvres produites qui a fait oublier que le genre était en passe de tomber en disgrâce. </p>
+                  
+                  <h5>La preuve par Bach</h5>
+                  
+                  
+                  <p>Le baroque plus tardif auquel appartient. les six motets de J-S Bach (<a href="https://www.youtube.com/watch?v=FJ00agLjPT0&list=RDFJ00agLjPT0&start_radio=1&t=52">BWV 225-230</a>) représente le tour de force </p>
+                  <p>&nbsp;</p>
+                  
+                  </div>
+                  
+               
+            </div>
+
+            <a id="ancreRetourHautPage" href="#site">&uarr;</a>
+
+            <!-- Inclusion footer -->
+            <div id="footer"></div>
+
+        </div>
+    
+    </div>
+
+</body>
+</html>

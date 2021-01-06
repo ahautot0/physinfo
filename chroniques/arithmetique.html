@@ -257,6 +257,9 @@
                         <li class="misEnGras"><a href="#musique">Et la musique dans tout cela ?</a></li>   
                     </ul>
                 </div>
+                
+                
+                
 
                 <p>Cet article, modifié pour la cause, a fait l'objet d'une radiodiffusion en direct sur  la <span class="bouton2"><a href="http://www.printempsdesarts.mc/fr/medias/la-radio-du-festival-70">Radio Parfaite</a></span>, l'antenne officielle du Festival musical du Printemps des Arts  de  Monte-Carlo, le 4 avril 2018. L'écho différé est disponible <!--sur <span class="bouton2"><a href="https://soundcloud.com/la-webradio-du-printemps-des-arts-de-monte-carlo/andre-hautot-2">SoundCloud</a></span> ou--> ici : <sub><sub><sub> 
     <audio controls preload="none" >
@@ -297,7 +300,7 @@ Votre navigateur n'est pas compatible
                         <p>L'intervalle entre deux sons est défini selon le rapport (et non  la différence !) de leurs fréquences respectives. Cette règle géométrique (et non arithmétique !) découle du fait que l'oreille humaine est sensible au phénomène d'octave : une mélodie répétée en doublant les fréquences de chaque note sonne comme la mélodie primitive mais en plus aiguë, à l'octave supérieure. Cela reste vrai si on multiplie les fréquences des notes par un facteur constant quelconque, x (&gt;1;  si x &lt; 1,  la deuxième mélodie sonnera en plus grave). Une autre manière d'exprimer la propriété invoquée de l'oreille consiste à dire que sa réponse en fréquence est logarithmique : des sons émis en séquence, dont les fréquences croissent (ou décroissent) selon une progression géométrique, f, x f, x<sup>2</sup> f, x<sup>3</sup> f, ..., sont perçus  comme &quot;équidistants&quot;.</p>
                         <p>On définit, sur cette base, l'intervalle séparant deux sons de fréquences, f<sub>1</sub> et f<sub>2</sub> : Int = 1200 &#8467;g(f<sub>2</sub>/f<sub>1</sub>) (mesuré en cents), où &#8467;g désigne le logarithme en base 2. Connaissant l'intervalle qui sépare deux sons, il est possible de retrouver leur rapport fréquentiel, il suffit d'inverser la formule précédente sous la forme, f<sub>2</sub>/f<sub>1</sub> = 2<sup>Int/1200</sup>. Voici les valeurs exactes de quelques intervalles  consonants :</p>
 
-                        <table>
+                        <table align="center">
                             <tr>
                                 <th>unisson (1/1)</th>
                                 <th>octave (2/1)</th>
@@ -357,7 +360,7 @@ Votre navigateur n'est pas compatible
                         
               <p>Le tableau suivant illustre quelques cas de figures qui seront détaillés en cours de texte. On peut y entendre plusieurs enchaînements d'un  do<sub>4</sub>, synthétisé sur base d'une sinusoïde fondamentale et de quatre sinusoïdes harmoniques, avec une notes choisie parmi un ensemble de cinq, puis la superposition des deux. Ces 5 notes sont, dans l'ordre des lignes, un ré<i>b</i> pythagoricien, un sol pythagoricien (quinte parfaite), un sol pythagoricien faussé d'un neuvième de ton (quinte fausse), un mi pythagoricien (tierce majeure impure) et un mi zarlinien (tierce majeure pure) : </p>           
                         
-                        <table>
+                        <table align="center">
                             <tr>
                                 <th style="width:5%"></th>
                                 <th style="width:5%">Rapport</th>
@@ -608,15 +611,15 @@ Votre navigateur n'est pas compatible
            
                     <p>Dans la figure précédente, les repères fléchés  signent le mode (de do) majeur. Sauf altérations passagères, les notes utilisées dans ce mode sont  celles désignées par les vecteurs, ici les notes naturelles. La figure suivante permet de (re)trouver les notes utilisées dans n'importe quelle autre tonalité majeure : servez-vous du bouton curseur situé en bas pour changer de tonique, les 7 vecteurs  tourneront automatiquement. </p>
                     
-<video width="420" height="550" controls="controls">
+<video width="420" height="550" controls="controls" autoplay="false">
                           <source src="../videos/transposition.m4v" type="video/mp4" />
                           <source src="../videos/transposition.webm" type="video/webm" />
                           <source src="../videos/transposition.ogv" type="video/ogg" />
-                          <source src="../videos/transposition.mp4" />
+                          <source src="../videos/transposition.mp4" type="video/mp4" />
                           Votre navigateur n'est pas compatible
                         </video>
                         
-                        
+           
                 <p>La figure suivante affiche, à gauche, le cas particulier de la transposition en ré majeur. On constate que les notes constitutives du nouveau ton (do#, ré, mi, fa#, sol, la, si) puisent largement dans l'ensemble des notes naturelles (seules les  do et fa sont diésées) : on dit que les tonalités de do et de ré majeur sont proches d'où une modulation peut se faire en douceur. Vérifiez à présent qu'en  do# majeur,  toutes les notes sont diésées : ce mode est particulièrement éloigné (de do majeur). </p>
                     <p> La transposition en ré# majeur, visible sur la figure de droite, pose un problème inédit : deux notes manquent manifestement à l'appel. Parmi les 21 tonalités majeures envisageables,  six d'entre elles posent ce  problème : ré#, mi#, sol#, la#, si# et fa<i>b</i>. On  génère les notes manquantes en poursuivant l'empilement des quintes, ce qui fait apparaître les  notes doublement altérées.</p>
 
@@ -674,7 +677,8 @@ Votre navigateur n'est pas compatible
                         <li>Inversement, connaissant le nombre de dièses ou de bémols à la clef, on en déduit  dans quelle tonalité on se trouve. Par exemple 4 dièses à la clef, nécessairement fa#, do#, sol# et ré#,  sont constitutifs de mi majeur ou de do# mineur et 3 bémols à la clef, nécessairement si<i>b</i>, mi<i>b</i> et la<i>b</i>, sont constitutifs de mi<i>b</i> majeur ou de do mineur.</li>
                     </ul>
                     
- <p>Tout cela est résumé dans la grille suivante dont la fenêtre peut être déplacée à loisir de telle manière que la tonique soit positionnée en face de la lettre M, si on est en mode majeur, ou en face de la lettre m, si on est en mode mineur; on visualise instantanément les notes constitutives donc le nombre d'altérations. A titre d'exercice, vérifiez que les seules tonalités majeures qui acceptent les notes sol, ré, la et mi sont fa M, do M, sol M et ré M. De même les seules tonalités mineures sont ré m, la m, mi m et si m. Sachant que les 4 cordes à vide du violon moderne sont accordées sur les notes sol<sub>3</sub>, ré<sub>4</sub>, la<sub>4</sub> (440 Hz) et mi<sub>5</sub>, vous comprenez mieux pourquoi l'immense majorité des grands concertos du répertoire sont écrits dans une des 8 tonalités mentionnées (Les exceptions sont rares mais elles existent, telle le rarement joué second concerto de Schostakovitch qui est en ut dièse mineur). Vous pouvez recommencer le raisonnement à propos du violoncelle dont les cordes à vides sont également accordées selon le cycle des quintes réelles, do<sub>2</sub>, sol<sub>2</sub>, ré<sub>3</sub> et la<sub>3</sub> (220 Hz) : les tonalités &quot;confortables&quot; sont cette fois : si<i>b</i> M, fa M, do M, sol M, sol m, ré m, la m et mi m. Le raisonnement ne tient pas pour le piano qui est accordé au tempérament égal  (Cf infra) : rien ne s'oppose à ce qu'il existe des concertos pour piano dans une tonalité quelconque. </p>                  
+ <p>Tout cela est résumé dans la grille suivante dont la fenêtre peut être déplacée à loisir de telle manière que la tonique soit positionnée en face de la lettre M, si on est en mode majeur, ou en face de la lettre m, si on est en mode mineur; on visualise instantanément les notes constitutives donc le nombre d'altérations. A titre d'exercice, vérifiez que les seules tonalités majeures qui acceptent les notes sol, ré, la et mi sont fa M, do M, sol M et ré M. De même les seules tonalités mineures sont ré m, la m, mi m et si m. Sachant que les 4 cordes à vide du violon moderne sont accordées sur les notes sol<sub>3</sub>, ré<sub>4</sub>, la<sub>4</sub> (440 Hz) et mi<sub>5</sub>, vous comprenez mieux pourquoi l'immense majorité des grands concertos du répertoire sont écrits dans une des 8 tonalités mentionnées (Les exceptions sont rares mais elles existent, telle le rarement joué second concerto de Schostakovitch qui est en ut dièse mineur). Vous pouvez recommencer le raisonnement à propos du violoncelle dont les cordes à vides sont également accordées selon le cycle des quintes réelles, do<sub>2</sub>, sol<sub>2</sub>, ré<sub>3</sub> et la<sub>3</sub> (220 Hz) : les tonalités &quot;confortables&quot; sont cette fois : si<i>b</i> M, fa M, do M, sol M, sol m, ré m, la m et mi m. Le raisonnement ne tient pas pour le piano qui est accordé au tempérament égal  (Cf infra) : rien ne s'oppose à ce qu'il existe des concertos pour piano dans une tonalité quelconque. </p>
+                   
                     <video width="620" height="180" controls="controls">
                       <source src="../videos/alterations.m4v" type="video/mp4" />
                           <source src="../videos/alterations.webm" type="video/webm" />

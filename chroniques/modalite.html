@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Faits divers | Modalité musicale et arithmétique</title>
+  <meta name="description" content="Depuis 1000 ans, la langue musicale a limité l'ensemble des notes utiles en imposant des contraintes dites modales. Partie des modes anciens, la théorie a connu toutes sortes d'avatars ((a et poly)tonalité) qui sont inventoriés dans cette chronique qui croise l'arithmétique élémentaire." />
+  <link rel="shortcut icon" href="../logo.ico" />
+  <link href="../style.css" rel="stylesheet" type="text/css" /> 
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <script src="../js/jquery-1.10.2.js"></script>
+  <script src="../js/menus.js"></script>
+  <script src="../js/design.js"></script>
+  <script src="../js/gestionAudioVideo.js"></script>
+  <script> 
+    // Inclusion Header et Footer
+    $(function(){
+      $(function(){
+        $.ajax({
+           url: "../template/header.php",
+           type: "POST",
+           data: ({ROOT: '../'}),
+           success: function(data) {
+             $("#header").html(data);
+             $("#faitsDivers").addClass("active"); <!--a changer en fonction de la page-->
+             update_design_when_header_loaded();
+          }
+        });
+      });
+      $("#miniMenus").load("../template/miniMenus.php", { ROOT: '../' }, mini_menus_after_loading);
+      $("#footer").load("../template/footer.php", { ROOT: '../' }, update_design_footer);  
+    });
+  </script> 
+</head>
+
+<body id="site">
+
+    <div>
+        <!-- Inclusion header -->
+       <div id="header"></div>
+
+        <div id="miniMenus"></div>
+
+        <nav id="menuLateralAncres">
+            <ul>         
+            <li>
+                    <a id="ancrepythagore" href="#pythagore" class="linavMenu active">
+                    <span>La gamme pythagoricienne</span>
+                    </a>
+</li>
+
+             <li>
+                    <a id="ancreionien" href="#ionien" class="linavMenu">
+                    <span>Le mode ionien</span>
+                    </a>
+</li>
+                <li>
+                    <a id="ancreanciens" href="#anciens" class="linavMenu">
+                    <span>Les autres modes anciens</span>
+                    </a>
+</li>
+               
+                
+                <li>
+                    <a id="ancrederive" href="#derive" class="linavMenu">
+                    <span>La dérive hellénique</span>
+                    </a>
+</li>
+                
+                 <li>
+                    <a id="ancrestructure" href="#structure" class="linavMenu">
+                    <span>Structure harmonique des modes anciens</span>
+                    </a>
+</li>
+                <li>
+                    <a id="ancrechromatique" href="#chromatique" class="linavMenu">
+                    <span>La gamme chromatique</span>
+                    </a>
+</li>
+
+             <li>
+                    <a id="ancretonalite" href="#tonalite" class="linavMenu">
+                    <span>Emergence de la tonalité</span>
+                    </a>
+</li>
+			<li>
+                    <a id="ancreatonalite" href="#atonalite" class="linavMenu">
+                    <span>L'atonalité</span>
+                    </a>
+</li>
+                <li>
+                    <a id="ancreconclusion" href="#conclusion" class="linavMenu">
+                    <span>Conclusion</span>
+                    </a>
+</li>
+             
+  
+            </ul>
+        </nav>
+
+        <div id="corps">
+
+<div id="contenuPrincipal">
+                <h2>Faits divers</h2>
+                <h3>Modalité musicale et arithmétique</h3>
+                <nav class="filAriane">
+              <ul>
+                        <li class="breadcrumbItem"><span>Vous êtes ici : </span> Musique</li>
+                        <li class="breadcrumbItem">
+                          <a href="../chroniques.html">Chroniques</a>
+                        </li>
+                        <li class="breadcrumbItem">
+                          <a href="../faitsDivers.html">Faits divers</a>
+                        </li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Modalité musicale et arithmétique</li>
+
+                  </ul>
+                </nav>
+                
+                <div class="sommaire">
+                    <div class="sommaireTitle">
+                        <h6>Sommaire</h6>
+                        <a role="button" tabindex="0" class="sommaireLink">[ afficher ]</a>
+                    </div>
+
+                    <ul class="linksSummary">
+                        <li><a href="#pythagore">La gamme pythagoricienne</a></li>
+                        <li><a href="#ionien">Le mode ionien</a></li>
+                        <li><a href="#anciens">Les autres modes anciens</a></li>
+                        
+                        <li><a href="#derive">La dérive hellénique</a></li>
+                        <li><a href="#structure">Structure harmonique des modes anciens</a></li>
+                        <li><a href="#chromatique">La gamme chromatique</a></li>
+                        <li><a href="#tonalite">Emergence de la tonalité</a></li>
+                        <li><a href="#atonalite">L'atonalité</a></li>
+                        <li><a href="#conclusion">Conclusion</a></li>
+                        
+                       
+                    </ul>
+                </div> 
+                
+  <video width="420" height="550" controls="controls">
+  <source src="../videos/modesvideo/mode1.webm" type="video/webm" />
+                               
+   Votre navigateur n'est pas compatible
+  </video>
+  
+  <video width="420" height="550" controls="controls">
+ <source src="../videos/modesvideo/mode1.ogv" type="video/ogv" />
+           
+   Votre navigateur n'est pas compatible
+  </video>
+  
+ <video width="420" height="550" controls="controls">
+  <source src="../videos/modesvideo/mode1.mp4" type="video/mp4" />
+                           
+   Votre navigateur n'est pas compatible
+  </video>
+  
+  
+  
+
+
+
+      <p>Le langage musical  occidental repose sur une tradition écrite. Il s'en suit un certain nombre de contraintes liées à l'existence d'un alphabet  fini, d'une  syntaxe enfin d'une grammaire, susceptibles de servir de base à une  notation aussi précise que possible et in fine à une Théorie de la Musique. A cet effet, deux questions  demandent à être réglées préalablement :</p>
+      
+     <ul class="miniListCorps">
+                    <li>Il convient de sélectionner un ensemble fini de fréquences sonores  utiles (les notes) parmi l'infinité des fréquences audibles entre 16 Hz et 16000 Hz. Autrement dit, il faut construire une échelle sonore finie et discrète. Une échelle continue ne conviendrait pas pour deux raisons : une infinité non dénombrable de notes ne pourrait pas être notée à l'aide  d'un alphabet fini et l'accordage des instruments à sons fixes ne  permettrait pas de les jouer toutes. On pourrait objecter qu'un  synthétiseur électronique pourrait surmonter ces difficultés en programmant les notes plutôt qu'en les notant mais cela nous emmènerait hors du champ de la musique acoustique.<br/> 
+                      Une propriété physique du son simplifie considérablement la construction d'une échelle sonore, c'est le phénomène d'octave : une mélodie jouée une octave plus haut (resp. plus bas) sonne comme la mélodie primitive, seulement décalée vers l'aigu (resp. vers le grave). Il s'en suit que, pour construire une échelle complète, il suffit de définir une gamme au sein d'une octave particulière (peu importe laquelle), puis de la décalquer à l'identique sur les 9 octaves adjacentes  (Il existe en tout 10 octaves audibles car 16000/16 &ap; 2<sup>10</sup>).  Construire une gamme, c'est discrétiser   l'octave au moyen d'une suite d'intervalles jouant  le rôle de pixels sonores.   On réutilise les noms des notes   d'octave en octave,  seulement flanqués d'un indice entier  (par exemple, do<sub>0</sub> à do<sub>9</sub>) s'il y a lieu de les distinguer. La distinction entre échelle et gamme  n'étant pas vraiment essentielle, les deux notions sont souvent  confondues.<br/><br/></li>
+                    <li>Lorsqu'un musicien compose,  rien n'impose qu'il utilise l'ensemble des notes disponibles, il est même fréquent qu'il n'en retienne qu'un sous-ensemble bien choisi.  A première vue, cette pratique semble une limitation inutile mais ne pas y recourir  entraînerait l'uniformisation des &quot;couleurs&quot; musicales avec la conséquence fâcheuse que toutes  les oeuvres  finiraient par se ressembler sinon mélodiquement du moins harmoniquement. Le mode, défini en particulier comme une restriction volontaire de l'ensemble des notes disponibles, est l'un des ingrédients de cette coloration.<br/>
+                    Opter pour un mode, c'est d'abord se concentrer sur une suite particulière d'intervalles conjoints partitionnant  l'octave et s'y tenir. Ces intervalles gagnent sans doute à être consonants mais ce n'est pas une règle absolue. C'est ensuite attribuer une fonction harmonique à chacun des degrés définis par les (extrémités des) intervalles retenus. Ces fonctions seront évoquées le moment venu. Dans tous les cas,  un point est acquis  : par définition, la dimension d'un mode (son nombre d'intervalles) est  toujours inférieure ou égale à la dimension de la gamme qu'il partitionne (son nombre de notes).</li>
+      </ul>
+     <p>La construction d'une gamme est donc le premier problème qui se pose en musique. Il en existe beaucoup de par le monde, certaines exotiques, mais si l'on s'en tient à la musique occidentale, il n'en a guère existé que trois (Pythagoricienne, Zarlinienne et Tempérée), chacune ayant fait fortune à une époque différente de l'histoire. Vous trouverez un exposé détaillé de cette histoire dans  la chronique <a href="../chroniques/arithmétique.html">Gammes et Tempéraments</a> (en abrégé G&amp;T). Sauf la définition mathématique de la notion d'intervalle, reprise ci-dessous car elle est indispensable à la compréhension du texte, nous n'en reproduisons  que les conclusions utiles à l'étude des modes.</p>
+     
+     
+       
+  
+     
+     <p>On sait   que notre perception des hauteurs sonores est logarithmique d'où il est naturel de définir l'intervalle entre deux sons en respectant une loi de ce type. C'est pourquoi l'intervalle, mesuré en cents, séparant deux sons (notes) de fréquences, f<sub>1</sub> et f<sub>2</sub>, est  défini par la formule, Int = 1200 &#8467;g(f<sub>2</sub>/f<sub>1</sub>), où &#8467;g désigne le logarithme en base 2 et où le facteur 1200 n'est présent que pour des raisons de commodité. Avec cette unité (le cent), l'intervalle d'octave (Ex. do<sub>3</sub>-do<sub>4</sub>, rapport fréquentiel 2/1) vaut exactement, O = 1200 &#8467;g(2<sub></sub>/1<sub></sub>) = 1200 cents. Deux autres intervalles importants pour la suite sont la quinte  (Ex. do-sol, rapport 3/2; Q = 1200 &#8467;g(3<sub></sub>/2<sub></sub>) = 701.95 cents) et la tierce majeure (Ex. do-mi, rapport 5/4; T<sub>M</sub> =   1200 &#8467;g(5<sub></sub>/4<sub></sub>) = 386.31 cents).</p>
+     
+     <div class="conteneurImageSeule">
+  <div>
+    <figure>
+      <img src="../images/theorie/cents.png" alt="Principe du cercle des quintes"/>
+      <figcaption>Principe du cercle des quintes</figcaption>
+      </figure>
+    </div>
+  </div> 
+  
+  
+     <p>Le mode de représentation est toujours le même : un cercle complet représente l'intervalle d'octave (1200 cents) avec la note &quot;do&quot; située au sommet. Le cercle est gradué en 12 parties égales de 100 cents chacune afin de se repérer plus facilement (Les points rouges, équidistants). Dans tous les cas les positions des notes respectent les valeurs des intervalles les séparant. On représente un saut d'octave entre les notes, N<sub>i</sub> et N<sub>i+1</sub>,  en progressant de 1200 cents ou, ce qui revient au même, en effectuant une rotation de 360° au départ de la note N<sub>i</sub>. La rotation se fait dans le sens horlogique si l'intervalle est ascendant et dans le sens inverse s'il est descendant. Dans tous les cas, deux notes séparées d'une octave sont représentées par un même point sur le cercle. On représente de même  un saut de quinte en en progressant de 701.95 cents (approximativement 7 intervalles marqués par les repères rouges) ou, ce qui revient au même, en effectuant une rotation de 210° 35' 12&quot;. </p>
+     <p>Une gamme  exploitable demande que l'intervalle minimum   entre deux notes consécutives ne soit pas trop petit sous peine de démultiplier inutilement le nombre des notes. Il ne doit pas non plus être trop grand sous peine de créer des lacunes au sein de l'octave. La musique occidentale fixe habituellement la limite au voisinage de  100 cents (un demi-ton) : outre que le pouvoir de discernement de notre oreille y trouve son compte, cette limite est compatible avec le développement d'une  polyphonie (Cf infra). D'autres musiques davantage homophoniques (par exemple arabisantes)  peuvent  abaisser cette limite et explorer les quarts de ton (&ap; 50 cents).</p>
+     <p>Les trois sections qui suivent présentent les  gammes en vigueur aux époques médiévale, renaissante et baroque, enfin moderne. Elles poursuivent par l'étude des modes dans chaque cas.</p>
+
+
+ 
+   <h4>Les Modes anciens</h4>
+   
+  <div id="pythagore"> 
+   <h5>La gamme pythagoricienne</h5>
+   
+ <div class="conteneurImageSeule">
+  <div>
+    <figure>
+      <img src="../images/theorie/monocorde.png" alt="Monocorde pythagoricien"/>
+      <figcaption>Monocorde pythagoricien</figcaption>
+      </figure>
+    </div>
+  </div>  
+  
+  <p>On attribue à l'école de Pythagore (6<sup>ème</sup> siècle avant notre ère) la construction de la première gamme exploitable, dite pythagoricienne. Serrant au plus près l'arithmétique élémentaire, elle est d'une  pertinence et d'une limpidité telles qu'elle est  toujours d'actualité de nos jours. Pythagore et plus probablement ses disciples ont assez naturellement privilégié l'intervalle de quinte (rapport 3/2), le plus consonant de tous après l'octave. Ce rapport était, à l'époque, celui des longueurs de cordes sélectionnées sur un monocorde mais on sait, aujourd'hui, qu'il équivaut à celui (inverse) des  fréquences des sons émis. </p>
+  
+
+  <p>La gamme pythagoricienne est  construite sur la base d'un empilement de quintes successives   : au départ d'une note, &quot;fa&quot; en l'occurrence afin de respecter la nomenclature en usage, on définit, dans un premier temps, 6 nouvelles notes   situées récursivement  une quinte plus haut. En multipliant la fréquence d'une note  par 3/2, on obtient la fréquence de la note suivante à la condition  de diviser éventuellement le résultat par 2 si l'on est sorti de l'octave considérée). Les 7 notes ainsi définies, nommées, fa, do, sol, ré,  la, mi, si, dans l'ordre dit des quintes, constituent la gamme heptatonique de Pythagore. Leurs fréquences sont données par la formule, f<sub>m</sub> = f<sub>0</sub> 3<sup>m</sup>/2<sup>Floor[m &#8467;g3]</sup> (m = -1, 0,   ..., 4, 5), soit, dans le détail, f<sub>k</sub> = f<sub>0</sub> {1/1 (=fa),  3/2 (=do), 9<sup></sup>/8<sup></sup> (=sol),   27/16 (=ré),  81/64 (=la), 243/128 (=mi),<sub></sub> 729/512<sup></sup> (=si)}, où la valeur exacte de f<sub>0</sub> (fréquence  associée conventionnellement à la note &quot;do&quot;) dépend du diapason choisi. Sur le cercle des quintes, chaque note se positionne, par rapport au &quot;do&quot; pris comme origine, à une distance intervallique valant, pyth[m] = 1200 (m &#8467;g3-Floor[m &#8467;g3]). </p>
+  <p>f<sub>0</sub> {1/1 (=do), 9/8 (=ré), 81/64 (=mi), 4/3 (=fa), 3/2 (=sol), 27/16 (=la), 243/128 (=si), (2/1 = do suivant)}</p>
+  <p> est préférable, VERIFIER</p>
+  <p>La construction pythagoricienne   peut être prolongée par empilement de quintes supplémentaires (Cf <a href="../chroniques/arithmétique.html">G&amp;T</a>) : 1)  7 quintes ascendantes supplémentaires, au-delà du &quot;si&quot; (générant la gamme des dièses) et 2)  7 quintes descendantes,  en-deça du &quot;fa&quot;   (générant la gamme des bémols). On obtient la suite,</p>
+  
+  <div class="conteneurImages">
+                        <div> <figure><img src="../images/theorie/suitedesquintes.png" alt="Suite de quintes" />
+                          <figcaption>Suite des quintes n'allant pas au-delà des altérations simples (Gamme chromatique)</figcaption>
+                        </figure></div>
+        </div>
+        
+<p>Les notes reportées sur le cercle d'octave, [f<sub>0</sub>(=do<sub>i</sub>) - 2f<sub>0</sub>(=do<sub>i+1</sub>)[, y apparaissent spontanément dans l'ordre des fréquences, f<sub>m</sub> = f<sub>0</sub> 3<sup>m</sup>/2<sup>Floor[m &#8467;g3]</sup> (m = -8, -7,   ..., 11, 12), ce qui est bien commode pour  calculer les intervalles entre notes consécutives.</p>
+  
+  
+  <div class="conteneurImages">
+  <div>
+    <figure>
+      <img src="../images/theorie/pytha21.png" alt="Gammes pythagoricienne à 21 notes"/>
+      <figcaption>Gammes pythagoricienne à 21 notes</figcaption>
+      </figure>
+    </div>
+  </div>  
+  
+  
+ </div>
+ 
+  
+  <div id="ionien">
+ <h5>Le mode ionien</h5>
+  <p> Les intervalles (dits pythagoriciens) séparant les notes  sont tous des combinaisons linéaires de deux intervalles élémentaires : le demi-ton diatonique,  t<sub>d</sub> = 1200 &#8467;g(256/243<sup></sup>) = 90.225 cents (Ex. les intervalles mi-fa et si-do) et le demi-ton chromatique, t<sub>c</sub> = 1200 &#8467;g(3<sup>7</sup>/2<sup>11</sup>) = 113.68 cents, séparant une note de sa variante altérée (Ex. fa<i>b</i>-fa = fa-fa#).   Le ton, T = 1200 &#8467;g(9/8<sup></sup>) = 203.91 cents  vaut la somme des précédents (T = t<sub>c</sub>+t<sub>d</sub>) et le petit intervalle séparant les notes voisines (dites anharmoniques (Ex. ré<i>b</i>-do#), c'est le comma pythagoricien, P = t<sub>c</sub> - t<sub>d</sub> = 1200 &#8467;g(3<sup>12</sup>/2<sup>19</sup>) = 23.46 cents. On vérifie que les deux demi-tons ne sont pas égaux mais qu'un ton vaut la somme d'un demi-ton diatonique et d'un demi-ton chromatique, T = t<sub>c</sub> + t<sub>d</sub> (= P + 2t<sub>d</sub>, une variante qui va être utile au paragraphe suivant).</p>
+  <p>Comme il a été dit en introduction, les modes respectent, en tout ou en partie, les intervalles de la gamme. Si l'on observe   le cycle des 21 notes, on constate que les intervalles entre les notes consécutives ne sont que de trois types, P, t<sub>d</sub>-P et t<sub>d</sub>, et qu'ils se succèdent dans l'ordre,   {P, t<sub>d</sub>-P, P, t<sub>d</sub>,  t<sub>d</sub>, P, t<sub>d</sub>-P, P, t<sub>d</sub>, P, t<sub>d</sub>-P, P, t<sub>d</sub>,  t<sub>d</sub>, P, t<sub>d</sub>,  t<sub>d</sub>, P, t<sub>d</sub>-P, P, t<sub>d</sub>}. C'est la partition la plus serrée de l'octave que le cycle de 20 quintes propose. A elle seule, elle constitue un mode possible,  où les 21 intervalles (donc les 21 notes) sont simultanément prises en considération dans la composition mais, musicalement parlant, elle n'est certainement pas une bonne option  car  l'adopter  ferait intervenir des intervalles nettement dissonants, tel P beaucoup trop étroit (23.46 cents). Il faut trouver une meilleure partition de l'octave et on y parvient assez miraculeusement en regroupant comme suit la liste des 21 intervalles en une listes de 7 sous-listes :</p>
+  <p>{ {P, t<sub>d</sub>-P, P, t<sub>d</sub>} ,  {t<sub>d</sub>, P, t<sub>d</sub>-P, P} , {t<sub>d</sub>} , {P, t<sub>d</sub>-P, P, t<sub>d</sub>} ,  {t<sub>d</sub>, P, t<sub>d</sub>},  {t<sub>d</sub>, P, t<sub>d</sub>-P, P}, {t<sub>d</sub>} } = {T, T, t<sub>d</sub>, T, T, T, t<sub>d</sub>}<br/><br/>
+    C'est le mode ionien, encore appelé mode de do, assurément le plus répandu des modes depuis 1000 ans, ne serait-ce que parce qu'il coïncide avec notre mode majeur. Puisque ce mode partitionne l'octave, on vérifie que l'on a bien : 5T+2t<sub>d</sub> = 1200 cents. La figure suivante reprend le cycle des quintes en mettant en évidence les intervalles de ce mode :</p>
+    
+
+    
+    <video width="420" height="550" controls="controls">
+                          
+                          <source src="../videos/mode1.webm" type="video/webm" />
+                          <source src="../videos/mode1.ogv" type="video/ogg" />
+                          <source src="../videos/mode1.mp4" />
+                          Votre navigateur n'est pas compatible
+        </video>
+        
+        <div class="textecentre">Le mode de do (ionien)</div>
+
+
+                        
+      <p>Le délimiteur en gras pointe vers la première note du mode, appelée tonique. Les autres délimiteurs pointent automatiquement vers les autres notes de la gamme ainsi définie, au total, do-ré-mi-fa-sol-la-si(-do). On la nomme assez naturellement gamme de do en mode ionien ou plus sûrement gamme de do en mode de do (Cf infra).  La tonique, premier degré de la gamme  engendrée par le mode, est importante car, dans une phrase musicale, elle fonctionne souvent à la manière d'un point final. Par exemple, si vous chantez la phrase initiale d'Au Clair de la Lune, elle commence sur un do et elle se termine sur la même note. Bien que cela n'ait  rien d'obligatoire, convenez que la conclure sur une autre note créerait un point de suspension appelant une résolution. </p>
+      <p>Sur la figure précédente, la tonique a été située sur le do mais cela n'a rien d'obligatoire : elle pourrait, à la rigueur,  se situer sur l'une quelconque des 21 notes du cycle mais nous allons voir qu'en pratique on se limite à 15 possibilités, les autres exigeant de poursuivre le cycle des quintes au-delà de 21 notes et donc de faire intervenir d'exotiques doubles altérations. Naturellement, si l'on change de tonique il faut changer les autres notes en respectant le schéma des intervalles du mode ionien, {T, T, t<sub>d</sub>, T, T, T, t<sub>d</sub>}. La figure ci-avant est dynamique : après l'avoir initialisée, en pressant sur le bouton de démarrage (&rtrif;), vous pouvez sélectionner n'importe quelle tonique en faisant (délicatement !) glisser le curseur situé en bas de l'écran.   Si l'on part de la tonique &quot;ré&quot;, on construit la gamme de &quot;ré&quot; en mode de do (ionien) à condition d'introduire deux altérations en dièse :  ré-mi-fa<sub>#</sub>-sol-la-si-do<sub>#</sub>(-ré). Vous vérifierez qu'en mode de do, seules les 15 toniques appartenant à l'intervalle [do<i>b</i>-do<sub>#</sub>] (dans l'ordre des quintes) proposent un schéma de notes ne dépassant pas l'altération simple. La gamme de do<sub>#</sub> en mode de do demande que toutes les notes soient diésées mais si l'on pousse un rang plus loin (gamme de sol<sub>#</sub> en mode de do), on voit   qu'une flèche pointe dans le vide, en fait vers un fa double dièse (fa<sub>##</sub>) comme il apparaîtrait si on poursuivait le cycle des quintes en en empilant 34 au lieu de 20 (Cf <a href="../chroniques/arithmétique.html">G&amp;T</a>).  Du côté des bémols, la gamme de do<i>b</i> exige 7 bémols et seule la gamme de fa<i>b</i> en mode de do fait appel à une altération double (si<i>bb</i>).</p>
+      
+      </div>
+      
+
+<div id="anciens">
+<h5>Les autres modes anciens</h5>
+      <p>Six autres modes ont progressivement été définis qui sont venus s'ajouter au mode ionien. Leur schéma d'intervalles dérive du schéma ionien par simple permutation circulaire. Le tableau suivant  les résume (NB : la notation chiffrée des intervalles est commode à condition de se rappeler que le demi-ton diatonique ne vaut pas exactement la moitié d'un ton; cela ne sera vrai qu'en tempérament égal, cf infra) : </p>
+      
+
+        <div class="conteneurImages">
+                      <div> <figure>
+                              <img src="../images/theorie/modesanciens.png" alt="Les 7 modes anciens" />
+                              <figcaption>Les 7 modes anciens</figcaption>
+          </figure></div>
+        </div>								
+
+      
+      
+      <p><i>Note. Bien que les appellations de ces modes soient clairement d'origine grecque, ils n'ont jamais été étudiés de cette façon par les grecs et encore moins pratiqués. A ce stade, il est prudent de distinguer les modes antiques, dont on sait fort peu de choses,  et les modes anciens, diversement qualifiés, selon les auteurs et les époques, de grégoriens,  médiévaux ou ecclésiastiques. Dans un ouvrage de référence, intitulé fort à propos &quot;L'imbroglio des modes&quot;, le grand musicologue français, Jacques Chailley, confesse avoir avoir abusé d'aspirine en tentant de s'y retrouver. Les difficultés rencontrées par tous ceux qui se sont penchés sur le problème naissent invariablement du constat que les seuls documents en notre possession datent du Moyen-Age et qu'ils mélangent les acquis antiques à d'autres nettement postérieurs. Les archéologues musicaux  cherchent et trouvent des indices  évoquant les modes antiques chez Platon  (mais ils en trouve aussi qui parlent de  l'Atlantide ...),  aussi nous n'insistons pas outre mesure. Disons simplement que les historiens pensent   que les grecs n'ont véritablement pratiqué que les modes dorien, phrygien, lydien et mixolydien,  sous deux formes distinctes, dites authente et plagale, soit 8 modes en tout. La forme authente est celle affichée au tableau ci-avant et la forme plagale s'en déduit par inversion des deux tétracordes, ce qui l'amène à démarrer une quarte plus bas que sa variante authente (d'où leurs noms préfixés, hypodorien, hypophrygien, hypolydien et hypomixolydien).  
+        Cette subtilité (qui n'en est pas vraiment une) a jeté le trouble parmis les auteurs, au 19<sup>ème</sup> siècle, au point qu'ils ont erronément nommés les 7 modes  (do = lydien, ré = phrygien, mi = dorien, fa = hypolydien, sol = hypophrygien, la = hypodorien et si = mixolydien).   C'est pour éviter toute confusion que l'on préfère actuellement s'en tenir aux appellations modernes, modes de do, de ré, etc. Les modes éolien et ionien  ainsi que leur variante plagale (hypoeolien et hypoionien) n'ont été ajoutés qu'au Moyen-Age, faisant passer le total à 12, d'où le titre du fameux </i><i> d'Heinrich Glaréan  (Dodecachordon, 1567).  L'appellation du mode locrien est encore plus tardive, le mode étant peu pratiqué du fait de sa quinte diminuée peu flatteuse pour l'oreille. C'est l'élégance de cette construction qui a entretenu, chez les grecs, l'espoir d'une théorie mathématique de la musique.  Bien que  le cycle complet des quintes  apporte une base cohérente (au sens mathématique du terme) à la construction d'une gamme exploitable sinon idéale, rien ne laisse penser que cette généralisation ait réellement été effectuée par les grecs, d'ailleurs les notions de dièse et de bémol ne sont apparues  que beaucoup plus tard.</i> Même la note &quot;si&quot;, problématique à cause de sa trop grande proximité avec le do supérieur (si-do = quinte du loup, trop courte d'un comma pythagoricien), n'a jamais figuré dans l'inventaire hexacordal de Guido d'Arrezzo (ut-re-mi-fa-sol, acrostiche de l'Hymne de Saint Jean). ??? </p>
+      <p>L'application dynamique révélant les différentes gammes en mode de do ayant été  présentée ci-avant, voici celles qui détaillent les 6 autres modes anciens :</p>
+
+  
+  <video width="319" height="418" controls="controls">
+   
+    <source src="../videos/mode2.webm" type="video/webm" />
+    <source src="../videos/mode2.ogv" type="video/ogg" /> 
+    <source src="../videos/mode2.mp4" />                            
+    Votre navigateur n'est pas compatible
+  </video>
+  
+  <video width="319" height="418" controls="controls">
+    
+    <source src="../videos/mode3.webm" type="video/webm" />
+    <source src="../videos/mode3.ogv" type="video/ogg" /> 
+    <source src="../videos/mode3.mp4" />                            
+    Votre navigateur n'est pas compatible
+  </video>
+  
+  <video width="319" height="418" controls="controls">
+    
+    <source src="../videos/mode4.webm" type="video/webm" />
+    <source src="../videos/mode4.ogv" type="video/ogg" /> 
+    <source src="../videos/mode4.mp4" />                            
+    Votre navigateur n'est pas compatible
+  </video>
+  
+  <video width="319" height="418" controls="controls">
+   
+    <source src="../videos/mode5.webm" type="video/webm" />
+    <source src="../videos/mode5.ogv" type="video/ogg" /> 
+    <source src="../videos/mode5.mp4" />                            
+    Votre navigateur n'est pas compatible
+  </video>
+  
+  <video width="319" height="418" controls="controls">
+    
+    <source src="../videos/mode6.webm" type="video/webm" />
+    <source src="../videos/mode6.ogv" type="video/ogg" /> 
+    <source src="../videos/mode6.mp4" />                            
+    Votre navigateur n'est pas compatible
+  </video>
+  
+  <video width="319" height="418" controls="controls">
+  
+    <source src="../videos/mode7.webm" type="video/webm" />
+    <source src="../videos/mode7.ogv" type="video/ogg" /> 
+    <source src="../videos/mode7.mp4" />                            
+    Votre navigateur n'est pas compatible
+  </video>
+  
+  
+
+
+<p>On peut proposer une  procédure équivalente de construction des gammes anciennes,  présentant l'avantage de mettre en lumière la progression des altérations d'une gamme à l'autre. Elle consiste à afficher la suite des notes obtenues en empilant 26 quintes au départ de si<i>bb</i>, ce qui livre 27 notes, de si<i>bb</i> à la<sub>##</sub>  (On pourrait aller au-delà, aussi bien du côté des dièses que des bémols, mais cela aurait pour conséquence de faire apparaître  des notes doublement altérées dans certaines gammes) :</p>
+<div class="containerBlocDiv">&hellip; si<i>b</i><i>b</i> fa<i>b</i> do<i>b</i> sol<i>b</i> ré<i>b</i> la<i>b</i> mi<i>b</i> si<i>b</i> <span class="souligner">fa do sol ré la mi si</span> fa<sub>#</sub> do<sub>#</sub> sol<sub>#</sub> ré<sub>#</sub> la<sub>#</sub> mi<sub>#</sub> si<sub>#</sub> fa<sub>##</sub> do<sub>##</sub> sol<sub>##</sub> ré<sub>##</sub> la<sub>##</sub> &hellip;</div>
+<p>La séquence soulignée reproduit (dans le désordre) les notes constitutives de la gamme de do en mode de do. On trouve les notes constitutives de la gamme de X en mode de Y en déplaçant cette fenêtre comme suit  : on commence par situer X et Y dans la suite  ci-dessus et on compte le nombre d'intervalles séparant X de Y (positivement si X est situé à droite de Y et négativement sinon). On déplace la fenêtre de &Delta; notes vers la droite, si &Delta; est positif, et vers la gauche, si &Delta; est négatif. Il ne reste plus qu'à  réordonner les notes trouvées dans l'ordre des fréquences croissantes au départ de la tonique, X. (On ne va pas au-delà si l'on s'en tient aux 7 modes ci-dessus car on serait cette fois condronté à l'apparition d'altérations triples dont la musique ne fait raisonnablement aucun usage)Voici deux exemples pour fixer les idées :</p>
+<p>- Exemple 1 : gamme de la en mode de sol (myxolydien). &Delta; = +2 donc déplacer la fenêtre de deux cases vers la droite (sol ré la mi si fa<sub>#</sub> do<sub>#</sub>, soit, en commençant par la tonique, la, et en poursuivant dans l'ordre ascendant, la gamme : la, si, do#, ré, mi, fa#, sol). Un raccourci mental est  possible si l'on se souvient de l'ordre d'apparition des dièses dans le   cycle des quintes  : &Delta; = +2 implique deux dièses, nécessairement fa<sub>#</sub> et do<sub>#</sub> et on complète la gamme par les notes naturelles manquantes, en commençant par la tonique.</p>
+<p>- Exemple 2 : gamme de mi<i>b</i> en mode de do (ionien). &Delta; = -3 donc déplacer la fenêtre de trois cases vers la gauche (la<i>b</i> mi<i>b</i> si<i>b</i> fa do sol ré, soit en commençant par la tonique, mi<i>b</i>, et en poursuivant dans l'ordre ascendant, la gamme : mi<i>b</i>, fa, sol, la<i>b</i>, si<i>b</i>, do, ré. Le même calcul mental est également possible : &Delta; = -3 implique  trois bémols, nécessairement     si<i>b</i>, mi<i>b</i> et la<i>b</i> et on complète la gamme par les notes naturelles manquantes en commençant par la tonique.</p>
+
+</div>
+
+<div id="derive">
+<h5>La dérive hellénique</h5>
+
+<p>Reprendre une partie de la note ci-dessus</p>
+<p>Le cycle des quintes résulte d'une construction arithmétique limpide et imparable, reposant l'exploitation de la quasi égalité (à un comma P près) entre 12 quintes 12x701.95=8423.4 cents) et 7 octaves (7x1200=8400 cents). On ne s'étonne guère qu'il ait conservé toute sa pertinence de nos jours demeurant même à la base de la construction tonale classique.  Or le cycle des quintes ouvrait tout naturellement la voie à une définition claire des modes anciens mais inexplicablement, les grecs se sont  égarés dans une direction sans issue qui les a éloignés d'une  pratique musicale exploitable. En effet,  l'investissement intellectuel fait au niveau de la théorie (des modes) n'a été suivi d'aucun résultat tangible : la musique grecque est demeurée homophonique pour un résultat sans aucun rapport esthétique  avec celui atteint dans les arts de la représentation (sculpture et  architecture), au siècle de Pericles (-495, -429). Certes l'instrumentarium demeurait limité pour des raisons de techniques artisanales mais cela n'explique pas tout car même le chant n'a connu aucun développement savant.  Fait sans précédent dans le domaine des Arts, la musique savante occidentale est  née au Moyen-Age  dans le Nord de la France. Les instruments n'étaient pourtant guère plus développés mais le chant polyphonique a suffi à l'éclosion d'un art déjà sans pareil. C'est à ce point que parler de Renaissance en musique, à partir de 1500, apparaît comme un contresens, aucun modèle antique n'ayant guidé les explorations des musiciens médiévaux. Il ne faut dès lors guère s'étonner que  l'Italie renaissante ait tardé à trouver sa place dans le concert européen alors qu'elle régnait sans grand partage en architecture et dans le domaine des arts plastiques. </p>
+<p>Illustrations et explications : LEONARD BERNSTEIN EXPLIQUE LE MODE LYDIEN</p>
+
+</div>
+
+
+
+<div id="structure">
+<h5>Structure harmonique des modes anciens</h5>
+
+<p>Si l'on observe la table schématique des modes anciens, on observe que le  mode ionien donne naissance aux 6 autres  par simple permutation circulaire  de ses intervalles constitutifs. C'est le signe d'une certaine redondance entre les modes; par exemple, les 7 gammes de X en mode de X sont toutes constituées des mêmes notes (les notes usuelles dans ce cas). Si l'on consulte le <a href="../annexes/theorie/gammesetendues.png">tableau</a> des 105 gammes dépourvues d'altération multiple, gammes de X (15 possibilités) en mode de Y (7 possibilités),  les toniques (toutes situées en tête des vecteurs colonnes) rangées horizontalement  dans l'ordre des quintes ascendantes et les modes de même mais verticalement, on constate que toutes les gammes situées sur une même colonne sont composées des mêmes notes (altérations comprises) seulement rangées dans des ordres différents. </p>
+<p>Musicalement parlant, ces gammes ne sont pas identiques pour autant, il suffit de les chanter pour s'apercevoir qu'elles ne sonnent pas de la même manière. Cette subtilité vient de ce que les (7) degrés de la gamme ne sont pas d'importance égale.</p>
+<p> Chaque mode est décomposable en deux tétracordes   séparés par un ton ou un demi-ton (Ils sont visibles sur la partie droite du tableau). Le tétracorde, sorte de brique élémentaire du mode heptatonique, est constitué de trois intervalles consécutifs pouvant être de l'un des types suivants : TTT (lydien), TTt<sub>d</sub> (ionien), Tt<sub>d</sub>T (dorien) ou t<sub>d</sub>TT (phrygien). Ils sont reconnaissables par la position qu'y occupe l'éventuel demi-ton. On observe que les modes ionien, dorien et phrygien répètent deux fois le tétracorde du même nom. De plus, les modes ionien et phrygien sont inverses l'un de l'autre tandis que le mode dorien est son propre inverse. 
+          
+          Ces relations de symétrie ne sont pas que des curiosités mathématiques, elles sont au coeur des relations subtiles entre les sons qui engendreront bien plus tard (au 17ème siècle) la notion de tonalité musicale (Cf infra). </p>
+        <p>Chaque mode est caractérisé par 7 degrés successifs aux noms évocateurs qui jouent un rôle essentiel dans la grammaire musicale. On distingue : la Tonique, la Seconde, la Tierce (majeure), la Quarte, la Quinte, la Sixte (majeure), la Septième et (le retour à) l'Octave. Ils occupent les positions successives des lignes et des interlignes de la portée traditionnelle. Hélas la portée n'est pas linéaire et la présence d'altérations complique encore la situation. L'exemple simple de la gamme de do en mode de do permet de préciser le vocabulaire commun à toutes les gammes. On vérifie que l'on a dans tous les cas que la Quinte est juste (3T+t<sub>d</sub> = 701.955 cents) à l'exception du mode locrien où la quinte est diminuée d'un demi-ton chromatique (2T+2t<sub>d</sub> = 588.27 cents).  Le mode locrien, longtemps considéré comme dissonant à cause de sa quinte diminuée, ne fait pas partie des modes anciens   mais on l'a inclus dans le tableau par souci  de complétude.</p>
+</div>
+
+
+ <div id="renaissance">
+<div id="gammes">
+      
+        <h4>les Modes à la renaissance</h4>
+
+ <p>Cohérente ne signifie pas idéale et Deux siècles plus tard et sans forcément remettre en cause  l'importance  des rapports arithmétiques simples,  Aristoxène (-360, -300) aurait tenté d'en minimiser la portée, recommandant de juger  la valeur des consonances en  se fiant davantage au jugement auditif, sans nécessairement s'éloigner très fort des proportions pythagoriciennes. Sous réserve  que cette information soit historiquement exacte, on y voit une première tentative  de mettre en doute la nécessité de n'obéir qu'à une logique arithmétique et d'assurer un avenir à l'intuition musicale. Gioseffo Zarlino (1517-1590)  
+ <p>Au Moyen-Age, les musiciens occidentaux ont largement privilégié la quinte (rapport 3/2, donc la quarte, rapport 4/3, complément naturel de la quinte au sein de l'octave, 701.955+498.045=1200 cents), reléguant les autres intervalles au rang de dissonances. Seuls les anglais ont fait l'inverse pendant la courte période du gymel cultivant la tierce (majeure, rapport 5/4 soit 386.314 cents), trouvant un plaisir auditif au frottements de ces quintes fausse au sens de Pythagore. Avec le temps, cela a donné l'idée aux musiciens continentaux qu'il serait peut-être possible d'apprivoiser cette tierce et de la concilier avec la quinte et naturellement l'octave. Le problème (déjà discuté dans  <a href="../chroniques/arithmétique.html">G&amp;T</a>) est que cela n'est possible qu'approximativement du fait que 12 quintes excèdent une octave de peu (un comma pythagoricien, P=23.46 cents) et que 4 quintes n'excèdent une tierce que d'un comma zarlinien, Z=21.506 cents, du nom de Gioseffo Zarlino (1517-1590). 
+   
+   
+ <div class="conteneurImages">
+<div>
+                          <figure>
+                              <img src="../images/theorie/reseauzarlinien.png" alt="Réseau zarlinien" />
+                              <figcaption>Réseau zarlinien<br/>
+                            <i>Quintes ascendantes de gauche à droite (en lignes) <br/>Tierces ascendantes de haut en bas (en colonnes)</i></figcaption>
+                          </figure>
+          </div>
+        </div>  
+ 
+ 
+ <p>La gamme zarlinienne tente une extension de la gamme pythagoricienne par empilement de quintes et de tierces : elle conserve la quinte (rapport 3/2) mais lui adjoint la tierce (majeure, rapport 5/4), privilégiant l'accord parfait. On obtient le tableau bidimensionnel ci-contre, où la progression horizontale de gauche à droite correspond aux quintes ascendantes et où la progression verticale de haut en bas correspond aux tierces ascendantes. Les fréquences des 16 notes (principales, le tableau peut être étendu) au sein d'une octave unique, [f<sub>0</sub>(=do<sub>i</sub>)- 2f<sub>0</sub>(=do<sub>i+1</sub>)[, répondent alors à la loi, f<sub>m,n</sub> = f<sub>0</sub> 3<sup>m</sup> 5<sup>n</sup>/2<sup>Floor[m &#8467;g3+n &#8467;g5]</sup> (m, n = -1, 0, 1, 2),  où la valeur exacte de f<sub>0</sub> dépend à nouveau du diapason choisi. Sur le cercle cela correspond à la position, zarl[m,n] = 1200 (m &#8467;g3+n &#8467;g5-Floor[m &#8467;g3+n &#8467;g5]). Les  notes do-mi-sol dessine l'acccord parfait majeur  (Motif &quot;en coin&quot; rose,  qui peut être transposé partout sur la figure, fa-la-do, mi<i>b</i>-sol-si<i>b</i>, etc, vérifiez vos fractions !). On retrouve les notes usuelles sur base de trois accords parfaits, do-mi-sol (en rose), fa-la-do (à sa gauche) et sol-si-ré (à sa droite). Le tableau peut alors être complété sur base de l'empilement horizontal de quintes et vertical de tierces sauf qu'au-delà du cadre affiché, les ennuis commencent, faisant apparaître des variantes de notes qui sont absentes dans la construction pythagoricienne. Par exemple, à gauche du la on attend un ré puisque situé une quinte plus bas mais ce ré (10/9) n'est pas tout à fait le même que celui qui est affiché (9/8) et cette situation a tendance à se reproduire pour un grand nombre de notes qui  se multiplient. Ce tableau peut être prolongé tant horizontalement que verticalement entraînant une démultiplication de plus en plus anarchique de notes vosines, c'est le prix à payer lorsqu'on tente de concilier quintes et tierces. Par exemple la case située à gauche du la (5/3) est clairement un ré puisque situé une quinte plus bas que ce la. Toutefois ce &quot;ré&quot; (10/9, 1200 &#8467;g(10/9) = 182.40 cents) est légèrement plus grave (d'un comma Z) que &quot;ré&quot; (9/8, 1200 &#8467;g(9/8) = 203.91 cents) déjà présent au tableau.</p> 
+ 
+ 
+ 
+ <div class="conteneurImageSeule">
+  <div>
+    <figure>
+      <img src="../images/theorie/gammezarlinienne.png" alt="Gamme zarlinienne limitée à 16 notes"/>
+      <figcaption>Gamme zarlinienne limitée à 16 notes</figcaption>
+      </figure>
+    </div>
+  </div>  
+ 
+ 
+ <p>A ce stade on se retrouve avec deux &quot;ré&quot; distincts aussi valables l'un que l'autre dans la conception de Zarlino. Non seulement la notation doit pouvoir les distinguer mais les claviers ordinaires à sons fixes ne conviennent plus et comme le phénomène se reproduit à  chaque fois qu'on étend le réseau zarlinien on se retrouve bientôt confronté à une pléthore de notes difficile à gérer. La figure ci-contre n'affiche que les notes &quot;incontestables&quot; proches du &quot;do&quot; qui sert de référence au sein du réseau dont le ré (9/8).  
+ <p>La démultiplication des notes zarliniennes a pour conséquence que l'octave peut être &quot;pixellisée&quot; de multiles façons au point que la notion de mode perd un peu de sa pertinence et de fait elle est passée au second plan, supplantée par cette autre notion du (choix d'un) tempérament. Cette notion essentielle en musique ancienne ayant été détaillée dans  <a href="../chroniques/arithmétique.html">G&amp;T</a>, bornons-nous à rappeler qu'elle tente de raccourcir (tempérer est le terme exact) les quintes (donc de les fausser légèrement) afin de les  concilier tant avec les tierces qu'avec l'octave. Cette opération reposant sur une impossibilité arithmétique notoire on trouve sur le marché toutes siortes de tempéraments plus ou moins satisfaisants (Cf <a href="../chroniques/arithmétique.html">G&amp;T</a>). La Renaissance (1430-1600) s'est consacrée à l'écriture polyphonique (verticale) jusqu'à épuiser le sujet et n'ouvrir un autre chapitre de l'histoire musicale qu'à l'époque baroque (1600-1750).<br/>
+   <br/>
+   
+   
+ </div>  
+
+
+
+        <p> </p>
+        <p>En demeurant attaché à la consonance réputée parfaite de l'octave et de la quinte (et par conséquent de la quarte, de rapport 4/3, complément naturel de la quinte), le Moyen-Age a adopté   la méthode de Pythagore. Celle-ci  sera  amendée une première fois à la Renaissance lorsque l'intervalle de tierce revendiquera ses droits à la consonance élargie (cf infra). </p>
+        <p>&nbsp;</p>
+        <p>La théorie modale a de tous temps été au coeur de la discrétisation intelligente de l'espace sonore.  Elle plonge ses racines dans l'Antiquité grecque mais elle s'est tellement transformée, au cours de siècles, qu'il faut se rendre à l'évidence que les notions de modes antiques (grecs), anciens (médiévaux puis renaissants) et modernes  ne se recouvrent absolument pas. Les modes grecs, du moins ce que nous en savons,  n'intéressent que les archéologues de la musique car, compliqués à l'extrême, ils n'ont entraîné aucun progrès musical exploitable. Par contre, on peut à peu près certainement créditer l'école de Pythagore d'avoir proposer la première  construction d'une gamme (tellement) viable (qu'elle est encore en usage de nos jours). Cet exposé  commence donc il y a 2500 ans mais dans une présentation fortement modernisée pour des raisons évidentes de lisibilité. </p>
+        
+        
+ 
+      
+      
+  
+   
+        
+        <p>La théorie (modernisée) des modes anciens peut sembler attrayante mais elle porte en elle un lourd fardeau, celui d'une redondance extrême. </p>
+        <p>le principe d'une game descendqnte a de fait occupé le début de la polyphonie médiévale où c'est la quarte qui importe davantage que la quinte (dont est le renversement). la quinte ne s'est imposée qu'au 12ème ??? siècle. </p>
+      <p>Par exemple, le mode ionien, le plus connu (il coïncide avec notre mode majeur), est constitué de deux tétracordes semblables où le demi-ton se situe en dernière position. Concrètement, cela implique que lorsqu'on décline la gamme, on le fait de manière ascendante do<sub>3</sub>-ré-mi-fa-sol-la-si-do<sub>4</sub> en atterrissant en douceur sur la note finale qui agit comme un point final de repos. Chantez la gamme en omettant la dernière note - donc le dernier intervalle - et vous entendrez comme un point de suspension qui appelle la résolution sur un retour à la tonique de départ (do). Ce phénomène d'attraction de la sensible (si) vers la tonique (do) est une propriété fondamentale de l'acoustique musicale, peu importe que l'explication soit (de nature) physique ou physiologique. Lorsqu'au XVII<sup>ème</sup> siècle on a éprouvé le besoin de simplifier drastiquement l'éventail des modes pour n'en retenir qu'un c'est assez naturellement que le choix s'est porté sur le mode ionien qui est devenu &quot;notre&quot; mode majeur. L'autre mode retenu est celui de la  mais il n'a donné &quot;notre&quot; mode mineur qu'au travers d'un ensemble de transformations qui l'ont éloigné du modèle primitif (Eolien).</p>
+      <p>La structure TTt<sub>d</sub> signe un tétracorde ascendant, t<sub>d</sub>TT signe un tétracorde descendant et entre les deux Tt<sub>d</sub>T signe un tétracorde neutre. Dans cette optique </p>
+      <p>Un mode n'est qu'une suite d'intervalles entre les notes. Pour construire une gamme spécifique il faut préciser la note dont on part qui porte le nom de tonique. En s'en tenant provisoirement aux 7 notes usuelles, les 7 modes anciens permettent de définir 7x7 = 49 gammes distinctes. En poursuivant l'empilement des quintes on ne ferait qu'ajouter les notes altérées et on multiplierait le nombre des gammes.</p>
+      <p>Chez les grecs (comme dans la tradition japonaise) les gammes étaient déclinées de façon descendante alors que depuis le Moyen-Age, la tendance est de les décliner en mode ascendant (do-ré-mi- etc, quitte à redescendre ensuite). Serge Gut considère cette transition comme aussi importante que le recours à la polyphonie.</p>
+      <p>&nbsp;</p>
+      <div class="conteneurImages">
+                      <div> <figure>
+                              <img src="../images/theorie/modes.png" alt="49 Gammes principales dans les 7 modes anciens" />
+                              <figcaption>49 Gammes principales dans les 7 modes anciens</figcaption>
+          </figure></div>
+        </div>
+
+      
+      
+      <p>D'un point de vue purement mathématique, toutes ces  gammes  ne sont pas indépendantes, elles possèdent le même contenu informationnel puisqu'on passe d'un mode à l'autre  par  simples permutations circulaires. Cependant d'un point de vue acoustique, elles ne sonnent pas de la même façon, en particulier à cause des fonctions tonales exercées par leurs échelons. </p>
+      
+      
+      
+      <p>Il est rare qu'un mouvement de sonate, de quatuor ou de symphonie se déroule dans une tonalité immuable. Des transitions existent destinées à introduire autant de diversions qui rompent la monotonie.</p>
+      <p>la modalité qui avait cédé la plce à la tonalité dès le XVII<sup>ème</sup> siècle a refait surface deux siècles plus tard mais sous une forme élargie, reposant sur les restrictions possibles auxquelles on peut soumettre la gamme chromatique complète à 12 sons. <i>Note. Bien que cela soit étranger au sujet principal de cette revue, il peut être utile d'en fixer les contours.</i></p>
+       
+ 
+    
+      
+      
+      
+      
+  
+       
+        <h4>Le temps des cathédrales</h4>
+        
+        
+        
+  
+        
+        
+        
+        
+        
+<p>La musique possède un statut particulier parmi les arts usuels : dans sa version savante reposant  sur une notation   élaborée, elle est de conception relativement récente, ne remontant guère au-delà de l'an 1000. </p>
+         <p>&nbsp;</p>
+             
+      
+      
+      
+    
+        <h4>L'exception occidentale</h4>
+   <p>Cette chronique se concentre uniquement sur la musique développée en Occident au cours du deuxième millénaire et au-delà. ne concerne pas les La sorte de musique qui nous intéresse ici est appelée indifféremment classique, savante ou sérieuse. Bien qu'elle soit la plus répandue, l'appellation &quot;classique&quot; ne semble guère opportune tant elle prête à confusion. Sérieuse  conviendrait mieux si seulement le terme ne véhiculait pas une notuion rébarbative. Savante peut paraître prétentieux mais c'est pourtant le seul terme qui rend justice à la somme des efforts demandés aux musiciens, compositeurs et interprètes, pour maîtriser leur sujet. C'est donc celui qui sera utilisé ci-après.</p>
+   <p>Les sots reprochent à la musique savante son caractère élitiste, s'indignant au passage que les salles de concert ne soient fréquentées majoritairement que par un public vaguement âgé à la peau blanche ou jaune. Que diraient-ils si seulement ils savaient que la dévotion chrétienne est pour beaucoup dans son élaboration ?</p>
+   <p>Certes la musique telle que nous la connaissons plonge ses racines dans l'antiquité grecque. Bien avant les premiers vrais savants, Euclide (Vers -300), Erathostène (-276, -194), Aristarque (ca -310, -230) et Hipparque (Vers -190, -170),  deux philosophes-penseurs-arithméticiens, Pythagore (-580, -495) et Aristoxène (-360, -300), ont réfléchi à l'élaboration d'une théorie musicale qui n'a rien perdu de son actualité, en particulier au niveau des principes de l'élaboration des gammes. Ces penseurs étaient réellement et durablement en avance sur leur temps grâce au fait qu'il ne s'embarrassaient par d'écrire une musique qui n'aurait pas pu concurrencer </p>
+   <p>Le Moyen-âge n'a guère bonne réputation chez les savants qui se plaignent d'un obscurantisme généralisé. Pendant longtemps seul le Monde Arabe a veillé à ce que la lumière antique soit entretenue y ajoutant sa contribution en particulier en astronomie observationnelle. Ce qui lui a manqué c'est une liberté interprétative des mesures engrangées. Engluée dans des recommandations et des interdits d'un autre âge et loin de les marginaliser, l'Islam a été une entrave à l'exploitation de  siècles d'avance initiale. A ceux qui prétendent que la religion chrétienne n'a pas mieux fait (Galilée) on ne peut qu'objecter la force des faits : c'est en chrétienté que les vraies lumières ont éclos (Copernic, Képler et bientôt la cohorte des mécaniciens (Newton, Lagrange, etc). Ceci n'est nullement une digression : la musique occidentale a bénéficié des mêmes concours de circonstances et dès le Moyen-Age elle s'est affirmée en France. </p>
+   <p>On ne peut s'empêcher de penser que le style grégorien, essentiellement horizontal, convenait sans doute aux monastères mais qu'ils n'étaient plus du tout dignes de la verticalité des cathédrales alors en pleine érection.</p>
+   <p>La musique est un langage que tout le monde peut comprendre sans distinction d'aucune sorte. Elle ne demande que l'effort  d'ouvrir ses  oreilles et son âme si affinité. Dans un monde de plus en plus technologique elle est le contrepoids indispensable à nos cerveaux pour se reposer des sciences omniprésentes : c'est le lieu magique où toutes les propositions se valent à l'abri de la didacture de la Vérité. </p>
+   <p>La musique savante, sérieuse ou classique, appelez-la comme vous voulez, est née en France au début du deuxième millénaire, dans le même élan de ferveur  qui a animé les  bâtisseurs de cathédrales. Ce n'est nullement un hasard si la première oeuvre musicale d'envergure, consciemment conçue avec sans doute l'espoir de durer est une messe complète capable de rivaliser d'égale à égale avec la prière de l'office qu'elle aurait pu se contenter d'accompagner discrètement (Guillaume de Machaut, chanoine au sein du chapitre de la cathédrale de Reims : <a href="https://www.youtube.com/watch?v=EuaFYK4ORgM">Messe de Nostre Dame</a>, oeuvre composée entre 1360 et 1365 pour une destination inconnue, l'idée du sacre de Charles V, en 1364, un temps évoquée à cause de la proximité spatio-temporelle, étant aujourd'hui abandonnée). En tolérant voire en encourageant ce qui serait passé pour une dérive sacrilège sous d'autres longitudes, les autorités pontificales ont contribué à jeter  les bases d'un Art nouveau représentatif de ce qu'il faut bien se résoudre à appeler l'exception occidentale.</p>
+   <p>La musique a suivi une ligne du temps la faisant passer par tous les stades de l'évolution stylistique commune à tous les arts parce qu'épousant fidèlement la sensibilité selon les périodes historiques, Moyen-Age (haut et bas), Renaissance (haute et basse), Baroque, préclassique et clasique, romantique, moderne, contemporaine et postmoderne. Elle l'a fait avec des nuances qui lui ont été propres en avance ou en retard </p>
+   <p>&nbsp;</p>
+   <p>De fait elle l'était en particulier dans l'élaboration des instruments de musique mais c'était clairement l'aspect technologique qui était privilégié sauf que le besoin s'est fait sentir d'élaborer une véritable théorie musicale autoome, de plus en plus complexeeet de moins en moins ancrée dans la logique. C'était le prix à payer pour conférer à la musique le statut non plus d'une science mais d'un langage indépendant et universel et capable d'exprimer l'inexprimable tout en s'adressant à tous.</p>
+   <p>Le lecteur qui souhaiterait en apprendre davantage sur la genèse des musiques médiévale et renaissante consultera avec profit les ouvrages publiés en français, par Jacques Chailley et Serge Gut.</p>     
+
+      </div>
+      
+      
+      <div id="chromatique">
+  <h4>La gamme chromatique</h4>
+  
+   <p>La saga des tempéraments divers et variés s'est cloturée sur un compromis qui a fait hurler les puristes du son mais qui a réjoui tous ceux qui pensaient avec quelques pragmatisme qu'il était temps d'adopter un compromis susceptible de convaincre une majorité de musiciens progressistes. C'est le tempérament égal grâce auquel la modulation devient possible sans contrainte. </p>
+   
+   <div class="conteneurImageSeule">
+  <div>
+    <figure>
+      <img src="../images/theorie/chromatique1.png" alt="Gamme chromatique à 12 notes"/>
+      <figcaption>Gamme chromatique à 12 notes</figcaption>
+      </figure>
+    </div>
+  </div>  
+  
+  
+   <p>Tout est parti de cette observation que les notes pythagoriciennes ou zarliniennes ont  nettement tendance à se grouper aux voisinages des sommets d'un dodécagone régulier (Les points rouges sur toutes les figures qui précèdent). Les musiciens ont pris la décision radicale de  confondre ces variantes dites anharmoniques en une note unique tout en se réservant la possibilité de les distinguer en relation avec leur fonction tonale (Principe d'une orthographe musicale où plusieurs  sons se prononçant à l'identique peuvent s'écrire différemment : panser, paon, penser). La gamme tempérée s'est imposée à partir des années 1800, le temps nécessaires pour vaincre les réticences. Les fréquences des 12 notes dites chromatiques au sein d'une octave unique, [f<sub>0</sub>(=do<sub>i</sub>)- 2f<sub>0</sub>(=do<sub>i+1</sub>)[, répondent dès lors à la loi, f<sub>m</sub> = f<sub>0</sub> 2<sup>m/12</sup> (m =  0, 1, ..., 11),  où la valeur exacte de f<sub>0</sub> dépend à nouveau du diapason choisi. Sur le cercle cela correspond à la position des points rouges, temp[m] = 100 m.</p>
+<p> L'échelle complète des fréquences audibles, couvrant 10 octaves, est représentée dans  le tableau suivant (Cf <a href="../chroniques/arithmétique.html">GT</a>).     Les fréquences des notes valent, sur base d'un diapason standard (la<sub>440</sub>), f<sub>k</sub> = 440 2<sup>k/12</sup> (Hz), où l'entier k varie de -57 (do<sub>0</sub>) à +62 (si<sub>9</sub>). L'intervalle séparant deux notes consécutives  vaut donc, t = 100 cents (le demi-ton tempéré, qui confond t<sub>d</sub> et t<sub>c</sub>).</p>
+<div class="conteneurImages">
+<div> 
+                            <figure>
+                                <img src="../images/arithm/frequences.png" alt="Tableau des fréquences dans le tempérament égal" />
+                                <figcaption>Tableau des fréquences des notes dans le tempérament égal 
+                              </figcaption>
+                            </figure>
+        </div>
+</div>
+<p>Partitionner l'octave au moyen de ces  12 notes  équidistantes définit le mode dodécaphonique. Il est  caractérisé par la suite d'intervalles,  t-t-t-t-t-t-t-t-t-t-t-t. On a que l'octave est bien couverte : 12x100 = 1200 cents. Par exemple, la gamme de &quot;do&quot; en mode chromatique tempéré s'énonce  :<br/>
+  do-do<sub>#</sub>(=ré<i>b</i>)-ré-ré<sub>#</sub>(=mi<i>b</i>)-mi-fa-fa<sub>#</sub>(=sol<i>b</i>)-sol-sol<sub>#</sub>(=la<i>b</i>)-la-la<sub>#</sub>(=si<i>b</i>)-si.</p>
+<p>Le mode chromatique semble donner entière satisfaction du fait de sa couverture régulière de l'octave. Cependant, chanter une gamme chromatique en montant (ou en descendant) répand un sentiment de pauvreté qui frise l'ennui (Jouez toutes les touches blanches et noires sur ce <a href="https://www.musicca.com/fr/piano">piano virtuel</a>). Les musiciens ont cherché à pallier cette monotonie et le remède qu'ils ont adopté s'appelle la modalité. En bref, un mode est une restriction de l'ensemble complet des intervalles sur l'octave. Autrement dit, le principe de la modalité est  de se concentrer sur un sous-ensemble bien choisi de l'ensemble des notes disponibles au départ d'une tonique d'ailleurs quelconque.</p>
+<p> Par exemple, &quot;notre&quot;  mode heptatonique majeur est construit sur la suite d'intervalles T-T-T-t-T-T-t (où T = 2t = 200 cents est le ton. On vérifie que  5x200+2x100=1200 cents. Jouer la gamme de do majeur, do-ré-mi-fa-sol-la-si(-do) (en pressant uniquement les touches blanches  de ce <a href="https://www.musicca.com/fr/piano">piano virtuel</a>), procure  un sentiment accru de plénitude  sonore. Autre exemple : en pressant uniquement les touches noires, on définit un mode pentatonique répondant au schéma T-Tt-T-T-Tt et on vérifie, à nouveau, que 4x200+2x300 = 1200 cents. Ce mode  répandu en Extrême-Orient peut évidemment être joué à partir de n'importe quelle tonique, par exemple &quot;do&quot;, mais il faut mélanger les touches blanches et noires en respectant les intervalles.</p>
+<p>https://fr.wikipedia.org/wiki/Liste_des_%C3%A9chelles,_des_gammes_et_des_modes</p>
+<p>En tempérament égal, il existe 2<sup>11</sup> = 2048 modes distincts correspondant aux différentes façons de partitionner le nombre 12 en somme d'entiers positifs (non forcément distincts) en tenant compte de l'ordre. Dans le détail, il existe n<sub>k</sub> = C<sub>11</sub><sup>k</sup> modes comprenant k intervalles (k=1, 2, ..., 12), soit la suite de valeurs, n<sub>k</sub><sub></sub> = {1, 11, 55, 165, 330, 462, 462, 330, 165, 55, 11, 1}. Il est alors possible de les numéroter de 1 à 2048 en suivant l'ordre des valeurs de n<sub>k</sub> et subsidiairement en utilisant l'ordre lexicographique (En Mathematica, le calcul se programme comme suit :  Table[Length[Flatten[Permutations[#] & /@ Select[IntegerPartitions[12], Length[#] == k &], 1]], {k, 12}]).</p>
+<p><i>Note destinée aux matheux. Il est possible de numéroter ces 2048 modes d'une infinité de manières mais l'une d'elle semble naturelle : elle consiste à ranger les modes dans l'ordre croissant du nombre d'intervalles constitutifs et, à nombre égal, en suivant l'ordre lexiconumérique. Vu que tous les intervalles sont égaux mais qu'on peut parfaitement les regrouper, le problème revient à rechercher toutes les compositions de l'entier, 12, sur base d'une somme d'entiers non nuls. Le mode n°1 répond à la composition {12} soit un intervalle unique de 1200 cents; dans ce cas l'octave ne comporte qu'une seule note (mode<sub>1</sub> = do),  pas très intéressante ! On passe alors aux compositions à peine plus intéressantes à base de 2 intervalles,  soit dans l'ordre lexiconumérique, {1,11} (do-do#), {2, 10} (do-ré), {3, 9} (do-ré#), etc jusqu'à {11,1} (do-si), puis aux compositions à 3 intervalles {1, 1, 10}, {1, 2, 9}, {1, 3, 8}, {1, 4, 7}</i></p>
+<p> Tous ces modes ne sont cependant pas intéressants loin s'en faut. Par exemple, les modes à une, deux, trois ou quatre notes (sous-entendu par octave) sont autant pauvres que lacunaires. Le mode pentatonique l'est à peine plus. Les choses commencent à changer à partir de k=6, grâce en particulier au mode par tons entiers T-T-T-T-T-T (6x200=1200 cents) effectivement utilisé par Claude Debussy. Toutefois il existe 461 autres modes comportant 6 notes et la plupart sont inutilisables du fait d'un positionnement inadéquat des intervalles dans l'octave.<br/>
+</p>
+
+</div>
+      
+      
+      
+      
+      <div id="tonalite">
+        <h4>Emergence de la tonalité</h4>
+        <p>L'époque classique, à partir de 1750, mais le phénomène couvait depuis plusieurs décennies chez les musiciens préclassiques et même avant (Baroque tardif : Les 4 Saisons sont déjà clairement référencées dans les tonalités de mi M (Printemps), sol m (Eté), fa M (Automne) et fa m (Hiver)). Que s'est-il passé ?        </p>
+        <p>Les musiciens se sont, en effet, rendu compte que la théorie des modes anciens était nettement redondante, en particulier que l'information  contenue dans le mode ionien se retrouvait à peine déguisée dans le mode dorien qui s'en déduit par une simple permutation circulaire de ses intervalles constitutifs, de même pour tous les autres modes. Ils se sont dès lors rangé à l'idée qu'on ne perdrait pas grand-chose en n'en gardant  qu'un seul, précisément le mode ionien, qui, pour la circonstance, a été rebaptisé &quot;mode majeur&quot;. Ce mode a été privilégié car sa déclamation  ascendante convient aux musiques conquérantes.  Ils ont toutefois souhaité retenir un second mode, plus plaintif, qu'ils ont baptisé mode mineur. Ayant bien compris qu'il n'était pas question de le prélever dans l'ensemble des modes redondants, ils l'ont fabriqué de toute pièce en altérant l'ordonnance du mode éolien (de la). Cela ne s'est pas fait sans mal car il en existe de fait trois versions. </p>
+        <p>A   l'époque classique, la tonalité réduite aux deux modes renseignés est devenue la règle et la théorie s'est calée sur ce modèle en développant la notion d'armure. C'était de fait un bel exemple de simplification d'une théorie devenue inutilement alambiquée.</p>
+        <p>&nbsp;</p>
+        <p>Ce n'est nullement un hasard si le mode ionien subsistera seul intact il se chante en descendant quand l'autre se chante en montant pour une raison qui s'avérera décisive . On note en passant que le seul  mode    symétrique quant à l'emplacement du demi-ton est le mode de ré, autrement dit qu'il peut indifféremment être décliné de façons ascendante ou descendante d'où une perte du phénomène attractif le rendant neutre. La position du demi-ton a en fait des conséquences sur la perception de la gamme. On s'en rend compte en déclinant le début du mode ionien, TTt<sub>d</sub> T TT, en omettant le dernier demi-ton, t<sub>d</sub>, ce qui revient à ne chanter que la suite do-ré-mi-fa-sol-la-si sans revenir à la tonique &quot;do&quot;. Il en résulte un sentiment d'insatisfaction qui appelle une résolution sur la tonique (à l'octave). </p>
+        <p>&nbsp;</p>
+        <p>La gamme mineure naturelle (ou ancienne) coïncide avec le mode aeolien. Le mode aeolien dérivant du mode ionien par 5 permutations circulaires successives  dans le sens direct, il en résulte que les notes utilisées en la mineur (naturel) - simple exemple - sont les mêmes qu'en do majeur, en particulier les armures coïncident. Le mode éolien présente cependant un inconvénient du fait que la sensible (l'avant-dernier degré) est distant de la tonique à l'octave d'un ton entier, ce qui nuit à l'attractivité bienvenue dans la conclusion d'un morceau. La gamme mineure harmonique, réellement utilisée, relève donc l'avant-dernier degré d'un demi-ton diatonique ce qui donne le canevas aeolien modifié, Tt<sub>d</sub>TTt<sub>d</sub>(T+t<sub>d</sub>)T = 2122131. Cette altération introduite artificiellement n'est pas consignée dans l'armure; on la dit accidentelle un terme consacré par l'usage mais de toute évidence mal choisi. On parle dans ce cas de modes altérés.</p>
+        <p><i>Note. Rien n'étant jamais simple en théorie musicale, les chanteurs se sont plaints que l'intervalle de trois demi-tons était sinon inchantable en tous cas disgracieux. On a dès lors défini la gamme mineure  mélodique (ascendante), Tt<sub>d</sub>TTTTt<sub>d</sub> = 2122221. On a les portées suivantes. 50 ans plus tard, une autre vioie s'est ouverte éradiquant tonalité et modalité, plus exactement adoptant la gamme chromatique complète donc sans restriction.</i></p>
+        <div class="conteneurImages">
+          <div>
+            <figure> <img src="../images/theorie/lamineurs.png" alt="Gammes de la mineur" />
+              <figcaption>Gammes de la mineur</figcaption>
+            </figure>
+          </div>
+        </div>
+        <p>Il existe sur le papier un très grand nombre d'autres modes qui sont tous des restrictions de l'ensemble des notes chromatiques. Parmi les modes réellement utilisés, signalons le mode hexatonique par tons entiers, de canevas, TTTTTT, qui donne la gamme suivante (ne comportant que 6 notes) au départ de la tonique, disons do : do, ré, mi, fa#, sol#, la#. La symétrie induite par la succession de tons identiques a pour conséquence que les permutations circulaire de leur canevas demeure sans effet, on parle d'un mode à transposition limitée. Le mode octatonique, de canevas alterné, Tt<sub>d</sub>Tt<sub>d</sub>Tt<sub>d</sub>Tt<sub>d</sub>, est également à transposition limitée   du fait que l'alternance stricte des tons et des demi-tons n'autorise qu'une seule variante par permutation circulaire, t<sub>d</sub>Tt<sub>d</sub>Tt<sub>d</sub>Tt<sub>d</sub>T. Les musiques non classiques (persanes, andalouses, etc) utilisent bien d'autres modes encore.</p>
+        
+        </div>
+        
+      <div id="atonalite">
+        <h4>L'atonalité</h4>
+        
+        
+      
+       
+        <p>Une partition est un ensemble ordonné de notes (et de signes divers de ponctuations) prélevées dans un alphabet universellement admis. Toute suite de notes n'est pas recevable musicalement parlant : par exemple une suite aléatoire ne présente aucun intérêt. Il faut donc, d'une manière ou d'une autre, restreindre l'ensemble des notes. Une restriction envisageable consiste à ne pas utiliser toutes les notes au sein d'un morceau mais de s'en tenir à quelques-unes bien choisies pour leur affinité. Une gamme est précisément un sous-ensemble de l'ensemble des notes disponibles dont les notes constitutives partagent une propriété définie. Cette définition pour ainsi dire mathématique a pour conséquence que le nombre des modes possibles est a priori infini. Tous ne sont cependant pas de valeurs musicales égales et c'est évidemment l'expérience et la pratiqu des musiciens qui a contribué à sélectionner quelques modes particulièrement porteurs. </p>
+        <p>Les modes classiques (majeur et mineurs) tirent leur attrait de leur organisation de degrés hiérarchiques  autour d'un centre tonal, la tonique, qui joue en rôle attracteur. les lois de l'harmonie classique qui reposent sur ces phénomènes d'attractions sonores, ont été progressivement remis en question à l'époque romantique : Liszt puis Wagner ont largement contribué à libérer le discours tonal vers des modulations tellement fréquentes qu'il ne faisait guère plus de sens d'encore y insister. Une évolution était inéluctable vers ce qu'on a appelé l'atonalité libre. Schönberg  a été le premier à reconnaître cette nécessité et la mettre systématiquement en oeuvre, à partir des années 1913 ??. Cette évolution a été fort mal reçue par le public qui ne voyait pas la nécessité d'abandonner les vieilles recettes et cependant l'atonalité libre est encore bien sage comparée à ce qu'elle deviendra 10 ans plus tard sous la plume du même Schönberg : le principe de la série est une autre manière de contraindre le choix des notes mais il n'était pas évident que c'était la meilleure idée du monde : 80 ans plus tard la sentence est tombée et la néotonalité ou plutôt la modalité a refait une apparition en force sous la forme du retour vers davantage de consonance. </p>
+        
+      </div>
+        
+        
+      <div id="conclusion">
+        <h4>Conclusion</h4>
+        
+        
+        </div>
+      
+      
+      
+
+	
+        </div>
+
+            <a id="ancreRetourHautPage" href="#site">&uarr;</a>
+
+            <!-- Inclusion footer -->
+            <div id="footer"></div>
+
+        </div>
+    
+    
+    </div>
+
+    <!-- Effet smooth ancres -->
+    <script src="../js/onclick.js"></script>
+    <script src="../js/anchors.js"></script>
+
+</body>
+</html>
