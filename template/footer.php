@@ -11,9 +11,9 @@
 <div id="articlesRecents">
 	<h5>ARTICLES RECENTS</h5>
 	<ul>
+        <li><a href="<?php echo $_POST['ROOT']; ?>chroniques/modalite.html">Modalité musicale et arithmétique modulaire (27/01/2021)</a></li>
         <li><a href="<?php echo $_POST['ROOT']; ?>chroniques/respighi.html">Ottorino Respighi (19/12/2020)</a></li>
         <li><a href="<?php echo $_POST['ROOT']; ?>chroniques/septembre.html">Nuits de septembre 2020 (04/10/2020)</a></li>
-        <li><a href="<?php echo $_POST['ROOT']; ?>chroniques/wilson.html">George Walker, Olly Wilson, Adolphus Hailstork : Black (classical) music matters (06/09/2020)</a></li>
 	</ul>
 </div>
 
