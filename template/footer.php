@@ -3,7 +3,7 @@
     <img src="<?php echo $_POST['ROOT']; ?>images/moi1.png" alt="portrait andre hautot" />
 	<div>
 		<h3>ANDRE HAUTOT</h3>
-		<h4>Dr. en Physique<br/>Université de Liège<br/>Belgique</h4>
+		<h4>Dr. en Physique<br/>Université de Liège<br/>Belgique<br/>Musicographe</h4>
 		<p><a href="mailto:ahautot@physinfo.org">ahautot@physinfo.org</a></p>
 	</div>
 </div>
@@ -11,9 +11,10 @@
 <div id="articlesRecents">
 	<h5>ARTICLES RECENTS</h5>
 	<ul>
+    	<li><a href="<?php echo $_POST['ROOT']; ?>chroniques/vivier.html">Claude Vivier, destin tragique d'un génie (30/05/2021)</a></li>
+    	<li><a href="<?php echo $_POST['ROOT']; ?>chroniques/saariaho.html">Kaija Saariaho (29/04/2021)</a></li>
         <li><a href="<?php echo $_POST['ROOT']; ?>chroniques/busoni.html">Ferruccio Busoni (21/03/2021)</a></li>
-        <li><a href="<?php echo $_POST['ROOT']; ?>chroniques/vialatte.html">Martine Vialatte joue Debussy et Murail (01/02/2021)</a></li>
-        <li><a href="<?php echo $_POST['ROOT']; ?>chroniques/modalite.html">Modalité musicale et arithmétique modulaire (27/01/2021)</a></li>
+        
        </ul>
 </div>
 
