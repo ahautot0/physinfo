@@ -11,9 +11,9 @@
 <div id="articlesRecents">
 	<h5>ARTICLES RECENTS</h5>
 	<ul>
+    	<li><a href="<?php echo $_POST['ROOT']; ?>chroniques/horvath.html">Nicolas Horvath, pianiste singulier (18/08/2021)</a></li>
     	<li><a href="<?php echo $_POST['ROOT']; ?>chroniques/vivier.html">Claude Vivier, destin tragique d'un génie (30/05/2021)</a></li>
     	<li><a href="<?php echo $_POST['ROOT']; ?>chroniques/saariaho.html">Kaija Saariaho (29/04/2021)</a></li>
-        <li><a href="<?php echo $_POST['ROOT']; ?>chroniques/busoni.html">Ferruccio Busoni (21/03/2021)</a></li>
         
        </ul>
 </div>
