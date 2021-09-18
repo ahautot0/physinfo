@@ -31,8 +31,8 @@
 	<p>
 		<span>Copyright © 2017 </span> |
 		<span>Tous droits réservés </span> |
-		<span>Site réalisé par Rey Emilie </span> :
-		<a href="http://www.acyian.com/">www.acyian.com</a> |
+		<span>Site réalisé par </span> :
+		<a href="http://www.arthisweb.com/">Arthis Web</a> |
 		<a href="<?php echo $_POST['ROOT']; ?>sitemap.html">Plan du site</a>
 	</p>
 </div>
