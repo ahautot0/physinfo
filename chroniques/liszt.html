@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Genres musicaux | Franz Liszt : une oeuvre encore fort méconnue</title>
+  <meta name="description" content="Tout le monde connaît ou croit connaître Franz Liszt, de nom, de réputation, de tout ce qu'on veut sauf sans doute de musique, mises à part quelques oeuvres toujours les mêmes. Voici une mise à niveau qui pourrait s'avérer utile aux amateurs pressés." /> 
+  <link rel="shortcut icon" href="../logo.ico" />
+  <link href="../style.css" rel="stylesheet" type="text/css" /> 
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <script src="../js/jquery-1.10.2.js"></script>
+  <script src="../js/menus.js"></script>
+  <script src="../js/design.js"></script>
+  <script src="../js/gestionAudioVideo.js"></script>
+  <script> 
+    // Inclusion Header et Footer
+    $(function(){
+      $(function(){
+        $.ajax({
+           url: "../template/header.php",
+           type: "POST",
+           data: ({ROOT: '../'}),
+           success: function(data) {
+             $("#header").html(data);
+             $("#grandscycles").addClass("active"); /*a changer en fonction de la page*/
+             update_design_when_header_loaded();
+          }
+        });
+      });
+      $("#miniMenus").load("../template/miniMenus.php", { ROOT: '../' }, mini_menus_after_loading);
+      $("#footer").load("../template/footer.php", { ROOT: '../' }, update_design_footer);  
+    });
+  </script> 
+</head>
+
+<body id="site">
+
+    <div>
+        <!-- Inclusion header -->
+        <div id="header"></div>
+
+        <div id="miniMenus"></div>
+
+        <nav id="menuLateralAncres">
+            <ul>
+                <li>
+                    <a id="ancreOrchestre" href="#orchestre" class="linavMenu active">
+                    <span>Le répertoire pour orchestre (&amp; voix)</span>
+                    </a>
+</li>
+                 <li>
+                    <a id="ancrePage" href="#page" class="linavMenu">
+                    <span>Musiques de circonstance</span>
+                    </a>
+</li>
+                <li>
+                    <a id="ancreScene" href="#scene" class="linavMenu">
+                    <span>Les musiques de scène</span>
+                    </a>
+</li>
+                <li>
+                    <a id="ancrePoeme" href="#poeme" class="linavMenu">
+                    <span>Les poèmes symphoniques</span>
+                    </a>
+</li>
+               
+                <li>
+                    <a id="ancreSymphonie" href="#symphonie" class="linavMenu">
+                    <span>Les symphonies</span>
+                    </a>
+</li>
+                
+                 <li>
+                    <a id="ancreProphete" href="#prophete" class="linavMenu">
+                    <span>Un prophète en son pays</span>
+                    </a>
+</li>
+                <li>
+                    <a id="ancreSilence" href="#silence" class="linavMenu">
+                    <span>Le silence de Järvenpää</span>
+                    </a>
+</li>
+                <li>
+                    <a id="ancreFantome" href="#fantome" class="linavMenu">
+                    <span>Le fantôme de la 8<sup>ème</sup> symphonie</span>
+                    </a>
+</li>
+                <li>
+                    <a id="ancreEpilogue" href="#epilogue" class="linavMenu">
+                    <span>Epilogue</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="corps">
+
+          <div id="contenuPrincipal">
+                <h2>Genres musicaux</h2>
+                <h3>Franz Liszt : une oeuvre encore fort méconnue</h3>
+
+              <nav class="filAriane">
+                  <ul>
+                      <li class="breadcrumbItem"><span>Vous êtes ici : </span> Musique</li>
+                      <li class="breadcrumbItem">
+                        <a href="../chroniques.html">Chroniques</a>
+                      </li>
+                      <li class="breadcrumbItem">
+                        <a href="../grandscycles.html">Genres musicaux</a>
+                      </li>
+                      <li class="breadcrumbItem breadcrumIitem--current">Franz Liszt : une oeuvre encore fort méconnue</li>
+                 
+                  </ul>
+              </nav>  
+              
+              
+            <div class="sommaire">
+                    <div class="sommaireTitle">
+                        <h6>Sommaire</h6>
+                        <a role="button" tabindex="0" class="sommaireLink">[ afficher ]</a>
+                    </div>
+
+                    <ul class="linksSummary">
+                        <li><a href="#orchestre">Le répertoire pour orchestre (& voix)</a></li>
+                        <li><a href="#page">Musiques de circonstance</a></li>
+                        <li><a href="#scene">Les musiques de scène</a></li>
+                        <li><a href="#poeme">Les poèmes symphoniques</a></li>
+                        <li><a href="#symphonie">Les symphonies</a></li>
+                        <li><a href="#prophete">Un prophète en son pays</a></li>
+                        <li><a href="#silence">Le silence de Järvenpää</a></li>
+                        <li><a href="#fantome">Le fantôme de la 8<sup>ème</sup> symphonie</a></li>
+                        <li><a href="#epilogue">Epilogue</a></li>
+                    </ul>
+            </div>  
+                
+       
+                  
+
+                    <p>Même les  profanes connaissent Franz Liszt, de nom, de réputation et de tout ce qu'on veut sauf hélas - on y reviendra - de musique, à l'exception dans le meilleur des cas de quelques oeuvres toujours les mêmes. Ils voient à tout le moins en lui  l'artiste romantique par excellence, qui a  ébloui les témoins de son temps.</p>
+                  
+                  
+              <div class="conteneurImages">
+                  <div>
+                    <figure>
+                      <img src="../images/liszt/danhauser.png" alt="Liszt au piano par Josef Danhauser">
+                      <figcaption>Liszt au piano par Josef Danhauser. De gauche à droite : Alexandre Dumas, Victor Hugo, Georges Sand, Nicolo paganini, Gioachino Rossini, Franz Liszt et Marie d'Agoult.</figcaption>
+                    </figure>
+                  </div>
+            </div>    
+                    
+                    
+                    
+                    <p>Sa vie a été l'immense roman contradictoire d'un  séducteur doublé d'un ascète, toujours prêt à servir Dieu et ses semblables (Partout où il est passé, il a aidé et soutenu  nombre de musiciens  moins fortunés que lui, Hector Berlioz, César Franck, Camille Saint-Saëns, Bedrich Smetana, Edvard Grieg, Alexandre Borodine et bien-sûr son futur gendre, Richard Wagner). Sa réussite insolente, tant matérielle qu'artistique,  lui a  cependant valu d'être jalousé : nombreux ont été ceux qui lui ont reproché une virtuosité  ostentatoire au clavier, ses succès auprès de la gent féminine et in fine une orientation musicale progressivement au service d'une déconstruction de l'édifice tonal en place depuis 200 ans. Pour ces (mauvaises) raisons, Liszt n'a pas joui de son vivant de l'estime unanime des critiques, trop pressés de ne voir en lui  qu'un pianiste de l'effet. Ils ont éventuellement déploré que Liszt se soit laissé convaincre d'entrer en duel pianistique avec  Sigismond Thalberg (1812-1871), son plus sérieux rival de l'époque. Le premier a suscité son admiration même si l'entente entre les deux hommes ne fut pas totale pour des motifs personnels. Le deuxième lui a surtout servi de faire-valoir dans des duels pianistiques que l'Histoire a retenus.  a sillonné l'Europe pour y faire étalage de sa virtuosité.</p>
+                    <p>Tout est heureusement rentré  dans l'ordre un siècle plus tard : notre époque ne pouvant juger Thalberg que sur base des partitions qu'ils a transmises à la postérité, force est d'admettre que sauf le domaine de la transcription où il excellait (Brillantes <a href="https://www.youtube.com/watch?v=dJFipjixfFI">Fantaisies opératiques</a>),  Thalberg n'atteint pas la dimension universelle de son rival. Au contraire, Liszt occupe désormais le  centre de gravité du 19<sup>ème</sup> siècle musical, à mi-chemin entre Beethoven et Schönberg. A ce titre, il s'impose comme l'authentique grand-père de la modernité en Musique. </p>
+                    <p>L'amateur qui croit connaître Liszt n'apprécie le plus souvent effectivement que quelques oeuvres toujours les mêmes : outre les inévitables <a href="https://www.youtube.com/watch?v=OqnIXqriuOs">Consolation n°3</a> (en 41:37) et <a href="https://www.youtube.com/watch?v=Y4XEPdYO5mM">Liebestraum n°3</a> (en 10:58, tant que vous y êtes écoutez les <a href="https://www.youtube.com/watch?v=OqnIXqriuOs">n°1 &amp; 2</a>), en fait une adaptation d'un lied antérieur, <a href="https://www.youtube.com/watch?v=5PhTt6JHNN8">O Lieb, so Lang du Lieben kannst</a>, chanté ici par l'incomparable Margaret Price , les deux Concertos pour piano, une ou deux  Rapsodies hongroises (n°2 &amp; 6) et l'un ou l'autre Poème symphonique (Les Préludes). Dans le meilleur des cas, il écoute et apprécie quelques-unes des pages les plus visionnaires pour piano (<a href="https://www.youtube.com/watch?v=LuiwjTiGHdE">Les Années de Pélerinage</a>, ici dans la version mythique de Lazar Berman). C'est trop peu car le catalogue complet des oeuvres de Liszt est  riche d'un bien plus grand nombre de chefs-d'oeuvre incontournables  proposant au passage quelques innovations qui feront mouche au 20<sup>ème</sup> siècle.  Cette modeste chronique pourrait servir de guide à  l'amateur pressé d'en apprendre davantage à son sujet.</p>
+                    
+                    
+            <div id="bio">
+<h4>Eléments biographiques</h4>
+           
+                    
+                    <p>Franz Liszt (1811-1886) est né Autriche-Hongrie, à Doborján (aujourd'hui Raiding en Autriche). Son père, Adam, violoncelliste dans l'orchestre Esterházy, a très tôt reconnu les dons stupéfiants de son fils et lui a enseigné le piano avec l'intention qu'on devine. La famille installée à Vienne,  capitale de l'Europe musicale, le jeune prodige se serait produit en privé devant Beethoven, à l'âge de 11 ans. Liszt a  raconté tardivement (en 1875) cet épisode On raconte qu'il a reçu les compliments du Maître pour la qualité de son jeu, ce qui venant de sa part n'était  pas banal. Cette scène paraît un brin idéalisée : en 1823, année présumée de la rencontre, Beethoven est complètement sourd et on le voit mal recevoir un enfant fût-il prodige pour l'auditionner.</p>
+                    <p>Liszt a toujours revendiqué ses origines hongroises malgré le fait qu'il ne parlait pas la langue couramment. S'il se débrouillait parfaitement en allemand (et en italien), sa langue de prédilection a  cependant été le français qu'il a pratiqué lors d'un long séjour parisien (1823-1835), dans les salons, les salles de concert et les alcôves. </p>
+                    
+                    
+              <div class="conteneurImageSeule">
+                      <div>
+                          <figure>
+                              <img src="../images/liszt/liszt1.png" alt="Liszt vers 1843" />
+                              <figcaption>Liszt vers 1843</figcaption>
+                          </figure>
+        </div>
+            </div>                 
+                    
+            <p>Liszt est sans doute le premier grand compositeur à avoir été  photographié, une faveur due à  sa célébrité et au photographe, Hermann Biow, vers 1843).<br/><br/>
+             <i>Note. On regrettera au passage que la technique photographique en usage à cette époque n'ait pas été au point  20 ans plus tôt, nous aurions  eu droit à une représentation de Beethoven nécessairement plus fidèle que les peintures idéalisées que nous connaissons. Les premiers daguerréotypes  de personnes, obtenus au terme de temps de pose raisonnables, de l'ordre de la minute, datent en effet de 1840 environ (L'un des premiers, <a href="https://histoire-image.org/fr/etudes/daguerreotype">Honoré de Balzac</a>, photographié en 1842 dans l'atelier de Louis-Auguste Bisson). Des essais  antérieurs de Nicéphore Niepce (par héliographie) requéraient des  temps de pose trop long pour convenir aux portraits et d'ailleurs la qualité des images laissaient  à désirer.</i></p>      
+                    
+                    
+                    
+                    <p> Liszt a vécu tiraillé entre trois pôles d'intérêt, l'Amour, la Musique et la Religion,  qu'il a désespérément tenté de concilier pendant toute son existence :</p> 
+                    
+                    
+              <ul class="miniListCorps">
+                        <li><strong>Le séducteur</strong> impénitent a fasciné ses auditoires à commencer par les dames de la haute société. Même sa longue liaison adultérine (1833-1844) avec  la Comtesse Marie d'Agoult n'a pas freiné ses ardeurs. Elle lui avait pourtant donné trois enfants, Blandine et Daniel,  disparus prématurément dans la vingtaine, et Cosima   qui a vécu 93 ans d'une vie mouvementée.<br/> <br/>
+                      <i>Note. Initialement mariée au  grand chef allemand, Hans von Bulow, et lui ayant donné deux filles (Daniela et Blandine, sans doute en mémoire de ses frère et soeur disparus prématurément !), Cosima a été séduite - on devrait dire envoûtée - par Richard Wagner,  l'épousant à son tour et lui survivant pendant 47 années dont 25 mises au service du Temple de Bayreuth. Les rapports n'ont pas toujours été au beau fixe entre Cosima et son père, celui-ci reprochant à sa fille - non sans un certain toupet - d'avoir déserté le foyer conjugal de surcroit l'un de ses meilleurs disciples.   Vous trouverez <a href="../chroniques/pedigrees.html">ici</a> quelques détails relatifs à la vie de Cosima auxquels il convient d'ajouter qu'elle a également donné trois enfants à Richard dont un seul, Siegfried, porte le nom des Wagner (Isolde et Eva, ont conservé le nom des von Bulow, le divorce n'ayant pas été  prononcé avant leur naissance). Siegried Wagner, musicien de réelle valeur, a assuré la gestion  mouvementée du Théâtre de Bayreuth de 1908 à 1930, date de sa mort et de celle de sa mère. </i><br/>
+                      <br/>
+                      Parmi la collection complète des conquêtes féminines de Liszt, il convient de réserver une place à part à la princesse russo-polonaise, Carolyne de Sayn-Wittgenstein, rencontrée à Kiev, en 1847, à la faveur d'une tournée européenne. C'est sur son conseil que le pianiste a abandonné sa carrière de virtuose itinérant pour se consacrer à la composition. Initialement mariée au Prince Nikolaus zu Sayn-Wittgenstein, elle a dû attendre 1860 pour introduire une demande d'annulation pontificale de son mariage dans le but d'épouser Liszt. Le mariage, prévu pour l'année suivante, n'eut pourtant jamais lieu, suite à des revirements de dernière minute. Le décès du mari intervenu en 1864  aurait pu régler le problème mais les amants lassés s'étaient déjà quittés.
+                      
+                      <div class="conteneurImages">
+                  <div>
+                    <figure>
+                      <img src="../images/liszt/agoult.png" alt="Marie d'Agoult">
+                      <figcaption>Marie d'Agoult</figcaption>
+                    </figure>
+                  </div>
+                  <div>
+                    <figure>
+                      <img src="../images/liszt/carolyne.png" alt="Carolyne de Sayn-Wittgenstein">
+                      <figcaption>C. de Sayn-Wittgenstein</figcaption>
+                    </figure>
+                  </div>
+            </div>       
+                      
+                      
+                      </li> 
+                      
+                      
+                      
+                      
+                        <li><strong>Le musicien</strong>  a vécu un choc émotionnel, en 1832, lorsqu'il a vu et entendu  le grand violoniste Nicolo Paganini (1782-1840). Ce que ce diable d'homme tirait de son violon, Liszt a imaginé le tirer du piano. C'était une entreprise risquée non pour ses finances car à cette époque la virtuosité rapportait gros mais pour l'estime des critiques prompts à n'y entendre qu'un étalage de foire. De fait, si Paganini a  été fêté comme le premier virtuose au sens moderne du terme, jamais il ne s'est imposé au sein du cecle fermé des  génies créateurs. Mû par un instinct très sûr, Liszt a senti le danger et il s'est bien gardé de tombre dans le piège d'une virtuosité  creuse.<br/><br/>  Les deux femmes qui ont le plus compté dans sa vie, Marie d'Agoult et  Carolyne de Sayn-Wittgenstein, lui ont inspiré un contact différent avec la musique : la première a accompagné et encouragé ses tournées pianistiques avec tout ce que cela pouvait impliquer dans le domaine de la transcription tandis que la deuxième l'a recentré sur la composition. Les dates de ses compositions telles qu'elles figurent au catalogue de ses oeuvres sont largement éloquentes à cet égard.<br/><br/> </li>
+                        <li><strong>L'abbé</strong>. L'âge venant et la sagesse aidant, le compositeur s'est tourné vers la religion, peut-être repenti d'une vie sentimentale débridée et plus sûrement dépité de n'avoir pu concrétiser son projet d'union avec Carolyne de Sayn-Wittgenstein. Son entrée dans les ordres mineurs, en 1865, n'était nullement une fantaisie : le musicien a de tous temps ambitionné de servir (son) Dieu en musique. Outre quelques oeuvres sacrées majeures dont nous aurons a à reparler, il y a vu l'occasion  d'entreprendre une vaste réforme de la musique d'église qui en avait grand besoin. Ses ambitions étaient louables mais elles ne furent pas couronnées du succès espéré, la masse des fidèles n'adhérant à aucun moment à la dimension ascétique qu'il préconisait. Elle firent mieux,  débouchant sur une réforme d'un autre ordre qui allait faire le lit de la modernité en musique et dont on trouvera les traces dans ses dernières oeuvres  les plus radicales (Cf infra).</li>
+              </ul>
+                    
+<p>Le <a href="https://en.wikipedia.org/wiki/List_of_compositions_by_Franz_Liszt">catalogue</a> des oeuvres de Liszt est riche de plus de 700 oeuvres actuellement répertoriées. Il a été progressivement élaboré par Humphrey Searle entre 1940 et 1985, puis il a subi un certains nombre de retouches de la part d'auteurs divers dont celles du pianiste Leslie Howard dont nous aurons à reparler. Les oeuvres classées par Searle sont reconnaissables au sigle S qui préfixe habituellement leur numérotation. Celle-ci est faite par genres puis, autant que possible, en respectant  l'ordre chronologique. <i>Note. Searle est également (peu) connu comme compositeur. Ses 5 symphonies non dénuées d'intérêt risquent cependant de poser quelques problèmes aux auditeurs non préparés. Ils seraient dès lors bien avisés de commencer par la <a href="https://www.youtube.com/watch?v=pl41oPwsCds">Symphonie n°1</a>, la plus accessible. </i></p>
+                    
+            </div>  
+                    
+                    
+       <div id="virtuose">
+  <h4>Le pianiste et le virtuose</h4>
+
+<p>La <a href="https://www.youtube.com/watch?v=ytmUuh4mPB0">première oeuvre(tte)</a> (S147) connue de Liszt dure à peine une minute mais elle a déjà toute une histoire. Datée de 1822, Liszt n'avait que 11 ans, elle a été sa réponse à une invitation collective émanant de l'éditeur Anton Diabelli, désireux de publier un recueil de variations sur un thème de son invention. Publiée en 1824 dans le Volume 2 des 50 oeuvrettes recueillies auprès des musiciens de l'époque, elle porte le n°24 (Pour mémoire, le Volume 1 était entièrement consacré à l'opus 120 de <a href="../chroniques/diabelli.html">Beethoven</a>). </p>
+<p>La première grande époque créatrice de Liszt coïncide avec sa cohabitation avec Marie d'Agoult. Ce fut l'époque des Harmonies poétiques et religieuses (1834), de l'Album d'un Voyageur (1835-36, 19 pièces qui donneront naissance aux Années de Pélerinage pendant la décennie 1839-49), des 12 Grandes Etudes (1838), des 6 Etudes d'exécution transcendante (d'après Paganini, à ne pas confondre avec les 12 Etudes d'exécution transcendante, datées de 1851).</p>
+<p>Ce fut aussi l'époque des transcriptions d'oeuvres majeures de divers compositeurs  (Symphonie fantastique de Berlioz, les 9 Symphonies de Beethoven, oeuvres éparses de J-S Bach, un lort de réminiscences sur des airs d'opéras italiens</p>
+<p>Liszt avait besoin de se constituer un répertoire pour alimenter ses tournées à travers l'Europe. Comme chacun de ses collègues, il aurait pu puiser dans le catalogue des oeuvres d'un passé récent mais il n'était pas encore dans les moeurs du temps d'explorer systématiquement, d'ailleurs  on ne disposait pas de toutes les facilités pour se procurer les partitions des grands maîtres du passé. C'est pourtant bien le cas de Franz Liszt, dont la proportion de ses oeuvres effectivement jouées en concert est ridiculement petite par rapport au corpus immense qu'il nous a laissé.  En prospectant le catalogue de ses oeuvres, on découvre une mine inépuisable de musique constamment inspirée. Pour exécuter cette tâche nous disposons heureusement d'un formidable outil, l'enregistrement présumé intégral de son oeuvre par le pianiste britannique (d'origine australienne) Leslie Howard.</p>
+
+       </div>             
+       
+       
+       <div id="symphoniste">
+  <h4>Le symphoniste</h4>
+  <p>La carrière de Liszt a pris un virage à 90° lorsqu'il a rencontré sa deuxième muse. Installé à Weimar où il prend la direction musicale de l'orchestre de la ville de 1848 à 1858, à la tête d'une formation orchestrale et fréquentant quelques grands symphonistes de son temps de Berlioz à Wagner, Liszt s'est mis à la direction d'orchestre et à la composition. D'autres pianistes virtuoses se sont lancés dans une aventure similaire à la même époque mais le succès ne fut pas souvent au rendez-vous. </p>
+  
+  </div>
+       
+                    
+           
+     <div id="abbé">
+  <h4>L'homme d'église</h4>
+  
+  <div class="conteneurImageSeule">
+                      <div>
+                          <figure>
+                              <img src="../images/liszt/liszt2.png" alt="Liszt vers 1843" />
+                              <figcaption>Liszt vers 1880</figcaption>
+                          </figure>
+        </div>
+            </div>  
+            
+     <p>C'est à cette époque qu'il compose quelques grandes oeuvres sacrées (La Légende de Sainte Elisabeth, <a href="https://www.youtube.com/watch?v=XgS9vNCnw1A&list=OLAK5uy_mIwgEIcudWZttMEekz4QNYwLZjvuu9544&index=2">Christus</a> (S3 1866-72, exigez la version ancienne mais insurpassable d'Antal Dorati), La Missa choralis, la Messe hongroise du Couronnement, le Requiem)</p>
+     <p>Entré dans les ordres mineurs, Liszt n'entendait pas abandonner ses prétentions musicales pour autant. Effrayé par l'état d'indigence qui était en train de gagner la musique pratiquée à l'église (Que dirait-il aujourd'hui !), il ambitionnait de lui rendre une certaine dignité. Comme Beethoven l'avait déjà fait lors de période creuse des années 1816-18, il s'est replongé dans l'art de Palestrina non pour le copier mais pour en tirer les leçons utiles à la musique de l'avenir.     </p>
+     </div>
+     
+     
+
+
+</div>
+
+
+          
+
+            <a id="ancreRetourHautPage" href="#site">&uarr;</a>
+
+            <!-- Inclusion footer -->
+            <div id="footer"></div>
+
+        </div>  
+    
+    </div>
+    
+   <script src="../js/onclick.js"></script> 
+   <script src="../js/anchors.js"></script> 
+
+</body>
+</html>

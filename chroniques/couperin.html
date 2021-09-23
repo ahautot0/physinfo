@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Genres musicaux | Les 27 Ordres de François Couperin le Grand</title>
+  <meta name="description" content="Au grand siècle, François Couperin, dit le Grand, s'est imposé comme l'un des grands maîtres dans l'art de toucher le clavecin. Son oeuvre majeure demeure l'ensemble des 27 ordres regroupés en 4 Livres, qui constituent l'un des joyaux de la musique française toutes époques confondues." />
+  <link rel="shortcut icon" href="../logo.ico" />
+  <link href="../style.css" rel="stylesheet" type="text/css" /> 
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <script src="../js/jquery-1.10.2.js"></script>
+  <script src="../js/menus.js"></script>
+  <script src="../js/design.js"></script>
+  <script src="../js/gestionAudioVideo.js"></script>
+  <script> 
+    // Inclusion Header et Footer
+    $(function(){
+      $(function(){
+        $.ajax({
+           url: "../template/header.php",
+           type: "POST",
+           data: ({ROOT: '../'}),
+           success: function(data) {
+             $("#header").html(data);
+             $("#grandscycles").addClass("active"); /*a changer en fonction de la page*/
+             update_design_when_header_loaded();
+          }
+        });
+      });
+      $("#miniMenus").load("../template/miniMenus.php", { ROOT: '../' }, mini_menus_after_loading);
+      $("#footer").load("../template/footer.php", { ROOT: '../' }, update_design_footer);  
+    });
+  </script> 
+</head>
+
+<body id="site">
+
+    <div>
+        <!-- Inclusion header -->
+        <div id="header"></div>
+
+        <div id="miniMenus"></div>
+
+        <div id="corps">
+
+            <div id="contenuPrincipal">
+                <h2>Genres musicaux</h2>
+                <h3>Les 27 Ordres de François Couperin le Grand</h3>
+
+                <nav class="filAriane">
+                    <ul>
+                        <li class="breadcrumbItem"><span>Vous êtes ici : </span> Musique</li>
+                        <li class="breadcrumbItem">
+                          <a href="../chroniques.html">Chroniques</a>
+                        </li>
+                        <li class="breadcrumbItem">
+                          <a href="../grandscycles.html">Genres musicaux</a>
+                        </li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Les 27 Ordres de François Couperin le Grand</li>
+                    </ul>
+                </nav>  
+
+                <div class="conteneurImages">
+                  <div>
+                    <figure>
+                      <img src="../images/couperin/arbre.png" alt="Généalogie des Couperin">
+                      <figcaption>Arbre génalogique (élagué aux seuls musiciens professionnels) de la famille Couperin</figcaption>
+                    </figure>
+                  </div>
+                </div>
+  
+   <p>La dynastie des Couperin couvre à peu près deux siècles, entre 1650 et 1850. On a pu reconstituer l'arbre généalogique ci-contre, élagué de ses branches non musiciennes. Soyons clairs cependant, tous ses membres ne sont pas d'importance égale : si François le deuxième fut le plus illustre de tous - d'où son surnom de Couperin le Grand - et si son oncle Louis a également brillé jusqu'à nos jours, les autres membres de la famille n'ont pas atteint un niveau comparable dans la célébrité. Ils se sont surtout illustrés dans l'exercice quotidien de leur art, au service de la musique d'église.</p>
+   
+   
+   <div class="conteneurImageSeule">
+                      <div>
+                          <figure>
+                              <img src="../images/couperin/plaque.png" alt="Plaque commémorative"/>
+                          </figure>
+                      </div>
+                  </div>
+   <p>Tous sont originaires  de Chaumes (-en-Brie selon l'appellation actuelle), une ville de province qui possédait deux orgues. Chaumes n'a réalisé que fort tardivement qu'elle avait vu naître quelques musiciens d'exception et qu'il serait bien  d'honorer ces illustres concitoyens : une rue Couperin n'y a de fait existé qu'à partir du début du 20<sup>ème</sup> siècle !</p>
+   <p>L'histoire de famille commence vers 1650 avec trois frères musiciens, Louis (1626-1661), François (1631-1701) et Charles (1638-1679). Remarqués par le Maître Jacques Champion de Chambonnières (1601-1672), faux noble mais authentique claviériste (<a href="https://www.youtube.com/watch?v=W8vSNhJEEsA">Pièces de clavecin</a>), ils l'ont accompagné à Paris dans l'espoir d'occuper une position d'organiste (de fait à l'église Saint Gervais) voire d'être introduits à la Cour de Louis XIV, exploit que réalisera François le Grand (1668-1733), fils de Charles. Celui-ci a apparemment hérité des gènes de l'oncle Louis, celui des trois frères de la première génération qui s'est affirmé avec le plus de talent. </p>  
+                  
+                  
+
+                 
+                </div>
+      
+
+
+            <a id="ancreRetourHautPage" href="#site">&uarr;</a>
+
+            <!-- Inclusion footer -->
+            <div id="footer"></div>
+
+        </div>   
+    
+    </div>
+
+</body>
+</html>
