@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Faits divers | La Musique parmi les arts (II) : Le Rythme et la Danse</title>
+  <meta name="description" content="Depuis la nuit des temps, la musique a emprunté ses rythmes à la danse, après quoi elle s'en est inventée de nouveaux que la danse a récupérés à son propre usage. Brève histoire d'une collaboration obligée." />
+  <link rel="shortcut icon" href="../logo.ico" />
+  <link href="../style.css" rel="stylesheet" type="text/css" /> 
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <script src="../js/jquery-1.10.2.js"></script>
+  <script src="../js/menus.js"></script>
+  <script src="../js/design.js"></script>
+  <script src="../js/gestionAudioVideo.js"></script>
+  <script> 
+    // Inclusion Header et Footer
+
+    $(function(){
+      $(function(){
+        $.ajax({
+           url: "../template/header.php",
+           type: "POST",
+           data: ({ROOT: '../'}),
+           success: function(data) {
+             $("#header").html(data);
+             $("#faitsDivers").addClass("active"); /*a changer en fonction de la page*/
+             update_design_when_header_loaded();
+          }
+        });
+      });
+      $("#miniMenus").load("../template/miniMenus.php", { ROOT: '../' }, mini_menus_after_loading);
+      $("#footer").load("../template/footer.php", { ROOT: '../' }, update_design_footer);  
+    });
+  </script> 
+</head>
+
+<body id="site">
+
+    <div>
+        <!-- Inclusion header -->
+       <div id="header"></div>
+
+        <div id="miniMenus"></div>
+
+        <nav id="menuLateralAncres">
+            <ul>         
+            <li>
+                    <a id="ancresynopsis" href="#synopsis" class="linavMenu active">
+                    <span>Synopsis</span>
+                    </a>
+</li>
+
+             <li>
+                    <a id="ancreessor" href="#essor" class="linavMenu">
+                    <span>L'essor de la Danse vers 1400</span>
+                    </a>
+</li>
+                <li>
+                    <a id="ancrebourgogne" href="#bourgogne" class="linavMenu">
+                    <span>La Danse à la Cour des Ducs de Bourgogne</span>
+                    </a>
+</li>
+               
+                
+                <li>
+                    <a id="ancreroi" href="#roi" class="linavMenu">
+                    <span>La Danse à la Cour des Rois de France</span>
+                    </a>
+</li>
+
+				<li>
+                    <a id="ancreeurope" href="#europe" class="linavMenu">
+                    <span>La Danse ailleurs en Europe</span>
+                    </a>
+</li>
+                
+                 <li>
+                    <a id="ancresuitefr" href="#suitefr" class="linavMenu">
+                    <span>La Suite française</span>
+                    </a>
+</li>
+                <li>
+                    <a id="ancreitalie" href="#italie" class="linavMenu">
+                    <span>L'Italie entre dans la danse</span>
+                    </a>
+</li>
+
+				<li>
+                    <a id="ancrebach" href="#bach" class="linavMenu">
+                    <span>Bach, Rameau et quelques autres</span>
+                    </a>
+</li>
+
+				<li>
+                    <a id="ancreclassico" href="#classico" class="linavMenu">
+                    <span>Danse et Musique classico-romantique</span>
+                    </a>
+</li>
+
+             <li>
+                    <a id="ancresalon" href="#salon" class="linavMenu">
+                    <span>Danses et Musiques de salon</span>
+                    </a>
+</li>
+                <li>
+                    <a id="ancrenations" href="#nations" class="linavMenu">
+                    <span>Retour aux sources nationales</span>
+                    </a>
+</li>
+               
+                
+                <li>
+                    <a id="ancreballet" href="#ballet" class="linavMenu">
+                    <span>Le grand ballet romantique</span>
+                    </a>
+</li>
+                
+                 <li>
+                    <a id="ancremoderne" href="#moderne" class="linavMenu">
+                    <span>Danse et Musique moderne</span>
+                    </a>
+</li>
+                
+                <li>
+                    <a id="ancredivorce" href="#divorce" class="linavMenu">
+                    <span>L'éclatement du couple Danse-Musique</span>
+                    </a>
+</li>   
+                
+            </ul>
+        </nav>
+
+        <div id="corps">
+
+<div id="contenuPrincipal">
+                <h2>Faits divers</h2>
+                <h3>La Musique parmi les arts (II) :<br/>
+                Le Rythme et la Danse
+</h3>
+                
+
+                 <nav class="filAriane">
+                    <ul>
+                        <li class="breadcrumbItem"><span>Vous êtes ici : </span> Musique</li>
+                        <li class="breadcrumbItem">
+                          <a href="../chroniques.html">Chroniques</a>
+                        </li>
+                        <li class="breadcrumbItem">
+                          <a href="../faitsDivers.html">Faits divers</a>
+                        </li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Le Rythme et la Danse</li>
+                    </ul>
+                </nav>
+                
+                <div class="sommaire">
+                    <div class="sommaireTitle">
+                        <h6>Sommaire</h6>
+                        <a role="button" tabindex="0" class="sommaireLink">[ afficher ]</a>
+                    </div>
+
+                    <ul class="linksSummary">
+                        <li><a href="#synopsis">Synopsis</a></li>
+                        <li><a href="#essor">L'essor de la Danse vers 1400</a></li>
+                        <li><a href="#bourgogne">La Danse à la Cour des Ducs de Bourgogne</a></li>
+                        <li><a href="#roi">La Danse à la Cour des Rois de France</a></li>
+                        <li><a href="#europe">La Danse ailleurs en Europe</a></li>
+                        <li><a href="#suitefr">La Suite française</a></li>
+                        <li><a href="#italie">L'Italie entre dans la danse</a></li>
+                        <li><a href="#bach">Bach, Rameau et quelques autres </a></li>
+                        <li><a href="#classico">Danse et Musique classico-romantique</a></li>
+                        <li><a href="#salon">Danses et Musiques de salon</a></li>
+                        <li><a href="#nations">Retour aux sources nationales</a></li>
+                        <li><a href="#ballet">Le grand Ballet romantique</a></li>
+                        <li><a href="#moderne">Danse et Musique moderne</a></li>
+                        <li><a href="#divorce">L'éclatement du couple Danse-Musique</a></li>
+                    </ul>
+                </div> 
+  
+
+  <div id="synopsis">
+  <h4>Synopsis</h4>
+<p>La Musique, art essentiellement temporel, occupe une position  relativement isolée parmi les Arts. Une <a href="../chroniques/peinture.html">chronique</a> antérieure a mis en évidence le fossé qui  la sépare de la  Peinture, art essentiellement spatial. A ce stade, on s'attendrait plutôt à ce qu'elle partage davantage de points communs avec la Danse, l'art du mouvement. De fait, Danse et Musique ont longtemps vécu en symbiose étroite, ne pouvant quasiment se passer l'une de l'autre. La Danse a toujours compté sur la Musique pour lui fournir un cadre temporel  et la Musique a  récupéré les rythmes dansés pour se constituer une base de données exploitables. Ce résumé préliminaire  est réservé aux lecteurs pressés tandis que les sections suivantes détaillent et illustrent quelques points présumés importants.</p>
+<p>C'est à la Renaissance (1430-1600) que l'on a commencé à compiler  les danses  en provenance de tous les horizons, y compris de terres lointaines en voie de colonisation,  alimentant la base de données utile au répertoire de la Danse de Cour. </p>
+<p>La période baroque (1600-1750) s'est ensuite partagée entre deux courants concurrents :  les musiciens (essentiellement) français ont raffiné  (le genre de) la Danse noble avant de l'insérer telle quelle dans l'Acte de Ballet (Opéra et Comédie-Ballet) tandis que d'autres, essentiellement italiens, ont opté pour le point de vue différent d'une Musique instrumentale pure puisant ses composants rythmiques   dans le répertoire des danses établies. </p>
+<p>L'âge (pré)classique a entretenu le culte d'une danse aristocratique mais  débarrassée des modèles anciens considérés comme surrannés. A vrai dire, elle n'a guère conservé que le menuet, une danse qui a fait fortune jusqu'à ce que la Révolution française (et Beethovenienne !) la rende quasiment caduque. </p>
+<p>Le 19<sup>ème</sup> siècle a connu trois phénomènes distincts : 1) l'embourgeoisement de la Danse ou, si l'on préfère, l'accaparement de la danse par la bourgeoisie, menant tout droit au phénomène jamais démenti de la Danse de salon, 2) l'éclosion de la &quot;Danse classique&quot;, en pointes et tutus, telle qu'illustrée dans le genre du grand &quot;Ballet romantique&quot; et 3) la redécouverte des patrimoines nationaux  de danses populaires,  contribuant à aggrandir considérablement la base des données rythmiques désormais accessibles aux compositeurs du monde entier.</p>
+<p>Au début du 20<sup>ème</sup> siècle, l'étonnante collaboration entre les Ballets russes et Igor Stravinsky a consacré l'avènement d'une danse  progressivement modernisée, en tous cas débarrassée de ses conventions les plus pesantes. Quelques décennies plus tard, Maurice Béjart n'a pas fait que remplacer les tutus par des collants, il a propulsé la danse dans une nouvelle ère où elle pouvait rêver d'un statut autonome,  en particulier choisir en toute liberté ses musiques d'accompagnement.</p>
+<p>Aujourd'hui,   Danse et Musique tentent l'expérience d'une séparation à l'amiable, revendiquant  une existence propre dans leur gestion du rythme.</p>
+<p>Cette chronique n'est pas une histoire de la danse en musique ni d'ailleurs de la musique à danser, une <a href="https://www.cosmovisions.com/musiDanse.htm">encyclopédie</a> ne suffirait pas. Elle se penche essentiellement sur la dette mutuelle que ces deux arts  ont contractée au cours de leur histoire et éventuellement sur l'avenir de leur collaboration. </p>
+
+</div>
+
+
+<div id="essor">
+<h4>L'essor de la Danse vers 1400</h4>
+<p>Danse et Musique  coexistent depuis la nuit des temps sans que l'on sache qui  a précédé et motivé l'autre. Le bref historique qui suit commence au Moyen-Age tardif qui signe, de fait, les débuts de l'histoire de la musique instrumentale occidentale. </p>
+
+
+
+<div class="conteneurImages">
+                      <div>
+                          <figure>
+                          <img src="../images/danse/breughel.png"  alt="P. Breughel : Scène villageoise" />
+                            <figcaption>P. Breughel le Jeune : Danse de noce</figcaption>
+                        </figure>
+                      </div>
+
+                      <div>
+                          <figure>
+                            <img src="../images/danse/carole.png" alt="Illustration du Roman de la Rose" />
+                              <figcaption>Illustration du Roman de la Rose : Carole</figcaption>
+                          </figure>
+                      </div>
+      </div>
+                  
+
+
+
+<p>Au Moyen-Age, bien que  réprouvée par l'église, la musique à danser  s'est invitée, populaire aux fêtes villageoises et noble dans les  Cours princières. Celle-ci est une émanation de celle-là, récupérée, dans un premier temps, par les trouvères et jongleurs itinérants  et   perfectionnée ensuite par des musiciens de plus en plus professionnels, qui ont compris le parti qu'ils pouvaient tirer d'un matériau  éminemment plastique. </p>
+
+<p>Des premières musiques à danser nous ne savons pas grand-chose.  Celles qui servent d'illustration ci-après vous paraîtront peut-être simpl(ist)es   mais c'est en partie dû à un instrumentarium encore rudimentaire.  Les  reconstitutions actuelles reposent  essentiellement sur une iconographie d'époque (dessins d'instruments, d'attitudes et de figures de styles dansés), que les spécialistes interprètent au mieux de leurs connaissances et plus vraisemblablement de leurs intuitions. David Munrow, un brillant musicien et musicologue anglais,   a publié, en 1970, un LP (<a href="https://www.youtube.com/watch?v=IUyLKgeJ-pI">Face 1</a>, <a href="https://www.youtube.com/watch?v=AKrpDZlWoa0">Face 2</a>, présentation en anglais) qui fait entendre quelques instruments  reconstitués pour les besoins de la démonstration. </p>
+<p>A la fin  du  Moyen-Age, les danses en vogue sont déjà nombreuses et diversifiées, <a href="https://www.youtube.com/watch?v=0G7ImlnJR6I">Ductia</a>, <a href="https://www.youtube.com/watch?v=dPxSaZvjrts">Branle</a>, <a href="https://www.youtube.com/watch?v=EexRzcpRRuk">Estampie</a>, <a href="https://www.youtube.com/watch?v=aOAPDRr7Eg0">Saltarello</a>, Moresque,  etc, chaque région  apportant les siennes, mais il a fallu attendre  les débuts de la Renaissance, après 1400 (Naissance de Guillaume Dufay, pour faire simple), pour que la musique à danser progresse significativement.  </p>
+
+
+</div>
+
+
+<div id="bourgogne">
+<h5>La Danse à la Cour des Ducs de Bourgogne</h5>
+
+
+<p>Dès la première moitié du 15<sup>ème</sup> siècle, la Danse de Cour  a  gommé le caractère débridé des danses villageoises en introduisant un ensemble de codes censés lui donner quelques lettres de noblesse. D'emblée   on a distingué les Hautes Danses (Volte, 
+  Gaillarde,  Chaconne, etc), alertes, qui se traitent à pas sautés, et les Basses Danses (Branle, Pavane, Gavotte, etc), plus calmes, qui se traitent à pas glissés.</p>
+<p> C'est  à la Cour des <a href="https://www.youtube.com/watch?v=iT3rYjQWCms&list=OLAK5uy_lmHvmYxxzk4UUf-uVVOBg5h1xT3nsXDqE">Ducs de Bourgogne</a>  que la danse aristocratique a fait ses premiers pas en musique : de par sa position géopolitique, elle a   été en mesure d'attirer  les meilleurs musiciens des provinces du Nord,  en tête Guillaume Dufay et  Gilles Binchois et à leur suite quantité de disciples de valeur (Antoine Busnois, Hayne van Ghizeghem, les frères  Arnold et <a href="https://www.youtube.com/watch?v=eTqr2RPdq5s">Hugo de Lantins</a>, etc). </p>
+<p>Cet  essor musical  a ensuite bénéficié du travail d'éditeurs  entreprenants tels, <a href="https://www.youtube.com/watch?v=yWHJ9G6uILg">Pierre Attaingnant</a> (1494-1551), actif à Paris,  <a href="https://www.youtube.com/watch?v=R77iz-PZq8U">Jacques Moderne</a> (1500-1560), actif à Lyon, <a href="https://www.youtube.com/watch?v=3tJkILKs12s">Tielman Susato</a> (1500-1561) et  <a href="https://www.youtube.com/watch?v=21ZvNtCjwgM">Pierre Phalèse (le Vieux)</a> (1510-1575) (Sans oublier son fils, Pierre le Jeune, et ses petites-filles, Magdaléna et Maria), actifs à Louvain et Anvers. Tous ont publié    des Danceries, sorte de recueils proposant les premiers &quot;tubes à danser&quot; de l'histoire de la musique. Beaucoup de ces oeuvres à succès sont demeurées anonymes mais d'autres ont été attribuées à des musiciens en vue tel <a href="https://www.youtube.com/watch?v=5x7pWEMwn9k">Claude Gervaise</a> (1540-1583),  sans garantie que l'auteur désigné  n'ait pas emprunté  quelques airs à la mode à une époque où cela ne choquait personne. De fait, il suffit d'écouter les enregistrements disponibles pour retrouver ici des airs déjà entendus là-bas.</p>
+<p>En 1589, Thoinot Arbeau (De son vrai nom, Jehan Tabourot, notez l'anagramme) a  publié son traité <a href="https://fr.wikipedia.org/wiki/Orch%C3%A9sographie">L'Orchésographie</a>,  précisant les pas dansés en regard des musiques  correspondantes. Un enregistrement déjà ancien du Broadside Band de Jeremy Barlow en propose quelques extraits significatifs (<a href="https://www.youtube.com/watch?v=InXfrxpRm8s">Branles simple et double, de Bourgogne et de Champagne, Tourdions, Gaillardes, etc</a>, cf la <a href="https://www.discogs.com/fr/release/14141494-The-Broadside-Band-Jeremy-Barlow-Danses-Populaires-Fran%C3%A7aises-Anglaises-Du-XVI-Siecle-Thoinot-Arbea">notice</a> pour l'ordre des intitulés).</p>
+
+</div>
+
+
+<div id="roi">
+<h5>La Danse à la Cour des Rois de France</h5> <p>Malgré un temps de retard sur sa rivale bourguignonne, la Cour du Roi de France n'a pas voulu être en reste, s'inventant le modèle du <a href="https://fr.wikipedia.org/wiki/Ballet_de_cour">Ballet de Cour</a> dont les premières traces remontent aux règnes de Charles IX (Ballet des Polonais, 1573) et Henri III (<a href="https://www.youtube.com/watch?v=tKaapeSe9Qo">Ballet comique de la Reine</a>, 1581). Il s'agissait d'une tentative d'art total destiné à marquer avec fastes quelques événements marquants à la Cour royale, à une époque où l'opéra n'existait pas encore. Les meilleurs musiciens impliqués, Pierre Guédron, Antoine Boësset et Etienne Moulinié, sont  ceux-là même qui s'étaient déjà illustrés dans l'Air de Cour, mutation distinguée des chansons de la Renaissance. On ne possède malheureusement pas d'enregistrements des premiers ballets, seulement quelques extraits enregistrés par les ensembles  Correspondances et Le Poème harmonique  (<a href="https://www.youtube.com/watch?v=bMxBg5ic8_w">Ballet du mariage de Pierre de Provence et de la belle Maguelonne</a>, Moulinié, 1638).</p>
+<p>Le ballet de Cour a  accompagné les débuts du règne de Louis XIV, qui l'a pratiqué personnellement, dès l'âge de 15 ans (<a href="https://www.youtube.com/watch?v=hgoouzWghFg">Ballet Royal de la Nuit</a>, ne manquez pas l'air initial de l'excellent Jean de Cambefort, en 3:10. Les musiques, en partie incomplètes, sont de Jean de Cambefort, Antoine Boësset, Louis Constantin, Michel Lambert, Francesco Cavalli et Luigi Rossi et les parties manquantes ont été reconstituées  par le chef, Sébastien Daucé). Lorsqu'il a renoncé à se produire sur scène, le Roi a chargé  son intendant Lully  de faire évoluer le Ballet de Cour devenu désuet vers l'Opéra-Ballet et la Comédie-Ballet. Lully a fait de son mieux pour satisfaire son royal employeur mais le genre &quot;nouveau&quot;    arrivait  un peu tard en regard des nouvelles tendances de  la musique italienne (Sonates, Concertos et Opéra).</p>
+
+</div>
+
+
+<div id="europe">
+<h5>La Danse ailleurs en Europe</h5>
+
+
+<p>La vogue des suites de danses s'est naturellement exportée dans toute l'Europe :</p>
+<p>- En Allemagne, Michael Praetorius (1571-1621) (<a href="https://www.youtube.com/watch?v=Vtk9c85uHU8">Danses de Terpsichore</a>, comparez avec cet autre <a href="https://www.youtube.com/watch?v=f6Ennlrbv9o&list=OLAK5uy_nsfNtVNfdRVGxt2LwCVr1o68hb2nKVYg0&index=2">enregistrement</a> paru chez Ricercar), Erasmus Widmann (1572-1634) (<a href="https://www.youtube.com/watch?v=XOXOpaXCq9M">Musicalischer Tugendtspiegel</a>) et Samuel Scheidt (1587-1654) (<a href="https://www.youtube.com/watch?v=0AivlgC0J88">Ludi Musici</a>) ont  adapté le principe de la Dancerie  au tempérament germanique, volontiers tourné vers davantage de retenue. </p>
+<p> - En Italie, la danse noble s'est également invitée dans les Cours princières (Mantoue, Ferrare, Florence, ...), célébrant les cérémonies officielles avec faste. C'est même en Italie qu'ont été publiés  les premiers traités de Danse   parvenus jusqu'à nous. Ils  datent des années 1445-1450, soit 50 ans avant l'Orchésographie. Cependant, contrairement à  l'ouvrage de Thoinot Arbeau, qui conjugue danse et musique, ceux de Domenico Da Piacenza et de Guglielmo Da Pesaro ne détaillent que les attitudes des  danseurs  sans vraiment se préoccuper des correspondances musicales (Cf <a href="../annexes/garnero.pdf">Les premiers traités de danse au XVe siècle en Italie</a>, de Sylvie Garnero). Les recueils  enregistrés à ce jour sont relativement peu nombreux, proposant souvent des oeuvres de Giogio Mainerio (1535-1582) (<a href="https://www.youtube.com/watch?v=h99D7JO5OQk">Primo Libro de Balli</a>).  Si vous avez gardé en mémoire les extraits des sections précédentes, vous n'aurez aucune peine à reconnaître en <a href="https://www.youtube.com/watch?v=89cgcrCwOVU&t=257s">Schiarazula Marazula</a> (à partir de 1:45), la version lente d'un air déjà entendu en France. Ceci confirme, qu'à cette époque, les mélodies volaient  d'un musicien à l'autre  sans s'embarrasser des droits d'auteurs ! Voici encore une belle <a href="https://www.youtube.com/watch?v=ThMUzj6ulQQ">Chiaranzana</a> anonyme (danse siennoise) et une <a href="https://www.youtube.com/watch?v=739R9G0qDH8">anthologie</a>   proposant quelques pages empruntées à Giorgio Mainerio (1535-1582), 
+  Giovanni Gabrieli (c.1554/7-1612), Giovanni Giacomo Gastoldi (1554-1609), etc.</p>
+<p>- Le cas de l'Espagne est nettement plus complexe, en cause de profonds métissages. Le  répertoire  hispanique primitif, fait de  Canarios, Fandangos,   Jotas, Folias, Asturianas, Muñeiras, Boleros, Sardanas, Valencianas,  Zambras, Sevillanas, Farrucas,  Saetas, ..., s'est progressivement enrichi d'apports extérieurs (Morescas, Sardanas, Boleros, ...) suite à une immigration continue  (phénicienne, grecque, romaine, arabe, gitane, ...). A ce corpus déjà impressionnant, il convient d'ajouter  les importations d'Amérique latine  aussitôt amalgamées au répertoire local. Un autodidacte de génie, Lucas Ruiz de Ribayaz y Fonseca (1626-16??), a compilé un grand nombre de pièces éparses dans son recueil "Luz y Norte" :  quel plaisir d'entendre ces <a href="https://www.youtube.com/watch?v=Bi8H7nde4RU">Españoletas</a>, <a href="https://www.youtube.com/watch?v=JJ7G0SSow84">Gallardas</a>, <a href="https://www.youtube.com/watch?v=jnkhkhKgHqg&nohtml5=False">Zarambeques</a>, <a href="https://www.youtube.com/watch?v=AavYgOiOotg&nohtml5=False">Xácaras</a>, <a href="https://www.youtube.com/watch?v=KKcaI2Z1EqA">Tarantellas</a>, <a href="https://www.youtube.com/watch?v=74Xwxlh2JUM">Torneos</a>, etc ..., dans un enregistrement partiel mais essentiel, du Harp Consort. </p>
+
+
+ <div class="conteneurImageSeule">
+<div>
+                          <figure>
+                              <img src="../images/danse/jig.png" alt="Nobody's Jig" />
+                              
+                          </figure>
+                      </div>
+      </div>
+
+<p>Au bilan, quantité de danses portent des noms évocateurs d'un possible lieu d'origine : Canarie, <a href="https://www.youtube.com/watch?v=B9-qX47IM5w&list=PLsiEF5zINRD0aFkcry5uPeNK3VeAt4yTF&index=2">Bergamasque</a>, Sicilienne, Pavane (Padoue pour certains, paon (qui se pavane) pour d'autres voire Pas d'Espagne pour les plus téméraires). De même la <a href="https://www.youtube.com/watch?v=_vJsPC5u3lw">Gigue</a>  française tirerait  son nom de la Jig anglaise (à moins que ce soit le contraire ...) tout comme la Country dance (littéralement &quot;Danse paysanne&quot;)  traduirait la Contredanse continentale (où deux partenaires se tiennent l'un contre l'autre). C'est en 1651 que  John Playford (1623-1686) a publié la première édition (il y en aura 18 jusqu'en 1728) de son immense et incontournable recueil, <a href="https://www.youtube.com/watch?v=P2xoJKtexZc">The English Dancing Master</a>, sorte de bible de la danse populaire  britannique. L'enregistrement de l'ensemble Les Witches est excellent mais il en existe d'autres, tous parus chez Alpha, fouillez !</p>
+<p>Enregistrer les musiques  anciennes qui viennent d'être évoquées est affaire de spécialistes : aucune partition n'existe, au sens moderne du terme, et les instruments disponibles sont des copies valeureuses mais hypothétiques. Il est dès lors inévitable que  les reconstitutions actuelles diffèrent d'un enregistrement à l'autre. La vérité  historique absolue étant  hors d'atteinte, une solution consiste, tant qu'à faire, à contenter nos oreilles modernes en compensant le défaut de fidélité par la qualité des rythmes et des sons produits. Voici quelques groupes instrumentaux qui ont rendu (ou rendent encore actuellement) justice à ce répertoire :</p>
+<p>- Le Studio der frühen Musik, dirigé par Thomas Binkley (1931-1995), s'est surtout préoccupé de musiques médiévales (<a href="https://www.youtube.com/watch?v=nucPywQNaZo">Estampie</a>), qu'il a traitées avec beaucoup de liberté sinon de fantaisie, en particulier dans l'extrait proposé. Il a joué un rôle important dans l'histoire de la musique  ancienne mais la rugosité de  ses sonorités jointe à l'ancienneté des enregistrements nuit quelque peu à sa notoriété.</p>
+<p>- Le Early Music Consort of London, dirigé par David Munrow (1942-1976), est particulièrement digne d'intérêt.  En à peine 20 ans d'une bien trop courte vie, Munrow a effectué un travail de recherche d'autant plus méritoire qu'à ses débuts, la musique ancienne balbutiait encore largement. Il a exhumé et reconstitué quantité d'oeuvres de façon à les rendre jouables; il a exploré et reconstruit les instruments  d'après les documents d'époque et enfin, il a fourni un effort pédagogique immense pour expliquer sa démarche au plus grand monde. Ce merveilleux musicien était hélas de santé fragile au point d'attenter à ses jours, privant ainsi la Musique de l'un de ses plus brillants serviteurs. Réécoutez en boucle ces formidables <a href="https://www.youtube.com/watch?v=Xsyxo3uT_g0&list=PLOTXOdzZBa4yO8xteZ5I5D2SufPJO0BWq&index=1">Danseries</a> de Tielman Susato, Thomas Morley, Michael Praetorius et Giogio Mainerio. </p>
+<p>- Le New London Consort dirigé par Philipp Pickett (1950- )  est connu pour ses enregistrements de deux épais volumes consacrés aux oeuvres vocales de Guillaume Dufay et Jan Ockeghem et, pour ce qui nous concerne, pour ce bel enregistrement (controversé mais je vous avais prévenu)  des <a href="https://www.youtube.com/watch?v=Vtk9c85uHU8">Danses de Terpsichore</a> de Praetorius. L'ensemble a malheureusement cessé toute activité, son chef ayant été rattrappé par la Justice britannique pour de graves faits de moeurs.</p>
+<p>- Actuellement, c'est l'ensemble Hesperion XX(I), dirigé par Jordi Savall (1941- ), qui s'impose par une activité débordante au service de toutes les musiques anciennes. Il s'impose en particulier (et sans surprise vu ses racines ibériques) dans le riche répertoire des danses hispaniques (<a href="https://www.youtube.com/watch?v=jEFOv2nKvSw">Folias de España</a>, <a href="https://www.youtube.com/watch?v=LoK8eTqHzak">Lachrimae Caravaggio</a> et des dizaines d'enregistrements passionnants). </p>
+<p>-  D'autres ensembles peuvent retenir votre attention : la <a href="https://www.jpc.de/jpcng/classic/detail/-/art/Liebeslieder-T%E4nze-der-Renaissance/hnum/6463511">Capella Antiqua München</a> de Conrad Ruhland, <a href="https://www.jpc.de/jpcng/classic/detail/-/art/Italienische-T%E4nze-um-1600-Il-Ballarino/hnum/5281123">The Broadside Band</a> de Jeremy Barlow, l'<a href="https://www.jpc.de/jpcng/classic/detail/-/art/gedruckte-tanzmusik-der-europ-renaissance/hnum/6051767">Accademia del Ricercare</a> de Pietro Busca, l'<a href="https://www.jpc.de/jpcng/classic/detail/-/art/Tanzmusik-um-1600/hnum/8613697">Ulsamer Collegium</a> de Josef Ulsamer, ..., mais la liste est en fait beaucoup plus longue que cela.</p>
+
+</div>
+
+
+<h4>Danse et Musique baroque</h4>
+
+
+<div id="suitefr">
+<h5>La Suite française</h5>
+
+<p>Pendant les règnes de Louis XIV et de Louis XV et en dépit de conflits incessants, le prestige  de la Cour de France est demeuré intact. Dans toutes les Cours d'Europe, on a  appris et épousé le style (et le goût) français au même titre que l'on a pratiqué la langue française. En matière de danse, le  &quot;Style noble&quot; ou &quot;Belle Danse&quot; a été pratiqué partout et les musiciens ont massivement adopté le modèle de la Suite (à la) française.</p>
+<p>Il s'agit d'une pièce instrumentale en plusieurs mouvements qui se suivent dans un ordre plus ou moins immuable, &quot;Allemande, Courante, Sarabande, Gavotte, Menuet &amp; Gigue&quot; (avec des variantes  possibles entre la sarabande et la gigue). Musicalement parlant chacune de ces danses  respecte une signature rythmique sauf que des variantes  existent, résultats d'une évolution temporelle ou géographique (Cf l'exemple ci-après de la sarabande, emprunté au Grove Dictionnary) : </p>
+
+
+<div class="conteneurImages">
+<div>
+                    <figure>
+                      <img src="../images/danse/Allemande.png" alt="Allemande">
+                      <figcaption>Allemande</figcaption>
+                    </figure>
+</div>
+                  <div>
+                    <figure>
+                      <img src="../images/danse/sarabande.png" alt="Deux modèles de sarabande">
+                      <figcaption>Deux modèles de sarabande</figcaption>
+                    </figure>
+        </div>
+        <div>
+                    <figure>
+                      <img src="../images/danse/Courante.png" alt="Courante">
+                      <figcaption>Courante</figcaption>
+                    </figure>
+        </div>
+      </div>
+
+
+
+<p>Par extension, on range  sous l'appellation &quot;française&quot; des Suites qui reposent sur des danses   proches des sources populaires (rigaudons, tambourins, musettes, rondeaux, ...). C'est sans doute un abus de langage  mais il se défend dès l'instant où l'on  observe que les plus grands musiciens français, de Couperin à Rameau, ont pratiqué ces variantes  (Cf ce <a href="https://musiquebaroque.festesdethalie.org/a-propos-de-danse-baroque/">site</a> pour quelques illustrations sonores bien choisies).</p>
+
+</div>
+
+
+<div id="italie">
+<h5>L'Italie entre dans la danse</h5>
+<p>L'explosion du baroque musical, vers 1600, a coïncidé avec la révolution instrumentale dans l'Italie du Nord (Familles des luthiers, à commencer par celle du père fondateur, Andrea Amati (vers 1511-1580)). S'il ne fait guère de doute que les compositeurs transalpins y ont vu l'occasion de contester l'hégémonie française,  ils l'ont fait avec une certaine déférence, se contentant, dans un premier temps, d'inventer leurs propres variantes des formes acquises : ainsi la courante française (à 3/2 ou 6/4) s'est transformée en corrente (à 3/4 voire 3/8), plus alerte. Les premières <a href="https://www.youtube.com/watch?v=P5HHPe_W6Uo">Sonates en trio</a> d'Antonio Vivaldi (1678-1741) déclinent encore à l'ancienne  la suite de leurs mouvements et il ne faut donc pas s'étonner de ne pas encore y trouver  la fantaisie qui assurera le succès de Vivaldi auprès des amateurs de musiques endiablées. </p>
+<p>Avec le temps, les musiciens italiens ont développé un art instrumental nouveau, progressivement affranchi des conventions en usage. Certes les danses ont continué de nourrir les rythmes mais en-dehors de toute référence explicite : alors qu'en France (et en Allemagne, on y revient sous peu), les mouvements ont conservé leurs appellations primitives (allemande, courante, sarabande, ..., gigue, bourrée, gavotte, ...), les italiens ont progressivement opté pour des appellations neutres n'évoquant plus que les tempi correspondants (adagio, andante, allegro, vivace, ...). La période baroque a ainsi vu la musique italienne contester sa consoeur française et finalement la supplanter lorsque celle-ci a eu épuisé ses effets (Querelle des Bouffons, 1752-54).</p>
+
+</div>
+
+
+<div id="bach">
+<h5>Bach, Rameau et quelques autres</h5>
+
+<p>Johann Sebastian Bach (1685-1750) et Jean-Philippe Rameau (1683-1764),  deux des plus grands génies du baroque musical, ont, chacun à leur manière,   repensé l'univers de la danse dans leurs oeuvres :</p>
+
+
+ <ul class="miniListCorps">
+   <li>Bach a opéré une vaste synthèse des styles en vigueur de son vivant et, à ce titre, il a adopté les tendances française et italienne. Si ses Suites pour orchestre   épousent des formes relativement libres (<a href="https://www.youtube.com/watch?v=oqU4rF_ysQo">n°3</a> : Ouverture, Air, gavotte I &amp;II, Bourrée et Gigue), les <a href="https://www.youtube.com/watch?v=__8-lVxbZKA">Suites françaises</a> pour clavecin  respectent strictement l'ordonnance  &quot;à la française&quot; (Allemande, Courante, Sarabande, ..., si vous suivez). Les <a href="https://www.youtube.com/watch?v=JUof2iFmT5k">Suites anglaises</a>, également pour clavecin,  n'ont rien d'anglaises : sauf l'ajout d'un Prélude, ce sont des suites françaises   de difficulté  accrue. Dans tous les cas, le recours aux danses codifiées conditionne le rythme sans intention chorégraphique : par exemple,  l'allemande  est devenue, chez Bach, une pièce instrumentale d'allure sévère, au contrepoint travaillé. Cela dit, rien n'empêche  les chorégraphes de s'emparer de cette musique et cela s'est fait maintes fois dans un passé récent (Cf les spectacles imaginés par Anne Teresa De Keersmaeker).   Par ailleurs Bach a également été à l'écoute de  la révolution instrumentale qui couvait en Italie : il a  abandonné le style français pour le style italien  dans une série de Concerti dont les  6 époustouflants    Concertos Brandebourgeois (<a href="https://www.youtube.com/watch?v=GHpFxA-HbcA&list=RDGHpFxA-HbcA&index=1">n°2, allegro final</a>), démontrant ainsi qu'il était possible d'administrer  une   leçon de rythme  sans recourir explicitement à quelques danses que ce soit même si, au second degré, celles-ci ne sont jamais bien loin.</li>
+   <li>D'autres  musiciens allemands  fameux ont également adopté le modèle français. Georg Friedrich Haendel (1685-1759) s'en est en effet inspiré  dans les <a href="https://www.youtube.com/watch?v=LU3bL_Y-nKA">16 Suites pour clavecins</a> (Je vous ai  également trouvé un <a href="https://www.youtube.com/watch?v=HrXOVNzTeKo">enregistrement intégral</a> de ces Suites, jouées au piano par Eric Heidsieck, une rareté qui ne manque pas d'allure même si le clavecin s'impose, en principe, dans ce répertoire). Dans ses innombrables <a href="https://www.youtube.com/watch?v=rfw9_eos1xI">Suites pour orchestre</a> (Plus de 600 dont à peine un quart nous sont parvenues !), Georg Philipp Teleman (1681-1767) s'est davantage inspiré des  modèles populaires jusqu'à   nommer chaque mouvement dans la langue d'origine (Burlesque, Passepied, Musette, Harlequinade, ... ).</li>
+ <li>En France,   Rameau s'est    inspiré de la danse de cour dans ses premières oeuvres publiées. La <a href="https://www.youtube.com/watch?v=_n9GxgpLlYE">Suite en la mineur</a>  du Premier Livre pour clavecin (1706), respecte  à peu près fidèlement l'ordonnance classique (Prélude, Allemande I &amp; II, Courante, Gigue, Sarabande I &amp; II, Vénitienne, Gavotte et Menuet); après tout, on est encore sous le règne de Louis XIV !.  Toutefois,  l'essentiel de la carrière de Rameau s'est déroulée  sous le règne  plus ouvert de Louis XV et le changement est apparu  dès le Livre 2 (1724), qui propose  une <a href="https://www.youtube.com/watch?v=6moU2bm4Nak&list=OLAK5uy_lOqdLWhd-QpDbPVTvwlBUuyq3bKjYJ99o&index=4">Suite en mi mineur</a>   (Allemande, Courante, Gigues en Rondeau I &amp; II, Le Rappel des Oiseaux, Rigaudon I &amp; II et Double, Musette en rondeau - Tendrement, Tambourin, La Villageoise - Rondeau; n° 1 à 10 dans l'illustration sonore) et une Suite en ré majeur (Les Tendres Plaintes - Rondeau, Les Niais de Sologne &amp; leur double, Les Soupirs - Tendrement, La Joyeuse - Rondeau, La Follette - Rondeau, L'Entretien des Muses, Les Tourbillons - Rondeau, Les Cyclopes - Rondeau, Le Lardon -  Menuet, La Boiteuse; n° 11 à 22 dans l'illustration sonore. Les numéros suivants concernent les nouvelles Suites, datées de 1728).  A mesure que Rameau a pris de l'assurance (et de l'indépendance !), en particulier dans les oeuvres scéniques qui ont occupé les 30 dernières années de sa vie, il a délibérément emprunté ses rythmes au répertoire populaire, qu'il a magnifiés comme personne.  Populaires pour les nobles, nobles pour les paysans, ses danses ont réussit l'exploit  de mettre tout le monde d'accord sans jamais choisir leur camp.   Bien enlevées, les suites orchestrales de Rameau sont le remède souverain contre la morosité et, par bonheur, ce ne sont pas les anthologies qui manquent sur le marché de l'enregistrement : <a href="https://www.youtube.com/watch?v=dbJSOyLZf60">Les Indes galantes</a>, <a href="https://www.youtube.com/watch?v=Yu1jZJHE67A">Castor et Pollux</a>, <a href="https://www.youtube.com/watch?v=k56WRFKoTr4&list=OLAK5uy_m1TY5e3aNvPhkiEMRi6uYUvcnK3CzfIfM">Dardanus</a> (n°1 à 16), <a href="https://www.youtube.com/watch?v=k56WRFKoTr4&list=OLAK5uy_m1TY5e3aNvPhkiEMRi6uYUvcnK3CzfIfM">Le Temple de la Gloire</a> (n°17 à 29), <a href="https://www.youtube.com/watch?v=YdnHx03VNPo">Pygmalion</a>, <a href="https://www.youtube.com/watch?v=KwQie_hc2uI">Daphnis et Eglé</a>, <a href="https://www.youtube.com/watch?v=pxCe-se3yrU">Naïs</a>, <a href="https://www.youtube.com/watch?v=pxCe-se3yrU">Zoroastre</a>,    <a href="https://www.youtube.com/playlist?list=OLAK5uy_kFaZYqWvlbKFeigUM4eaTuzyA1x1inpQk">Les Boréades</a>, <a href="https://www.youtube.com/watch?v=3ljfDy149qc">Anacréon</a>,  <a href="https://www.youtube.com/watch?v=bbGNiDWc5Qs">Les Surprises de l'Amour</a>, ... .  Et si vous n'avez pas le temps  d'écouter ce déluge de musique, goûtez au moins à ce <a href="https://www.youtube.com/watch?v=frLUskALU5I">florilège</a> concocté  par Marc Minkowski et ne manquez sous aucun prétexte l'<a href="https://www.youtube.com/watch?v=xTrLzSIwy-U">orage chorégraphique</a> qui se déchaîne sur la scène où l'on joue Platée  : un rythme étourdissant y relègue au second plan tout ce qui s'est écrit dans le genre depuis Mathusalem. Décidément, chez Rameau, l’invention rythmique  égale le génie harmonique.</li>
+ </ul>
+ 
+ </div>
+ 
+
+<div id="classico">
+<h4>Danse et musique classico-romantique</h4>
+ 
+<p>Rameau fut une exception  anachronique vers la fin de sa vie, n'imposant des formes historiquement dépassées que par la grâce d'un génie complètement hors normes.  L'âge classique (bientôt essentiellement viennois) a progressivement délaissé  l'arsenal des danses baroques n'en conservant que quelques-unes dispersées dans d'innombrables recueils de Danses allemandes, Contredanses, Ländler ou Danses viennoises dont aucun ne peut prétendre au titre de chef-d'oeuvre (<a href="https://www.youtube.com/watch?v=uuO060--06k">Mozart</a>, <a href="https://www.youtube.com/watch?v=OTdFAZwPY6c">Haydn</a>, <a href="https://www.youtube.com/watch?v=QrGIWmP42qg">Schubert </a>et même le jeune <a href="https://www.youtube.com/watch?v=J1SlCX5B-rs">Beethoven</a>). A l'époque de Haydn et de Mozart, le menuet, galant par essence, a été bien seul à  trouver une place dans l'univers  instrumental naissant de la Sonate, du Quatuor et de la Symphonie. Il est même passé à la trappe lorsque Beethoven a décidé de s'en passer, définitivement à partir de 1803. C'était très nécessaire car la musique (de l'époque) classique était prisonnière d'une posture emperruquée qui n'a de fait pas résisté aux  coups de butoir  de la Révolution française.</p>
+<p>Le  jeune Beethoven a encore sacrifié   aux canons de la musique viennoise classique dans les <a href="https://www.youtube.com/watch?v=5nMkIvPhGf8">12 Menuets WoO 7</a>, les <a href="https://www.youtube.com/watch?v=J1SlCX5B-rs">12 Danses allemandes WoO 8</a> ou encore les<a href="https://www.youtube.com/watch?v=gyF_2mZT0cs"> 12 Contredanses WoO 14</a>, toutes oeuvres plaisantes  qui n'annoncent guère les bouleversements à venir, sauf peut-être les Contredanses qui  manifestent une certaine impatience.  Bien qu'il n'ait jamais renié ces oeuvres de jeunesse, il ne les a pas incorporées à son catalogue raisonné. C'est pourquoi elles sont habituellement répertoriées dans un catalogue séparé sous le sigle WoO (<a href="https://fr.wikipedia.org/wiki/Liste_des_%C5%93uvres_de_Ludwig_van_Beethoven">Werk ohne Opuszahl</a>, oeuvre sans numéro d'opus). Vers 1800, le compositeur a cessé toute référence au menuet classique dans l'intitulé de ses mouvements : le <a href="https://www.youtube.com/watch?v=7DspLkU-VZ8">3<sup>ème</sup> mouvement</a> de la Symphonie n°1, bien que noté &quot;Minuetto : Allegro molto vivace&quot; est bien trop rapide pour être assimilable à un menuet, c'est bel et bien déjà un sherzo comme ce sera le cas avec  les symphonies ultérieures, à l'exception de la  8<sup>ème</sup> &quot;volontairement rétro&quot;. Bien sûr, le compositeur s'est inspiré çà et là d'un rythme de danse, comme dans l'<a href="https://www.youtube.com/watch?v=s-Vu7Uf1JMk">andante</a> du Quatuor n°9 qui est est une authentique sicilienne recomposée. Le rythme est omniprésent dans l'oeuvre de Beethoven et son apothéose se trouve dans  le dionysiaque <a href="https://www.youtube.com/watch?v=05kPS-RmVwA">finale</a> de la Symphonie n°7, que Wagner a justement surnommé &quot;L'apothéose de la danse&quot;. A noter qu'il est construit sur un thème bondissant déjà utilisé par le compositeur  pour accompagner son harmonisation d'une mélodie irlandaise (<a href="https://www.youtube.com/watch?v=qhpdxWz3VMQ">WoO 154 n°8</a>, positionnez-vous en 0:37 ou en 1:11 par exemple). </p>
+<p>Tous les musiciens ont suivi l'exemple de Beethoven, puisant leur schémas de rythmes   dans la base de  données patiemment constituées au cours des siècles précédents. </p>
+
+</div>
+
+
+<div id="salon">
+<h5>Danses et Musiques de salon</h5>
+<p>Au 19<sup>ème</sup> siècle, danse et Musique ont gagné les salons bourgeois.  Fuyant comme beaucoup d'autres l'insurrection polonaise contre la Russie, Frédéric Chopin a fini par trouver l'asile qu'il cherchait à Paris (Son père, Nicolas Chopin, avait fait le chemin inverse en fuyant sa Lorraine natale en 1787). Chopin ne s'est guère produit en salle de concert, sa réserve naturelle et le caractère intimiste de son piano ne s'y prêtaient guère. Il a fréquenté quelques  salons mondains et a surtout reçu dans son appartement parisien, sa façon de se sentir à l'aise pour partager les rythmes de sa Pologne adoptive : ses  cycles  de <a href="https://www.youtube.com/watch?v=9HinHSUrZ7o">Polonaises</a>, <a href="https://www.youtube.com/watch?v=H5D46aHhRDM">Mazurkas</a> et <a href="https://www.youtube.com/watch?v=64B-gW9FtY8">Valses</a>  sont devenus devenus universellement célèbres. Tout ce que Paris a connu  d'amateurs de musique romantique s'est enivré des rythmes importés par Chopin (Comment ne pas évoquer, à ce sujet, les <a href="https://www.jpc.de/jpcng/classic/detail/-/art/pauline-viardot-garcia-lieder/hnum/8514548">mélodies</a> écrites  par <a href="../chroniques/garcia.html">Pauline Viardot</a> sur les thèmes de 12 Mazurkas; écoutez &quot;Coquette&quot; !).</p>
+<p>Franz Liszt, musicien davantage cosmopolite, a suivi une trajectoire similaire lors de ses fréquents séjours parisiens. Ses <a href="https://www.youtube.com/watch?v=sHlkVrdBKR8">Csardas</a> et autres <a href="https://www.youtube.com/watch?v=f9Xvv-a5K1w">Rhapsodies</a> célèbrent naturellement sa Hongrie natale mais il a aussi composé des  <a href="https://www.youtube.com/watch?v=8WSvHLcpY4Q">Valses</a>, des <a href="https://www.youtube.com/watch?v=aNrJGW9YOjE">Ländlers</a> et même cette <a href="https://www.youtube.com/watch?v=9Gt2YsB2Tgo">Mazurka</a>, un clin d'oeil à son ami et rival Chopin.</p>
+<p>Il devrait être clair pour chacun que les musiques écrites par ces deux grosses pointures sont surtout des prétextes pour mettre leur virtuosité en valeur et que les danses sont essentiellement des sources d'inspiration sans finalité chorégraphique. Dans ses Valses, Chopin a sacrifié à une mode qui a disséminé dans toute l'Europe. Il est impossible à ce stade de ne pas mentionner l'engouement viennois pour cet art de la Valse (mais aussi de la Polka, de la Marche, etc), quasiment incarné par les membres de la famille Strauss, en particulier par son représentant le plus illustre, Johann Strauss II (1825-1899) (Le beau Danube bleu, <a href="https://www.youtube.com/watch?v=LAVvBF7m260">Valse de l'Empereur</a>, ..., <a href="https://www.youtube.com/watch?v=iuONBz7boBc">Tritsch-Tratsch-Polka</a>, ...).</p>
+<p>Sous l'appellation de danse de Salon, on regroupe également l'ensemble des danses importées d'Amérique du Sud, en particulier le noble <a href="https://www.youtube.com/watch?v=p1uTHTMnbTI">Tango</a>, magnifié par le compositeur argentin Astor Piazzolla (1921-1992) et célébré par (le grand violoniste) Gidon Kremer et sa Kremerata Baltica (<a href="https://www.youtube.com/watch?v=U6gdlVmali0">Oblivion</a>).</p>
+
+</div>
+
+<div id="nations">
+<h5>Retour aux sources nationales</h5>
+
+<p>Chopin et Liszt ont   anticipé   un vaste mouvement paneuropéen de  (re)découverte des patrimoines musicaux. L'époque s'y prêtait où chaque région  rêvait d'indépendance et, pour y parvenir, de retrouver ses racines véritables. De ce point de vue, la musique apparaissait comme un formidable ciment pour chaque peuple. </p>
+
+
+
+  <p>Un grand nombre de  compositeurs se sont attelés à la tâche, récupérant un vaste ensemble de danses populaires  qu'il convenait d'harmoniser et d'instrumenter afin de les mettre en valeur. Ce fut  l'époque des suites de Danses  :  <a href="https://www.youtube.com/watch?v=JhBjD23F2r0">slaves</a> (Anton Dvorak), <a href="https://www.youtube.com/watch?v=YXT42ghiuZ4">hongroises</a> (Johannes Brahms), <a href="https://www.youtube.com/watch?v=-__C7uSeOkc">norvégiennes</a> (Edvard Grieg), <a href="https://www.youtube.com/watch?v=uOKwquXlmVk">suédoises</a> (Max Bruch), ..., initialement écrites pour piano (éventuellement à 4 mains) mais dont la plupart ont été ultérieurement orchestrées quoique par forcément par l'auteur désigné (Brahms, par exemple, n'a personnellement orchestré que trois danses hongroises sur les 21 existantes;  Dvorak, en particulier,  s'est occupé des 5 dernières). </p>
+  <p>Les musiciens britanniques n'ont éprouvé aucune difficulté à faire leur part du travail tant le patrimoine insulaire s'avère particulièrement riche  :  Ralph Vaughan Williams (<a href="https://www.youtube.com/watch?v=D0sC4xbyT5c">English Folk Song Suite</a>), Malcolm Arnold (<a href="https://www.youtube.com/watch?v=wHnBibfWu2Y">Four scottish Dances</a>, <a href="https://www.youtube.com/watch?v=Ywh7p9aRI7w">Four cornish Dances</a>), William Alwyn (<a href="https://www.youtube.com/watch?v=k1bC6Rm5QDs">Elizabethan Dances</a>, <a href="https://www.youtube.com/watch?v=ocmtOa6LNfo">Scottish Dances</a>). Plus près de nous, Peter Maxwell Davies a eu la bonne idée de mettre de côté son modernisme bruyant récurrent  dans <a href="https://www.youtube.com/watch?v=bnnkL1t7PXY">Orkney Wedding, with Sunrise</a> ou <a href="https://www.youtube.com/watch?v=AQzcrl5O0cg">Carolisima</a>.</p>
+  <p><a href="../chroniques/bartok.html">Bela Bartok</a> a largement puisé dans le répertoire folklorique d'Europe centrale,  soit en instrumentant  à la lettre des airs entendus (<a href="https://www.youtube.com/watch?v=fR7SqhK70tE">3 airs populaires hongrois</a> du district de Csik), soit en orchestrant d'autres et en les réunissant au sein de cycles cohérents (<a href="https://www.youtube.com/watch?v=MLV1Fze-x8Y">Esquisses hongroises, BB103, Chants paysans hongrois, BB107, Suite de danses roumaines, BB61 &amp; 76, ou transylvaniennes, BB102</a>),  soit en en forgeant de nouveaux de toutes pièces (<a href="https://www.youtube.com/watch?v=b8UpJxQeC8M">Improvisations sur des mélodies hongroises</a>, SZ74).</p>
+  
+  </div>
+  
+  
+  <div id="ballet">
+  <h5>Le grand Ballet romantique</h5>
+  
+  
+  
+<p>Le 19<sup>ème</sup> siècle  a également intégré la danse dans la structure autonome du grand ballet romantique, un genre déjà très prisé à Paris (quoique fort conventionnellement Adolphe Adam, Leo Delibes, ...). L'Opéra de Paris  exigeait même qu'un ballet soit présent dans toute oeuvre mise à l'affiche, insérée quelque part entre deux actes (Richard Wagner, qui n'était guère préparé à cette requête, n'a pas trouvé mieux que de  placer la Bacchanale du Venusberg juste après l'ouverture alors que le drame n'avait pas encore commencé et ne voyait pas où il pourrait , a conservé un souvenir douloureux des représentations de son Tannhäuser, interrompues après trois représentations seulement). NOTATION</p>
+<p>C'est d'ailleurs un danseur puis surtout chorégraphe français, Marius Petipa (1818-1910), qui a révolutionné les ballets impériaux  de Saint-Pétersbourg en y produisant  les  trois grands chefs-d'oeuvre de Piotr Ilitch Tchaïkovski (La Belle au Bois dormant,
+  Casse-Noisette et Le Lac des cygnes). Il a lancé la grande tradition russe sur fond de rivalité entre le Théâtre Marinsky de Saint-Pétersbourg et le davantage conservateur Théâtre BolchoÏ de Moscou. </p>
+
+</div>
+
+<div id="moderne">
+<h4>Danse et Musique moderne</h4>
+<p>Les Ballets russes de Sergei Diaghilev ont joué un grand rôle dans la modernistaion du spectacle dansé, permettant  à Igor Stravinsky (<a href="http://www.jpc.de/jpcng/classic/detail/-/art/Igor-Strawinsky-Igor-Strawinsky-Edition/hnum/7985870">L'Oiseau de feu</a>, <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Igor-Strawinsky-Igor-Strawinsky-Edition/hnum/7985870">Petrushka</a>, <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Igor-Strawinsky-Igor-Strawinsky-Edition/hnum/7985870">Le sacre du Printemps</a>) d'imposer sa conception de la modernité. </p>
+<p>L'époque soviétique n'a rien changé à la vitalité de cette tradition et tous les musiciens encore en vie y ont contribué, hésitant perpétuellement entre un modernisme mesuré (Dimitri Schostakovitch : <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Dimitri-Schostakowitsch-Das-goldene-Zeitalter-Ges-Auf/hnum/8402815">L'Age d'Or</a> et <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Dimitri-Schostakowitsch-Der-Bolzen-op-27a-Ballettmusik/hnum/7280100">Le Boulon</a>), Mieczyslaw Weinberg : La Clef d'Or <sub><sub><sub>
+<audio controls preload="none">
+  <source src="../son.mp3/russie/wainberg.mp3" type="audio/mpeg"/>
+  <source src="../son.mp3/russie/wainberg.ogg" type="audio/ogg"/>
+  Votre navigateur n'est pas compatible </audio>
+</sub></sub></sub>, Rodion Shchedrin : <a href="https://www.youtube.com/watch?v=kcT7OSILUOA">Anna Karenine</a> et Le petit Cheval bossu <sub><sub><sub>
+<audio controls preload="none">
+  <source src="../son.mp3/shchedrin/chevalbossu.mp3" type="audio/mpeg"/>
+  <source src="../son.mp3/shchedrin/chevalbossu.ogg" type="audio/ogg"/>
+  Votre navigateur n'est pas compatible </audio>
+</sub></sub></sub> et Alfred Schnittke : <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Alfred-Schnittke-Peer-Gynt-Ballettmusik/hnum/7203563">Peer Gynt</a>) et un &quot;rétromantisme&quot; assumé (Alexandre Glazounov : <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Alexander-Glasunow-Raymonda-op-57-Ballettmusik/hnum/7648890">Raymonda</a>,   Tikhon Khrennikov : <a href="https://www.youtube.com/watch?v=p23YbvoneOk">Napoléon Bonaparte</a> et Aram  Khatchatourian : <a href="https://www.youtube.com/watch?v=v0VACj3bKCU">Spartacus</a>). </p>
+<p>Le plus habile  fut sans doute  Serge Prokofiev. Il a contribué au genre dans quelques ballets restés célèbres (<a href="https://www.youtube.com/watch?v=HS5xYDnHI8A">Chout</a>, <a href="https://www.youtube.com/watch?v=BNMV6TKf8O0">Le Pas d'Acier</a>, Le Fils prodigue, Sur le Dniepr,  et surtout les grands classiques tous composés après le retour en URSS, <a href="https://www.youtube.com/watch?v=rrt7pqB5Ecw">Roméo et Juliette</a>, <a href="https://www.youtube.com/watch?v=qyR-uDRUUSU">La Fleur de Pierre</a> et <a href="https://www.youtube.com/watch?v=YYmmCbwNWPs">Cendrillon</a>).</p>
+
+</div>
+
+
+<div id="divorce">
+<h4>L'éclatement du couple Danse-Musique</h4>
+
+<p>Après la guerre, la Danse a senti que le moment était venu  pour elle de prendre son indépendance  et que cela passait sans doute inévitablement par un divorce avec une Musique devenue trop envahissante à son goût.</p>
+<p>Fort occupée à affirmer son existence propre,  la Danse  répugne de plus en plus   à  attirer l'attention sur les musiques utilisées et en particulier à les soigner  par une collaboration effective avec des musiciens présents sur scène. Cette exigence semble pourtant naturelle : après tout aucun public mélomane ne se déplacera jamais pour entendre une musique enregistrée. Il lui faut le contact avec les interprètes et cela ne le gêne(rait) nullement que des danseurs se joignent à la fête. Pourquoi l'inverse ne s'impose-t-il pas avec la même évidence ? Cette constatation n'est pas anodine, elle participe à un phénomène plus général de l'électrification de l'acte musical, un point qui va nous (pré)occuper avec insistance. </p>
+<p>La danse a subi une modernisation qu'elle a souhaité d'autant plus radicale qu'elle a été tardive. Béjart</p>
+
+<p>Il faut davantage fouiller dans les programmes pour prendre connaissance des musiques qui accompagnent les chorégraphies actuelles. L'époque contemporaine a avalisé la séparation de corps de la Musique et de la Danse. Celle-ci revendique aujourd'hui d'affirmer une existence propre donc de se produire sur des musiques diversement empruntées à l'univers classique, du jazz ou des toutes les variétés existantes (Elle a même tenté de chorégraphier le silence !). De même, la musique savante s'est approprié le rythme mondialisé en-dehors de toute référence à l'acte dansé (Mambo de Leonard Bernstein ou messe, Charcoal de Michael Torke, Tango d'Astor Piazzolla, Milonga???, Danzon n°2 du compositeur mexicain Arturo Marquez (1970- )).</p>
+<p>Les danses de salon connaîtront une deuxième vie en provenance de l'Amérique latine et le Tango </p>
+
+
+<p>La danse contemporaine a assez normalement cherché une existence propre, affranchie de toute contrainte musicale voire, dans  des cas extrêmes, se passer complètement d'accompagnement sonore.  En pratique, elle a souvent opté pour une solution moins radicale mais contestable, consistant à prémixer en studio des musiques alternatives. L'idée est évidemment de revendiquer la prééminence de la chorégraphie sur la musique mais le prix à payer est un appauvrissement de l'accompagnement sonore. Les passionnés de danse 'expérience a montré que la solution est certainement viable sur scène mais il n'empêche qu'on peut s'interroger :  que dirait-on d'un spectacle d'opéra où les chanteurs réellement présents sur scène se produiraient en mode karaoké au motif que le chant devrait supplanter l'orchestre ?</p>
+<p>L'Art de rue (Street art), éphémère mais bien réel, a rattrappé la Danse en développant une variante acrobatique qui a malheureusement rompu les amarres avec toute musique digne de ce nom. Le style hip-hop ne s'est pas contenté de généraliser le recours à la boîte à musique - un corollaire prévisible pour un art qui descend dans la rue - il l'a cantonnée dans une rythmique débilitante entretenue par des boîtes à rythmes stéréotypés au risque de nier les principes qui ont animé 10 siècles de danse; on n'arrête pas le déclin. Ceci n'est nullement une parenthèse mais un constat inquiétant pour l'avenir auditif des générations à venir. Ce point sensible fait l'objet d'une chronique à venir. Hip hop dans la <a href="https://www.youtube.com/watch?v=_dsZKpZ_L48">Danse des Sauvages</a> des Indes galantes.</p>
+
+
+<p> <i>A suivre : La Musique parmi les arts (III) : Eléments d'une diététique de l'audition</i>      </p>
+
+
+</div>
+
+
+</div>
+        
+       
+
+            <a id="ancreRetourHautPage" href="#site">&uarr;</a>
+
+            <!-- Inclusion footer -->
+            <div id="footer"></div>
+
+        </div>
+    
+    
+    </div>
+
+    <!-- Effet smooth ancres -->
+    <script src="../js/onclick.js"></script>
+    <script src="../js/anchors.js"></script>
+
+</body>
+</html>

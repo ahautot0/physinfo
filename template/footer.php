@@ -10,11 +10,10 @@
 
 <div id="articlesRecents">
 	<h5>ARTICLES RECENTS</h5>
-	<ul>
-    	<li><a href="<?php echo $_POST['ROOT']; ?>chroniques/couperin.html">Les 27 Ordres de François Couperin (13/10/2021)</a></li>
-    	<li><a href="<?php echo $_POST['ROOT']; ?>chroniques/horvath.html">Nicolas Horvath, pianiste singulier (18/08/2021)</a></li>
-    	<li><a href="<?php echo $_POST['ROOT']; ?>chroniques/vivier.html">Claude Vivier, destin tragique d'un génie (30/05/2021)</a></li>
-        
+        <li><a href="<?php echo $_POST['ROOT']; ?>chroniques/peinture.html">La Musique parmi les arts (I) : Peinture et Musique, deux arts disjoints (14/01/2022)</a></li>
+    	<li><a href="<?php echo $_POST['ROOT']; ?>chroniques/niquet.html">Hervé Niquet, le Concert Sprituel et J. Bodin de Boismortier (25/11/2021)</a></li>
+        <li><a href="<?php echo $_POST['ROOT']; ?>chroniques/couperin.html">Les 27 Ordres de François Couperin (13/10/2021)</a></li>
+    	    
        </ul>
 </div>
 

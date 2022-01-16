@@ -2,8 +2,8 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Faits divers | La Musique aux confins de l'Art et de la Science</title>
-  <meta name="description" content="On peut devenir un peintre de talent sans disposer d'un bagage théorique envahissant, c'est chose impossible en musique; voici quelques éléments de comparaison." />
+  <title>Faits divers | La Musique parmi les arts (I) : Peinture et Musique, deux arts disjoints</title>
+  <meta name="description" content="On peut devenir un peintre de talent sans avoir nécessairement suivi une formation théorique pointue, c'est chose impossible en musique. Voici quelques pistes qui explorent les différences entre ces deux arts majeurs." />
   <link rel="shortcut icon" href="../logo.ico" />
   <link href="../style.css" rel="stylesheet" type="text/css" /> 
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
@@ -23,6 +23,7 @@
            success: function(data) {
              $("#header").html(data);
              $("#faitsDivers").addClass("active"); /*a changer en fonction de la page*/
+			 
              update_design_when_header_loaded();
           }
         });
@@ -44,39 +45,93 @@
         <nav id="menuLateralAncres">
             <ul> 
             <li>
-                    <a id="ancreson" href="#son" class="linavMenu">
-                    <span>Modes de production des sons</span>
+                    <a id="ancreson" href="#son" class="linavMenu active">
+                    <span>Son et lumière</span>
                     </a>
 </li>        
             <li>
-                    <a id="ancrediapason" href="#diapason" class="linavMenu">
-                    <span>Le cas d'école du diapason</span>
+                    <a id="ancreintensite" href="#intensite" class="linavMenu">
+                    <span>Intensité du signal sonore ou visuel</span>
                     </a>
 </li>
 
              <li>
-                    <a id="ancredescription" href="#description" class="linavMenu">
-                    <span>Description</span>
+                    <a id="ancrefrequence" href="#frequence" class="linavMenu">
+                    <span>Fréquence du signal sonore ou visuel</span>
                     </a>
 </li>
                 <li>
-                    <a id="ancrepresentation" href="#presentation" class="linavMenu active">
-                    <span>Présentation</span>
+                    <a id="ancrecontinudiscret" href="#continudiscret" class="linavMenu">
+                    <span>Peinture continue, composition discrète</span>
                     </a>
 </li>
                
                 
                 <li>
-                    <a id="ancrebruits" href="#bruits" class="linavMenu">
-                    <span>Les bruits de la guerre</span>
+                    <a id="ancreespace" href="#espace" class="linavMenu">
+                    <span>L'espace pictural</span>
                     </a>
 </li>
                 
                  <li>
-                    <a id="ancreappassionata" href="#appassionata" class="linavMenu">
-                    <span>Le cas de la Sonate n°23</span>
+                    <a id="ancreespacesonore" href="#espacesonore" class="linavMenu">
+                    <span>L'espace sonore</span>
                     </a>
-                </li>
+</li>
+                
+                <li>
+                    <a id="ancredisfrequences" href="#disfrequences" class="linavMenu">
+                    <span>Discrétisation des fréquences</span>
+                    </a>
+</li>
+                <li>
+                    <a id="ancredisdurees" href="#disdurees" class="linavMenu">
+                    <span>Discrétisation des durées</span>
+                    </a>
+</li>           
+                <li>
+                    <a id="ancredisintensites" href="#disintensites" class="linavMenu">
+                    <span>Discrétisation des intensités</span>
+                    </a>
+</li>
+                <li>
+                    <a id="ancrebattement" href="#battement" class="linavMenu">
+                    <span>Le phénomène de battement</span>
+                    </a>
+</li>
+				<li>
+                    <a id="ancreperception" href="#perception" class="linavMenu">
+                    <span>Perceptions spatio-temporelles</span>
+                    </a>
+</li>
+                <li>
+                    <a id="ancrefragile" href="#fragile" class="linavMenu">
+                    <span>La peinture, un art immédiat et fragile</span>
+                    </a>
+</li>
+				<li>
+                    <a id="ancrerobuste" href="#robuste" class="linavMenu">
+                    <span>La musique, un art différé et robuste</span>
+                    </a>
+</li>
+				
+				<li>
+                    <a id="ancrestylisme" href="#stylisme" class="linavMenu">
+                    <span>Question de style</span>
+                    </a>
+</li>
+
+<li>
+                    <a id="ancretemps" href="#temps" class="linavMenu">
+                    <span>Le rôle du temps</span>
+                    </a>
+</li>
+				
+				<li>
+                    <a id="ancresynthese" href="#synthese" class="linavMenu">
+                    <span>Synthèse des couleurs et des sons</span>
+                    </a>
+</li>
             </ul>
         </nav>
 
@@ -85,7 +140,7 @@
 <div id="contenuPrincipal">
                 <h2>Faits divers</h2>
                 
-<h3>La Musique aux confins de l'Art et de la Science</h3>
+<h3>La Musique parmi les arts (I) : <br/>Peinture et Musique, deux arts disjoints</h3>
                 
 
                  <nav class="filAriane">
@@ -97,7 +152,7 @@
                         <li class="breadcrumbItem">
                           <a href="../faitsDivers.html">Faits divers</a>
                         </li>
-                        <li class="breadcrumbItem breadcrumIitem--current">La Musique aux confins de l'Art et de la Science</li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Peinture et Musique, deux arts disjoints</li>
                     </ul>
                 </nav>
                 
@@ -108,33 +163,46 @@
                     </div>
 
                     <ul class="linksSummary">
-                   	    <li><a href="#son">Modes de production des sons</a></li>
-                        <li><a href="#diapason">Le cas d'école du diapason</a></li>
-                        <li><a href="#description">Description</a></li>
-                        <li><a href="#presentation">Présentation</a></li>
+                   	    <li><a href="#son">Son et lumière</a></li>
+                        <li><a href="#intensite">Intensité du signal sonore ou visuel</a></li>
+                        <li><a href="#frequence">Fréquence du signal sonore ou visuel</a></li>
+                        <li><a href="#continudiscret">Peinture continue, composition discrète</a></li>
+                        <li><a href="#espace">L'espace pictural</a></li>
+                        <li><a href="#espacesonore">L'espace sonore</a></li>
+                        <li><a href="#disfrequences">Discrétisation des fréquences</a></li>
+                        <li><a href="#disdurees">Discrétisation des durées</a></li>
+                        <li><a href="#disintensites">Discrétisation des intensités</a></li>
+                        <li><a href="#battement">Le phénomène de battement</a></li>
+                        <li><a href="#perception">Perceptions spatio-temporelles</a></li> 
+                        <li><a href="#fragile">La peinture, un art immédiat et fragile</a></li>
+                        <li><a href="#robuste">La musique, un art différé et robuste</a></li>
+                        <li><a href="#stylisme">Question de style</a></li> 
+                        <li><a href="#temps">Le rôle du temps</a></li>
+                        <li><a href="#synthese">Synthèse des couleurs et des sons</a></li>
                         
-                        <li><a href="#bruits">Les bruits de la guerre</a></li>
-                        <li><a href="#appassionata">Le cas de la Sonate n°23</a></li>
                     </ul>
       </div> 
   
 
-                <p>Peinture et  Musique sont, à bien des égards, des arts fort éloignés l'un de l'autre, en particulier en ce qui concerne  la trajectoire des artistes impliqués : alors qu'il est parfaitement possible de devenir un peintre de talent sans avoir  suivi  une formation théorique  pointue, c'est  radicalement impossible en musique où des études longues et sérieuses s'imposent. Certes le talent et l'inspiration sont nécessaires dans les deux cas mais la musique y ajoute un élément savant à tel point qu'en forçant à peine, on pourrait parler d'un art pictural et d'une science musicale. Cette chronique s'intéresse aux éléments objectifs qui différencient ces deux Arts majeurs.</p>
+                <p>Peinture et  Musique sont, à bien des égards, des arts  éloignés l'un de l'autre et cela commence dès l'écolage des  artistes impliqués : alors qu'il est parfaitement possible de devenir un peintre de talent sans avoir  suivi  une formation théorique  accaparante au-delà de l'assimilation des règles de base (Lois de la perspective, association des couleurs, maîtrise des clairs-obscurs, ..., en fonction de l'école fréquentée),  c'est  radicalement impossible en musique où des études longues et sérieuses s'imposent, amorcées  si possible dès le plus jeune âge. Certes le talent et l'inspiration sont nécessaires dans les deux cas mais la musique y ajoute un élément savant à tel point qu'en forçant à peine, on pourrait parler d'un art pictural et d'une science musicale. Cette chronique s'intéresse aux éléments  qui différencient  ces deux arts majeurs.      </p>
                 
-      <div id="sens">
+                
+      <div id="son">
         <h4>Son et lumière</h4>
-     
-     <p>La  plupart des êtres vivants évolués perçoivent les lumières et les sons dans des limites  variables d'une espèce à l'autre.  S'adressant à des phénomènes physi(ologi)ques distincts, vue et ouïe humaines se déclinent différemment au point que Peinture et Musique  constituent deux univers artistiques nettement disjoints.</p>
-     <p>Les organes responsables de la vision et de l'audition mettent en jeu des mécanismes physiologiques extrêmement complexes qu'il n'est pas question de  détailler ici. Nous nous contenterons dès lors de rappeler  les bases essentielles à la compréhension du sujet.</p>
-     <p>La vue et l'ouÏe   reposent  sur l'effet physiologique produit par une onde de nature physique. Toutefois  ces ondes sont de natures  très différentes :</p>
+        
+        <p>Les organes responsables de la vision et de l'audition mettent en jeu des mécanismes  physi(ologi)ques  complexes qu'il n'est pas question de   détailler ici. Nous nous contentons  de rappeler  les bases  essentielles à la compréhension du sujet. </p>
+        <p>La vue et l'ouïe   reposent  l'une et l'autre sur l'effet physiologique produit par une onde  physique. Toutefois  les ondes impliquées sont de natures  très différentes :</p>
      
      <ul class="miniListCorps">
        <li>Les ondes sonores sont dites matérielles car elles ont besoin d'un support  élastique (généralement l'air) pour se propager. Leur détection s'effectue au niveau du tympan de l'oreille externe qui entre en vibration sous l'effet des variations de pression induites, &Delta;p=p-p<sub>atm</sub>, calculées par rapport à la pression atmosphérique régnante (Pour quelques détails, cf, par exemple,  <a href="../chroniques/acoustique.html">Acoustiques musicales</a>).<br/><br/></li>
-       <li> Les ondes lumineuses, porteuses de photons, sont de nature électromagnétiques et elles se propagent indifféremment dans le vide ou dans la matière transparente (donc aussi dans l'air). La détection des photons  s'effectue au niveau de la rétine, composée  de  &plusmn;6 millions de cônes (pour les visions diurne et colorée) et de &plusmn;120 millions de bâtonnets (pour les visions  nocturne et en noir et blanc).</li>
+       <li> Les ondes lumineuses, porteuses de photons, sont de nature électromagnétique et elles se propagent indifféremment dans le vide ou dans la matière transparente (donc aussi dans l'air). La détection des photons  s'effectue au niveau de la rétine, composée  de  &plusmn;6 millions de cônes (pour les visions diurne et colorée) et de &plusmn;120 millions de bâtonnets (pour les visions  nocturne et en noir et blanc).</li>
        
        </ul>
      
-     <p>Dans les deux cas,   l'organe  qui détecte l'onde transcode les stimuli reçus en signaux électro-chimiques    envoyés vers des zones spécifiques du cerveau afin qu'ils y soient  décodés et interprétés. Deux paramètres importants interviennent à ce stade  : l'<strong>intensité</strong>  du signal perçu et  sa <strong>fréquence</strong> (qui précise la couleur de la lumière ou la hauteur du son).      </p>
+     <p>Dans les deux cas,   l'organe  qui détecte l'onde transcode les stimuli reçus en signaux électrochimiques    envoyés vers des zones spécifiques du cerveau afin qu'ils y soient  décodés et interprétés. Deux paramètres importants interviennent à ce stade  : l'<strong>intensité</strong>  du signal perçu et  sa <strong>fréquence</strong> (qui précise la couleur de la lumière ou la hauteur du son).</p>
+     
+    <p><i>Note. Un troisième paramètre, accessoire en ce qui nous concerne ici, est la vitesse de propagation de ces deux ondes. Dans les conditions usuelles, la lumière se déplace à la vitesse colossale de 300 000 km/s, autant dire instantanément à notre échelle. Il n'existe donc aucun décalage temporel appréciable entre les lumières qui nous parviennent des divers points d'un objet. Il n'en va pas de même en acoustique car l'onde sonore se propage près d'un million de fois plus lentement (340 m/s). Cette fois, un décalage temporel est éventuellement perceptible qui peut poser problème aux ingénieurs responsables de l'acoustique des (grandes) salles. </i></p> 
+     
       </div>
      
      
@@ -144,9 +212,9 @@
         
        
      <p>L'être humain  est capable de détecter  des   signaux  sonores et/ou visuels de très faibles intensités. A l'opposé, il doit se protéger contre les intensités excessives sous peine de dommages irréversibles, au pire en se bouchant les oreilles ou en fermant les yeux. Dans le monde qui nous entoure, ces intensités  peuvent varier considérablement : </p>
-<p>- En astronomie, le seuil de détection visuel est à peu de choses près atteint lorsqu'on observe la planète Uranus dans un ciel limpide - une denrée devenue rare ! -, ce qui correspond au seuil d'activation de quelques molécules de rhodopsine. En comparaison, l'éclat du soleil est au moins 10<sup>32</sup> plus intense ! Bien sûr, il n'est pas question de regarder le soleil en face, la limite tolérée par l'oeil se situant environ 10 ordres décimaux au-dessus du seuil (Rapport 10<sup>10</sup>).</p>
-     <p> - La situation de l'oreille est légèrement plus favorable. Entre 1000 et 1500 Hz, la puissance surfacique minimale détectée par un tympan normal vaut de l'ordre de, I<sub>min</sub> = 10<sup>-12</sup> W/m<sup>2</sup>, tandis que la valeur maximale tolérée avant la rupture est voisine de, I<sub>max</sub> = 1 W/m<sup>2</sup>. La plage audible en sécurité couvre donc 12 ordres décimaux (Rapport 10<sup>12</sup>). A basse ou haute fréquences, le seuil est plus élevé et ce rapport diminue.</p>
-     <p>Dans les deux cas, il  est inenvisageable que le tympan  ou les cônes rétiniens relayent linéairement des intensités aussi différentes vers le cerveau.  La Nature a  de fait prévu que la transduction électro-chimique des signaux perçus    s'opère selon une loi   empirique approximativement logarithmique,   (dite) de type &quot;Weber-Feschner&quot; :    lorsque l'intensité du stimulus   croît selon une progression géométrique, le signal électro-chimique ne croît (en gros) que selon une progression arithmétique. </p>
+<p>- En astronomie, le seuil de détection visuel est à peu de chose près atteint lorsqu'on observe la planète Uranus dans un ciel limpide - une denrée devenue rare ! -, ce qui correspond au seuil d'activation de quelques molécules de rhodopsine. En comparaison, l'éclat du soleil est au moins 10<sup>32</sup> plus intense ! Bien sûr, il n'est pas question de regarder le soleil en face, la limite tolérée par l'oeil se situant environ 10 ordres décimaux au-dessus du seuil (Rapport 10<sup>10</sup>).</p>
+     <p> - La situation de l'oreille est légèrement plus favorable. Entre 1000 et 1500 Hz, la puissance surfacique minimale détectée par un tympan normal vaut de l'ordre de, I<sub>min</sub> = 10<sup>-12</sup> W/m<sup>2</sup>, tandis que la valeur maximale tolérée avant la rupture est voisine de, I<sub>max</sub> = 1 W/m<sup>2</sup>. La plage audible en sécurité couvre donc 12 ordres décimaux (Rapport 10<sup>12</sup>). A basse ou haute fréquences, le seuil est plus élevé et ce rapport diminue légèrement.</p>
+     <p>Dans tous les cas, il  est inenvisageable que le tympan  ou les cônes rétiniens relayent linéairement des intensités aussi différentes vers le cerveau.  La Nature a  de fait prévu que la transduction électrochimique des signaux perçus    s'opère selon une loi   empirique approximativement logarithmique,   (dite) de type &quot;Weber-Feschner&quot; :    lorsque l'intensité du stimulus   croît selon une progression géométrique, le signal électrochimique ne croît (en gros) que selon une progression arithmétique. </p>
      
      <div class="conteneurImageSeule">
        <div>
@@ -158,18 +226,19 @@
   </div>
      
      <p>    En acoustique, la  loi, dB = 10 Log<sub>10</sub>(I/I<sub>min</sub>), définit  une échelle logarithmique possible, dite des décibels. Entre 1000 et 1500 Hz, la plage audible en sécurité (par un humain normal) varie entre, dB = 0 et 120 décibels, lorsque I passe de I<sub>min</sub> à I<sub>max</sub>.  Notez l'usage purement conventionnel de la base 10 pour le logarithme et ne vous laissez pas distraire par le  facteur 10 multiplicatif qui n'existerait pas si on mesurait les intensités relatives en bels (mais tel n'est pas l'usage). </p>
-     <p>Si l'on préfère parler en terme de (variations de) pressions exercées sur le tympan,   la formule précédente devient, dB = 10 Log<sub>10</sub>(&Delta;p/&Delta;p<sub>min</sub>)<sup>2</sup> = 20 Log<sub>10</sub>(&Delta;p/&Delta;p<sub>min</sub>), où le seuil détectable de variation de pression   est de l'ordre de, &Delta;p<sub>min</sub> = 2 10<sup>-5</sup> Pa(scal), soit deux  dix milliardièmes de   pression atmosphérique ! Cette formule, inversée sous la forme, &Delta;p = 2 10<sup>(dB/20-5)</sup>, nous apprend  qu'un orchestre symphonique jouant pianissimo (dB &ap; 40 décibels) ou fortissimo (dB &ap; 110 décibels) crée des variations de pressions respectivement de l'ordre de, &Delta;p = 0.002 Pa ou &Delta;p = 6.3 Pa, dans  les deux cas des valeurs   petites comparées à la pression atmosphérique normale, p<sub>atm</sub> = 101300 Pa (Toutefois, vers 120 décibels,  &Delta;p approche  20 Pa,  ce qui correspond au seuil de la douleur).     </p>
-     <p>Une loi logarithmique analogue  peut être définie à propos des intensités lumineuses mais seuls les astronomes s'en servent pour comparer les  magnitudes apparentes des objets célestes. Ils la note habituellement, m = -2.5 Log<sub>10</sub>(E/E<sub>Vega</sub>), où l'éclairement de l'étoile Véga  sert de référence à la magnitude zéro (Dans cette échelle bizarrement orientée à l'envers, à cause du signe moins dans la formule, Uranus est à la magnitude 5.3, le seuil de détection humaine est proche de 6  et, à l'opposé, le soleil est à -26.7).  Cette notion de magnitude n'est d'aucune utilité dans la vie courante car les éclairements y demeurent relativement constants.</p>
-     <p>Le peintre <strong>accepte</strong> le paramètre &quot;intensité&quot; comme il vient lorsqu'il choisit ses couleurs : il sait que ce que le spectateur verra ne sera jamais que le résultat spontané de la réflexion  de la lumière  ambiante sur la toile présumée éclairée idéalement; c'est à prendre ou à laisser. Par contre, le musicien <strong>gère</strong> l'intensité des sons qu'il veut (faire) entendre en les notant sur la partition.  Nous verrons, le moment venu, qu'il le fait qualitativement sans se compliquer la tâche outre mesure.</p>
+     <p>Si l'on préfère parler en terme de (variations de) pressions exercées sur le tympan,   la formule précédente devient, dB = 10 Log<sub>10</sub>(&Delta;p/&Delta;p<sub>min</sub>)<sup>2</sup> = 20 Log<sub>10</sub>(&Delta;p/&Delta;p<sub>min</sub>), où le seuil détectable de variation de pression   est de l'ordre de, &Delta;p<sub>min</sub> = 2 10<sup>-5</sup> Pa(scal), soit deux  dix milliardièmes de   pression atmosphérique. Cette formule, inversée sous la forme, &Delta;p = 2 10<sup>(dB/20-5)</sup>, nous apprend  qu'un orchestre symphonique jouant pianissimo (dB &ap; 40 décibels) ou fortissimo (dB &ap; 110 décibels) crée des variations de pressions respectivement de l'ordre de, &Delta;p = 0.002 Pa ou &Delta;p = 6.3 Pa, dans  les deux cas des valeurs   petites comparées à la pression atmosphérique normale, p<sub>atm</sub> = 101300 Pa (Toutefois, vers 120 décibels,  &Delta;p approche  20 Pa,  valeur qui signe le seuil de la douleur).     </p>
+     <p>Une loi logarithmique analogue  peut être définie à propos des intensités lumineuses mais seuls les astronomes s'en servent pour comparer les  magnitudes apparentes des objets célestes. Ils la notent habituellement, m = -2.5 Log<sub>10</sub>(E/E<sub>Vega</sub>), où l'éclairement de l'étoile Véga  sert de référence à la magnitude zéro (Dans cette échelle bizarrement orientée à l'envers, à cause du signe moins dans la formule, Uranus est à la magnitude 5.3, le seuil de détection humaine est proche de 6  et, à l'opposé, le soleil est à -26.7).  Cette notion de magnitude n'est d'aucune utilité dans la vie courante (par exemple dans un musée) car les éclairements y demeurent relativement constants.</p>
+     <p>Le peintre <strong>agrée</strong> le paramètre &quot;intensité&quot; comme il vient lorsqu'il choisit ses couleurs : il sait que ce que le spectateur verra ne sera jamais que le résultat  de la réflexion spontanée de la lumière  ambiante sur la toile présumée éclairée idéalement; c'est à prendre ou à laisser. Par contre, le musicien <strong>doit gérer</strong> l'intensité des sons qu'il veut (faire) entendre en les notant sur une partition.  </p>
       </div>
      
      
      <div id="frequence">
-     <h4>fréquence du signal sonore ou visuel     </h4>
-     <p>La comparaison des plages  fréquentielles audibles et visibles  révèlent des différences considérables et essentielles pour la suite  :</p>
+     <h4>Fréquence du signal sonore ou visuel     </h4>
+     <p>Les plages  fréquentielles audibles et visibles   (par l'être humain) présentent des différences considérables qui s'avèrent  essentielles pour la suite  :<br/>
+       <br/></p>
      
      <ul class="miniListCorps">
-       <li>En optique, les fréquences  visibles (par l'être humain) se situent approximativement, du rouge au violet, dans l'intervalle [400, 750] THz (1 THz = 10<sup>12 </sup>Hz), soit un ambitus, 750/400 = 1.875, inférieur à 2  donc ne couvrant même pas une octave. Si l'on superposait plusieurs ondes lumineuses sinusoïdales de fréquences, k f (k&ge;1, entier, et f &isin; [400, 750] THz), le résultat serait une onde périodique non sinusoïdale de fréquence, f, dont l'oeil ne percevrait que la composante fondamentale, les autres se situant dans l'ultra-violet. Nous ne saurons donc jamais comment notre appareil visuel percevrait, s'il en était capable,   une lumière de fréquence 800 THz, située à l'octave du rouge extrême. L'oeil (humain) n'étant pas sensible au phénomène d'octave, les nuances de couleurs perçues correspondent  donc uniquement aux (mélanges de) fréquences fondamentales des ondes réfléchies par la surface regardée. 
+       <li>En optique, les fréquences  visibles se situent approximativement, du rouge au violet, dans l'intervalle [400, 750] THz (1 THz = 10<sup>12 </sup>Hz), soit un ambitus, 750/400 = 1.875, inférieur à 2  donc ne couvrant même pas une octave. Si l'on superposait plusieurs ondes lumineuses sinusoïdales de fréquences, k f (k&ge;1, entier, et f &isin; [400, 750] THz), le résultat serait une onde périodique non sinusoïdale de fréquence, f, dont l'oeil ne percevrait que la composante fondamentale, les autres se situant dans l'ultra-violet. Nous ne saurons donc jamais comment notre appareil visuel percevrait, s'il en était capable,   une lumière de fréquence 800 THz, située à l'octave du rouge extrême. L'oeil (humain) n'étant pas sensible au phénomène d'octave, les nuances de couleurs perçues correspondent  donc uniquement aux (mélanges des) fréquences fondamentales des ondes réfléchies par la surface regardée. 
        
          <div class="conteneurImages">
     <div> <figure>
@@ -184,24 +253,24 @@
         
          
    
-       <li>En acoustique, la plage des fréquences audibles s'étend sur un  intervalle beaucoup plus large, [16, 16000] Hz,  couvrant 10 octaves (1000 &ap; 2<sup>10</sup>). Lorsqu'on active, dans l'ordre des fréquences croissantes (de do<sub>0</sub> à si<sub>9</sub>), les   touches d'un clavier  accordé au tempérament égal, on passe progressivement de la fréquence 16.35 Hz à 15804.3 Hz, selon une progression géométrique de raison 2<sup>1/12</sup> &ap; 1.05946 et pourtant la sensation ressentie semble parfaitement linéaire <sub><sub><sub> 
+       <li>En acoustique, la plage des fréquences audibles s'étend sur un  intervalle beaucoup plus large, [16, 16000] Hz,  couvrant approximativement 10 octaves (1000 &ap; 2<sup>10</sup>). Lorsqu'on active, dans l'ordre des fréquences croissantes (de do<sub>0</sub> à si<sub>9</sub>), les   touches d'un clavier étendu (d'orgue, par exemple) accordé au tempérament égal, on passe progressivement de la fréquence 16.35 Hz à 15804.3 Hz, selon une progression géométrique de raison 2<sup>1/12</sup> &ap; 1.05946 et pourtant la sensation ressentie semble parfaitement linéaire <sub><sub><sub> 
        <audio controls preload="none" >
                                         <source src="../son.mp3/arithm/spectrepiano.mp3" type="audio/mpeg"/>
                                         <source src="../son.mp3/arithm/spectrepiano.ogg" type="audio/ogg"/>
                                         Votre navigateur n'est pas compatible
             </audio>
-       </sub></sub></sub>. Tout se passe comme si l'échelle des fréquences sonores était perçue selon une  loi  logarithmique (cette fois mathématiquement) exacte.  Dans cette échelle devenue linéaire par construction,   la position de n'importe quel son  de fréquence f est déterminée par l'intervalle qui le sépare du do<sub>0</sub> de départ,   Int = 1200 &#8467;g(f/f<sub>0</sub>) (mesuré en cents, où &#8467;g est  le logarithme en base 2 et où le facteur 1200 n'est présent que pour la commodité des unités). L'intervalle d'octave vaut alors précisément 1200 cents et, à condition de le diviser en 12 parties égales (ce qui est le cas en tempérament égal), l'intervalle séparant deux notes sucessives   du clavier vaut 100 cents soit un demi-ton tempéré (Cf, par exemple, <a href="../chroniques/acoustique.html">Acoustiques musicales</a>).       </li>
+       </sub></sub></sub>. Tout se passe comme si l'échelle des fréquences sonores était perçue selon une  loi  logarithmique (cette fois mathématiquement) exacte.  Dans cette échelle devenue linéaire par construction,   la position de n'importe quel son  de fréquence f est déterminée par l'intervalle qui le sépare du do<sub>0</sub> de départ,   Int = 1200 &#8467;g(f/f<sub>0</sub>) (mesuré en cents, où &#8467;g est  le logarithme en base 2 et où le facteur 1200 n'est présent que pour la commodité des unités). L'intervalle d'octave vaut alors précisément 1200 cents et, à condition de le diviser en 12 parties égales (ce qui est le cas en tempérament égal), l'intervalle séparant deux notes successives   du clavier vaut 100 cents soit un demi-ton tempéré (Cf, par exemple, <a href="../chroniques/arithmetique.html">Gammes et Tempéraments</a>).       </li>
      </ul>
      
      
-     <p>Le peintre ne choisit pas directement ses couleurs, il choisit les pigments parmi ceux qu'il connaît et il s'accomode des couleurs que sa toile renverra spontanément vers l'observateur lorsqu'elle sera éclairée. C'est un processus physique naturel  qui ne réclame qu'un instinct  sûr dans le choix des pigments.   La position du musicien est nettement plus inconfortable pour deux raisons qui seront analysées ci-après : primo, le spectre fréquentiel sonore est au moins dix fois plus étendu que son homologue optique et secundo, le rapport entre les fréquences médianes des deux spectres est colossal, de l'ordre de 10<sup>12</sup> (mille milliards !). Les sections suivantes explorent ces différences et en tirent les conclusions qui s'imposent aux (infortunés) musiciens.</p>
-<h5>Quantifier la fréquence ?</h5>
+     <p>Le peintre ne choisit pas directement ses couleurs, il sélectionne des pigments  et il s'accommode des couleurs que la toile renverra naturellement vers l'observateur lorsqu'elle sera éclairée.   La position du musicien est nettement moins confortable pour deux raisons au moins : primo, le spectre fréquentiel sonore est  500 fois plus étendu que son homologue optique et secundo, le rapport entre les fréquences médianes des deux spectres est colossal, de l'ordre de 10<sup>12</sup> (mille milliards !). Les sections suivantes examinent ces différences et en tirent les conclusions qui s'imposent aux (infortunés) musiciens priés d'étudier une théorie musicale astreignante.</p>
+<h5>L'oreille absolue ?</h5>
        
-  <p>Tout observateur expérimenté est capable d'ordonner un ensemble de signaux monofréquentiels, visuels ou sonores, dans l'ordre croissant ou décroissant des fréquences. Par contre, il ne peut les quantifier avec précision. Ce n'est guère surprenant :  la fréquence d'une onde peut prendre une infinité  continue de valeurs dans l'intervalle détectable, qu'il est impossible d'évaluer sous la forme d'un nombre réel comportant une infinité de chiffres décimaux; même une fraction approchée est  hors de portée. </p>
-  <p>L'expérience optique suivante illustre cette impossibilité  : si plusieurs observateurs observent la lumière émise par une lampe à vapeur de sodium, tous seront d'accord pour la qualifier de jaune-orange donc d'en situer la fréquence  aux environs de 500 THz (Cf l'échelle ci-avant). Aucun ne sera cependant en mesure de préciser qu'elle vaut précisément 508.300 THz et encore moins que deux fréquences extrêmement voisines, 508.127 et 508.474 THz, sont en fait simultanément présentes, bien trop proches pour être distinguées à l'oeil nu. <i>Note.  Les longueurs d'onde associées à ce doublet, valent &lambda; = 589.995 et 589.5924 nm et elles  peuvent être séparées par un spectromètre de laboratoire. Celui-ci révèle d'ailleurs l'existence d'autres  longueurs d'onde, par exemple  à 568.8 et 615.4 nm, respectivement vertes et marrons, mais leurs intensités sont tellement  faibles   qu'on ne voit que la couleur orange dominante).</i> </p>
-  <p>La même expérience peut être faite en acoustique : un musicien qui entend le son périodique  émis par une instrument désaccordé  peut, dans le meilleur des cas, situer la fréquence du son dans l'échelle des fréquences audibles mais en aucun cas il n'est en mesure de le faire avec précision. </p>
+  <p>Tout observateur expérimenté est capable d'ordonner de tête un ensemble de signaux monofréquentiels, visuels ou sonores, dans l'ordre croissant ou décroissant des fréquences. Par contre, il ne peut les quantifier avec précision. Ce n'est guère surprenant : la fréquence d'une onde peut prendre une infinité  continue de valeurs dans l'intervalle détectable, qu'il est impossible d'évaluer sous la forme d'un nombre réel comportant une infinité de chiffres décimaux; même une fraction approchée est  hors de portée. </p>
+  <p>L'expérience optique suivante illustre cette impossibilité : si plusieurs observateurs observent la lumière émise par une lampe à vapeur de sodium, tous seront d'accord pour la qualifier de jaune-orange donc d'en situer la fréquence  aux environs de 500 THz (Cf l'échelle ci-avant). Aucun ne sera cependant en mesure de préciser qu'elle vaut précisément 508.300 THz et encore moins que deux fréquences extrêmement voisines, 508.127 et 508.474 THz, sont en fait simultanément présentes, bien trop proches pour être distinguées à l'oeil nu. <i>Note.  Les longueurs d'onde associées à ce doublet, &lambda; = 589.995 et 589.5924 nm,   ne peuvent être séparées que par un spectromètre de laboratoire. Celui-ci révèle d'ailleurs l'existence d'autres  longueurs d'onde, par exemple, 568.8 et 615.4 nm, respectivement vertes et marrons, mais leurs intensités sont tellement  faibles   qu'on ne voit, à l'oeil nu, que la couleur orange dominante.</i> </p>
+  <p>La même expérience peut être faite en acoustique : un musicien qui entend un son périodique  émis par un instrument désaccordé  peut, dans le meilleur des cas, situer sa fréquence  dans l'échelle des fréquences audibles mais en aucun cas il n'est en mesure de le faire avec précision. </p>
   <p>A ce stade préliminaire, une conclusion semble s'imposer : ni l'oeil absolu ni l'oreille absolue n'existent. Certes l'observateur peut  estimer  que tel objet est  &quot;bleu&quot; ou que tel son s'apparente à un &quot;la<sub>440</sub>&quot; mais le fait qu'il existe à proximité une infinité non dénombrable de nuances  empêche de préciser davantage.</p>
-  <p>Pourtant les musiciens affirment que l'oreille absolue existe et qu'éventuellement ils la possèdent.  Il faut comprendre que l'oreille de ces privilégiés  n'identifie pas un son périodique quelconque mais une note dont la fréquence fait partie de l'échelle sonore discrète qu'ils ont l'habitude de pratiquer, par exemple l'échelle tempérée. Si on leur soumet un son qui sort de cette échelle, ils ne peuvent qu'hésiter entre les  notes qui l'encadrent. </p> 
+  <p>Pourtant les musiciens affirment que l'oreille absolue existe et qu'éventuellement ils la possèdent.  Il faut comprendre que l'oreille de ces privilégiés  n'identifie pas un son périodique quelconque mais une note à condition que la fréquence de celle-ci fasse partie de l'échelle sonore discrète qu'ils ont l'habitude de pratiquer, par exemple l'échelle tempérée. Si on leur soumet un son qui ne correspond à aucune &quot;note-barreau&quot; de cette échelle, ils ne peuvent qu'hésiter entre celles qui l'encadrent. </p> 
   
 
      </div> 
@@ -209,45 +278,42 @@
     
        
         
-      <div id="continu">
-        <h4>peindre  continûment, composer discrètement</h4>
+      <div id="continudiscret">
+        <h4>Peinture  continue, composition discrète</h4>
       
-      <p>Le  peintre travaille en temps réel une toile qui se révèle au fur et à mesure qu'elle se remplit. 
-     Son espace  fréquentiel est continu,   utilisant les couleurs avec tous les dégradés imaginables  au sein de l'octave visible et veillant seulement a  éviter les associations malheureuses.      </p>
-      <p> Par contre, le musicien compose en temps différé : l'oeuvre ne se révèlera (au public) que lorsqu'elle sera jouée par un ou plusieurs interprètes.
-        Pour que cela soit possible, il faut qu'une partition soit notée dans un langage susceptible d'être compris par tous.  Cela n'est possible  que si les paramètres sonores sont discrétisés. La pixellisation des espaces visuels et sonores   est au coeur du problème qui va être étudié.       
-<h5>Pixellisation des images</h5>
+      <p>La pixellisation de l'espace sonore est au coeur du problème  étudié :<br/><br/></p>
+      <p>- Le  peintre travaille en <strong>temps réel</strong> une toile qui se révèle au fur et à mesure qu'elle se remplit. 
+        Il utilise les couleurs avec tous les dégradés imaginables  au sein de l'octave visible, veillant seulement a  éviter les associations malheureuses. Dans tous les cas, il travaille dans un espace  pictural  continu.      </p>
+      <p> - Le musicien compose en <strong>temps différé</strong> : l'oeuvre ne se révélera (au public) que lorsqu'elle sera jouée par un ou plusieurs interprètes.
+        Pour que cela soit possible, il faut qu'une partition soit notée dans un langage susceptible d'être compris par les deux parties et cet intermédiaire  exige  de travailler dans le cadre d'un espace sonore discret.</p>
+        
+      </div>
+        
+        
+     <div id="espace">    
+      <h5>L'espace pictural</h5>
     
      <div class="conteneurImageSeule">
                     <div>
                           <figure>
                             <img src="../images/peinture/monnet.png" alt="Monnet : Impression du Soleil levant"/>
-                            <figcaption>Monnet : Impression du Soleil levant</figcaption>
+                            <figcaption>Monnet : Impression du Soleil levant (1872)</figcaption>
                         </figure>
           </div>
 </div> 
       
-      <p>L'invention de la photographie a un temps semé le trouble parmi les peintres de la fin du 19<sup>ème</sup> siècle. Cette innovation leur a fait craindre  un (court) instant que leur art devienne caduque, supplanté par un mode de représentation absolument fidèle à l'original. Les réactions n'ont heureusement pas tardé : l'impressionnisme  de Claude Monnet (Impression, soleil levant, 1872) a trouvé une première parade en privilégiant  une restitution  hors de portée d'une photographie (trop) occupée à saisir la réalité objective des choses. Tous les courants picturaux qui ont  suivi   (cubisme,  surréalisme, abstraction, etc),   ont  de fait consacré la victoire de l'imagination sur la reproduction à l'identique. </p>
-      <p>Cette prise de conscience a même contribué à révéler un critère fondamental d'appréciation de l'oeuvre d'art  : il est essentiel  que celle-ci renonce à imposer  un message  à ceux qui tentent de l'apprécier fût-il dicté par l'auteur. Elle doit, au contraire, se contenter de stimuler son imagination et tant pis si si cela se fait dans une direction imprévue  car une fois produite, l'oeuvre n'appartient de toute facon plus à son créateur. Une oeuvre qui ne révèle pas ses secrets est plus sûrement promise à un avenir sans cesse renouvelé, en particulier d'échapper au redoutable phénomène de mode.</p>
+      <p>L'invention de la photographie a un temps semé le trouble parmi les peintres de la fin du 19<sup>ème</sup> siècle. Cette innovation leur a fait craindre  un (court) instant que leur art devienne caduque, supplanté par un mode de représentation absolument fidèle à l'original. Les réactions n'ont heureusement pas tardé : l'impressionnisme  de Claude Monnet  a trouvé une première parade en privilégiant  une restitution  hors de portée d'une photographie (trop) occupée à saisir la réalité objective des choses. Tous les courants picturaux qui ont  suivi   (cubisme,  surréalisme, abstraction, etc),   ont  de fait consacré la victoire de l'imagination sur la reproduction à l'identique. C'est tellement vrai que passé le premier émerveillement causé par la représentation fidèle, le photographe s'est ménagé la possibilité d'imiter le peintre en floutant artistiquement ses clichés.</p>
+      <p>L'impressionnisme  a  grandement contribué à révéler un critère fondamental d'appréciation de l'oeuvre d'art : il est essentiel  que celle-ci évite d'imposer  un point de vue d'appréciation, fût-il suggéré par l'auteur. Elle doit, au contraire,  laisser libre cours à l'imagination du spectateur afin qu'il effectue sa part du travail et tant pis si elle se fait dans une direction que l'artiste n'a pas prévue car, dans tous les cas, une fois produite, l'oeuvre ne lui appartient  plus. L'expérience montre qu'une oeuvre qui tarde à révéler ses secrets est plus sûrement promise à la postérité, à l'abri du  redoutable phénomène de mode.</p>
       
       <div class="conteneurImages">
 <div> <figure>
-                              <img src="../images/peinture/vermeer.png" alt="La laitière de Vermeer" />
-                              
-                                 </figure></div>
-                      <div><figure>
-       <img src="../images/peinture/vermeer16.png" alt="La laitière de Vermeer" />
-                            
-                          </figure></div>
-                          
-                          <div><figure>
-       <img src="../images/peinture/vermeer24.png" alt="La laitière de Vermeer" />
-                             
-                          </figure></div>
+  <img src="../images/peinture/laitiere.png" alt="La laitière de Vermeer" />
+  <figcaption>Ceci n'est pas la Laitière de Vermeer de Delft</figcaption>
+          </figure></div>                         
 </div>
 
 
-      <p>En temps ordinaires, la Laitière de Vermeer de Delft est exposée au Rijksmuseum d'Amsterdam. L'image proposée ci-dessus (à gauche !) n'en est qu'une représentation photographique. Apparemment fidèle à l'originale, elle repose pourtant sur une discrétisation  dont le principe apparaît clairement lorsqu'on  dilate le maillage de sa trame. Même lorsque l'image semble nette, elle ne l'est qu'apparemment, abusant simplement le pouvoir de résolution (limité) de notre oeil.  Cette représentation  partitionne uniformément l'image (non compressée)  en un nombre fixé de pixels quels qu'en soient les détails : à la limite, une image toute blanche serait encore consciencieusement découpée en autant de pixels identiques, occupant en mémoire le même espace qu'une image complexe (Cf toutefois <a href="../chroniques/complexite.html">Information, Complexité et Musique</a>). </p>
+      <p>En temps ordinaires, le tableau représentant la Laitière de Vermeer de Delft est exposé au Rijksmuseum d'Amsterdam. L'image proposée ci-dessus (à gauche !) n'en est qu'une représentation photographique. Apparemment fidèle à l'original, elle repose pourtant sur une discrétisation  dont le principe apparaît clairement lorsqu'on  dilate le maillage de sa trame. Même lorsque l'image semble nette, elle ne l'est qu'apparemment, abusant simplement le pouvoir limité de résolution  de notre oeil.  Ce mode de représentation  partitionne uniformément l'image   en un nombre fixé de pixels quels qu'en soient les détails : sans y prendre garde, à la limite, une image toute blanche (non compressée) serait encore consciencieusement découpée en autant de pixels identiques, occupant en mémoire le même espace qu'une image complexe (Cf  <a href="../chroniques/complexite.html">Information, Complexité et Musique</a>). </p>
       
 
       
@@ -261,19 +327,31 @@
           </div>
 </div>
 
-<p>Le pouvoir de résolution de l'œil proche d'une minute d'arc (1' = 1/60°  &ap;   0.00029089 radians), ce qui revient à distinguer un détail mesurant,   h<sub>cm</sub> = 0.0002909 D<sub>cm</sub>, sur un objet situé à la distance D<sub>cm</sub> (Soit, par exemple, 1 mm à 3 m ou 100 km sur la lune).</p>
-<p>La figure ci-avant décrit la situation au seuil : deux pixels carrés contigus,  mesurant &delta;x&delta; (cm), étant distants (centre à centre) de h = &delta;. On a donc, au seuil, &delta;<sub>cm</sub> = 0.0002909 D<sub>cm</sub>, d'où un nombre de &quot;pixels par cm&quot; valant ppcm = 1/&delta;<sub>cm </sub>= 3437.73/D<sub>cm</sub>.  Les anglo-saxons étant passés par là, il est d'usage de réexprimer cette norme en &quot;pixels par pouce&quot; (dpi  = dots per inch, 1 inch = 2.54 cm) soit, dpi =  8732/D<sub>cm</sub>. Pour un objet situé à 30 cm de l'observateur, la norme optimale au seuil, vaut donc  290 dpi (300 dpi est de fait une norme courante).
-<i>Note. Les moniteurs domestiques ne s'approchent guère de cette valeur, ce serait un luxe inutile. Un moniteur courant de 24 pouces (48.8 x 36.6 cm) et respectant la norme  102  dpi, possède 1950 x 1463 pixels.</i>
-<p> On peut   estimer sur ces bases la quantité de mémoire nécessaire au stockage d'une image non compressée, encore faut-il tenir compte du codage de la couleur pour chaque pixel. Celui-ci repose sur l'adoption d'un code  RVB, qui répartit linéairement les composantes de rouge, de vert et de bleu, sur  une échelle comprise entre 0 et 255, soit 3x8=24 bits/pixel. <i>Note. 256 nuances  de rouge, de vert et de bleu, c'est  plus qu'il n'en faut car cela dépasse les  possibilités de discernement de l'œil qui n'en distingue guère plus que 200  par type de cônes mais, pour les informaticiens, un  codage utilisant 3 fois 8 bits/pixel est commode (2<sup>8</sup> = 256 > 200). Dit autrement, le codage RVB permet d'exprimer 8 000 000  nuances distinctes, une valeur inutilement grande puisque la majorité des humains ne perçoivent pas plus de 300 000 couleurs différentes.</i>  Le stockage d'une image en (full) couleurs de dimensions L (cm) x &#8467; (cm), destinée à être vue à une distance D (cm), occupe en mémoire un espace valant  : M = 3 (L<sub>cm</sub> Norme/2.54)(&#8467;<sub>cm</sub> Norme/2.54) octets. Avec la norme confortable de 300 dpi, une image non compressée mesurant 30 x 45 cm requiert donc un espace mémoire égal à 56497500 octets (56.5 Mo). Evidemment, cette mémoire peut être réduite drastiquement  dans tous les cas où l'image peut être compressée.  </p>
-<p>Cette pixellisation 2D    intéresse  le photographe qui souhaite 1) reproduire l'image d'une toile avec un degré de précision  tenant compte des conditions dans lesquelles  l'observateur  est censé la regarder et 2) la stocker dans un espace mémoire sous la forme d'un fichier binaire exploitable. Elle ne concerne pas le peintre qui manie  la brosse ou le pinceau de façon continue, en s'autorisant tous les dégradés de traits et de couleurs. Le même problème se pose différemment en musique.</p>
- 
-<h5>Pixellisation des sons  </h5>
-<p>En musique, la pixellisation (sonore) s'impose  naturellement à l'ingénieur (cinéaste) du son responsable d'une captation en concert ou en studio : une norme standard d'échantillonnage (wma) requiert 780 Mo pour stocker 80 minutes de musique en qualité CD.    </p>
-<p>Mais, contrairement à ce qui se passe en peinture, elle s'impose également au compositeur car l'oeuvre pensée   doit être notée afin d'être jouée. Or cela passe par l'adoption d'un langage  capable de coder les  intentions de l'auteur au moyen d'un alphabet  raisonnablement court codant les paramètres   d'intensité, de fréquence et de durée. Pour des raisons évidentes de décodabilité, cela impose de facto que ces paramètres   soient  discrétisés. <i>Note. On pourrait objecter  que l'avènement des ordinateurs-synthétiseurs modifie la donne du fait qu'ils peuvent remplacer la partition discrétisée par un programme composé (!)  d'instructions codant les paramètres sonores avec une précicion a priori illimitée  mais on sortirait alors du cadre de la musique acoustique.</i>    </p>
-<h5>Discrétisation des fréquences</h5>
-<p>La pixellisation de l'espace des fréquences  repose sur  la construction d'une échelle sonore et seules les notes définies dans cette échelle sont codées par la partition. Une question préliminaire se pose relative à la dimension idéale du pixel fréquentiel.</p>
-  <p>Le spectre audible, f  &isin; [16, 16000] Hz, s'étend sur 10 octaves. Le piano moderne ignore habituellement habituellement les valeurs extrêmes et se contente d'un intervalle réduit,  f  &isin; [27.5, 4186] Hz (7.25 octaves).    Nous avons rappelé ci-avant que l'intervalle d'octave caractérisant deux sons de fréquences, f<sub>1</sub> et f<sub>2</sub>, tels que, f<sub>2</sub>/f<sub>1</sub>=2, vaut 1200 cents. Or il se fait que l'oreille humaine, même exercée, est incapable de distinguer deux sons distants de moins de 5 cents (Cette valeur pouvant varier légèrement selon la fréquence considérée). On pourrait penser que 5 cents (1/40 ton !) représente la dimension idéale du pixel fréquentiel mais en fait cette valeur est inutilement trop petite car notre oreille est mal à l'aise avec des intervalles si étroits. De plus si on l'utilisait, on se trouverait confronté à une gamme comportant   240 (= 1200/5) notes par octave ce qui serait ingérable.   En pratique, un pixel fréquentiel valant 100 cents (1 ton) convient à nos oreilles contemporaines,  partitionnant l'octave en 12 parties égales. <i>Note. A la Renaissance, l'octave était éventuellement partitionnée en 27 intervalles inégaux (permettant de couvrir 21 tonalités majeures de fa<sub>b</sub> à si<sub>#</sub>. Dans ce  cas, on peut soit jouer sur un clavier étendu mais il n'en existe guère, soit réaccorder  à la carte un clavier standard (en fonction des tonalités des pièces programmées) soit encore, solution la plus fréquente,  opter pour un &quot;bon&quot; tempérament passe-partout.  Reportez-vous aux détails exposés dans la chronique  <a href="../chroniques/arithmetique.html">Gammes &amp; Tempéraments</a> et assurez-vous que vous avez compris que la discrétisation grossière requise par le tempérament égal  est une injure à la justesse à laquelle nos oreilles contemporaines, de moins en moins exigeantes il est vrai, se sont accommodées comme elles l'ont fait pour toutes sortes d'autres nuisances acoustiques sur lesquelles nous aurons à revenir dans une prochaine chronique.</i></p>
-  <p>Discrétiser l'espace des fréquences, c'est définir un ensemble de notes autorisées et s'y tenir.  On peut y parvenir d'une infinité de manières  mais tout le monde s'accorde à considérer qu'il est naturel de  respecter en priorité les intervalles particulièrement consonants d'octave, f<sub>2</sub>/f<sub>1</sub>=2, et de quinte, f<sub>2</sub>/f<sub>1</sub>=3/2. Il est facile de construire une gamme   qui respecte ce critère;  certes ce n'est pas celle que les musiciens  pratiquent mais  elle est suffisamment simple à mettre en oeuvre pour que l'on comprenne le principe général de la constuction d'une gamme. On l'applique ci-après à l'intervalle, f  &isin; [27.5, 4186] Hz,  couvert exactement par le piano moderne. Partant  d'une note initiale médiane, ni trop grave ni  trop aigue,   par exemple le &quot;la-440 Hz&quot;, on étend  la gamme en ajoutant à ce &quot;la&quot; les notes situées à un nombre entier d'octaves et/ou de quintes (ascendantes ou descendantes). Cela revient à considérer  toutes les notes de fréquences 2<sup>k</sup> 440 et (3/2)<sup>k</sup> 440 Hz, où k est un entier, positif, négatif ou nul, tel que les fréquences ne sortent pas de l'intervalle imposé.  Les calculs sont élémentaires et on trouve une   gamme   ne comportant que 18 notes de fréquences, 27.5, 38.6283, 55, 57.9424, 86.9136, 110, 130.37, 195.556, 220, 293.333, 440, 660, 880, 990, 1485, 1760, 2227.5 et 3520 Hz. Ne comportant que 2 ou 3 notes par octave, elle est trop rudimentaire et il faut l'étendre.</p>
+<p>Le pouvoir de résolution de l'œil est  proche d'une minute d'arc (1' = 1/60°  &ap;   0.00029089 radians), l'autorisant à distinguer un détail mesurant,   h<sub>cm</sub> = 0.0002909 D<sub>cm</sub>, sur un objet situé à la distance D<sub>cm</sub> (Soit, par exemple, 1 mm à 3 m ou 100 km sur la lune).</p>
+<p>La figure ci-avant (pas à l'échelle !) décrit la situation au seuil : deux pixels carrés contigus,  mesurant &delta;x&delta; (cm), sont distants (de centre à centre) de h = &delta;. On a donc, au seuil, &delta;<sub>cm</sub> = 0.0002909 D<sub>cm</sub>, d'où un nombre de &quot;pixels par cm&quot; valant ppcm = 1/&delta;<sub>cm </sub>= 3437.73/D<sub>cm</sub>.  Les anglo-saxons étant passés par là, il est d'usage d'exprimer cette norme en &quot;pixels par pouce&quot; (dpi  = dots per inch, 1 inch = 2.54 cm) soit, dpi =  8732/D<sub>cm</sub>. Pour un objet situé à 30 cm de l'observateur, la norme optimale au seuil, vaut donc  290 dpi (300 dpi est de fait une valeur courante).
+<i>Note. Les moniteurs domestiques ne s'approchent guère de cette valeur, ce serait un luxe inutile. Ceux, courants, de 24 pouces (48.8 x 36.6 cm) et proposant 1950 x 1463 pixels  épousent la norme  102  dpi.</i></p>
+<p> On peut   estimer sur ces bases la quantité de mémoire nécessaire au stockage d'une image non compressée, encore faut-il prévoir le codage de la couleur pour chaque pixel. Celui-ci repose sur l'adoption d'un code  RVB, qui répartit linéairement les composantes de rouge, de vert et de bleu, sur  une échelle comprise entre 0 et 255, soit 3x8=24 bits/pixel. <i>Note. Ce codage RVB (dit 8 bits) permet d'exprimer 256<sup>3</sup> = 16 777 216 nuances distinctes, une valeur inutilement grande puisqu'en pratique, la majorité des humains ne perçoivent pas plus de 300 000 couleurs différentes.</i>  Au bilan, le stockage d'une image de dimensions L (cm) x &#8467; (cm), destinée à être vue  en respectant une norme dpi donnée, occupe en mémoire un espace valant  : M = 3 (L<sub>cm</sub> dpi/2.54)(&#8467;<sub>cm</sub> dpi/2.54) octets. Avec la norme confortable, dpi = 300, une image non compressée mesurant 30 x 45 cm requiert donc un espace mémoire égal à 56497500 octets (56.5 Mo). Evidemment, cette espace-mémoire peut être réduit drastiquement  si l'image est compressée, en particulier avec pertes.  </p>
+<p>En résumé, la  pixellisation 2D    intéresse  le photographe qui souhaite  reproduire l'image d'une toile et la stocker dans un espace mémoire sous la forme d'un fichier binaire exploitable. Le degré de précision  doit évidemment tenir  compte de la distance, D<sub>cm</sub>,  à laquelle   l'observateur  est censé se tenir.  Cette pixellisation ne concerne pas le peintre qui manie  la brosse ou le pinceau de façon continue en s'autorisant tous les dégradés de traits et de couleurs. Le même problème se pose très différemment en musique.</p>
+</div>
+
+
+ <div id="espacesonore">   
+<h5>L'espace sonore</h5>
+<p>En musique, la pixellisation (sonore) s'impose  également à l'ingénieur  du son responsable de la captation et de la &quot;mise en boîte&quot; d'un concert ou d'un enregistrement de studio : il est bien connu qu'une norme standard d'échantillonnage (wma) requiert 780 Mo pour stocker 80 minutes de musique en qualité CD.    </p>
+<p>Mais, contrairement à ce qui se passe en peinture, cette pixellisation s'impose également au compositeur car l'oeuvre pensée   doit être notée sur partition afin d'être jouée. Or cela passe par l'adoption d'un langage, en particulier d'un alphabet  raisonnablement court capable de coder les paramètres   d'intensité, de fréquence et de durée des notes et, pour des raisons  de décodabilité, cela impose  que ces paramètres    soient  discrétisés. La question  à régler en priorité consiste donc à déterminer des valeurs acceptables pour les pixels de chaque espèce.</p>
+<p>Alors que  l'espace pictural est pixellisé linéairement selon une progression arithmétique, autrement dit  proportionnellement aux dimensions physiques de la toile, l'espace sonore doit être pixellisé logarithmiquement, selon un ensemble de (trois) progressions géométriques. C'est la conséquence de l'énorme étendue des plages de fréquences,  d'intensités et de durées. </p>
+
+</div>
+
+
+
+
+<div id="disfrequences">
+<h5>Discrétisation des fréquences </h5>
+<p>Pixelliser l'espace des fréquences  sonores revient à  construire une échelle  discrète définissant  les notes  pouvant figurer sur la partition. On serait tenté de penser que la  dimension du pixel fréquentiel idéal devrait coïncider avec le pouvoir de résolution (fréquentiel) de l'oreille mais ce n'est pas  le cas. Ceci vaut quelques explications.</p>
+
+  <p>Bien que le spectre audible, f  &isin; [16, 16000] Hz, s'étende sur 10 octaves,  celui qui est généralement utile au musicien est plus étroit, réduit, par exemple, à l'intervalle,  f  &isin; [27.5, 4186] Hz (7.25 octaves), effectivement couvert par le piano  de concert moderne.    Se souvenant que   l'intervalle d'octave séparant deux sons de fréquences, f<sub>1</sub> et f<sub>2</sub> = 2f<sub>1</sub>, vaut 1200 cents, la question qui se pose est de savoir en combien d'intervalles élémentaires (pixels) il convient de le partitionner. Il se fait que l'oreille humaine, même exercée, est incapable de distinguer deux sons distants de moins de 5 cents (Cette valeur pouvant varier légèrement avec la fréquence considérée). On  en conclut que 5 cents (1/40 ton) représentent la dimension  du pixel fréquentiel en-dessous de laquelle il est inutile de descendre. En fait, cette valeur est trop  petite pour plusieurs raisons : 1) notre oreille est mal à l'aise avec les micro-intervalles; 2) pixelliser les fréquences de 5 en 5 cents entraînerait de construire  une gamme ingérable comportant   240 (= 1200/5) notes par octave; 3) enfin ce serait ouvrir la porte  au redoutable phénomène de battement détaillé à la section suivante.    En pratique, un pixel fréquentiel valant 100 cents (1/2 ton) convient à nos oreilles contemporaines,  partitionnant l'octave en seulement 12 parties égales (12 demi-tons tempérés). <i>Note. A la Renaissance, l'octave était éventuellement partitionnée en 27 intervalles inégaux (permettant de couvrir 21 tonalités majeures de fa<sub>b</sub> à si<sub>#</sub>). Une telle échelle  n'est jouable qu'avec l'adoption d'un tempérament convenable : reportez-vous aux détails exposés dans la chronique  <a href="../chroniques/arithmetique.html">Gammes &amp; Tempéraments</a> et assurez-vous que vous avez compris que la discrétisation grossière proposée par le tempérament égal  est une injure à la justesse à laquelle nos oreilles contemporaines, de moins en moins exigeantes il est vrai, se sont accommodées comme elles l'ont fait pour toutes sortes d'autres nuisances acoustiques sur lesquelles nous aurons à revenir dans une prochaine chronique.</i></p>
+  <p>Discrétiser l'espace des fréquences, c'est se restreindre à un ensemble fini de notes  et s'y tenir.  On peut y parvenir d'une infinité de manières  mais tout le monde s'accorde à considérer qu'il est naturel de  respecter en priorité les intervalles les plus consonants, l'octave (1200 cents, f<sub>2</sub>/f<sub>1</sub>=2) et la quinte (701.955 cents, f<sub>2</sub>/f<sub>1</sub>=3/2). Il est  facile de construire une gamme   reposant sur ce seul critère. Certes, ce n'est pas exactement celle que les musiciens  pratiquent mais  elle ne s'en écarte guère et elle est suffisamment simple à mettre en oeuvre pour que l'on comprenne le principe général de la construction d'une gamme. On l'applique ci-après à l'intervalle, f  &isin; [27.5, 4186] Hz,  couvert  par le piano moderne. Partant  d'une note initiale médiane, ni trop grave ni  trop aigue,   par exemple le &quot;la-440 Hz&quot;, on étend  la gamme en ajoutant à ce &quot;la&quot; les notes situées à un nombre entier d'octaves et/ou de quintes (ascendantes ou descendantes). Cela revient à considérer  toutes les notes de fréquences 2<sup>k</sup> 440 et (3/2)<sup>k</sup> 440 Hz, où k est un entier, positif, négatif ou nul, tel que les fréquences calculées ne sortent pas de l'intervalle imposé.  Les calculs sont élémentaires et on trouve une   gamme   ne comportant que 18 notes de fréquences, 27.5, 38.6283, 55, 57.9424, 86.9136, 110, 130.37, 195.556, 220, 293.333, 440, 660, 880, 990, 1485, 1760, 2227.5 et 3520 Hz, que l'on a reportées sur l'échelle logarithmique ci-dessous. Ne comptant que 1 ou 2 notes par octave, elle est trop rudimentaire et il faut l'étendre.</p>
   
   <div class="conteneurImages">
                       <div> 
@@ -285,7 +363,7 @@
                           </figure>
           </div></div>
                         
-                        <p>Une façon  d'y parvenir (pure spéculation !) reposerait sur cette remarque que  si, par construction, toutes les octaves et les quintes (ascendantes et descendantes)  du &quot;la&quot; initial  sont bien prises en compte, il n'en va pas de même des octaves et/ou des quintes des 18 notes ainsi définies. Par exemple, la note située à la quinte montante de 27.5 Hz, de fréquence 3/2 x 27.5 = 41.25 Hz, est clairement absente de la liste. On  remédie à cette situation en étendant  la construction précédente aux octaves et aux  quintes de la deuxième génération : le nombre total des notes passe alors de 18 à 110; c'est  plus qu'un clavier moderne mais cela reste raisonnable. La première figure ci-dessous indique la position de ces 110 notes  sur une échelle (logarithmique) graduée en cents. On constate que tout fictif qu'il soit, le clavier correspondant ne s'écarte guère du clavier usuel  réglé sur le tempérament égal. C'est particulièrement net si l'on  fusionne les notes  apparaissant en doublets. On pourrait  continuer l'itération et prendre en compte les générations suivantes d'octaves et de quintes mais cela démultiplierait  le nombre des notes qui passerait  à 185,   265, 342, etc, pour un bénéfice acoustique négligeable.  </p>
+                        <p>Une façon  naturelle d'y parvenir  repose sur la remarque que  si, par construction, toutes les octaves et les quintes (ascendantes et descendantes)  du &quot;la&quot; initial  ont bien été prises en compte, il n'en va pas de même des octaves et/ou des quintes des 18 notes déjà définies. Par exemple, la note située à la quinte montante de 27.5 Hz, de fréquence 3/2 x 27.5 = 41.25 Hz, est clairement absente de la liste. On  remédie à cette situation en étendant  la construction précédente aux octaves et aux  quintes de la deuxième génération : le nombre total des notes passe alors de 18 à 110; c'est  plus qu'un clavier moderne (88 notes) mais cela reste raisonnable. La première figure ci-dessous indique la position de ces 110 notes  sur la même échelle logarithmique. On constate que tout fictif qu'il soit, ce clavier  ne s'écarte guère du clavier usuel  réglé sur le tempérament égal. C'est particulièrement net si l'on  fusionne les notes  apparaissant en doublets. On pourrait  continuer l'itération et prendre en compte les générations suivantes d'octaves et de quintes mais cela démultiplierait  le nombre des notes qui passerait  à 185,   265, 342, etc, pour un bénéfice acoustique négligeable.  </p>
                         
           
 
@@ -299,37 +377,121 @@
    </div>
    
    
-   <p>La gamme réellement entérinée à partir du 19<sup>ème</sup> siècle,  est plus simple que celle correspondant au modèle décrit :  l'adoption du tempérament égal  revient à pixelliser l'espace des fréquences à pas constant (12 intervalles égaux par octave),  un traitement similaire à celui que le photographe fait subir à  la Dentellière de Vermeer.</p>
+   <p>Le clavier fictif présenté ci-avant serait parfait s'il autorisait la transposition; malheureusement, ce n'est pas rigoureusement le cas. La gamme réellement utilisée à partir du 19<sup>ème</sup> siècle  est plus simple : elle se contente de discrétiser  l'espace des fréquences à pas constant  de 100 cents, définissant 12 intervalles égaux par octave (Tempérament égal); certes elle est moins juste mais elle est parfaitement transposable et c'est ce point qui a décidé les musiciens à l'adopter.</p>
+   <p>La pixellisation par demi tons (100 cents) suffit à nos oreilles occidentales qui peinent déjà à s'habituer  aux <a href="https://www.youtube.com/watch?v=ilkkvAkotF8">quarts de tons</a> (50 cents). Les traditions orientales sont  moins frileuses, qui n'hésitent pas à explorer les intervalles courts mais c'est au prix de renoncer  à la polyphonie qui se heurterait au phénomène de battement (Cf infra). </p>
  
- <p><i>Note. Il est possible de se faire une idée de ce que représenterait un clavier de piano qui partagerait l'octave en 100 parties égales (notes distantes de 12 cents) : <a href="https://www.youtube.com/watch?v=shcrw2vtmJU">Hidekazu Wakabayashi</a> a réaccordé les 88 touches de son piano moderne en suivant cet accordage bizarre. Evidemment le clavier complet  ne couvre pas une octave entière mais il permet quand même de jouer des mélodies simples <sub><sub><sub> 
+ <p><i>Note. Il est possible de se faire une idée de ce que représenterait un clavier de piano qui partagerait l'octave en 100 parties égales (notes distantes de 12 cents) : <a href="https://www.youtube.com/watch?v=shcrw2vtmJU">Hidekazu Wakabayashi</a> a réaccordé les 88 touches de son piano domestique en suivant cet accordage bizarre. Evidemment le clavier complet  ne couvre même pas une octave (puisqu'il faudrait 100 notes) mais il permet quand même de jouer des mélodies simples <sub><sub><sub> 
                   <audio controls preload="none" >
                     <source src="../son.mp3/peinture/microtonal.mp3" type="audio/mpeg"/>
                     <source src="../son.mp3/peinture/microtonal.ogg" type="audio/ogg"/>
                     Votre navigateur n'est pas compatible
                   </audio>
  </sub></sub></sub>
-.  La pixellisation    du tempérament égal suffit à nos oreilles occidentales qui peinent déjà à s'accomoder  aux <a href="https://soundcloud.com/hidekazu-wakabayashi/you-are-so-microtonal-video-is-on-youtube">quarts de tons</a> (50 cents). Les traditions orientales sont nettement moins frileuses, qui ne répugnent pas à explorer les intervalles courts mais ce faisant elles doivent renoncer à une polyphonie digne de ce nom. Précisément, la musique occidentale s'est contentée de la pixellisation  grossière du tempérament égal (100 cents c'est quand même 10 fois  le seuil détectable !) afin de permettre une polyphonie savante. Et c'est sans compter que multiplier inconsidérément le nombre de notes par octave imposerait d'étendre l'alphabet musical pour un résultat qui s'avérerait rapidement ingérable tant par le compositeur que par l'interprète. </i>
- </p>
+.</i></p>
+
+
+ 
+ </div>
  
  
- <h5>Le phénomène de battement </h5>
-      <p>Le phénomène de battement sonore est l'ennemi de la justesse musicale. Si l'on superpose deux ondes de mêmes fréquences, tout va bien, le résultat est encore une onde de même fréquence. Seule la phase est éventuellement modifiée mais l'oreille n'y est pas sensible. Si l'on superpose deux ondes de fréquences voisines le résultat est une onde de fréquence intermédiaire (moyenne arithmétique) dont l'amplitude varie périodiquement à une fréquence dite de battement égale à la différence des fréquences superposées. Ce battement produit un effet tellement désagréable que les musiciens mettent tout en oeuvre pour les éviter. </p>
-      <p>L'étalement du spectre audible sur 10 octaves joint à l'exactitude de la définition logarithmique de l'intervalle sonore a pour conséquence qu'une mélodie décalée systématiquement de X cents vers le bas  ou vers le haut sonne à nos oreilles comme semblable  à la mélodie originale, seulement transposée dans le  grave ou l'aigu. Deux personnes, A et B, qui chantent simultanément ces mélodies semblables mais décalées ont cependant intérêt à ne pas se tromper sur la valeur de X sous peine de créer des battements dissonants. De fait, si A émet un son de fréquence, f, il émet inévitablement un ensemble de sons harmoniques de fréquences, k<sub>A</sub>f (k<sub>A</sub>=1,2,3, ...) responsables de son timbre de voix. De même, B, qui émet un son translaté de X cents donc de fréquence, f 2<sup>X/1200</sup>, émet simultanément les harmoniques, k<sub>B</sub>f 2<sup>X/1200</sup>, et si X est mal choisi, la probabilité est loin d'être nulle qu'un des harmoniques émis par A soit proche en fréquence de l'un des harmoniques émis par B (k<sub>A</sub>f &ap; k<sub>B</sub>f 2<sup>X/1200</sup>) : le résultat est alors un battement  désagréable (bourdonnement) revêtant la forme d'une oscillation  dans l'intensité perçue, à une fréquence égale à la différence des fréquences, k<sub>A</sub>f - k<sub>B</sub>f 2<sup>X/1200</sup>, des composantes harmoniques  trop voisines. On évite  à coup sûr cet écueil en choisissant  pour X l'intervalle d'octave  (X=1200 cents, rapport fréquentiel 2/1) ou de quinte (X=702 cents, rapport fréquentiel 3/2). La théorie musicale étudie  d'autres intervalles possibles, de moins en moins consonants mais pas forcément moins intéressants (Cf <a href="../chroniques/arithmetique.html">Gammes et Tempéraments</a>). </p>
-      <p>C'est  en cherchant à éviter les pièges liés aux battements sonores qu'une théorie musicale a été  élaborée qui a  jeté les bases d'une musique savante.   On doit au musiciens de la Renaissance d'avoir compris que le mélange des voix ne pouvait se faire au hasard et qu'il exigeait l'adhésion à une véritable science musicale. On peut être un peintre amateur de  talent, c'est chose impossible en musique.</p>
-      <p>De fait, aucun battement  n'est à craindre en optique (scintillation) car le phénomène d'octave est inexistant chez l'humain et quand bien même il existerait, il serait indétectable car l'ordre de grandeur des fréquences optiques visibles est mille millards de fois <sup></sup>  plus élevées que celui des fréquences acoustiques audibles.</p>
  
  
-  <h5>L'oreille absolue</h5>
- <p>Tout musicien qui se respecte possède l'oreille relative : si on lui donne à entendre une note de référence appartenant à l'échelle tempérée familière munie d'un diapason standard (sans doute le la<sub>440Hz</sub>), il est capable d'identifier toute autre note appartenant à la même échelle. S'il peut se passer de la note de référence, on dit qu'il possède l'oreille absolue. On perçoit  la nuance : il n'est pas question ici de repérer précisément une fréquence dans un continuum mais d'y parvenir au sein d'une échelle discrète dont les échelons sont tous équidistants de 100 cents.</p>
  
- <h5>Perceptions spatio-temporelles</h5>
-     <p>Par contre, les données spatio-temporelles ne peuvent être évaluées que très approximativement, laissant planer un doute  quant à la durée d'un son ou à la dimension d'un objet. </p>
-     <p>L'oeil et l'oreille ne sont pas non plus capables de quantifier  les paramètres spatio-temporels :</p>
-     
+ <div id="disdurees">
+ <h5>Discrétisation des durées</h5>
+      <p>Le temps  ne compte pas en peinture mais il joue un  rôle essentiel en musique, en particulier au niveau de la gestion des durées donc du rythme.  </p>
+      <p>L'oreille ne distingue pas deux sons produits à des intervalles de temps inférieurs à un seuil que le test de Leipp   situe  entre 25 et 50 ms, la valeur exacte pouvant varier selon les individus (Emile Leipp (1913-1986), actif au CNRS, fut un des pères de l'acoustique musicale, en particulier physiologique).  C'est la raison pour laquelle  on ne considère généralement pas des notes plus brèves que la quadruple croche qui, dans un tempo,   rapide mais standard (allegretto) de 120 noires à la minute (= 2 noires à la seconde), durerait   1/32 &ap; 31 ms.</p>
+      <p>La théorie en usage devant assurer la synchronisation  des  interprètes, elle restreint sévèrement l'éventail des durées des notes en définissant, dans l'ordre (des durées) décroissant(es) : la ronde (&#119133;), la blanche (&#119134;), la noire (&#119135;), la croche (&#119136;), la double croche (&#119137;), la triple croche (&#119138;) et la quadruple croche (&#119139;), chaque type étant de durée moitié moindre que celui qui le précède dans la liste. <i>Note. Au Moyen-Age, le plain-chant  s'éternisait volontiers sur les syllabes d'où il était courant de considérer des notes de durées plus longues que la ronde, telle la carrée (<strong>&#119132;</strong>) valant deux rondes. Curieusement, on l'appelait aussi &quot;brève&quot; parce qu'il existait une &quot;longue&quot; de durée double (voire triple) ! A l'opposé, il arrive que la musique contemporaine ait recours à des quintuples, voire des sextuples croches, cependant cette pratique est exceptionnelle  et ce ne sont pas les interprètes qui protesteront.</i></p>
+      <p>On voit que cette échelle des durées suit à nouveau une progression géométrique  (et non arithmétique) suivant la formule décroissante, durée(&#119133;)/2<sup>m</sup> (m = 0,1,2,...,6).  Cette règle  semble suggérer qu'il  existe à nouveau une  loi  de type logarithmique pour la perception des durées. Elle n'a cependant rien d'absolu, la théorie autorisant, si nécessaire,  de diviser la ronde par 3 (triolets), par 5 (quintolets), par 7 (septolets), etc. La raison essentielle du découpage géométrique doit être cherchée ailleurs : il facilite le calcul mental  de la durée d'une mesure complète, un point qui est examiné ci-dessous.      </p>
+      <div class="conteneurImageSeule">
+                    <div>
+                          <figure>
+                            <img src="../images/peinture/aria.png" alt="Aria des variations Goldberg"/>
+                            <figcaption>Aria des <a href="https://www.youtube.com/watch?v=ixVok2-LZ9k">Variations Goldberg</a></figcaption>
+                        </figure>
+          </div>
+</div>
+      
+      <p>Toute partition homogène quant à la gestion du temps (physique) est le plus souvent divisée en mesures de durées égales. Celles-ci sont séparées par des barres verticales et  numérotées de 1 à N afin que les interprètes puissent se repérer, à tout instant. Chaque mesure est  décomposée en un certain nombre (n = 2, 3, 4, ...) de temps  forts et  faibles afin d'assurer l'accentuation du discours musical. La répartition des temps au sein de la mesure est indiquée par une fraction du type n/2<sup>&alpha;</sup>, où n est le nombre de temps et 1/2<sup>&alpha;</sup>  la durée de chacun en terme de (la durée d'une) ronde. Dans l'exemple ci-contre (Aria initial des Variations Goldberg de Bach), les mesures sont notées à 3/4; elles comportent donc trois temps,  chacun d'une durée équivalente à un quart de ronde (soit une noire).  Révisez vos fractions en contrôlant que le compte des durées vaut, pour chaque mesure, 3/4 de ronde (ou 3/2 de blanche ou  3 noires, etc). Sachez également qu'une note pointée voit sa durée multipliée par un facteur 3/2 et ne tenez aucun compte des petites notes additionnelles qui  ne sont que des ornements. Pour que l'information soit complète, il faut encore préciser la durée de la ronde ou ce qui revient au même de la noire (à condition de diviser par 4), ce qu'on nomme le tempo. Les musiciens ne cultivant pas la simplicité, ils ont choisi de définir ce tempo de façon indirecte, en fixant le nombre de noires à la minute, noté : &#9833;=&eta;. Par exemple,  &#9833;=120, signifie  2 noires à la seconde soit 0.5 s par noire.   A partir de ces données, on calcule sans (trop de) peine la durée d'une mesure soit, (240/&eta;) (n/2<sup>&alpha;</sup>) donc celle d'un morceau homogène complet, comportant N mesures : durée = N(240/&eta;) (n/2<sup>&alpha;</sup>). Par exemple, le Boléro de Ravel comporte 340 mesures à  3/4; si l'on adopte le tempo, &#9833;=&eta;=72, on trouve que l'oeuvre complète dure,  340 (240/72)(3/4) = 850 s soit 14:10. <i>Note. En fait, Ravel a modifié plusieurs fois le tempo souhaité, entre &#9833;=64 et &#9833;=76, sans en imposer aucun, d'où il ne faut pas s'étonner de trouver des enregistrements de  durées  variables en fonction du choix  des chefs, allant de 12:00 (Stokowski, &#9833;=84) à 18:30 (Freitas Branco, &#9833;=54)</i>.  Le Boléro n'a pas été choisi au hasard : de fait, l'oeuvre est d'un seul tenant au plan de la mesure. La plupart des oeuvres ne le sont pas, ce qui exige, pour calculer leur durée totale, d'additionner les  durées des sections  individuelles.      </p>
+      <p>La  théorie évoquée présuppose que les mesures sont de durées égales.  On comprend mieux, à présent, pourquoi les durées des notes suivent une progression géométrique  : pour comptabiliser les durées  au sein d'une mesure, il faut additionner des fractions, ce qui est simple  si les dénominateurs sont tous des puissances de 2. Rien n'empêche en théorie de considérer un mètre variable (il était courant à l'époque baroque) mais cela complique   la tâche des interprètes  (On trouve des tentatives du genre dans l'oeuvre de <a href="../chroniques/blacher.html">Boris Blacher</a>). </p>
+
+      
+      
+      
+      <p>La mention d'un tempo   sur la partition est une invention relativement récente (200 ans tout de même, lorsque  l'usage du métronome s'est généralisé). Pendant longtemps,  on s'est  contenté d'indications qualitatives selon une échelle allant du plus lent au plus rapide : Largo			(&eta; &lt; 60),
+        Lento			(52 - 68),
+        Adagio			(60 - 80),
+        Andante		(76 - 100),
+        Moderato		(88 - 112),
+        Allegretto		(100 - 128), 
+        Allegro		(112 - 160),
+        Vivace			(~ 140),
+        Presto			(140 - 200) et 
+        Prestissimo (&gt;200). A l'époque de Bach, l'indication pouvait être encore plus vague, voire inexistante comme dans  l'Aria ci-avant. Bien qu'il s'agisse d'une Sarabande, lente en principe, il apparaît que les interprètes traitent souvent  cette indication avec légèreté voire extravagance, revendiquant  leur part de liberté  dans l'exécution. Par exemple, au clavecin, l'excellent Jean Rondeau met 270 s pour jouer les 32 mesures à 3/4 de l'<a href="https://www.youtube.com/watch?v=1AtOPiG5jyk">aria complète</a>, ce qui correspond à un tempo  assez lent, de l'ordre de &#9833;=&eta;=21.   Blandine Verlet  se situe  dans la norme  dans cette première version <sub><sub><sub> 
+        <audio controls preload="none" >
+          <source src="../son.mp3/notation/aria2.mp3" type="audio/mpeg"/>
+          <source src="../son.mp3/notation/aria2.ogg" type="audio/ogg"/>
+          Votre navigateur n'est pas compatible
+          </audio>
+        </sub></sub></sub> (170 s pour l'<a href="https://www.youtube.com/watch?v=ixVok2-LZ9k">aria complète</a>, soit &#9833;=&eta;=34) et beaucoup moins dans cette autre nettement plus rapide <sub><sub><sub> 
+          <audio controls preload="none" >
+            <source src="../son.mp3/notation/aria3.mp3" type="audio/mpeg"/>
+            <source src="../son.mp3/notation/aria3.ogg" type="audio/ogg"/>
+            Votre navigateur n'est pas compatible
+          </audio>
+</sub></sub></sub> (145 s pour l'aria complète, soit &#9833;=&eta;=40).  
+      Veuillez noter que les éditeurs ont aussi leur conception de la norme  : il tiennent souvent à ce que l'oeuvre complète  tienne sur un seul CD, ce que la version Rondeau ne permet pas ! Cela dit, la palme de la lenteur revient incontestablement au pianiste <a href="https://www.youtube.com/watch?v=55hk75OgWDg">Lang Lang</a> qui  étire exagérément l'aria pendant 335 s (&#9833;=&eta;=17) !</p>
+ </div>
+ 
+ 
+      
+ <div id="disintensites">
+  <h5>Discrétisation des intensités</h5>
+      <p>Un compositeur ne code pas seulement la fréquence et la durée des notes mais aussi leur intensité. Pour ce faire, il pourrait recourir à l'échelle  des décibels mais il ne le fait pas,  se contentant  d'indications qualitatives   selon une échelle  déclinant les nuances, <i><strong>ppp</strong></i> (pianississimo), <i><strong>pp</strong></i> (pianissimo), <i><strong>p</strong></i> (piano), <i><strong>mp</strong></i> (mezzo piano), sotto voce, <i><strong>mf</strong></i> (mezzo forte), <i><strong>f</strong></i> (forte), <i><strong>ff</strong></i> (fortissimo), <i><strong>fff</strong></i> (fortississimo). Cette séquence revient à discrétiser à la (grosse) louche l'échelle des intensités par pas de 6 à 7 décibels. L'imprécision   peut surprendre mais elle présente au moins l'avantage de laisser  une certaine latitude aux interprètes qui, de fait, ne s'en privent pas. </p>
+      <p>Quelques compositeurs ont tenté de marquer les esprits par quelques notations fantaisistes abusant d'une accumulation de <i><strong>p</strong></i> ou de <i><strong>f</strong></i> : ainsi <a href="../chroniques/ligeti.html">György Ligeti</a> a clos son <a href="https://www.youtube.com/watch?v=YI-TWpEgGTM">Etude n°9</a>, pour piano,  sur un présumé inaudible <i><strong>pp</strong></i><i><strong>pp</strong></i><i><strong>pp</strong></i><i><strong>pp</strong></i> ou encore, il a introduit une transition tonitruante de <i><strong>ffffff</strong></i> à <i><strong>ffffffff</strong></i> (!) dans son <a href="https://www.youtube.com/watch?v=Q6LmG9myHxA">Etude n°13</a>. L'écoute confirme s'il en était besoin que ces indications ne correspondent à aucune intensité objective; elles suggèrent simplement aux interprètes de pousser leur jeu dans ses derniers retranchements, ce qu'ils font le plus souvent en prenant les plus grandes libertés.</p>
+ </div>
+ 
+ 
+ 
+ <div id="battement">
+ <h4>Le phénomène de battement</h4>
+      <p>    Les battements sonores  sont indirectement utiles  aux musiciens   lorsqu'ils accordent leur instrument en opérant les réglages qui les font  disparaître. Dans tous les autres cas, ils sont nuisibles car ils sont un obstacle à la justesse musicale. Rappelons les bases physiques du phénomène. </p>
+<p>Si l'on superpose deux ondes sonores de mêmes fréquences, on entend  sans surprise une onde résultante de même fréquence. Si les fréquences diffèrent nettement,  on les entend distinctement.  Rien n'est étrange à ce stade. Par contre, si les fréquences sont proches, différant  de 5 à 35 Hertz environ, le résultat peut s'avérer gênant  : on entend  une onde de fréquence intermédiaire (en moyenne arithmétique) dont l'amplitude varie périodiquement à une fréquence, dite de battement, égale à la différence des fréquences superposées. Il en résulte un effet de bourdonnement   désagréable.</p>
+<p>On sait, depuis les travaux d'Helmholtz (1821-1894), que ces battements sont en partie responsables des dissonances entre les notes mais on sait également, depuis les travaux de Carl Stumpf (1848-1936), que des éléments psychoacoustiques interviennent également. Les musiciens, qui se fient plus volontiers à ce qu'ils entendent qu'à ce que d'autres calculent,  ont classé les 13 intervalles simples dans l'ordre suivant, du plus consonant au plus dissonant : unisson (do-do = 0 cent) et octave (do-do suivant = 1200 cents), quinte (do-sol = 700 cents), quarte (do-fa = 500 cents), tierce majeure (do-mi = 400 cents), sixte majeure (do-la = 900 cents), tierce mineure (do-ré# = 300 cents), sixte mineure (do-sol# = 800 cents), septième mineure (do-la# = 1000 cents), seconde majeure (do-ré = 200 cents), triton (do-fa# = 600 cents), septième majeure (do-si = 1100 cents) et seconde mineure (do-do# = 100 cents). Ils ont également noté, primo, qu'à intervalle égal, la consonance se dégrade lorsqu'on descend dans le grave (et inversement  s'améliore lorsqu'on monte vers l'aigu) et, secundo, que la dissonance est atténuée si l'intervalle est augmenté d'une octave, telle une quatorzième majeure (do-si suivant = 2300 cents), moins dissonante que la septième correspondante.
+<p> On situe mieux la part des battements dans les observations précédentes  si l'on affiche le tableau des fréquences des notes appartenant à l'échelle  accordée au tempérament égal :</p>
+
+
+<div class="conteneurImages">
+          <div> 
+                            <figure>
+                                <img src="../images/arithm/frequences.png" alt="Tableau des fréquences dans le tempérament égal" />
+                                <figcaption>Tableau des fréquences des notes dans le tempérament égal <sub><sub><sub> 
+                                    <audio controls preload="none" >
+                                        <source src="../son.mp3/arithm/spectrepiano.mp3" type="audio/mpeg"/>
+                                        <source src="../son.mp3/arithm/spectrepiano.ogg" type="audio/ogg"/>
+                                        Votre navigateur n'est pas compatible
+                                    </audio></sub></sub></sub>
+                                </figcaption>
+                            </figure>
+          </div>
+        </div>
+
+
+      <p>L'octave médiane (surlignée horizontalement) offre un bon point de départ : on constate que les notes do et do# sont distantes  de 15.5 Hz et que les notes do et ré sont distantes de 32 Hz, soit des valeurs situées dans la zone de battement. On ne s'étonne donc pas que les intervalles correspondants (seconde mineure et seconde majeure) soient classés comme dissonants. Poursuivant l'exploration, on tombe sur les notes do et ré# distantes de 49.5 Hz, une valeur extérieure à l'intervalle 5-35 Hz. Il ne faudrait pas trop vite en conclure que l'intervalle correspondant (tierce mineure) est consonant car un battement secondaire se produit entre le 6<sup>ème</sup> harmonique du do et le 5<sup>ème</sup> harmonique du ré# (6x261.626-5x311.127=14.12 Hz). Le lecteur motivé peut vérifier qu'aucun battement secondaire  ne se produit entre les notes  do et sol ou do et fa : les intervalles de quinte et de quarte sont justes (Cf  l'exposé antérieur,  <a href="../chroniques/arithmetique.html">Gammes et Tempéraments</a>).      </p>
+      <p>C'est  en partie afin d'éviter les  battements sonores qu'une théorie musicale complexe a vu le jour dès la Renaissance. Les musiciens ont compris que le mélange des voix ne pouvait se faire au hasard et qu'il exigeait l'apprentissage d'une  science combinatoire musicale. On peut être un peintre amateur de  talent, c'est chose impossible en musique sauf à se cantonner dans des musiques rudimentaires ne prenant aucun risque harmonique ou contrapuntique.</p>
+      <p>Le phénomène de battement ne joue aucun rôle en optique   (scintillation) car le phénomène d'octave y est absent et quand bien même il existerait, il serait indétectable car l'ordre de grandeur des fréquences optiques visibles est mille milliards de fois <sup></sup>  plus élevé que celui des fréquences acoustiques audibles. La rencontre de fréquences voisines est dès lors pratiquement impossible.</p>
+ 
+ </div>
+ 
+ 
+ 
+ <div id="perception">
+ <h4>Perceptions spatio-temporelles</h4>
+     <p>L'oeil et l'oreille  sont incapables de quantifier  précisément les paramètres spatio-temporels,  laissant par exemple planer un doute   sur la dimension d'un objet ou sur la durée d'un son.</p>
      <ul class="miniListCorps">
- 
-     <li>Les Anciens, qui avaient  du temps libre, attachaient de l'importance à des détails qui ne nous préoccupent plus guère aujourd'hui. Ils s'intéressaient, en particulier, aux proportions, L(ongueur)/&#8467;(argeur),  du rectangle idéal pouvant servir de modèle à, par exemple,   la façade du Parthénon. Partant de l'idée assez naturelle qu'un rectangle trop plat ou trop carré manquerait d'élégance, ils ont conclu qu'il devait &quot;forcément&quot; exister un &quot;idéal&quot; entre ces extrêmes, peut-être un rapport simple, L/&#8467; = 3/2 ou 4/3, au motif qu'il aurait plu aux  pythagoriciens, férus de ce genre de fractions. Cependant  ce genre d'argument se heurte au fait que lorsqu'on demande à des observateurs bénévoles de sélectionner &quot;leur rectangle  idéal&quot; sur base d'un rapport L/&#8467;  situé entre les limites raisonnables, 4/3 (= 1.333) et 8/5 (= 1.6), ils échouent  à se mettre d'accord. Cela ne surprend guère  :  notre oeil, si prompt à distinguer des détails infimes ou à percevoir des intensités faibles, n'est pas du tout équipé pour apprécier  les proportions d'un rectangle fourni sans autre explication. Il est déjà incapable de décider lequel des rectangles ci-après respecte rigoureusement la proportion 3/2. <br/> 
-       L'intuition  ne leur ayant été  d'aucun secours, les Anciens ont alors opté pour une solution &quot;ésotérique&quot;, décrétant arbitrairement que le rapport idéal devait répondre à la proportion peut-être &quot;divine&quot; mais sûrement alambiquée,  L/ℓ =(L+ℓ)/L (plus facile à appréhender si on la traduit avec des mots : la longueur est à la largeur ce que le demi-périmiètre est à la longueur). Un peu d'algèbre  révèle ce rapport &quot;idéal&quot;, L/&#8467; = (1+&radic;5)/2 &ap; 1.618, rapport connu depuis l'Antiquité sous le nom de &quot;Section d'Or&quot;, dont le Parthénon est censé offrir une illustration. 
+       
+       <li>Les Anciens, qui avaient  du temps libre, attachaient de l'importance à des détails qui ne nous préoccupent plus guère aujourd'hui. Ils s'intéressaient, en particulier, aux proportions, L(ongueur)/&#8467;(argeur),  du rectangle idéal pouvant servir de modèle à, par exemple,   la façade du Parthénon. Partant de l'idée assez naturelle qu'un rectangle trop plat ou trop carré manquerait d'élégance, ils ont conclu qu'il devait &quot;forcément&quot; exister un &quot;idéal&quot; entre ces extrêmes, peut-être un rapport, L/&#8467; = 3/2 ou 4/3, au motif qu'il aurait plu aux  pythagoriciens, férus  de fractions simples. Cependant  ce genre d'argument se heurte au fait que lorsqu'on demande à des observateurs  de sélectionner &quot;le rectangle  idéal&quot; sur base d'un rapport L/&#8467;  situé entre des limites raisonnables, disons, 4/3 (= 1.333) et 8/5 (= 1.6), ils échouent  à se mettre d'accord. Cela ne surprend guère :  notre oeil, si prompt à distinguer des détails infimes ou à percevoir des intensités faibles, n'est pas du tout équipé pour apprécier  les proportions d'un rectangle fourni sans autre explication. Il est déjà incapable de décider lequel des rectangles ci-après respecte rigoureusement la proportion 3/2. <br/> 
+       L'intuition  ne leur ayant été  d'aucun secours, les Anciens ont alors opté pour une solution &quot;ésotérique&quot;, décrétant arbitrairement que le rapport idéal devait répondre à la proportion peut-être &quot;divine&quot; mais sûrement alambiquée,  L/ℓ =(L+ℓ)/L (plus facile à appréhender si on la traduit avec des mots : la longueur est à la largeur ce que le demi-périmètre est à la longueur). Un peu d'algèbre  révèle que ce rapport &quot;idéal&quot; vaut, L/&#8467; = (1+&radic;5)/2 &ap; 1.618. Il est connu depuis l'Antiquité sous le nom de &quot;Section d'Or&quot; et   le Parthénon est censé en offrir une illustration parfaite. 
        
  
        <div class="conteneurImages">
@@ -342,11 +504,10 @@
   </div>
  
 
-        
         </li>
         
-         <li>Vers la même époque, des  membres de l'école de Pythagore se sont intéressés à la consonance des sons de fréquences différentes. Procédant expérimentalement à l'aide d'un monocorde, ils ont abouti à la conclusion (cette fois argumentée !) que le critère basé sur les fractions simples était   le bon.  De fait, ils ont trouvé que l'oreille est  capable de distinguer les cas où deux sons émis simultanément sont dans un rapport fréquentiel égal à 3/2 (quinte exacte) ou seulement proche de cette valeur : il suffit de les jouer simultanément et d'observer que seule la quinte juste est exempte de  battement gênant.
-<table>
+         <li>Vers la même époque, des  membres de l'école de Pythagore se sont intéressés à la consonance des sons de fréquences différentes. Procédant expérimentalement à l'aide d'un monocorde, ils ont abouti à la conclusion (cette fois argumentée !) que le critère basé sur les fractions simples tenait   la route.  De fait, ils ont trouvé que l'oreille est  capable de distinguer les cas où deux sons émis simultanément sont dans un rapport fréquentiel égal à 3/2 (quinte exacte) ou seulement proche de cette valeur : il suffit de les jouer simultanément et d'observer que seule la quinte juste est exempte de  battement. 
+           <table>
                     <tr>
                       <th>Quinte juste (f<sub>2</sub>/f<sub>1</sub> = 1.50)</th>
                       <th>Quinte fausse (f<sub>2</sub>/f<sub>1</sub> = 1.52)</th>
@@ -377,241 +538,218 @@
         </li>
         
       </ul>
-     
     
-
- 
- <h5>Discrétisation des intensités</h5>
-      <p>Les compositeurs ne se préoccupent pas de l'échelle des décibels : au lieu d'indiquer sur leur partition les  intensités sonores requises de la part de chaque groupe instrumental,   ils se contentent, en pratique, d'indications qualitatives   selon une échelle  déclinant les nuances, <i><strong>ppp</strong></i> (pianississimo), <i><strong>pp</strong></i> (pianissimo), <i><strong>p</strong></i> (piano), <i><strong>mp</strong></i> (mezzo piano), sotto voce, <i><strong>mf</strong></i> (mezzo forte), <i><strong>f</strong></i> (forte), <i><strong>ff</strong></i> (fortissimo), <i><strong>fff</strong></i> (fortississimo). Elle revient à discrétiser à la (grosse) louche l'échelle des intensités par pas de 6 à 7 décibels selon les cas. Cette imprécision   peut surprendre mais elle présente au moins l'avantage de laisser  une certaine latitude aux interprètes qui, de fait, ne s'en privent pas. </p>
-      <p>Quelques compositeurs ont tenté de marquer les esprits par quelques notations fantaisistes abusant d'une accumulation de <i><strong>p</strong></i> ou de <i><strong>f</strong></i> : ainsi <a href="../chroniques/ligeti.html">Gyorgy Ligeti</a> dans quelques Etudes pour piano (<a href="https://www.youtube.com/watch?v=YI-TWpEgGTM">Etude n°9</a>, qui se termine sur un présumé inaudible <i><strong>pp</strong></i><i><strong>pp</strong></i><i><strong>pp</strong></i><i><strong>pp</strong></i> ou encore <a href="https://www.youtube.com/watch?v=Q6LmG9myHxA">Etude n°13</a>, qui contient une transition tonitruante de <i><strong>ffffff</strong></i> à <i><strong>ffffffff</strong></i> !). L'écoute confirme s'il en était besoin que ces indications ne correspondent à aucune intensité objective en termes de décibels; elles suggèrent simplement aux interprètes de pousser leur jeu dans ses derniers retranchements, ce qu'ils font le plus souvent en prenant les plus grandes libertés.</p>
-
- 
- 
-      
-      <h5>Discrétisation des durées</h5>
-      <p>Le temps  ne compte pas en peinture mais il joue un  rôle essentiel en musique, en particulier au niveau de la gestion des durées et des rythmes (Nous verrons plus loin que le temps psychologique a également son importance).  </p>
-      <p>La théorie en usage prévoit d'assurer la synchronisation entre plusieurs interprètes priés de coordonner leur jeu. Pour y parvenir, elle restreint sévèrement l'éventail des durées des notes. Elle définit, dans l'ordre (des durées) décroissant(es) : la ronde (&#119133;), la blanche (&#119134;), la noire (&#119135;), la croche (&#119136;), la double croche (&#119137;), la triple croche (&#119138;) et la quadruple croche (&#119139;), chaque type étant de durée moitié moindre que celui qui le précède dans la liste. On voit que cette échelle des durées suit une progression géométrique  (et non arithmétique) suivant la formule décroissante, durée(&#119133;)/2<sup>m</sup> (m = 0,1,2,...,6).  Cette règle  suggère qu'il doit exister d'une  loi  de type logarithmique pour la perception des durées mais elle n'a rien de rigoureusement contraignant, d'ailleurs la théorie autorise, si nécessaire,  de diviser la ronde par 3 (triolets), par 5 (quintolets), par 7 (septolets), etc. </p>
-      <p>La raison essentielle du découpage géométrique doit être cherchée ailleurs : il facilite le calcul mental  de la durée d'une mesure complète, un point qui sera examiné ci-après. </p>
-      <p><i>Note. Au Moyen-Age, le plain-chant  s'éternisait volontiers sur les syllables d'où il était courant de considérer des notes de durées plus longues que la ronde, telle la carrée (<strong>&#119132;</strong>) valant deux rondes. On l'appelait aussi &quot;brève&quot; parce qu'il existait une &quot;longue&quot; de durée double (voire triple) ! A l'opposé, il arrive que la musique contemporaine ait recours à des quintuples, voire des sextuples croches, cependant cette pratique est exceptionnelle  et ce ne sont pas les interprètes qui protesteront.</i></p>
-<p>L'oreille ne distinguant pas deux sons produits à des intervalles de temps trop rapprochés, il semble inutile de poursuivre la discrétisation temporelle au-delà d'un seuil inférieur que le test de Leipp   situe  entre 25 et 50 ms, la valeur exacte pouvant varier selon les individus (Emile Leipp (1913-1986), actif au CNRS, fut un des pères de l'acoustique musicale, en particulier physiologique).  C'est la raison pour laquelle  on ne considère généralement pas des notes plus courtes que la quadruple croche qui, dans un tempo,   rapide mais standard (allegretto) de 120 noires à la minute (= 2 noires à la seconde), durerait   1/32 &ap; 31 ms.</p>
-     
-      
-      <div class="conteneurImageSeule">
-                    <div>
-                          <figure>
-                            <img src="../images/peinture/aria.png" alt="Aria des variations Goldberg"/>
-                            <figcaption>Aria des <a href="https://www.youtube.com/watch?v=ixVok2-LZ9k">Variations Goldberg</a></figcaption>
-                        </figure>
-          </div>
 </div>
-      
-      <p>Tout morceau (de musique) homogène quant à la gestion du temps physique est partitionné (avec ou sans jeu de mots !) en mesures de durées égales séparées par des barres. Ces mesures sont numérotées de 1 à N afin que les interprètes sachent, à tout instant, où ils se trouvent dans le cours de l'exécution de l'oeuvre. Chaque mesure est  décomposée en un certain nombre (n = 2, 3, 4, ...) de temps de durées égales (Sauf exception, cf infra) dont certains sont forts et d'autre faibles ce qui garantit l'accentuation du discours musical. La répartition des temps au sein de la mesure est indiquée par une fraction du type n/2<sup>&alpha;</sup>, où n est le nombre de temps et 1/2<sup>&alpha;</sup>  la durée de chacun en terme de (la durée d'une) ronde. Dans l'exemple ci-contre (Aria initial des Variations Goldberg de Bach), les mesures sont notées à 3/4; elles comportent donc trois temps,  chacun d'une durée équivalente à un quart de ronde (soit une noire).  Révisez vos fractions en contrôlant que le compte des durées vaut, dans tous les cas, 3/4 de ronde (ou 3/2 de blanche ou  3 noires, etc). Pour ce faire, sachez qu'une note pointée voit sa durée multipliée par un facteur 3/2 et ne tenez aucun compte des petites notes qui  ne sont que des ornements, respectés en principe mais pas toujours (La preuve au piano avec <a href="https://www.youtube.com/watch?v=TPq_uGc-jeI">Wilhelm Kempff</a>). Pour que l'information soit complète, il faut encore préciser la durée de la ronde ou ce qui revient au même de la noire (à condition de diviser par 4!), ce qu'on nomme le tempo, &eta;. Les musiciens ne cultivant pas la simplicité, ils ont choisi de définir ce tempo de façon indirecte, en fixant le nombre de noires à la minute, &#9833;=&eta;. Par exemple,  &#9833;=120, signifie  2 noires à la seconde soit 0.5 s par noire.   A partir de ces données, on calcule sans (trop de) peine la durée d'une mesure soit, (240/&eta;) (n/2<sup>&alpha;</sup>) donc celle d'un morceau homogène complet, comportant N mesures : durée = N(240/&eta;) (n/2<sup>&alpha;</sup>). Par exemple, le Boléro de Ravel comporte 340 mesures à  3/4; si l'on adopte le tempo, &#9833;=&eta;=72, on trouve que l'oeuvre complète dure,  340 (240/72)(3/4) = 850 s soit 14:10. En fait, Ravel a modifié plusieurs fois ses indications de tempo, entre &#9833;=64 et &#9833;=76, sans en imposer aucune, d'où il ne faut pas s'étonner de trouver des enregistrements de  durées  variables en fonction des choix  des chefs, allant de 12:00 (Stokowski, &#9833;=84) à 18:30 (Freitas Branco, &#9833;=54).  Le Boléro n'a pas été choisi au hasard : de fait, l'oeuvre est d'un seul tenant au plan de la mesure. La plupart des oeuvres ne le sont pas, ce qui exige, pour prédire leur durée totale, d'additionner les  durées des sections  composantes.      </p>
-      <p>La  théorie invoquée présuppose que les mesures sont de durées égales (On parle de mètre constant).  On comprend, à présent, les raisons de la progression géométrique des durées des notes : pour comptabiliser les durées  au sein d'une mesure, il faut additionner des fractions, ce qui est simple  si les dénominateurs sont tous des puissances de 2. Rien n'empêcherait en théorie de considérer un mètre variable mais cela compliquerait tellement  la tâche des interprètes qu'il n'y a pas souvent été donné suite (Vous trouverez des tentatives du genre dans l'oeuvre de <a href="../chroniques/blacher.html">Boris Blacher</a>). </p>
+
+
+
 
       
-      
-      
-      <p>La mention d'un tempo  chiffré sur la partition est une invention relativement récente (200 ans tout de même, lorsque  l'usage du métronome s'est généralisé). Pendant longtemps,  on s'est  contenté d'indications qualitatives selon une échelle allant du plus lent au plus rapide : Largo			(&eta; &lt; 60),
-        Lento			(52 - 68),
-        Adagio			(60 - 80),
-        Andante		(76 - 100),
-        Moderato		(88 - 112),
-        Allegretto		(100 - 128), 
-        Allegro		(112 - 160),
-        Vivace			(~ 140),
-        Presto			(140 - 200) et 
-        Prestissimo (&gt;200). A l'époque de Bach, l'indication pouvait être encore plus vague, voire inexistante comme dans  l'Aria des &quot;Goldberg&quot;. Bien qu'il s'agisse d'une &quot;Sarabande&quot;, lente en principe, il apparaît que les interprètes traitent souvent  cette indication avec légèreté voire extravagance, revendiquant  leur part de liberté  dans l'exécution. Par exemple, au clavecin, l'excellent Jean Rondeau met 270 s pour jouer les 32 mesures à 3/4 de l'<a href="https://www.youtube.com/watch?v=1AtOPiG5jyk">aria complète</a>, ce qui correspond à un tempo moyen très lent, de l'ordre de &#9833;=&eta;=21, tandis que   Blandine Verlet  se situe davantage dans la norme  dans cette première version <sub><sub><sub> 
-        <audio controls preload="none" >
-          <source src="../son.mp3/notation/aria2.mp3" type="audio/mpeg"/>
-          <source src="../son.mp3/notation/aria2.ogg" type="audio/ogg"/>
-          Votre navigateur n'est pas compatible
-          </audio>
-        </sub></sub></sub> (170 s pour l'<a href="https://www.youtube.com/watch?v=ixVok2-LZ9k">aria complète</a>, soit &#9833;=&eta;=34) et cette autre, plus rapide, <sub><sub><sub> 
-          <audio controls preload="none" >
-            <source src="../son.mp3/notation/aria3.mp3" type="audio/mpeg"/>
-            <source src="../son.mp3/notation/aria3.ogg" type="audio/ogg"/>
-            Votre navigateur n'est pas compatible
-          </audio>
-</sub></sub></sub> (145 s pour l'<a href="https://www.youtube.com/watch?v=X9bpkJd2rNI">aria complète</a>, soit &#9833;=&eta;=40).  
-      Veuillez noter que les éditeurs ont aussi leur conception de la norme  : il tiennent souvent à ce que l'oeuvre complète  tienne sur un seul CD, ce que la version Rondeau ne permet pas ! Cela dit la palme de la lenteur revient incontestablement au pianiste <a href="https://www.youtube.com/watch?v=55hk75OgWDg">Lang Lang</a> qui  étire l'aria pendant 335 s (&#9833;=&eta;=17) !</p>
-      
-
      
-  
-
-
-      
-      <div id="avatars">
         <h4>Avatars de l'oeuvre d'art</h4>
       
-<p>Les différences observées dans le traitement  des paramètres ondulatoires, sonores ou lumineux, sont, on vient de la voir, à la base d'un grand nombre de différences entre peinture et musique. Il en existe  d'autres basées sur l'examen de  paramètres nettement plus informels.</p>
+<p>Les différences observées dans le traitement  des paramètres  sonores ou lumineux expliquent  en quoi le &quot;métier&quot;  de peintre diffère de celui de compositeur. Qu'en est-il de l'oeuvre  achevée  ?</p>
       
       
-      
+  <div id="fragile">    
      <h5>La peinture, un art immédiat et fragile</h5> 
 
-<p>La peinture est un art immédiat : rien ne s'oppose à ce qu'une  oeuvre achevée soit immédiatement exposée au public. Tous les peintres ne sont pas égaux devant le temps de la conception : on a connu beaucoup d'artistes parfaitement côtés qui peignaient jusqu'à trois toiles par jours. Au bilan de son existence Picasso pouvait faire état d'un catalogue fidèlement tenu à jour et comptant la bagatelle de tableaux. Phénomène d'atelier. Cette relation de proximité  semble attractive mais un problème surgit dès que l'artiste souhaite négocier son oeuvre, il faut bien vivre ! Des intermédiaires intéressés, dans tous les sens du terme, galeristes, agents, marchands et même   critiques d'art, entrent en scène à ce stade, conscients des leviers qu'ils détiennent.  A court terme, la plupart des tableaux  de valeur disparaissent  dans des collections privées,  ne rejoignant éventuellement que tardivement un musée, à la faveur de ventes ou d'aléas  successoraux. Entretemps, ils passent éventuellement plus ou moins discrètement de mains en mains, gagnant en valeur marchande sans  autre bénéfice  pour leur auteur que de faire monter leur cote, encore faut-il qu'il soit encore vivant !  Sauf acquisition muséale ou rétrospective ponctuelle, tout tableau de valeur est donc soustrait à l'attention du public et ce n'est pas la pire éventualité car d'autres sorts moins enviables le menacent :</p> 
+<p> D'un siècle à l'autre,  les peintres n'ont pas  été égaux devant le temps de la conception. Jadis, la culture du détail apparentait la peinture à un jeu de patience au point que pour honorer les commandes de plus en plus nombreuses, les artistes en vue confiaient une partie du &quot;travail&quot; à des élèves formés,  les rectifiant au besoin. Les choses ont bien changé au vingtième siècle et on a connu des artistes peignant  plusieurs toiles par jour ! </p>
+<p>La peinture est un art immédiat : rien ne s'oppose à ce qu'une  oeuvre achevée soit immédiatement exposée. Cette relation de proximité  entre le peintre et son public semble attractive mais un problème surgit dès que l'artiste souhaite négocier son oeuvre, il faut bien vivre ! Des intermédiaires intéressés, dans tous les sens du terme, galeristes, agents, marchands et même   critiques d'art, entrent alors en scène, conscients des leviers qu'ils détiennent.  A  terme, la plupart des tableaux  de valeur disparaissent  dans des collections privées,  ne rejoignant éventuellement un musée que beaucoup plus tard, à la faveur d'acquisitions publiques ou de  dations. Entretemps, ils passent  discrètement de mains en mains, gagnant en valeur marchande sans  autre bénéfice  pour leur auteur que de faire monter leur cote, encore faut-il qu'il soit encore en vie pour en profiter !  Sauf acquisition muséale ou rétrospective ponctuelle, tout tableau de valeur est donc rapidement soustrait à l'attention du public et ce n'est pas la pire éventualité car d'autres sorts moins enviables le menacent :</p> 
 
 <ul class="miniListCorps">
-  <li>Un tableau peut disparaître définitivement lors d'un désastre naturel, un tremblement de terre (Naples 1798), un incendie (Alcazar de Madrid en 1734) ou un bombardement (Dresde en 1945), cf cette longue  <a href="https://fr.wikipedia.org/wiki/Mus%C3%A9e_Isabella_Stewart_Gardner">liste</a>.<br/><br/></li>
-<li>Il peut   également être volé et jamais retrouvé (Ce <a href="https://io9.gizmodo.com/artistic-masterpieces-that-have-been-stolen-destroyed-1440069572">site</a> vous rappelle quelques exemples tristement fameux avec une mention spéciale pour la  collection du Musée <a href="https://fr.wikipedia.org/wiki/Mus%C3%A9e_Isabella_Stewart_Gardner">Isabella Stewart Gardner</a> de Boston, qui a &quot;perdu&quot;, un matin de 1990, 13 toiles de Maîtres non retrouvées à ce jour). On déplore particulièrement le vol du panneau des Juges intègres de L'Agneau mystique de Jan van Eyck (Gand, 1934) et de celui de La Nativité du Caravage (Palerme, 1969). <br/><br/></li>
-<li>Enfin, il peut  subir toutes sortes  d'avaries, volontaires (actes de vandalisme) ou involontaires (restauration manquée, altération naturelle des couleurs, dégradation liée au temps qui passe). Certaines églises sont même pleines de toiles carbonnées dont les couleurs ont tellement souffert qu'aucune restauration n'est raisonnablement envisageable. Il est bien connu que les couleurs d'origine vieillissent  plus ou moins bien et que celles utilisées par  Jan van Eyck ont nettement mieux résisté   que celles expérimentées par Léonard de Vinci. &nbsp;Personne ne sait aujourd'hui ce que deviendront les toiles de Vincent van Gogh dans 500 ans et un travail de restauration peut s'avérer indispensable. &nbsp;Tout restaurateur agit alors comme un intermédiaire qui interprète plus ou moins fidèlement les directives émanant d'experts.  De telles restaurations sont toutefois en priorité réservées aux oeuvres essentielles et sérieusement menacées car  elles coûtent cher de par les recherches qu'elles exigent et le temps qu'elles prennent.<br/><br/></li>
+  <li>Un tableau peut disparaître définitivement lors d'un désastre naturel, un tremblement de terre (Naples 1798), un incendie (Alcazar de Madrid en 1734) ou un bombardement (Dresde en 1945), cf cette longue  <a href="https://fr.wikipedia.org/wiki/Liste_des_%C5%93uvres_perdues">liste</a>.<br/><br/></li>
+<li>Il peut   également être volé et jamais retrouvé (Ce <a href="https://io9.gizmodo.com/artistic-masterpieces-that-have-been-stolen-destroyed-1440069572">site</a> vous rappelle quelques exemples tristement fameux avec une mention spéciale pour la  collection du Musée <a href="https://fr.wikipedia.org/wiki/Mus%C3%A9e_Isabella_Stewart_Gardner">Isabella Stewart Gardner</a> de Boston, qui a &quot;perdu&quot;, un matin de 1990, 13 toiles de Maîtres non retrouvées à ce jour). On déplore particulièrement le vol du panneau des Juges intègres de L'Agneau mystique de Jan van Eyck (Gand, 1934) et  celui de La Nativité du Caravage (Palerme, 1969). <br/><br/></li>
+<li>Enfin, il peut  subir toutes sortes  d'avaries, volontaires (actes de vandalisme) ou involontaires (restauration manquée, altération naturelle des couleurs, dégradation liée au temps qui passe). Certaines églises sont même pleines de toiles carbonées dont les couleurs ont tellement souffert qu'aucune restauration n'est raisonnablement envisageable. Il est bien connu que les couleurs d'origine vieillissent  plus ou moins bien et que celles utilisées par  Jan van Eyck ont nettement mieux résisté   que celles expérimentées par Léonard de Vinci. Personne ne sait aujourd'hui ce que deviendront les toiles de Vincent van Gogh dans 500 ans et des travaux de restauration peuvent s'imposer avec pour conséquence de nous éloigner progressivement de l'original. Tout restaurateur agit alors comme un intermédiaire qui interprète plus ou moins fidèlement les directives émanant d'experts.  Les restaurations coûtant très cher, elles sont réservées aux oeuvres majeures; quant aux autres, elles sont à terme plus ou moins lointain menacées de disparition. <br/>
+  <br/></li>
 </ul>
 
 
-   <p>La peinture connaît un phénomène que la musique ignore, celui de la copie, didactique ou frauduleuse. Par didactique, on entend le cas du peintre qui souhaite se faire la main voire vous proposer en toute légalité une copie parfaite du chef-d'oeuvre de votre choix tout en respectant la réglementation en usage (Dimensions altérées et absence de signature originale). Aussi parfaite soit-elle la copie ne possédera aucune valeur marchande comparable à l'original. A ceux qui s'étonneraient  de la différence marchande entre deux objets indiscernables à l'oeil nu, la seule réponse qui s'impose est  l'apposition de la signature de l'ariste qui a prix les risques inhérents à toute innovation, en vertu de ce  principe exigeant qu'en Art, tout ce qui n'est pas révolution est plagiat. Il est clair que le vol d'un tableau est la conséquence funeste de sa valeur marchande d'où il résulte que le phénomène inverse  existe également où des oeuvres apparaisssent  jamais peintes par l'auteur désigné. Les amateurs d'art ont gardé en mémoire les exploits du marchand Fernand Legros qui a dévoyé à son profit le  talent des peintres faussaires (hongrois) Elemér Albert Hoffmann et (canadien) Réal Lessard. </p>
-   <p>L'art musical échappe à de telles dérives. Personne n'a jamais copié l'oeuvre musicale d'un Maître, tout au plus l'a-t-il transcrite de sa main, à des fins didactiques. Le métier de faussaire musical n'existe pas et il vaut la peine de réfléchir aux raisons profondes de cette particularité. Certes le catalogue des symphonies de Beethoven est parfaitement connu et tout musicien qui prétendrait avoir retrouvé le manuscrit d'une dixième symphonie serait immédiatement démasqué y compris par le mélomane inexpert : à part qu'elle est une liasse de papier, une partition n'est pas un objet comme l'est un tableau, elle est porteuse d'affects impossibles à copier. Même les cas recensés de faux en écriture musicale n'ont pas rapporté un kopeck à leur auteur. Une partition n'ayant d'autre valeur marchande que celle de la signature qu'elle porte, l'acte faussaire n'existe pas en musique. Non seulement la démarche serait vaine mais pire elle serait vouée à l'échec : personne ne pourra jamais composer une symphonie à la manière de Beethoven sans trahir la supercherie. La chronique rapporte néanmoins deux exemples anecdotiques :  le célèbre adagio d'Albinoni est un artefact dû au musicologue Remo Giazotto qui a prétendu avoir complété  un fragment (jamais retrouvé) d'une Sonate en trio du maître vénitien ! Autre exemple dû à Winfried Michel qui a prétendu avoir mis à jour 6 sonates perdues de Joseph Haydn, parvenant même à abuser le spécialiste Howard Chandler Robbins Landon. </p>
+   <p>La peinture connaît le  phénomène  de la copie, didactique ou frauduleuse. Par didactique, on entend le cas du peintre qui souhaite se faire la main voire  proposer  à des amateurs des répliques de chefs-d'oeuvre dans le respect de la réglementation en usage (Dimensions altérées,  signature dépourvue d'ambiguïté, ...). Aussi parfaite soit-elle, une copie ne possédera jamais une valeur marchande comparable à celle de l'original. A ceux qui s'étonneraient  qu'une telle différence   puisse exister entre deux objets indiscernables à l'oeil nu, il est d'usage  de rappeler que la notion de prise de risque est essentielle dans le domaine de l'Art, où pour paraphraser Paul Gauguin, &quot;Tout ce qui n'est pas révolution est plagiat&quot;. De fait, un copiste ne prend aucun risque en copiant un chef-d'oeuvre consacré.</p>
+   <p> Il est clair que le vol d'un tableau est la conséquence funeste de sa valeur marchande d'où il résulte que le phénomène inverse  existe également où des oeuvres apparaissent sur le marché,  jamais peintes par l'auteur désigné. Les amateurs d'art ont gardé en mémoire l'exemple rocambolesque du marchand Fernand Legros qui a dévoyé à son profit le  talent des peintres faussaires (hongrois) Elemér Albert Hoffmann et (canadien) Réal Lessard. </p>
+   <p>L'art musical échappe à de telles dérives. Personne n'a jamais copié l'oeuvre musicale d'un Maître, tout au plus l'a-t-il transcrite de sa main, à des fins didactiques. Le &quot;métier&quot; de faussaire musical n'existe donc pas et il vaut la peine de réfléchir aux raisons profondes de cette particularité. Composer une oeuvre importante prend beaucoup de temps à son auteur d'où le catalogue complet excède rarement quelques centaines d'oeuvres, toutes généralement bien documentées dans la littérature. Tout candidat faussaire qui exhiberait une partition de son invention en la faisant passer pour l'oeuvre d'un grand Maître  serait immédiatement démasqué.     La chronique rapporte néanmoins deux exemples anecdotiques :  le célèbre adagio d'Albinoni est un artefact dû au musicologue Remo Giazotto qui a prétendu avoir complété  un fragment (jamais retrouvé) d'une Sonate en trio du maître vénitien ! Un autre exemple est dû à Winfried Michel, qui a prétendu avoir mis à jour 6 sonates perdues de Joseph Haydn, parvenant même à abuser le spécialiste Howard Chandler Robbins Landon. Précisons que ces  faux en écriture musicale n'ont pas rapporté le moindre kopeck à leur auteur.</p>
+   </div>
    
    
-<h5>La Musique, un art différé et robuste</h5>
-   <p>Une performance similaire est généralement hors de portée d'un musicien : l'écriture dans ses moindres détails d'une oeuvre orchestrale peut prendre des mois d'où la tentation de compléter des oeuvres importantes mais inachevées. </p>
-   <p>La Musique est  un art différé : pour communiquer avec ses auditeurs potentiels, le compositeur doit impérativement passer par toutes sortes d'intermédiaires.  Toute musique pensée intérieurement et ayant vocation de survivre doit  être notée dans  un langage suffisamment puissant pour (espérer) ne  manquer aucune nuance. Un langage  codé est dès lors nécessaire dont les règles complexes demandent des années d'apprentissage. N'étant accessible qu'à l'extrême minorité de ceux qui &quot;lisent la musique&quot;, un interprète s'avère nécessaire, capable de traduire  les intentions du compositeur en sons aussi fidèles que possible.   </p>
-   <p>Ces intermédiaires sont autant d'obstacles à la fidélité de l'oeuvre jouée par rapport à l'oeuvre pensée et, de fait, pour une oeuvre donnée, il n'y a pas deux restitutions sonores identiques, que ce soit en concert ou en studio d'enregistrement. Cette pluralité des interprétations fait partie des richesses de l'art musical, elle explique qu'un auditeur donné ne se lasse éventuellement pas de réentendre une oeuvre qu'il pense connaître par coeur. C'est particulièrement le cas dans les maisons d'opéra rarement pressées de déranger le répertoire.</p>
+   <div id="robuste">
+   <h5>La Musique, un art différé et robuste</h5>
+<p>La Musique est  un art différé : pour communiquer avec ses auditeurs potentiels, le compositeur doit impérativement passer par toutes sortes d'intermédiaires (copiste, éditeur, interprète).  Toute musique pensée intérieurement avec la vocation de survivre doit  être notée dans  un langage suffisamment puissant pour (espérer) ne  manquer aucune nuance.  Une partition n'étant accessible qu'à l'extrême minorité de ceux qui &quot;lisent la musique&quot;, un interprète s'avère indispensable, capable de traduire  les intentions du compositeur.   </p>
+   <p>Cependant l'existence même d'un interprète  est en soi un obstacle à la fidélité de l'oeuvre jouée par rapport à l'oeuvre pensée et, de fait, pour une oeuvre donnée, il n'y a pas deux restitutions sonores identiques. Loin d'être un handicap, cette diversité des interprétations fait partie des richesses de l'art musical : elle explique, en particulier, qu'un auditeur  ne se lasse  pas de réentendre autrement une oeuvre qui lui tient à coeur. C'est particulièrement le cas des amateurs d'opéra qui sans cela tourneraient le plus souvent en rond dans  un répertoire plutôt exigu. </p>
    
 
 
-<p>Les catastrophes évoquées à propos des peintures - destructions, pertes, vols, avaries, falsifications - menacent peu  la Musique. La seule mésaventure qui puisse affecter une oeuvre musicale est la perte de sa partition autographe. Une fois (re)copiée, elle est en principe définitivement à l'abri d'une destruction irrémédiable. l'histoire ne manque pas d'exemples d'oeuvres musicales ressuscitées après des décennies voire des siècles d'oubli : il suffit qu'un manuscrit réapparraisse pour que l'oeuvre puisse reprendre vie. Evidemment rien ne garantit qu'elle sonnera à nouveau comme elle a sonné par le passé : c'est le travail des musicologues et des interprètes de se pencher sur la restauration et il n'est pas rare que plusieurs versions voient le jour. Pour des raisons évidentes, jamais on n'abîmera ou ne perdra le Requiem de Mozart. La disparition ne pourrait  concerner  que des partitions qu'on aurait  négligé  de (re)copier avant qu'elle ne périssent dans une catastrophe.  On connaît quelques exemples dont l'histoire a conservé le témoignage d'époque, par exemple plusieurs opéras de Monteverdi et de nombreuses oeuvres d'Albinoni (dont pas moins de 70 opéras) détruites lors des bombardements de Dresde. Dans ce cas, nous pouvons nous consoler  de n'avoir   perdu que des oeuvres dont nous ignorons la teneur. Les exemples les plus déconcertants concernent des oeuvres volontairement détruites par leur auteur insatisfait ou déprimé (Dukas, Duparc, Sibelius, ...).</p>
-
+<p>Les catastrophes évoquées à propos des peintures - destructions, pertes, vols, avaries, falsifications - menacent peu  la Musique : pour des raisons évidentes, jamais on n'abîmera ou ne perdra le Requiem de Mozart. La seule mésaventure qui puisse affecter une oeuvre musicale est la perte de sa partition autographe qu'on aurait  omis  de (re)copier.  La négligence la plus tragique concerne une bonne partie de l'oeuvre  d'Albinoni (dont pas moins de 70 opéras, perdus définitivement !), détruite lors des bombardements de Dresde. D'autres exemples plus  déconcertants concernent des oeuvres volontairement détruites par leur auteur, insatisfait ou dépressif (Dukas, Duparc, Sibelius, ...).      </p>
       </div>
 
-
-  
-  <div id="temps">
-<h4>Le temps psychologique en art</h4>
-
-<p>Le dessin est à la peinture ce que la mélodie est à la musique. Cependant le grand public se passe beaucoup plus facilement du dessin que de la mélodie.</p>
-<p>L'oeil  a la capacité d'appréhender  instantanément l'oeuvre picturale dans sa globalité.&nbsp; En parcourant les salles d'une exposition ou d'un musée, même à vive allure, on peut se faire rapidement une première idée  des oeuvres qui valent la peine d'être revues avec attention.        </p>
-<p>La musique se déployant dans le temps, elle en devient chronophage.&nbsp; Cette particularité a pour conséquence que ce n'est qu'au terme d'une audition complète que l'oreille et le cerveau qui la relaie peuvent  appréhender l'oeuvre.&nbsp; Une part inévitable d'amnésie l'oblige à des écoutes répétées, surtout si l'oeuvre est complexe, ce qui demeure un gage d'intérêt sur le long terme.  L'écoute domestique permet certes d'échantillonner l'écoute mais le procédé est impraticable au concert.           </p>
-<p>La perception immédiate de l'oeil a toujours eu une conséquence favorable sur l'éducation de tous les publics. Aucune rétrospective picturale ne rebute généralement le public cultivé, même si elle rassemble des oeuvres de création récentes. cet éclectisme est indispensable aux rats de musée sous peine de refaire invariablement les mêmes parcours. Son parcours est assimilé à une promenade de santé intellectuelle qui ne demande aucun effort particulier ni investissement démesuré en temps. A quelque époque que ce soit, la peinture moderne a très vite été comprise et acceptée. &nbsp;Aujourd'hui une rétrospective Bacon, Mathieu ou Freud draîne sans douleur toutes les couches de la société. </p>
-                    <p>La complexité musicale est autrement redoutable et l'investissement en temps qu'elle requiert pour être vaincue rebute la majorité des mélomanes les mieux disposés. &nbsp;Un festival Schnittke ou Penderecki ne recuiellerait pas un succès comparable d'ailleurs il ne se trouverait aucune société philharmonique pour tenter l'expérience.                    </p>
-                 <p>Les publics frileux - et ils le sont majoritairement - ne quittent dès lors pas volontiers les parages d'un classicisme rassurant. L'absence de renouvellement du répertoire que l'amateur compense habituellement au niveau de l'interprétation. Ce point est particulièrement net chez les amateurs d'opéras qui se contentent habituellement d'un fond de commerce invariable ce qui les oblige à opérer un transfert de la musique vers les à-côtés du spectacle, la mise en scène et évidemment l'interprétation.</p>
-      
-      </div>
-      
 
      
-<div id="bruits">
-          <h4> stylisme</h4>
-          <p>On pourrait penser que peinture et musique se rejoignent au moins dans l'adoption des canons esthétiques en vogue aux diverses époques de l'histoire mais cela n'est vrai qu'avec des nuances. D'une manière générale, la peinture s'est plus systématiquement appliquée à illustrer tous les courants artistiques qui se sont succédés quand la musique en a escamoté voire ignoré certains, surtout à l'époque moderne : l'impressionisme musical existe certes mais il a presque exclusivement été l'oeuvre d'un seul homme, Claude Debussy. Quant au surréalisme musical, c'est un concept inexistant.</p>
-          <p>Les historiens de l'Art adorent compartimenter les styles : cela aide à la classification et dans le cas qui nous occupe à quelques comparaisons instructives, plus souvent divergentes que convergentes. les points de convergence concernent essentiellement les grandes périodes de l'Histoire communes à tous les Arts :</p>
+<div id="stylisme">
+<h4>Question de style</h4>
+     <p>L'Histoire des Arts divise habituellement l'échelle du temps en  périodes créatrices partageant une intention  stylistique commune. Sans entrer dans les détails, elles se nomment, Moyen-Age, Renaissance, (Période) Baroque, Classicisme, Romantisme, (Ere) Moderne et (Epoque) Contemporaine. Tous les arts majeurs adhèrent à cette classification à condition d'adapter les dates de début et de fin de chacune des périodes. Ce qui change éventuellement, surtout à partir du 19<sup>ème</sup> siècle, ce sont les sous-périodes, présentes pour certains arts et absentes pour d'autres. Ces mouvances particulières ont généralement pris naissance dans des cercles littéraires avant de diffuser parmi  les peintres et/ou les musiciens toutes les fois que leur art particulier y trouvait un champ d'illustration.</p>
+     <p>On peut expérimenter la ligne du temps pictural  en  parcourant n'importe quel musée important dans l'ordre chronologique des salles. On observe que les styles   défilent d'abord lentement (Moyen-Age, Renaissance, Baroque, Classicisme, Romantisme) puis de plus en plus rapidement, à partir des années 1870, date à partir de laquelle les historiens  ne suivent plus à catégoriser les styles  en Académisme, Symbolisme, Impressionnisme, Expressionnisme, Cubisme, Naturalisme, Vérisme, Dadaïsme, Surréalisme, Védutisme, Constructivisme, Suprématisme, Maniérisme, Réalisme, Minimalisme, ..., il y en a pour tous les goûts.  </p>     
           
-          <ul class="miniListCorps">
-          <li>Classicisme</li>
-          <li>Romantisme</li>
-          <li>Académisme</li>
-          <li>Symbolisme</li>
-          <li>Impressionnisme</li>
-          <li>Expressionnisme</li>
-          <li>Cubisme </li>
-          <li>Naturalisme</li>
-          <li>Vérisme</li>
-          <li>dadaïsme</li>
-          <li>Minimalisme</li>
-          </ul>
+     
           
-    <p>En revanche d'autres courants  particuliers trouvent difficilement un équivalent musical</p>      
+          <p>L'Histoire de la Musique suit une échelle temporelle  facile à mémoriser à condition d'arrondir (légèrement) les dates. Cette échelle est nettement moins chargée que sa consoeur picturale du fait qu'elle ignore nombre de variantes (postérieures à 1870) qui lui sont étrangères  sauf éventuellement à l'opéra (Naturalisme, Vérisme, ...) mais c'est alors le traitement de l'argument  théâtral  qui est en cause. </p>
+          
+        <div class="conteneurImages">
+<div> <figure>
+                              <img src="../images/peinture/axetemporel1.png" alt="Ligne du temps musical" />
+                               <figcaption>Ligne du temps musical avec quelques repères</figcaption>
+          </figure></div>                         
+</div>    
           
           
-          
-          <ul class="miniListCorps">
-          <li>Surréalisme</li>
-          <li>Védutisme</li>
-          <li>Constructivisme</li>
-          <li>Suprématisme</li>
-          <li>Maniérisme</li>
-          <li>Réalisme</li>
-          </ul>
+          <p>Voici quelques exemple  d'expressions stylistiques communes à la peinture et à la musique :</p>
           
           
-         <p>sonorisme, sérialisme</p>
-         <p>Le classicisme en peinture est un mouvement spécifiquement français cadenassé par le régime autoritaire et absolutiste des rois Louis XIII et Louis XIV. Il s'agit de (re)présenter la France dans une image parfaitement ordonnée où toute fantaisie est absente. Le peintre Nicolas Poussin (1594-1665) incarne parfaitement ce mouvement respectueux de l'ordre dans les arts, La musique à cette époque est demeurée baroque et cependant on ne peut s'empêcher de trouver des correspondances dans la tragédie en musique confiée à Lully et qui n'a poursuivi d'autre but. La musique (de l'ère) classique ne commencera véritablement qu'à la mort de Bach (1750) sous d'autres cieux, praguois et surtout viennois (Haydn et Mozart). La mélodie étant à la musique ce que le dessin est à la peinture, on ne s'étonne pas que l'époque classique ait porté ces deux composantes à leur degré de perfection du moins académique.  Le classicisme a resurgi en plein romantisme dans une variante parnassienne dont la maxime, &quot;L'art pour l'art&quot;, a été formalisée par les poètes Théophile Gautier et Théodore de Banville. Ce mouvement initialement littéraire (régulièrement jugé) rétrograde a souvent été raillé pour son académisme et son versant pictural n'a pas échappé à la même remarque. Les peintres parnassiens  sont  discrets dans les meilleurs musées et leurs noms ne sont pas les plus connus de tous: Bastien-Lepage ou Jules Breton </p>
-         <p>La musique a offert un terrain  propice au romantisme ordinaire de par sa capacité à faire vibrer les fibres les plus intimes de la sensibilité des auditeurs. La peinture n'est pas parvenue à un résultat comparable sauf  dans sa variante fantastique où l'image a retrouvé sa puissance d'évocation. On ne trouvera pas facilement de traduction fidèle des impressions éprouvées à l'examen des ruines de Caspar Friedrich sauf peut-être dans l'oeuvre distante de Valentin Silvestrov. Ruines vestiges nostalgiques d'une époque bénie où l'on prenait encore le temps d'en produire sans se presser, de vraies ruines qui font rêver.</p>
-         <p>Poètes dissidents, Baudelaire, Mallarmé et Verlaine ont fui le Parnasse pour se réfugier dans le symbolisme. </p>
-         <p>Le réalisme (naturalisme) de Jean-François Millet le porte à peindre des scènes de la vie de gens humbles . Il n'y a pas de meilleur équivalent musical que le courant vériste tel qu'il a été immortalisé en Italie par Puccini.</p>
-         <p>L'impressionnisme pictural est né de la volonté (vécue comme une nécessité) de réagir au (faux) problème induit par l'avènement de la photographie (En France, de façon durable, sous l'impulsion de Joseph Nicéphore Niépce (1765-1833)). Celle-ci tenait toutes ses promesses de restituer la réalité objective avec une exactitude impossible à restituer avec un pinceau sur une toile. Les peintres français ont réagi de la meilleure façon en abandonnant toute idée d'une représentation fidèle, désormais obsolète, au profit d'une interprétation sensorielle et subjective. Même le portrait pouvait y trouver son compte dévoilant précisément l'âme du personnage que la trop fidèle photographie ne pouvait capter. Ce combat dont l'issue n'était nullement garantie a été gagné sans discussion au point que des décennies plus tard, ce sont les photographes qui se sont sentis menacés d'extinction obligés de brouiller leurs propres prises de vue par des effets de sfumato, le monde à l'envers. La musique n'a jamais été menacée par la photographie ni par rien de semblable (L'électro-acoustique n'avait encore fait aucun ravage) et si l'impressionnisme a gagné le monde musical (français), ce fut pour des raisons fort différentes, celles d'une réaction au wagnérisme ambiant sur fond de tensions géo-politiques. Il s'agissait concrètement de rompre avec le gigantisme orchestral devenu la règle Outre-Rhin au service d'une mélodie continue fondée sur la lente progression d'un magma sonore à haute densité. Claude Debussy a constamment été à la manoeuvre, les autres (Gabriel Fauré, Maurice Ravel, Charles Koechlin, ...), n'ont fait que suivre avec talent. </p>
-         <p>Symbolisme onirique ou ésotérique (Scriabin), Lourie Kandinsky</p>
-         <p>Certaines associations viennent sans peine à l'esprit, Vivaldi-Canaletto</p>
-         <p>L'expressionnisme  pictural a été la réponse germanique à l'impressionnisme, prônant cette fois l'urgence de la représention émotionnelle. C'était fort bien vu, en peinture, qui capte par définition un instantané de vie. La correspondance en musique n'avait rien d'évident précisément parce que l'oeuvre musicale s'étale dans le temps. C'est pourtant ce qu'on essayé de faire quelques musiciens germaniques inspirés il est vrai par les turbulences d'une Allemagne plongée ne plein désordre. </p>
-         
-         <div class="conteneurImages">
-                      <div>
+        <div class="conteneurImageSeule">
+                    <div>
                           <figure>
-                              <img src="../images/peinture/khnopff.png" alt="Fernand Khnopff" />
-                              <figcaption>Portrait de Marguerite (Khnopff)</figcaption>
-                          </figure>
-                      </div>
-                      <div>
-                          <figure>
-                            <img src="../images/peinture/cdmahler.png" alt="CD Mahler" />
-                              <figcaption>Gustav Mahler (Klimt)</figcaption>
-                          </figure>
-                      </div>
+                            <img src="../images/peinture/millet.png" alt="Millet : Les glaneuses"/>
+                            <figcaption>Jean-François Millet : Les glaneuses</figcaption>
+                        </figure>
           </div>
-         <p>Le symbolisme, une réaction contre le naturalisme terre-à-terre, a puisé ses racines (en France) dans les oeuvres de Baudelaire, Rimbaud, Mallarmé, etc. Privilégiant l'idée d'abandonner la réalité objective pour celle du rêve, de la spiritualité et de l'imagination, ce courant allait fatalement faire fortune en peinture. Les pinceaux du peintre belge, Fernand Khnopff (1858-1921), ont profondément marqué l'art de l'autrichien Gustav Klimt dont les tableaux illustrent si souvent les enregistrements d'oeuvres d'Alexander von Zemlinsky ou de cet autre Gustav, Mahler. Une variante  ésotérique a été développée par Alexandre Scriabine par exemple dans son fameux Poème de l'Extase ou l'oeuvre inachevée, Le Mystère, un projet fou (mais jamais achevé) qui aurait occupé une semaine entière quelque part en Inde (!) et dont il ne subsiste que les fragments de l'<a href="https://www.youtube.com/watch?v=CdH0FAiz1Qk">Acte préalable</a>, patiemment reconstitués et assemblés par Alexander Nemtin.</p>
-         <p>Ces rêves éveillés ont mené au surréalisme est l'exemple parfait du mouvement pictural accompli sans concurrence musicale. La musique étant incapable de par sa nature de signifier quoi que ce soit (Stravinsky) il ne faut pas s'attendre à ce qu'elle soit capable de fair ecoexister une idée et son contraire. Le paradoxe musical n'existe pas plus que le rire. On peut sourire en concert de musiciens qui manient la référence distanciée ou rire  du fait de musiciens qui s'amusent à faire les pitres mais ce sont des ersatz d'humour musical qui de fait n'existe pas plus qu'en peinture. Seules la caricature et la bande dessinée y ont droit.</p>
-         <p>cette observation n'a pas toujours connu que des inconvénients : l'art soviétique a connu un épisode   formaliste en peinture  en musique</p>
-         <p>Le cubisme voire l'abstraction sont par contre parfaitement traduisibles  en peinture et en musique. la simplification progressive des contours du dessin puis leur disparition pure et simple reportent ailleurs l'élément de complexité indispensable à la survie de l'oeuvre d'art,  dans l'agencement modifié des structures ou dans leur déstructuration complète. L'histoire de la musique a tenté de suivre mais ce fut le début de ses déboires, particulièrement à l'issue de  la deuxième guerre.         </p>
-         
+</div>
+          <p>- Le Réalisme s'est attaché à mettre en scène la vie, insouciante ou laborieuse, des gens ordinaires. Il l'a montrée  telle qu'elle était,  sans chercher à l'idéaliser (Giacomo Puccini : <a href="https://www.youtube.com/watch?v=H_1OtRt0_ho">La Bohème</a>).<br/> 
+            Son prolongement,  le Naturalisme y a ajouté des préoccupations sociologiques tendant à démonter les mécanismes  capables de maintenir des individus d'extraction présumée modeste dans toutes sortes de  précarités (Gustave Charpentier : <a href="https://www.youtube.com/watch?v=jTUGTe7ypVQ">Louise</a>; Alfred Bruneau : <a href="https://www.youtube.com/watch?v=xkeQGaw03XI">Lazare</a>). </p>
+          
+    <div class="conteneurImageSeule">
+<div>
+                          <figure>
+                            <img src="../images/peinture/khnopff.png" alt="Khnopff : Inaccessible rêve"/>
+                            <figcaption>Fernand Khnopff : Inaccessible rêve</figcaption>
+                        </figure>
+          </div>
+</div>      
+          
+          
+          
+        <p>- Le symbolisme peut être vu comme une réaction artistique au naturalisme, jugé terre-à-terre voire misérabiliste. Il s'est décliné en plusieurs tendances selon qu'il a abandonné la réalité morose  pour celle du sacré, du rêve éveillé ou de la spiritualité (variante onirique) ou   pour celle du chimérisme voire de l'occultisme très à la mode à cette époque (variante ésotérique). Bien que de nombreux musiciens aient adhéré au projet, ils l'ont fait avec des sensibilités différentes en  Allemagne (Richard Wagner : <a href="https://www.youtube.com/watch?v=eqOBEH-JRhs">Parsifal</a>), en Autriche (Alexander Von Zemlinsky : <a href="https://www.youtube.com/watch?v=C9G0J9Ljt7E">Symphonie lyrique</a>), en France (Claude Debussy : <a href="https://www.youtube.com/watch?v=CQ4rkSykjn4">Pelléas et Mélisande</a>) ou en Russie  (Scriabin : <a href="https://www.youtube.com/watch?v=BWINpXNd5KE">Poème de l'Extase</a>). </p>
+        
+        <div class="conteneurImageSeule">
+<div>
+                          <figure>
+                            <img src="../images/peinture/stlazare.png" alt="Claude Monnet : la gare Saint-Lazare"/>
+                            <figcaption>Claude Monnet : la gare Saint-Lazare</figcaption>
+                        </figure>
+          </div>
+</div>   
+
+
+        <p>- La référence à Debussy, au paragraphe précédent, peut surprendre alors que l'artiste est généralement catalogué comme le fondateur du mouvement impressionniste. C'est la conséquence de l'ambiguïté fondamentale qui a marqué sa démarche musicale. Chez Claude Debussy (<a href="https://www.youtube.com/watch?v=rI8JeOH9F2c">La Mer</a>), l'impressionnisme a largement été dicté par un besoin de réaction patriotique au wagnérisme ambiant qui le fascinait cependant.  Il a été accompagné dans sa démarche par quelques disciples de la première heure (André Caplet, Déodat de Séverac) et  ultérieurement par des admirateurs désireux de se rassembler sous une banière prestigieuse (Maurice Ravel, Charles Koechlin, voire Olivier Messiaen, et dans les pays anglo-saxons,  Frederic Delius et  Charles Tomlinson Griffes).</p>
+        
+      <div class="conteneurImageSeule">
+<div>
+                          <figure>
+                            <img src="../images/peinture/munch.png" alt="Edvard Munch : Le cri"/>
+                            <figcaption>Edvard Munch : Le cri</figcaption>
+                        </figure>
+          </div>
+</div>     
+        
+        
+        
+          <p>- L'expressionnisme   a été la réponse germanique à l'impressionnisme français, prônant cette fois l'urgence de la sensation émotionnelle. Le projet était sensé en peinture, un art particulièrement apte à capturer les émotions dans leur  instantanéité. Il était davantage problématique en musique précisément parce que  l'oeuvre musicale s'étale dans le temps. C'est pourtant ce qu'ont tenté de faire quelques musiciens germaniques, inspirés il est vrai par les turbulences d'une Allemagne plongée en plein désarroi d'entre-deux guerres (Arnold Schönberg : <a href="https://www.youtube.com/watch?v=bd2cBUJmDr8">Pierrot lunaire</a>). Sans grande surprise, l'expressionnisme musical n'a pas fait fortune en France.</p>
+          <p>Entre les deux guerres mondiales, la peinture moderne s'est diversifiée au départ de trois tendances dominantes, le surréalisme, le cubisme et l'abstraction. </p>
+          
+      <div class="conteneurImages">
+         <div>
+         <figure>
+           <img src="../images/peinture/delvaux.png" alt="Paul Delvaux"/>
+           <figcaption>Paul Delvaux</figcaption>
+           </figure>
+         </div>
+          <div>
+         <figure>
+           <img src="../images/peinture/leger.png" alt="Fernand Léger"/>
+           <figcaption>Fernand Léger</figcaption>
+           </figure>
+         </div>
+          <div>
+         <figure>
+           <img src="../images/peinture/mathieu.png" alt="Georges Mathieu"/>
+           <figcaption>Georges Mathieu</figcaption>
+           </figure>
+         </div>
+  </div>     
+          
+          
+          <p>- La musique a ignoré le surréalisme  :   n'exprimant aucune idée intellectuelle, elle ne pouvait s'ingénier à la détourner. Par contre, le cubisme et l'abstraction ont été de sa compétence, en illustration de cette formule (un peu) expéditive selon laquelle &quot;La mélodie serait à la musique ce que le dessin est à la peinture&quot;. </p>
+          <p>- Le cubisme n'élimine pas le dessin, il  réduit les contours à des formes stylisées quoique  parfaitement reconnaissables. L'équivalent musical a donc abandonné la mélodie  sinueuse (Richard Strauss : <a href="https://www.youtube.com/watch?v=9a8NpqdwlZc&list=OLAK5uy_mFECR3WCQMgfVSh5XaCNuHHqMogPaSLVs&index=11">Zueignung</a>) pour lui substituer une variante linéaire accentuée par le déhanchement  rythmique (Arthur Lourie : <a href="https://www.youtube.com/watch?v=DsckzJsOkWs">Gigue</a>, Igor Stravinsky : <a href="https://www.youtube.com/watch?v=0hMNkIKPIc4">Ragtime</a>). Il a  disséminé partout dans le monde, révélant de  multiples variantes selon le pays d'accueil : constructivisme russe (Alexander Mossolov : <a href="https://www.youtube.com/watch?v=cQysf5UNSys">La fonderie d'acier</a>), machinisme américain (George Antheil : <a href="https://www.youtube.com/watch?v=J4on2sedCNg">Airplane Sonata</a>) ou   futurisme italien (Francesco Pratella : <a href="https://www.youtube.com/watch?v=CeMlJE-ZxtU">Trio à clavier</a>).</p>
+<p>- L'abstraction picturale a franchi un pas supplémentaire en éradiquant toute forme de représentation des contours. En musique, cela  correspond à la perte des repères tonals tels que codifiés par les tenants de la musique dodécaphonique et surtout de son extension sérielle (Anton Webern : <a href="https://www.youtube.com/watch?v=HwX7jPdFsD4">5 Pièces, opus 10</a>).</p>
+          <p> Or le grand public se passe  plus aisément du dessin que de la mélodie et il ne fait guère de doute que cela a contribué à l'éloigner   d'une musique contemporaine phagocitée par les techniques sérielles pendant  les  décennies  1945-75. Il a dès lors déserté la création musicale qui lui était en principe destinée, omettant majoritairement de  revoir son point de vue lorsque s'est opéré un retour progressif  vers une nouvelle modalité (Cf <a href="../chroniques/modalite.html">Modalité musicale et arithmétique modulaire</a> et  <a href="../musique2001.html">Musique 2001</a> pour une synthèse). Le contraste est frappant avec ce qu'on observe en peinture où aucune rétrospective  ne rebute le public cultivé, même si elle rassemble des oeuvres de création récentes.</p>
 </div>
     
     
-    <div id="contemporain">
-    <h4>L'art contemporain</h4>
-    <p>Aucune rétrospective picturale ne rebute généralement le public cultivé, même si elle rassemble des oeuvres de création récentes. cet éclectisme est indispensable aux rats de musée sous peine de refaire invariablement les mêmes parcours. Son parcours est assimilé à une promenade de santé intellectuelle qui ne demande aucun effort particulier ni investissement démesuré en temps. En visitant un musée suffisamment important il est même parfaitement possible de s'imprégner des courants picturaux successifs en une demi-journée. C'est chose impossible en musique car une expérience similaire à supposer qu'elle soit possible prendrait des semaines.</p>
-    <p>&nbsp;</p>
-    <p>Le grand public est davantage familier avec la (&amp;quot;grande&amp;quot;) peinture qu'avec la (&amp;quot;grande&amp;quot;) musique pour des raisons pas toujours avouables. Prendre connaissance de l'oeuvre d'un peintre ne nécessite pas un investissement personnel important : il est à la portée de n'importe qui de feuilleter un livre d'art et l'opération est peu contraignante, pouvant être interrompue à tout moment. Fréquenter un musée ou une galerie d'exposition est une démarche supplémentaire mais elle peut se faire incognito en y consacrant le temps que l'on veut, quitte à déserter si l'on n'apprécie pas. Découvrir un répertoire musical qui déborde du cadre restreint d'une chansonnette de quelques minutes est autrement demandeur : il faut y passer une partie de son précieux temps. Si l'on se contente d'une écoute domestique il est vrai qu'elle peut être interrompue à tout moment mais si on prend le risque de franchir la porte de la salle de concert ce qui est quasiment une nécessité si l'on veut progresser alors le risque est réel de se sentir piégé par une demande intellectuelle qu'on avait mal calculée. Cette différence fondamentale est particulièrement sensible lorsqu'on aborde la création contemporaine notoirement mieux digérée en peinture qu'elle ne l'est en musique (Cf   &lt;a href=&quot;../musique2001.html&quot;&gt;Musique 2001&lt;/a&gt; pour d'autres détails).</p>
-    <p>Le "grand" public assiste plus volontiers à une exposition de peinture moderne plutôt qu'à un concert de musique contemporaine. On attire sans peine les foules en rassemblant les oeuvres de grands peintres modernes plus ou moins bien connus Les grandes expositions picturales attirent les foules, toutes époques confondues même les plus récentes, d'Edward Hopper (1982-1967) à Peter Doig (1959- ), tandis que les festivals   programmant  des oeuvres composées après la deuxième guerre  rencontrent rarement un succès comparable. Le phénomène est devenu de plus en plus palpable en 200 ans : pour  information, les statistiques concernant la vénérable Philharmonie de Leipzig montrent que, vers 1780, 90% des oeuvres jouées étaient de compositeurs vivants, une proportion qui est tombée à 50% vers 1850, à 25% vers 1900 et à peine à quelques pourcents actuellement. </p>
-    <p>Des différences notables existent cependant quant aux taux de fréquentation des musées et des galeries d'une part et des salles de concert d'autre part et elles s'accentuent même dramatiquement si l'on se concentre sur les périodes moderne et  (surtout) contemporaine. En effet,   si l'amateur digère  aisément   la plupart des  courants de la peinture même actuelle, c'est loin d'être le cas en musique. Cette chronique fait écho à une présentation antérieure (<a href="../musique2001.html">Musique 2001</a>) en en étayant les bases. </p>
-    <div class="conteneurImages">
-      <div>
-        <figure> <img src="../images/peinture/hopper.png" alt="Edward Hopper" />
-          <figcaption>Edward Hopper (Nighthawks, 1942)</figcaption>
-        </figure>
-      </div>
-      <div>
-        <figure> <img src="../images/peinture/doig.png" alt="Peter Doig" />
-          <figcaption>Peter Doig (100 Years ago, 2001)</figcaption>
-        </figure>
-      </div>
-    </div>
-    <p>Cette chronique étudie les raisons d'une telle différence d'appréciation  en développant quelques arguments exposés (trop) brièvement dans la rubrique <a href="../musique2001.html">Musique 2001</a>. Une analyse plus fine montre que les  univers picturaux et musicaux  sont, en fait, largement disjoints, d'où ceci explique éventuellement cela.</p>
-
+   <div id="temps">
+<h4>Le rôle du temps</h4>
+<p>La gestion du temps  musical est une autre  source de difficultés pour le public  : on peut acquérir une bonne connaissance du &quot;répertoire pictural&quot; dans des délais raisonnables, c'est radicalement impossible en musique qui est par essence un art chronophage. </p>
+<p>Une seule audition ne permet généralement pas d'appréhender une oeuvre un peu complexe et si celle-ci est longue,  le temps qu'on devra lui consacrer sera considéré comme prohibitif par le plus grand nombre.&nbsp;Découvrir un répertoire musical étendu exige donc d'y passer une partie non négligeable de son  temps, ce qui décourage nombre d'amateurs. Si l'on se contente d'une écoute domestique, il est vrai qu'on peut l'interrompre à tout moment mais si on prend le risque de fréquenter les salles de concert, ce qui est quasiment une nécessité si l'on veut progresser, alors le risque est réel de se sentir piégé par une demande intellectuelle qu'on aurait mal estimée.   </p>
 </div>
+   
+   
 
 
-
-<h5>Synthèse des sons et des couleurs</h5>
-     <p>Peinture et musique ont beau appartenir à des mondes distincts, elles partagent néanmoins quelques caractéristiques techniques liées à l'expression du paramètre fréquentiel. Les peintres s'en sont souvent remis à la fantaise de la nature mettant à leur disposition des pigments de qualité rare tandis que des artisans musiciens ont développé un instrumentarium aux sonorités incomparables. </p>
-     <p>Pourtant, avec le progrès des sciences et des techniques, on a vu apparaître des produits de synthèse donnant l'illusion d'une gamme étendue au maximum envisageable et l'apparence mais l'apparence seulement que l'une pourrait avantageusement se substituer à l'autre. L'examen des produits finis ne plaide pas en faveur des produits de synthèse certes façonnables et reproductibles à l'infini mais dépourvus de ce supplément d'âme qui distingue l'Art de la Technique :</p>
+<div id="synthese">
+<h4>Synthèse des couleurs et des sons</h4>
+     <p>Au cours des siècles, Peinture et Musique ont acquis leurs titres de noblesse sur base d'une activité mêlant l'artisanat à la technique. Un phénomène nouveau est apparu au 20<sup>ème</sup> siècle, marginal à ses débuts puis de plus en plus envahissant, celui de l'art de synthèse. </p>
+     <p>Avec le progrès des sciences appliquées, on a vu apparaître surtout après 1945, des produits de synthèse visuels et sonores apparemment performants, en tous cas façonnables et reproductibles à l'infini. Ils promettaient aux peintres de les  affranchir  des contraintes liées aux pigments disponibles (Cf les oeuvres récentes du britannique David Hockney, réalisées à partir d'un iPad; illustration ci-après) et aux musiciens de renouveler le cadre acoustique d'un instrumentarium  figé par le temps (Principe du synthétiseur). </p>
      
      <ul class="miniListCorps">
-     <li>Dans le règne animal, la sensation de couleur dépend du type de (dé)codage effectué au niveau de la rétine et de l'interprétation que le cerveau en fait. Un chat n'est pas sensible aux mêmes fréquences que nous et à fréquences communes, il ne &quot;voit&quot; pas la même chose que nous.  Chez l'humain, les cônes rétiniens  existant en trois variantes (Rouge, Vert, Bleu),  qui possèdent chacun une bande passante centrée sur la couleur en question. N'importe quelle nuance de couleur peut être reconstituée sur base d'une proportion bien calibrée de ces trois teintes de base. La synthèse informatique ne fait rien d'autre lorsqu'elle recourt à un codage (tri)chromatique  précisant les proportions (de 0 à 100%) de chacune des couleurs fondamentales (Codage RGB : Red-Green-Blue,   où les couleurs de base ont été conventionnellement fixées par une Commission internationale aux longueurs d'onde suivantes : rouge (700,0 nm, 428 THz), vert (546,1 nm, 549 THz) et bleu (435,8 nm, 688 THz). Une procédure informatique courante code chaque composante sur 8 bits (1 octet), permettant de la faire varier entre 0 et 255. Il autorise 256<sup>3</sup> = 16777216 nuances différentes, un luxe  inutile car  l'oeil humain n'en distingue guère plus que 2000000 (Cf cette illustration détaillée). Les figures ci-dessous présentent une vision (faussement) 3D (simplifiée à 3 bits au lieu de 8) du cube de représentation colorée tel que vu de 8 points de vue différents. Exercez-vous à passer du noir (Toutes les composantes RGB sont nulles) au blanc (Toutes les composantes RGB sont saturées à 1) en transitant par tous les intermédiaires possibles (Par exemple, Jaune =  {Rouge=1, Vert=1 et Bleu = 0}).
+     <li>Chez l'humain non daltonien, les cônes rétiniens  existent en trois variantes dont la bande passante est centrée sur les fréquences Rouge, Verte et Bleue. L'idée a dès lors fait son chemin qu'il devait être possible de reconstituer n'importe quelle nuance de couleur  sur base d'une proportion bien calibrée de ces trois teintes de base. C'est en substance ce que fait la synthèse informatique  lorsqu'elle recourt à un codage (tri)chromatique  précisant les proportions  de chacune des couleurs fondamentales (Codage RGB, de l'anglais Red-Green-Blue). Les couleurs de base ont été fixées conventionnellement  par une Commission internationale aux longueurs d'onde suivantes : rouge (700,0 nm, 428 THz), vert (546,1 nm, 549 THz) et bleu (435,8 nm, 688 THz). L'informatisation de la méthode requiert  de discrétiser   chaque composante par exemple sur 8 bits (1 octet), ce qui permet  de la faire varier entre 0 et 255 (= de 0 à 100%). Cela suffit amplement puisque cela autorise 256<sup>3</sup> = 16 777 216 nuances différentes, alors que l'oeil humain n'en distingue guère plus que 300 000 à 2 000 000, les avis divergent. Les figures ci-dessous présentent une vision (faussement) 3D (simplifiée à 3 bits au lieu de 8) du cube de représentation colorée tel que vu de 8 points de vue différents. Exercez-vous à passer du noir (Toutes les composantes RGB sont nulles) au blanc (Toutes les composantes RGB sont saturées à 1) en transitant par tous les intermédiaires possibles (Par exemple, Jaune =  {Rouge=1, Vert=1 et Bleu = 0}).
      
      
-      <div class="conteneurImageSeule">
+       <div class="conteneurImageSeule">
                     <div>
                       <figure>
                         <img src="../images/peinture/rvb.png" alt="Représentation tridimensionnelle de l'espace des couleurs"/>
                         <figcaption>
-                 Codage simplifié (sur 3x3x3 bits) d'un espace restreint à (2<sup>3</sup>x2<sup>3</sup>x2<sup>3</sup>=512) couleurs. <br/> Un fichier plus complet est disponible ici.
+                 Codage simplifié (sur 3x3x3 bits) d'un espace restreint à (2<sup>3</sup>x2<sup>3</sup>x2<sup>3</sup>=512) couleurs.
                </figcaption>
                       </figure>
-                    </div>
+              </div>
             </div>
       
-      <br/><br/></li>
-      
-      
+     <br/>
+     Ce qui frappe l'oeil dans ces exemples, c'est le caractère &quot;métallique&quot; des couleurs ainsi restituées. Les utilisateurs de programmes de traitement d'images le savent bien : toute reproduction picturale synthétisée par quelque procédé que ce soit doit être retouchée si elle veut  restituer la patine de la toile originale.</li>
      
-    <li>Ce qui frappe l'oeil dans ces exemples c'est le caractère métallique des couleurs reconstituées. Au fond, le synthétiseur musical souffre  de  lacunes similaires : s'il est en théorie capable de restituer le timbre de n'importe quel instrument, existant ou pas, force est de reconnaître que le résultat ne pourra jamais égaler le son de l'instrument acoustique dont l'ADN a été patiemment raffiné  par la sélection naturelle de centaines d'artisans rivalisant d'inventivité au cours des siècles; ils ont transformé le caprice de la caisse de résonance en une nécessité en est apparemment flatteur ses possibilités semblent sans limites mais à la longue, ils fatiguent. Seul bénéfice, il peut innover à l'infini.      </li>
+     
+     <div class="conteneurImages">
+         <div>
+         <figure>
+           <img src="../images/peinture/hockney.png" alt="David Hockney"/>
+            <figcaption>
+                 David Hockney (Réalisation sur iPad)
+               </figcaption>
+           </figure>
+         </div>
+  </div>
+  
+  
+  
+    <li>Le synthétiseur musical donne, lui aussi, l'illusion qu'il ne connaît aucune limite dans la création de sonorités nouvelles. Les musiciens Ambiant ou New Age (<a href="https://www.youtube.com/watch?v=A-r6y5Tg8ec">Brian Eno</a>, <a href="https://www.youtube.com/watch?v=JGGA-KkmRqk">Vangelis</a>, l'étonnant  <a href="https://www.youtube.com/watch?v=tl8p0HFuiPM">Harald Weiss</a> et tant d'autres) en ont fait un usage régulier. Même <a href="../chroniques/adams.html">John Adams</a>  a eu recours épisodiquement aux possibilités offertes par la &quot;Korg Wavestation&quot; et les &quot;Claviers Yamaha&quot; mis à sa disposition lors de séjours  à l'Université de Berkeley (Hoodoo Zephyr, 1992, Part 4 &quot;Tundra&quot;
+    
+    <sub><sub><sub>  
+        <audio controls preload="none" >
+          <source src="../son.mp3/peinture/tundra.mp3" type="audio/mpeg"/>
+          <source src="../son.mp3/peinture/tundra.ogg" type="audio/ogg"/>
+          Votre navigateur n'est pas compatible
+          </audio>
+        </sub></sub></sub> 
+    
+    ).
+    
+    Il n'a cependant pas insisté dans cette voie, conscient des limites de l'électronique musicale : si celle-ci est en théorie capable de restituer le timbre de n'importe quel instrument, existant ou à venir, force est de constater que le résultat n'égale pas et sans doute n'égalera jamais le produit de la facture  acoustique, patiemment perfectionnée, au cours des siècles, par une  sélection naturelle artisanale.</li>
+    
     
      </ul>
-</div>   
-          
-          
-
-        </div>
-
+ <p>Dans les deux cas, l'art de synthèse peut surprendre voire flatter les sens  mais bientôt il les fatigue. Par-dessus tout,  il lui manque   ce supplément d'âme qui distingue l'Art de la Technique. Or la société moderne est déjà bien assez technique comme cela et ce n'est pas la peine d'en rajouter;  mieux vaut honorer les  bons artisans et les vrais artistes.</p>
+   
+      </div>
+  <i>A suivre : La Musique parmi les arts (II) : Le Rythme et la Danse</i>
+   
+</div>
 
             <a id="ancreRetourHautPage" href="#site">&uarr;</a>
 
@@ -620,8 +758,8 @@
 
         </div>
     
-    
     </div>
+
 
     <!-- Effet smooth ancres -->
     <script src="../js/onclick.js"></script>
